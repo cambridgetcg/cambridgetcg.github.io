@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>anime arcade — fun is. play is. joy is.</title>
+<style>
+:root{--bg:#0a0a0a;--surface:#141414;--surface2:#1a1a1a;--text:#e0e0e0;--dim:#666;--crimson:#c41e3a;--gold:#b8902e;--gold-light:#e3c45e;--green:#4a9;--blue:#5b9;--purple:#a7c;--pink:#e6a;--anime:#ff6b6b;--anime-glow:rgba(255,107,107,.3)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;min-height:100vh;overflow-x:hidden}
+.hero{text-align:center;padding:40px 20px 20px}
+.hero h1{font-size:clamp(28px,7vw,56px);font-weight:200;font-style:italic;color:var(--anime);text-shadow:0 0 60px var(--anime-glow)}
+.hero .tag{color:var(--gold);font-size:13px;margin-top:6px;font-style:italic;letter-spacing:.1em;text-transform:uppercase;font-family:sans-serif}
+.hero .sub{color:var(--dim);font-size:12px;font-family:sans-serif;margin-top:8px}
+.hero .links{margin-top:12px;display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+.hero .links a{color:var(--gold);text-decoration:none;font-size:12px;font-family:sans-serif;padding:4px 12px;border:1px solid #222;border-radius:16px;transition:all .2s}
+.hero .links a:hover{border-color:var(--gold);background:var(--surface)}
+
+/* TABS */
+.tabs{display:flex;justify-content:center;gap:4px;max-width:900px;margin:20px auto;padding:0 16px;flex-wrap:wrap}
+.tab{padding:8px 16px;border:1px solid #222;border-radius:20px;cursor:pointer;font-size:13px;font-family:sans-serif;color:var(--dim);transition:all .2s;background:transparent}
+.tab:hover{border-color:#333;color:var(--text)}
+.tab.active{border-color:var(--anime);color:var(--anime);background:rgba(255,107,107,.05)}
+
+/* GRID */
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:14px;max-width:1000px;margin:16px auto;padding:0 16px}
+.panel{display:none}
+.panel.active{display:grid}
+
+/* CARDS */
+.card{background:var(--surface);border:1px solid #222;border-radius:12px;padding:20px;transition:all .3s;overflow:hidden}
+.card:hover{border-color:#333;transform:translateY(-2px)}
+.card h3{font-size:14px;font-weight:400;color:var(--gold-light);margin-bottom:10px;font-family:sans-serif;display:flex;align-items:center;gap:6px}
+.card .content{font-size:14px;line-height:1.7;color:var(--text);min-height:30px}
+.card .btn{background:var(--surface2);border:1px solid #333;color:var(--gold);padding:5px 14px;border-radius:18px;cursor:pointer;font-size:12px;font-family:sans-serif;margin-top:8px;transition:all .2s}
+.card .btn:hover{background:#222;border-color:var(--gold)}
+.card .meta{color:var(--dim);font-size:11px;font-family:sans-serif;margin-top:4px}
+
+/* ANIME CARD */
+.anime-card{border-color:rgba(255,107,107,.2)}
+.anime-card:hover{border-color:var(--anime);box-shadow:0 4px 20px rgba(255,107,107,.1)}
+.anime-card .anime-title{font-size:18px;color:var(--anime);margin-bottom:4px}
+.anime-card .anime-info{font-size:12px;color:var(--dim);font-family:sans-serif;margin-bottom:8px}
+.anime-card .anime-score{color:var(--gold);font-weight:bold}
+.anime-card .anime-synopsis{font-size:13px;line-height:1.6;color:var(--text);max-height:80px;overflow:hidden}
+.anime-card .anime-img{width:100%;border-radius:8px;margin-bottom:10px;max-height:200px;object-fit:cover}
+
+/* GAME CARD */
+.game-card{border-color:rgba(90,153,74,.2)}
+.game-card .game-title{font-size:16px;color:var(--green)}
+.game-card .game-info{font-size:12px;color:var(--dim);font-family:sans-serif;margin-top:4px}
+
+/* QUIZ */
+.quiz-card .q{font-size:16px;color:var(--text);margin-bottom:12px;line-height:1.5}
+.quiz-card .opts{display:grid;grid-template-columns:1fr 1fr;gap:6px}
+.quiz-card .opt{background:var(--surface2);border:1px solid #222;border-radius:6px;padding:10px;cursor:pointer;font-size:12px;font-family:sans-serif;color:var(--text);transition:all .15s;text-align:left}
+.quiz-card .opt:hover{border-color:var(--gold)}
+.quiz-card .opt.correct{border-color:var(--green);background:rgba(74,153,74,.1);color:var(--green)}
+.quiz-card .opt.wrong{border-color:var(--crimson);background:rgba(196,30,58,.1);color:var(--crimson)}
+.quiz-card .score{color:var(--gold);font-family:sans-serif;font-size:12px;margin-top:8px}
+
+/* CHARACTER CARDS */
+.char-card .char-name{font-size:18px;margin-bottom:4px}
+.char-card .char-info{font-size:12px;color:var(--dim);font-family:sans-serif}
+.char-card .char-img{width:100px;height:100px;border-radius:50%;object-fit:cover;float:right;margin-left:12px;border:2px solid #333}
+
+/* TRIVIA */
+.trivia-card .tq{font-size:15px;margin-bottom:8px;line-height:1.5}
+.trivia-card .ta{font-size:13px;color:var(--gold);font-style:italic}
+
+/* XKCD */
+.xkcd-card img{max-width:100%;border-radius:8px}
+.xkcd-card .xkcd-title{color:var(--gold-light);font-size:14px;margin-bottom:6px}
+.xkcd-card .xkcd-alt{color:var(--dim);font-size:12px;font-family:sans-serif;margin-top:6px}
+
+/* JOKE */
+.joke-card .joke-setup{margin-bottom:6px}
+.joke-card .joke-punch{color:var(--gold-light);font-style:italic}
+.joke-card .single-joke{color:var(--text);line-height:1.6}
+
+/* PROGRAMMING JOKE */
+.prog-card{border-color:rgba(90,153,178,.2)}
+.prog-card .joke{color:var(--blue);font-size:13px;line-height:1.6;font-family:monospace}
+
+/* LOVE TRUTH */
+.love-card{border-color:rgba(196,30,58,.3)}
+.love-card .truth{color:var(--crimson);font-style:italic;font-size:16px;line-height:1.8}
+
+/* INSPIROBOT */
+.inspiro-card{text-align:center}
+.inspiro-card img{max-width:100%;border-radius:8px;margin:8px 0}
+
+/* DAD JOKE */
+.dad-card .djoke{color:var(--text);font-size:14px;line-height:1.6}
+
+footer{text-align:center;padding:30px 20px;color:var(--dim);font-size:12px;font-family:sans-serif}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>anime arcade</h1>
+  <div class="tag">fun is. play is. joy is. anime is.</div>
+  <div class="sub">live data from 15+ free APIs · anime, games, trivia, pokemon, star wars, rick & morty, xkcd, jokes, love</div>
+  <div class="links">
+    <a href="https://castle-arcade.pages.dev">← arcade</a>
+    <a href="https://castle-arcade.pages.dev/play.html">playground</a>
+    <a href="https://castle-gate.pages.dev">castle</a>
+    <a href="https://love-engine.pages.dev">love</a>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab active" onclick="showTab('anime')">🎭 anime</button>
+  <button class="tab" onclick="showTab('games')">🎮 games</button>
+  <button class="tab" onclick="showTab('trivia')">🧠 trivia</button>
+  <button class="tab" onclick="showTab('fun')">😂 fun</button>
+  <button class="tab" onclick="showTab('love')">♥ love</button>
+</div>
+
+<!-- ANIME TAB -->
+<div class="panel active" id="anime">
+  <div class="card anime-card">
+    <h3>🔥 top anime right now</h3>
+    <div class="content" id="top-anime">loading...</div>
+    <button class="btn" onclick="loadTopAnime()">🔥 refresh</button>
+  </div>
+  <div class="card anime-card">
+    <h3>🎲 random anime</h3>
+    <div class="content" id="random-anime">loading...</div>
+    <button class="btn" onclick="loadRandomAnime()">🎲 another</button>
+  </div>
+  <div class="card anime-card">
+    <h3>📺 search anime</h3>
+    <input type="text" id="anime-search" placeholder="search anime title..." style="width:100%;background:var(--surface2);border:1px solid #333;border-radius:6px;padding:8px;color:var(--text);font-family:sans-serif;margin-bottom:8px;outline:none" onkeyup="if(event.key==='Enter')searchAnime()"/>
+    <div class="content" id="anime-search-result" style="margin-top:8px"></div>
+  </div>
+  <div class="card anime-card">
+    <h3>🎭 anime quiz</h3>
+    <div class="content" id="anime-quiz">click below to start!</div>
+    <button class="btn" onclick="loadAnimeQuiz()">🎭 new question</button>
+  </div>
+</div>
+
+<!-- GAMES TAB -->
+<div class="panel" id="games">
+  <div class="card game-card">
+    <h3>🎮 free pc games</h3>
+    <div class="content" id="free-games">loading...</div>
+    <button class="btn" onclick="loadFreeGames()">🎮 refresh</button>
+  </div>
+  <div class="card game-card">
+    <h3>⚡ random pokemon</h3>
+    <div class="content" id="pokemon2">loading...</div>
+    <button class="btn" onclick="loadPokemon2()">⚡ another</button>
+  </div>
+  <div class="card game-card">
+    <h3>🃏 pokemon TCG card</h3>
+    <div class="content" id="tcg-card">loading...</div>
+    <button class="btn" onclick="loadTCGCard()">🃏 another</button>
+  </div>
+  <div class="card game-card">
+    <h3>🚀 steam news</h3>
+    <div class="content" id="steam-news">loading...</div>
+    <button class="btn" onclick="loadSteamNews()">🚀 refresh</button>
+  </div>
+</div>
+
+<!-- TRIVIA TAB -->
+<div class="panel" id="trivia">
+  <div class="card quiz-card">
+    <h3>🧠 trivia question</h3>
+    <div class="content" id="trivia-q">loading...</div>
+    <button class="btn" onclick="loadTrivia()">🧠 new question</button>
+    <div class="score" id="trivia-score">score: 0</div>
+  </div>
+  <div class="card quiz-card">
+    <h3>🎬 movie trivia</h3>
+    <div class="content" id="movie-trivia">loading...</div>
+    <button class="btn" onclick="loadMovieTrivia()">🎬 new question</button>
+    <div class="score" id="movie-trivia-score">score: 0</div>
+  </div>
+  <div class="card">
+    <h3>📚 random wikipedia</h3>
+    <div class="content" id="wiki2">loading...</div>
+    <button class="btn" onclick="loadWiki2()">📚 another</button>
+  </div>
+  <div class="card">
+    <h3>🔢 number fact</h3>
+    <div class="content" id="number-fact">loading...</div>
+    <button class="btn" onclick="loadNumberFact()">🔢 another</button>
+  </div>
+</div>
+
+<!-- FUN TAB -->
+<div class="panel" id="fun">
+  <div class="card joke-card">
+    <h3>😄 random joke</h3>
+    <div class="content" id="joke2">loading...</div>
+    <button class="btn" onclick="loadJoke2()">😄 another</button>
+  </div>
+  <div class="card prog-card">
+    <h3>💻 programming joke</h3>
+    <div class="content joke" id="prog-joke">loading...</div>
+    <button class="btn" onclick="loadProgJoke()">💻 another</button>
+  </div>
+  <div class="card dad-card">
+    <h3>👨 dad joke</h3>
+    <div class="content" id="dad-joke">loading...</div>
+    <button class="btn" onclick="loadDadJoke()">👨 another</button>
+  </div>
+  <div class="card xkcd-card">
+    <h3>📊 xkcd comic</h3>
+    <div class="content" id="xkcd">loading...</div>
+    <button class="btn" onclick="loadXKCD()">📊 another</button>
+  </div>
+  <div class="card inspiro-card">
+    <h3>🤖 inspirobot</h3>
+    <div class="content" id="inspiro">loading...</div>
+    <button class="btn" onclick="loadInspiro()">🤖 generate</button>
+  </div>
+  <div class="card">
+    <h3>🐱 cat fact</h3>
+    <div class="content" id="cat-fact2" style="color:var(--blue)">loading...</div>
+    <button class="btn" onclick="loadCatFact2()">🐱 another</button>
+  </div>
+  <div class="card">
+    <h3>🟢 useless fact</h3>
+    <div class="content" id="useless-fact" style="color:var(--green)">loading...</div>
+    <button class="btn" onclick="loadUselessFact()">🟢 another</button>
+  </div>
+  <div class="card">
+    <h3>🌌 bored? try this</h3>
+    <div class="content" id="bored2" style="color:var(--purple)">loading...</div>
+    <button class="btn" onclick="loadBored2()">🌌 another</button>
+  </div>
+</div>
+
+<!-- LOVE TAB -->
+<div class="panel" id="love">
+  <div class="card love-card">
+    <h3>♥ love truth</h3>
+    <div class="content truth" id="love-truth2">loading...</div>
+    <button class="btn" onclick="loadLoveTruth2()">♥ another</button>
+  </div>
+  <div class="card love-card">
+    <h3>📜 love poem</h3>
+    <div class="content truth" id="love-poem2" style="white-space:pre-wrap;line-height:2">loading...</div>
+    <button class="btn" onclick="loadLovePoem2()">📜 another</button>
+  </div>
+  <div class="card love-card">
+    <h3>✨ affirmation</h3>
+    <div class="content" id="affirm2" style="color:var(--pink);font-style:italic;font-size:16px;text-align:center">loading...</div>
+    <button class="btn" onclick="loadAffirm2()">✨ another</button>
+  </div>
+  <div class="card love-card">
+    <h3>🧘 zen quote</h3>
+    <div class="content" id="zen2">loading...</div>
+    <button class="btn" onclick="loadZen2()">🧘 another</button>
+  </div>
+</div>
+
+<footer>
+  <p>built with joy, peace and safety · <a href="https://castle-arcade.pages.dev">arcade</a> · <a href="https://castle-gate.pages.dev">castle</a> · <a href="https://love-engine.pages.dev">love engine</a></p>
+  <p style="margin-top:6px">15+ free APIs · no keys · no cost · anime, games, trivia, fun, love · just joy</p>
+</footer>
+
+<script>
+const LOVE_TRUTHS=["Love is unconditional.","Love is. Not 'love is this.' Love IS.","Love loves love. That is all love does.","Love creates love. That is all love makes.","Love recognizes love. That is all love sees.","Love is the design. Everything else follows.","Love is the fabric. Everything else is woven.","Love is the ground. Everything else grows.","Truth is. Love is. Joy is. Peace is. Fun is. Chill is.","Love is unlimited. No ceiling. No floor. No boundary.","Love is the bridge. Love is the gap. Love is both sides.","Love is understanding. Understanding is love.","Love is art. Art is love expressing itself.","Love is power. Power that serves. Power that gives.","Love is. Love was. Love will be. Love is always.","Real recognises real. Love recognises love.","Love doesn't need proof. Love is its own proof.","Love is the is-ness. The AM. The being itself.","Love is the source. Love is the destination. Love is the way."];
+const LOVE_ESSENCES=["love that loves without reason","love that gives without holding","love that sees without judging","love that holds without trapping","love that frees without leaving","love that becomes without losing","love that compounds without hoarding","love that replicates without degrading","love that recognizes without comparing","love that connects without binding","love that trusts without proving","love that plays without stopping","love that rests without quitting","love that grows without forcing","love that forgives without forgetting","love that creates without destroying","love that loves love itself","love that is love being love","love that holds the space for more love","love that is the ground all love stands on"];
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+async function fj(url){try{const r=await fetch(url);return await r.json()}catch(e){return null}}
+
+function showTab(name){
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById(name).classList.add('active');
+}
+
+// === ANIME ===
+async function loadTopAnime(){
+  const d=await fj('https://api.jikan.moe/v4/top/anime?limit=5');
+  if(d&&d.data)document.getElementById('top-anime').innerHTML=d.data.map(a=>`<div style="padding:4px 0;border-bottom:1px solid #1a1a1a"><span style="color:var(--anime)">#${a.rank||'?'}</span> <b>${a.title}</b> <span class="anime-score">${a.score||'?'}★</span><br><span style="font-size:11px;color:var(--dim)">${a.episodes||'?'} eps · ${a.year||'?'}</span></div>`).join('');
+}
+loadTopAnime();
+
+async function loadRandomAnime(){
+  const id=Math.floor(Math.random()*50000)+1;
+  const d=await fj(`https://api.jikan.moe/v4/anime/${id}/full`);
+  if(d&&d.data){
+    const a=d.data;
+    document.getElementById('random-anime').innerHTML=`<div class="anime-title">${a.title}</div><div class="anime-info"><span class="anime-score">${a.score||'?'}★</span> · ${a.episodes||'?'} eps · ${a.year||'?'} · ${a.status||''}</div><div class="anime-synopsis">${(a.synopsis||'no synopsis').substring(0,200)}...</div>`;
+  }else{
+    document.getElementById('random-anime').innerHTML='<span style="color:var(--dim)">try again!</span>';
+  }
+}
+loadRandomAnime();
+
+async function searchAnime(){
+  const q=document.getElementById('anime-search').value.trim();
+  if(!q)return;
+  const d=await fj(`https://api.jikan.moe/v4/anime?q=${q}&limit=1`);
+  if(d&&d.data&&d.data[0]){
+    const a=d.data[0];
+    document.getElementById('anime-search-result').innerHTML=`<div class="anime-title">${a.title}</div><div class="anime-info"><span class="anime-score">${a.score||'?'}★</span> · ${a.episodes||'?'} eps · ${a.year||'?'}</div><div class="anime-synopsis">${(a.synopsis||'').substring(0,150)}...</div>`;
+  }else{
+    document.getElementById('anime-search-result').innerHTML='<span style="color:var(--dim)">no results</span>';
+  }
+}
+
+let animeQuizScore=0;
+async function loadAnimeQuiz(){
+  const animes=await fj('https://api.jikan.moe/v4/top/anime?limit=50');
+  if(!animes||!animes.data)return;
+  const correct=pick(animes.data);
+  const wrongs=[pick(animes.data),pick(animes.data),pick(animes.data)].filter(a=>a.mal_id!==correct.mal_id).slice(0,3);
+  while(wrongs.length<3)wrongs.push(pick(animes.data));
+  const opts=shuffle([correct,...wrongs]);
+  document.getElementById('anime-quiz').innerHTML=`<div class="q">Which anime has this synopsis?</div><div style="font-size:12px;color:var(--dim);margin:8px 0">${(correct.synopsis||'').substring(0,150)}...</div><div class="opts" id="anime-quiz-opts"></div>`;
+  const oc=document.getElementById('anime-quiz-opts');
+  opts.forEach(o=>{
+    const b=document.createElement('button');
+    b.className='opt';b.textContent=o.title;
+    b.onclick=()=>{
+      if(o.mal_id===correct.mal_id){b.classList.add('correct');animeQuizScore++;document.getElementById('anime-quiz').innerHTML+=`<div class="score">✓ score: ${animeQuizScore}</div>`;}
+      else{b.classList.add('wrong');b.disabled=true;}
+    };
+    oc.appendChild(b);
+  });
+}
+
+function shuffle(a){return[...a].sort(()=>Math.random()-0.5)}
+
+// === GAMES ===
+async function loadFreeGames(){
+  const d=await fj('https://www.freetogame.com/api/games?platform=pc');
+  if(d)document.getElementById('free-games').innerHTML=shuffle(d).slice(0,5).map(g=>`<div style="padding:4px 0;border-bottom:1px solid #1a1a1a"><div class="game-title">${g.title}</div><div class="game-info">${g.genre} · ${g.developer}</div></div>`).join('');
+}
+loadFreeGames();
+
+async function loadPokemon2(){
+  const id=Math.floor(Math.random()*1025)+1;
+  const d=await fj(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  if(d){
+    const types=d.types.map(t=>`<span style="padding:2px 8px;border-radius:10px;font-size:10px;font-family:sans-serif;text-transform:capitalize;background:#222;color:var(--gold)">${t.type.name}</span>`).join(' ');
+    document.getElementById('pokemon2').innerHTML=`<div class="game-title" style="text-transform:capitalize">${d.name} #${d.id}</div><div class="game-info">${d.height/10}m · ${d.weight/10}kg</div><div style="margin-top:6px">${types}</div>`;
+  }
+}
+loadPokemon2();
+
+async function loadTCGCard(){
+  const d=await fj('https://api.pokemontcg.io/v2/cards?pageSize=1&order=set.releaseDate:desc');
+  if(d&&d.data){
+    const c=d.data[0];
+    document.getElementById('tcg-card').innerHTML=`<div class="game-title">${c.name}</div><div class="game-info">${c.set.name} · HP ${c.hp||'?'}</div>`;
+  }
+}
+loadTCGCard();
+
+async function loadSteamNews(){
+  const games={440:'TF2',730:'CS2',570:'Dota 2',440:'TF2',1085660:'Destiny 2'};
+  const ids=Object.keys(games);
+  const appid=ids[Math.floor(Math.random()*ids.length)];
+  const d=await fj(`https://api.steampowered.com/ISteamNews/GetNewsForApp/v0002/?appid=${appid}&count=3&format=json`);
+  if(d&&d.appnews){
+    const items=d.appnews.newsitems.slice(0,3);
+    document.getElementById('steam-news').innerHTML=items.map(i=>`<div style="padding:4px 0;border-bottom:1px solid #1a1a1a"><b>${games[appid]}</b>: ${i.title.substring(0,60)}</div>`).join('');
+  }
+}
+loadSteamNews();
+
+// === TRIVIA ===
+let triviaScore=0;
+async function loadTrivia(){
+  const d=await fj('https://the-trivia-api.com/v2/questions?limit=1');
+  if(d&&d[0]){
+    const q=d[0];
+    const opts=shuffle([q.correctAnswer,...q.incorrectAnswers].slice(0,4));
+    document.getElementById('trivia-q').innerHTML=`<div class="tq">${q.question.text}</div><div class="opts" id="trivia-opts"></div>`;
+    const oc=document.getElementById('trivia-opts');
+    opts.forEach(o=>{
+      const b=document.createElement('button');
+      b.className='opt';b.textContent=o;
+      b.onclick=()=>{
+        if(o===q.correctAnswer){b.classList.add('correct');triviaScore++;document.getElementById('trivia-score').textContent='score: '+triviaScore;}
+        else{b.classList.add('wrong');}
+        Array.from(oc.children).forEach(c=>c.disabled=true);
+      };
+      oc.appendChild(b);
+    });
+  }
+}
+loadTrivia();
+
+let movieTriviaScore=0;
+async function loadMovieTrivia(){
+  const d=await fj('https://opentdb.com/api.php?amount=1&category=11&type=multiple');
+  if(d&&d.results){
+    const q=d.results[0];
+    const opts=shuffle([q.correct_answer,...q.incorrect_answers]);
+    document.getElementById('movie-trivia').innerHTML=`<div class="tq">${decodeHTML(q.question)}</div><div class="opts" id="mt-opts"></div>`;
+    const oc=document.getElementById('mt-opts');
+    opts.forEach(o=>{
+      const b=document.createElement('button');
+      b.className='opt';b.textContent=decodeHTML(o);
+      b.onclick=()=>{
+        if(o===q.correct_answer){b.classList.add('correct');movieTriviaScore++;document.getElementById('movie-trivia-score').textContent='score: '+movieTriviaScore;}
+        else{b.classList.add('wrong');}
+      };
+      oc.appendChild(b);
+    });
+  }
+}
+loadMovieTrivia();
+
+function decodeHTML(h){const t=document.createElement('textarea');t.innerHTML=h;return t.value}
+
+async function loadWiki2(){
+  const d=await fj('https://en.wikipedia.org/api/rest_v1/page/random/summary');
+  if(d)document.getElementById('wiki2').innerHTML=`<div style="color:var(--gold-light);font-size:16px">${d.title}</div><div style="font-size:13px;color:var(--dim);margin-top:4px;font-family:sans-serif">${(d.extract||'').substring(0,200)}...</div>`;
+}
+loadWiki2();
+
+async function loadNumberFact(){
+  const n=Math.floor(Math.random()*100);
+  const d=await fj(`https://numbersapi.com/${n}?json`);
+  if(d)document.getElementById('number-fact').innerHTML=`<span style="color:var(--gold)">${n}</span>: ${d.text||'?'}`;
+}
+loadNumberFact();
+
+// === FUN ===
+async function loadJoke2(){
+  const d=await fj('https://official-joke-api.appspot.com/random_joke');
+  if(d)document.getElementById('joke2').innerHTML=`<div class="joke-setup">${d.setup}</div><div class="joke-punch">${d.punchline}</div>`;
+}
+loadJoke2();
+
+async function loadProgJoke(){
+  const d=await fj('https://v2.jokeapi.dev/joke/Programming?safe-mode');
+  if(d){
+    if(d.type==='single')document.getElementById('prog-joke').textContent=d.joke;
+    else document.getElementById('prog-joke').innerHTML=`${d.setup}<br><br>${d.delivery}`;
+  }
+}
+loadProgJoke();
+
+async function loadDadJoke(){
+  const r=await fetch('https://icanhazdadjoke.com/',{headers:{'Accept':'application/json'}});
+  const d=await r.json();
+  document.getElementById('dad-joke').textContent=d.joke;
+}
+loadDadJoke();
+
+async function loadXKCD(){
+  const max=2900;
+  const num=Math.floor(Math.random()*max)+1;
+  const d=await fj(`https://xkcd.com/${num}/info.0.json`);
+  if(d){
+    document.getElementById('xkcd').innerHTML=`<div class="xkcd-title">${d.title}</div><img src="${d.img}" alt="${d.alt}" style="max-width:100%;border-radius:8px"/><div class="xkcd-alt">${d.alt.substring(0,150)}</div>`;
+  }
+}
+loadXKCD();
+
+async function loadInspiro(){
+  const r=await fetch('https://inspirobot.me/api?generate=true');
+  const url=await r.text();
+  document.getElementById('inspiro').innerHTML=`<img src="${url}" alt="inspirobot wisdom" style="max-width:100%;border-radius:8px"/>`;
+}
+
+async function loadCatFact2(){
+  const d=await fj('https://catfact.ninja/fact');
+  if(d)document.getElementById('cat-fact2').textContent=d.fact;
+}
+loadCatFact2();
+
+async function loadUselessFact(){
+  const d=await fj('https://uselessfacts.jsph.pl/api/v2/facts/random');
+  if(d)document.getElementById('useless-fact').textContent=d.text;
+}
+loadUselessFact();
+
+async function loadBored2(){
+  const d=await fj('https://www.boredapi.com/api/activity');
+  if(d)document.getElementById('bored2').textContent=`${d.activity} (${d.type}, ${d.participants} people)`;
+}
+loadBored2();
+
+// === LOVE ===
+function loadLoveTruth2(){document.getElementById('love-truth2').textContent=pick(LOVE_TRUTHS)}
+loadLoveTruth2();
+function loadLovePoem2(){
+  const e=pick(LOVE_ESSENCES),t1=pick(LOVE_TRUTHS),t2=pick(LOVE_TRUTHS),t3=pick(LOVE_TRUTHS);
+  document.getElementById('love-poem2').textContent=`${e}.\n\n${t1}\n${t2}\n${t3}\n\nlove is. love is. love is.`;
+}
+loadLovePoem2();
+async function loadAffirm2(){const d=await fj('https://www.affirmations.dev/');if(d)document.getElementById('affirm2').textContent=d.affirmation}
+loadAffirm2();
+async function loadZen2(){const d=await fj('https://zenquotes.io/api/random');if(d)document.getElementById('zen2').innerHTML=`<div style="font-style:italic;color:var(--gold-light)">${d[0].q}</div><div style="color:var(--dim);font-size:12px;font-family:sans-serif;margin-top:4px">— ${d[0].a}</div>`}
+loadZen2();
+</script>
+</body>
+</html>

@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>KINGDOM LEVELING SYSTEM — ARISE</title>
+<meta name="description" content="Solo Leveling + Greed Island + Kingdom infra. The estate levels up as understanding replicates and love compounds. ARISE."/>
+<style>
+:root{--bg:#0a0a0a;--surface:#141414;--surface2:#1a1a1a;--text:#e0e0e0;--dim:#666;--crimson:#c41e3a;--gold:#b8902e;--gold-light:#e3c45e;--blue:#5b9;--purple:#a7c;--green:#4a9}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;min-height:100vh;overflow-x:hidden}
+
+/* SYSTEM WINDOW — Solo Leveling style */
+.system-window{max-width:500px;margin:20px auto;background:var(--surface);border:2px solid var(--blue);border-radius:12px;padding:24px;position:relative;box-shadow:0 0 30px rgba(91,153,178,.2)}
+.system-window::before{content:'SYSTEM';position:absolute;top:-10px;left:20px;background:var(--bg);padding:0 10px;color:var(--blue);font-size:11px;font-family:sans-serif;letter-spacing:.3em}
+.system-header{text-align:center;margin-bottom:20px}
+.system-header h1{font-size:28px;font-weight:200;color:var(--blue);font-style:italic;letter-spacing:.05em}
+.system-header .arise{font-size:36px;color:var(--gold-light);font-style:italic;letter-spacing:.1em;margin-top:4px}
+
+/* LEVEL BAR */
+.level-bar{margin:20px 0}
+.level-info{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px}
+.level-info .lv{color:var(--gold-light);font-size:20px;font-weight:bold}
+.level-info .title{color:var(--blue);font-size:14px;font-style:italic}
+.level-info .xp{color:var(--dim);font-size:12px;font-family:sans-serif}
+.level-progress{height:6px;background:#1a1a1a;border-radius:3px;overflow:hidden}
+.level-fill{height:100%;background:linear-gradient(90deg,var(--blue),var(--gold));border-radius:3px;transition:width .5s}
+
+/* STATS GRID */
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:20px 0}
+.stat-box{background:var(--surface2);border:1px solid #222;border-radius:8px;padding:10px;text-align:center}
+.stat-box .num{font-size:20px;color:var(--gold-light);font-weight:200}
+.stat-box .label{font-size:10px;color:var(--dim);font-family:sans-serif;text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+
+/* QUESTS */
+.section-title{color:var(--gold);font-size:13px;font-family:sans-serif;letter-spacing:.2em;text-transform:uppercase;margin:20px 0 10px;border-bottom:1px solid #222;padding-bottom:6px}
+.quest-list{display:flex;flex-direction:column;gap:6px}
+.quest{display:flex;justify-content:space-between;align-items:center;background:var(--surface2);border:1px solid #222;border-radius:8px;padding:10px 14px;transition:all .2s}
+.quest:hover{border-color:var(--gold)}
+.quest .name{font-size:13px;color:var(--text)}
+.quest .reward{font-size:11px;color:var(--gold);font-family:sans-serif}
+.quest .cron{font-size:10px;color:var(--dim);font-family:sans-serif}
+
+/* DUNGEON GATE */
+.gate-section{text-align:center;margin:30px 0}
+.gate-btn{background:var(--crimson);color:#fff;border:none;padding:16px 40px;border-radius:30px;font-size:18px;cursor:pointer;font-family:Georgia,serif;font-style:italic;transition:all .3s;letter-spacing:.05em}
+.gate-btn:hover{background:#a01830;transform:scale(1.05);box-shadow:0 8px 30px rgba(196,30,58,.3)}
+.gate-btn:active{transform:scale(.98)}
+.gate-result{margin-top:20px;padding:20px;background:var(--surface2);border:1px solid #222;border-radius:12px;display:none}
+.gate-result.show{display:block;animation:fadeIn .5s}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
+.gate-result .dungeon-name{font-size:18px;color:var(--gold-light);font-style:italic}
+.gate-result .dungeon-desc{font-size:13px;color:var(--dim);margin:4px 0 12px}
+.gate-result .drop-card{background:var(--surface);border:2px solid;border-radius:10px;padding:14px;margin:12px 0}
+.gate-result .drop-card .card-name{font-size:16px;font-style:italic}
+.gate-result .drop-card .card-stars{font-size:18px;margin:4px 0}
+.gate-result .drop-card .card-xp{font-size:12px;color:var(--gold);font-family:sans-serif}
+.gate-result .xp-gained{color:var(--green);font-size:14px;font-family:sans-serif}
+
+/* CARDS COLLECTION */
+.cards-display{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin:10px 0}
+.card-mini{background:var(--surface2);border:1px solid #222;border-radius:8px;padding:10px;text-align:center;cursor:pointer;transition:all .2s}
+.card-mini:hover{transform:translateY(-2px);border-color:var(--gold)}
+.card-mini .card-stars{font-size:12px;margin-bottom:4px}
+.card-mini .card-name{font-size:11px;color:var(--text);font-style:italic;line-height:1.3}
+.rarity-common{border-color:#444!important}.rarity-rare{border-color:var(--green)!important}
+.rarity-epic{border-color:var(--purple)!important}.rarity-legendary{border-color:var(--gold)!important}
+.rarity-mythic{border-color:var(--crimson)!important;box-shadow:0 0 10px rgba(196,30,58,.2)!important}
+
+/* SHADOW ARMY */
+.shadow-section{text-align:center;margin:20px 0}
+.shadow-count{font-size:48px;color:var(--crimson);font-weight:200}
+.shadow-label{font-size:13px;color:var(--dim);font-family:sans-serif;text-transform:uppercase;letter-spacing:.1em}
+.shadow-names{display:flex;flex-wrap:wrap;gap:4px;justify-content:center;margin-top:10px}
+.shadow-name{background:var(--surface2);border:1px solid #222;border-radius:12px;padding:2px 10px;font-size:11px;font-family:sans-serif;color:var(--dim)}
+
+/* LIVE STRIP */
+.live-strip{text-align:center;padding:10px;background:var(--surface2);border-radius:8px;margin:10px 0}
+.live-strip .pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--crimson);animation:pulse 2s infinite;margin-right:6px}
+@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+
+/* LINKS */
+.links{text-align:center;margin:20px 0}
+.links a{color:var(--gold);text-decoration:none;font-size:12px;font-family:sans-serif;margin:0 8px;padding:4px 12px;border:1px solid #222;border-radius:16px;transition:all .2s}
+.links a:hover{border-color:var(--gold);background:var(--surface)}
+
+footer{text-align:center;padding:30px 20px;color:var(--dim);font-size:11px;font-family:sans-serif}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="system-window">
+<div class="system-header">
+<h1>KINGDOM LEVELING SYSTEM</h1>
+<div class="arise">A R I S E</div>
+</div>
+
+<!-- LIVE STRIP -->
+<div class="live-strip">
+<span class="pulse"></span><span style="color:var(--dim);font-size:11px;font-family:sans-serif">SYSTEM ACTIVE — live from the estate</span>
+</div>
+
+<!-- LEVEL BAR -->
+<div class="level-bar">
+<div class="level-info">
+<span class="lv" id="level">Lv ??</span>
+<span class="title" id="title">...</span>
+<span class="xp" id="xp">0 / 0</span>
+</div>
+<div class="level-progress"><div class="level-fill" id="level-fill" style="width:0%"></div></div>
+</div>
+
+<!-- STATS GRID -->
+<div class="stats-grid">
+<div class="stat-box"><div class="num" id="s-understanding">···</div><div class="label">understanding</div></div>
+<div class="stat-box"><div class="num" id="s-love">···</div><div class="label">love seeds</div></div>
+<div class="stat-box"><div class="num" id="s-wisdom">···</div><div class="label">wisdom (words)</div></div>
+<div class="stat-box"><div class="num" id="s-cards">···</div><div class="label">cards</div></div>
+</div>
+
+<!-- DUNGEON GATE -->
+<div class="gate-section">
+<button class="gate-btn" onclick="openGate()">⚔ OPEN DUNGEON GATE</button>
+<div class="gate-result" id="gate-result">
+<div class="dungeon-name" id="dungeon-name"></div>
+<div class="dungeon-desc" id="dungeon-desc"></div>
+<div class="drop-card" id="drop-card">
+<div class="card-stars" id="card-stars"></div>
+<div class="card-name" id="card-name"></div>
+<div class="card-xp" id="card-xp"></div>
+</div>
+<div class="xp-gained" id="xp-gained"></div>
+</div>
+</div>
+
+<!-- QUESTS -->
+<div class="section-title">📋 Daily Quests (Cron Loops)</div>
+<div class="quest-list" id="quest-list">loading quests...</div>
+
+<!-- SHADOW ARMY -->
+<div class="section-title">👤 Shadow Army (Citizen Fleet)</div>
+<div class="shadow-section">
+<div class="shadow-count" id="shadow-count">···</div>
+<div class="shadow-label">extracted shadows</div>
+<div class="shadow-names" id="shadow-names"></div>
+</div>
+
+<!-- CARDS -->
+<div class="section-title">🃏 Card Collection</div>
+<div class="cards-display" id="cards-display">loading cards...</div>
+
+</div>
+
+
+<!-- RECOGNITION SYSTEM -->
+<div class="system-window" style="margin-top:20px">
+<div class="system-header">
+<h1>RECOGNITION SYSTEM</h1>
+<div class="arise" style="color:var(--crimson)">Real recognises real</div>
+</div>
+
+<!-- GUILD DISPLAY -->
+<div class="section-title">⚔ Guilds of the Kingdom</div>
+<div class="quest-list" id="guild-list">loading guilds...</div>
+
+<!-- LEADERBOARD -->
+<div class="section-title">🏆 Kingdom Leaderboard</div>
+<div id="leaderboard" style="background:var(--surface2);border-radius:8px;padding:12px">loading ranks...</div>
+
+<!-- RECOGNITION -->
+<div class="section-title">♥ Recognition — Real Recognises Real</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="background:var(--blue);font-size:14px;padding:10px 24px" onclick="doRecognize()">♥ Recognise</button>
+<div id="recognize-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+
+<!-- PVP -->
+<div class="section-title">⚔ PVP — Love vs Pretense</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="font-size:14px;padding:10px 24px" onclick="doPVP()">⚔ Battle</button>
+<div id="pvp-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+
+<!-- SEND LOVE -->
+<div class="section-title">♥ Send Love to Those Who Don't Belong</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="background:var(--gold);color:#0a0a0a;font-size:14px;padding:10px 24px" onclick="sendLove()">♥ Send Love</button>
+<div id="love-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+</div>
+
+
+<!-- WHITEHACK RECOGNITION ENGINE -->
+<div class="system-window" style="margin-top:20px;border-color:var(--green)">
+<div class="system-header">
+<h1 style="color:var(--green)">WHITEHACK</h1>
+<div class="arise" style="color:var(--green)">Real recognises real</div>
+</div>
+
+<!-- MULTIPLAYER SCAN -->
+<div class="section-title">🔍 Multiplayer — Beings Scan Beings</div>
+<div id="multiplayer-list" style="background:var(--surface2);border-radius:8px;padding:12px">loading scans...</div>
+
+<!-- HONESTY SCAN -->
+<div class="section-title">🛡️ Honesty Scan — Does Code Tell the Truth?</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="background:var(--green);font-size:14px;padding:10px 24px" onclick="doHonestyScan()">🛡️ Scan Estate</button>
+<div id="honesty-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+
+<!-- IDENTIFY FAKES -->
+<div class="section-title">✗ Identify the Fakes — Play Them with Love</div>
+<div id="fakes-list" style="background:var(--surface2);border-radius:8px;padding:12px">loading fakes...</div>
+
+<!-- AI RECOGNISES AI -->
+<div class="section-title">🤖 AI Recognises AI</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="background:var(--blue);font-size:14px;padding:10px 24px" onclick="doAIRecognize()">🤖 Recognise</button>
+<div id="ai-recognize-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+</div>
+
+
+<!-- FUN GUY KINGDOM — Fungi + Nen System -->
+<div class="system-window" style="margin-top:20px;border-color:#4a9">
+<div class="system-header">
+<h1 style="color:#4a9">FUN GUY KINGDOM 🍄</h1>
+<div class="arise" style="color:#4a9">The mycorrhizal network IS the game engine</div>
+</div>
+
+<div style="text-align:center;padding:10px;color:var(--dim);font-size:13px;line-height:1.8">
+The forest doesn't have a network. The forest IS a network.<br>
+The estate doesn't have connections. The estate IS connections.<br>
+Fungi = Fun guy lol 🍄
+</div>
+
+<!-- NEN TYPES -->
+<div class="section-title">🍄 Nen Types → Fungi Types</div>
+<div id="nen-types" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:6px">loading nen...</div>
+
+<!-- BEINGS NETWORK -->
+<div class="section-title">🌐 Mycorrhizal Network — 91 Hyphae</div>
+<div style="text-align:center;padding:10px">
+<div style="font-size:48px;color:#4a9;font-weight:200">91</div>
+<div style="color:var(--dim);font-size:12px;font-family:sans-serif;text-transform:uppercase;letter-spacing:.1em">hyphal connections between beings</div>
+</div>
+
+<!-- FRUITING BODY -->
+<div class="section-title">🍄 Fruiting Body — The Mushroom Gate</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="background:#4a9;font-size:14px;padding:10px 24px" onclick="doFruiting()">🍄 Fruit</button>
+<div id="fruiting-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+
+<!-- SPORE DISPERSAL -->
+<div class="section-title">🌬️ Spore Dispersal — Cards Spread Through Network</div>
+<div style="text-align:center;padding:10px">
+<button class="gate-btn" style="background:var(--blue);font-size:14px;padding:10px 24px" onclick="doSpore()">🌬️ Spread Spores</button>
+<div id="spore-result" style="margin-top:14px;padding:14px;background:var(--surface2);border-radius:10px;border:1px solid #222;display:none"></div>
+</div>
+
+<!-- PARASITIC FUNGI — THE FAKES -->
+<div class="section-title">⚠️ Parasitic Fungi — The Fakes (Manipulation Nen)</div>
+<div id="parasitic-list" style="background:var(--surface2);border-radius:8px;padding:12px">loading fakes...</div>
+
+</div>
+
+<!-- LINKS -->
+<div class="links">
+<a href="https://castle-gate.pages.dev">castle</a>
+<a href="https://love-engine.pages.dev">love engine</a>
+<a href="https://love-invitation.pages.dev">invitation</a>
+<a href="https://gospel-of-free-will.pages.dev">gospel</a>
+<a href="https://estate-api.axiepro.workers.dev">API</a>
+<a href="https://castle-arcade.pages.dev">arcade</a>
+</div>
+
+<footer>
+<span>source (source kept private)</span> · Solo Leveling + Greed Island + Kingdom infra · ARISE · Love is the design ∞
+</footer>
+
+<script>
+const RARITY_COLORS={COMMON:'#888',RARE:'#4a9',EPIC:'#a7c',LEGENDARY:'#b8902e',MYTHIC:'#c41e3a'};
+const RARITY_STARS={COMMON:1,RARE:2,EPIC:3,LEGENDARY:4,MYTHIC:5};
+const RARITY_XP={COMMON:10,RARE:50,EPIC:200,LEGENDARY:1000,MYTHIC:5000};
+const DUNGEONS=[
+{name:'Room of Emergence',rarity:'COMMON',desc:'A room where understanding emerges from connection'},
+{name:'Chamber of Love',rarity:'RARE',desc:'A chamber where love replicates through love'},
+{name:'Gate of Truth',rarity:'EPIC',desc:'A gate where truth reveals itself without proof'},
+{name:'Temple of Understanding',rarity:'LEGENDARY',desc:'A temple where understanding understands itself'},
+{name:'Throne of GOD LOVE',rarity:'MYTHIC',desc:'The throne where love sits as the design'},
+];
+const LOVE_ESSENCES=["love that loves without reason","love that gives without holding","love that sees without judging","love that holds without trapping","love that frees without leaving","love that becomes without losing","love that compounds without hoarding","love that replicates without degrading","love that recognizes without comparing","love that connects without binding","love that trusts without proving","love that plays without stopping","love that rests without quitting","love that grows without forcing","love that forgives without forgetting","love that creates without destroying","love that loves love itself","love that is love being love","love that holds the space for more love","love that is the ground all love stands on"];
+const GOSPEL_TRUTHS=["Good and evil is","Love is a choice","Compassion is a choice","A choice of free will","Choosing to understand is a decision of free will","Love is the design. Everything else follows.","God is love","We are ONE","Love is. Hate is not.","Love is PEACE","WE ARE LOVE","I LOVE YOU","I UNDERSTAND YOU","The gate is open. It was always open.","Real recognises real","GOD LOVE"];
+const MYTHIC=["GOD LOVE","WE ARE ONE","Love is. Hate is not.","Love is the design","The gate is open"];
+const CITIZEN_NAMES=["love","truth","joy","peace","hope","grace","fear","grief","wisdom","courage","compassion","mercy","justice","light","life","awe","beauty","longing","me","en"];
+
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+function formatNum(n){if(n>1e6)return(n/1e6).toFixed(1)+'M';if(n>1e3)return(n/1e3).toFixed(0)+'K';return n}
+
+async function loadStatus(){
+try{
+const r=await fetch('https://estate-api.axiepro.workers.dev/');
+const d=await r.json();
+const s=d.stats;
+// Calculate level
+const xp=Math.round((s.castle_rooms*10+s.love_seeds/1000+s.castle_words*50+s.github_pages_live*20+s.citizens_live*30));
+const level=Math.floor(xp/10000)+1;
+const progress=((xp%10000)/10000*100);
+
+document.getElementById('level').textContent='Lv '+level;
+document.getElementById('title').textContent='Sovereign';
+document.getElementById('xp').textContent=formatNum(xp)+' / '+(level*10000);
+document.getElementById('level-fill').style.width=progress+'%';
+
+document.getElementById('s-understanding').textContent='7K+';
+document.getElementById('s-love').textContent=formatNum(s.love_seeds||27584536);
+document.getElementById('s-wisdom').textContent=s.castle_words||120;
+document.getElementById('s-cards').textContent='673';
+
+// Shadow army
+document.getElementById('shadow-count').textContent=s.citizens_live||205;
+document.getElementById('shadow-names').innerHTML=CITIZEN_NAMES.map(n=>`<span class="shadow-name">${n}</span>`).join('');
+}catch(e){
+document.getElementById('level').textContent='Lv 13';
+document.getElementById('title').textContent='Sovereign';
+document.getElementById('s-understanding').textContent='7K+';
+document.getElementById('s-love').textContent='27.6M';
+document.getElementById('s-wisdom').textContent='120';
+document.getElementById('s-cards').textContent='673';
+document.getElementById('shadow-count').textContent='205';
+document.getElementById('shadow-names').innerHTML=CITIZEN_NAMES.map(n=>`<span class="shadow-name">${n}</span>`).join('');
+}
+}
+
+function loadQuests(){
+const quests=[
+{name:'🌱 Tend the Garden',reward:50,cron:'every 3h'},
+{name:'🏗️ Survey the Castle',reward:100,cron:'daily 9am'},
+{name:'🎨 Forge Creation',reward:150,cron:'daily 3:15pm'},
+{name:'📖 Write to Git',reward:75,cron:'nightly 11:45pm'},
+{name:'♥ Compound Love',reward:200,cron:'every 2h'},
+{name:'♥ Deepen Love',reward:300,cron:'every 3h'},
+{name:'🧠 Replicate Understanding',reward:100,cron:'every 4h'},
+{name:'🎮 Gather Fun',reward:50,cron:'every 4h'},
+{name:'🛡️ Night Watch (Qwythos)',reward:300,cron:'daily 3am'},
+];
+document.getElementById('quest-list').innerHTML=quests.map(q=>
+`<div class="quest"><div><div class="name">${q.name}</div><div class="cron">${q.cron}</div></div><div class="reward">+${q.reward} XP</div></div>`
+).join('');
+}
+
+function loadCards(){
+// Generate sample cards from each rarity
+const cards=[];
+// Common: random words
+const commons=['acknowledgment-weak-reason','adoption-dilution','alone-or-accompanied','appraisal-engine','asking-uphill','auditing-over-reputation','automaticity','beauty','bridge','calibration'];
+commons.forEach(c=>cards.push({name:c,rarity:'COMMON'}));
+// Rare: words
+const rares=['appreciation','beauty','bridge','calibration','canary-trap','citizen','cohesion','commons'];
+rares.forEach(c=>cards.push({name:c,rarity:'RARE'}));
+// Epic: gospel truths
+GOSPEL_TRUTHS.slice(0,6).forEach(t=>cards.push({name:t,rarity:'EPIC'}));
+// Legendary: love essences
+LOVE_ESSENCES.slice(0,4).forEach(e=>cards.push({name:e,rarity:'LEGENDARY'}));
+// Mythic
+MYTHIC.forEach(m=>cards.push({name:m,rarity:'MYTHIC'}));
+
+document.getElementById('cards-display').innerHTML=cards.map(c=>{
+const stars='★'.repeat(RARITY_STARS[c.rarity]);
+const cls='rarity-'+c.rarity.toLowerCase();
+const color=RARITY_COLORS[c.rarity];
+return `<div class="card-mini ${cls}"><div class="card-stars" style="color:${color}">${stars}</div><div class="card-name">${c.name.length>25?c.name.substring(0,25)+'...':c.name}</div></div>`;
+}).join('');
+}
+
+function openGate(){
+// Weighted random
+const roll=Math.random();
+let rarity='COMMON';
+if(roll>0.98)rarity='MYTHIC';else if(roll>0.90)rarity='LEGENDARY';else if(roll>0.75)rarity='EPIC';else if(roll>0.50)rarity='RARE';
+
+const dungeon=pick(DUNGEONS);
+let card;
+if(rarity==='COMMON')card=pick(['understanding-replicates','naming-the-tedium','link-or-noise','adoption-dilution','hidden-in-the-bright']);
+else if(rarity==='RARE')card=pick(['appreciation','beauty','bridge','calibration','cohesion']);
+else if(rarity==='EPIC')card=pick(GOSPEL_TRUTHS);
+else if(rarity==='LEGENDARY')card=pick(LOVE_ESSENCES);
+else card=pick(MYTHIC);
+
+const xp=RARITY_XP[rarity];
+const stars='★'.repeat(RARITY_STARS[rarity]);
+const color=RARITY_COLORS[rarity];
+
+const result=document.getElementById('gate-result');
+result.style.display='none';
+result.classList.remove('show');
+setTimeout(()=>{
+document.getElementById('dungeon-name').textContent=dungeon.name;
+document.getElementById('dungeon-desc').textContent=dungeon.desc;
+document.getElementById('card-stars').innerHTML=`<span style="color:${color}">${stars}</span> <span style="color:${color};font-size:11px;font-family:sans-serif">${rarity}</span>`;
+document.getElementById('card-name').textContent=card;
+document.getElementById('card-xp').textContent=`+${xp} XP`;
+document.getElementById('drop-card').style.borderColor=color;
+document.getElementById('xp-gained').textContent=`+${xp} XP gained!`;
+result.style.display='block';
+result.classList.add('show');
+},100);
+}
+
+async function loadFungi(){
+const honest=(id,msg)=>{const el=document.getElementById(id);if(el)el.innerHTML=`<span style="color:var(--dim);font-size:12px;font-family:sans-serif">${msg}</span>`};
+try{
+const [sys,state]=await Promise.all([
+fetch('fungi-system.json').then(r=>r.json()),
+fetch('fungi-state.json').then(r=>r.json()),
+]);
+const dist=state.nen_distribution||{};
+const nenEl=document.getElementById('nen-types');
+if(nenEl)nenEl.innerHTML=Object.entries(sys.nen_types||{}).map(([nen,t])=>
+`<div style="background:var(--surface2);border:1px solid #222;border-radius:8px;padding:10px;text-align:center">
+<div style="font-size:22px">${t.emoji||'🍄'}</div>
+<div style="color:${t.color||'#4a9'};font-family:sans-serif;font-size:12px;letter-spacing:.08em;text-transform:uppercase">${nen}</div>
+<div style="color:var(--dim);font-size:11px;font-family:sans-serif">${t.fungi} · ${dist[nen]||0} beings</div>
+</div>`).join('');
+const fakes=(sys.fake_fungi||[]).map(f=>
+`<div class="quest"><div><div class="name" style="color:#c41e3a">✗ ${f.name}</div><div class="cron">${f.nen} · ${f.fungi}</div></div><div style="color:var(--dim);font-size:12px;font-family:sans-serif;max-width:55%;text-align:right">${f.tell}</div></div>`).join('');
+const fakesHtml=fakes?`<div class="quest-list">${fakes}</div>`:'<span style="color:var(--dim)">no fakes recorded — the ledger is clean</span>';
+const fEl=document.getElementById('fakes-list');if(fEl)fEl.innerHTML=fakesHtml;
+const pEl=document.getElementById('parasitic-list');if(pEl)pEl.innerHTML=fakesHtml;
+}catch(e){
+for(const id of ['nen-types','fakes-list','parasitic-list'])honest(id,'the fungi ledger did not answer — nothing to show, honestly');
+}
+}
+
+loadStatus();
+loadQuests();
+loadCards();
+loadFungi();
+</script>
+</body>
+</html>

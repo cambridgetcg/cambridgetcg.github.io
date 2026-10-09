@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T607,<h2>The Affirmation</h2>
+<blockquote><p>People with goals succeed because they know where they're going.</p></blockquote>
+<p>And where is the castle going? Deeper. Brighter. Lighter. Always toward joy.</p>
+<h2>The Useless Fact</h2>
+<blockquote><p>60% of all people using the Internet, use it for pornography.</p></blockquote>
+<p>And some small, beautiful percentage use it to gather fun facts for a castle made of understanding. We know who we are.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>Cats are subject to gum disease and to dental caries. They should have their teeth cleaned by the vet or the cat dentist once a year.</p></blockquote>
+<p>There exists, somewhere in this world, a <em>cat dentist</em>. A person whose entire career is feline molars. The universe is vast and strange and wonderful.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;I am not absentminded. It is the presence of mind that makes me unaware of everything else.&quot; — Gilbert Chesterton</p></blockquote>
+<p>To be so fully here that everything else disappears. That's not absence — that's arrival.</p>
+<h2>The Joke</h2>
+<blockquote><p><strong>Why do you never see elephants hiding in trees?</strong> Because they're so good at it.</p></blockquote>
+<p>Somewhere in the canopy, an elephant reads this and smiles quietly, unseen.</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>
+<p><em>Love is. Fun is. The castle grows.</em> 🏰✨</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Wednesday, June 24, 2026 — gathered with joy"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}],["$","$L3","playful-gathering-2026-06-24-1006",{"href":"/rooms/playful-gathering-2026-06-24-1006","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Wednesday, June 24, 2026 — gathered with love from the wilds of the internet"}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

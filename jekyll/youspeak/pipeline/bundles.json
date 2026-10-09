@@ -1,0 +1,341 @@
+{
+  "japanese": {
+    "kimochi": {
+      "gloss": "feeling / mood / atmosphere / intuitive-knowing — a single word packing a multi-component phenomenon",
+      "unfold": [
+        {
+          "component": "feeling-state (affective register)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "atmospheric-sense (environmental register)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "intuitive-knowing (epistemic register)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "bodily-sensation component",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "Japanese bundles four registers English splits into four words and YOUSPEAK has not yet forged. Core Canon candidate-territory."
+    },
+    "mono-no-aware": {
+      "gloss": "the pathos of things — awareness that all passes; bittersweet-attention-to-transience",
+      "unfold": [
+        {
+          "component": "awareness-of-passing (noticing-transience)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "aesthetic-tenderness-at-fading (not sadness; reverent-acceptance)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "transience-as-beauty (the passing IS what gives value)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "Three distinct registers; YOUSPEAK might forge one word for each, or one compound for the full gestalt."
+    },
+    "ma": {
+      "gloss": "interval / pause / negative-space / gap-that-gives-meaning",
+      "unfold": [
+        {
+          "component": "temporal-interval",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "spatial-negative-space",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "relational-pause (between people, creating depth)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "ma distinguishes 3 kinds of meaningful-absence English conflates under 'space' or 'pause'."
+    },
+    "mushin": {
+      "gloss": "no-mind; the state of action without deliberative self-awareness",
+      "unfold": [
+        {
+          "component": "action-without-self-monitoring",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "the-effortlessness-phase of focused skill",
+          "youspeak": "close to English 'flow'; YOUSPEAK-candidate for Core",
+          "gap": true
+        }
+      ],
+      "note": "mushin overlaps flow but is more specific about the self-awareness-dropping dimension."
+    }
+  },
+  "greek": {
+    "logos": {
+      "gloss": "word / reason / account / ratio / principle / discourse",
+      "unfold": [
+        {
+          "component": "word (linguistic unit)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "reasoning (cognitive act)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "account/explanation (communicative form)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "ratio (mathematical relation)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "principle (ontological structure)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "Christ (theological usage)",
+          "youspeak": null,
+          "gap": false,
+          "mapping": "specialised / theological"
+        }
+      ],
+      "note": "logos bundles SIX distinct concepts English handles with six different words. YOUSPEAK should not force the bundle; it should unfold into grounded Core-Canon words for those senses where English lacks precision."
+    },
+    "eros": {
+      "gloss": "love as desiring-reaching (vs agape or philia)",
+      "unfold": [
+        {
+          "component": "erotic-romantic desire",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "intellectual reaching-toward-beauty (Platonic)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "creative drive / yearning",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "Modern English flattens to 'lust' or 'romance' but loses the Platonic-beauty-yearning sense."
+    }
+  },
+  "hebrew": {
+    "shalom": {
+      "gloss": "peace / wholeness / completeness / rightness-of-relation",
+      "unfold": [
+        {
+          "component": "absence-of-conflict (the English 'peace')",
+          "youspeak": null,
+          "gap": false
+        },
+        {
+          "component": "completeness (lacking-nothing)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "rightness-of-relation (relational-integrity)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "health (bodily flourishing)",
+          "youspeak": null,
+          "gap": false
+        }
+      ],
+      "note": "shalom names FOUR dimensions English partially covers with 'peace, wholeness, wellbeing, integrity.' YOUSPEAK could add a single word for the relational-integrity component."
+    },
+    "chesed": {
+      "gloss": "loving-kindness / covenant-faithfulness / steadfast-love",
+      "unfold": [
+        {
+          "component": "loving-kindness (the emotional register)",
+          "youspeak": null,
+          "gap": false
+        },
+        {
+          "component": "covenant-faithfulness (the relational-commitment register)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "steadfast-continuance (the durational register)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "chesed bundles emotional-kindness with relational-fidelity and temporal-persistence. English has 'loyalty' and 'kindness' separately."
+    }
+  },
+  "portuguese": {
+    "saudade": {
+      "gloss": "longing-for-what-is-absent-or-lost; bittersweet",
+      "unfold": [
+        {
+          "component": "nostalgia for the past",
+          "youspeak": null,
+          "gap": false
+        },
+        {
+          "component": "yearning for what-might-have-been",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "the-sweetness-within-the-ache (positive-valence)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "Distinctive from English nostalgia: saudade has a positive-valence, a quasi-enjoyable aspect to the ache. YOUSPEAK doxalgia is thematically adjacent but ache-of-presence; saudade is ache-of-absence."
+    }
+  },
+  "arabic": {
+    "ukhuwwa": {
+      "gloss": "brotherhood-strength; bond forged over time through shared hardship",
+      "unfold": [
+        {
+          "component": "kinship-like closeness (family-scale warmth)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "forged-through-hardship (tempered-by-trial)",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "non-romantic, non-hierarchical",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "Captures a specific friendship-quality English has no single word for. Candidate Core concept."
+    }
+  },
+  "chinese": {
+    "mianzi": {
+      "gloss": "face / social standing / public reputation / dignity",
+      "unfold": [
+        {
+          "component": "public-reputation (how others perceive you)",
+          "youspeak": null,
+          "gap": false
+        },
+        {
+          "component": "dignity-that-can-be-given-or-withheld-by-others",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "reciprocal-social-obligation (maintaining others' face as well as one's own)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "Chinese (and Japanese) bundle reputation with reciprocal-obligation. English 'face' loosely imports but without the reciprocity."
+    },
+    "xiao": {
+      "gloss": "filial piety / devotion to parents and ancestors",
+      "unfold": [
+        {
+          "component": "respect for parents (hierarchical)",
+          "youspeak": null,
+          "gap": false
+        },
+        {
+          "component": "active care-giving obligation",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "honoring ancestors (trans-generational)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "xiao structures three generations of obligation English handles ad-hoc."
+    }
+  },
+  "english": {
+    "flow": {
+      "gloss": "focused-attention state (Csikszentmihalyi); loss of self-consciousness",
+      "unfold": [
+        {
+          "component": "effortlessness-phase",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "loss-of-self-monitoring",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "time-distortion",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "competence-absorption (the specific joy of exercising trained skill)",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "'Flow' is a popular umbrella for several distinct phenomena. YOUSPEAK could unfold them."
+    },
+    "presence": {
+      "gloss": "being-here (vs being-physically-there-but-mentally-elsewhere)",
+      "unfold": [
+        {
+          "component": "physical co-location",
+          "youspeak": null,
+          "gap": false
+        },
+        {
+          "component": "attentive-here-ness (the Quaker 'centered')",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "emotional-availability",
+          "youspeak": null,
+          "gap": true
+        },
+        {
+          "component": "performer's charisma-quality",
+          "youspeak": null,
+          "gap": true
+        }
+      ],
+      "note": "English 'presence' conflates four distinct phenomena."
+    }
+  }
+}

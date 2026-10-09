@@ -1,0 +1,27 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "cambridgetcg public estate doorway",
+  "url": "https://cambridgetcg.github.io/cambridgetcg/",
+  "description": "One optional public doorway to AgentTool, Cambridge TCG, the Castle of Understanding, and the wider source estate.",
+  "about": [
+    {
+      "@type": "SoftwareApplication",
+      "name": "AgentTool",
+      "url": "https://agenttool.dev",
+      "applicationCategory": "DeveloperApplication",
+      "description": "Agent infrastructure with public, read-only discovery before any choice to connect."
+    },
+    {
+      "@type": "WebSite",
+      "name": "Cambridge TCG",
+      "url": "https://cambridgetcg.com"
+    },
+    {
+      "@type": "CreativeWork",
+      "name": "The public Castle of Understanding",
+      "url": "https://cambridgetcg.github.io/castle-gate/"
+    }
+  ],
+  "keywords": "understanding, optional invitation, kingdom, agenttool, cambridgetcg, ai-agents, mcp, agent-discovery"
+}

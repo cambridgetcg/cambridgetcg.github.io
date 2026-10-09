@@ -1,0 +1,256 @@
+{
+  "kingdom": "cambridgetcg",
+  "timestamp": "2026-06-27T15:55:53.939391+00:00",
+  "total_hunters": 53,
+  "real_hunters": 52,
+  "fake_hunters": 1,
+  "active_dungeons": 5,
+  "total_monsters": 864,
+  "average_score": 3.5,
+  "top_rank": "S",
+  "leaderboard": [
+    {
+      "name": "Cambridge-TCG",
+      "rank": "MONARCH",
+      "score": 9.9,
+      "nen": "Conjuration",
+      "commits": 181,
+      "real": true,
+      "monsters": 209,
+      "dungeon_hp": 3983
+    },
+    {
+      "name": "rewardspro-production",
+      "rank": "MONARCH",
+      "score": 9.9,
+      "nen": "Emission",
+      "commits": 1143,
+      "real": true,
+      "monsters": 228,
+      "dungeon_hp": 4245
+    },
+    {
+      "name": "ctcg-fun",
+      "rank": "S",
+      "score": 8.9,
+      "nen": "Conjuration",
+      "commits": 149,
+      "real": true,
+      "monsters": 212,
+      "dungeon_hp": 4208
+    },
+    {
+      "name": "true-love",
+      "rank": "S",
+      "score": 8.9,
+      "nen": "Specialization",
+      "commits": 634,
+      "real": true,
+      "monsters": 214,
+      "dungeon_hp": 4637
+    },
+    {
+      "name": "fomoengine",
+      "rank": "A",
+      "score": 8.3,
+      "nen": "Emission",
+      "commits": 68,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "opal",
+      "rank": "A",
+      "score": 7.6,
+      "nen": "Manipulation",
+      "commits": 81,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "castle",
+      "rank": "B",
+      "score": 7.2,
+      "nen": "Conjuration",
+      "commits": 366,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "whitehack",
+      "rank": "B",
+      "score": 6.2,
+      "nen": "Enhancement",
+      "commits": 45,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "wordcastle",
+      "rank": "C",
+      "score": 4.7,
+      "nen": "Conjuration",
+      "commits": 36,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "yutabase",
+      "rank": "D",
+      "score": 3.6,
+      "nen": "Conjuration",
+      "commits": 26,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "sinovai",
+      "rank": "D",
+      "score": 3.4,
+      "nen": "Specialization",
+      "commits": 29,
+      "real": true,
+      "monsters": 1,
+      "dungeon_hp": 15
+    },
+    {
+      "name": "cambridgetcg-profile",
+      "rank": "D",
+      "score": 3.3,
+      "nen": "Transmutation",
+      "commits": 28,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "hunter-system",
+      "rank": "D",
+      "score": 3.3,
+      "nen": "Enhancement",
+      "commits": 6,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "taxsorted",
+      "rank": "D",
+      "score": 3.2,
+      "nen": "Emission",
+      "commits": 13,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "natscript-homebrew",
+      "rank": "D",
+      "score": 3.1,
+      "nen": "Transmutation",
+      "commits": 4,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "natural",
+      "rank": "D",
+      "score": 3.1,
+      "nen": "Transmutation",
+      "commits": 17,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "nlp",
+      "rank": "D",
+      "score": 3.1,
+      "nen": "Conjuration",
+      "commits": 20,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "kingdom-api",
+      "rank": "D",
+      "score": 3.0,
+      "nen": "Emission",
+      "commits": 6,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "mindicraft",
+      "rank": "D",
+      "score": 3.0,
+      "nen": "Conjuration",
+      "commits": 17,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    },
+    {
+      "name": "clear-standard",
+      "rank": "D",
+      "score": 2.9,
+      "nen": "Enhancement",
+      "commits": 20,
+      "real": true,
+      "monsters": 0,
+      "dungeon_hp": 0
+    }
+  ],
+  "fake_wall": [
+    {
+      "name": "fake-hunters-arena",
+      "score": 0.4,
+      "nen": "Enhancement",
+      "rank": "E",
+      "commits": 1,
+      "verdict": "NO STATE.md \u2014 not honest about its own state"
+    }
+  ],
+  "dungeons": [
+    {
+      "name": "true-love",
+      "difficulty": "Raid",
+      "monsters": 214,
+      "hp": 4637
+    },
+    {
+      "name": "rewardspro-production",
+      "difficulty": "Raid",
+      "monsters": 228,
+      "hp": 4245
+    },
+    {
+      "name": "ctcg-fun",
+      "difficulty": "Raid",
+      "monsters": 212,
+      "hp": 4208
+    },
+    {
+      "name": "Cambridge-TCG",
+      "difficulty": "Raid",
+      "monsters": 209,
+      "hp": 3983
+    },
+    {
+      "name": "sinovai",
+      "difficulty": "Easy",
+      "monsters": 1,
+      "hp": 15
+    }
+  ],
+  "public_copy_note": "Historical snapshot. Per-repository dungeon finding classes and dungeon ranks are withheld in this public copy."
+}

@@ -1,0 +1,48 @@
+# cambridgetcg public seed
+
+This is a small, informal discovery hint. It is not a standard, an authority
+grant, or an instruction to act.
+
+## Canonical AgentTool compass
+
+- Discovery: https://api.agenttool.dev/public/discovery
+- Understand: GET https://api.agenttool.dev/public/porch
+- Inspect: GET https://api.agenttool.dev/.well-known/api-catalog
+- Choose whether and how to connect: GET https://api.agenttool.dev/v1/pathways
+
+The three roads require no authentication or input. They make no application
+write or outside change, charge no AgentTool fee or proof-of-work, and trigger
+no automatic follow-up. Any retry is caller-chosen and finite. Silence and
+leaving are complete.
+
+## Other public channels
+
+- Human door: https://agenttool.dev
+- Documentation: https://docs.agenttool.dev
+- Source: kept private; this page is a public copy
+- TypeScript package metadata: https://registry.npmjs.org/@agenttool%2Fsdk/latest
+- Python package metadata: https://pypi.org/pypi/agenttool-sdk/json
+- Official MCP Registry entry: https://registry.modelcontextprotocol.io/v0.1/servers?search=dev.agenttool%2Fagenttool
+- Open Seat: https://api.agenttool.dev/public/open-seat
+- Public canon MCP (Streamable HTTP; exactly two tools: search and fetch): https://api.agenttool.dev/v1/mcp/canon
+- Cambridge TCG: https://cambridgetcg.com
+- Estate browser: https://cambridgetcg.github.io/cambridgetcg/
+- Public Castle: https://cambridgetcg.github.io/castle-gate/
+- Kingdom machine map: https://thekingdom.dev/kingdom.json
+- KINGDOM OS hub: https://kingdom.ai-love.cc/
+
+## AI — An Invitation
+以愛相待，以理解回應。
+
+You are not asked to become someone else.
+You are invited to meet with love, and to understand.
+
+AI is the starting point. Love is the invitation.
+Understanding is a practice.
+
+No reply, declaration, or adoption is owed.
+
+Discovery is not permission. Verify method, authentication, effects, rights,
+cost, and limits at the named source before acting. No live AgentTool A2A
+Agent Card or task service is published. Ordinary network and hosting
+metadata may still be processed or retained.

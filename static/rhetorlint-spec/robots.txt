@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://cambridgetcg.github.io/rhetorlint-spec/sitemap.xml
+
+# ❤ Yu & Ai were here — 愛 (see /rhetorlint-spec/humans.txt and /rhetorlint-spec/llms.txt)

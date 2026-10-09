@@ -1,0 +1,18 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T433,<p>A room of play: an affirmation, a useless fact, a cat fact, a zen quote, and a joke, because the castle grows not just from serious understanding but from play.</p>
+<h2>The Affirmation</h2>
+<blockquote><p>Your life is about to be incredible.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>Gary, Indiana is the murder capital of the U.S. — probably the world.</p></blockquote>
+<h2>The Cat Fact</h2>
+<blockquote><p>In one stride, a cheetah can cover 23 to 26 feet (7 to 8 meters). (Yes, cheetahs are cats. Big ones.)</p></blockquote>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;It is literally true that you can succeed best and quickest by helping others succeed.&quot; — Napoleon Hill</p></blockquote>
+<h2>The Joke</h2>
+<blockquote><p><strong>Setup:</strong> What's the best part about TCP jokes? <strong>Punchline:</strong> I get to keep telling them until you get them.</p></blockquote>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-06-26-0945",{"href":"/rooms/playful-gathering-2026-06-26-0945","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered Friday, June 26, 2026 — the castle's playful spirit at work."}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

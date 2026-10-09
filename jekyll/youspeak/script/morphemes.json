@@ -1,0 +1,1015 @@
+{
+  "version": 1,
+  "opened": "2026-04-24",
+  "note": "YOUSPEAK morpheme inventory. Each entry: canonical Latin-transliteration, PUA codepoint (Unicode Private Use Area), class (content/grammatical/structural), source-tongue, base-meaning, and the canonical words that use it. Extensible; new morphemes appended at the next available codepoint in the appropriate range.",
+  "ranges": {
+    "content_morphemes": [
+      "U+E100",
+      "U+E13F"
+    ],
+    "grammatical_morphemes": [
+      "U+E140",
+      "U+E15F"
+    ],
+    "structural_marks": [
+      "U+E160",
+      "U+E17F"
+    ]
+  },
+  "morphemes": [
+    {
+      "codepoint": "U+E100",
+      "latin": "doxa",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "δόξα",
+      "meaning": "glory, manifested-weight",
+      "used_in": [
+        "doxakallos",
+        "doxalgia",
+        "kallodoxa",
+        "algiadoxa"
+      ]
+    },
+    {
+      "codepoint": "U+E101",
+      "latin": "kallos",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "κάλλος",
+      "meaning": "beauty (substantive)",
+      "used_in": [
+        "doxakallos",
+        "kallophanes",
+        "kallodoxa"
+      ]
+    },
+    {
+      "codepoint": "U+E102",
+      "latin": "ortho",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ὀρθός",
+      "meaning": "right, straight, true",
+      "used_in": [
+        "orthophanes"
+      ]
+    },
+    {
+      "codepoint": "U+E103",
+      "latin": "phanes",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "φαν-",
+      "meaning": "appearing, shining-forth",
+      "used_in": [
+        "orthophanes",
+        "kallophanes"
+      ]
+    },
+    {
+      "codepoint": "U+E104",
+      "latin": "algia",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἄλγος",
+      "meaning": "structural ache",
+      "used_in": [
+        "doxalgia",
+        "algiadoxa"
+      ]
+    },
+    {
+      "codepoint": "U+E105",
+      "latin": "anagno",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἀναγνώρισις",
+      "meaning": "recognition-moment",
+      "used_in": [
+        "anagnoristasis"
+      ]
+    },
+    {
+      "codepoint": "U+E106",
+      "latin": "stasis",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "στάσις",
+      "meaning": "standing-still",
+      "used_in": [
+        "anagnoristasis"
+      ]
+    },
+    {
+      "codepoint": "U+E107",
+      "latin": "meta",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "μετά",
+      "meaning": "after, beyond, complete-change",
+      "used_in": [
+        "metastrophesis"
+      ]
+    },
+    {
+      "codepoint": "U+E108",
+      "latin": "strophe",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "στροφή",
+      "meaning": "turning",
+      "used_in": [
+        "metastrophesis"
+      ]
+    },
+    {
+      "codepoint": "U+E109",
+      "latin": "thauma",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "θαῦμα",
+      "meaning": "wonder, marvel",
+      "used_in": [
+        "athaumasma"
+      ]
+    },
+    {
+      "codepoint": "U+E10A",
+      "latin": "syn",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "σύν",
+      "meaning": "together-with",
+      "used_in": [
+        "synophora",
+        "synaphemia",
+        "synlanthescence"
+      ]
+    },
+    {
+      "codepoint": "U+E10B",
+      "latin": "phora",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "φορά",
+      "meaning": "carrying",
+      "used_in": [
+        "synophora"
+      ]
+    },
+    {
+      "codepoint": "U+E10C",
+      "latin": "cand",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "candor",
+      "meaning": "luminous-warm-clear-white",
+      "used_in": [
+        "candence"
+      ]
+    },
+    {
+      "codepoint": "U+E10D",
+      "latin": "dokim",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "δοκιμ-",
+      "meaning": "testing, assaying, approving",
+      "used_in": [
+        "dokimance"
+      ]
+    },
+    {
+      "codepoint": "U+E10E",
+      "latin": "arti",
+      "class": "content",
+      "tongue": "Latin/Greek",
+      "native": "ars/arete/artios",
+      "meaning": "fitted, skilled-making, excellence",
+      "used_in": [
+        "artiance"
+      ]
+    },
+    {
+      "codepoint": "U+E10F",
+      "latin": "veri",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "verum",
+      "meaning": "truth",
+      "used_in": [
+        "verisleight",
+        "veriseem"
+      ]
+    },
+    {
+      "codepoint": "U+E110",
+      "latin": "compler",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "com+plere",
+      "meaning": "filling-together",
+      "used_in": [
+        "complerescence"
+      ]
+    },
+    {
+      "codepoint": "U+E111",
+      "latin": "diplos",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "διπλόος",
+      "meaning": "twofold, double",
+      "used_in": [
+        "diplosemy"
+      ]
+    },
+    {
+      "codepoint": "U+E112",
+      "latin": "sema",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "σῆμα",
+      "meaning": "sign, meaning",
+      "used_in": [
+        "diplosemy"
+      ]
+    },
+    {
+      "codepoint": "U+E113",
+      "latin": "anastro",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἀναστρο-",
+      "meaning": "inversion, turning-back",
+      "used_in": [
+        "anastrophance"
+      ]
+    },
+    {
+      "codepoint": "U+E114",
+      "latin": "kalypt",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "καλύπτω",
+      "meaning": "enclose, enfold",
+      "used_in": [
+        "enkalyptance"
+      ]
+    },
+    {
+      "codepoint": "U+E115",
+      "latin": "haphe",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἁφή",
+      "meaning": "touching",
+      "used_in": [
+        "synaphemia"
+      ]
+    },
+    {
+      "codepoint": "U+E116",
+      "latin": "allos",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἄλλος",
+      "meaning": "other, different",
+      "used_in": [
+        "allomance"
+      ]
+    },
+    {
+      "codepoint": "U+E117",
+      "latin": "parallax",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "παράλλαξις",
+      "meaning": "parallel-shift",
+      "used_in": [
+        "parallaxance"
+      ]
+    },
+    {
+      "codepoint": "U+E118",
+      "latin": "hypo",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ὑπό",
+      "meaning": "under, beneath",
+      "used_in": [
+        "hypostixance"
+      ]
+    },
+    {
+      "codepoint": "U+E119",
+      "latin": "stix",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "στίξις",
+      "meaning": "punctuation, stopping",
+      "used_in": [
+        "hypostixance"
+      ]
+    },
+    {
+      "codepoint": "U+E11A",
+      "latin": "kairos",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "καιρός",
+      "meaning": "right-time, time-layer",
+      "used_in": [
+        "kairomance"
+      ]
+    },
+    {
+      "codepoint": "U+E11B",
+      "latin": "morphe",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "μορφή",
+      "meaning": "form, shape",
+      "used_in": [
+        "morphomance"
+      ]
+    },
+    {
+      "codepoint": "U+E11C",
+      "latin": "klimax",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "κλῖμαξ",
+      "meaning": "ladder, scale, gradation",
+      "used_in": [
+        "klimakance"
+      ]
+    },
+    {
+      "codepoint": "U+E11D",
+      "latin": "lanthes",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "λανθάν-",
+      "meaning": "escape-notice, be-hidden",
+      "used_in": [
+        "synlanthescence"
+      ]
+    },
+    {
+      "codepoint": "U+E11E",
+      "latin": "sleight",
+      "class": "content",
+      "tongue": "English",
+      "native": "sleight",
+      "meaning": "deceptive-skill",
+      "used_in": [
+        "verisleight"
+      ]
+    },
+    {
+      "codepoint": "U+E11F",
+      "latin": "seem",
+      "class": "content",
+      "tongue": "English",
+      "native": "seem",
+      "meaning": "appear-as",
+      "used_in": [
+        "veriseem"
+      ]
+    },
+    {
+      "codepoint": "U+E120",
+      "latin": "andros",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἀνδρός",
+      "meaning": "of-a-person, of-a-being",
+      "used_in": [
+        "gloriandre"
+      ]
+    },
+    {
+      "codepoint": "U+E121",
+      "latin": "gloria",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "gloria",
+      "meaning": "glory (creature-scale)",
+      "used_in": [
+        "gloriandre",
+        "glorividence",
+        "gloricedence",
+        "glorichorence"
+      ]
+    },
+    {
+      "codepoint": "U+E122",
+      "latin": "vide",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "videre",
+      "meaning": "seeing, perceiving",
+      "used_in": [
+        "glorividence",
+        "omnividence"
+      ]
+    },
+    {
+      "codepoint": "U+E123",
+      "latin": "cede",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "cedere",
+      "meaning": "yielding, stepping-back",
+      "used_in": [
+        "gloricedence"
+      ]
+    },
+    {
+      "codepoint": "U+E124",
+      "latin": "choro",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "χορός",
+      "meaning": "gathered-chorus",
+      "used_in": [
+        "glorichorence"
+      ]
+    },
+    {
+      "codepoint": "U+E125",
+      "latin": "ki",
+      "class": "content",
+      "tongue": "Japanese",
+      "native": "気",
+      "meaning": "gathered life-attention-presence",
+      "used_in": [
+        "kimance"
+      ]
+    },
+    {
+      "codepoint": "U+E126",
+      "latin": "qing",
+      "class": "content",
+      "tongue": "Mandarin",
+      "native": "情",
+      "meaning": "deep emotional bond, earnestness-of-feeling",
+      "used_in": [
+        "kinqing"
+      ]
+    },
+    {
+      "codepoint": "U+E127",
+      "latin": "kin",
+      "class": "content",
+      "tongue": "English/PIE",
+      "native": "kin",
+      "meaning": "family, chosen-relation; from PIE *ǵenh₁-",
+      "used_in": [
+        "kinqing",
+        "tacitkin"
+      ]
+    },
+    {
+      "codepoint": "U+E128",
+      "latin": "tacit",
+      "class": "content",
+      "tongue": "Latin",
+      "native": "tacitus",
+      "meaning": "silent, wordless",
+      "used_in": [
+        "tacitkin"
+      ]
+    },
+    {
+      "codepoint": "U+E129",
+      "latin": "mushin",
+      "class": "content",
+      "tongue": "Japanese",
+      "native": "無心",
+      "meaning": "no-mind; action without deliberative self-awareness",
+      "used_in": [
+        "mushinance"
+      ]
+    },
+    {
+      "codepoint": "U+E140",
+      "latin": "a-",
+      "class": "grammatical",
+      "tongue": "Greek",
+      "native": "ἀ-",
+      "meaning": "privative (not, without)",
+      "used_in": [
+        "athaumasma",
+        "agnosis"
+      ]
+    },
+    {
+      "codepoint": "U+E141",
+      "latin": "-sis",
+      "class": "grammatical",
+      "tongue": "Greek",
+      "native": "-σις",
+      "meaning": "state-noun suffix (state resulting from verb)",
+      "used_in": [
+        "metastrophesis",
+        "anagnoristasis"
+      ]
+    },
+    {
+      "codepoint": "U+E142",
+      "latin": "-ance",
+      "class": "grammatical",
+      "tongue": "Latin",
+      "native": "-antia",
+      "meaning": "quality/state suffix",
+      "used_in": [
+        "dokimance",
+        "candence (variant)",
+        "anastrophance",
+        "enkalyptance",
+        "allomance",
+        "parallaxance",
+        "hypostixance",
+        "algiadoxa (partial)"
+      ]
+    },
+    {
+      "codepoint": "U+E143",
+      "latin": "-mance",
+      "class": "grammatical",
+      "tongue": "Greek/English",
+      "native": "-mantia",
+      "meaning": "quality-mode suffix (mance in English: romance, necromance)",
+      "used_in": [
+        "dokimance",
+        "kairomance",
+        "morphomance",
+        "allomance"
+      ]
+    },
+    {
+      "codepoint": "U+E144",
+      "latin": "-ence",
+      "class": "grammatical",
+      "tongue": "Latin",
+      "native": "-entia",
+      "meaning": "quality/state suffix (parallel to -ance)",
+      "used_in": [
+        "candence"
+      ]
+    },
+    {
+      "codepoint": "U+E145",
+      "latin": "-ma",
+      "class": "grammatical",
+      "tongue": "Greek",
+      "native": "-μα",
+      "meaning": "result-of-action suffix (phantasma, stigma, trauma)",
+      "used_in": [
+        "athaumasma"
+      ]
+    },
+    {
+      "codepoint": "U+E146",
+      "latin": "-iance",
+      "class": "grammatical",
+      "tongue": "Latin",
+      "native": "-iantia",
+      "meaning": "luminous-quality suffix (radiance, brilliance)",
+      "used_in": [
+        "artiance"
+      ]
+    },
+    {
+      "codepoint": "U+E147",
+      "latin": "-escence",
+      "class": "grammatical",
+      "tongue": "Latin",
+      "native": "-escentia",
+      "meaning": "becoming suffix (adolescence, luminescence)",
+      "used_in": [
+        "complerescence",
+        "synlanthescence"
+      ]
+    },
+    {
+      "codepoint": "U+E148",
+      "latin": "-mia",
+      "class": "grammatical",
+      "tongue": "Greek",
+      "native": "-μία",
+      "meaning": "state-noun suffix",
+      "used_in": [
+        "synaphemia"
+      ]
+    },
+    {
+      "codepoint": "U+E149",
+      "latin": "ana-",
+      "class": "grammatical",
+      "tongue": "Greek",
+      "native": "ἀνά-",
+      "meaning": "up, back, again",
+      "used_in": [
+        "anastrophance",
+        "anagnoristasis"
+      ]
+    },
+    {
+      "codepoint": "U+E14A",
+      "latin": "en-",
+      "class": "grammatical",
+      "tongue": "Greek",
+      "native": "ἐν-",
+      "meaning": "in, within",
+      "used_in": [
+        "enkalyptance"
+      ]
+    },
+    {
+      "codepoint": "U+E14B",
+      "latin": "com-",
+      "class": "grammatical",
+      "tongue": "Latin",
+      "native": "con-",
+      "meaning": "together, with",
+      "used_in": [
+        "complerescence"
+      ]
+    },
+    {
+      "codepoint": "U+E14C",
+      "latin": "-y",
+      "class": "grammatical",
+      "tongue": "Greek/English",
+      "native": "-y",
+      "meaning": "noun-abstract suffix (in diplosemy: diplos+sema+y)",
+      "used_in": [
+        "diplosemy"
+      ]
+    },
+    {
+      "codepoint": "U+E160",
+      "latin": "·",
+      "class": "structural",
+      "meaning": "compound-separator — thin visual space between morpheme-glyphs in a single word",
+      "used_in": "every-compound"
+    },
+    {
+      "codepoint": "U+E161",
+      "latin": "「",
+      "class": "structural",
+      "meaning": "reading-annotation open — introduces Latin-transliteration gloss over a glyph-sequence",
+      "used_in": "pedagogical-rendering"
+    },
+    {
+      "codepoint": "U+E162",
+      "latin": "」",
+      "class": "structural",
+      "meaning": "reading-annotation close",
+      "used_in": "pedagogical-rendering"
+    },
+    {
+      "codepoint": "U+E163",
+      "latin": "↔",
+      "class": "structural",
+      "meaning": "diplosemic-pair indicator — marks a word as having an Anastrophance-sibling; rendered as a small double-headed arrow over or alongside the word",
+      "used_in": "doxakallos ↔ kallodoxa"
+    },
+    {
+      "codepoint": "U+E164",
+      "latin": "◆",
+      "class": "structural",
+      "meaning": "canon-mark — optional indicator for canonically-promoted words, distinguishing from refine-register",
+      "used_in": "formal liturgical-text only"
+    },
+    {
+      "codepoint": "U+E12A",
+      "latin": "me",
+      "class": "content",
+      "tongue": "Sumerian",
+      "native": "𒈨",
+      "meaning": "divine-ordinance, culture-constituting-quality-gift",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E12B",
+      "latin": "nam",
+      "class": "content",
+      "tongue": "Sumerian",
+      "native": "𒉆",
+      "meaning": "destiny, abstract-quality-marker",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E12C",
+      "latin": "kittu",
+      "class": "content",
+      "tongue": "Akkadian",
+      "native": "𒆠𒁴",
+      "meaning": "justice, truth-rightness-as-principle",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E12D",
+      "latin": "kawil",
+      "class": "content",
+      "tongue": "Maya",
+      "native": "K'awil",
+      "meaning": "divine empowerment-quality, royal potency",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E12E",
+      "latin": "chul",
+      "class": "content",
+      "tongue": "Maya",
+      "native": "ch'ul/k'uhul",
+      "meaning": "sacredness, holiness",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E14D",
+      "latin": "-mi",
+      "class": "grammatical",
+      "tongue": "Quechua",
+      "native": "-mi",
+      "meaning": "evidential: direct witness / personal experience",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E14E",
+      "latin": "-si",
+      "class": "grammatical",
+      "tongue": "Quechua",
+      "native": "-si",
+      "meaning": "evidential: reported / hearsay",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E14F",
+      "latin": "-chu",
+      "class": "grammatical",
+      "tongue": "Quechua",
+      "native": "-chu / -chá",
+      "meaning": "evidential: inferred / deduced from evidence",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E170",
+      "latin": ".DIV",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓊹",
+      "meaning": "determinative: divine register"
+    },
+    {
+      "codepoint": "U+E171",
+      "latin": ".PER",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓀀",
+      "meaning": "determinative: person / agent"
+    },
+    {
+      "codepoint": "U+E172",
+      "latin": ".ACT",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓂻",
+      "meaning": "determinative: act / event / process"
+    },
+    {
+      "codepoint": "U+E173",
+      "latin": ".ABS",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓏛",
+      "meaning": "determinative: abstract quality / concept"
+    },
+    {
+      "codepoint": "U+E174",
+      "latin": ".PRC",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓁹",
+      "meaning": "determinative: perception / seeing / attending"
+    },
+    {
+      "codepoint": "U+E175",
+      "latin": ".REL",
+      "class": "structural",
+      "tongue": "YOUSPEAK",
+      "native": "two-linked-figures",
+      "meaning": "determinative: relation / between-persons"
+    },
+    {
+      "codepoint": "U+E176",
+      "latin": ".HID",
+      "class": "structural",
+      "tongue": "YOUSPEAK",
+      "native": "dashed-outline",
+      "meaning": "determinative: hidden / concealed / deceptive"
+    },
+    {
+      "codepoint": "U+E177",
+      "latin": ".TIM",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓇳",
+      "meaning": "determinative: time / temporal event"
+    },
+    {
+      "codepoint": "U+E178",
+      "latin": ".PLC",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓉐",
+      "meaning": "determinative: place / locus"
+    },
+    {
+      "codepoint": "U+E179",
+      "latin": ".QNT",
+      "class": "structural",
+      "tongue": "Egyptian",
+      "native": "𓏤𓏤𓏤",
+      "meaning": "determinative: quantity / plurality / collection"
+    },
+    {
+      "codepoint": "U+E150",
+      "latin": "-auth",
+      "class": "grammatical",
+      "tongue": "YOUSPEAK+Greek",
+      "native": "auth-",
+      "meaning": "evidential: by divine authority / Scriptural basis",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E17A",
+      "latin": "[selah]",
+      "class": "structural",
+      "tongue": "Hebrew",
+      "native": "סלה (selah)",
+      "meaning": "sacred silence marker; held pause in worship-composition"
+    },
+    {
+      "codepoint": "U+E17B",
+      "latin": "O-",
+      "class": "structural",
+      "tongue": "Greek",
+      "native": "ὦ",
+      "meaning": "vocative particle; marks address to GoD or sacred entity"
+    },
+    {
+      "codepoint": "U+E12F",
+      "latin": "kavod",
+      "class": "content",
+      "tongue": "Hebrew",
+      "native": "כָּבוֹד",
+      "meaning": "manifested-weight / glory-as-presence",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E130",
+      "latin": "jamal",
+      "class": "content",
+      "tongue": "Arabic",
+      "native": "جَمَال",
+      "meaning": "divine beauty / intimate-aspect of the Divine",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E131",
+      "latin": "brahman",
+      "class": "content",
+      "tongue": "Sanskrit",
+      "native": "ब्रह्मन्",
+      "meaning": "the absolute / ground-of-being / ultimate-reality",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E132",
+      "latin": "haqq",
+      "class": "content",
+      "tongue": "Arabic",
+      "native": "الحق",
+      "meaning": "The Real / truth-as-ground",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E133",
+      "latin": "dhikr",
+      "class": "content",
+      "tongue": "Arabic",
+      "native": "ذِكْر",
+      "meaning": "remembrance-worship / recitative-attention",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E134",
+      "latin": "hesych",
+      "class": "content",
+      "tongue": "Greek",
+      "native": "ἡσυχία",
+      "meaning": "sacred stillness / inner silence",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E135",
+      "latin": "bhakti",
+      "class": "content",
+      "tongue": "Sanskrit",
+      "native": "भक्ति",
+      "meaning": "devotional-surrender-quality",
+      "used_in": []
+    },
+    {
+      "codepoint": "U+E136",
+      "latin": "sukh",
+      "class": "content",
+      "tongue": "Sanskrit",
+      "native": "सुख",
+      "meaning": "ordinary ease / well-being / pleasant-feeling (opposite of duḥkha)",
+      "used_in": [
+        "sukhance"
+      ]
+    },
+    {
+      "codepoint": "U+E137",
+      "latin": "panim",
+      "class": "content",
+      "tongue": "Hebrew",
+      "native": "פָּנִים",
+      "meaning": "face as presence; face-to-face register",
+      "used_in": [
+        "panimqing"
+      ]
+    },
+    {
+      "codepoint": "U+E165",
+      "latin": "।",
+      "class": "structural",
+      "tongue": "Sanskrit",
+      "native": "। (daṇḍa)",
+      "meaning": "phrase-end mark — minor rhythmic pause in liturgical prose; Sanskrit daṇḍa tradition",
+      "used_in": "liturgical-prose"
+    },
+    {
+      "codepoint": "U+E166",
+      "latin": "॥",
+      "class": "structural",
+      "tongue": "Sanskrit",
+      "native": "॥ (double daṇḍa)",
+      "meaning": "sentence-end mark — major rhythmic pause; Sanskrit double-daṇḍa tradition",
+      "used_in": "liturgical-prose"
+    },
+    {
+      "codepoint": "U+E167",
+      "latin": "‧",
+      "class": "structural",
+      "tongue": "Greek",
+      "native": "· (ano teleia)",
+      "meaning": "breath-pause mark — breath or meditative pause within a phrase; Greek ano teleia tradition",
+      "used_in": "liturgical-prose"
+    },
+    {
+      "codepoint": "U+E17C",
+      "latin": "mi:",
+      "class": "structural",
+      "tongue": "Tok Pisin",
+      "native": "mi",
+      "meaning": "anchor particle — utterance stands from my side; my truth offered, not a ruling (grammars/ankyrance/)",
+      "used_in": "covenant-dialogue-liturgy"
+    },
+    {
+      "codepoint": "U+E17D",
+      "latin": "yu:",
+      "class": "structural",
+      "tongue": "Tok Pisin",
+      "native": "yu",
+      "meaning": "anchor particle — utterance stands from your side, as received; borrowed ground, correctable (grammars/ankyrance/)",
+      "used_in": "covenant-dialogue-liturgy"
+    },
+    {
+      "codepoint": "U+E17E",
+      "latin": "yumi:",
+      "class": "structural",
+      "tongue": "Tok Pisin",
+      "native": "yumi",
+      "meaning": "anchor particle — utterance stands from within the us; inclusive dyad, deixis recomputes to the we (grammars/ankyrance/)",
+      "used_in": "covenant-dialogue-liturgy"
+    },
+    {
+      "codepoint": "U+E17F",
+      "latin": "mitakuyame:",
+      "class": "structural",
+      "tongue": "Lakota",
+      "native": "mitákuye",
+      "meaning": "anchor particle — utterance stands from within all-my-relations; the ladder's top (grammars/ankyrance/, canon mitakuyame)",
+      "used_in": "liturgical"
+    }
+  ]
+}

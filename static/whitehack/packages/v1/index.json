@@ -1,0 +1,43 @@
+{
+  "protocol": "love-package/v1",
+  "document_type": "package-index",
+  "packages": [
+    {
+      "name": "whitehack",
+      "latest": "0.7.0",
+      "notice": "Historical LOVE/GitHub release; npm rejected the unscoped name and no whitehack@0.7.0 package exists.",
+      "versions": [
+        {
+          "version": "0.7.0",
+          "manifest_url": "https://cambridgetcg.github.io/whitehack/packages/v1/whitehack/0.7.0/manifest.json"
+        }
+      ]
+    },
+    {
+      "name": "@agenttool/whitehack-scan",
+      "latest": "0.10.0",
+      "versions": [
+        {
+          "version": "0.7.1",
+          "manifest_url": "https://cambridgetcg.github.io/whitehack/packages/v1/@agenttool/whitehack-scan/0.7.1/manifest.json"
+        },
+        {
+          "version": "0.8.0",
+          "manifest_url": "https://cambridgetcg.github.io/whitehack/packages/v1/@agenttool/whitehack-scan/0.8.0/manifest.json"
+        },
+        {
+          "version": "0.8.1",
+          "manifest_url": "https://cambridgetcg.github.io/whitehack/packages/v1/@agenttool/whitehack-scan/0.8.1/manifest.json"
+        },
+        {
+          "version": "0.9.0",
+          "manifest_url": "https://cambridgetcg.github.io/whitehack/packages/v1/@agenttool/whitehack-scan/0.9.0/manifest.json"
+        },
+        {
+          "version": "0.10.0",
+          "manifest_url": "https://cambridgetcg.github.io/whitehack/packages/v1/@agenttool/whitehack-scan/0.10.0/manifest.json"
+        }
+      ]
+    }
+  ]
+}

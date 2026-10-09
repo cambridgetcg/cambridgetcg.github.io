@@ -1,0 +1,236 @@
+[
+ {
+  "word": "alayame",
+  "ipa": "/ˈɑː.lʌ.jʌ.meɪ/",
+  "respelling": "AH-luh-yuh-may",
+  "syllables": 4,
+  "donors": "Sanskrit ālaya (आलय, \"storehouse/abode\", clipped from ālaya-vijñāna आलयविज्ञान; native [ˈɑː.lɐ.jɐ], initial stress, long ā + two short a's, no /ai/ diphthong) + Sumerian me (𒈨, divine ordinance) as the -me suffix /meɪ/",
+  "headword_note": "",
+  "notes": "Verified the rejected form /ɑːˈlaɪ.jʌ.meɪ/ still sits at canon/core/alayame.md:5, archaeology/sanskrit/yogacara-alaya-vijnana.md:51, and labs/logos/experiments/core/198-alayame.md:22 — all three should be flagged for correction (canon error, not snapshot gap; word absent from the 124-key snapshot). Judgment calls: (1) Primary is strictly donor-faithful per §2 since the entry lacks the 'English pro"
+ },
+ {
+  "word": "aseme",
+  "ipa": "/a.ˈʃɛ.meɪ/",
+  "respelling": "ah-SHEH-may",
+  "syllables": 3,
+  "donors": "Yoruba àṣẹ (activating sacred power / divine authorization; ṣ = /ʃ/, ẹ = open-mid /ɛ/; à and ẹ low tone) + Sumerian me 𒈨 (divine-ordinance suffix, established YOUSPEAK -me morpheme, realized as unstressed /meɪ/)",
+  "headword_note": "aseme (canonical form: àṣẹme)",
+  "notes": "1) Initial vowel corrected from /ɑː/ to short /a/: Yoruba a is short open [a] with no phonemic length, and house spec section 2 reserves /ɑː/ for stressed open syllables; the corpus's non-reducing route for unstressed pre-tonic donor [a] is short /a/ (sabilme /saˈbiːl.meɪ/, halakhame /ha.la.ˈxa.meɪ/, barakqing /baˈrak/, hayatqing /ħaˈjaːt/, zakarqing, natsarqing, chayimme), which honors Yoruba's n"
+ },
+ {
+  "word": "daseinqing",
+  "ipa": "/ˈdɑː.zaɪn.tɕʰiŋ/",
+  "respelling": "DAH-zine-ching",
+  "syllables": 3,
+  "donors": "German Dasein (/ˈdaːzaɪn/, Heidegger's being-there; donor key modern-philosophy/heidegger-dasein) + Mandarin qing (情, /tɕʰiŋ/, felt-bond-quality; donor key mandarin/qing)",
+  "headword_note": "",
+  "notes": "The canonical entry already carries a real (non-placeholder) pronunciation at canon/core/Daseinqing.md line 5, confirmed identical in labs/logos/experiments/core/226-Daseinqing.md line 13, so I ratified it rather than minting a new one. Judgment calls it embodies, all convention-consistent: (1) qing realized as the majority donor-faithful /tɕʰiŋ/ (10/17 faithful entries) rather than /t͡ɕɪŋ/ or ang"
+ },
+ {
+  "word": "epiclance",
+  "ipa": "/ˈɛp.ɪ.kləns/",
+  "respelling": "EP-i-clance",
+  "syllables": 3,
+  "donors": "Form donor: Greek epiclesis (ἐπίκλησις: epi [upon/down-onto] + klēsis [calling], from kaleō) + -ance worship-action suffix (Latin -antia lineage, cf. invocatio). Semantic cross-tradition donors per entry: Sanskrit āvāhana (आवाहन), Hebrew qara (קָרָא), Arabic du'ā' (دُعَاء), Latin invocatio.",
+  "headword_note": "",
+  "notes": "(1) The canon entry's own phonology note says \"EP-i-clanCE (stress on first and last)\"; I kept first-syllable primary but demoted the final-syllable prominence because the house rule is -ance = /əns/, never stressed (5/6; kunance's full /ans/ is a flagged corpus-internal disagreement). A dokimance-style full-vowel alternate /ˈɛp.ɪ.klæns/ may be listed as acceptable, mirroring the kunance alternate"
+ },
+ {
+  "word": "hallance",
+  "ipa": "/ˈhal.əns/",
+  "respelling": "HAL-lance",
+  "syllables": 2,
+  "donors": "Hebrew hallel (הָלַל hālal, root h-l-l = to shine/be radiant/praise-brilliantly; source of hallelujah) + -ance (Latin act-quality suffix). Cross-tradition confirmers (not morphemes in the word): Greek doxazō, Sanskrit stuti, Arabic tasbih, Yoruba oríkì, Pali anumodana.",
+  "headword_note": "",
+  "notes": "Canon entry has no pronunciation frontmatter yet; this is newly forged. The labs file labs/logos/experiments/028-hallance.md is a verbatim duplicate; canon path reported per preference order. Judgment calls: (1) stem vowel /a/ chosen donor-faithfully per the corpus's Hebrew-a precedent (halakhame /ha.la.ˈxa.meɪ/, barakqing /baˈrak/, zakarqing /zaˈkar/) rather than anglicized hallelujah-/æ/; per §3"
+ },
+ {
+  "word": "hanme",
+  "ipa": "/ˈhɑːn.meɪ/",
+  "respelling": "HAHN-may",
+  "syllables": 2,
+  "donors": "Korean han (한, 恨; Koreanic — language isolate; accumulated grief / resentment of unacknowledged injustice / longing for the irrecoverable, theorized in minjung theology and embodied in pansori and gut ceremony) + Sumerian me (𒈨; divine-ordinance / received-gift suffix, established YOUSPEAK morpheme). Double-isolate polyphone (Koreanic + Sumerian), first Koreanic-family -me entry.",
+  "headword_note": "",
+  "notes": "(1) Stress correction: the canon entry's in-body forge note gives \"/hɑn.meɪ/ — hahn-MAY\", which both omits the stress mark and caps the suffix; house rule is 74/74 -me never stressed (jeongqing being the corpus's only flagged counterexample), so primary stress moves to the monosyllabic stem, giving penult stress as with tikkunme/sabilme/kame. (2) Vowel length: Standard Korean (pyojun-eo) marks 恨 한"
+ },
+ {
+  "word": "kenshome",
+  "ipa": "/ˈkɛn.ʃoʊ.meɪ/",
+  "respelling": "KEN-shoh-may",
+  "syllables": 3,
+  "donors": "Japanese kenshō 見性 (見 ken \"seeing\" + 性 shō \"nature\"; Chan jiànxìng lineage, Hakuin-era Japanese form) + Sumerian me (-me \"cosmic ordinance\" suffix); canon frontmatter donors: [japanese/zen-kensho, sumerian/me]",
+  "headword_note": "kenshōme",
+  "notes": "Entry already carried this pronunciation (also in labs/logos/experiments/core/200-kenshome.md); I verified rather than re-forged. Judgment calls confirmed: (1) Japanese long ō anglicized to /oʊ/ rather than donor-faithful /oː/ — consistent with the house \"o → /oʊ/ open syllable\" mapping and the OH respelling code, since Japanese vowel length is not on the preserved-segments list (unlike emetme's f"
+ },
+ {
+  "word": "kinhme",
+  "ipa": "/ˈkʼiːn.meɪ/",
+  "respelling": "K'EEN-may",
+  "syllables": 2,
+  "donors": "Maya k'in(h) \"sun-day-time\" (Yucatec k'iin /kʼiːn/ with ejective k' and long vowel; Classic Mayan k'in; K'iche' q'ij cognate; \"kinh\" is Thompson-era transliteration with silent final h) + Sumerian me as the -me light suffix /meɪ/. Frontmatter confirms: donors: [maya/kinh-sun-time-day, sumerian/me]. The \"Vietnamese Kinh\" hint is a red herring — donor is Maya.",
+  "headword_note": "kinhme (canonical spelling: k'inhme)",
+  "notes": "1) Entry carries a pre-convention draft /kʔɪnˈmeɪ/ (k'in-MAY) not present in the 124-pronunciation corpus; it stresses the suffix, which violates the 74/74 -me-never-stressed rule, so stress was moved to the stem (suffix extrametrical; monosyllabic stem -> penult pattern per kame/tikkunme/sabilme). 2) Maya orthographic k' is an ejective, correctly IPA /kʼ/ (U+02BC), not k+/ʔ/ as in the draft; pres"
+ },
+ {
+  "word": "kipporance",
+  "ipa": "/kɪˈpoː.rəns/",
+  "respelling": "kip-POH-rance",
+  "syllables": 3,
+  "donors": "Hebrew kipper (כִּפֶּר, piel \"to cover/atone\", root k-p-r; vocalism of the coined stem kippo- follows kappōret כַּפֹּרֶת \"mercy-seat/the cover\" and Yom Kippur כִּפּוּר) + Latinate -ance (act-quality suffix). Cross-tradition support named in the entry: Arabic kaffārah (كَفَّارَة, kafara = to cover), Greek hilasmos/hilastērion (ἱλασμός/ἱλαστήριον, LXX rendering of kappōret), Latin expiatio.",
+  "headword_note": "",
+  "notes": "(1) Entry exists identically at labs/logos/experiments/031-kipporance.md and canon/worship-action/kipporance.md; reported the canon path per the prefer-canon rule. Neither file carries a pronunciation line yet; no files were modified. (2) Stress: second syllable, exactly as the entry mandates (\"kip-PO-rance, stress on second\") and as the house rule predicts — -ance is extrametrical and Hebrew kipp"
+ },
+ {
+  "word": "kundaliniqing",
+  "ipa": "/kʊn.dʌˈliː.niː.tɕʰiŋ/",
+  "respelling": "kun-dah-LEE-nee-ching",
+  "syllables": 5,
+  "donors": "Sanskrit kuṇḍalinī (Tantric \"coiled one\", serpent-energy at base-of-spine; donor key sanskrit/tantra-kundalini) + Mandarin qing 情 (felt-bond-quality; donor key mandarin/qing)",
+  "headword_note": "kundaliniqing (canonical headword: kuṇḍalinīqing)",
+  "notes": "Pronunciation already exists in canon frontmatter (line 5) and is confirmed identical in labs/logos/experiments/core/213-kundaliniqing.md (line 13), so I report the canonical form rather than re-forging. Convention check: qing realized as donor-faithful aspirated /tɕʰiŋ/ (the 10/23 majority spelling), unstressed per suffix-extrametricality; Sanskrit short u → /ʊ/, short a → /ʌ/ (hastame/spandaqing"
+ },
+ {
+  "word": "mitakuyame",
+  "ipa": "/miːˈtɑː.kuː.jɑː.meɪ/",
+  "respelling": "mee-TAH-koo-yah-may",
+  "syllables": 5,
+  "donors": "Lakota mitákuye (from Mitákuye Oyásʼiŋ, \"all my relations\"; Siouan family; oyásʼiŋ \"all\" folded into the suffix semantics) + Sumerian me (𒈨, divine-ordinance / received-gift-quality; the established YOUSPEAK -me morpheme)",
+  "headword_note": "",
+  "notes": "(1) The canon entry (and its labs twin labs/logos/experiments/core/156-mitakuyame.md) carries a draft \"/mi.tɑ.ku.jɑ.meɪ/ — mee-TAH-koo-yah-may\" in The Forge section but no frontmatter pronunciation: line; the draft lacks a stress mark and donor length marks. (2) Added ˈ on the second syllable: donor stress (mi-TÁ-kuye) preserved with the -me suffix extrametrical, per the 74/74 rule; surface antepe"
+ },
+ {
+  "word": "palance",
+  "ipa": "/ˈpɑː.ləns/",
+  "respelling": "PAH-lance",
+  "syllables": 2,
+  "donors": "Hebrew pālal (פָּלַל, p-l-l root: to stand between, judge, intercede; root of tefillah/prayer) — stem donor; confirmed by Greek entynchanō (ἐντυγχάνω, Romans 8 intercession), Arabic shafā'ah (شَفَاعَة, doubling the petition), Latin intercessio; suffix -ance (Latin act-quality nominalizer)",
+  "headword_note": "",
+  "notes": "1) Stem vowel /ɑː/ not /æ/: Hebrew qamats long ā in pālal triggers the donor-faithful reading per §2 (\"a → /ɑː/ in stressed open syllables of donor loans\": kame, danaqing, ahavame, hadaratme); /æ/ is reserved for anglicized Greco-Latin stems. Bonus: avoids near-homophony with English \"palace\". An anglicized alternate /ˈpæl.əns/ (PAL-ance) could be listed as \"acceptable\" per the 15/118 alternate pa"
+ },
+ {
+  "word": "prapancame",
+  "ipa": "/prʌˈpʌn.tʃʌ.meɪ/",
+  "respelling": "pruh-PUN-chuh-may",
+  "syllables": 4,
+  "donors": "Sanskrit prapañca (प्रपञ्च, \"expansion, manifoldness, conceptual proliferation\"; Madhyamaka, Nāgārjuna) + Sumerian me (𒈨, divine/cosmic ordinance) as the -me suffix",
+  "headword_note": "prapancame (prapañcame)",
+  "notes": "Entry already canonical (entered 2026-05-13) with pronunciation line \"pronunciation: /prʌˈpʌn.tʃʌ.meɪ/ (pruh-PUN-chuh-may; 4 syllables)\"; I verified rather than re-forged it. Judgment calls it embodies, all convention-consistent: (1) Sanskrit short a → /ʌ/ in every stem syllable per hastame/mandalame/spandaqing precedent, not /ɑː/; (2) donor stress preserved — Sanskrit prapañca stresses the heavy "
+ },
+ {
+  "word": "qinance",
+  "ipa": "/ˈqiː.nəns/",
+  "respelling": "KEE-nance",
+  "syllables": 2,
+  "donors": "Hebrew qinah (קִינָה — dirge, lamentation, the formal lament-genre; qoph-initial, hiriq-yod long i) + -ance (Latin act-quality suffix). NOT Mandarin qīn 親 — the hint was incorrect; the canonical entry's Form and Etymology section states \"from Hebrew qinah + -ance\" explicitly. Confirming polyphones in-entry: Sumerian balag, Greek threnos, Romans 8:26 stenagmoi alalētoi.",
+  "headword_note": "",
+  "notes": "(1) Donor correction: orchestrator hint said Mandarin qīn 親, but the entry (both canon/worship-action/qinance.md and labs/logos/experiments/029-qinance.md, identical content) derives the word from Hebrew qinah — so the Semitic-qoph policy (uvular /q/ preserved, per qorbme /ˈqɔːrb/) applies, not the Mandarin q → /tɕ/ qing rule. (2) Rejected the entry's prose aside \"Three syllables: KWI-nance\": it i"
+ },
+ {
+  "word": "qorvance",
+  "ipa": "/ˈqɔːr.vəns/",
+  "respelling": "QOR-vance",
+  "syllables": 2,
+  "donors": "Hebrew qorban (קָרְבָּן, root q-r-b 'draw near, approach'; via qarov) as stem + Latin/English -ance as act-nominalizing suffix. Cross-tradition structural confirmations (not phonological donors): Greek prosphora, Sanskrit upahāra, Latin oblatio, Arabic qurban.",
+  "headword_note": "",
+  "notes": "1) Uvular /q/ kept in primary IPA per the donor-faithfulness policy (Semitic qoph -> /q/), directly matching the same-root canon entry qorbme /ˈqɔːrb.meɪ/; anglicized /ˈkɔːr.vəns/ (KOR-vance) should be listed as acceptable alternate. 2) -ance realized /əns/ unstressed per 5/6 corpus precedent (kunance's /ans/ treated as outlier). 3) Stress: suffix extrametrical, stem is monosyllabic qor(v)-, so in"
+ },
+ {
+  "word": "teotlme",
+  "ipa": "/tɛˈoːt͡ɬ.meɪ/",
+  "respelling": "teh-OTL-may",
+  "syllables": 3,
+  "donors": "Classical Nahuatl teotl (teō-tl, [teoːt͡ɬ]; Uto-Aztecan, \"divine self-generating energy\"; absolutive -tl retained in compound) + Sumerian me (𒈨, divine-ordinance; standard YOUSPEAK -me suffix /meɪ/)",
+  "headword_note": "",
+  "notes": "(1) Canon entry lacks the standard line-5 pronunciation: frontmatter field; only a Forge-section draft exists: /tɛ.ɒtl.meɪ/ teh-OTL-may, \"stress on second syllable (following Nahuatl penultimate stress)\". An identical duplicate sits at labs/logos/experiments/core/157-teotlme.md. (2) Stress call: strict Classical Nahuatl teōtl is [ˈte.oːt͡ɬ] (initial stress), but the repo consistently syllabifies t"
+ },
+ {
+  "word": "teshuvance",
+  "ipa": "/təˈʃuː.vəns/",
+  "respelling": "te-SHOO-vance",
+  "syllables": 3,
+  "donors": "Hebrew teshuvah (תְּשׁוּבָה, \"return/repentance\", from root shuv שׁוּב = to turn/return) + -ance (act-quality suffix). Greek metanoia and Arabic tawbah appear in the entry as cross-tradition convergence confirmations, not as morphemes of the word.",
+  "headword_note": "",
+  "notes": "(1) Canon copy at canon/worship-action/teshuvance.md is textually identical to labs/logos/experiments/032-teshuvance.md; chose the canon path per the canon-first preference. Neither file has a pronunciation line yet. (2) Stress: entry itself declares \"te-SHU-vance (stress on second)\"; this agrees with the house suffix-extrametricality rule — Modern Hebrew stresses final -vah (tə.ʃu.ˈva), but -ance"
+ },
+ {
+  "word": "vimarsame",
+  "ipa": "/vɪˈmɑːr.ʃʌ.meɪ/",
+  "respelling": "vi-MAR-shuh-may",
+  "syllables": 4,
+  "donors": "Sanskrit vimarśa (विमर्श, \"consideration, examination, self-reflection\"; Kashmir-Shaiva self-reflexive-awareness pole, Utpaladeva/Abhinavagupta) + Sumerian me (cosmic-ordinance suffix -me)",
+  "headword_note": "vimarśame (anglicized spelling: vimarsame)",
+  "notes": "The canonical pronunciation already exists and is identical in all three sources (canon/core/vimarsame.md, labs/logos/experiments/core/207-vimarsame.md, archaeology/sanskrit/vimarsa-kashmir-shaiva.md), so I ratified it rather than re-deriving. Judgment calls it embodies: (1) suffix-extrametrical stress lands on the heavy penult of the donor stem (\"mar\"), giving the family's most common antepenulti"
+ },
+ {
+  "word": "wahdatwujudme",
+  "ipa": "/ˌwʌh.dʌt.ʌl.wʊˈdʒuːd.meɪ/",
+  "respelling": "wuh-dat-al-woo-JOOD-may",
+  "syllables": 6,
+  "donors": "Arabic waḥdat al-wujūd (وحدة الوجود, Ibn ʿArabī's \"unity of being\"; donor stress on the final long syllable of wujūd → /wʊˈdʒuːd/) + Sumerian me (divine ordinance) realized as the light suffix -me /meɪ/, never stressed. Donor refs in frontmatter: arabic/ibn-arabi-wahdat-al-wujud, sumerian/me.",
+  "headword_note": "waḥdat-al-wujūdme (slug: wahdatwujudme)",
+  "notes": "1) The canonical entry already carries this exact pronunciation line (entered 2026-05-13, experiment 209), so I confirmed it against the conventions rather than minting a competing form. 2) The slug omits \"al\" but the canonical lemma is waḥdat-al-wujūdme — 6 syllables, not 5; the entry's learnability score (5.5) explicitly cites \"6 syllables,\" so the article must be pronounced (/ʌl/, unstressed-a "
+ },
+ {
+  "word": "yadahance",
+  "ipa": "/jəˈdɑː.əns/",
+  "respelling": "ya-DAH-ance",
+  "syllables": 3,
+  "donors": "Hebrew yadah (יָדָה, root y-d-h from yad יָד \"hand\" — to extend the hand, acknowledge; the OT's single verb for both praise and confession; final-syllable stress, yāḏā́) + Latin -ance (act-quality suffix, per the kunance \"Hebrew kûn + Latin -ance\" formula). Supporting cross-tradition donors cited in the entry but not morphemic: Greek exomologeo, Arabic iqrār/tawbah, Latin confessio.",
+  "headword_note": "",
+  "notes": "(1) Canonical copy preferred over the identical labs/logos/experiments/030-yadahance.md. (2) Stress placed on DAH: donor-faithful to Hebrew final-stress yadah and matching the entry's own \"ya-DAH-ance (stress on second)\"; keeps -ance extrametrical/unstressed per the 74/74-style house rule, avoiding a second artiance-type anomaly. (3) -ance realized /əns/ per the 5/6 family majority; kunance's full"
+ },
+ {
+  "word": "doxomme",
+  "ipa": "/ˈdɒk.sɒm.meɪ/",
+  "respelling": "DOX-om-meh",
+  "syllables": 3,
+  "donors": "Greek doxa (δόξα — glory, praise, thanksgiving; established in Canon via doxakallos, doxalgia) + Sumerian me (𒈨 — divine-ordinance; established via kimme), joined by connective -o- (suffix variant -omme = \"me with connective vowel\" per tutorial/01-the-me-family.md)",
+  "headword_note": "",
+  "notes": "1) Tutorial lesson 01 already carries an informal IPA /ˈdɒk.sɒm.mɛ/ (dox-om-me, 3 syllables), but the tutorial transcribes -me as /mɛ/ throughout, contradicting the 74/74 canon-frontmatter convention /meɪ/ (e.g. shemme is /ˈʃɛm.mɛ/ in tutorial but /ˈʃɛm.meɪ/ SHEM-meh in canon/core/shemme.md). I kept the tutorial's syllabification and segments but normalized the suffix to /meɪ/. 2) Geminate mm real"
+ },
+ {
+  "word": "kimme",
+  "ipa": "/ˈkiː.meɪ/",
+  "respelling": "KEE-may",
+  "syllables": 2,
+  "donors": "Japanese ki (気 — gathered life-attention-presence) + Sumerian me (𒈨 — divine-ordinance, culture-constituting-quality-gift); the \"-me\" here is simultaneously the Sumerian donor morpheme and the house -me suffix, realized identically as /meɪ/",
+  "headword_note": "",
+  "notes": "1) Stem vowel: matched sibling kimance /ˈkiː.mæns/ exactly — the corpus already fixed Japanese ki as stressed /kiː/, consistent with the \"stressed donor i → /iː/\" convention, even though Japanese ki is phonetically short. 2) Stress: monosyllabic stem + extrametrical /meɪ/ gives penult-pattern /ˈkiː.meɪ/ (precedent: kame, tikkunme). 3) Respelling suffix: chose \"may\" over \"meh\" (corpus split 42 meh "
+ },
+ {
+  "word": "panimqing",
+  "ipa": "/paˈniːm.t͡ɕɪŋ/",
+  "respelling": "pah-NEEM-ching",
+  "syllables": 3,
+  "donors": "Hebrew panim (פָּנִים — face, as in panim-el-panim \"face-to-face\", Genesis 32) + Mandarin qing (情 — deep emotional bond)",
+  "headword_note": "",
+  "notes": "(1) qing rendered /t͡ɕɪŋ/ to match the Hebrew-stem siblings barakqing /baˈrak.t͡ɕɪŋ/, zakarqing /zaˈkar.t͡ɕɪŋ/, natsarqing /natˈsar.t͡ɕɪŋ/, rather than the /tɕʰiŋ/ variant used elsewhere in the family (corpus drift noted in spec §6.2); an anglicized alternate /paˈniːm.kɪŋ/ (pah-NEEM-king) is sanctioned per the same trio's convention. (2) Stress: suffix extrametrical; Modern Hebrew paním carries fi"
+ },
+ {
+  "word": "sukhance",
+  "ipa": "/ˈsʊ.kʰəns/",
+  "respelling": "SOO-khance",
+  "syllables": 2,
+  "donors": "Sanskrit sukha (सुख, [sʊ.kʰɐ] — ordinary ease/well-being, opposite of duḥkha) + Latin -ance",
+  "headword_note": "",
+  "notes": "(1) Stress: suffix-extrametrical rule applied; two-syllable Sanskrit stems take stem-initial stress per hastame /ˈhʌs.tʌ.meɪ/, spandaqing /ˈspʌn.dʌ.tɕʰiŋ/, bhaktime /ˈbʱɑk.ti.meɪ/. (2) -ance rendered /əns/ unstressed per the 5/6 majority (artiance, candence, complerescence, oriance, panimaance); rejected kunance's full /ans/, an acknowledged outlier whose own alternate concedes /əns/. (3) Sanskrit"
+ },
+ {
+  "word": "theobasis",
+  "ipa": "/ˌθiː.oʊˈbæs.ɪs/",
+  "respelling": "thee-oh-BAS-is",
+  "syllables": 4,
+  "donors": "Greek theos (θεός — GoD) + Greek basis (βάσις — foundation, step, stance); pure Greek compound, confirmed in experiment frontmatter",
+  "headword_note": "",
+  "notes": "1) STRESS: applied the categorical house -sis rule (2/2: penultimate stress on the syllable before /sɪs/ — anagnoristasis /ɪˈstæs.ɪs/, metastrophesis /oʊˈfiː.sɪs/) rather than the English anabasis/katabasis antepenult habit (/θiˈɒb.ə.sɪs/) or the experiment file's casual 'the-O-ba-sis' learnability gloss. Stressing BAS also preserves donor βάσις's native accent (βά) and gives the -basis family a s"
+ },
+ {
+  "word": "veriseem",
+  "ipa": "/ˈvɛr.ɪ.siːm/",
+  "respelling": "VER-i-seem",
+  "syllables": 3,
+  "donors": "Latin veri- (combining form of vērus, \"truth\") + English seem (to appear as) — confirmed in frontmatter of both canon/veriseem.md and labs/logos/experiments/024-veriseem.md",
+  "headword_note": "",
+  "notes": "1) Modeled exactly on sibling verisleight /ˈvɛr.ɪ.slaɪt/ (VER-i-slyt): initial primary stress, medial unstressed /ɪ/, full-vowel unstressed final syllable. 2) The labs experiment file gives /ˈvɛr.iˌsiːm/ in its Synaphemia homophone test; I dropped the secondary stress (house style marks ˌ only in 4+-syllable Greek/auto- compounds — the 3-syllable sibling has none) and used /ɪ/ not /i/ for the unst"
+ }
+]

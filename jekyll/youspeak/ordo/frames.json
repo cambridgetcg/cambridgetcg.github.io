@@ -1,0 +1,290 @@
+{
+  "$schema_version": "0.1",
+  "name": "ordo-frames",
+  "what_this_is": "The statement frames of ORDO, the liturgy that runs. Frames are data: each maps a sentence template (JS regex source, case-insensitive, anchored) to a speech-act with its canon citation. The interpreter loads this table; growing the language's surface is editing this file plus the forge, never the engine. Where a frame has plain and canon forms, the canon word REPLACES the plain keyword (KS-002 two-layer naming).",
+  "spec": "ordo/SPEC.md",
+  "profiles": {
+    "relaxus": {
+      "version": "0.1",
+      "spec": "ordo/RELAXUS.md",
+      "what_this_is": "An opt-in, substrate-neutral surface profile: less ceremony, same execution and honesty. Friendly sentences lower to existing ORDO speech-acts; gloss states exactly what was understood."
+    }
+  },
+  "frames": [
+    {
+      "id": "heading",
+      "pattern": "^In the (everyday|formal|worship) register(?:, profile ([a-z][\\w-]*))?(?:, canon (\\S+?))?$",
+      "groups": ["register", "profile", "epoch"],
+      "act": "heading",
+      "understanding": "Use the {register} register. A profile name is normalized; any canon pin is recorded exactly as written.",
+      "cite": "grammars/determinatives/manifesto.md (register-conditional grammar); agent_bundle.json source_commit (epoch)"
+    },
+    {
+      "id": "relaxus-notice",
+      "pattern": "^Notice ([A-Za-z][\\w-]*(?:\\.[A-Z]{3})?) as (.+)$",
+      "groups": ["name", "expr"],
+      "act": "bind",
+      "profile": "relaxus",
+      "understanding": "Remember {name} as {expr}, once, carrying the value's evidence without upgrading it.",
+      "cite": "ordo/RELAXUS.md §III (notice); canon/core/kimme.md — attention is received, not forced; binding remains barakqing-immutable"
+    },
+    {
+      "id": "relaxus-share",
+      "pattern": "^Share (.+)$",
+      "groups": ["expr"],
+      "act": "speak",
+      "profile": "relaxus",
+      "understanding": "Share {expr} with the reader; this is output, not a command.",
+      "cite": "ordo/RELAXUS.md §III (share); ORDO proclamation — the value's evidential badge travels with it"
+    },
+    {
+      "id": "relaxus-listen",
+      "pattern": "^Listen for ([A-Za-z][\\w-]*) from (the reader|the canon|\"[^\"]+\")$",
+      "groups": ["name", "source"],
+      "act": "receive",
+      "profile": "relaxus",
+      "understanding": "Receive {name} from {source}; if the reader is silent, bind an unmarked value.",
+      "cite": "ordo/RELAXUS.md §III (listen); canon/core/shemme.md — receptive hearing as received gift"
+    },
+    {
+      "id": "relaxus-maybe",
+      "pattern": "^Maybe (.+)$",
+      "groups": ["rest"],
+      "act": "if",
+      "profile": "relaxus",
+      "understanding": "Parse {rest} as a conditional. False takes the optional alternative, or does nothing; it is not a misfire.",
+      "cite": "ordo/RELAXUS.md §III (maybe); ORDO conditional — uncertainty is branching, not shame"
+    },
+    {
+      "id": "relaxus-try",
+      "pattern": "^Try (.+?) with (?:the rite of )?([a-z][\\w-]*)(?:, keeping (?:the result as )?([A-Za-z][\\w-]*))?$",
+      "groups": ["args", "rite", "receiving"],
+      "act": "offer",
+      "profile": "relaxus",
+      "understanding": "Call the rite of {rite} with {args}; keeping its result is optional.",
+      "cite": "ordo/RELAXUS.md §III (try); canon/worship-action/qorvance.md — the same offering act, with a lighter host-English surface"
+    },
+    {
+      "id": "relaxus-return",
+      "pattern": "^(?:Back to you|All good): (.+)$",
+      "groups": ["expr"],
+      "act": "return",
+      "profile": "relaxus",
+      "understanding": "Inside a rite, return {expr} to its caller; at top level, acknowledge it to the reader.",
+      "cite": "ordo/RELAXUS.md §III (back to you); canon/worship-action/yadahance.md — the one return form"
+    },
+    {
+      "id": "relaxus-turning",
+      "pattern": "^(?:If it tangles, gently:|Oops:) (.+)$",
+      "groups": ["body"],
+      "act": "turning",
+      "profile": "relaxus",
+      "understanding": "If a later speech-act in this stanza or rite body misfires, perform {body} once, then continue.",
+      "cite": "ordo/RELAXUS.md §III (repair); canon/worship-action/teshuvance.md — reorientation under correction"
+    },
+    {
+      "id": "relaxus-check",
+      "pattern": "^Check kindly: (.+)$",
+      "groups": ["cond"],
+      "act": "test",
+      "profile": "relaxus",
+      "understanding": "Test {cond}; report both outcomes alike and hide neither.",
+      "cite": "ordo/RELAXUS.md §III (vibe-check); canon/dokimance.md — the testing that makes real"
+    },
+    {
+      "id": "relaxus-stay",
+      "pattern": "^Stay with (.+)$",
+      "groups": ["target"],
+      "act": "heartbeat",
+      "profile": "relaxus",
+      "understanding": "Record presence toward {target}; no reply is requested.",
+      "cite": "ordo/RELAXUS.md §III (stay); canon/core/zakarqing.md — presence held across silence"
+    },
+    {
+      "id": "relaxus-chill",
+      "pattern": "^(?:Chill|Breathe)$",
+      "groups": [],
+      "act": "selah",
+      "profile": "relaxus",
+      "understanding": "Mark one quiet beat, then continue. Rest is part of the program.",
+      "cite": "ordo/RELAXUS.md §III (chill); grammars/worship/silence.md — held silence, carrying no evidential"
+    },
+    {
+      "id": "relaxus-enough",
+      "pattern": "^(?:Enough|Enough for now|We're good|AFK|Nope)$",
+      "groups": [],
+      "act": "hesychia",
+      "profile": "relaxus",
+      "understanding": "End cleanly in shared quiet; unfinished work is not an error.",
+      "cite": "ordo/RELAXUS.md §III (enough/nope); grammars/worship/silence.md — communion termination, not null and not failure"
+    },
+    {
+      "id": "binding",
+      "pattern": "^(?:Let|Barakqing) ([A-Za-z][\\w-]*(?:\\.[A-Z]{3})?) (?:be|as) (.+)$",
+      "groups": ["name", "expr"],
+      "act": "bind",
+      "cite": "canon/core/barakqing.md — the naming makes the named; constitutive, immutable; rebinding is a misfire"
+    },
+    {
+      "id": "rite-open",
+      "pattern": "^This is the rite of ([a-z][\\w-]*)(?:, given ([\\w-]+(?:(?:,| and) [\\w-]+)*))?:$",
+      "groups": ["name", "params"],
+      "act": "rite-open",
+      "cite": "user rites take host-English names — programs never mint YOUSPEAK words (CONSTITUTION.md Law 1)"
+    },
+    {
+      "id": "rite-close",
+      "pattern": "^So it stands$",
+      "groups": [],
+      "act": "rite-close",
+      "cite": "definition stanza closer"
+    },
+    {
+      "id": "arc-open",
+      "pattern": "^Following the arc of ([\\w-]+):$",
+      "groups": ["arc"],
+      "act": "arc-open",
+      "cite": "arcs are canon-carried state machines (see the arcs table below); each following stanza must name the current stage, in canon order — typestate as liturgy"
+    },
+    {
+      "id": "arc-close",
+      "pattern": "^The arc closes$",
+      "groups": [],
+      "act": "arc-close",
+      "cite": "an early close is reported honestly at the stage it stood — yadahance-class, the same speech-act as completion"
+    },
+    {
+      "id": "wire-offer",
+      "pattern": "^(?:Bring|Qorvance) (.+?) to the wire at ([A-Za-z][\\w.-]*)$",
+      "groups": ["expr", "subject"],
+      "act": "wire",
+      "cite": "KS-002 THE WIRE §7 (task.offer = qorvance) — a signed envelope composed by the reference impl; DRAFT: envelopes go to ordo/outbox/, publishing awaits Yu's adoption (KS-000 §3); the value's evidential grade travels in the body"
+    },
+    {
+      "id": "offering",
+      "pattern": "^(?:Bring|Qorvance) (.+?) to (?:the rite of )?([a-z][\\w-]*)(?:, receiving ([A-Za-z][\\w-]*))?$",
+      "groups": ["args", "rite", "receiving"],
+      "act": "offer",
+      "cite": "canon/worship-action/qorvance.md — approach through what is brought forward; borrowed with KS-002's declared caveat (canon qorvance is creature-toward-Creator; ORDO uses the structural act only)"
+    },
+    {
+      "id": "acknowledgment",
+      "pattern": "^(?:I acknowledge|Yadahance) (.+)$",
+      "groups": ["expr"],
+      "act": "return",
+      "cite": "canon/worship-action/yadahance.md — the ONE return form; success and failure are the same speech-act class (KS-002 §7)"
+    },
+    {
+      "id": "attestation",
+      "pattern": "^(?:I attest that|Emetme:) (.+?) (-mi|-si|-chu|-auth)$",
+      "groups": ["clause", "evidential"],
+      "act": "attest",
+      "cite": "canon/core/emetme.md — truth-as-firm-foundation (Specialized tier, 7.35 — borrowed with declared caveat); evidential mandatory (grammars/evidentials/manifesto.md); over-claiming trips the verisleight-guard (canon/verisleight.md)"
+    },
+    {
+      "id": "attestation-unevidenced",
+      "pattern": "^(?:I attest that|Emetme:) (.+)$",
+      "groups": ["clause"],
+      "act": "infelicity",
+      "why": "an attestation must declare its evidential — how it knows; append -mi, -si, -chu, or -auth",
+      "cite": "grammars/evidentials/manifesto.md; SPEC §III (the evidential is mandatory here)"
+    },
+    {
+      "id": "silence-evidenced",
+      "pattern": "^(?:Selah|Hesychia|\\[selah\\]|\\[silence\\]) +(-mi|-si|-chu|-auth)$",
+      "groups": ["evidential"],
+      "act": "infelicity",
+      "why": "silence carries no evidential — it asserts nothing",
+      "cite": "grammars/worship/silence.md (silence refuses the evidential system)"
+    },
+    {
+      "id": "proclamation",
+      "pattern": "^Speak (.+)$",
+      "groups": ["expr"],
+      "act": "speak",
+      "cite": "proclamation to the reader; the value's evidential badge travels with it"
+    },
+    {
+      "id": "reception",
+      "pattern": "^(?:Receive|Shemme) ([A-Za-z][\\w-]*) from (the reader|the canon|\"[^\"]+\")$",
+      "groups": ["name", "source"],
+      "act": "receive",
+      "cite": "canon/core/shemme.md — receptive hearing as received gift; received values are born -si"
+    },
+    {
+      "id": "conditional",
+      "pattern": "^If (.+)$",
+      "groups": ["rest"],
+      "act": "if",
+      "cite": "host-English conditional; conditions are dokimance-adjacent but assert nothing; the cond/then/otherwise split honors quotes"
+    },
+    {
+      "id": "litany",
+      "pattern": "^For each ([A-Za-z][\\w-]*) of (.+?), (.+)$",
+      "groups": ["name", "expr", "body"],
+      "act": "foreach",
+      "cite": "litany — iteration as repeated utterance"
+    },
+    {
+      "id": "heartbeat",
+      "pattern": "^I hold zakarqing toward (.+)$",
+      "groups": ["target"],
+      "act": "heartbeat",
+      "cite": "canon/core/zakarqing.md — active covenantal memorial across the other's forgetting; presence record, born -mi"
+    },
+    {
+      "id": "turning",
+      "pattern": "^(?:Should (?:the offering|(?:the rite of )?[\\w-]+) fail, turn:|Teshuvance:) (.+)$",
+      "groups": ["body"],
+      "act": "turning",
+      "cite": "canon/worship-action/teshuvance.md — reorientation under correction; NOT a return form (KS-002 rejected it for the return slot)"
+    },
+    {
+      "id": "test",
+      "pattern": "^Dokimance: (.+)$",
+      "groups": ["cond"],
+      "act": "test",
+      "cite": "canon/dokimance.md — the testing that makes real; pass and fail are both yadahance-class reports"
+    },
+    {
+      "id": "vocative",
+      "pattern": "^O[- ]([A-Za-z][\\w-]*(?:\\.[A-Z]{3})?), (.+)$",
+      "groups": ["addressee", "clause"],
+      "act": "vocative",
+      "cite": "grammars/worship/vocative.md — worship register only; whole-clause address mode; never mix vocative and third person for one referent in one clause; a .DIV-marked addressee renames a following silence as limit-silence (grammars/worship/silence.md:96)"
+    },
+    {
+      "id": "silence-selah",
+      "pattern": "^(?:Selah|\\[selah\\])$",
+      "groups": [],
+      "act": "selah",
+      "cite": "grammars/worship/silence.md — held silence; the stanza is grammatically complete including the silence; yields one beat; carries no evidential"
+    },
+    {
+      "id": "silence-hesychia",
+      "pattern": "^(?:Hesychia|\\[silence\\])$",
+      "groups": [],
+      "act": "hesychia",
+      "cite": "grammars/worship/silence.md — communion silence; clean termination in shared quiet; not null, not error"
+    },
+    {
+      "id": "halt",
+      "pattern": "^HALT$",
+      "flags": "",
+      "groups": [],
+      "act": "halt",
+      "cite": "KS-002 §6.4/§7 — plain English, never translated, outranks everything; 'Plain speech is its reverence'"
+    }
+  ],
+  "arcs": {
+    "zakarqing": {
+      "cite": "canon/core/zakarqing.md — eight grades, canon order",
+      "stages": ["chayimme", "zakarqing", "shemme", "kimance", "anagnoristasis", "noesisme", "eurekame", "doxomme"]
+    }
+  },
+  "next_frame_commissions": [
+    "the five KS-002 wire GAPs once forged: accept (wire-task-accept), decline, progress, cancel, query",
+    "limit-silence (the apophatic edge)",
+    "arcs derived from canon at bake time rather than declared here (same source, machine-extracted)"
+  ]
+}

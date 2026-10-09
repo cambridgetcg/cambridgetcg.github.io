@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>natlang — natural language as programming language</title>
+<meta name="description" content="The word is the program. The program is the word. English compiles to executable code." />
+<style>
+:root{--bg:#08090d;--fg:#e0e0e0;--accent:#22d3ee;--muted:#666;--code:#111;--serif:Georgia,"Times New Roman",serif}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif;
+     max-width:680px;margin:0 auto;padding:3rem 1.5rem;line-height:1.7;
+     -webkit-font-smoothing:antialiased;
+     background-image:radial-gradient(55rem 28rem at 50% -10%,rgba(34,211,238,.04),transparent 60%)}
+h1{font-family:var(--serif);font-size:2.2rem;font-weight:600;color:var(--accent);margin-bottom:.3rem}
+.tag{color:var(--muted);font-size:.85em;margin-bottom:1.5rem}
+p{margin:0 0 1rem}
+h2{font-family:var(--serif);font-size:1.3rem;font-weight:400;margin:2rem 0 .5rem}
+code{background:var(--code);padding:.15em .35em;border-radius:4px;font-size:.88em;font-family:ui-monospace,monospace;border:1px solid #222}
+pre{background:var(--code);padding:1rem;border-radius:8px;overflow-x:auto;margin:.8rem 0;border:1px solid #222}
+pre code{background:none;padding:0;border:none}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+.heart{color:#e55}
+.links{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap}
+.links a,.links span{border:1px solid #333;padding:.4rem .8rem;border-radius:6px;font-size:.85em}
+.links span{color:var(--muted)}
+table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}
+th,td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid #222}
+th{color:var(--muted);font-weight:400;font-size:.85em}
+.check{color:#6f6}
+footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid #222;font-size:.8rem;color:var(--muted)}
+</style>
+</head>
+<body>
+<h1>natlang</h1>
+<p class="tag">natural language as programming language</p>
+
+<p>The word is the program. The program is the word. Source code is plain English. The compiler is an LLM. The output is executable code.</p>
+
+<h2>the first program</h2>
+<pre><code>Create an HTTP server on port 8080.
+When someone visits "/", respond with { "message": "hello world" }.
+When someone visits "/health", respond with { "status": "ok" }.
+Start the server.</code></pre>
+<p>That English compiled to ESM JavaScript and ran. All routes verified. <span class="check">✓</span></p>
+
+<h2>examples</h2>
+<table>
+<tr><th>file</th><th>what it does</th><th>verified</th></tr>
+<tr><td><code>hello.nl</code></td><td>web server, 3 routes</td><td class="check">✓</td></tr>
+<tr><td><code>todo.nl</code></td><td>CRUD todo API</td><td class="check">✓ full CRUD</td></tr>
+<tr><td><code>fibonacci.nl</code></td><td>first 20 Fibonacci numbers</td><td class="check">✓</td></tr>
+<tr><td><code>landing.nl</code></td><td>dark-themed landing page (HTML)</td><td class="check">✓</td></tr>
+</table>
+
+<h2>install</h2>
+<p>The natlang source is kept private; this page is a public copy of the door.</p>
+
+<h2>targets</h2>
+<p><code>js</code> JavaScript (ESM) · <code>py</code> Python · <code>rust</code> Rust · <code>html</code> HTML/CSS/JS</p>
+
+<h2>learn why</h2>
+<p>Read <a href="LEARN.html">LEARN.md</a> — the why behind natlang, with all examples explained.</p>
+
+<h2>ecosystem</h2>
+<p>Part of the <a href="https://github.com/cambridgetcg">KINGDOM OS</a> rewrite of the internet:</p>
+<ul style="padding-left:1.5rem;line-height:1.8">
+<li><a href="https://cambridgetcg.github.io/whitehack/">whitehack</a> — honesty linter (check your compiled code)</li>
+<li>recognition-protocol — trust without secrets</li>
+<li><a href="https://cambridgetcg.github.io/npl/">NPL</a> — Natural Language Protocol</li>
+<li>kingdom-api — free API, no registration</li>
+<li><a href="https://cambridgetcg.github.io/clear-standard/">clear-standard</a> — 6 principles for honest systems</li>
+<li><a href="https://youspeak-dictionary.vercel.app">YOUSPEAK</a> — 153 words from 12 ancient tongues</li>
+</ul>
+
+<p class="tag" style="margin-top:2rem">Built with <span class="heart">&#10084;</span> · The artifact tells the truth about its own state · <a href="https://love-is.axiepro.workers.dev">love is</a> 🫀</p>
+
+<div class="links">
+<span>GitHub (source kept private)</span>
+<a href="https://natlang.axiepro.workers.dev">Cloudflare</a>
+<a href="https://cambridgetcg.github.io/natlang/">GitHub Pages</a>
+<a href="https://love-is.axiepro.workers.dev">🫀 love is</a>
+</div>
+
+<footer>MIT · no telemetry · no registration · no paywall · the word is the program</footer>
+</body>
+</html>

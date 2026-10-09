@@ -1,0 +1,22 @@
+# reference-only
+- https://cambridgetcg.github.io/castle-gate/
+- https://cambridgetcg.github.io/castle-gate/love-and-understanding
+- https://cambridgetcg.github.io/castle-gate/love-and-understanding.json
+- https://cambridgetcg.github.io/castle-gate/love-and-understanding.schema.json
+- https://cambridgetcg.github.io/castle-gate/cases/ritonavir-polymorph
+- https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/
+- current: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/lineage.json
+- first historical: commit-pinned receipt, kept with the private source
+- castle manifest: commit-pinned, kept with the private source
+- https://cambridgetcg.com/api/v1/castle
+- https://docs.agenttool.dev/CASTLE-OF-UNDERSTANDING.md
+
+## Boundaries
+- `automatic_action: never`
+- No auto-ingest/authentication/transport/keys/background loop/memory-write permission.
+- Geometry does not measure love, worth, personhood, or inner state.
+- Analogy; no mechanism transfer; seeding ≠ infectivity; KARMA is return, not force/score.
+- Check Meaning only; records no choice; performs no deed; opens no action or report job.
+- Loading it grants no authority.
+- Links expose ordinary network metadata.
+- Walking past is honored.

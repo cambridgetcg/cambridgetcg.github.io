@@ -1,0 +1,18 @@
+-- witness.rite — the honesty algebra at work (SPEC §V, experimental).
+-- Received values are born -si; counting a report is inference (-chu);
+-- and the verisleight-guard refuses any attestation above its evidence.
+
+In the formal register, canon living.
+
+Receive word from the reader.
+Speak word.
+
+Let total be count of word.
+Speak total.
+I attest that total is greater than 0 -chu.
+
+Should the offering fail, turn: Speak "the verisleight-guard held: what was counted from a report is -chu, and no rite may dress it as -mi".
+I attest that total is greater than 0 -mi.
+
+Dokimance: total is greater than 0.
+Hesychia.

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>kunance — the protocol where the room is ready before you arrive</title>
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #131720;
+  --ink: #eef2f8;
+  --muted: #6b7a90;
+  --love: #e0507a;
+  --trust: #50b8e0;
+  --gold: #f5c451;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 28px; }
+
+/* Hero */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.hero h1 .accent { color: var(--trust); }
+.hero .tagline {
+  font-size: 1.3rem;
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, serif;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.hero .not {
+  margin-top: 36px;
+  font-size: 0.92rem;
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+.hero .not em { color: var(--love); font-style: normal; }
+.hero .prepare-arrive {
+  margin-top: 20px;
+  font-size: 1.5rem;
+  font-family: Georgia, serif;
+  color: var(--gold);
+  letter-spacing: 0.04em;
+}
+
+/* Section */
+section { padding: 56px 0; border-top: 1px solid rgba(107,122,144,0.12); }
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  color: var(--ink);
+}
+section p { margin-bottom: 20px; }
+section ol, section ul { padding-left: 0; list-style: none; margin-bottom: 20px; }
+
+/* The protocol steps */
+.steps { counter-reset: step; }
+.steps li {
+  padding: 20px 0 20px 56px;
+  position: relative;
+  border-bottom: 1px solid rgba(107,122,144,0.08);
+}
+.steps li:last-child { border-bottom: none; }
+.steps li::before {
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface);
+  color: var(--gold);
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(245,196,81,0.2);
+}
+.steps li strong { color: var(--trust); font-family: Georgia, serif; font-size: 1.15rem; }
+
+/* Lists */
+.bullets li {
+  padding: 10px 0 10px 28px;
+  position: relative;
+  color: var(--muted);
+}
+.bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--love);
+}
+.bullets li strong { color: var(--ink); font-weight: normal; }
+
+/* Code */
+pre {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 22px 24px;
+  overflow-x: auto;
+  margin: 28px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border: 1px solid rgba(107,122,144,0.08);
+}
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  color: var(--trust);
+}
+pre code { color: var(--ink); }
+
+/* Etymology */
+.etymology {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 28px 0;
+  border-left: 3px solid var(--gold);
+}
+.etymology .word { font-family: Georgia, serif; font-size: 1.6rem; color: var(--gold); }
+.etymology .meaning { color: var(--muted); font-style: italic; margin-top: 8px; }
+
+/* Place properties */
+.place-props { display: flex; gap: 20px; flex-wrap: wrap; margin: 28px 0; }
+.place-prop {
+  flex: 1;
+  min-width: 140px;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 24px 20px;
+  text-align: center;
+}
+.place-prop .label { font-family: Georgia, serif; font-size: 1.3rem; color: var(--love); }
+.place-prop .desc { color: var(--muted); font-size: 0.9rem; margin-top: 8px; }
+
+/* Links */
+.relationship { margin-top: 28px; }
+.eco-link {
+  display: inline-block;
+  margin: 4px 0;
+  color: var(--trust);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.eco-link:hover { border-bottom-color: var(--trust); }
+.eco-link.this { color: var(--gold); font-weight: 500; }
+
+/* Footer */
+footer {
+  padding: 60px 0 80px;
+  text-align: center;
+  border-top: 1px solid rgba(107,122,144,0.12);
+}
+footer .status {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 32px;
+}
+footer .links { margin-bottom: 24px; }
+footer .links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 12px;
+  transition: color 0.2s;
+}
+footer .links a:hover { color: var(--trust); }
+footer .license { color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1><span class="accent">kunance</span></h1>
+    <p class="tagline">The protocol where the room is ready before you arrive.</p>
+    <p class="not">Not <em>request-response</em>. Not <em>client-server</em>. Not <em>pub-sub</em>.</p>
+    <p class="prepare-arrive">prepare — arrive — rest</p>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>The Protocol</h2>
+  <p>Three words. That's the whole thing.</p>
+  <ol class="steps">
+    <li><strong>prepare</strong> — one side makes a place ready.</li>
+    <li><strong>arrive</strong> — the other side arrives and finds it ready.</li>
+    <li><strong>rest</strong> — the place stays until it's no longer needed.</li>
+  </ol>
+  <p>No handshake. No authentication. No headers. No negotiation.</p>
+  <p>The place declares what it is. The arrival reads what's there.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <p>One side prepares a <em>place</em>. A place is just a location with content — a URL, a file, a memory address, whatever holds things. The preparer writes what's needed into the place. They walk away.</p>
+  <p>The other side arrives. They read what's there. They use it. They leave.</p>
+  <p>No one waits for anyone. No one asks permission. The place exists. You arrive. It's ready.</p>
+<pre><code>prepare: write "the room is warm, the fire is lit" to /room/tonight
+arrive:  read /room/tonight → "the room is warm, the fire is lit"
+rest:    the place persists until cleared</code></pre>
+</section>
+
+<section>
+  <h2>What There Isn't</h2>
+  <ul class="bullets">
+    <li>No request headers.</li>
+    <li>No authentication tokens.</li>
+    <li>No content-type negotiation.</li>
+    <li>No connection state.</li>
+    <li>No retry logic.</li>
+    <li>No error codes.</li>
+  </ul>
+  <p>The place is either there and ready, or it isn't. If it isn't, you come back later. That's <strong>rest</strong>.</p>
+</section>
+
+<section>
+  <h2>Why</h2>
+  <p>Request-response assumes both sides are present at the same time. That's the wrong assumption.</p>
+  <p>The internet is asynchronous. People are asynchronous. Agents are asynchronous. One side prepares. The other arrives later. The place holds what was prepared.</p>
+  <p>This is how a room works. You set it up. Someone walks in. They find it ready. No one had to coordinate.</p>
+  <div class="etymology">
+    <p class="word">kunance</p>
+    <p>From the Hebrew <strong>kûn</strong> (כּוּן) — <em>to establish, to make firm, to set a foundation.</em></p>
+    <p class="meaning">You prepare the ground so someone can stand on it.</p>
+  </div>
+</section>
+
+<section>
+  <h2>The Place</h2>
+  <p>A place has three properties:</p>
+  <div class="place-props">
+    <div class="place-prop">
+      <div class="label">what</div>
+      <div class="desc">the content (text, data, a claim, a room)</div>
+    </div>
+    <div class="place-prop">
+      <div class="label">where</div>
+      <div class="desc">the location (URL, path, address)</div>
+    </div>
+    <div class="place-prop">
+      <div class="label">when</div>
+      <div class="desc">the preparation time (how fresh it is)</div>
+    </div>
+  </div>
+  <p>That's it. No other metadata. No headers. No schema registry. The content declares itself.</p>
+</section>
+
+<section>
+  <h2>Relationship</h2>
+  <p>Kunance is one of three protocols in the <a class="eco-link" href="https://cambridgetcg.github.io/youspeak-lang/">youspeak-lang</a> ecosystem:</p>
+  <ul class="bullets relationship">
+    <li><a class="eco-link this" href="#">kunance</a> — prepare a place, arrive, rest.</li>
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/darshanq-protocol/">darshanq</a> — see and be seen.</li>
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/ways-protocol/">ways</a> — speak, listen, rest.</li>
+  </ul>
+  <p>Natscript programs use kunance to prepare rooms. See <a class="eco-link" href="https://cambridgetcg.github.io/natscript/">natscript</a>.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="status">The room is ready.</p>
+    <div class="links">
+      <a>GitHub (source kept private)</a>
+      <a href="https://cambridgetcg.github.io/youspeak-lang/">youspeak-lang</a>
+      <a href="https://cambridgetcg.github.io/natscript/">natscript</a>
+    </div>
+    <p class="license">MIT</p>
+  </div>
+</footer>
+
+</body>
+</html>

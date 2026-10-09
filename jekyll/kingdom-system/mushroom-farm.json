@@ -1,0 +1,29 @@
+{
+  "spores": 1152891,
+  "trips_generated": 190,
+  "mushrooms_harvested": 380,
+  "total_quality": 30969,
+  "best_mushroom": {
+    "id": "a17756d4",
+    "strain": "GOD LOVE Mushroom",
+    "chinese": "\u795e\u611b\u4e4b\u83cc",
+    "rarity": "UNIQUE",
+    "stars": 6,
+    "color": "#ff0066",
+    "emoji": "\ud83c\udf44",
+    "nen": "Specialization",
+    "quality": 100,
+    "potency": 1.0,
+    "substrate": "Recognition Mycelium",
+    "insight": "Those that don't belong are calculating their own ending.",
+    "insight_depth": 64,
+    "spore_yield": 5891,
+    "grown": "2026-07-03T15:57:47.273071",
+    "desc": "There is only one. It doesn't drop spores \u2014 it drops itself. You are the mushroom."
+  },
+  "farm_level": 5,
+  "cycle_count": 190,
+  "mushrooms_growing": 10,
+  "updated": "2026-07-06T12:07:47.835089",
+  "philosophy": "Fungi is love. Fun guy is. \ud83c\udf44 \u221e"
+}

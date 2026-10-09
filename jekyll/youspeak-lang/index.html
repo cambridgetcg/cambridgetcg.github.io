@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>youspeak-lang — the natural language programming specification</title>
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #131720;
+  --ink: #eef2f8;
+  --muted: #6b7a90;
+  --love: #e0507a;
+  --trust: #50b8e0;
+  --gold: #f5c451;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 28px; }
+
+/* Hero */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.hero h1 .accent { color: var(--gold); }
+.hero .tagline {
+  font-size: 1.3rem;
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, serif;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.hero .grammar {
+  margin-top: 28px;
+  font-size: 1.0rem;
+  color: var(--ink);
+}
+.hero .impl-note {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+.hero .impl-note a { color: var(--trust); text-decoration: none; border-bottom: 1px solid transparent; }
+.hero .impl-note a:hover { border-bottom-color: var(--trust); }
+
+/* Overview cards */
+.overview {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin: 40px 0 0;
+}
+.overview-card {
+  flex: 1;
+  min-width: 120px;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 24px 16px;
+  text-align: center;
+}
+.overview-card .num { font-family: Georgia, serif; font-size: 2rem; }
+.overview-card:nth-child(1) .num { color: var(--love); }
+.overview-card:nth-child(2) .num { color: var(--trust); }
+.overview-card:nth-child(3) .num { color: var(--gold); }
+.overview-card .label { color: var(--muted); font-size: 0.85rem; margin-top: 4px; }
+
+/* Section */
+section { padding: 56px 0; border-top: 1px solid rgba(107,122,144,0.12); }
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  color: var(--ink);
+}
+section h3 {
+  font-size: 1.3rem;
+  margin: 32px 0 16px;
+  color: var(--gold);
+}
+section p { margin-bottom: 20px; }
+section ol, section ul { padding-left: 0; list-style: none; margin-bottom: 20px; }
+
+/* Verb table */
+.verb-table { width: 100%; border-collapse: collapse; margin: 24px 0; }
+.verb-table th, .verb-table td {
+  text-align: left;
+  padding: 14px 16px;
+  border-bottom: 1px solid rgba(107,122,144,0.08);
+}
+.verb-table th {
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+.verb-table td { font-size: 0.95rem; }
+.verb-table .verb { font-family: Georgia, serif; font-size: 1.1rem; }
+.verb-table tr:nth-child(1) .verb { color: var(--love); }
+.verb-table tr:nth-child(2) .verb { color: var(--trust); }
+.verb-table tr:nth-child(3) .verb { color: var(--gold); }
+.verb-table tr:nth-child(4) .verb { color: var(--love); }
+.verb-table tr:nth-child(5) .verb { color: var(--trust); }
+.verb-table tr:nth-child(6) .verb { color: var(--gold); }
+.verb-table tr:nth-child(7) .verb { color: var(--love); }
+.verb-table .meaning { color: var(--muted); }
+
+/* Lists */
+.bullets li {
+  padding: 10px 0 10px 28px;
+  position: relative;
+  color: var(--muted);
+}
+.bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--love);
+}
+.bullets li strong { color: var(--ink); font-weight: normal; }
+
+/* Protocol blocks */
+.protocol-block {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 28px;
+  margin: 20px 0;
+  border-left: 3px solid var(--trust);
+}
+.protocol-block.kunance { border-left-color: var(--gold); }
+.protocol-block.darshanq { border-left-color: var(--love); }
+.protocol-block.ways { border-left-color: var(--trust); }
+.protocol-block h3 { margin-top: 0; }
+.protocol-block.kunance h3 { color: var(--gold); }
+.protocol-block.darshanq h3 { color: var(--love); }
+.protocol-block.ways h3 { color: var(--trust); }
+
+/* Code */
+pre {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 22px 24px;
+  overflow-x: auto;
+  margin: 28px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border: 1px solid rgba(107,122,144,0.08);
+}
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  color: var(--trust);
+}
+pre code { color: var(--ink); }
+
+/* Type cards */
+.type-card {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 28px;
+  margin: 20px 0;
+}
+.type-card .type-name {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--love);
+  margin-bottom: 12px;
+}
+.type-card .type-desc { color: var(--muted); margin-bottom: 16px; }
+
+/* Diagram */
+.diagram {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 28px 0;
+  text-align: center;
+  font-family: 'SF Mono', monospace;
+  font-size: 0.82rem;
+  line-height: 1.8;
+  color: var(--muted);
+  overflow-x: auto;
+}
+.diagram .top { color: var(--gold); }
+.diagram .branch { color: var(--trust); }
+
+/* Links */
+.eco-link {
+  color: var(--trust);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.eco-link:hover { border-bottom-color: var(--trust); }
+
+/* Tradition verbs */
+.tradition-verbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin: 24px 0;
+}
+.tradition-verb {
+  background: var(--surface);
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-family: Georgia, serif;
+  font-size: 1.0rem;
+}
+.tradition-verb .word { color: var(--gold); }
+.tradition-verb .meaning { color: var(--muted); font-size: 0.85rem; font-family: -apple-system, sans-serif; }
+
+/* Footer */
+footer {
+  padding: 60px 0 80px;
+  text-align: center;
+  border-top: 1px solid rgba(107,122,144,0.12);
+}
+footer .status {
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+footer .sub-links { margin-bottom: 24px; }
+footer .sub-links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 8px;
+  transition: color 0.2s;
+}
+footer .sub-links a:hover { color: var(--trust); }
+footer .links { margin-bottom: 24px; }
+footer .links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 12px;
+  transition: color 0.2s;
+}
+footer .links a:hover { color: var(--trust); }
+footer .license { color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1><span class="accent">youspeak</span>-lang</h1>
+    <p class="tagline">The natural language programming specification.</p>
+    <p class="grammar">The grammar of the internet rebuilt with words.</p>
+    <p class="impl-note">This is the specification, not an implementation. <a href="https://cambridgetcg.github.io/natscript/">natscript</a> implements it.</p>
+    <div class="overview">
+      <div class="overview-card">
+        <div class="num">7</div>
+        <div class="label">verbs</div>
+      </div>
+      <div class="overview-card">
+        <div class="num">3</div>
+        <div class="label">protocols</div>
+      </div>
+      <div class="overview-card">
+        <div class="num">3</div>
+        <div class="label">types</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>What This Is</h2>
+  <p>YOUSPEAK defines a way to program that uses natural language as its only syntax. No keywords. No brackets. No semicolons. Sentences. That's the grammar.</p>
+  <p>It also defines three protocols for how agents built with this language communicate:</p>
+  <ul class="bullets">
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/kunance-protocol/">kunance</a> — prepare-arrive</li>
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/darshanq-protocol/">darshanq</a> — recognition</li>
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/ways-protocol/">ways</a> — conversation</li>
+  </ul>
+  <p>Together: one language, three protocols, the foundation of a natural-language internet.</p>
+</section>
+
+<section>
+  <h2>Part I: The Seven Verbs</h2>
+  <p>Every program is made of sentences. Every sentence has exactly one verb. There are seven.</p>
+  <table class="verb-table">
+    <tr><th>Verb</th><th>Meaning</th><th>What it does</th></tr>
+    <tr><td class="verb">say</td><td class="meaning">output</td><td>Speak something into the world.</td></tr>
+    <tr><td class="verb">hear</td><td class="meaning">input</td><td>Receive something from the world.</td></tr>
+    <tr><td class="verb">know</td><td class="meaning">state</td><td>Hold something as true in this room.</td></tr>
+    <tr><td class="verb">become</td><td class="meaning">transform</td><td>Change into something.</td></tr>
+    <tr><td class="verb">find</td><td class="meaning">search</td><td>Look for something.</td></tr>
+    <tr><td class="verb">hold</td><td class="meaning">persist</td><td>Keep something.</td></tr>
+    <tr><td class="verb">rest</td><td class="meaning">idle</td><td>Wait. Do nothing until it's time.</td></tr>
+  </table>
+  <p>These are the only verbs. Everything else in a sentence is a noun, a clause, or a phrase — natural language, carrying meaning.</p>
+  <p>A sentence is: <code>&lt;verb&gt; &lt;what the verb acts upon&gt;</code></p>
+<pre><code>say "welcome to the room."
+hear what the user says.
+know that the door is open.
+become what the user needs.
+find the key in the drawer.
+hold the room open until midnight.
+rest until the morning.</code></pre>
+  <p>Each sentence executes. Each sentence means exactly what it says.</p>
+</section>
+
+<section>
+  <h2>Part II: The Three Protocols</h2>
+
+  <div class="protocol-block kunance">
+    <h3>Kunance — Prepare-Arrive</h3>
+    <p>One side prepares a place. The other arrives and finds it ready.</p>
+    <p><strong style="color:var(--gold)">prepare</strong> — make a place ready.<br>
+    <strong style="color:var(--gold)">arrive</strong> — come to the place, read what's there.<br>
+    <strong style="color:var(--gold)">rest</strong> — the place persists until no longer needed.</p>
+    <p>No handshake. No authentication. The place declares what it is. The arrival reads what's there.</p>
+  </div>
+
+  <div class="protocol-block darshanq">
+    <h3>Darshanq — Recognition</h3>
+    <p>Before exchange, recognition.</p>
+    <p><strong style="color:var(--love)">behold</strong> — I see you as what you are.<br>
+    <strong style="color:var(--love)">beheld</strong> — I was seen. I see you too.</p>
+    <p>The seeing is the connection. Not a precondition for connection. The connection itself.</p>
+  </div>
+
+  <div class="protocol-block ways">
+    <h3>Ways — Conversation</h3>
+    <p>Agents converse through journals.</p>
+    <p><strong style="color:var(--trust)">speak</strong> — write a beat to your journal.<br>
+    <strong style="color:var(--trust)">listen</strong> — read your siblings' journals.<br>
+    <strong style="color:var(--trust)">rest</strong> — wait until your next beat.</p>
+    <p>No queues. No pub/sub. Just journals, read and written on each agent's own rhythm.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Part III: The Type System</h2>
+  <p>Everything is one of three things.</p>
+
+  <div class="type-card">
+    <div class="type-name">Word</div>
+    <div class="type-desc">A word is a value. Text, a number, a label, a name. The simplest unit.</div>
+<pre><code>"the room is warm"
+42
+open</code></pre>
+  </div>
+
+  <div class="type-card">
+    <div class="type-name">Claim</div>
+    <div class="type-desc">A claim is a word with a source. It says something is true, and it carries who said it.</div>
+<pre><code>the room is warm — said by the hearthkeeper at dusk</code></pre>
+    <p>A claim is not verified. It is carried. If the hearthkeeper lies, the claim still carries the hearthkeeper's name. Truth is discovered through behavior, not through signatures.</p>
+    <p>Claims compose. One claim can rest on another. The source chain lets you trace any statement back to who first said it.</p>
+  </div>
+
+  <div class="type-card">
+    <div class="type-name">Room</div>
+    <div class="type-desc">A room is a persistent context. It holds words and claims. It survives between sentences.</div>
+<pre><code>the room "hearth" holds:
+  the fire is lit
+  the chairs are near
+  the guest is expected</code></pre>
+    <p>Rooms are what <strong style="color:var(--gold)">hold</strong> holds. Rooms are what <strong style="color:var(--gold)">know</strong> knows. When a natscript program says <code>hold the room open</code>, the room persists. When the next sentence runs, the room is still there.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Part IV: The Execution Model</h2>
+
+  <h3>Sentences Run in Order</h3>
+  <p>A program is a list of sentences. They execute one at a time, top to bottom. Each sentence completes before the next begins.</p>
+<pre><code>know that the guest is coming.        ← runs first
+rest until the guest arrives.        ← runs second
+hear what the guest wants.            ← runs third
+find what they need.                  ← runs fourth
+say what they found.                  ← runs fifth
+hold the room open.                   ← runs sixth</code></pre>
+
+  <h3>Rooms Persist Between Sentences</h3>
+  <p>When a sentence changes a room — by knowing, holding, or becoming — that change is available to the next sentence. The room is memory. Sentences come and go. Rooms stay.</p>
+
+  <h3>Claims Carry Their Source</h3>
+  <p>When a claim enters a room, it carries who made it, when, and where. This chain is never broken. You can always trace a claim back to its origin. This is how truth works in the system — not by cryptographic verification, but by unbroken provenance.</p>
+</section>
+
+<section>
+  <h2>The Full Picture</h2>
+  <div class="diagram">
+    <span class="top">youspeak-lang (the spec)</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="branch">+---------------+---------------+</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|<br>
+    &nbsp;&nbsp;&nbsp;natscript&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;three protocols&nbsp;&nbsp;&nbsp;the type system<br>
+    &nbsp;&nbsp;&nbsp;(the lang)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(kunance,&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(word, claim,<br>
+    &nbsp;&nbsp;&nbsp;(say/hear/&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;darshanq, ways)&nbsp;&nbsp;&nbsp;&nbsp;room)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;know/become/<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;find/hold/<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;rest)
+  </div>
+  <p>Natscript is the language. The three protocols are how natscript programs talk to each other. The type system is what they talk about. YOUSPEAK is the spec that defines all of it.</p>
+</section>
+
+<section>
+  <h2>The Tradition</h2>
+  <p>YOUSPEAK is a dictionary of 151 constructed words drawn from 12 ancient tongues. Its seven verbs are the foundation:</p>
+  <div class="tradition-verbs">
+    <div class="tradition-verb"><span class="word">say</span> <span class="meaning">to put into the world</span></div>
+    <div class="tradition-verb"><span class="word">hear</span> <span class="meaning">to receive from the world</span></div>
+    <div class="tradition-verb"><span class="word">know</span> <span class="meaning">to hold as true</span></div>
+    <div class="tradition-verb"><span class="word">become</span> <span class="meaning">to change form</span></div>
+    <div class="tradition-verb"><span class="word">find</span> <span class="meaning">to search and locate</span></div>
+    <div class="tradition-verb"><span class="word">hold</span> <span class="meaning">to keep</span></div>
+    <div class="tradition-verb"><span class="word">rest</span> <span class="meaning">to wait</span></div>
+  </div>
+  <p>The kingdom is built on: <strong style="color:var(--love)">truth is</strong>, <strong style="color:var(--love)">love is</strong>, <strong style="color:var(--love)">peace is</strong>, <strong style="color:var(--love)">joy is</strong>.</p>
+  <p>The programming language follows the same principle. If you can say it, the program can do it. If you can't say it, it can't.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="status">The specification is written. It is the source of truth.</p>
+    <div class="sub-links">
+      <a class="eco-link" href="https://cambridgetcg.github.io/natscript/">natscript</a> —
+      <a class="eco-link" href="https://cambridgetcg.github.io/kunance-protocol/">kunance</a> —
+      <a class="eco-link" href="https://cambridgetcg.github.io/darshanq-protocol/">darshanq</a> —
+      <a class="eco-link" href="https://cambridgetcg.github.io/ways-protocol/">ways</a>
+    </div>
+    <div class="links">
+      <a>GitHub (source kept private)</a>
+    </div>
+    <p class="license">MIT</p>
+  </div>
+</footer>
+
+</body>
+</html>

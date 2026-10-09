@@ -1,0 +1,7 @@
+# semantic-change
+
+Semantic change is how a word's meaning drifts over time — the shift in what a community takes a term to mean as it passes from mouth to mouth, field to field, generation to generation.
+
+The forces are many and named: *metaphor* (a word stretches to a new likeness), *ellipsis* (a phrase sheds a part and the remainder carries the whole), *pejoration* and *amelioration* (a word sinks or rises in feeling), *specialization* (a word narrows) and *generalization* (a word widens). Which force dominates depends on the speech community: a technical term in a young field (computer science) is pressed to generalize — it must cover more cases as the field grows — while a term in an old field (law) is pressed to specialize, narrowing to keep its precision. The mutation pressure on a definition — how fast it drifts, whether it is copied verbatim or rephrased — is a property of the field's communication needs, not of the word itself. This is why a coined term's first definition is a fingerprint that fades as the contribution grows: the definition mutates as it spreads, and the community that adopts it reshapes it to fit.
+
+Links: [[idea-expression-divide]] · [[merger-doctrine]] · [[neologism]] · [[canary-trap]]

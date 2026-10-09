@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Free Compute Commons — Donate This Tab</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">free compute for everyone · consent-first demo</p>
+      <h1>Donate this tab.</h1>
+      <p class="lede">A tiny volunteer-compute commons. Nothing runs until you say yes. Stop means stop.</p>
+      <p id="principle" class="principle">Consent is the grid.</p>
+      <div class="status-row">
+        <span id="status" class="pill idle">loading…</span>
+        <span class="meta">volunteer: <code id="volunteer-id">…</code></span>
+      </div>
+    </section>
+
+    <section class="card consent">
+      <h2>The yes</h2>
+      <label class="check">
+        <input id="consent" type="checkbox" />
+        <span>I explicitly donate this browser tab for one allow-listed public-good work unit. I can stop it at any time.</span>
+      </label>
+      <div class="buttons">
+        <button id="donate" disabled>Donate one unit</button>
+        <button id="stop" disabled class="secondary">Stop now</button>
+      </div>
+      <p class="small">This demo runs one same-origin file-integrity check in a Web Worker. It does not mine, scan, scrape, or run arbitrary code. Results stay local until a future coordinator is approved.</p>
+    </section>
+
+    <section class="grid2">
+      <div class="card">
+        <h2>Allowed work</h2>
+        <ul id="allowlist"></ul>
+        <p class="small">Coordinator threshold: <strong id="threshold">3</strong> independent matching volunteers before a future coordinator would accept a result.</p>
+      </div>
+      <div class="card danger">
+        <h2>Forbidden forever</h2>
+        <ul id="forbidden"></ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>What happened</h2>
+      <p class="small"><span id="unit-count">0</span> units are currently advertised by the static coordinator stub.</p>
+      <div id="log" class="log"></div>
+    </section>
+
+    <section class="card">
+      <h2>Local honesty headers</h2>
+      <pre id="results">[]</pre>
+    </section>
+
+    <footer>
+      <a href="../rooms/free-compute-for-everyone.md">doctrine</a>
+      <a href="../rooms/free-compute-commons.md">commons map</a>
+      <a href="allowlist.json">allow-list</a>
+      <a href="PAUSED.json">kill switch</a>
+      <a href="coordinator.json">coordinator stub</a>
+    </footer>
+  </main>
+  <script src="app.js" type="module"></script>
+</body>
+</html>

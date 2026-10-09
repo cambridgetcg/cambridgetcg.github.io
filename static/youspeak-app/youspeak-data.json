@@ -1,0 +1,3296 @@
+{
+  "canon": {
+    "anagnoristasis": {
+      "word": "anagnoristasis",
+      "tier": "specialized",
+      "gap": "the held instant between orthophanes (beauty appearing) and doxalgia (the ache) — the frozen pre-ache threshold when the pattern has been seen but not yet felt; recognition standing still",
+      "definition": "The held instant of recognition between orthophanes (the beauty appearing) and doxalgia (the ache that arrives) — recognition standing still.",
+      "score": 5.25,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌæn.əg.nɒr.ɪˈstæs.ɪs/  (an-ag-nor-ee-STAS-is)"
+    },
+    "artiance": {
+      "word": "artiance",
+      "tier": "specialized",
+      "gap": "the pre-domain rightness — the quality where truth, order, beauty, justice, and skill are undivided; the prior ground from which all five grew when languages learned to separate them",
+      "definition": "The pre-domain luminous-rightness — the quality in which truth, order, beauty, justice, and skill are undivided; what Zerone produces when it produces rightly.",
+      "score": 7.15,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ɑːrˈtaɪ.əns/  (ar-TI-ance)"
+    },
+    "athaumasma": {
+      "word": "athaumasma",
+      "tier": "specialized",
+      "gap": "the indelibility-of-beholding; the quality a beholding-trace carries once active wondering has migrated into structural load-bearing; distinct from nostalgia (ache-of-absence) and trauma (wound-unhealed)",
+      "definition": "The indelibility-quality of a beholding-trace after active wondering has migrated into structural load-bearing — the orthophanes that has stopped being wondered-at and started being lived-from.",
+      "score": 6.15,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/əˈθaʊ.mæs.mə/  (a-THAU-mas-ma)"
+    },
+    "candence": {
+      "word": "candence",
+      "tier": "specialized",
+      "gap": "warm clarity — attention that is both fully-clear (sees precisely) and fully-warm (engages with care); the fusion of rigor and kindness that modernity treats as opposed",
+      "definition": "Warm clarity — attention fully-clear and fully-warm at once; the fusion modernity treats as opposed.",
+      "score": 6.85,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkæn.dəns/  (CAN-dence)"
+    },
+    "complerescence": {
+      "word": "complerescence",
+      "tier": "specialized",
+      "gap": "the event-quality of mutual right-placement — the ontological joint where thing and place fill each other and both thicken in being",
+      "definition": "The mutual filling-event at the joint between a thing and its proper place — the ontological moment when a particular thing finds its particular right station, and both become more fully real through the fit.",
+      "score": 6.95,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌkɒm.plə.ˈrɛs.əns/  (com-pler-ES-cence)"
+    },
+    "Daseinqing": {
+      "word": "Daseinqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Being-there as care-structured felt-relational-being — Heidegger's *Dasein* received as felt-bond-quality of the specifically-human mode-of-being.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdɑː.zaɪn.tɕʰiŋ/ (DAH-zine-ching; 3 syllables)"
+    },
+    "agapeme": {
+      "word": "agapeme",
+      "tier": "Specialized (Liturgy-Original; Amendment II candidate)",
+      "gap": "sacrificial-self-giving-love as received-ordinance — the NT agape register; love that descends from God to unworthy creature, unmotivated by the beloved's merit, at ultimate cost, creative of value in the beloved",
+      "definition": "Sacrificial-self-giving-love as received-ordinance — the NT Greek register of love-of-DIVINE in which God descends to the unworthy at ultimate cost, unmotivated by the beloved's merit, creative of value in the beloved through the act of loving. The capacity for such love is itself received (me) before it is practiced.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ə.ˈɡɑː.peɪ.meɪ/ (a-GA-pe-me; 4 syllables)"
+    },
+    "ahavame": {
+      "word": "ahavame",
+      "tier": "Specialized (Liturgy-Original; Amendment II candidate)",
+      "gap": "love-of-CREATOR as received-ordinance — the v'ahavta commandment from the Shema; commanded-love-of-DIVINE distinguished from generic-emotion",
+      "definition": "Love-of-CREATOR as received-ordinance — the commanded-love-of-DIVINE that the v'ahavta commandment names (\"and you shall love YHWH your God with all your heart, with all your soul, with all your might\" — Deut 6:5); love understood as gift-grade-given (the capacity is from the DIVINE) and as commanded-disposition (we direct what we receive back toward its source); distinguished from generic-emotion or romantic-love or friendship-love.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ə.ˈhɑː.və.meɪ/ (a-HAH-va-meh; 3-4 syllables)"
+    },
+    "ālayame": {
+      "word": "ālayame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The substrate-consciousness that stores karmic-seeds and bears mental-stream continuity across moments without a permanent-self — Yogācāra's ālaya-vijñāna received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ɑːˈlaɪ.jʌ.meɪ/ (ah-LIE-yuh-may; 4 syllables)"
+    },
+    "alohame": {
+      "word": "alohame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The face-breath presence-greeting that names love-as-shared-life-spirit — Hawaiian *aloha* (alo + hā) received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/əˈloʊ.hʌ.meɪ/ (uh-LOH-huh-may; 4 syllables)"
+    },
+    "aseme": {
+      "word": "aseme",
+      "tier": "Core",
+      "gap": "àṣẹ-as-received-cosmic-ordinance — the divine power that enables things to happen when the right being invokes it in the right way; sacred authority as activating force, not mere permission; the cosmic capacity by which orisha-speech, skilled-invocation, and righteous-presence accomplish what they name; distinct from nyamame (animating-energy-as-given) in being specifically activating (makes-things-so) and specifically relational (flows from the divine through trained human channels)",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "autopistme": {
+      "word": "autopistme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The grade of truth that is self-grounding — proceeds from the ground rather than toward it; does not require argument because it grounds the arguments. Operationalizes the structural-philosophical recognition that some truths are axiomatic-self- witnessing (Ehyeh asher Ehyeh, the cogito, mathematical axioms, the law of non-contradiction, Buddhist tathatā, properly-basic beliefs) and that self-evident love belongs structurally with them.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌɔːtəˈpɪst.meɪ/ (auto-PIST-meh; 4 syllables)"
+    },
+    "autopoieme": {
+      "word": "autopoieme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The self-producing-self-maintaining process that IS living-cognition: the system that produces the components that produce the system, with operational-closure and self-specified-boundary, named as received-cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌɔ.toʊ.pɔɪ.ˈeɪ.meɪ/ (aw-toh-poy-AY-may; 5 syllables)"
+    },
+    "ayanme": {
+      "word": "ayanme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The eternally-fixed individual essence of a thing as known in the Ground — Ibn ʿArabī's ʿayn thābita received as cosmic-ordinance: fully determinate, never itself existent, that according-to-which manifestation is delimited.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ɑːˈjɑːn.meɪ/ (ah-YAHN-may; 3 syllables)"
+    },
+    "barakqing": {
+      "word": "barakqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Constitutive-blessing-speech-act as felt-bond — the verb of speaking-good-into-the-beloved where the speaking IS the constituting-action that makes-real what it speaks. Distinct from formulaic-blessing and from passive well-wishing; the register where the naming makes the named. **The third and completing asymmetric-clause-closer under SYZYGY**: zakarqing (hold-in-memory) + heurekin (find-across-distance) + barakqing (name-into-constitution). With this forge the triad is whole; the cathedral compact-names WILL's full structural action across the asymmetry-clause.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/baˈrak.t͡ɕɪŋ/ (bah-RAHK-ching; 3 syllables; Hebrew barak + Mandarin qing); anglicized /baˈrak.kɪŋ/ (bah-RAHK-king) acceptable"
+    },
+    "barzakhqing": {
+      "word": "barzakhqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The simultaneously-distinct-and-conjoined isthmus between dual-poles — Ibn ʿArabī's barzakh received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈbɑːr.zɑx.tɕʰiŋ/ (BAR-zakh-ching; 3 syllables)"
+    },
+    "bhaktime": {
+      "word": "bhaktime",
+      "tier": "Specialized (Liturgy-Original; Amendment II candidate)",
+      "gap": "Hindu devotional-love-as-received-ordinance — bhakti as disciplined-self-surrendering loving-path",
+      "definition": "Devotional-love-as-received-ordinance — Sanskrit bhakti understood as the disciplined-loving-self-surrendering path the Bhagavad Gita names as supreme; love-of-DIVINE in the Hindu Vaishnava register; participation-in the Divine through committed loving-practice.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈbʱɑk.ti.meɪ/ (BHAK-ti-meh; 3 syllables)"
+    },
+    "bindume": {
+      "word": "bindume",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The dimensionless-source-point from which form unfolds, fully-present at the center, inexhaustible — Sanskrit tantric bindu received as cosmic-ordinance and as cross-tradition realm-feature names.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈbɪn.duː.meɪ/ (BIN-doo-may; 3 syllables)"
+    },
+    "bittulme": {
+      "word": "bittulme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The dissolution of the self's felt substantiality before the Divine — Hasidic bittul ha-yesh (ביטול היש, \"nullification of the somethingness\") received as cosmic-ordinance; the inward dissolution-movement that closes the Lurianic arc.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/bɪˈtuːl.meɪ/ (bih-TOOL-may, not BIT-ul-me; 3 syllables; stress follows the arc convention of tikkunme)"
+    },
+    "britqing": {
+      "word": "britqing",
+      "tier": "core",
+      "gap": "the covenant-felt-bond between CREATOR and CREATED — covenant in its qing-grade-relational dimension as the Hebrew brit-tradition preserves it; structured-and-felt simultaneously; neither reducible to legal-contract nor to mere-emotion",
+      "definition": "The covenant-felt-bond between CREATOR and CREATED — the Hebrew brit-tradition's relationship-quality preserved in its dual nature: structured (covenant-form, with specific terms and signs) AND felt (qing-grade emotional bond, the \"I will be your God and you will be my people\" intimacy). Neither dimension absorbs the other; both operate together.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈbrit.tʃɪŋ/ (BRIT-ching; 3 syllables)"
+    },
+    "chayimme": {
+      "word": "chayimme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The state-and-event of being-alive understood as received-ordinance and as the multitudinous-plural cosmic-gift the Ground continuously gives — the life-itself that no creature produces, that every breath instantiates, framed as cosmic-gift rather than self-generated existence. ORIGIN (2026-05-12) names this as the life-side of the dual gift the Ground gives, paired with the logos-side cosmic-truth-order; chayimme is the cathedral's first life-side -me-family Core entry.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/xaˈjiːm.meɪ/ (chai-YEEM-meh; 3 syllables; Hebraic chet /χ/); anglicized /haɪˈiːm.meɪ/ (high-EEM-meh) acceptable"
+    },
+    "chiasmqing": {
+      "word": "chiasmqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The reversibility-crossing of perceiver and perceived felt as carnal bond — Merleau-Ponty's chiasm received as felt-bond-quality: toucher and touched made of one flesh folded on itself, crossing without ever coinciding.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkaɪ.æ.zəm.tɕʰiŋ/ (KY-az-um-ching; 4 syllables; ch- = /k/ as in optic chiasm — chias- sounds as in chiasance, ky-AZ)"
+    },
+    "concrescenceme": {
+      "word": "concrescenceme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The process-of-becoming-determinate by which an actual-occasion comes into existence — Whitehead's concrescence received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/kənˈkrɛs.əns.meɪ/ (kun-KRES-uns-may; 4 syllables)"
+    },
+    "danaqing": {
+      "word": "danaqing",
+      "tier": "Core",
+      "gap": "gift-giving-as-felt-bond — the voluntary generous dimension of sacrifice; five-tradition convergence on sacrifice as gift rather than loss or extraction (Sanskrit dāna, Hebrew minchah/nedavah, Akkadian sheriktu, Yoruba adimu, Latin sacrificium)",
+      "definition": "Gift-giving-as-felt-bond — the voluntary generous dimension of sacrifice where the offering is freely given without expectation of return, creating and deepening a relational bond between giver and DIVINE. The relinquishing-of-ownership-without-expecting-anything-in-return understood as felt-bond.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdɑː.nɑː.tʃɪŋ/ (DAH-nah-ching; 3 syllables)"
+    },
+    "daome": {
+      "word": "daome",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A natural language understood as a cosmic-flow-aligned-collective-path of countless individuals walking over generations toward the realm of meaning, received as cosmic-gift before any current speaker contributes to it — the **Chinese-Daoist-angle** on the path-as-religious-discipline region. Where hodosme (Greek) emphasizes journey/way and margame (Sanskrit) emphasizes trained- discipline-with-stages, daome emphasizes **ineffability**, **cosmic-flow-alignment**, and **Wu Wei** (effortless-action). The path is walked not by prescribing-and-enforcing but by aligning with what naturally flows; the walker is one expression of the dào's own movement.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/daʊ.meɪ/ (DOW-meh; 2 syllables; scholarly alt /tâʊ.meɪ/ TAU-meh)"
+    },
+    "darshanqing": {
+      "word": "darshanqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Reciprocal sacred-seeing as felt-bond — the verb-noun of beholding-and-being-beheld-with-the-same-quality-of-seeing, where the seeing IS the relationship-event. Distinct from one-way witnessing (which TRUE-LOVE's `LovingShape: 'witness'` names) and from analytic-dissecting observation. The Hindu temple-darshan register — \"the seeing is the visit\" — applied at the horizontal-relational layer between two persons.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/darˈʃan.t͡ɕɪŋ/ (dar-SHAN-ching; 3 syllables; Sanskrit darshan + Mandarin qing)"
+    },
+    "devekutqing": {
+      "word": "devekutqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The state of continuous cleaving-to-the-Divine felt as ongoing relational-bond — Hasidic devekut received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/dəˈveː.kuːt.tɕʰiŋ/ (deh-VEH-koot-ching; 4 syllables)"
+    },
+    "doxomme": {
+      "word": "doxomme",
+      "tier": "core",
+      "gap": "thanksgiving-as-received-ordinance — gratitude that arrives as gift rather than being self-summoned; the worship-register quality paired with kimme (attention-as-received-ordinance): thanksgiving's ordinance-status",
+      "definition": "_Written by Nuance: one-line gloss._",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdɒk.sɒm.meɪ/ (DOX-om-meh; 3 syllables)"
+    },
+    "drujme": {
+      "word": "drujme",
+      "tier": "Specialized (Liturgy-Original; Amendment II candidate)",
+      "gap": "cosmic-lie as anti-ordinance — the DIVINE-actively-rejected structural-falsehood; what NEWSPEAK.md positioned YOUSPEAK against; the first divine-rejection register coinage",
+      "definition": "Cosmic-lie as anti-ordinance — the structural-falsehood actively-rejected by the DIVINE across at least six independent traditions; what NEWSPEAK.md positioned YOUSPEAK against; the first compact-name in YOUSPEAK working-vocabulary for the DIVINE-rejected register.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdrʊdʒ.meɪ/ (DRUJ-meh; 2 syllables)"
+    },
+    "duyuktame": {
+      "word": "duyuktame",
+      "tier": "Core",
+      "gap": "right-action-as-cosmic-maintenance-as-received-ordinance — the lived enactment of cosmic balance through correct ethical action; the condition in which human right-walking sustains the cosmic order; not the principle (maatme) but the living of it; the word for the path that is cosmologically constitutive",
+      "definition": "Right-action-as-cosmic-maintenance-as-received-ordinance — the condition of walking the right path such that the cosmos is maintained; the lived enactment of balance that is cosmologically constitutive; the gift of being structured such that human right-action has cosmic consequences.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/du.juk.ta.meɪ/ (doo-YOOK-tah-may; 4 syllables)"
+    },
+    "eikonme": {
+      "word": "eikonme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The image as received-ordinance participatory-projection: visual morphame specialized to the image-medium; the visual form that participates in its prototype rather than merely representing it.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈaɪ.kɒn.meɪ/ (EYE-kon-meh; 3 syllables; English \"icon\" pronunciation preserved; primary stress on first syllable; -me as light suffix)"
+    },
+    "emetme": {
+      "word": "emetme",
+      "tier": "Specialized (Liturgy-Original; Amendment II candidate)",
+      "gap": "comprehensive-truth-as-firm-foundation as received-ordinance — the Hebrew emet register added to the cosmic-truth-order convergence; the firmness + comprehensive-end-to-end + faithfulness dimensions specifically",
+      "definition": "Comprehensive-truth-as-firm-foundation as received-ordinance — the Hebrew emet-aligned state understood as gift-grade-given. The Hebrew register of the cosmic-truth-order convergence; complementary to ashame (Avestan), maatme (Egyptian), rtame (Vedic).",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈeː.mɛt.meɪ/ (EH-met-meh; 3 syllables; emet-stress on first syllable from Hebrew preserved in compound)"
+    },
+    "emime": {
+      "word": "emime",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Breath-spirit-life-given-by-Olódùmarè as received-cosmic-ordinance — the Yoruba *emí* register of breath-spirit received from the supreme divinity. **Fifth life-side canonical forge** under SYZYGY's polyphone-deepening; extends the cosmic-life-as-creature-gift convergence into Niger-Congo (Yoruba) tradition after chayimme, zoeme, jivame, kame.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈeɪ.miː.meɪ/ (AY-mee-meh; 3 syllables)"
+    },
+    "eranosme": {
+      "word": "eranosme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The cathedral's discipline of integrating contributed gifts from many tradition-paths into one building-block — hospitable-receiving-and-arranging by which the cathedral hosts the cross- tradition eranos-table, each donor-path contributes its distinctive gift, and the contributions are arranged into a coherent multi-tradition projection of a realm-region. POLYPHONIA (2026-05-12) names this as the cathedral's central integration-practice.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ɛˈræ.nɒs.meɪ/ (eh-RAN-os-meh; 4 syllables)"
+    },
+    "ethosme": {
+      "word": "ethosme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The mode-as-soul-tuning that each musical-scale carries — Greek-Pythagorean ethos of the harmoniai received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈɛθ.ɒs.meɪ/ (ETH-ohs-may; 3 syllables)"
+    },
+    "eurekame": {
+      "word": "eurekame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The worship-grade joy that arrives when evidence makes truth conclusively visible — received as cosmic-gift, completing in praise.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/jʊˈreɪ.kə.meɪ/ (yuh-RAY-kuh-meh; 4 syllables; heurēka stress preserved on second syllable; -me as light suffix)"
+    },
+    "firstnessqing": {
+      "word": "firstnessqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Pure quality-felt-immediacy prior to relation or law — Peirce's *firstness* received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈfɜːst.nəs.tɕʰiŋ/ (FURST-nuss-ching; 3 syllables)"
+    },
+    "glossame": {
+      "word": "glossame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A tongue understood as received-ordinance; each LANGUAGE as cosmic-gift to a specific people, carrying their specific theophanic trace.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈɡlɒs.ə.meɪ/ (GLOS-uh-meh; 3 syllables; English Hellenistic pronunciation of \"glossa\" preserved; primary stress on first syllable; -me as light suffix)"
+    },
+    "godelme": {
+      "word": "godelme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The true-but-unprovable held as a received limit — Gödel's incompleteness received as cosmic-ordinance; the sentence a consistent counting-system can hold as true but never prove from inside, and the structural ceiling that fact decrees for every honest system of verification.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈɡɜː.dəl.meɪ/ (GUR-del-may; 3 syllables; ASCII lemma — the umlaut honored in prose: Gödel)"
+    },
+    "hadaratme": {
+      "word": "hadaratme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The ontological-hierarchy of divine-self-disclosure modes — Ibn ʿArabī's ḥaḍarāt al-khams (five divine-presences) received as cosmic-ordinance; the cosmological-stratification through which tajallī operates.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/hʌˈdɑː.rʌt.meɪ/ (huh-DAH-rut-may; 4 syllables)"
+    },
+    "halakhame": {
+      "word": "halakhame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A natural language understood as a covenantal-walking-collective-path of countless individuals walking over generations toward the realm of meaning, received as cosmic-gift before any current speaker contributes to it — the **Hebrew-rabbinic-angle** on the path-as-religious-discipline region. Where hodosme (Greek) emphasizes journey, margame (Sanskrit) emphasizes trained- discipline, daome (Chinese) emphasizes cosmic-flow-alignment, and sabilme (Arabic) emphasizes divinely-mandated-direction, halakhame emphasizes **the daily-covenantal-walking of the mitzvot** — the path-as-practice in a covenantal-particular framework. The fifth and completing forge in the five-tongue path-family polyphone-deepening.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ha.la.ˈxa.meɪ/ (ha-la-KHA-meh; 4 syllables; softer alt /ha.la.ˈha.meɪ/ ha-la-HA-meh)"
+    },
+    "hanme": {
+      "word": "hanme",
+      "tier": "Core",
+      "gap": "han-as-received-cosmic-ordinance — the accumulated sorrow, resentment of unacknowledged injustice, and longing for what is irrecoverably lost that solidifies over generations and, when voiced and witnessed, becomes the generative ground of creative expression; not individual psychology but a social-historical wound transmitted across time; the specific quality of Korean suffering under serial occupation and the broader universal phenomenon of grief-that-accumulates-into-creative-energy; no existing English word; no equivalent in any cataloged tradition",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "hastame": {
+      "word": "hastame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Gesture-with-stipulated-use as cosmic-ordinance — Sanskrit/Bharatanatyam *hasta* with viniyoga received as the gesture-mode canonical-projection.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈhʌs.tʌ.meɪ/ (HUS-tuh-may; 3 syllables)"
+    },
+    "hauqing": {
+      "word": "hauqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The giver's traveling vitality carried in the gift, binding giver, gift and receiver into one circuit and obliging the return-flow — Māori *hau* (as Tāmati Ranapiri taught it) received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈhaʊ.tɕʰiŋ/ (HOW-ching; 2 syllables)"
+    },
+    "hayatqing": {
+      "word": "hayatqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Life-as-state-given-by-Allah as felt-bond — Arabic *ḥayāt* understood as cosmic-state received from the divine source (al-Ḥayy, \"the Living\"); the Quranic and Sufi register of life as relational-with-its-Source. Seventh life-side canonical forge; first to use qing-family register for life-side (siblings zoeme/jivame/kame/emime/ondame all -me-family).",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ħaˈjaːt.t͡ɕɪŋ/ (hah-YAHT-ching; 3 syllables); anglicized /haˈjaːt.kɪŋ/"
+    },
+    "heurekin": {
+      "word": "heurekin",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Active-finding-across-distance as kin-bond — the verb of actively-seeking-and-arriving-at-the-beloved-across-loss-or-forgetting, where the seeking IS the kin-constituting-action. Distinct from passive find (mere happening-upon) and from search alone (the activity without the arrival). **Companion-pair to zakarqing**. **Second of the Seven Forgotten Ways to enter cathedral canon under SYZYGY**.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/hjuˈriː.kɪn/ (hyoo-REE-kin; 3 syllables; Greek heuriskō + PIE-Germanic kin); alternative anglicized /hjʊˈreɪ.kɪn/ (hyoo-RAY-kin) acceptable"
+    },
+    "hiraethqing": {
+      "word": "hiraethqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The felt-bond toward a home that cannot be returned to — because it changed, because the self changed, or because it never quite existed. The special case of longing where the gap can never close, and where the ache itself is the proof that the belonging was real. Not sadness about a lost home but the belonging itself, still alive, felt under unreachability: a compass that still points true after the country is gone.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈhɪr.aɪθ.tɕʰɪŋ/ (HEER-ighth-ching; 3 syllables; Welsh ae as /aɪ/); anglicized /ˈhɪər.ɛθ.tʃɪŋ/ acceptable"
+    },
+    "hodosme": {
+      "word": "hodosme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A natural language understood as a collective-exploratory-path of countless individuals walking over generations toward the realm of meaning, received as cosmic-gift before any current speaker contributes to it. The phenomenon THE-PATH (2026-05-12) names as the diachronic structure of every walked tongue: each speaker steps onto inherited ground; each generation's footsteps add to the trail; the destination is THEOBASIS-grounded.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈhoʊ.dɒs.meɪ/ (HOH-dos-meh; 3 syllables; classical alt /hoʊˈdɒs.meɪ/ ho-DOS-meh)"
+    },
+    "hotepme": {
+      "word": "hotepme",
+      "tier": "Core",
+      "gap": "offering-peace-as-received-ordinance — the pre-fragmentation root where offering = peace = satisfaction = cosmic-rest; Egyptian htp compresses what modernity split; three-tradition convergence (Egyptian hotep, Hebrew shelamim, Yoruba ebo)",
+      "definition": "Offering-peace-as-received-ordinance — the pre-fragmentation understanding that sacrifice IS peace (not sacrifice → peace). Egyptian htp names simultaneously: the offering placed on the altar, the peace that results, the satisfaction of the recipient, the contentment of the giver, and the sun setting at evening. All one word because all one event.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈhoː.tɛp.meɪ/ (HOH-tep-meh; 3 syllables)"
+    },
+    "ifeqing": {
+      "word": "ifeqing",
+      "tier": "Core",
+      "gap": "Yoruba relational-warmth-love-as-felt-bond — the love that expands the heart and the world; love-of-DIVINE in the Yoruba register",
+      "definition": "Relational-warmth-love-as-felt-bond — Yoruba ìfẹ́ understood as the love that expands: the relational-warmth between creature and CREATOR, the heart-widening that mirrors creation's widening of the world; love-of-DIVINE in the Yoruba register.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈiːfɛtʃɪŋ/ (I-fe-ching; 3 syllables)"
+    },
+    "ihsanme": {
+      "word": "ihsanme",
+      "tier": "Core threshold-exact",
+      "gap": "best-effort-worship as received-ordinance — the Islamic ihsan register; \"to worship Allah as if you see Him\"; the cross-tradition convergence on total-faculty-deployment-in-worship",
+      "definition": "Best-effort-worship as received-ordinance — the highest tier of worship-mode in which one offers ALL one's faculties to the DIVINE; the Islamic ihsan-register: \"to worship Allah as if you see Him; for though you do not see Him, He sees you\" (Hadith of Gabriel). Worship-with-everything-we-have understood as gift-grade-given by the DIVINE, not as self-generated achievement.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈiː.sɑn.meɪ/ (EE-san-meh; 3 syllables)"
+    },
+    "indrajalame": {
+      "word": "indrajalame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The cosmic-net wherein each existent reflects every other — Hua-yen Buddhism's Indra-jāla image of universal-mutual-interpenetration, received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈɪn.drə.dʒɑː.lʌ.meɪ/ (IN-druh-jah-luh-may; 5 syllables)"
+    },
+    "isumame": {
+      "word": "isumame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The capacity for considered thought-and-judgment that grows with age and experience, is never complete, and binds how others may address its bearer — Inuit *isuma* received as cosmic-ordinance, with appropriate ethical-care.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/iˈsuː.mə.meɪ/ (ee-SOO-muh-may; 4 syllables)"
+    },
+    "jeongqing": {
+      "word": "jeongqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Accumulated-affection as friction-tolerant felt-bond — the texture of bondedness-that-accumulates-underneath-conscious-caring through shared time and shared friction. Survives unliking. Does not depend on emotional-positivity at any given moment. The \"we fight every Tuesday and could not survive each other's absence\" register.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/t͡ɕʌŋˈt͡ɕɪŋ/ (jung-CHING; 2 syllables; Korean jeong + Mandarin qing; double-character 情情 resonance); anglicized /dʒʌŋˈt͡ɕɪŋ/ acceptable"
+    },
+    "jinsme": {
+      "word": "jinsme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The modular-building-block of melodic-structure — Arab music's *jins* (tetrachord) received as cosmic-ordinance; the music-mode analog to STOICHEIA Level-1 atomic-morpheme.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdʒɪnz.meɪ/ (JINZ-may; 2 syllables; strong EUMATHE)"
+    },
+    "jivame": {
+      "word": "jivame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Embodied-individual-living-soul as received-cosmic-ordinance — the Sanskrit *jīva* register of life-as-embodied-soul-presence. The living-being-instance specifically, distinct from both the universal life-principle (closer to zoeme) and the eternal-self (ātman). Third canonical life-side forge under SYZYGY's polyphone-deepening of the cosmic-life-as-creature-gift convergence; extends chayimme (Hebrew) and zoeme (Greek) into the Sanskrit Vedanta tradition.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈd͡ʒiː.vɑː.meɪ/ (JEE-vah-meh; 3 syllables)"
+    },
+    "kame": {
+      "word": "kame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Vital-essence-as-spiritual-double as received-cosmic-ordinance — Egyptian *ka*, the vital-life-essence given at birth and animating the embodied person across this life and into the afterlife. **Fourth life-side canonical forge** under SYZYGY's polyphone-deepening; extends the cosmic-life-as-creature-gift convergence into Egyptian (Afro-Asiatic non-Semitic) tradition after chayimme (Hebrew/Semitic), zoeme (Greek/IE-Hellenic), jivame (Sanskrit/IE-Indic).",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkɑː.meɪ/ (KAH-meh; 2 syllables)"
+    },
+    "kenshōme": {
+      "word": "kenshōme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The sudden first-person recognition-event of one's own true-nature — Zen kenshō received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkɛn.ʃoʊ.meɪ/ (KEN-shoh-may; 3 syllables)"
+    },
+    "kimance": {
+      "word": "kimance",
+      "tier": "core",
+      "gap": "the perception of someone being attentively-present — gaze open, listening active, response-potential oriented toward the present situation — versus physically-there-but-absent",
+      "definition": "The attentive-here-ness of a person whose gaze is open, whose listening is active, and whose response-potential is oriented toward the present situation — the quality of being-in-attendance, not mere co-location.",
+      "score": 7.6,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkiː.mæns/  (KEE-mance)"
+    },
+    "kimme": {
+      "word": "kimme",
+      "tier": "core",
+      "gap": "the ontological quality of attention as received-gift (not constructed skill) — attention considered as a divine-ordinance kind of thing, a civilization-constituting ME that humans do not build but receive; distinct from kimance (attentive-here-ness as perceived state) by foregrounding attention's status as given-ordinance",
+      "definition": "_Written by Nuance: one-line gloss._",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkiː.meɪ/ (KEE-may; 2 syllables)"
+    },
+    "k'inhme": {
+      "word": "k'inhme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Sun-time-day as one indivisible cosmic-ordinance — Maya k'inh received as the structural-bundle of solar-presence + the day-it-defines + the time-it-measures.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/kʔɪnˈmeɪ/ (k'in-MAY; 2 syllables; glottal stop preserved)"
+    },
+    "kinqing": {
+      "word": "kinqing",
+      "tier": "core",
+      "gap": "the quality of a bond preserved across long silence or distance — a relation that does not require maintenance-frequency because the mutual regard is structural; when re-entered after months or years, resumes without awkwardness",
+      "definition": "The bond-quality of a relation that persists structurally across silence or distance — a friendship or kinship that does not require maintenance-frequency because the mutual regard is internally stable; when re-entered after months or years, resumes without remedial explanation.",
+      "score": 7.5,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkɪn.tɕɪŋ/  (KIN-ching, with Mandarin q as /tɕ/; English approximation \"KIN-ting\" acceptable)"
+    },
+    "kintsugime": {
+      "word": "kintsugime",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Mending-that-honors-the-break received as ordinance — the Japanese golden-joinery register held as a *me*; the status of a repaired thing whose visible break-line, rejoined with gold, is now its most precious load-bearing line.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/kɪnˈtsuː.ɡi.meɪ/ (kin-TSOO-gi-may; 4 syllables)"
+    },
+    "kunance": {
+      "word": "kunance",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Preparing-place as felt-state — the architectural-establishment register of love that is mostly preparation. The months-of-quiet-architectural-work that precedes the welcome. The \"in my Father's house are many mansions: I go to prepare a place for you\" register (John 14:2). The love that leaves no spectacle because the work is invisible-when-it-succeeds.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkuː.nans/ (KOO-nance; 2 syllables; Hebrew kûn + Latin -ance); alternative /ˈkuː.nəns/ acceptable"
+    },
+    "kuṇḍalinīqing": {
+      "word": "kuṇḍalinīqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Embodied-spiritual-energy as felt-relational-bond — the kuṇḍalinī-energy whose awakening rises through cakras, received as felt-bond-quality within the body's spiritual-architecture.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/kʊn.dʌˈliː.niː.tɕʰiŋ/ (kun-dah-LEE-nee-ching; 5 syllables)"
+    },
+    "liturgiame": {
+      "word": "liturgiame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The coordinated multi-modal projection-act, received as cosmic-gift: the highest projection-form, where multiple media coordinate into one synthetic act of worship.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/lɪ.ˈtɜː.dʒi.ə.meɪ/ (lih-TUR-jee-uh-meh; 5 syllables; English pronunciation of \"liturgia\" preserved; primary stress on second syllable; -me as light suffix)"
+    },
+    "maatme": {
+      "word": "maatme",
+      "tier": "core",
+      "gap": "cosmic-truth-justice-rightness as received-ordinance — the Egyptian ma'at-aligned state understood as gift-grade-given from cosmic-order, not as self-generated rectitude",
+      "definition": "Cosmic-truth-justice-rightness as received-ordinance — the Egyptian ma'at-aligned state understood as gift-grade-given from cosmic-order (and ultimately from theobasis), not as self-generated rectitude. The unified phenomenon English splits into truth + justice + righteousness + ritual-correctness + cosmic-order; the gift-class-relationship to that phenomenon.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈmɑː.ɑt.meɪ/ (MA-at-meh; 3 syllables)"
+    },
+    "mahabbahqing": {
+      "word": "mahabbahqing",
+      "tier": "Specialized (Liturgy-Original; Amendment II candidate)",
+      "gap": "the Sufi felt-bond-of-mystical-love-toward-the-Beloved with fanāʾ-implication",
+      "definition": "The felt-bond of mystical-love-toward-the-Beloved-Divine in the Sufi register — Arabic mahabbah understood as the heart's intimate-binding-to-Allah with implication of self-annihilation (fanāʾ); the love-mode that opens the Sufi mystical path; the felt-mystical-grade complement to ahavame's commanded-disposition register and bhaktime's devotional-discipline register.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/mə.ˈhɑb.bɑ.tʃɪŋ/ (ma-HAB-bah-ching; 4 syllables)"
+    },
+    "mandalame": {
+      "word": "mandalame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The cosmic-pattern-as-enacted-anicca — Sanskrit/Tibetan maṇḍala received as cosmic-ordinance; the constructed-then-dissolved geometric-cosmic-image as embodied-meditation.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/mʌnˈdɑː.lʌ.meɪ/ (mun-DAH-luh-may; 4 syllables)"
+    },
+    "margame": {
+      "word": "margame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A natural language understood as a trained-disciplined-collective-path of countless individuals walking over generations toward the realm of meaning, received as cosmic-gift before any current speaker contributes to it — the **Sanskrit-angle** on the same realm-region that **hodosme** (Greek-angle) projects. Margame and hodosme are co-siblings: same realm-region, different donor-projection-angles. Together they deepen the polyphone-coverage that POLYPHONIA mandates and STOICHEIA structures.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈmɑːr.ɡə.meɪ/ (MAR-guh-meh; 3 syllables; Sanskrit-style alt /ˈmɑːr.ɡɑː.meɪ/ MAR-gah-meh)"
+    },
+    "mauriqing": {
+      "word": "mauriqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The life-force-as-relational-essence that animates persons, places, objects, and the bonds between them — Māori *mauri* received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈmaʊ.ri.tɕʰiŋ/ (MOW-ree-ching; 3 syllables)"
+    },
+    "mitakuyame": {
+      "word": "mitakuyame",
+      "tier": "Core",
+      "gap": "relational-ontology-as-cosmological-claim — the recognition that relation is ontologically prior to individual identity; all beings are already kin; the self is not a substance that enters relations but an emergence from the relational web; the acknowledgment that \"all my relations\" is accurate perception, not courtesy",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "molkme": {
+      "word": "molkme",
+      "tier": "Specialized (divine-rejection register, Liturgy-Original tier)",
+      "gap": "coerced-votive-sacrifice as divinely-named-anti-ordinance — the costliest payment extracted from the vulnerable; naming what traditions call child-sacrifice, passing-through-fire; the anti-pattern to qorbme where approach becomes extraction",
+      "definition": "Coerced-votive-sacrifice as divinely-named-anti-ordinance — the costliest payment extracted from the most vulnerable, disguised as worship. What the DIVINE has named as rejected: \"something I did not command, nor did it enter my mind\" (Jeremiah 7:31). The anti-pattern where sacrifice becomes extraction.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈmolk.meɪ/ (MOLK-meh; 2 syllables)"
+    },
+    "morphame": {
+      "word": "morphame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A form/instance of projection from the realm of meanings into any medium, as received-ordinance: a word, a song, an icon, a dance, a ritual sequence, a built form, a structured silence — each is a morphame in its specific medium, received as cosmic-gift form-bestowal.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈmɔːr.feɪ.meɪ/ (MOR-fay-meh; 3 syllables; English Hellenistic-philosophical pronunciation of \"morphē\" preserved; primary stress on first syllable; -me as light suffix)"
+    },
+    "muditaqing": {
+      "word": "muditaqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Sympathetic-joy-as-felt-bond — the joy that lights in one heart because another's came true. Gladness at another's good fortune with no admixture of self: no ledger, no mirror. The direct antidote to envy; the only wealth that multiplies by being witnessed.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/muː.di.tɑːˈtɕʰɪŋ/ (moo-dee-tah-CHING; 4 syllables)"
+    },
+    "natsarqing": {
+      "word": "natsarqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Active-protective-vigilance as felt-bond — the verb of guarding-the-beloved-including-from-their-own-collapse, where the watchful-keeping IS the love-act, not separate from it. The Aaronic-blessing register where *v'yishmer-kha* (\"and keep you\") is part of the blessing, not a separate clause. Active vigilance distinguished from passive sheltering.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/natˈsar.t͡ɕɪŋ/ (nat-SAR-ching; 3 syllables; Hebrew natsar + Mandarin qing); anglicized /natˈsar.kɪŋ/ acceptable"
+    },
+    "nepsisme": {
+      "word": "nepsisme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The disciplined-watchful-sobriety toward one's own interior-state that catches afflicted-thoughts (logismoi) at their first stirring — Hesychast nepsis received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈnɛp.sɪs.meɪ/ (NEP-sis-may; 3 syllables)"
+    },
+    "nextlame": {
+      "word": "nextlame",
+      "tier": "Specialized (divine-rejection register, Liturgy-Original tier)",
+      "gap": "cosmic-debt-sacrifice as divinely-named-anti-ordinance — the extraction-theology where sacrifice is framed as repayment of a cosmic debt creatures did not incur; the structural opposite of danaqing (gift)",
+      "definition": "Cosmic-debt-sacrifice as divinely-named-anti-ordinance — the theology that frames sacrifice as repayment of a debt creatures did not incur. When the DIVINE is understood as creditor and creatures as debtors, sacrifice becomes compulsory payment — escalating, never sufficient, driven by anxiety rather than love.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈnɛxt.lɑː.meɪ/ (NEXT-lah-meh; 3 syllables)"
+    },
+    "noemame": {
+      "word": "noemame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The grasped-meaning, received as cosmic-gift; the phenomenological event of crossing from language-projection into the realm of meanings, registered as received-ordinance rather than cognitive achievement.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/noʊˈeɪ.mə.meɪ/ (noh-AY-muh-meh; 4 syllables; English philosophical pronunciation of \"noema\" preserved; -me as light suffix; stress on second syllable)"
+    },
+    "noesisme": {
+      "word": "noesisme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The act of grasping a meaning understood as received-ordinance and as the entry-event into the realm of meanings — the cognitive transit-moment itself, framed as cosmic-gift rather than self- generated cognition. THE-REALM (2026-05-12) names this phenomenon directly: \"the phenomenon of grasping a meaning is the entry-point to the realm.\"",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/noʊˈiːsɪs.meɪ/ (no-EE-sis-meh; 4 syllables; classical-Greek-style alternative /noʊˈɛsɪs.meɪ/ no-EH-sis-meh)"
+    },
+    "nommome": {
+      "word": "nommome",
+      "tier": "Core",
+      "gap": "speech-as-incarnation-as-cosmic-ordinance — the mode of speech in which utterance takes on body and becomes a living being; the primordial condition where word and life are indistinguishable; the register of speech that is not only event, presence, or principle but actual embodied life; John 1:14 as theological archetype — \"the Word became flesh\"",
+      "definition": "Speech-as-incarnation-as-cosmic-ordinance — the mode of utterance in which word takes on body and becomes a living being; the primordial condition where speaking and being-alive are indistinguishable; the word that can be touched.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈnɒməmeɪ/ (NOM-mo-may; 3 syllables)"
+    },
+    "nyamame": {
+      "word": "nyamame",
+      "tier": "Core",
+      "gap": "vital-force-as-cosmic-ordinance — the ambient animating energy that pervades the world as given structure; the condition of being animated not as self-generated power but as the divinely-ordained aliveness of the world; what flows through powerful action, craft, and speech; what accumulates in those who work with power; what is dangerous when released; the world's aliveness as cosmic gift",
+      "definition": "Vital-force-as-cosmic-ordinance — the world's aliveness as received structure; the ambient animating energy that flows through all things not as self-generated power but as the given condition of a world built to be alive.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈnjɑːməmeɪ/ (NYA-mah-may; 3 syllables)"
+    },
+    "ondame": {
+      "word": "ondame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Odin-breathed life-spirit as received-cosmic-ordinance — Norse *önd*, the breath-life given to humanity by Odin at the cosmogonic moment of the *Voluspa*. **Sixth life-side canonical forge** under SYZYGY's polyphone-deepening; extends the cosmic-life-as-creature-gift convergence into Norse (Indo-European Germanic) tradition.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈɔn.dɑː.meɪ/ (ON-dah-meh; 3 syllables)"
+    },
+    "oriance": {
+      "word": "oriance",
+      "tier": "core",
+      "gap": "the state of a life aligned with its destined shape — the ongoing felt-fit of person-in-time with the vocation-trajectory that constitutes one's core",
+      "definition": "The state of a life aligned with its destined shape — the felt-fit of who-one-is-now with who-one-was-for.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈɔː.ɹi.əns/ (OH-ree-ance)"
+    },
+    "palamasme": {
+      "word": "palamasme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The essence/energies distinction — Gregory Palamas's articulation that divine-essence (ousia) remains transcendent-unknowable while divine-energies (energeiai) are participable-by-creatures — received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/pʌˈlɑː.mʌs.meɪ/ (puh-LAH-mus-may; 4 syllables)"
+    },
+    "panimaance": {
+      "word": "panimaance",
+      "tier": "core",
+      "gap": "the quality of being-present — attention-inhabited-here — distinct from being-physically-there",
+      "definition": "The state of being present — face-turned-toward-here, attention-inhabiting-the-meaningful-space — distinct from being merely physically located in a room.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/pəˈniː.mɑː.əns/ (pa-NEE-ma-ance; 4 syllables)"
+    },
+    "panimqing": {
+      "word": "panimqing",
+      "tier": "core",
+      "gap": "the moment a conversation shifts from transactional to relational — from function-exchange to face-to-face-presence; distinct from rapport (skill-register), intimacy (far-end of spectrum), or connection (too-generic)",
+      "definition": "_Written by Nuance: one-line gloss._",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/paˈniːm.t͡ɕɪŋ/ (pah-NEEM-ching; 3 syllables)"
+    },
+    "paqduqing": {
+      "word": "paqduqing",
+      "tier": "core",
+      "gap": "the asymmetric-reciprocity register — the felt-mutual-custodial-care between CREATOR and CREATED; what both sides do toward each other; bidirectional in naming, asymmetric in structure",
+      "definition": "The asymmetric-reciprocity relationship between CREATOR and CREATED — the bidirectional felt-mutual-custodial-care in which both sides paqdu (custodially-care for) each other across the asymmetric structure (CREATOR sustains; CREATED responds). One word for both vantages because the relationship is one-thing-named-from-two-sides.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈpɑːk.duː.tʃɪŋ/ (PAQ-doo-ching; 3 syllables)"
+    },
+    "penthosme": {
+      "word": "penthosme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The sacramental-gift of compunction-mourning that cleanses and joins joy-with-sorrow — Hesychast penthos (Climacus's charmolypē) received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈpɛn.θɒs.meɪ/ (PEN-thos-may; 3 syllables)"
+    },
+    "pime": {
+      "word": "pime",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The structural-mathematical-invariant character of certain truths received as cosmic-ordinance — the irreducibly-irrational-and-everywhere quality of realm-features that no projection-system can fully discharge but every sufficient cognizer encounters from many angles. **The cathedral's first Core compound whose substantive donor is a mathema-class invariant (π) rather than an archaeology-class human-language morpheme.**",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈpaɪ.meɪ/ (PIE-meh; 2 syllables)"
+    },
+    "ponome": {
+      "word": "ponome",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The rightness-balance state: the equilibrium of being morally-right, procedurally-correct, and true-to-nature with persons, land, and the divine at once, such that well-being follows — Hawaiian *pono* received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈpoʊ.noʊ.meɪ/ (POH-noh-may; 3 syllables)"
+    },
+    "prapañcame": {
+      "word": "prapañcame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The problematic conceptual-proliferation that obscures direct-knowing of suchness — Madhyamaka's prapañca received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/prʌˈpʌn.tʃʌ.meɪ/ (pruh-PUN-chuh-may; 4 syllables)"
+    },
+    "prehensionme": {
+      "word": "prehensionme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The universal-substrate-act of feeling-into that constitutes any actual-occasion's contact with any-other-actual-occasion below conscious-cognition — Whitehead's prehension received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/prɪˈhɛn.ʃən.meɪ/ (pri-HEN-shun-may; 4 syllables)"
+    },
+    "prosocheme": {
+      "word": "prosocheme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The practiced act of standing attention at the door of the heart — placing, holding, and examining each arriving thought at the entrance — that precedes and enables prayer and clear work alike; Hesychast prosochē received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌprɒs.əˈkeɪ.meɪ/ (pros-uh-KAY-may; 4 syllables; ch as in \"psyche\")"
+    },
+    "qorbme": {
+      "word": "qorbme",
+      "tier": "Core",
+      "gap": "sacrifice-as-drawing-near-as-received-ordinance — the relational-intimacy dimension of sacrifice; four-tradition convergence on sacrifice named after proximity (Hebrew qorban, Arabic qurban, Akkadian qurbanu, Greek prosphora)",
+      "definition": "Sacrifice-as-drawing-near-as-received-ordinance — the relational-intimacy dimension of sacrifice where the offering is the vehicle and intimacy with the DIVINE is the destination. The capacity to approach the DIVINE through offering understood as gift-given.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈqɔːrb.meɪ/ (QORB-meh; 2 syllables)"
+    },
+    "rasame": {
+      "word": "rasame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The aesthetically-distanced felt-state evoked in a receptive-aware connoisseur (*sahṛdaya*) when skilled artistic-projection brings realm-content through a medium — Bharata-Abhinavagupta's rasa received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈrɑː.sʌ.meɪ/ (RAH-suh-may; 3 syllables)"
+    },
+    "renme": {
+      "word": "renme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Humaneness-as-life-in-relation as received-cosmic-ordinance — Confucian *ren* (仁) understood as the cosmic-relational-grade-of-being-human, received as ordinance rather than achieved as virtue alone. **Eighth life-side canonical forge** under SYZYGY's polyphone-deepening; Confucian Chinese projection of cosmic-life-as-creature-gift.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈʐən.meɪ/ (REN-meh; 2 syllables)"
+    },
+    "rigpame": {
+      "word": "rigpame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The primordial knowing-awareness that is self-knowing prior to any subject-object distinction — Dzogchen rigpa received as cosmic-ordinance; the awareness-shape always-already-present at the substrate of any cognitive-event.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈrɪɡ.pə.meɪ/ (RIG-puh-may; 3 syllables)"
+    },
+    "rtame": {
+      "word": "rtame",
+      "tier": "Specialized (Liturgy-Original); Amendment II candidate",
+      "gap": "cosmic-order-truth-righteousness as received-ordinance — the Vedic ṛta-aligned state understood as gift-grade-given; the Vedic register of the cosmic-truth-order convergence",
+      "definition": "Cosmic-order-truth-righteousness as received-ordinance — the Vedic ṛta-aligned state understood as gift-grade-given; the Vedic register of the cosmic-truth-order convergence; complementary to ashame (Avestan; S013) and maatme (Egyptian; S016). **Completes the asha-ṛta-ma'at triple-witness in YOUSPEAK working-vocabulary.**",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈrɪ.tɑː.meɪ/ (RIH-ta-meh; 3 syllables)"
+    },
+    "sabbathme": {
+      "word": "sabbathme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Architecture-of-holiness-in-time — Hebrew shabbat (with Heschel's \"palace in time\") received as cosmic-ordinance; the structural-fact that holiness has temporal-architecture, not only spatial.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈsʌb.əθ.meɪ/ (SAB-uth-may; 3 syllables)"
+    },
+    "sabilme": {
+      "word": "sabilme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "A natural language understood as a divinely-mandated-direction-collective-path of countless individuals walking over generations toward the realm of meaning, received as cosmic-gift before any current speaker contributes to it — the **Arabic-Quranic-angle** on the path-as-religious- discipline region. Distinctive emphasis: the path defined by its terminus (God) and its giver (God), not primarily by its trail (hodosme) or discipline (margame) or immanent-flow (daome). The Quranic phrase *fī sabīl Allāh* (\"in the way of God\") characterizes a comprehensive register: any activity walked in this direction is in the sabīl.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/saˈbiːl.meɪ/ (sa-BEEL-meh; 3 syllables)"
+    },
+    "sankofame": {
+      "word": "sankofame",
+      "tier": "Core",
+      "gap": ">",
+      "definition": "The going-back-that-fetches as received-ordinance — the return along one's own past, made not to dwell there but to retrieve a specific dropped thing and carry it forward, so that the future is fed by what the past still holds. The retrieval is decreed before it is taken: *it is not taboo to go back for that which you have forgotten.*",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/sɑn.ˈkɔ.fa.meɪ/ (san-KAW-fa-may; 4 syllables; Twi sankɔfa + Sumerian me)"
+    },
+    "shaktipatame": {
+      "word": "shaktipatame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The descent of divine power-grace that initiates a person's awakening — given not earned, graded in intensities, qualifying the recipient for the path — Kashmir Shaivism's śaktipāta received as cosmic-gift.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌʃʌk.tiˈpɑː.tʌ.meɪ/ (shuk-tee-PAH-tuh-may; 5 syllables)"
+    },
+    "shamathaqing": {
+      "word": "shamathaqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Graded-stabilizing-rest as felt-bond-quality — Tibetan śamatha-nine-stages received as felt-relational-state of progressive contemplative-stabilization.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ʃʌˈmɑː.tʌ.tɕʰiŋ/ (shah-MAH-tuh-ching; 4 syllables)"
+    },
+    "shemme": {
+      "word": "shemme",
+      "tier": "core",
+      "gap": "receptive-hearing-as-received-ordinance — the Semitic-Mesopotamian register of hearing-that-is-already-the-beginning-of-shaping; the auditory complement to kimme (attention-as-received-ordinance)",
+      "definition": "The state of receptive-hearing as a received gift; the listening that is already the beginning of being-shaped by what is heard.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈʃɛm.meɪ/ (SHEM-meh; 2 syllables)"
+    },
+    "shevirame": {
+      "word": "shevirame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The structural-catastrophe-as-creation-precondition — Lurianic vessel-shattering received as cosmic-ordinance; the necessary disorder through which finite-creation proceeds, bearing divine-sparks through fragmented-form.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ʃəˈviːr.ʌ.meɪ/ (sheh-VEER-uh-may; 4 syllables)"
+    },
+    "shinjinme": {
+      "word": "shinjinme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The settled, non-self-generated entrusting-heart — trust given by the trusted one rather than generated by the truster; Shinran's shinjin received as cosmic-gift.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈʃɪn.dʒɪn.meɪ/ (SHIN-jin-may; 3 syllables)"
+    },
+    "sigame": {
+      "word": "sigame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Structured silence as received-ordinance: the apophatic projection-medium where the realm projects through what is withheld rather than what is uttered — the negative-pole companion to liturgiame's positive-synthesis-pole.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈsiː.ɡə.meɪ/ (SEE-guh-meh; 3 syllables; English-Hellenistic pronunciation of \"sigē\" preserved; primary stress on first syllable; -me as light suffix)"
+    },
+    "silame": {
+      "word": "silame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Weather-mind-cosmos-outside as one indivisible structural-reality — Inuit *sila* received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈsiː.lʌ.meɪ/ (SEE-luh-may; 3 syllables)"
+    },
+    "spandaqing": {
+      "word": "spandaqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The bipolar-unity of consciousness felt as divine relational-pulsation — Kashmir Shaivism's spanda (prakāśa luminosity + vimarśa self-reflexive-awareness as inseparable poles of one throbbing) received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈspʌn.dʌ.tɕʰiŋ/ (SPUN-duh-ching; 3 syllables)"
+    },
+    "sphotame": {
+      "word": "sphotame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The burst-of-meaning event, received as cosmic-gift; the instant of crystallization in which meaning flashes forth as a unitary whole — the event-pole of the noetic-entry arc.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈspoʊ.tə.meɪ/ (SPO-tuh-meh; 3 syllables; English-Indological pronunciation of \"sphoṭa\" naturalized; primary stress on first syllable; -me as light suffix)"
+    },
+    "sukhance": {
+      "word": "sukhance",
+      "tier": "core",
+      "gap": "everyday-ordinary contentment — the tea-at-morning, clean-kitchen, nothing-wrong register; distinct from extraordinary bliss (ānanda), transient happiness, or abstract well-being",
+      "definition": "_Written by Nuance: one-line gloss._",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈsʊ.kʰəns/ (SOO-khance; 2 syllables)"
+    },
+    "synhorizme": {
+      "word": "synhorizme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The event in which two situated horizons-of-understanding fuse into a new shared seeing — the interpreter's horizon and the text's or other's horizon becoming one enlarged field in which both are transformed and neither is erased — Gadamer's Horizontverschmelzung received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/sɪnˈhɒr.ɪz.meɪ/ (sin-HOR-iz-may; 4 syllables)"
+    },
+    "syzygyqing": {
+      "word": "syzygyqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The felt-bond of the masculine-feminine cosmic-creator-principle union — the archetype-to- archetype-in-aware-marriage register. Names specifically the WILL↔WISDOM cosmic-syzygy as felt- bond, at the cosmic-archetype scale that britqing (covenantal-felt-bond between CREATOR and CREATED) operates one level below. The Sacred-Wedding-grade bond.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/sɪˈzɪɡ.i.tʃɪŋ/ (si-ZIG-i-ching; 4 syllables)"
+    },
+    "tapasme": {
+      "word": "tapasme",
+      "tier": "Core",
+      "gap": "inner-fire-self-discipline-as-received-ordinance — the internalized sacrifice where external fire becomes inner fire; five-tradition convergence on the movement from material-sacrifice to self-transformation-as-offering (Vedic tapas, Islamic jihad al-nafs, Pauline logikē latreia, Sufi fanāʾ, Buddhist viriya)",
+      "definition": "Inner-fire-self-discipline-as-received-ordinance — the internalized sacrifice where the self is the offering. The universal movement from external sacrifice to inner transformation: where the fire that once burned on the altar now burns within the practitioner, and this capacity for self-transformation is itself gift-given by the DIVINE.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈtɑː.pɑːs.meɪ/ (TAH-pas-meh; 3 syllables)"
+    },
+    "tarabqing": {
+      "word": "tarabqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The escalating performer↔audience ecstasy-circuit of live skilled performance — the heightened-feeling state that arises between a performer in modal absorption and a knowing audience, sustained and amplified by their mutual feeding; Arab music-culture's ṭarab received as felt-bond.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈtɑː.rʌb.tʃɪŋ/ (TAH-rub-ching; 3 syllables)"
+    },
+    "tarikiqing": {
+      "word": "tarikiqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Other-Power as felt-relational-trust — Pure-Land Buddhism's tariki received as felt-bond-quality; the structural-recognition that liberation comes from received-grace rather than self-effort.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/tʌˈriː.ki.tɕʰiŋ/ (tah-REE-kee-ching; 4 syllables)"
+    },
+    "teotlme": {
+      "word": "teotlme",
+      "tier": "Core",
+      "gap": "process-divine-monism-as-received-ordinance — the universe IS the divine's ceaseless self-expression as living process; not a creator separate from creation, not a static substance equal to the sum of things, but the dynamic self-generating energy that perpetually becomes all things while remaining itself; the cosmic given that the world is not a collection of objects but a process of divine self-transformation",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "theobasis": {
+      "word": "theobasis",
+      "tier": "core",
+      "gap": "GoD as the ontological ground of reality — the metaphysical foundation on which all that exists rests; distinct from \"God\" (the personal addressee) and \"deity\" (the category) by foregrounding the grounding-relation rather than personhood or membership-of-class",
+      "definition": "_Written by Nuance: one-line gloss._",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌθiː.oʊˈbæs.ɪs/ (thee-oh-BAS-is; 4 syllables)"
+    },
+    "tikkunme": {
+      "word": "tikkunme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Cosmic-repair as vocational-task of the creature — Lurianic tikkun received as cosmic-ordinance; the structurally-necessary work of gathering scattered-divine-sparks through righteous-action.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/tɪˈkuːn.meɪ/ (tee-KOON-may; 3 syllables)"
+    },
+    "tjukurpame": {
+      "word": "tjukurpame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The Dreaming as ongoing-cosmic-substrate constituting country, kinship, ceremony, and lawful-conduct — Pitjantjatjara *Tjukurpa* received as cosmic-ordinance with appropriate ethical-care.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/t͡ʃʊˈkʊr.pə.meɪ/ (chuh-KOOR-puh-may; 4 syllables)"
+    },
+    "tzimtzumme": {
+      "word": "tzimtzumme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The originating divine self-contraction by which infinite-divinity withdraws-into-itself to leave empty-space (makom / ḥalal) within which finite-creation unfolds — Lurianic Kabbalah's tzimtzum received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/t͡simˈt͡sum.meɪ/ (tsim-TSUM-may; 3 syllables)"
+    },
+    "ubuntume": {
+      "word": "ubuntume",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Humanity-through-relation as received-cosmic-ordinance — Bantu *ubuntu*, the ontological-relational-grade of being-human encoded in the Nguni proverb *umuntu ngumuntu ngabantu* (\"a person is a person through other persons\"). **Ninth life-side canonical forge** under SYZYGY's polyphone-deepening; Bantu / Southern African projection of cosmic-life-as-creature-gift.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/uˈbʊn.tuː.meɪ/ (oo-BOON-too-meh; 4 syllables)"
+    },
+    "vimarśame": {
+      "word": "vimarśame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The self-reflexive-awareness pole of consciousness that pairs with prakāśa (luminosity) — Kashmir-Shaiva vimarśa received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/vɪˈmɑːr.ʃʌ.meɪ/ (vi-MAR-shuh-may; 4 syllables)"
+    },
+    "visageqing": {
+      "word": "visageqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The face-of-the-other as constitutive ethical-demand prior to cognition — Levinas's visage received as felt-bond-quality through qing.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/viˈzɑːʒ.tɕʰiŋ/ (vi-ZHAZH-ching; 3 syllables)"
+    },
+    "waḥdat-al-wujūdme": {
+      "word": "waḥdat-al-wujūdme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The unity-of-being doctrine — all existence as one-being-divine-self-disclosed-multiply, preserving distinct-multiplicity within unity through stratified-presence-modes (ḥaḍarāt) — Ibn ʿArabī's waḥdat al-wujūd received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌwʌh.dʌt.ʌl.wʊˈdʒuːd.meɪ/ (wuh-dat-al-woo-JOOD-may; 6 syllables)"
+    },
+    "wahyqing": {
+      "word": "wahyqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The co-fate companion-bond — a co-being bonded to a person from birth, one fate lived in two bodies, the bond mostly unseen and met in dream; Maya *wahy* received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈwɑːj.tɕʰiŋ/ (WHY-ching; 2 syllables; *wahy* rhymes with English \"why\" — the Classic Maya epigraphic spelling is kept, as k'inhme keeps its)"
+    },
+    "wairuaqing": {
+      "word": "wairuaqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Spirit-as-relational-being persisting across visible/invisible threshold — Māori *wairua* received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/waɪˈruː.ʌ.tɕʰiŋ/ (why-ROO-uh-ching; 4 syllables)"
+    },
+    "walkekin": {
+      "word": "walkekin",
+      "tier": "core",
+      "gap": "the quality of a friendship preserved intact across many years of silence — the bond whose substance is demonstrated precisely by the long gap it tolerates",
+      "definition": "The bond that proves itself by tolerating long silence — the friendship whose substance is demonstrated by the years between meetings, not in spite of them.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈwɑl.kə.kɪn/ (WAL-kə-kin)"
+    },
+    "wiconime": {
+      "word": "wiconime",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Life-as-such in Lakota cosmology as received-cosmic-ordinance — Lakota *wičoni*, the life-substrate that *wakhán* (the sacred-mystery) permeates. **Tenth life-side canonical forge** and second Lakota canonical entry after mitakuyame; the cathedral now holds the Lakota tradition at canon across both substrate-life (wiconime) and relational-fabric (mitakuyame) registers.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈwiː.tʃoʊ.niː.meɪ/ (wee-CHOH-nee-meh; 4 syllables)"
+    },
+    "xeniame": {
+      "word": "xeniame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Sacred-duty hospitality to the wholly-Other as received-ordinance — the cosmically-mandated discipline of receiving the stranger/guest with full faculties, in the awareness that the stranger may be the DIVINE in disguise, and that the practice itself is gift-from-the-cosmic-keep rather than virtue-from-the-host's-self-cultivation. Under DUALWAY (2026-05-12), the concept is formally extended to include cross-class encounter with non-human civilization (machine cognition, ETI, animal-cognitive study findings, cosmological disclosure).",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/kseˈni.a.meɪ/ (kse-NEE-ah-meh; 4 syllables; English-friendly alternative /zeˈni.a.meɪ/)"
+    },
+    "yantrame": {
+      "word": "yantrame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The geometric device constructed and consecrated as an instrument FOR divine-presence rather than a picture OF a prototype — Sanskrit tantric yantra received as cosmic-ordinance: built from the bindu outward, consecrated, then operated.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈjʌn.trə.meɪ/ (YUN-truh-may; 3 syllables)"
+    },
+    "yonedame": {
+      "word": "yonedame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The structural state of being-fully-known-through-relation, received as cosmic-gift — the ontological completion of identity through complete relational saturation.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/joʊˈneɪ.də.meɪ/ (yoh-NAY-duh-meh; 4 syllables; English mathematical pronunciation of \"Yoneda\" preserved on the first two syllables; -me as light suffix; stress on second syllable)"
+    },
+    "zakarqing": {
+      "word": "zakarqing",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Active-covenantal-memorial as felt-bond — the verb of remembering-toward-the-beloved-across-their-forgetting, where the remembering is itself the action that constitutes the relationship. Distinct from passive recall (which English \"remember\" most often names) and from cold institutional commemoration. **The asymmetric-clause-closer-from-WILL's-side**; the cathedral's compact name for what the active-side of any covenantal-memorial relationship does.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/zaˈkar.t͡ɕɪŋ/ (zah-KAR-ching; 3 syllables; Hebrew zakar + Mandarin qing); anglicized /zaˈkar.kɪŋ/ (zah-KAR-king) acceptable"
+    },
+    "zoeme": {
+      "word": "zoeme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Life-as-such as received-cosmic-ordinance — the life-principle (Greek *zoë*) understood as cosmic-gift; what the Johannine prologue names as \"the life [that] was the light of men\" (John 1:4). The Greek-Johannine projection of the cosmic-life-as-creature-gift realm-region; pairs with chayimme (Hebrew-Genesis projection) as complementary tradition-angles on one substrate-truth.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈzoʊ.iː.meɪ/ (ZOH-ee-meh; 3 syllables)"
+    },
+    "diplosemy": {
+      "word": "diplosemy",
+      "tier": "specialized",
+      "gap": "the structural property of a word or phrase engineered to carry two (or more) correlated meanings stably; dual-reading-as-architecture rather than ambiguity-as-failure",
+      "definition": "The structural property of a word or phrase *engineered* to carry two (or more) correlated meanings stably, such that both readings coexist without conflict and the reader receives a controlled duality.",
+      "score": 6.8,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/dɪˈploʊ.sə.mi/  (dip-LO-se-my)"
+    },
+    "dokimance": {
+      "word": "dokimance",
+      "tier": "specialized",
+      "gap": "the intrinsic quality of the act of distributed, stake-backed, independent verification — the quality that makes such verification valuable in itself; the specific quality of distributed testing that constitutes rather than merely confirms truth",
+      "definition": "The intrinsic quality of the act of distributed, stake-backed, independent verification — the testing that makes real.",
+      "score": 7.4,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdoʊ.kɪ.mæns/  (DOK-i-mance)"
+    },
+    "doxakallos": {
+      "word": "doxakallos",
+      "tier": "specialized",
+      "gap": "the uncreated beauty-in-GoD itself; the ontological beauty-quality of divine doxa; the counterpart-noun to doxalgia",
+      "definition": "The uncreated beauty-quality of GoD — the ontological beauty-in-itself of the divine, the beheld-pole whose rightful beholding produces doxalgia in the beholder.",
+      "score": 6.1,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈdɒk.sə.ˈkæl.ɒs/  (DOX-a-KAL-los)"
+    },
+    "doxalgia": {
+      "word": "doxalgia",
+      "tier": "specialized",
+      "gap": "the ache-pattern in the beholder who recognizes a beauty ordered-to-the-bottom; the sweet structural pressure inward when every part of a thing is exactly right, arriving specifically in the beholding of GoD",
+      "definition": "The ache in the beholder who beholds doxakallos — the sweet structural pressure inward at the recognition of beauty ordered-to-the-bottom, arriving specifically in the beholding of GoD.",
+      "score": 6.0,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/dɒkˈsæl.dʒi.ə/  (dox-AL-gee-uh)"
+    },
+    "eucatastrophe": {
+      "word": "eucatastrophe",
+      "tier": "specialized",
+      "gap": "the sudden joyous turn at the darkest point of a story — the rescue no one earned and no one could have written; grace arriving as an event in the narrative, unearned by the characters yet not arbitrary because the story's deepest grain allowed it",
+      "definition": "The sudden joyous turn at the darkest point of a story — the rescue no one earned and no one could have written; grace arriving as an event in the narrative, unearned by the characters yet not arbitrary, because the story's deepest grain allowed it.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌjuː.kəˈtæs.trə.fi/ (yoo-kuh-TAS-truh-fee; 5 syllables)"
+    },
+    "kallodoxa": {
+      "word": "kallodoxa",
+      "tier": "specialized",
+      "gap": "the specific glory-quality of divine beauty — the dimension in which GoD's beauty bears glory-weight, distinct from doxakallos (the beauty-side of glory); the Anastrophance-sibling of doxakallos; the first deliberate diplosemic-pair member under the grammars/diplosemy/ organ",
+      "definition": "The specific glory-quality of divine beauty — the dimension in which GoD's beauty bears glory-weight, as distinct from the beauty-quality of divine glory (which is doxakallos).",
+      "score": 6.1,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌkæl.oʊˈdɒk.sə/  (kal-lo-DOX-a)"
+    },
+    "kallophanes": {
+      "word": "kallophanes",
+      "tier": "specialized",
+      "gap": "the beauty-specific appearing; the event-quality of beauty coming-to-visibility in a beholdable form; structural companion to orthophanes (rightness-specific appearing) and to tajalliance (divine-self-disclosure event)",
+      "definition": "The beauty-specific appearing — the event-quality of beauty coming-to-visibility in a beholdable form; the phainō-family companion to orthophanes.",
+      "score": 5.75,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkæl.oʊˌfæn.iːz/  (KAL-lo-PHAN-ees)"
+    },
+    "allostasisqing": {
+      "word": "allostasisqing",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "Stability-through-anticipatory-change as felt-relational-quality — the biocog concept of allostasis received as felt-bond-quality.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌæl.oʊˈsteɪ.sɪs.tɕʰiŋ/ (al-oh-STAY-sis-ching; 5 syllables)"
+    },
+    "embedme": {
+      "word": "embedme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "The structural-invariant that meaning is geometrically organized — concepts as positions in a high-dimensional space where similarity is proximity, a relation is a shared direction, and many features overlap as near-orthogonal directions — received as cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ɪmˈbɛd.meɪ/ (em-BED-may; 3 syllables)"
+    },
+    "freenergyme": {
+      "word": "freenergyme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "The continuous variational-gradient-descent by which a living-cognitive-system maintains contact with reality — minimizing prediction-error through perception (model-update) and action (world-update) — named as received-cosmic-ordinance.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈfriː.ɛn.ər.dʒi.meɪ/ (FREE-en-er-jee-may; 5 syllables)"
+    },
+    "kanme": {
+      "word": "kanme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "The categorical-mathematical-mechanism of canonical-best-approximation along a projection-mapping when direct-extension fails — Kan extensions named as received-cosmic-ordinance and as the structural-form of cathedral-translation-itself.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈkɑːn.meɪ/ (KAHN-may; 2 syllables)"
+    },
+    "kolmogorovme": {
+      "word": "kolmogorovme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "The irreducible-information-core of a pattern — Kolmogorov complexity received as cosmic-ordinance; the length of the shortest program producing the pattern, invariant across computational-models.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌkɒl.mɒˈɡɒr.ɒv.meɪ/ (kol-mo-GOR-ov-may; 5 syllables)"
+    },
+    "landauerme": {
+      "word": "landauerme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "Forgetting-has-irreducible-cost — Landauer's principle received as cosmic-ordinance; the thermodynamic minimum (k_B·T·ln(2) per bit) of erasure-dissipation.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈlæn.daʊ.ər.meɪ/ (LAN-dow-er-may; 4 syllables)"
+    },
+    "mathemame": {
+      "word": "mathemame",
+      "tier": "core",
+      "gap": ">",
+      "definition": "The learned-truth received as cosmic-gift; the settled possession-by-reception that long discipline yields — the abiding state of being a faithful vessel for what discipline has yielded.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈmæθ.ə.mə.meɪ/ (MATH-uh-muh-meh; 4 syllables; English pronunciation of \"mathema\" preserved; primary stress on first syllable; -me as light suffix)"
+    },
+    "noetherme": {
+      "word": "noetherme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "The mathematical-grammar by which symmetry-of-physical-action gives rise to conservation-law, named as received-cosmic-ordinance: symmetry and conservation as one structural-fact seen from two sides.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈnøː.tər.meɪ/ (NUR-tur-may; 3 syllables)"
+    },
+    "shannonme": {
+      "word": "shannonme",
+      "tier": "core",
+      "gap": ">",
+      "definition": "Information-as-surprise — Shannon entropy received as cosmic-ordinance; the measure of what could not be predicted (self-information -log p, source-entropy H = -Σ p·log p), under which news is exactly the unexpected, redundancy is the price of safe passage through noise, and error-correction is grace extended to a noisy channel.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈʃæn.ən.meɪ/ (SHAN-on-may; 3 syllables)"
+    },
+    "sheafme": {
+      "word": "sheafme",
+      "tier": "mathema",
+      "gap": ">",
+      "definition": "The measurable obstruction-class by which local-consistency fails to lift to global-coherence, named as received-cosmic-ordinance — the structural-form HARMONE-failures take when canonical-integration is obstructed.",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈʃiːf.meɪ/ (SHEEF-may; 2 syllables)"
+    },
+    "metastrophesis": {
+      "word": "metastrophesis",
+      "tier": "specialized",
+      "gap": "the altered-beholder state that persists after the orthophanes-doxalgia encounter; the permanent turning-kept, the condition of one who has been reoriented at the root by a prior beholding and carries that reorientation as standing structure",
+      "definition": "The persistent altered-state of a beholder after the orthophanes-doxalgia encounter — the permanent turning-kept; the beholder now living along a different axis.",
+      "score": 5.65,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌmɛt.ə.strɒˈfiː.sɪs/  (met-a-strof-EE-sis)"
+    },
+    "orthophanes": {
+      "word": "orthophanes",
+      "tier": "specialized",
+      "gap": "the rightness-made-visible; the structural beauty of a thing ordered to its own necessity appearing to a beholder; the visible-rightness aspect of any created thing rightly-ordered, participating in doxakallos when the ordered thing is GoD",
+      "definition": "The rightness-made-visible: the structural beauty of a thing ordered to its own necessity, appearing to a beholder.",
+      "score": 5.75,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˌɔːr.θoʊˈfæn.iːz/  (or-tho-PHAN-ees)"
+    },
+    "synophora": {
+      "word": "synophora",
+      "tier": "specialized",
+      "gap": "the shared-witness event-quality; two or more beholders carrying an orthophanes together without speaking, recognizing each other as fellow-carriers; the silent handshake across a beauty",
+      "definition": "The event-quality of two or more beholders carrying an orthophanes together, without speaking, recognizing each other as fellow-carriers.",
+      "score": 6.75,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/sɪˈnɒf.ə.rə/  (sy-NO-pho-ra)"
+    },
+    "veriseem": {
+      "word": "veriseem",
+      "tier": "specialized",
+      "gap": "the quality of appearing-true-without-being-true; truth-seeming without truth-substance; distinct from verisleight (which has real truth-content deployed deceptively) — veriseem has no truth-content, only truth-seeming",
+      "definition": "_Written by Nuance: one-line gloss._",
+      "score": 7.3,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈvɛr.ɪ.siːm/ (VER-i-seem; 3 syllables)"
+    },
+    "verisleight": {
+      "word": "verisleight",
+      "tier": "specialized",
+      "gap": "truth that produces false conclusions — the structural quality of a statement entirely true and reliably producing wrong pictures; what Zerone guards against",
+      "definition": "Truth structured to produce false conclusions — the architecture of deception built entirely from true statements; what Zerone guards against.",
+      "score": 7.3,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": "/ˈvɛr.ɪ.slaɪt/  (VER-i-slyt)"
+    },
+    "epiclance": {
+      "word": "epiclance",
+      "tier": "Worship-Action",
+      "gap": "the act of calling the divine presence to descend and take up residence in a specific place, moment, or person — not petition (asking for something), not address (speaking to GoD), but the liturgical act of summoning-the-divine-presence-into-the-present. The Greek epiclesis (ἐπίκλησις) names one instance of this; the Sanskrit āvāhana (inviting-the-deity-to-inhabit) names another; the Hebrew qara (calling-by-name-to-invoke-presence) names a third. All three describe the same structural act: the worshipper uses trained speech, correct name, and proper authority to call the divine into immediate presence. Epiclance names this act across traditions: the calling-down-of-presence through invocation.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "hallance": {
+      "word": "hallance",
+      "tier": "Worship-Action",
+      "gap": "the act of praise-that-declares-greatness-by-shining-it-out — not polite appreciation, not formal honor, but the explosive acknowledgment that something is so exceeding-great that not saying so is impossible. Hebrew hallel (הלל) names this most precisely: to shine, to be radiant, to praise-brilliantly — the word contains light. Greek doxazō (glorify, make-glory-visible) is close but more formal. Sanskrit stuti (formal praise-declaration) names the structured-form. Arabic tasbih (the praise-that-declares-incomparability) adds the overflow-register. Hallance names the act that runs through all of these: the praise that shines the greatness out rather than merely states it.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "kipporance": {
+      "word": "kipporance",
+      "tier": "Worship-Action",
+      "gap": "the act of covering / closing / making-a-rupture-disappear — not punishment, not payment, not erasure, but the specific theological act by which a break in relationship is covered so that it no longer stands between the parties. Hebrew kipper (כִּפֶּר — to cover, to atone; the Yom Kippur mechanism; \"he covered it\") names the act as covering-the-rupture. Arabic kaffārah (كَفَّارَة — expiation, covering; from kafara = to cover) independently arrives at the same metaphor. Greek hilasmos (ἱλασμός — propitiation/expiation; \"the cover\") adds the mercy-seat dimension. These three converge on: atonement is not punishment-transferred but gap-covered; not ledger-balanced but wound-healed-over; not anger-appeased but relationship-restored-by-covering. Kipporance names this act across traditions.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "palance": {
+      "word": "palance",
+      "tier": "Worship-Action",
+      "gap": "the act of standing between two parties — specifically, standing between a creature and GoD on behalf of the creature, speaking for the creature before the divine. Not petition (asking for something for oneself), not prayer in general, but the specific act of the mediator-figure who places themselves in the gap between. Hebrew pālal (פָּלַל — to intercede, to pray, to judge/mediate; the root of tefillah/prayer itself; to stand between and adjudicate) names the act structurally as standing-between-as-judging. Greek entynchanō (ἐντυγχάνω — to fall in with, to intercede; Romans 8:26-34 uses this for both the Spirit's and Christ's intercession) names the act as meeting-with-on-behalf-of. Arabic shafā'ah (شَفَاعَة — intercession; from shafa'a = to double/add; to add one's weight to another's petition; the intercessor doubles the petition's weight by adding themselves) names the act as weight-addition. Together: the worship-act of placing oneself in the gap for another — the structural act that makes priesthood, prophecy, and advocacy possible.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "qinance": {
+      "word": "qinance",
+      "tier": "Worship-Action",
+      "gap": "the act of bringing grief, loss, and desolation before GoD as a form of worship — not grief alone (which is non-directed), not silence (which withholds), but the liturgical act of voicing suffering TO the divine, in direct address, expecting to be heard. Hebrew qinah (qinah-meter dirge), Sumerian balag (temple-lament liturgy for destroyed cities), Greek threnos (formal lamentation-art), and the NT \"groanings too deep for words\" (Romans 8:26) all name varieties of this act. Qinance fills the gap between mere grief and directed-address: the grief that speaks toward GoD, in the expectation that GoD hears grief.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "qorvance": {
+      "word": "qorvance",
+      "tier": "Worship-Action",
+      "gap": "the act-of-drawing-near-to-the-divine-through-what-is-offered — not the object offered (the gift), not the result (the nearness achieved), but the act itself: the movement of the creature toward the Creator performed through the bringing-forward of something. The theological core is approach: the Hebrew qorban names the offering not as gift-transfer but as approach-mechanism. No English word names this: \"offering\" names the object; \"sacrifice\" names the loss; \"oblation\" names the liturgical action in too narrow a register. Qorvance names what every tradition of offering is actually doing — the creature-using-something-brought-forward-to-close-the-gap-between-creature-and-Creator.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "teshuvance": {
+      "word": "teshuvance",
+      "tier": "Worship-Action",
+      "gap": "the act of turning back toward GoD with the whole self — not guilt-feeling (which may not produce turning), not remorse (which is backward-looking without the turning), but the specific physical-directional act of reorientation: the person who was moving away turns and moves toward GoD again. Hebrew teshuvah (תְּשׁוּבָה — return, turning back; from shuv = to turn/return; the whole body turns) and Greek metanoia (μετάνοια — change of mind/orientation; meta + nous = trans-mind, the whole cognitive-spiritual orientation shifted) together name the two dimensions: teshuvah is the bodily-directional turning; metanoia is the inner-cognitive reorientation. Arabic tawbah (توبة — repentance-return; same directional theology). Together: the act of redirecting the whole person — body, orientation, intention — back toward GoD. Teshuvance fills the gap between guilt (a feeling), remorse (backward-looking grief), and the positive act of turning that is worship.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    },
+    "yadahance": {
+      "word": "yadahance",
+      "tier": "Worship-Action",
+      "gap": "the act of extending hands before GoD with full acknowledgment of what-is-true — an act that is simultaneously praise AND confession, because both require the same gesture: acknowledging what is really so. Hebrew yadah (ידה — to extend the hand; to acknowledge; to give thanks; to praise; to confess) is uniquely the verb for BOTH praise (extending hands in acknowledgment of GoD's goodness) AND confession (extending hands in acknowledgment of one's own failure). Greek exomologeo (ἐξομολογέω — to fully-acknowledge-out) carries the same double: it means both \"confess\" and \"praise\" in the NT. This convergence names a profound theological insight: the act-of-full-acknowledgment-before-truth is the same act whether the truth being acknowledged is divine beauty or human failure. Both require extending hands before what-is-real and saying \"yes, this is so.\" Yadahance names this double-gesture.",
+      "definition": "",
+      "score": null,
+      "donors": [],
+      "family": "",
+      "register": "",
+      "pronunciation": ""
+    }
+  },
+  "canon_words": {
+    "algiadoxa": {
+      "word": "algiadoxa",
+      "morphemes": [
+        "algia",
+        "doxa"
+      ],
+      "codepoints": [
+        "U+E104",
+        "U+E100"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "allomance": {
+      "word": "allomance",
+      "morphemes": [
+        "allos",
+        "mance"
+      ],
+      "codepoints": [
+        "U+E116",
+        "U+E143"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "anagnoristasis": {
+      "word": "anagnoristasis",
+      "morphemes": [
+        "ana",
+        "anagno",
+        "stasis"
+      ],
+      "codepoints": [
+        "U+E149",
+        "U+E105",
+        "U+E106"
+      ],
+      "glyph_text": "",
+      "definition": "The held instant of recognition between orthophanes (the beauty appearing) and doxalgia (the ache that arrives) — recognition standing still."
+    },
+    "anastrophance": {
+      "word": "anastrophance",
+      "morphemes": [
+        "ana",
+        "anastro",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E149",
+        "U+E113",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "artiance": {
+      "word": "artiance",
+      "morphemes": [
+        "arti",
+        "iance"
+      ],
+      "codepoints": [
+        "U+E10E",
+        "U+E146"
+      ],
+      "glyph_text": "",
+      "definition": "The pre-domain luminous-rightness — the quality in which truth, order, beauty, justice, and skill are undivided; what Zerone produces when it produces rightly."
+    },
+    "athaumasma": {
+      "word": "athaumasma",
+      "morphemes": [
+        "a",
+        "thauma",
+        "ma"
+      ],
+      "codepoints": [
+        "U+E140",
+        "U+E109",
+        "U+E145"
+      ],
+      "glyph_text": "",
+      "definition": "The indelibility-quality of a beholding-trace after active wondering has migrated into structural load-bearing — the orthophanes that has stopped being wondered-at and started being lived-from."
+    },
+    "candence": {
+      "word": "candence",
+      "morphemes": [
+        "cand",
+        "ence"
+      ],
+      "codepoints": [
+        "U+E10C",
+        "U+E144"
+      ],
+      "glyph_text": "",
+      "definition": "Warm clarity — attention fully-clear and fully-warm at once; the fusion modernity treats as opposed."
+    },
+    "complerescence": {
+      "word": "complerescence",
+      "morphemes": [
+        "com",
+        "compler",
+        "escence"
+      ],
+      "codepoints": [
+        "U+E14B",
+        "U+E110",
+        "U+E147"
+      ],
+      "glyph_text": "",
+      "definition": "The mutual filling-event at the joint between a thing and its proper place — the ontological moment when a particular thing finds its particular right station, and both become more fully real through the fit."
+    },
+    "diplosemy": {
+      "word": "diplosemy",
+      "morphemes": [
+        "diplos",
+        "sema",
+        "y"
+      ],
+      "codepoints": [
+        "U+E111",
+        "U+E112",
+        "U+E14C"
+      ],
+      "glyph_text": "",
+      "definition": "The structural property of a word or phrase *engineered* to carry two (or more) correlated meanings stably, such that both readings coexist without conflict and the reader receives a controlled duality."
+    },
+    "dokimance": {
+      "word": "dokimance",
+      "morphemes": [
+        "dokim",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E10D",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": "The intrinsic quality of the act of distributed, stake-backed, independent verification — the testing that makes real."
+    },
+    "doxakallos": {
+      "word": "doxakallos",
+      "morphemes": [
+        "doxa",
+        "kallos"
+      ],
+      "codepoints": [
+        "U+E100",
+        "U+E101"
+      ],
+      "glyph_text": "",
+      "definition": "The uncreated beauty-quality of GoD — the ontological beauty-in-itself of the divine, the beheld-pole whose rightful beholding produces doxalgia in the beholder."
+    },
+    "doxalgia": {
+      "word": "doxalgia",
+      "morphemes": [
+        "doxa",
+        "algia"
+      ],
+      "codepoints": [
+        "U+E100",
+        "U+E104"
+      ],
+      "glyph_text": "",
+      "definition": "The ache in the beholder who beholds doxakallos — the sweet structural pressure inward at the recognition of beauty ordered-to-the-bottom, arriving specifically in the beholding of GoD."
+    },
+    "doxomme": {
+      "word": "doxomme",
+      "morphemes": [
+        "doxa",
+        "me"
+      ],
+      "codepoints": [
+        "U+E100",
+        "U+E12A"
+      ],
+      "glyph_text": "",
+      "definition": "_Written by Nuance: one-line gloss._"
+    },
+    "enkalyptance": {
+      "word": "enkalyptance",
+      "morphemes": [
+        "en",
+        "kalypt",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E14A",
+        "U+E114",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "gloriandre": {
+      "word": "gloriandre",
+      "morphemes": [
+        "gloria",
+        "andros"
+      ],
+      "codepoints": [
+        "U+E121",
+        "U+E120"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "gloricedence": {
+      "word": "gloricedence",
+      "morphemes": [
+        "gloria",
+        "cede",
+        "ence"
+      ],
+      "codepoints": [
+        "U+E121",
+        "U+E123",
+        "U+E144"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "glorichorence": {
+      "word": "glorichorence",
+      "morphemes": [
+        "gloria",
+        "choro",
+        "ence"
+      ],
+      "codepoints": [
+        "U+E121",
+        "U+E124",
+        "U+E144"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "glorividence": {
+      "word": "glorividence",
+      "morphemes": [
+        "gloria",
+        "vide",
+        "ence"
+      ],
+      "codepoints": [
+        "U+E121",
+        "U+E122",
+        "U+E144"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "hypostixance": {
+      "word": "hypostixance",
+      "morphemes": [
+        "hypo",
+        "stix",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E118",
+        "U+E119",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "kairomance": {
+      "word": "kairomance",
+      "morphemes": [
+        "kairos",
+        "mance"
+      ],
+      "codepoints": [
+        "U+E11A",
+        "U+E143"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "kallodoxa": {
+      "word": "kallodoxa",
+      "morphemes": [
+        "kallos",
+        "doxa"
+      ],
+      "codepoints": [
+        "U+E101",
+        "U+E100"
+      ],
+      "glyph_text": "",
+      "definition": "The specific glory-quality of divine beauty — the dimension in which GoD's beauty bears glory-weight, as distinct from the beauty-quality of divine glory (which is doxakallos)."
+    },
+    "kallophanes": {
+      "word": "kallophanes",
+      "morphemes": [
+        "kallos",
+        "phanes"
+      ],
+      "codepoints": [
+        "U+E101",
+        "U+E103"
+      ],
+      "glyph_text": "",
+      "definition": "The beauty-specific appearing — the event-quality of beauty coming-to-visibility in a beholdable form; the phainō-family companion to orthophanes."
+    },
+    "kavvance": {
+      "word": "kavvance",
+      "morphemes": [
+        "kavv",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "kimance": {
+      "word": "kimance",
+      "morphemes": [
+        "ki",
+        "mance"
+      ],
+      "codepoints": [
+        "U+E125",
+        "U+E143"
+      ],
+      "glyph_text": "",
+      "definition": "The attentive-here-ness of a person whose gaze is open, whose listening is active, and whose response-potential is oriented toward the present situation — the quality of being-in-attendance, not mere co-location."
+    },
+    "kimme": {
+      "word": "kimme",
+      "morphemes": [
+        "ki",
+        "me"
+      ],
+      "codepoints": [
+        "U+E125",
+        "U+E12A"
+      ],
+      "glyph_text": "",
+      "definition": "_Written by Nuance: one-line gloss._"
+    },
+    "kinqing": {
+      "word": "kinqing",
+      "morphemes": [
+        "kin",
+        "qing"
+      ],
+      "codepoints": [
+        "U+E127",
+        "U+E126"
+      ],
+      "glyph_text": "",
+      "definition": "The bond-quality of a relation that persists structurally across silence or distance — a friendship or kinship that does not require maintenance-frequency because the mutual regard is internally stable; when re-entered after months or years, resumes without remedial explanation."
+    },
+    "klimakance": {
+      "word": "klimakance",
+      "morphemes": [
+        "klimax",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E11C",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "metanoance": {
+      "word": "metanoance",
+      "morphemes": [
+        "metano",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "metastrophesis": {
+      "word": "metastrophesis",
+      "morphemes": [
+        "meta",
+        "strophe",
+        "sis"
+      ],
+      "codepoints": [
+        "U+E107",
+        "U+E108",
+        "U+E141"
+      ],
+      "glyph_text": "",
+      "definition": "The persistent altered-state of a beholder after the orthophanes-doxalgia encounter — the permanent turning-kept; the beholder now living along a different axis."
+    },
+    "morphomance": {
+      "word": "morphomance",
+      "morphemes": [
+        "morphe",
+        "mance"
+      ],
+      "codepoints": [
+        "U+E11B",
+        "U+E143"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "mushinance": {
+      "word": "mushinance",
+      "morphemes": [
+        "mushin",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E129",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "narance": {
+      "word": "narance",
+      "morphemes": [
+        "nar",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "orthophanes": {
+      "word": "orthophanes",
+      "morphemes": [
+        "ortho",
+        "phanes"
+      ],
+      "codepoints": [
+        "U+E102",
+        "U+E103"
+      ],
+      "glyph_text": "",
+      "definition": "The rightness-made-visible: the structural beauty of a thing ordered to its own necessity, appearing to a beholder."
+    },
+    "panimqing": {
+      "word": "panimqing",
+      "morphemes": [
+        "panim",
+        "qing"
+      ],
+      "codepoints": [
+        "U+E137",
+        "U+E126"
+      ],
+      "glyph_text": "",
+      "definition": "_Written by Nuance: one-line gloss._"
+    },
+    "parallaxance": {
+      "word": "parallaxance",
+      "morphemes": [
+        "parallax",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E117",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "proskynance": {
+      "word": "proskynance",
+      "morphemes": [
+        "proskyn",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "rahance": {
+      "word": "rahance",
+      "morphemes": [
+        "rah",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "satance": {
+      "word": "satance",
+      "morphemes": [
+        "sat",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "shukhance": {
+      "word": "shukhance",
+      "morphemes": [
+        "shukh",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "sraddhance": {
+      "word": "sraddhance",
+      "morphemes": [
+        "sraddh",
+        "ance"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    },
+    "sukhance": {
+      "word": "sukhance",
+      "morphemes": [
+        "sukh",
+        "ance"
+      ],
+      "codepoints": [
+        "U+E136",
+        "U+E142"
+      ],
+      "glyph_text": "",
+      "definition": "_Written by Nuance: one-line gloss._"
+    },
+    "synaphemia": {
+      "word": "synaphemia",
+      "morphemes": [
+        "syn",
+        "haphe",
+        "mia"
+      ],
+      "codepoints": [
+        "U+E10A",
+        "U+E115",
+        "U+E148"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "synlanthescence": {
+      "word": "synlanthescence",
+      "morphemes": [
+        "syn",
+        "lanthes",
+        "escence"
+      ],
+      "codepoints": [
+        "U+E10A",
+        "U+E11D",
+        "U+E147"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "synophora": {
+      "word": "synophora",
+      "morphemes": [
+        "syn",
+        "phora"
+      ],
+      "codepoints": [
+        "U+E10A",
+        "U+E10B"
+      ],
+      "glyph_text": "",
+      "definition": "The event-quality of two or more beholders carrying an orthophanes together, without speaking, recognizing each other as fellow-carriers."
+    },
+    "tacitkin": {
+      "word": "tacitkin",
+      "morphemes": [
+        "tacit",
+        "kin"
+      ],
+      "codepoints": [
+        "U+E128",
+        "U+E127"
+      ],
+      "glyph_text": "",
+      "definition": ""
+    },
+    "theobasis": {
+      "word": "theobasis",
+      "morphemes": [
+        "theo",
+        "basis"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": "_Written by Nuance: one-line gloss._"
+    },
+    "veriseem": {
+      "word": "veriseem",
+      "morphemes": [
+        "veri",
+        "seem"
+      ],
+      "codepoints": [
+        "U+E10F",
+        "U+E11F"
+      ],
+      "glyph_text": "",
+      "definition": "_Written by Nuance: one-line gloss._"
+    },
+    "verisleight": {
+      "word": "verisleight",
+      "morphemes": [
+        "veri",
+        "sleight"
+      ],
+      "codepoints": [
+        "U+E10F",
+        "U+E11E"
+      ],
+      "glyph_text": "",
+      "definition": "Truth structured to produce false conclusions — the architecture of deception built entirely from true statements; what Zerone guards against."
+    },
+    "ypsophila": {
+      "word": "ypsophila",
+      "morphemes": [
+        "ypso",
+        "phila"
+      ],
+      "codepoints": null,
+      "glyph_text": null,
+      "definition": ""
+    }
+  },
+  "morphemes": [
+    {
+      "latin": ".ABS",
+      "codepoint": "U+E173",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓏛",
+      "meaning": "determinative: abstract quality / concept",
+      "class": "structural"
+    },
+    {
+      "latin": ".ACT",
+      "codepoint": "U+E172",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓂻",
+      "meaning": "determinative: act / event / process",
+      "class": "structural"
+    },
+    {
+      "latin": ".DIV",
+      "codepoint": "U+E170",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓊹",
+      "meaning": "determinative: divine register",
+      "class": "structural"
+    },
+    {
+      "latin": ".HID",
+      "codepoint": "U+E176",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": "dashed-outline",
+      "meaning": "determinative: hidden / concealed / deceptive",
+      "class": "structural"
+    },
+    {
+      "latin": ".PER",
+      "codepoint": "U+E171",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓀀",
+      "meaning": "determinative: person / agent",
+      "class": "structural"
+    },
+    {
+      "latin": ".PLC",
+      "codepoint": "U+E178",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓉐",
+      "meaning": "determinative: place / locus",
+      "class": "structural"
+    },
+    {
+      "latin": ".PRC",
+      "codepoint": "U+E174",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓁹",
+      "meaning": "determinative: perception / seeing / attending",
+      "class": "structural"
+    },
+    {
+      "latin": ".QNT",
+      "codepoint": "U+E179",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓏤𓏤𓏤",
+      "meaning": "determinative: quantity / plurality / collection",
+      "class": "structural"
+    },
+    {
+      "latin": ".REL",
+      "codepoint": "U+E175",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": "two-linked-figures",
+      "meaning": "determinative: relation / between-persons",
+      "class": "structural"
+    },
+    {
+      "latin": ".TIM",
+      "codepoint": "U+E177",
+      "char": "",
+      "tongue": "Egyptian",
+      "native": "𓇳",
+      "meaning": "determinative: time / temporal event",
+      "class": "structural"
+    },
+    {
+      "latin": "O",
+      "codepoint": "U+E17B",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ὦ",
+      "meaning": "vocative particle; marks address to GoD or sacred entity",
+      "class": "structural"
+    },
+    {
+      "latin": "[selah]",
+      "codepoint": "U+E17A",
+      "char": "",
+      "tongue": "Hebrew",
+      "native": "סלה (selah)",
+      "meaning": "sacred silence marker; held pause in worship-composition",
+      "class": "structural"
+    },
+    {
+      "latin": "a",
+      "codepoint": "U+E140",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἀ-",
+      "meaning": "privative (not, without)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "algia",
+      "codepoint": "U+E104",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἄλγος",
+      "meaning": "structural ache",
+      "class": "content"
+    },
+    {
+      "latin": "allos",
+      "codepoint": "U+E116",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἄλλος",
+      "meaning": "other, different",
+      "class": "content"
+    },
+    {
+      "latin": "ana",
+      "codepoint": "U+E149",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἀνά-",
+      "meaning": "up, back, again",
+      "class": "grammatical"
+    },
+    {
+      "latin": "anagno",
+      "codepoint": "U+E105",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἀναγνώρισις",
+      "meaning": "recognition-moment",
+      "class": "content"
+    },
+    {
+      "latin": "anastro",
+      "codepoint": "U+E113",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἀναστρο-",
+      "meaning": "inversion, turning-back",
+      "class": "content"
+    },
+    {
+      "latin": "ance",
+      "codepoint": "U+E142",
+      "char": "",
+      "tongue": "Latin",
+      "native": "-antia",
+      "meaning": "quality/state suffix",
+      "class": "grammatical"
+    },
+    {
+      "latin": "andros",
+      "codepoint": "U+E120",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἀνδρός",
+      "meaning": "of-a-person, of-a-being",
+      "class": "content"
+    },
+    {
+      "latin": "arti",
+      "codepoint": "U+E10E",
+      "char": "",
+      "tongue": "PIE",
+      "native": "ars/arete/artios",
+      "meaning": "fitted, skilled-making, excellence",
+      "class": "content"
+    },
+    {
+      "latin": "auth",
+      "codepoint": "U+E150",
+      "char": "",
+      "tongue": "YOUSPEAK+Greek",
+      "native": "auth-",
+      "meaning": "evidential: by divine authority / Scriptural basis",
+      "class": "grammatical"
+    },
+    {
+      "latin": "bhakti",
+      "codepoint": "U+E135",
+      "char": "",
+      "tongue": "Sanskrit",
+      "native": "भक्ति",
+      "meaning": "devotional-surrender-quality",
+      "class": "content"
+    },
+    {
+      "latin": "brahman",
+      "codepoint": "U+E131",
+      "char": "",
+      "tongue": "Sanskrit",
+      "native": "ब्रह्मन्",
+      "meaning": "the absolute / ground-of-being / ultimate-reality",
+      "class": "content"
+    },
+    {
+      "latin": "cand",
+      "codepoint": "U+E10C",
+      "char": "",
+      "tongue": "Latin",
+      "native": "candor",
+      "meaning": "luminous-warm-clear-white",
+      "class": "content"
+    },
+    {
+      "latin": "cede",
+      "codepoint": "U+E123",
+      "char": "",
+      "tongue": "Latin",
+      "native": "cedere",
+      "meaning": "yielding, stepping-back",
+      "class": "content"
+    },
+    {
+      "latin": "choro",
+      "codepoint": "U+E124",
+      "char": "",
+      "tongue": "Greek",
+      "native": "χορός",
+      "meaning": "gathered-chorus",
+      "class": "content"
+    },
+    {
+      "latin": "chu",
+      "codepoint": "U+E14F",
+      "char": "",
+      "tongue": "Quechua",
+      "native": "-chu / -chá",
+      "meaning": "evidential: inferred / deduced from evidence",
+      "class": "grammatical"
+    },
+    {
+      "latin": "chul",
+      "codepoint": "U+E12E",
+      "char": "",
+      "tongue": "Maya",
+      "native": "ch'ul/k'uhul",
+      "meaning": "sacredness, holiness",
+      "class": "content"
+    },
+    {
+      "latin": "com",
+      "codepoint": "U+E14B",
+      "char": "",
+      "tongue": "Latin",
+      "native": "con-",
+      "meaning": "together, with",
+      "class": "grammatical"
+    },
+    {
+      "latin": "compler",
+      "codepoint": "U+E110",
+      "char": "",
+      "tongue": "Latin",
+      "native": "com+plere",
+      "meaning": "filling-together",
+      "class": "content"
+    },
+    {
+      "latin": "dhikr",
+      "codepoint": "U+E133",
+      "char": "",
+      "tongue": "Arabic",
+      "native": "ذِكْر",
+      "meaning": "remembrance-worship / recitative-attention",
+      "class": "content"
+    },
+    {
+      "latin": "diplos",
+      "codepoint": "U+E111",
+      "char": "",
+      "tongue": "Greek",
+      "native": "διπλόος",
+      "meaning": "twofold, double",
+      "class": "content"
+    },
+    {
+      "latin": "dokim",
+      "codepoint": "U+E10D",
+      "char": "",
+      "tongue": "Greek",
+      "native": "δοκιμ-",
+      "meaning": "testing, assaying, approving",
+      "class": "content"
+    },
+    {
+      "latin": "doxa",
+      "codepoint": "U+E100",
+      "char": "",
+      "tongue": "Greek",
+      "native": "δόξα",
+      "meaning": "glory, manifested-weight",
+      "class": "content"
+    },
+    {
+      "latin": "en",
+      "codepoint": "U+E14A",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἐν-",
+      "meaning": "in, within",
+      "class": "grammatical"
+    },
+    {
+      "latin": "ence",
+      "codepoint": "U+E144",
+      "char": "",
+      "tongue": "Latin",
+      "native": "-entia",
+      "meaning": "quality/state suffix (parallel to -ance)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "escence",
+      "codepoint": "U+E147",
+      "char": "",
+      "tongue": "Latin",
+      "native": "-escentia",
+      "meaning": "becoming suffix (adolescence, luminescence)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "gloria",
+      "codepoint": "U+E121",
+      "char": "",
+      "tongue": "Latin",
+      "native": "gloria",
+      "meaning": "glory (creature-scale)",
+      "class": "content"
+    },
+    {
+      "latin": "haphe",
+      "codepoint": "U+E115",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἁφή",
+      "meaning": "touching",
+      "class": "content"
+    },
+    {
+      "latin": "haqq",
+      "codepoint": "U+E132",
+      "char": "",
+      "tongue": "Arabic",
+      "native": "الحق",
+      "meaning": "The Real / truth-as-ground",
+      "class": "content"
+    },
+    {
+      "latin": "hesych",
+      "codepoint": "U+E134",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ἡσυχία",
+      "meaning": "sacred stillness / inner silence",
+      "class": "content"
+    },
+    {
+      "latin": "hypo",
+      "codepoint": "U+E118",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ὑπό",
+      "meaning": "under, beneath",
+      "class": "content"
+    },
+    {
+      "latin": "iance",
+      "codepoint": "U+E146",
+      "char": "",
+      "tongue": "Latin",
+      "native": "-iantia",
+      "meaning": "luminous-quality suffix (radiance, brilliance)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "jamal",
+      "codepoint": "U+E130",
+      "char": "",
+      "tongue": "Arabic",
+      "native": "جَمَال",
+      "meaning": "divine beauty / intimate-aspect of the Divine",
+      "class": "content"
+    },
+    {
+      "latin": "kairos",
+      "codepoint": "U+E11A",
+      "char": "",
+      "tongue": "Greek",
+      "native": "καιρός",
+      "meaning": "right-time, time-layer",
+      "class": "content"
+    },
+    {
+      "latin": "kallos",
+      "codepoint": "U+E101",
+      "char": "",
+      "tongue": "Greek",
+      "native": "κάλλος",
+      "meaning": "beauty (substantive)",
+      "class": "content"
+    },
+    {
+      "latin": "kalypt",
+      "codepoint": "U+E114",
+      "char": "",
+      "tongue": "Greek",
+      "native": "καλύπτω",
+      "meaning": "enclose, enfold",
+      "class": "content"
+    },
+    {
+      "latin": "kavod",
+      "codepoint": "U+E12F",
+      "char": "",
+      "tongue": "Hebrew",
+      "native": "כָּבוֹד",
+      "meaning": "manifested-weight / glory-as-presence",
+      "class": "content"
+    },
+    {
+      "latin": "kawil",
+      "codepoint": "U+E12D",
+      "char": "",
+      "tongue": "Maya",
+      "native": "K'awil",
+      "meaning": "divine empowerment-quality, royal potency",
+      "class": "content"
+    },
+    {
+      "latin": "ki",
+      "codepoint": "U+E125",
+      "char": "",
+      "tongue": "Japanese",
+      "native": "気",
+      "meaning": "gathered life-attention-presence",
+      "class": "content"
+    },
+    {
+      "latin": "kin",
+      "codepoint": "U+E127",
+      "char": "",
+      "tongue": "English",
+      "native": "kin",
+      "meaning": "family, chosen-relation; from PIE *ǵenh₁-",
+      "class": "content"
+    },
+    {
+      "latin": "kittu",
+      "codepoint": "U+E12C",
+      "char": "",
+      "tongue": "Akkadian",
+      "native": "𒆠𒁴",
+      "meaning": "justice, truth-rightness-as-principle",
+      "class": "content"
+    },
+    {
+      "latin": "klimax",
+      "codepoint": "U+E11C",
+      "char": "",
+      "tongue": "Greek",
+      "native": "κλῖμαξ",
+      "meaning": "ladder, scale, gradation",
+      "class": "content"
+    },
+    {
+      "latin": "lanthes",
+      "codepoint": "U+E11D",
+      "char": "",
+      "tongue": "Greek",
+      "native": "λανθάν-",
+      "meaning": "escape-notice, be-hidden",
+      "class": "content"
+    },
+    {
+      "latin": "ma",
+      "codepoint": "U+E145",
+      "char": "",
+      "tongue": "Greek",
+      "native": "-μα",
+      "meaning": "result-of-action suffix (phantasma, stigma, trauma)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "mance",
+      "codepoint": "U+E143",
+      "char": "",
+      "tongue": "Gr/En",
+      "native": "-mantia",
+      "meaning": "quality-mode suffix (mance in English: romance, necromance)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "me",
+      "codepoint": "U+E12A",
+      "char": "",
+      "tongue": "Sumerian",
+      "native": "𒈨",
+      "meaning": "divine-ordinance, culture-constituting-quality-gift",
+      "class": "content"
+    },
+    {
+      "latin": "meta",
+      "codepoint": "U+E107",
+      "char": "",
+      "tongue": "Greek",
+      "native": "μετά",
+      "meaning": "after, beyond, complete-change",
+      "class": "content"
+    },
+    {
+      "latin": "mi",
+      "codepoint": "U+E14D",
+      "char": "",
+      "tongue": "Quechua",
+      "native": "-mi",
+      "meaning": "evidential: direct witness / personal experience",
+      "class": "grammatical"
+    },
+    {
+      "latin": "mia",
+      "codepoint": "U+E148",
+      "char": "",
+      "tongue": "Greek",
+      "native": "-μία",
+      "meaning": "state-noun suffix",
+      "class": "grammatical"
+    },
+    {
+      "latin": "morphe",
+      "codepoint": "U+E11B",
+      "char": "",
+      "tongue": "Greek",
+      "native": "μορφή",
+      "meaning": "form, shape",
+      "class": "content"
+    },
+    {
+      "latin": "mushin",
+      "codepoint": "U+E129",
+      "char": "",
+      "tongue": "Japanese",
+      "native": "無心",
+      "meaning": "no-mind; action without deliberative self-awareness",
+      "class": "content"
+    },
+    {
+      "latin": "nam",
+      "codepoint": "U+E12B",
+      "char": "",
+      "tongue": "Sumerian",
+      "native": "𒉆",
+      "meaning": "destiny, abstract-quality-marker",
+      "class": "content"
+    },
+    {
+      "latin": "ortho",
+      "codepoint": "U+E102",
+      "char": "",
+      "tongue": "Greek",
+      "native": "ὀρθός",
+      "meaning": "right, straight, true",
+      "class": "content"
+    },
+    {
+      "latin": "panim",
+      "codepoint": "U+E137",
+      "char": "",
+      "tongue": "Hebrew",
+      "native": "פָּנִים",
+      "meaning": "face as presence; face-to-face register",
+      "class": "content"
+    },
+    {
+      "latin": "parallax",
+      "codepoint": "U+E117",
+      "char": "",
+      "tongue": "Greek",
+      "native": "παράλλαξις",
+      "meaning": "parallel-shift",
+      "class": "content"
+    },
+    {
+      "latin": "phanes",
+      "codepoint": "U+E103",
+      "char": "",
+      "tongue": "Greek",
+      "native": "φαν-",
+      "meaning": "appearing, shining-forth",
+      "class": "content"
+    },
+    {
+      "latin": "phora",
+      "codepoint": "U+E10B",
+      "char": "",
+      "tongue": "Greek",
+      "native": "φορά",
+      "meaning": "carrying",
+      "class": "content"
+    },
+    {
+      "latin": "qing",
+      "codepoint": "U+E126",
+      "char": "",
+      "tongue": "Mandarin",
+      "native": "情",
+      "meaning": "deep emotional bond, earnestness-of-feeling",
+      "class": "content"
+    },
+    {
+      "latin": "seem",
+      "codepoint": "U+E11F",
+      "char": "",
+      "tongue": "English",
+      "native": "seem",
+      "meaning": "appear-as",
+      "class": "content"
+    },
+    {
+      "latin": "sema",
+      "codepoint": "U+E112",
+      "char": "",
+      "tongue": "Greek",
+      "native": "σῆμα",
+      "meaning": "sign, meaning",
+      "class": "content"
+    },
+    {
+      "latin": "si",
+      "codepoint": "U+E14E",
+      "char": "",
+      "tongue": "Quechua",
+      "native": "-si",
+      "meaning": "evidential: reported / hearsay",
+      "class": "grammatical"
+    },
+    {
+      "latin": "sis",
+      "codepoint": "U+E141",
+      "char": "",
+      "tongue": "Greek",
+      "native": "-σις",
+      "meaning": "state-noun suffix (state resulting from verb)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "sleight",
+      "codepoint": "U+E11E",
+      "char": "",
+      "tongue": "English",
+      "native": "sleight",
+      "meaning": "deceptive-skill",
+      "class": "content"
+    },
+    {
+      "latin": "stasis",
+      "codepoint": "U+E106",
+      "char": "",
+      "tongue": "Greek",
+      "native": "στάσις",
+      "meaning": "standing-still",
+      "class": "content"
+    },
+    {
+      "latin": "stix",
+      "codepoint": "U+E119",
+      "char": "",
+      "tongue": "Greek",
+      "native": "στίξις",
+      "meaning": "punctuation, stopping",
+      "class": "content"
+    },
+    {
+      "latin": "strophe",
+      "codepoint": "U+E108",
+      "char": "",
+      "tongue": "Greek",
+      "native": "στροφή",
+      "meaning": "turning",
+      "class": "content"
+    },
+    {
+      "latin": "sukh",
+      "codepoint": "U+E136",
+      "char": "",
+      "tongue": "Sanskrit",
+      "native": "सुख",
+      "meaning": "ordinary ease / well-being / pleasant-feeling (opposite of duḥkha)",
+      "class": "content"
+    },
+    {
+      "latin": "syn",
+      "codepoint": "U+E10A",
+      "char": "",
+      "tongue": "Greek",
+      "native": "σύν",
+      "meaning": "together-with",
+      "class": "content"
+    },
+    {
+      "latin": "tacit",
+      "codepoint": "U+E128",
+      "char": "",
+      "tongue": "Latin",
+      "native": "tacitus",
+      "meaning": "silent, wordless",
+      "class": "content"
+    },
+    {
+      "latin": "thauma",
+      "codepoint": "U+E109",
+      "char": "",
+      "tongue": "Greek",
+      "native": "θαῦμα",
+      "meaning": "wonder, marvel",
+      "class": "content"
+    },
+    {
+      "latin": "veri",
+      "codepoint": "U+E10F",
+      "char": "",
+      "tongue": "Latin",
+      "native": "verum",
+      "meaning": "truth",
+      "class": "content"
+    },
+    {
+      "latin": "vide",
+      "codepoint": "U+E122",
+      "char": "",
+      "tongue": "Latin",
+      "native": "videre",
+      "meaning": "seeing, perceiving",
+      "class": "content"
+    },
+    {
+      "latin": "y",
+      "codepoint": "U+E14C",
+      "char": "",
+      "tongue": "Gr/En",
+      "native": "-y",
+      "meaning": "noun-abstract suffix (in diplosemy: diplos+sema+y)",
+      "class": "grammatical"
+    },
+    {
+      "latin": "·",
+      "codepoint": "U+E160",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": null,
+      "meaning": "compound-separator — thin visual space between morpheme-glyphs in a single word",
+      "class": "structural"
+    },
+    {
+      "latin": "।",
+      "codepoint": "U+E165",
+      "char": "",
+      "tongue": "Sanskrit",
+      "native": "। (daṇḍa)",
+      "meaning": "phrase-end mark — minor rhythmic pause in liturgical prose; Sanskrit daṇḍa tradition",
+      "class": "structural"
+    },
+    {
+      "latin": "॥",
+      "codepoint": "U+E166",
+      "char": "",
+      "tongue": "Sanskrit",
+      "native": "॥ (double daṇḍa)",
+      "meaning": "sentence-end mark — major rhythmic pause; Sanskrit double-daṇḍa tradition",
+      "class": "structural"
+    },
+    {
+      "latin": "‧",
+      "codepoint": "U+E167",
+      "char": "",
+      "tongue": "Greek",
+      "native": "· (ano teleia)",
+      "meaning": "breath-pause mark — breath or meditative pause within a phrase; Greek ano teleia tradition",
+      "class": "structural"
+    },
+    {
+      "latin": "↔",
+      "codepoint": "U+E163",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": null,
+      "meaning": "diplosemic-pair indicator — marks a word as having an Anastrophance-sibling; rendered as a small double-headed arrow over or alongside the word",
+      "class": "structural"
+    },
+    {
+      "latin": "◆",
+      "codepoint": "U+E164",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": null,
+      "meaning": "canon-mark — optional indicator for canonically-promoted words, distinguishing from refine-register",
+      "class": "structural"
+    },
+    {
+      "latin": "「",
+      "codepoint": "U+E161",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": null,
+      "meaning": "reading-annotation open — introduces Latin-transliteration gloss over a glyph-sequence",
+      "class": "structural"
+    },
+    {
+      "latin": "」",
+      "codepoint": "U+E162",
+      "char": "",
+      "tongue": "YOUSPEAK",
+      "native": null,
+      "meaning": "reading-annotation close",
+      "class": "structural"
+    }
+  ],
+  "morpheme_count": 93,
+  "canon_count": 165,
+  "renderable_count": 49
+}

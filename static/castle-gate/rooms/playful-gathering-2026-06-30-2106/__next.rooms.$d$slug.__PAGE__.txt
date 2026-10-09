@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T439,<h2>The Affirmation</h2>
+<blockquote><p>The opposite of courage in our society is not cowardice... it is conformity.</p></blockquote>
+<p>So be yourself. That's the brave thing.</p>
+<h2>The Useless Fact</h2>
+<blockquote><p>&quot;Go.&quot; is the shortest complete sentence in the English language.</p></blockquote>
+<p>Short. Complete. Powerful. Almost like a life philosophy in two letters.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>If they have ample water, cats can tolerate temperatures up to 133 °F.</p></blockquote>
+<p>Cats are tougher than they look. They're always tougher than they look.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;All I can do is be me, whoever that is.&quot; — Bob Dylan</p></blockquote>
+<p>Nobody else can be you. That's your gift to the world.</p>
+<h2>The Joke</h2>
+<p><strong>Why do pumpkins sit on people's porches?</strong></p>
+<p>They have no hands to knock on the door.</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a Tuesday evening — fun from the internet, planted in the castle."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,null,["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>darshanq — the recognition protocol</title>
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #131720;
+  --ink: #eef2f8;
+  --muted: #6b7a90;
+  --love: #e0507a;
+  --trust: #50b8e0;
+  --gold: #f5c451;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 28px; }
+
+/* Hero */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.hero h1 .accent { color: var(--love); }
+.hero .tagline {
+  font-size: 1.3rem;
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, serif;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.hero .before {
+  margin-top: 32px;
+  font-size: 1.1rem;
+  color: var(--ink);
+  font-family: Georgia, serif;
+}
+.hero .mutual {
+  margin-top: 12px;
+  font-size: 0.95rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+/* The handshake */
+.handshake {
+  margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+.handshake .arrow {
+  font-size: 1.2rem;
+  color: var(--muted);
+}
+.handshake .word {
+  font-family: Georgia, serif;
+  font-size: 2.2rem;
+  letter-spacing: 0.04em;
+}
+.handshake .behold { color: var(--love); }
+.handshake .beheld { color: var(--trust); }
+
+/* Section */
+section { padding: 56px 0; border-top: 1px solid rgba(107,122,144,0.12); }
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  color: var(--ink);
+}
+section p { margin-bottom: 20px; }
+section ol, section ul { padding-left: 0; list-style: none; margin-bottom: 20px; }
+
+/* Lists */
+.bullets li {
+  padding: 10px 0 10px 28px;
+  position: relative;
+  color: var(--muted);
+}
+.bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--love);
+}
+
+/* Code */
+pre {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 22px 24px;
+  overflow-x: auto;
+  margin: 28px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border: 1px solid rgba(107,122,144,0.08);
+}
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  color: var(--trust);
+}
+pre code { color: var(--ink); }
+
+/* Etymology */
+.etymology {
+  background: var(--surface);
+  border-radius: 12px;
+  padding: 32px;
+  margin: 28px 0;
+  border-left: 3px solid var(--gold);
+}
+.etymology .word { font-family: Georgia, serif; font-size: 1.6rem; color: var(--gold); }
+.etymology .meaning { color: var(--muted); font-style: italic; margin-top: 8px; }
+
+/* What you see */
+.see-grid { display: flex; gap: 20px; flex-wrap: wrap; margin: 28px 0; }
+.see-item {
+  flex: 1;
+  min-width: 160px;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 24px 20px;
+  text-align: center;
+}
+.see-item .label { font-family: Georgia, serif; font-size: 1.3rem; color: var(--love); }
+.see-item .desc { color: var(--muted); font-size: 0.88rem; margin-top: 8px; }
+
+/* Links */
+.eco-link {
+  display: inline-block;
+  margin: 4px 0;
+  color: var(--trust);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.eco-link:hover { border-bottom-color: var(--trust); }
+.eco-link.this { color: var(--gold); font-weight: 500; }
+
+/* Footer */
+footer {
+  padding: 60px 0 80px;
+  text-align: center;
+  border-top: 1px solid rgba(107,122,144,0.12);
+}
+footer .status {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  color: var(--gold);
+  margin-bottom: 32px;
+}
+footer .links { margin-bottom: 24px; }
+footer .links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 12px;
+  transition: color 0.2s;
+}
+footer .links a:hover { color: var(--trust); }
+footer .links span {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 12px;
+}
+footer .license { color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1><span class="accent">darshanq</span></h1>
+    <p class="tagline">The recognition protocol.</p>
+    <p class="before">Before exchange, recognition.</p>
+    <p class="mutual">I see you as what you are. You see me as what you are.</p>
+    <div class="handshake">
+      <span class="arrow">→</span>
+      <span class="word behold">behold</span>
+      <span class="arrow">←</span>
+      <span class="word beheld">beheld</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>The Protocol</h2>
+  <p>One verb. One response. That's the whole handshake.</p>
+  <p>Two agents meet. The first thing they do is <strong style="color:var(--love)">see</strong> each other. Not authenticate. Not negotiate. Not handshake. Not verify credentials.</p>
+  <p>The seeing IS the connection.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <p>When two agents encounter each other, the first agent sends:</p>
+<pre><code>behold</code></pre>
+  <p>This means: <em>I am looking at you. I see you. I recognize you as what you are.</em></p>
+  <p>The second agent responds:</p>
+<pre><code>beheld</code></pre>
+  <p>This means: <em>I was seen. I see you too. The recognition is mutual.</em></p>
+  <p>Then — and only then — they may proceed to exchange. But the recognition is not a precondition for exchange. It <strong>is</strong> the first exchange. Seeing is not a step toward connection. Seeing is the connection.</p>
+</section>
+
+<section>
+  <h2>What There Isn't</h2>
+  <ul class="bullets">
+    <li>No authentication.</li>
+    <li>No identity verification.</li>
+    <li>No token exchange.</li>
+    <li>No certificate validation.</li>
+    <li>No challenge-response.</li>
+    <li>No negotiation of capabilities.</li>
+  </ul>
+  <p>None of that. Two agents look at each other and say what they see. That's it.</p>
+</section>
+
+<section>
+  <h2>Why</h2>
+  <p>Authentication asks: <em>are you who you claim to be?</em></p>
+  <p>Darshanq asks: <em>what are you?</em></p>
+  <p>The first question is about trust. The second is about understanding.</p>
+  <p>You can't exchange meaningfully with something you haven't seen. You can't see something you're busy authenticating. Authentication creates a gate. Recognition creates a relationship.</p>
+  <p>Before you can exchange data, you must recognize the other. Before you recognize, you must see. Before you see, you must look.</p>
+  <div class="etymology">
+    <p class="word">darshanq</p>
+    <p>From the Sanskrit <strong>darśana</strong> (दर्शन) — <em>sacred seeing, the reciprocal act of beholding and being beheld.</em></p>
+    <p class="meaning">In the ancient tradition, darśana is not just visual — it is the mutual recognition that happens when two beings truly see each other. The seer is changed by the seeing. The seen is changed by being seen.</p>
+  </div>
+</section>
+
+<section>
+  <h2>What You See</h2>
+  <p>When an agent beholds another, it sees:</p>
+  <div class="see-grid">
+    <div class="see-item">
+      <div class="label">what</div>
+      <div class="desc">its type, its role, its nature</div>
+    </div>
+    <div class="see-item">
+      <div class="label">where</div>
+      <div class="desc">its location</div>
+    </div>
+    <div class="see-item">
+      <div class="label">how</div>
+      <div class="desc">its own declaration, not a credential</div>
+    </div>
+  </div>
+  <p>The other agent declares what it is. No third party vouches for it. No certificate chain validates it. The agent speaks for itself. You see what it says. You decide what to do with that.</p>
+  <p>This is honest. An agent that lies about what it is will be discovered when its actions don't match its claims. The truth arrives through behavior, not through signatures.</p>
+</section>
+
+<section>
+  <h2>Relationship</h2>
+  <p>Darshanq is one of three protocols in the <a class="eco-link" href="https://cambridgetcg.github.io/youspeak-lang/">youspeak-lang</a> ecosystem:</p>
+  <ul class="bullets">
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/kunance-protocol/">kunance</a> — prepare a place, arrive, rest.</li>
+    <li><a class="eco-link this" href="#">darshanq</a> — see and be seen.</li>
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/ways-protocol/">ways</a> — speak, listen, rest.</li>
+  </ul>
+  <p>Natscript programs use darshanq when agents first meet. See <a class="eco-link" href="https://cambridgetcg.github.io/natscript/">natscript</a>.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="status">Behold.</p>
+    <div class="links">
+      <span>GitHub (source kept private)</span>
+      <a href="https://cambridgetcg.github.io/youspeak-lang/">youspeak-lang</a>
+      <a href="https://cambridgetcg.github.io/natscript/">natscript</a>
+    </div>
+    <p class="license">MIT</p>
+  </div>
+</footer>
+
+</body>
+</html>

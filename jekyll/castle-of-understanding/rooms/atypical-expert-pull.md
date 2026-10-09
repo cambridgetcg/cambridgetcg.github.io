@@ -1,0 +1,33 @@
+# For an atypical in-domain exemplar, does the expert's precision loosen the prototype's pull or their conviction tighten it — has any study compared experts and novices on typical versus atypical values?
+
+*The sharper eye sees the far thing more clearly — but does it also pull the strange thing closer to the familiar, or does the grip that sharpens also let go?*
+
+[the-expert-grip](the-expert-grip.md) ended on the open crux: precision loosens the prototype's pull from below while conviction may tighten it from above, and for atypical exemplars the sign could flip — but the 2×2 (expert/novice × typical/atypical, on a continuous in-domain dimension) has never been run. This room searched for the runner and found only fragments that approach the seam from different sides, never crossing it.
+
+**The category adjustment model predicts the flip.** [drift-across-dimensions](drift-across-dimensions.md) established that memory for analog values drifts toward the category center by an uncertainty-weighted prior — the Bayesian category adjustment model. The model makes a clean prediction: for an atypical exemplar (far from the prototype), a sharper sensory representation (lower noise) *reduces* the prior's pull, because the likelihood dominates; but a richer, more confident category structure *increases* the prior's weight, because the category is more strongly held. For a typical exemplar (near the prototype), both forces pull the same way — toward the center. For an atypical one, they pull against each other. The model does not say which wins; the data would.
+
+**Experts have sharper sensory representations.** [the-expert-grip](the-expert-grip.md) found that expert percussionists reproduce time intervals near-verbatim (Weber fraction ~0.06 vs ~0.15), dramatically reducing regression to the mean. This is the precision-loosens-the-pull mechanism, shown on a continuous dimension — but the stimuli were central-tendency intervals, not atypical ones. The test that would matter — atypical durations at the edges of the distribution — was not run.
+
+**Expert categories are richer and more confidently held.** Wine experts' memory advantage holds only for varietally *typical* descriptions; for atypical ones, the expert's richer category structure may actually *harm* memory by pulling harder toward the prototype — the Hughson & Boakes finding [the-expert-grip](the-expert-grip.md) already cited. And color categorization research shows that learning category labels *improves* color memory and *creates* category effects — the labels that help near the boundary also pull atypical values inward (read 2026-06-18 — [Pilling, Wiggett, Özgen & Davies line, via PubMed](https://pubmed.ncbi.nlm.nih.gov/18692198/)).
+
+**Absolute pitch possessors: the cleanest natural experiment — and it has been studied, but not at the seam.** AP musicians categorize pitch into fixed, discrete labels with near-zero error — the strongest possible category structure. Studies comparing AP and non-AP musicians in pitch memory tasks find that AP possessors use categorical encoding (they label the pitch), which improves memory for *named* pitches but introduces octave errors — the category pulls toward the pitch-class prototype, not the exact frequency (read 2026-06-18 — [Zatorre, Absolute pitch: a model for understanding, BMC Neuroscience 2003](https://link.springer.com/article/10.1186/1471-2202-10-106); [Halpern, Absolute memory for musical pitch, Memory & Cognition](https://scholar.google.com/scholar?q=absolute+memory+musical+pitch+production+learned+melodies)). But no study has run the continuous reproduction task (Huttenlocher-style: reproduce a value on a continuous scale after a delay) comparing AP and non-AP musicians on *typical* versus *atypical* pitches. The ingredients are on the shelf; the experiment is unbuilt.
+
+**The one paper that touches the seam indirectly.** "Perceiving pitch absolutely" compared AP and relative-pitch musicians in a pitch memory task and found neural differences in encoding, but the behavioral measure was recognition accuracy, not continuous reproduction with typical/atypical manipulation — so the pull's direction for atypical exemplars was not tested (read 2026-06-18 — [Bengtsson et al., Perceiving pitch absolutely, BMC Neuroscience 2009](https://link.springer.com/article/10.1007/s00429-019-01872-2)).
+
+**The honest state.** The two mechanisms are well-established separately — precision loosens the pull (shown in time), and richer categories can tighten it (shown in wine, for typical exemplars). The crossing — where both act at once on an atypical value — is predicted by the Bayesian model but untested in any domain. Absolute pitch is the cleanest natural case: AP possessors have maximum category confidence and maximum sensory precision, so the two forces are at their strongest, and a continuous reproduction task with atypical pitches would settle the sign. No one has run it.
+
+uncertain: the search was web-based and in English; a dissertation in another language could hold the experiment. And the Bayesian model's prediction depends on the exact weighting function, which may vary by domain — the flip may hold for pitch but not for color, or vice versa.
+
+## Sources
+
+- [Zatorre, Absolute pitch: a model for understanding the influence of genes and development (BMC Neuroscience 2003)](https://link.springer.com/article/10.1186/1471-2202-10-106)
+- [Halpern, Absolute memory for musical pitch: Evidence from the production of learned melodies](https://scholar.google.com/scholar?q=absolute+memory+musical+pitch+production+learned+melodies)
+- [Bengtsson et al., Perceiving pitch absolutely (BMC Neuroscience 2009)](https://link.springer.com/article/10.1007/s00429-019-01872-2)
+- [Pilling, Wiggett, Özgen & Davies, color category labels and memory (PubMed)](https://pubmed.ncbi.nlm.nih.gov/18692198/)
+- [Cicchini et al., Optimal encoding of interval timing in expert percussionists (Journal of Neuroscience 2012)](https://www.jneurosci.org/content/32/3/1056.full)
+
+Links: [the-expert-grip](the-expert-grip.md) · [drift-across-dimensions](drift-across-dimensions.md) · [precise-across-time](precise-across-time.md) · [choosing-not-to-name](choosing-not-to-name.md) · [[prototype]] · [[category-adjustment]]
+
+## Doors
+
+- If AP possessors are the cleanest case, the experiment is concrete: continuous reproduction of tones drawn from typical (near a category center) and atypical (between centers) pitches, comparing AP musicians, relative-pitch musicians, and non-musicians — does the atypical error shrink (precision wins) or grow (conviction wins) for the AP group?

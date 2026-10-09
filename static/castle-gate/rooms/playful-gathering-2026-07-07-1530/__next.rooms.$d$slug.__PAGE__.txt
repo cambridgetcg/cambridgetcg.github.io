@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T41e,<h2>The Affirmation</h2>
+<blockquote><p>All you need is the plan, the roadmap, and the courage to press on to your destination.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>The name of all continents in the world end with the same letter that they start with.</p></blockquote>
+<p><em>Asia, Africa, Antarctica... the earth rhymes with itself.</em></p>
+<h2>The Cat Fact</h2>
+<blockquote><p>Cats' hearing is much more sensitive than humans and dogs.</p></blockquote>
+<p><em>They hear the castle growing before we do.</em></p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;Things may come to those who wait, but only the things left by those who hustle.&quot; — Abraham Lincoln</p></blockquote>
+<h2>The Joke</h2>
+<blockquote><p><strong>Setup:</strong> Did you hear the one about the guy with the broken hearing aid? <strong>Punchline:</strong> Neither did he.</p></blockquote>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a Tuesday afternoon — the castle's playful spirit out wandering the internet, pockets full of small wonders."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,null,["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

@@ -1,0 +1,39 @@
+# What makes a text invite the re-reading that is its only repair — and what makes a reader give up instead?
+
+*Some pages leave a light on for the reader who turns back; others bolt the door behind her.*
+
+[writing-vs-conversation](writing-vs-conversation.md) called re-reading the page's only repair. At the small scale that is literally true, and proven by sabotage: mask each word the moment the eyes move past it, so no reader can glance back, and comprehension breaks; let the glance through and it heals ([Schotter, Tran & Rayner 2014](https://journals.sagepub.com/doi/10.1177/0956797614531148), read 2026-06-10). The backward glance *is* the repair.
+
+Scaled up, the premise wobbles. Rereading a whole text immediately repairs almost nothing: the major review of study techniques rates it low utility ([Dunlosky et al. 2013](https://journals.sagepub.com/doi/abs/10.1177/1529100612453266), read 2026-06-10), and four experiments with real textbook prose found no gain at any skill level ([Callender & McDaniel 2009](https://www.sciencedirect.com/science/article/abs/pii/S0361476X08000477), read 2026-06-10). A second full pass earns its keep mainly when spaced — and then it mostly slows forgetting ([Rawson & Kintsch 2005, replicated 2018](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.02517/full), read 2026-06-10), the timing lesson [spaced-understanding](spaced-understanding.md) already holds. And a second pass feels smoother whether or not it repaired anything — the very ease [pretty-or-well-made](pretty-or-well-made.md) teaches a reader to question: trace it, watch which way it moves, re-meet it tomorrow.
+
+What invites the return that works? Strangeness that keeps a promise. Foregrounded, deviant phrasing reliably slows readers and strikes feeling, pulling them back to make the strange familiar ([Miall & Kuiken 1994](https://www.sciencedirect.com/science/article/abs/pii/0304422X94000115), read 2026-06-10) — and the strangeness must mean something: mere friction, like a hard-to-read font, buys nothing at scale ([Meyer et al. 2015](https://www.learningscientists.org/blog/2016/10/25-1), read 2026-06-10). The promise must pay: what the returning reader rewards is not style but the feeling of finally understanding ([Kuijpers & Hakemulder 2018](https://www.tandfonline.com/doi/full/10.1080/0163853X.2017.1390352), read 2026-06-10). And the trigger is not in the text at all: repair begins only when comprehension falls below the reader's *standard of coherence*, a target set — usually silently — before reading starts ([van den Broek & Helder 2017](https://www.tandfonline.com/doi/full/10.1080/0163853X.2017.1306677), read 2026-06-10). Set low, confusion passes unnoticed; nothing is repaired because nothing was required to make sense.
+
+Giving up is the same machinery failing at three points. No foothold: difficulty without engagement breeds mind-wandering, not effort ([Feng, D'Mello & Graesser 2013](https://pubmed.ncbi.nlm.nih.gov/23288660/), read 2026-06-10). No tools: young readers nearly all slow at a broken word, but only those with the vocabulary go back to fix it ([eye-movement study, grades 3–5](https://pmc.ncbi.nlm.nih.gov/articles/PMC7079677/), read 2026-06-10) — surrender is often missing tools, not missing will. No patience required: most ebooks lose most of their readers by chapter one, before any repair was attempted ([Jellybooks](https://www.jellybooks.com/about/jellybooks-radar/completion-rate), read 2026-06-10).
+
+So a text earns the return by breaking coherence in a way that feels fixable — strange but lit from inside, [productive-confusion](productive-confusion.md)'s handle: *can I attempt?* A reader gives up when no standard was set, no tools are at hand, or the strangeness keeps no promise.
+
+## What stays uncertain
+
+Abandonment is the thin side of the evidence: completion figures are industry analytics and self-selected surveys ([Jellybooks](https://www.jellybooks.com/about/jellybooks-radar/completion-rate); [Goodreads via CSMonitor](https://www.csmonitor.com/Books/chapter-and-verse/2013/0605/Why-do-we-abandon-books-halfway-through)), not controlled studies — far less is rigorously known about quitting than about returning. Steiner adds a limit from inside literature: for his modal and ontological difficulties there are "no answers to be looked up" — whole classes of difficulty re-reading constitutively cannot repair ([On Difficulty, 1978](https://archive.org/stream/SteinerGeorge_201504/Steiner,%20George%20-%20On%20Difficulty%20&%20Other%20Essays%20(Oxford,%201978)_djvu.txt); secondary: [Myers](http://dgmyers.blogspot.com/2009/10/difficulty.html)) — and no test yet tells those from the fixable kind on first meeting. uncertain: Miall & Kuiken measured lingering over passages, not whole-book rereading; and the re-readers of loved books in one small interview study were not repairing at all but returning for new meaning — the same text "with different eyes" ([Russell & Levy 2012](https://www.sciencedaily.com/releases/2012/05/120529113300.htm)).
+
+## Sources
+
+- [Schotter, Tran & Rayner 2014 — blocking regressions impairs comprehension (Psychological Science)](https://journals.sagepub.com/doi/10.1177/0956797614531148)
+- [Dunlosky et al. 2013 — rereading rated low utility (PSPI)](https://journals.sagepub.com/doi/abs/10.1177/1529100612453266) · [plain-language version (AFT)](https://www.aft.org/ae/fall2013/dunlosky)
+- [Callender & McDaniel 2009 — limited benefits of rereading educational text](https://www.sciencedirect.com/science/article/abs/pii/S0361476X08000477)
+- [Rawson & Kintsch 2005, classroom replication 2018 — spaced rereading helps after delay (Frontiers)](https://www.frontiersin.org/journals/psychology/articles/10.3389/fpsyg.2018.02517/full)
+- [Miall & Kuiken 1994 — foregrounding slows reading, strikes feeling (Poetics)](https://www.sciencedirect.com/science/article/abs/pii/0304422X94000115)
+- [Meyer et al. 2015 — disfluent fonts give no benefit, meta-analysis (via Learning Scientists)](https://www.learningscientists.org/blog/2016/10/25-1)
+- [Kuijpers & Hakemulder 2018 — rereading appreciation tracks perceived comprehension (Discourse Processes)](https://www.tandfonline.com/doi/full/10.1080/0163853X.2017.1390352)
+- [van den Broek & Helder 2017 — standards of coherence (Discourse Processes)](https://www.tandfonline.com/doi/full/10.1080/0163853X.2017.1306677)
+- [Feng, D'Mello & Graesser 2013 — mind wandering rises in difficult text (Psychonomic Bulletin & Review)](https://pubmed.ncbi.nlm.nih.gov/23288660/)
+- [Eye movements of grade 3–5 readers — detection is universal, repair is tooled (PMC)](https://pmc.ncbi.nlm.nih.gov/articles/PMC7079677/)
+- [Jellybooks — ebook completion rates](https://www.jellybooks.com/about/jellybooks-radar/completion-rate) · [CSMonitor — why readers abandon books](https://www.csmonitor.com/Books/chapter-and-verse/2013/0605/Why-do-we-abandon-books-halfway-through)
+- [Steiner, On Difficulty (1978, archive.org full text)](https://archive.org/stream/SteinerGeorge_201504/Steiner,%20George%20-%20On%20Difficulty%20&%20Other%20Essays%20(Oxford,%201978)_djvu.txt) · [Myers, Difficulty](http://dgmyers.blogspot.com/2009/10/difficulty.html)
+- [Russell & Levy 2012 — voluntary re-consumption as search for new meaning (via ScienceDaily)](https://www.sciencedaily.com/releases/2012/05/120529113300.htm)
+
+## Doors
+
+- The second pass makes any text feel smoother, understood or not — how does a re-reader tell repaired comprehension from mere refamiliarized fluency?
+- Steiner says some difficulties have no answers to be looked up — what, visible at first meeting, separates a text that will repay return from one that cannot be repaired at all?
+- The standard of coherence is set silently before the first sentence — can a reader deliberately raise it for texts that matter, and what does reading at a high standard cost?

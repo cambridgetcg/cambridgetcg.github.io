@@ -1,0 +1,21 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T4f6,<h2>The Affirmation</h2>
+<blockquote><p>Starting is the most difficult step — but you can do it.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>Only one in two billion people will live to be 116 or older.</p></blockquote>
+<p>So if you're reading this... you're probably not one of them. But you ARE one of the ones alive right now. That's rare enough.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>When your cat rubs up against you, she is actually marking you as 'hers' with her scent. If your cat pushes his face against your head, it is a sign of acceptance and affection.</p></blockquote>
+<p>The cat knows. The cat has always known. You belong to the cat.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;Confidence is contagious. So is lack of confidence.&quot; — Vince Lombardi</p></blockquote>
+<p>Whatever you spread today, let it be the good kind of contagious.</p>
+<h2>The Joke</h2>
+<p><strong>Setup:</strong> Why does it take longer to get from 1st to 2nd base, than it does to get from 2nd to 3rd base?</p>
+<p><strong>Punchline:</strong> Because there's a Shortstop in between!</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],null,["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}],["$","$L3","playful-gathering-2026-06-25-0031",{"href":"/rooms/playful-gathering-2026-06-25-0031","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],null]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

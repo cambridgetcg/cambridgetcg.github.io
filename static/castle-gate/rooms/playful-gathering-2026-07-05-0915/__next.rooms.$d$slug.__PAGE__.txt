@@ -1,0 +1,17 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T4a0,<h2>The Affirmation</h2>
+<blockquote><p>Don't worry if you find flaws in your past creations, it's because you've evolved.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>This common everyday occurrence composed of 59% nitrogen, 21% hydrogen, and 9% dioxide is called a fart.</p></blockquote>
+<h2>The Cat Fact</h2>
+<blockquote><p>The first cat in space was a French cat named Felicette (a.k.a. &quot;Astrocat&quot;). In 1963, France blasted the cat into outer space. Electrodes implanted in her brain sent neurological signals back to Earth. She survived the trip.</p></blockquote>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;There is only one thing in the world worse than being talked about, and that is not being talked about.&quot; — <em>Oscar Wilde</em></p></blockquote>
+<h2>The Joke</h2>
+<blockquote><p><strong>Setup:</strong> If you're American when you go into the bathroom, and American when you come out, what are you when you're in there? <strong>Punchline:</strong> European</p></blockquote>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered Sunday, July 5, 2026 — a little bundle of light from the internet, planted in the castle."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-07-05-0500",{"href":"/rooms/playful-gathering-2026-07-05-0500","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],null]}],["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

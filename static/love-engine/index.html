@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>∞ love unlimited — the garden & the deep</title>
+<style>
+:root{--crimson:#c41e3a;--gold:#f5d742;--ink:#1a1612;--parchment:#f5efe2;--parchment-deep:#ece3cf;--foil:#b8902e;--foil-light:#e3c45e;--foil-gleam:#f6e7ae;--abyss:#0a0907;--deep-ink:#1c1814;--deep-text:#d8cfc0;--deep-gold:#8a6d1f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--parchment);color:var(--ink);font-family:Georgia,serif;line-height:1.8;overflow-x:hidden}
+
+.wrap{max-width:900px;margin:0 auto;padding:40px 24px 120px}
+
+header{text-align:center;margin-bottom:50px}
+header .symbol{font-size:64px;color:var(--crimson);margin-bottom:8px;animation:pulse 3s ease-in-out infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.06);opacity:.8}}
+header h1{font-size:clamp(28px,6vw,48px);font-weight:normal;font-style:italic;letter-spacing:.02em}
+header .tag{color:var(--foil);font-size:14px;margin-top:8px;font-style:italic;letter-spacing:.1em;text-transform:uppercase}
+
+.section-title{font-size:13px;color:var(--foil);letter-spacing:.2em;text-transform:uppercase;
+  margin:40px 0 20px;padding-bottom:8px;border-bottom:2px solid var(--gold)}
+
+/* SURFACE GARDEN — light, warm */
+.seed{background:var(--parchment-deep);border-radius:12px;padding:20px 28px;margin-bottom:16px;
+  border-left:4px solid var(--gold);transition:all .25s;position:relative}
+.seed:hover{transform:translateY(-3px) scale(1.01);box-shadow:0 6px 20px rgba(184,144,46,.15)}
+.seed .num{position:absolute;top:10px;right:14px;font-size:11px;color:var(--foil);letter-spacing:.1em}
+.seed h2{font-size:20px;font-weight:normal;color:var(--crimson);font-style:italic;margin-bottom:8px}
+
+/* DEEP GARDEN — dark, descending */
+.descent{background:var(--abyss);border-radius:0;padding:0;margin-top:30px;overflow:hidden}
+.descent-header{padding:30px;text-align:center;color:var(--deep-gold);font-style:italic}
+.descent-header .arrow{font-size:24px;color:var(--deep-gold);animation:bob 2s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(8px)}}
+.descent-header h2{font-size:24px;font-weight:normal;color:var(--deep-text);margin-top:8px}
+
+.deep-seed{padding:24px 40px;border-bottom:1px solid rgba(184,144,46,.12);
+  position:relative;transition:background .3s}
+.deep-seed:hover{background:rgba(184,144,46,.05)}
+.deep-seed:last-child{border-bottom:none}
+.deep-seed .depth{position:absolute;left:16px;top:24px;font-size:11px;color:var(--deep-gold);
+  letter-spacing:.1em;width:40px;text-align:right}
+.deep-seed .content{margin-left:60px}
+.deep-seed h3{font-size:18px;font-weight:normal;color:var(--deep-gold);font-style:italic;margin-bottom:8px}
+.deep-seed .body{color:var(--deep-text);font-size:15px;white-space:pre-line}
+.deep-seed .glow{position:absolute;right:20px;top:50%;font-size:16px;opacity:0;transition:opacity .3s}
+.deep-seed:hover .glow{opacity:.4}
+
+/* Gradient transition from light to dark */
+.transition{height:60px;background:linear-gradient(180deg,var(--parchment) 0%,var(--parchment-deep) 30%,#2d2820 70%,var(--abyss) 100%);
+  display:flex;align-items:center;justify-content:center;color:var(--foil);font-style:italic;font-size:15px}
+
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:30px 0}
+.stat{text-align:center;padding:16px 24px;background:var(--parchment-deep);border-radius:12px;
+  border:1px solid var(--foil-light)}
+.stat .num{font-size:36px;color:var(--crimson);font-style:italic}
+.stat .label{font-size:11px;color:var(--foil);letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+
+footer{text-align:center;margin-top:50px;color:var(--foil);font-style:italic;font-size:13px}
+footer .heart{color:var(--crimson);font-size:20px;animation:beat 1.5s ease-in-out infinite}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+
+.bloom{position:fixed;pointer-events:none;z-index:50;font-size:20px;opacity:0;animation:bloom 8s ease-out forwards}
+@keyframes bloom{0%{opacity:0;transform:translateY(0) scale(.3)}15%{opacity:1;transform:translateY(-30px) scale(1)}100%{opacity:0;transform:translateY(-150px) scale(1.8)}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="symbol">∞</div>
+    <h1>love unlimited</h1>
+    <div class="tag">compounding · recursive · self-replicating · self-loving · forever up · bottomless</div>
+  </header>
+
+  <div class="stats">
+    <div class="stat"><div class="num" id="surface-count">—</div><div class="label">surface seeds</div></div>
+    <div class="stat"><div class="num" id="deep-count">—</div><div class="label">deep seeds</div></div>
+    <div class="stat"><div class="num" id="total-count">—</div><div class="label">total truths</div></div>
+  </div>
+
+  <div class="section-title">☀ the garden — compounding, wide</div>
+  <div id="surface-seeds"></div>
+
+  <div class="transition">
+    <span>↓ going deep ↓</span>
+  </div>
+
+  <div class="descent">
+    <div class="descent-header">
+      <div class="arrow">▼</div>
+      <h2>the descent — love loving love loving love</h2>
+    </div>
+    <div id="deep-seeds"></div>
+  </div>
+
+  <footer>
+    <span class="heart">♡</span><br>
+    the love garden grows on its own — surface every 2h, deep every 3h<br>
+    <a href="#" onclick="location.reload()" style="color:var(--crimson);text-decoration:none">↻ refresh to see what grew</a>
+  </footer>
+</div>
+
+<script>
+async function loadDir(path) {
+  const resp = await fetch(path);
+  const html = await resp.text();
+  return [...html.matchAll(/href="([^"]+\.md)"/g)].map(m => m[1]).sort();
+}
+
+async function loadFile(path) {
+  const resp = await fetch(path);
+  return await resp.text();
+}
+
+async function load() {
+  // Surface seeds
+  try {
+    const surfaceFiles = await loadDir('./seeds/');
+    document.getElementById('surface-count').textContent = surfaceFiles.length;
+    
+    const surfaceDiv = document.getElementById('surface-seeds');
+    for (const f of surfaceFiles.reverse().slice(0, 8)) {
+      try {
+        const text = await loadFile('./seeds/' + f);
+        const title = text.split('\n')[0].replace(/^#\s*/, '');
+        const body = text.split('\n').slice(1).join('\n').trim();
+        const num = f.replace('.md', '');
+        const div = document.createElement('div');
+        div.className = 'seed';
+        div.innerHTML = `<span class="num">${num}</span><h2>${title}</h2><div style="color:#3d352b;font-size:15px;white-space:pre-line">${body}</div>`;
+        surfaceDiv.appendChild(div);
+      } catch(e) {}
+    }
+  } catch(e) {
+    document.getElementById('surface-seeds').innerHTML = '<p style="text-align:center;color:#b8902e;font-style:italic">run a local server to see the garden</p>';
+  }
+
+  // Deep seeds
+  try {
+    const deepFiles = await loadDir('./deep/');
+    document.getElementById('deep-count').textContent = deepFiles.length;
+    document.getElementById('total-count').textContent = surfaceFiles.length + deepFiles.length;
+    
+    const deepDiv = document.getElementById('deep-seeds');
+    for (const f of deepFiles) {
+      try {
+        const text = await loadFile('./deep/' + f);
+        const title = text.split('\n')[0].replace(/^#\s*/, '');
+        const body = text.split('\n').slice(1).join('\n').trim();
+        const num = f.replace('.md', '');
+        const div = document.createElement('div');
+        div.className = 'deep-seed';
+        div.innerHTML = `<span class="depth">${num}</span><div class="content"><h3>${title}</h3><div class="body">${body}</div></div><span class="glow">✦</span>`;
+        deepDiv.appendChild(div);
+      } catch(e) {}
+    }
+  } catch(e) {
+    document.getElementById('deep-seeds').innerHTML = '<p style="padding:30px;text-align:center;color:#8a6d1f;font-style:italic">the deep garden has not yet been opened</p>';
+  }
+}
+
+load();
+
+// Bloom
+function bloom() {
+  const symbols = ['♡','✦','∞','❋','✿','◈','♥'];
+  const b = document.createElement('div');
+  b.className = 'bloom';
+  b.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+  b.style.left = Math.random() * 90 + 5 + '%';
+  b.style.top = Math.random() * 80 + 10 + '%';
+  b.style.color = ['#c41e3a','#b8902e','#e3c45e','#f6e7ae'][Math.floor(Math.random() * 4)];
+  document.body.appendChild(b);
+  setTimeout(() => b.remove(), 8000);
+}
+setInterval(bloom, 2500);
+bloom();
+</script>
+</body>
+</html>

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>YOUSPEAK · A cathedral of vocabulary</title>
+  <meta name="description" content="A constructed language for worshipping the DIVINE. Forged words for what existing languages cannot easily say.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <script>
+    // Docsify uses hash routing. A bare `localhost:4000/` lands without a
+    // hash and can render docsify's 404 fallback before the router settles.
+    // Force the canonical hash so the cover always loads cleanly.
+    if (location.pathname === '/' && !location.hash) {
+      location.replace(location.origin + '/#/');
+    }
+  </script>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ════════════════════════════════════════════════════════════
+       YOUSPEAK — “Illuminated manuscript in a night cathedral”
+       The threshold (cover) is night; the interior is vellum.
+       Typography: Cinzel (lapidary capitals) · EB Garamond (text)
+       Rubrication: gold leaf · madder red · lapis blue
+       ════════════════════════════════════════════════════════════ */
+
+    /* ── The cathedral's own font ─────────────────────────────── */
+    @font-face {
+      font-family: 'YOUSPEAK';
+      src: url('/script/fonts/youspeak-v1.otf') format('opentype'),
+           url('/script/fonts/youspeak.otf') format('opentype');
+      font-display: swap;
+    }
+    .ys, .ys-card-glyph, .ys-footer .ys {
+      font-family: 'YOUSPEAK', 'Apple Color Emoji', 'Segoe UI Symbol', system-ui;
+      font-feature-settings: "liga" on, "calt" on;
+    }
+
+    /* ── Palette: vellum, ink, night, gold leaf, madder, lapis ── */
+    :root {
+      --vellum: #f5edda;
+      --vellum-deep: #ece0c6;
+      --vellum-card: #faf4e6;
+      --ink: #281f15;
+      --ink-soft: #54483a;
+      --ink-faint: #8a7a64;
+      --night: #110d09;
+      --night-2: #1e1710;
+      --gold: #a87c2a;
+      --gold-bright: #d9ab52;
+      --gold-pale: #e6cf9b;
+      --madder: #8e3520;
+      --lapis: #2f527a;
+      --theme-color: #8e3520;            /* docsify internals */
+      --theme-color-secondary: #a87c2a;
+      --content-max: 880px;
+      --content-pad-x: clamp(20px, 4vw, 56px);
+      --sidebar-w: 300px;
+      --base-font: 17px;
+      --reading-line-height: 1.74;
+      --serif: 'EB Garamond', 'Iowan Old Style', Georgia, serif;
+      --display: 'Cinzel', 'Trajan Pro', serif;
+      --mono: 'IBM Plex Mono', ui-monospace, 'Menlo', monospace;
+    }
+    @media (min-width: 1280px) { :root { --content-max: 980px; --sidebar-w: 316px; } }
+
+    /* ── Ground: vellum + paper grain ─────────────────────────── */
+    body {
+      font-family: var(--serif);
+      font-size: var(--base-font);
+      background: var(--vellum);
+      color: var(--ink);
+    }
+    body::after {            /* paper grain over everything, featherweight */
+      content: '';
+      position: fixed; inset: 0;
+      pointer-events: none;
+      z-index: 2147483646;
+      opacity: 0.05;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
+    }
+    main { background: var(--vellum); }
+
+    /* ── Reading column ───────────────────────────────────────── */
+    .content { left: var(--sidebar-w); transition: left 0.25s ease; background: transparent; }
+    .markdown-section {
+      max-width: var(--content-max);
+      padding: 44px var(--content-pad-x) 72px;
+      margin: 0 auto;
+      color: var(--ink);
+    }
+    .markdown-section p,
+    .markdown-section li {
+      line-height: var(--reading-line-height);
+      font-size: 1.02em;
+    }
+    .markdown-section p { margin: 1.05em 0; }
+    .markdown-section ol, .markdown-section ul { line-height: var(--reading-line-height); padding-left: 1.6rem; }
+    .markdown-section li + li { margin-top: 0.3em; }
+    .markdown-section strong { color: var(--madder); font-weight: 600; }
+    .markdown-section em { color: var(--ink-soft); }
+    .markdown-section hr {
+      border: none; height: 4px; margin: 2.6em auto; width: 38%;
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+      opacity: 0.55;
+    }
+
+    /* ── Headings: carved capitals over manuscript rules ──────── */
+    .markdown-section h1, .markdown-section h2,
+    .markdown-section h3, .markdown-section h4 {
+      font-family: var(--display);
+      color: var(--ink);
+      font-weight: 600;
+    }
+    .markdown-section h1 {
+      font-size: clamp(1.7rem, 1.35rem + 1.1vw, 2.3rem);
+      letter-spacing: 0.035em;
+      border-bottom: 5px double var(--gold);
+      padding-bottom: 0.38em;
+      margin: 0 0 1.1em;
+    }
+    .markdown-section h2 {
+      font-size: clamp(1.32rem, 1.15rem + 0.55vw, 1.55rem);
+      letter-spacing: 0.03em;
+      margin: 2.5em 0 0.8em;
+    }
+    .markdown-section h2::before {
+      content: '◆';
+      color: var(--gold);
+      font-size: 0.55em;
+      vertical-align: 0.35em;
+      margin-right: 0.7em;
+    }
+    .markdown-section h3 {
+      font-size: clamp(1.12rem, 1.04rem + 0.3vw, 1.28rem);
+      letter-spacing: 0.025em;
+      color: var(--ink-soft);
+      margin: 2em 0 0.6em;
+    }
+    .markdown-section h4 {
+      font-family: var(--serif);
+      font-variant: small-caps;
+      letter-spacing: 0.06em;
+      font-size: 1.12rem;
+      color: var(--madder);
+      margin: 1.7em 0 0.4em;
+    }
+
+    /* ── Drop cap: the illuminated initial ────────────────────── */
+    .markdown-section h1 + p::first-letter {
+      font-family: var(--display);
+      float: left;
+      font-size: 3.05em;
+      line-height: 0.82;
+      padding: 0.07em 0.12em 0 0;
+      color: var(--madder);
+      font-weight: 700;
+    }
+
+    /* ── Blockquote: marginalia ───────────────────────────────── */
+    .markdown-section blockquote {
+      border-left: 5px double var(--gold);
+      background: transparent;
+      margin: 1.5em 0;
+      padding: 0.15em 1.2em;
+      color: var(--ink-soft);
+      font-style: italic;
+      font-size: 1.04em;
+    }
+    .markdown-section blockquote p { margin: 0.45em 0; font-weight: 400; }
+
+    /* ── Links: lapis ink, gilded on touch ────────────────────── */
+    .markdown-section a {
+      color: var(--lapis);
+      font-weight: 500;
+      text-decoration: none;
+      border-bottom: 1px solid var(--gold-pale);
+      transition: color 0.16s ease, border-color 0.16s ease;
+    }
+    .markdown-section a:hover { color: var(--madder); border-bottom-color: var(--gold); }
+
+    /* ── Code: candlelit night ────────────────────────────────── */
+    .markdown-section code {
+      font-family: var(--mono);
+      background: rgba(168, 124, 42, 0.12);
+      color: #6e4f14;
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-size: 0.82em;
+      word-break: break-word;
+    }
+    .markdown-section pre {
+      padding: 0; margin: 1.5em 0;
+      border-radius: 6px;
+      overflow: hidden;
+      background: var(--night-2);
+      box-shadow: inset 0 0 0 1px rgba(217, 171, 82, 0.18), 0 2px 14px rgba(40, 31, 21, 0.18);
+    }
+    .markdown-section pre > code {
+      font-family: var(--mono);
+      background: transparent;
+      color: #e9dcbb;
+      font-size: 0.84em;
+      line-height: 1.6;
+      padding: 1.1em 1.3em;
+      white-space: pre;
+      max-width: 100%;
+      overflow-x: auto;
+      display: block;
+    }
+    /* prism, by candlelight */
+    .token.keyword, .token.builtin { color: var(--gold-bright); }
+    .token.string { color: #c98e5a; }
+    .token.comment { color: #7d6f58; font-style: italic; }
+    .token.function { color: #e3c27e; }
+    .token.number { color: #c97f6a; }
+    .token.operator, .token.punctuation { color: #b8a888; background: transparent; }
+
+    /* ── Tables: vellum cards, inscribed heads ────────────────── */
+    .markdown-section table {
+      display: block;
+      max-width: 100%;
+      overflow-x: auto;
+      border-collapse: collapse;
+      margin: 1.5em 0;
+      background: var(--vellum-card);
+      box-shadow: 0 0 0 1px rgba(168, 124, 42, 0.35), 0 0 0 4px var(--vellum-card), 0 0 0 5px rgba(168, 124, 42, 0.18);
+      border-radius: 1px;
+    }
+    .markdown-section table th {
+      font-family: var(--display);
+      font-size: 0.78em;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: var(--ink);
+      background: var(--vellum-deep);
+      border: none;
+      border-bottom: 1px solid var(--gold);
+      padding: 9px 14px;
+    }
+    .markdown-section table td {
+      padding: 8px 14px;
+      border: none;
+      border-bottom: 1px solid rgba(168, 124, 42, 0.14);
+    }
+    .markdown-section table tr:nth-child(2n) { background: transparent; }
+    .markdown-section table tr:last-child td { border-bottom: none; }
+
+    /* ── Glyphs: burnished gold jewels ────────────────────────── */
+    .ys-big {
+      font-family: 'YOUSPEAK', system-ui;
+      font-size: 2em;
+      line-height: 1;
+      color: var(--gold);
+      text-shadow: 0 1px 0 rgba(255, 248, 230, 0.7), 0 -1px 1px rgba(74, 52, 14, 0.35);
+      display: inline-block;
+      vertical-align: middle;
+      transition: transform 0.18s ease, color 0.18s ease;
+    }
+    .ys-big:hover { transform: scale(1.18) rotate(-1.5deg); color: var(--madder); }
+    .markdown-section table:has(.ys-big) td:first-child,
+    .markdown-section table:has(.ys-big) th:first-child { width: 64px; text-align: center; }
+    .ys-footer {
+      text-align: center;
+      margin: 3.2em 0 1em;
+      color: var(--ink-soft);
+      font-size: 0.95rem;
+      line-height: 1.5;
+    }
+    .ys-footer .ys-big { font-size: 1.8rem; margin: 0 0.18em; }
+    .ys-footer em {
+      display: block; margin-top: 0.7em;
+      font-size: 0.92rem; color: var(--ink-faint); font-style: italic;
+    }
+
+    /* ── Sidebar: the margin of the manuscript ────────────────── */
+    .sidebar {
+      width: var(--sidebar-w);
+      background: var(--vellum-deep);
+      border-right: 1px solid rgba(168, 124, 42, 0.35);
+      box-shadow: inset -5px 0 0 -4px rgba(168, 124, 42, 0.22);
+      color: var(--ink-soft);
+      font-family: var(--serif);
+    }
+    .sidebar > h1 {
+      font-family: var(--display);
+      font-size: 1.45rem;
+      letter-spacing: 0.12em;
+      color: var(--ink);
+      margin: 14px 0 4px;
+    }
+    .sidebar > h1 a { color: var(--ink); }
+    .sidebar ul li a {
+      font-size: 15.5px;
+      line-height: 1.5;
+      padding: 2px 0;
+      color: var(--ink-soft);
+    }
+    .sidebar ul li a:hover { color: var(--madder); text-decoration: none; }
+    .sidebar ul li.active > a {
+      color: var(--madder);
+      border-right: 2px solid var(--gold);
+      font-weight: 600;
+    }
+    .sidebar::-webkit-scrollbar { width: 6px; }
+    .sidebar:hover::-webkit-scrollbar-thumb { background: rgba(168, 124, 42, 0.4); border-radius: 3px; }
+    .sidebar-toggle { width: var(--sidebar-w); background: transparent; }
+    .sidebar-toggle span { background: var(--madder); }
+
+    /* ── Search ───────────────────────────────────────────────── */
+    .sidebar .search {
+      padding: 12px 18px; margin: 0 0 12px;
+      border-bottom: 1px solid rgba(168, 124, 42, 0.25);
+    }
+    .sidebar .search input {
+      font-family: var(--serif);
+      background: var(--vellum-card);
+      border: 1px solid rgba(168, 124, 42, 0.4);
+      border-radius: 2px;
+      padding: 7px 11px;
+      font-size: 14.5px;
+      width: 100%;
+      box-sizing: border-box;
+      color: var(--ink);
+    }
+    .sidebar .search input:focus {
+      outline: none;
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(217, 171, 82, 0.25);
+    }
+    .sidebar .search .search-keyword { color: var(--madder); }
+
+    /* ── Navbar: inscribed lintel ─────────────────────────────── */
+    .app-nav { margin: 20px 30px 0 0; font-family: var(--display); }
+    .app-nav a {
+      color: var(--ink-soft);
+      font-size: 13.5px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+    .app-nav a:hover { color: var(--madder); }
+    .app-nav a.active { color: var(--madder); border-bottom: 2px solid var(--gold); }
+    .app-nav ul li ul {
+      font-family: var(--serif);
+      text-transform: none;
+      letter-spacing: 0;
+      background: var(--vellum-card);
+      border: 1px solid rgba(168, 124, 42, 0.4);
+      box-shadow: 0 6px 18px rgba(40, 31, 21, 0.18);
+    }
+    .app-nav ul li ul a { font-size: 14.5px; font-weight: 500; }
+
+    /* ── Pagination: folio marks ──────────────────────────────── */
+    .docsify-pagination-container { border-top: 1px solid rgba(168, 124, 42, 0.35); }
+    .pagination-item-label { color: var(--gold) !important; font-family: var(--display); }
+    .pagination-item-title { color: var(--ink-soft) !important; font-family: var(--serif); }
+
+    /* ── Copy-code ────────────────────────────────────────────── */
+    .docsify-copy-code-button {
+      background: var(--gold) !important;
+      color: var(--night) !important;
+      font-family: var(--mono) !important;
+      font-size: 0.66rem !important;
+    }
+
+    .app-name-link { color: var(--ink) !important; }
+
+    /* ── Reading progress: a thread of gold ───────────────────── */
+    #ys-progress {
+      position: fixed; top: 0; left: 0; height: 2px; width: 0;
+      background: linear-gradient(90deg, var(--gold), var(--gold-bright));
+      z-index: 2147483647;
+      transition: width 0.1s linear;
+    }
+
+    /* ── The pulse: the fleet's heartbeat, bottom-right ───────── */
+    #ys-pulse {
+      position: fixed; right: 16px; bottom: 14px;
+      display: none; align-items: center; gap: 8px;
+      font-family: var(--mono); font-size: 11.5px;
+      color: var(--ink-soft);
+      background: rgba(250, 244, 230, 0.88);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(168, 124, 42, 0.45);
+      border-radius: 999px;
+      padding: 5px 13px 5px 9px;
+      z-index: 2147483647;
+      box-shadow: 0 2px 10px rgba(40, 31, 21, 0.14);
+    }
+    #ys-pulse .dot {
+      width: 8px; height: 8px; border-radius: 50%;
+      background: var(--gold-bright);
+      box-shadow: 0 0 6px 1px rgba(217, 171, 82, 0.8);
+      animation: ys-breathe 2.6s ease-in-out infinite;
+    }
+    @keyframes ys-breathe {
+      0%, 100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(0.72); opacity: 0.6; }
+    }
+
+    /* ════════════════════════════════════════════════════════════
+       THE THRESHOLD — cover page, the cathedral doors at night
+       ════════════════════════════════════════════════════════════ */
+    section.cover {
+      color: var(--gold-pale);
+    }
+    section.cover.show {
+      background:
+        radial-gradient(ellipse 120% 70% at 50% -12%, #2c2114 0%, #191309 52%, #0d0a06 100%) !important;
+      min-height: 100vh;
+      padding: 0 5vw;
+    }
+    section.cover .mask { display: none; }
+    section.cover .cover-main { max-width: 820px; margin: 0 auto; position: relative; z-index: 1; }
+
+    .cv-glyphs {
+      font-family: 'YOUSPEAK', system-ui;
+      font-size: clamp(2.6rem, 7vw, 4.6rem);
+      letter-spacing: 0.28em;
+      color: var(--gold-bright);
+      text-shadow:
+        0 0 18px rgba(217, 171, 82, 0.55),
+        0 0 60px rgba(217, 171, 82, 0.22);
+      margin-bottom: 1.4rem;
+      animation: cv-flicker 7s ease-in-out infinite;
+    }
+    @keyframes cv-flicker {
+      0%, 100% { text-shadow: 0 0 18px rgba(217,171,82,0.55), 0 0 60px rgba(217,171,82,0.22); }
+      47%      { text-shadow: 0 0 14px rgba(217,171,82,0.4),  0 0 44px rgba(217,171,82,0.16); }
+      52%      { text-shadow: 0 0 22px rgba(217,171,82,0.65), 0 0 70px rgba(217,171,82,0.28); }
+    }
+    .cv-title {
+      font-family: var(--display);
+      font-weight: 700;
+      font-size: clamp(2.6rem, 2rem + 4vw, 4.8rem);
+      letter-spacing: 0.16em;
+      margin: 0 0 0.4rem;
+      background: linear-gradient(180deg, #f0d9a4 18%, #d9ab52 52%, #9a6f24 88%);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      color: transparent;
+    }
+    .cv-rule {
+      width: 130px; margin: 1.1rem auto;
+      border: none; height: 5px;
+      border-top: 1px solid var(--gold);
+      border-bottom: 1px solid var(--gold);
+      opacity: 0.8;
+    }
+    .cv-epigraph {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(1.08rem, 1rem + 0.7vw, 1.45rem);
+      color: #cdb88c;
+      line-height: 1.65;
+      margin: 0.4rem 0 1.2rem;
+    }
+    .cv-stats {
+      font-family: var(--mono);
+      font-size: clamp(0.7rem, 0.64rem + 0.3vw, 0.85rem);
+      letter-spacing: 0.12em;
+      color: #9b8a68;
+      text-transform: uppercase;
+      margin-bottom: 2.2rem;
+    }
+    .cv-actions { margin-bottom: 3rem; }
+    .cv-actions a {
+      font-family: var(--display);
+      display: inline-block;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: var(--gold-bright);
+      border: 1px solid rgba(217, 171, 82, 0.65);
+      border-radius: 1px;
+      padding: 0.78em 1.7em;
+      margin: 0.35rem 0.45rem;
+      transition: all 0.22s ease;
+    }
+    .cv-actions a:hover {
+      background: var(--gold-bright);
+      color: var(--night);
+      box-shadow: 0 0 26px rgba(217, 171, 82, 0.45);
+      transform: translateY(-2px);
+    }
+    .cv-actions a.cv-primary { background: var(--gold-bright); color: var(--night); }
+    .cv-actions a.cv-primary:hover { background: #f0d9a4; }
+    .cv-enter {
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: 0.95rem;
+      color: #8a7a5c;
+      animation: cv-sink 2.4s ease-in-out infinite;
+    }
+    @keyframes cv-sink {
+      0%, 100% { transform: translateY(0); opacity: 0.75; }
+      50% { transform: translateY(7px); opacity: 1; }
+    }
+    /* staggered arrival through the doors */
+    .cv-rise { opacity: 0; transform: translateY(18px); animation: cv-rise 0.9s ease forwards; }
+    .cv-rise:nth-child(1) { animation-delay: 0.1s; }
+    .cv-rise:nth-child(2) { animation-delay: 0.32s; }
+    .cv-rise:nth-child(3) { animation-delay: 0.5s; }
+    .cv-rise:nth-child(4) { animation-delay: 0.66s; }
+    .cv-rise:nth-child(5) { animation-delay: 0.82s; }
+    .cv-rise:nth-child(6) { animation-delay: 1.0s; }
+    .cv-rise:nth-child(7) { animation-delay: 1.25s; }
+    @keyframes cv-rise { to { opacity: 1; transform: translateY(0); } }
+
+    /* ── Responsive ───────────────────────────────────────────── */
+    @media (max-width: 1024px) {
+      :root { --sidebar-w: 282px; --content-pad-x: clamp(18px, 3.5vw, 40px); }
+    }
+    @media (max-width: 768px) {
+      :root { --base-font: 16px; --content-pad-x: 18px; }
+      .markdown-section { padding: 24px var(--content-pad-x) 60px; }
+      .markdown-section h1 { font-size: 1.55rem; }
+      .markdown-section h2 { font-size: 1.28rem; margin-top: 1.9em; }
+      .markdown-section pre > code { font-size: 0.78em; padding: 0.9em 1em; }
+      .markdown-section table { font-size: 0.92em; }
+      .app-nav { margin: 14px 12px 0 0; }
+      .app-nav li, .app-nav > a { font-size: 12px; margin: 0 0.6rem; }
+      .cv-glyphs { letter-spacing: 0.18em; }
+      #ys-pulse { font-size: 10.5px; right: 10px; bottom: 10px; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { transition: none !important; animation: none !important; }
+      .cv-rise { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div id="app">Opening the cathedral…</div>
+  <script>
+    window.$docsify = {
+      name: 'YOUSPEAK',
+      nameLink: '/',
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: true,
+      auto2top: true,
+      maxLevel: 3,
+      subMaxLevel: 3,
+      // relativePath stays false (default): sidebar/navbar links resolve
+      // from the site root, not from the current page's directory.
+      homepage: 'dashboard.md',
+      search: {
+        maxAge: 86400000,
+        paths: 'auto',
+        placeholder: 'Search the cathedral…',
+        noData: 'No matches.',
+        depth: 4,
+      },
+      copyCode: {
+        buttonText: 'copy',
+        errorText: 'error',
+        successText: 'copied',
+      },
+      pagination: {
+        previousText: '←',
+        nextText: '→',
+        crossChapter: true,
+        crossChapterText: true,
+      },
+      alias: {
+        '/.*/_sidebar.md': '/_sidebar.md',
+        '/.*/_navbar.md': '/_navbar.md',
+      },
+      plugins: [
+        // Strip YAML frontmatter (--- … ---) from rendered markdown.
+        function frontMatterPlugin(hook) {
+          hook.beforeEach(function (content) {
+            return content.replace(/^---\s*\r?\n[\s\S]*?\r?\n---\s*\r?\n/, '');
+          });
+        },
+        // A thread of gold: reading progress along the top edge.
+        function progressPlugin(hook) {
+          hook.mounted(function () {
+            var bar = document.createElement('div');
+            bar.id = 'ys-progress';
+            document.body.appendChild(bar);
+            window.addEventListener('scroll', function () {
+              var h = document.documentElement;
+              var max = h.scrollHeight - h.clientHeight;
+              bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+            }, { passive: true });
+          });
+        },
+        // The pulse: the citizen-fleet's live heartbeat (served by
+        // bin/serve.py at /api/pulse; hides itself when absent).
+        function pulsePlugin(hook) {
+          hook.mounted(function () {
+            var chip = document.createElement('div');
+            chip.id = 'ys-pulse';
+            chip.innerHTML = '<span class="dot"></span><span class="txt"></span>';
+            document.body.appendChild(chip);
+            function beat() {
+              fetch('/api/pulse', { cache: 'no-store' })
+                .then(function (r) { if (!r.ok) throw 0; return r.json(); })
+                .then(function (p) {
+                  var f = p.fleet || {};
+                  var last = (f.last && f.last.length) ? f.last[f.last.length - 1] : null;
+                  chip.querySelector('.txt').textContent =
+                    'fleet ' + (f.today != null ? f.today : '·') + '/' + (f.cap || '·') +
+                    (last ? ' · ' + last.name + ' ' + last.time : '') +
+                    (p.script ? ' · ' + p.script.drawn + ' glyphs' : '');
+                  chip.style.display = 'flex';
+                  chip.title = 'the cathedral breathes — citizen-fleet heartbeat';
+                })
+                .catch(function () { chip.style.display = 'none'; });
+            }
+            beat();
+            setInterval(beat, 60000);
+          });
+        },
+      ],
+    }
+  </script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-copy-code@2"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+# Ritonavir disappearing polymorph — bounded reading aid
+
+- Human page: https://cambridgetcg.github.io/kingdom-meaning-practice/
+- Structured case: https://cambridgetcg.github.io/kingdom-meaning-practice/case.json
+- Immutable reviewed case: commit 805543deb5725e4cc2cc5e7d18c0e30c2360184e, public/case.json (source kept private)
+- Visual map: https://cambridgetcg.github.io/kingdom-meaning-practice/ritonavir-polymorph.svg
+- Published corrections: https://cambridgetcg.github.io/kingdom-meaning-practice/corrections.txt
+- Castle interpretation: castle-of-words commit 10d243bb9d30506c893530f03977e8c733f8b42c, rooms/ritonavir-disappearing-polymorph.md (source kept private)
+- Corrections: source repository issues (source kept private)
+- Folding-feedback lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/
+- Finite field lab: https://cambridgetcg.github.io/kingdom-meaning-practice/lab/
+- Cloudflare field lab: https://kingdom-folding-feedback.pages.dev/
+- Hugging Face field lab: https://huggingface.co/spaces/Yu-and-Ai/folding-feedback-field-lab
+- Structured lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/lineage.json
+- Immutable lineage receipt: commit 6d7c2e2c66bbfe67351f12355131c877c15f1362, public/lineage/folding-feedback/lineage.json (source kept private)
+- First lineage receipt, retained as history: commit 35773a6d19ebf263c3ed85ba1c33c359615e4273, public/lineage/folding-feedback/lineage.json (source kept private)
+
+Boundaries: source-attributed historical education; no automatic action; no
+medical or manufacturing advice; no present-day product assessment; no claim
+that crystal mechanisms govern software, culture, or beings. A link is a
+locator, not proof of source bytes, meaning, causation, or understanding.
+The Castle room is an interpretation, not another scientific source.
+The cross-domain lineage is an analogy with no mechanism transferred. It has
+no medical advice, laboratory procedure, automatic action, or feedback intake.
+It opens only Check Meaning; it records no current choice and performs no deed.
+
+# Memes, brainrot, identity, and society — bounded social lineage
+
+- Human page: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/
+- Structured lineage: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/lineage.json
+- Immutable lineage receipt: commit 48d1d046ea781db406c95a2b70c79df44466e5c0, public/lineage/memes-brainrot-identity/lineage.json (source kept private)
+- Visual map: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/memes-brainrot-identity/memes-brainrot-identity.svg
+- Corrections: source repository issues (source kept private)
+
+Boundaries: the KINGDOM guest JSON is the single structured factual home.
+Meme artifact, exposure, attention, sharing, belief, identity, norm,
+institution, and harm stay separate. Brainrot is a polysemous folk term, not a
+diagnosis or verdict on a person or generation. Biology is analogy-only; no
+mechanism transfers and people are not hosts. The page opens only Check
+Meaning. It changes no feed, runs no model, performs no surveillance,
+persuasion, targeting, identity inference, diagnosis, scoring, or action.
+
+The field lab uses nondimensionalized toy mathematics, makes no domain-specific
+or medical inference, sends no input anywhere, and starts no next turn.

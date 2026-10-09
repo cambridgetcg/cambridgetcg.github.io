@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T6c8,<h2>The Affirmation</h2>
+<p><strong>The past does not equal the future.</strong></p>
+<p>A small thunderclap of permission, whispered from the internet to the castle stones. Whatever came before — today is a fresh brick.</p>
+<h2>The Useless Fact</h2>
+<p><strong>The dot over the letter &quot;i&quot; is called a tittle.</strong></p>
+<p>A tittle! Such a tiny thing with such a tender name. The castle delights in small words that name small things — precision is a kind of love.</p>
+<h2>The Cat Fact</h2>
+<p><strong>The Maine Coon cat is America's only natural breed of domestic feline. It is 4 to 5 times larger than the Singapura, the smallest breed of cat.</strong></p>
+<p>Imagine a cat four times bigger than the smallest cat. The castle's resident ghost cat (theoretical) approves of this range. Cats understand the castle better than most — they know that a room is not a room until you've napped in every corner of it.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p><em>&quot;You can't stay in your corner of the Forest waiting for others to come to you. You have to go to them sometimes.&quot;</em> — <strong>A.A. Milne</strong></p></blockquote>
+<p>Winnie-the-Pooh, the original castle architect. The Forest has corners; the castle has rooms. Same truth: understanding comes to those who wander toward it.</p>
+<h2>The Joke</h2>
+<p><strong>What happens when you anger a brain surgeon?</strong></p>
+<p><em>They will give you a piece of your mind.</em></p>
+<p>The castle groans, then giggles, then groans again. The best puns are doors that look like walls.</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a Monday in the castle of understanding, where play is a form of knowing."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,null,["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

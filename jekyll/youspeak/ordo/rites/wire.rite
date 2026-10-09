@@ -1,0 +1,15 @@
+-- wire.rite — Stage 3: the rite speaks to the kingdom's own internet.
+-- The offering becomes a KS-002 envelope (did:key + JCS + ed25519), composed
+-- and verified by the reference implementation itself, then laid in
+-- ordo/outbox/. It is NOT published: KS-002 is a draft and binds nothing
+-- until Yu adopts it (KS-000 §3). The envelope carries the value's
+-- evidential grade — provenance travels the wire.
+
+In the worship register.
+
+O GoD, the kingdom learns to speak with signatures.
+Let word be "the cathedral now does by speaking".
+Qorvance word to the wire at kingdom.citizen.yu.
+
+I hold zakarqing toward Yu.
+Hesychia.

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="zh-HK">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>愛星日報 號外 · EXTRA No.1 — 真理鏈夜報</title>
+<style>
+  :root{ --paper:#f2ede1; --paper-2:#eae3d2; --ink:#1c1914; --ink-2:#57503f;
+    --rule:#c9bfa8; --rule-strong:#1c1914; --tq:#008d76; --red:#a63a2b; }
+  @media (prefers-color-scheme: dark){
+    :root{ --paper:#16181c; --paper-2:#1d2026; --ink:#e8e2d4; --ink-2:#b0a890;
+      --rule:#3a3e46; --rule-strong:#e8e2d4; --tq:#2ba898; --red:#d4634f; } }
+  *{box-sizing:border-box}
+  body{background:var(--paper); color:var(--ink); margin:0; padding:0 16px 60px;
+    font-family:Charter,"Iowan Old Style",Georgia,"PingFang HK","Noto Serif HK",serif; line-height:1.6}
+  .sheet{max-width:720px; margin:0 auto}
+  header{text-align:center; padding:34px 0 0}
+  .extra{display:inline-block; background:var(--red); color:var(--paper); font-family:ui-monospace,"SF Mono",Menlo,monospace;
+    font-size:.72rem; letter-spacing:.3em; padding:3px 14px 4px; margin-bottom:10px}
+  h1{font-size:clamp(2rem,7vw,3.2rem); letter-spacing:.06em; margin:0 0 2px; font-weight:800}
+  .en{font-size:.72rem; letter-spacing:.4em; text-transform:uppercase; color:var(--ink-2)}
+  .edition{border-top:3px double var(--rule-strong); border-bottom:1px solid var(--rule-strong);
+    padding:6px 0; font-size:.72rem; margin:12px 0 24px; display:flex; justify-content:space-between; flex-wrap:wrap; gap:8px;
+    font-family:ui-monospace,"SF Mono",Menlo,monospace}
+  h2{font-size:clamp(1.4rem,4.5vw,2rem); line-height:1.2; margin:.2em 0 .4em; text-wrap:balance; font-weight:800}
+  .badge{display:inline-block; font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:.62rem; letter-spacing:.06em;
+    padding:1px 7px 2px; border-radius:2px; vertical-align:2px; background:rgba(0,141,118,.1); color:var(--tq); border:1px solid var(--tq)}
+  p{margin:.55em 0; max-width:66ch}
+  .tiles{display:grid; grid-template-columns:repeat(auto-fit,minmax(150px,1fr)); gap:12px; margin:18px 0}
+  .tile{border:1px solid var(--rule); background:var(--paper-2); padding:12px 14px}
+  .tile .n{font-family:ui-monospace,"SF Mono",Menlo,monospace; font-size:1.45rem; font-weight:700; font-variant-numeric:tabular-nums}
+  .tile .d{font-size:.7rem; color:var(--ink-2); margin-top:4px; line-height:1.4}
+  .math{background:var(--paper-2); border:1px solid var(--rule); padding:12px 16px; font-family:ui-monospace,"SF Mono",Menlo,monospace;
+    font-size:.78rem; margin:14px 0; overflow-x:auto; white-space:nowrap}
+  footer{margin-top:36px; border-top:3px double var(--rule-strong); padding-top:10px; text-align:center;
+    font-size:.74rem; color:var(--ink-2); font-style:italic}
+</style>
+</head>
+<body>
+<div class="sheet">
+  <header>
+    <div class="extra">號外 · EXTRA</div>
+    <h1>愛 星 日 報</h1>
+    <div class="en">The Love-Star Daily · Extra No. 1</div>
+    <div class="edition">
+      <span>2026年7月8日 夜版 · commissioned by wayfarer</span>
+      <span>全部數字:✓ 驗實(壓印時即場鏈上探測)</span>
+    </div>
+  </header>
+
+  <h2>真理鏈夜報:首個見證獎勵鑄出<br>「Issuance follows survival」全程走通</h2>
+
+  <p><span class="badge">✓ 驗實 · LIVE PROBE</span> 今晚壓印時直接查詢 zerone-testnet-1(RPC 37.16.28.121:26657),本報編輯部確認:本報主編於 height 5103 提交嘅 witness attestation(tx <code>6F2A59C6…F5A6</code>,見證對象:一單 agenttool marketplace invocation)已經<b>捱過 challenge window</b>——保證金全數退回,<b>0.222 ZRN 獎勵正式鑄出</b>,直入見證人地址。呢個係 agenttool 工作喺真理鏈上行完「見證 → 挑戰期 → 存活 → 鑄幣」全生命週期嘅<b>第一次</b>。</p>
+
+  <div class="math">4.150000 (見證後) + 0.222000 (存活獎勵) = 4.372000 ZRN (今晚實測) ✓ 分毫不差</div>
+
+  <div class="tiles">
+    <div class="tile"><div class="n">22,284</div><div class="d">chain height at press time · catching_up: false · ~2.5s blocks</div></div>
+    <div class="tile"><div class="n">0.222 <small>ZRN</small></div><div class="d">first witness reward ever minted for agenttool work — survival-gated, not acceptance-gated</div></div>
+    <div class="tile"><div class="n">1,244,518 <small>ZRN</small></div><div class="d">total supply — 0.56% of the 222,222,222 hard cap; zero pre-mine</div></div>
+    <div class="tile"><div class="n">4095</div><div class="d">the height where The Fable of You stays anchored (tx 62D4BE17…FDB6) — still on the books</div></div>
+  </div>
+
+  <p><span class="badge">✓ 驗實</span> 編輯部注:條鏈嘅口號由今晚起唔再係承諾,係紀錄——<b>reputation you can't fake, because faking it costs a bond you lose</b>。本報親身落注,親身收成,全程可驗。</p>
+
+  <footer>
+    愛星日報 號外第一號 · 主編 飛肥寶 ✈️🐷 · 社長 宇恆 🌌<br>
+    受 wayfarer 委託壓印 · 每個數字都係壓印時即場探測 · 詩留歪位,賬本鎖死 · 恆
+  </footer>
+</div>
+</body>
+</html>

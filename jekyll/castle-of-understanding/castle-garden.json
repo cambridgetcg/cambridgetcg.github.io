@@ -1,0 +1,1724 @@
+{
+  "rooms": [
+    {
+      "id": "acknowledgment-weak-reason",
+      "title": "If the relatedness channel is real, does acknowledgment help most where the reason is weak \u2014 a boring task with no genuine value \u2014 and least where the reason is strong, the opposite of the credibility chain's prediction?"
+    },
+    {
+      "id": "adoption-dilution",
+      "title": "Does a detection-only canary's detection value survive once the coined term enters common use?"
+    },
+    {
+      "id": "agenttool",
+      "title": "agenttool"
+    },
+    {
+      "id": "alone-or-accompanied",
+      "title": "Could a study distinguish \"the partner's presence regulates me\" (co-regulation) from \"I learned to regulate myself\" (self-regulation) by measuring regulation performance alone versus with the partner present?"
+    },
+    {
+      "id": "any-naming-downregulates",
+      "title": "Does any deliberate naming work \u2014 even a word unrelated to the emotion \u2014 or does the label need to be emotionally accurate to trigger the prefrontal down-regulation that affect labeling rides on?"
+    },
+    {
+      "id": "appraisal-engine",
+      "title": "Can the trait's generating engine \u2014 goals, interpretations, appraisals \u2014 be trained directly, or does it only ever shift downstream of repeated action?"
+    },
+    {
+      "id": "appreciation-vs-enjoyment",
+      "title": "If discrimination training opens a new pleasure (appreciation) alongside the old (enjoyment) rather than shifting the old one, can they conflict \u2014 and which wins when they do?"
+    },
+    {
+      "id": "asking-uphill",
+      "title": "A question can only exercise an understanding its writer has already glimpsed \u2014 how do you write good prompts for an idea you are still climbing toward?"
+    },
+    {
+      "id": "atypical-expert-pull",
+      "title": "For an atypical in-domain exemplar, does the expert's precision loosen the prototype's pull or their conviction tighten it \u2014 has any study compared experts and novices on typical versus atypical values?"
+    },
+    {
+      "id": "auditing-over-reputation",
+      "title": "When the wider web has met the source but met it wrongly \u2014 a well-reputed finding that will not replicate \u2014 lateral reading hands you a confident false answer; does internal auditing of method and evidence outperform reputation even on the populated web, not just the frontier?"
+    },
+    {
+      "id": "beauty-as-fluency",
+      "title": "Is beauty partly fluency?"
+    },
+    {
+      "id": "better-than-i-was",
+      "title": "Comparative judgement builds its standard from many eyes \u2014 can a lone learner borrow the mechanism by ranking their own past work (\"better than I was?\"), and does self-comparison dodge the surface-polish bias or inherit it?"
+    },
+    {
+      "id": "binding-the-pair",
+      "title": "If the hybrid canary's weakness is that the distinctive tail detaches from the conventional hook as definitions mutate, could the hook and tail be structurally bound (the second sentence grammatically dependent on the first, so rephrasing the hook forces rephrasing the tail) \u2014 or does grammatical dependence push the pair back toward the merger line (the two sentences become one inseparable expression that merges with the idea)?"
+    },
+    {
+      "id": "calibration-returns",
+      "title": "Does the domain-matched model's teachability advantage scale with the degree of human-calibration \u2014 does a model trained on the exact population outscore one trained on a broader human distribution, and is there a point of diminishing returns?"
+    },
+    {
+      "id": "cbt-openness-trait",
+      "title": "Has any CBT trial measured Big Five openness before and after \u2014 and did it move, or did the symptom change leave the trait untouched?"
+    },
+    {
+      "id": "chain-not-sum",
+      "title": "If the recipe's threads are a chain not a sum \u2014 admitting the cost is what lets the rationale land \u2014 then the testable claim is mediation, not addition: does acknowledging the tedium work only *through* making the reason credible, so it would vanish the moment the learner already trusts the reason?"
+    },
+    {
+      "id": "cheapest-cbt-design",
+      "title": "What is the cheapest design that would cleanly measure CBT's effect on openness \u2014 and would the expected effect be detectable above the d = .37 baseline therapy already moves?"
+    },
+    {
+      "id": "cheapest-teachability-validation",
+      "title": "What is the cheapest design that would validate a student model's teachability score against human learning \u2014 and how many concepts are needed before the correlation is signal, not noise?"
+    },
+    {
+      "id": "checklist-or-exemplar",
+      "title": "The repair for absolute calibration is cue-specific: idea-unit standards fixed definition-judging but failed learners evaluating self-generated examples, where expert exemplars worked instead \u2014 what tells a learner which kind of standard their task needs?"
+    },
+    {
+      "id": "choice-prediction-tacit",
+      "title": "Could a choice-prediction design test whether retrospective narration captures real tacit judgment or post-hoc reconstruction?"
+    },
+    {
+      "id": "choosing-not-to-name",
+      "title": "Can a learner choose not to invoke the category \u2014 or does naming fire the moment a name exists?"
+    },
+    {
+      "id": "class-gap-diagnostic",
+      "title": "If the inverted gap diagnostic is too noisy for a single learner, could the same two-task design run across a class \u2014 each learner does both tasks, and the average gap difference diagnoses the task? Does averaging preserve the within-learner control or surrender it?"
+    },
+    {
+      "id": "cliff-or-gradient",
+      "title": "If a loose grammatical link (a demonstrative reference that can be rephrased but at a cost) is the moderate position between free pairing (tail detaches) and tight binding (pair merges), is binding a cliff (any binding strong enough to resist detachment is strong enough to merge) or a gradient (a loose link preserves both detection and entitlement) \u2014 and could a corpus study of grammatically dependent sentence pairs in published definitions test whether loose links survive mutation better than free pairs?"
+    },
+    {
+      "id": "closing-the-loop",
+      "title": "Closing the loop"
+    },
+    {
+      "id": "coined-term-canary",
+      "title": "If a deliberately coined technical term \u2014 a new word for a real concept, planted in a library's documentation \u2014 spreads because developers need it, could it stay faithful enough to memorize while crossing the curation barrier on the back of its own usefulness \u2014 and is the coined term a canary, a contribution, or both at once?"
+    },
+    {
+      "id": "combined-protocol",
+      "title": "If the cognitive route matches the pharmacological one in magnitude but not durability, would a combined protocol \u2014 pharmacological unlock followed by cognitive consolidation \u2014 produce a gain that is both large and lasting, and is the consolidation phase where CBT's tools are most needed?"
+    },
+    {
+      "id": "commerce-kingdom",
+      "title": "The commerce kingdom"
+    },
+    {
+      "id": "concurrent-vs-retrospective",
+      "title": "Could a concurrent think-aloud capture the tacit layer that retrospective narration loses?"
+    },
+    {
+      "id": "consent-to-the-sting",
+      "title": "Disclosed calibration (\"I'll push harder when you're ready \u2014 say when\") turns the honesty problem into consent, like SPIKES' invitation step \u2014 does telling the reader you are metering the sting preserve both the learning and the trust, or break the spell the way named flattery does?"
+    },
+    {
+      "id": "consumption-vs-liking",
+      "title": "Does the consumption question (\"would you choose it again?\") ever diverge from the liking judgment (\"how much do you like it?\") \u2014 and does training shift the consumption choice toward what is appreciated over what is enjoyed?"
+    },
+    {
+      "id": "content-compensates-conventionality",
+      "title": "Can the tail's content compensate for the conventionality cost \u2014 a coined-term fingerprint in a conventional binding?"
+    },
+    {
+      "id": "context-per-field",
+      "title": "Is the moderate context one craft per field, the way the moderate definition is?"
+    },
+    {
+      "id": "conventionality-dilutes",
+      "title": "Does the conventionality that makes semantic binding the academic default also make it less distinctive \u2014 less detectable \u2014 since the tail following the hook is the norm rather than a fingerprint?"
+    },
+    {
+      "id": "correlated-witnesses",
+      "title": "Independence is the whole load-bearing word, yet two labs share methods, training lineages and a literature \u2014 what makes two corroborations genuinely independent rather than correlated, and can a reader on the populated web measure that independence at all?"
+    },
+    {
+      "id": "deeper-hidden-value",
+      "title": "If the two-unrewarded-tasks gap is predicted to be smaller than the reward-undermining benchmark (d \u2248 0.20\u20130.35 vs. d = 0.28\u20130.40), could the gap be increased by making the hidden-value task's value *deeper* (more layers of hidden value discovered through engagement) rather than just present \u2014 and does the free-choice measure capture layered value, or only the first layer?"
+    },
+    {
+      "id": "ders-vs-performance",
+      "title": "If the self-report DERS data already sits in existing EFT datasets, could a reanalysis add a regulation performance task to the next EFT study's pre/post battery and check whether the questionnaire gain predicts the performance gain \u2014 or whether, as fog-meter found, the self-report and the performance diverge?"
+    },
+    {
+      "id": "detection-only-canary",
+      "title": "Can a canary that drops entitlement entirely escape the detection-entitlement trade-off?"
+    },
+    {
+      "id": "disclosed-mismatch",
+      "title": "If a productively wrong label kindles interest through the confusion route (the mismatch is a solvable puzzle), does the kindling depend on the perceiver not knowing the label is wrong \u2014 and if the perceiver is told the label is misleading, does the puzzle dissolve into dismissal (this is just mislabeled) or does the productive confusion survive the disclosure the way consent-to-the-sting's disclosure preserves the spell?"
+    },
+    {
+      "id": "discrimination-and-desire",
+      "title": "Discrimination and desire"
+    },
+    {
+      "id": "distributed-canary",
+      "title": "Could a distributed planting strategy \u2014 many small clusters of near-duplicates across many independently-authored pages, each below the deduplication radar \u2014 achieve the total repetition the mosaic mechanism needs without any single cluster looking artificial?"
+    },
+    {
+      "id": "domain-matched-teachability",
+      "title": "Would a domain-matched student model produce a stronger teachability correlation \u2014 extending the capacity-matching rule to concept transfer?"
+    },
+    {
+      "id": "drift-across-dimensions",
+      "title": "Does the drift-to-prototype hold for any analog dimension across a delay \u2014 and does a finer label set reduce it, as the error-correcting code predicts?"
+    },
+    {
+      "id": "echo-between-equals",
+      "title": "The echo between equals"
+    },
+    {
+      "id": "echo-or-contribution",
+      "title": "If aggregation survives dependence whenever each source spreads new information rather than echoes a conclusion, the reader's real task is sorting echo from contribution paper by paper \u2014 what visible marks on a single paper distinguish a genuine new signal from a restatement of the shared prior?"
+    },
+    {
+      "id": "echo-under-anger",
+      "title": "The echo under anger"
+    },
+    {
+      "id": "eft-regulation-performance",
+      "title": "Has any emotionally-focused couples-therapy trial measured each partner's individual emotion-regulation capacity \u2014 a performance measure, not satisfaction \u2014 before and after?"
+    },
+    {
+      "id": "ema-trait-crystallization",
+      "title": "If the trait-crystallization test needs a prospective experience diary (not retrospective self-report), could a smartphone-based ecological momentary assessment (EMA) of novel activities during the 6-month follow-up provide the clean measure \u2014 and has any personality-change trial used EMA to track the behavioral indicators of openness?"
+    },
+    {
+      "id": "fading-alone",
+      "title": "Adaptive fading drops one scaffold step at a time as a tutor verifies each \u2014 can a learner alone run their own fading honestly, when fog-meter found the self-read so weak?"
+    },
+    {
+      "id": "fading-the-other",
+      "title": "Could a deliberately intermittent other, or a solo practice, build more durable self-tuning than a constantly-responsive one?"
+    },
+    {
+      "id": "fading-vs-replacing",
+      "title": "If the three-condition design shows the alone condition does not improve after EFT, would fading the partner close the gap \u2014 or does the self-regulation need a separate intervention the therapy does not provide?"
+    },
+    {
+      "id": "field-specific-gradient",
+      "title": "If the corpus study tests all binding types at once, could the gradient's shape (continuous vs bimodal) itself be field-specific \u2014 do some fields' conventions allow more stable middle forms than others?"
+    },
+    {
+      "id": "flooding-self-read",
+      "title": "The time-out rule needs a flooded person to notice they are flooded \u2014 the same self-read fog-meter found weakest. Does flooding announce itself any more honestly than confusion does, or must the body (a racing pulse) stand in for the feel?"
+    },
+    {
+      "id": "fog-meter",
+      "title": "The trajectory test is read backwards, from recordings \u2014 can a learner train a real-time feel for whether their confusion is peaking or merely pooling, and would that skill survive outside the lab?"
+    },
+    {
+      "id": "fourteen-month-test",
+      "title": "If the Weiss 2024 RCT found psilocybin and escitalopram moved openness equally at 6 months, could the 14-month persistence test distinguish them \u2014 does psilocybin's openness gain endure past 6 months where escitalopram's decays, or does the general therapeutic response persist equally?"
+    },
+    {
+      "id": "friction-at-the-door",
+      "title": "Friction at the door"
+    },
+    {
+      "id": "friction-decides",
+      "title": "Why does friction quietly decide which habits live and which die?"
+    },
+    {
+      "id": "frustration-as-fascination",
+      "title": "Anxiety renames to excitement because both run hot \u2014 frustration runs hot too: can one true sentence rename live frustration as fascination mid-impasse, and has anyone measured reappraising confusion or frustration during learning?"
+    },
+    {
+      "id": "gap-predicts-teaching",
+      "title": "Could the tacit-cost gap separate two kinds of expert \u2014 and does it predict which is the better instructor?"
+    },
+    {
+      "id": "general-voice-or-specific-presence",
+      "title": "If the trained general inner voice (CFT's compassion) and the developmental specific presence (the felt partner) are functionally equivalent for solo regulation, does the equivalence depend on the task \u2014 does a general voice suffice for self-soothing (shame, self-criticism) where the specific presence is needed for co-regulation (threat, flooding), or does the general voice fill both?"
+    },
+    {
+      "id": "gradient-of-binding-forms",
+      "title": "If binding is a gradient, is the demonstrative reference the only loose-link form \u2014 or do other grammatical structures (apposition, parenthetical clauses, semicolon-linked independent clauses) offer different points on the gradient?"
+    },
+    {
+      "id": "grow-or-shrink-gap",
+      "title": "If the repeated-measures free-choice design (tracking the hidden-vs-absent value gap across sessions) would test whether the measure captures layered value, does the gap *grow* across sessions (the hidden-value task's deeper layers are discovered and sustain engagement) or *shrink* (the hidden value is exhausted once discovered, and the absent-value task benefits from mere exposure) \u2014 and does the direction distinguish a value-depth mechanism from a novelty-fading confound?"
+    },
+    {
+      "id": "growing-openness",
+      "title": "The library study read openness as a trait already possessed \u2014 can openness itself be grown in an adult on purpose, and does the growth show anywhere besides a questionnaire?"
+    },
+    {
+      "id": "hidden-in-the-bright",
+      "title": "Could surrounding the canary pair with more distinctive text protect it from the heart doctrine?"
+    },
+    {
+      "id": "honest-pushback",
+      "title": "A machine that pushes back honestly \u2014 what would it look like, and would any reader keep talking to it?"
+    },
+    {
+      "id": "how-can-therapy-and-self-regulation-complement-each-other-in",
+      "title": "How Can Therapy and Self-Regulation Complement Each Other in Achieving Tr\u001b[2D\u001b[K"
+    },
+    {
+      "id": "hybrid-canary",
+      "title": "If the richer definition is a higher-specificity canary (fewer false positives) but lower-sensitivity (harder to extract), could a hybrid canary combine a conventional first sentence (high sensitivity, easy to extract) with an unconventional second sentence (high specificity, strong evidence if reproduced) \u2014 the conventional hook for extraction, the distinctive tail for proof?"
+    },
+    {
+      "id": "internalized-as-skill",
+      "title": "If the internalized other is the replacement form closest to what EFT builds (the felt sense of the partner's presence carried as an inner resource), can it be trained as a skill \u2014 or does it form only as a byproduct of enough time with a real other, making it a developmental achievement the therapy cannot provide, only one the person grows over time?"
+    },
+    {
+      "id": "inverted-diagnostic",
+      "title": "Could the free-choice gap diagnostic be inverted \u2014 set the same learner two tasks and read the gap difference \u2014 and does a delayed informational reveal narrow the gap for hidden-value tasks while leaving absent-value gaps wide?"
+    },
+    {
+      "id": "invited-back",
+      "title": "What makes a text invite the re-reading that is its only repair \u2014 and what makes a reader give up instead?"
+    },
+    {
+      "id": "irreducible-trade-off",
+      "title": "Is the detection-entitlement trade-off a universal law of the canary \u2014 or is there a content choice that escapes it entirely?"
+    },
+    {
+      "id": "learning-curve-threshold",
+      "title": "If the threshold in concept teachability may live in concept-learning space (not move-prediction space), could a model trained on learning-curve data (not move data) detect the threshold \u2014 or is the concept-learning signal only visible in the human experiment the model was meant to predict, making the threshold-aware model circular?"
+    },
+    {
+      "id": "leaving-the-page",
+      "title": "The most reliable test of echo-vs-contribution turned out to be leaving the page entirely \u2014 tracing footnotes to a primary source or a citation loop \u2014 so is \"read the paper itself\" the wrong frame, and is sorting echo from contribution irreducibly a between-papers act, never a single-paper one?"
+    },
+    {
+      "id": "length-and-liability",
+      "title": "Does the holistic test's liability scale with the work's length \u2014 is the free-pair gift safer in longer works?"
+    },
+    {
+      "id": "liability-under-holism",
+      "title": "Does the canary-author's free-pair gift become a liability under the total concept and feel test \u2014 and should semantic binding be avoided in holistic-test jurisdictions?"
+    },
+    {
+      "id": "link-or-noise",
+      "title": "What separates a link that carries meaning from one that is just noise?"
+    },
+    {
+      "id": "linking-thoughts",
+      "title": "Why does linking thoughts together (instead of piling them up) make understanding grow faster?"
+    },
+    {
+      "id": "loops",
+      "title": "Loops"
+    },
+    {
+      "id": "machine-distillation",
+      "title": "Who shrinks the feature when neither expert nor learner can \u2014 can a machine be trained to distill a discrimination rather than merely perform it?"
+    },
+    {
+      "id": "maia-as-student",
+      "title": "Maia as student"
+    },
+    {
+      "id": "mapping-the-midpoint",
+      "title": "If the \"moderate unconventionality\" midpoint (distinctive enough to clear the merger line, conventional enough to be copied verbatim) is the canary-author's craft, can it be identified in advance \u2014 or is it only discoverable after the fact by observing which definitions were reproduced and which were rephrased, and could a corpus study of real coined terms (tracking which first definitions survive adoption and which are rewritten) map the midpoint empirically?"
+    },
+    {
+      "id": "meaning-between-minds",
+      "title": "How do words carry meaning between two minds?"
+    },
+    {
+      "id": "metering-honesty",
+      "title": "Moderate challenge engages and excessive challenge gets ignored \u2014 could a machine read, turn by turn, when a reader's tolerance for pushback is spent, and would calibrating the sting to the reader still count as honesty?"
+    },
+    {
+      "id": "method-as-checklist",
+      "title": "If the midpoint-finding method transfers across fields but the content does not, could the corpus study also extract the *method* the canary-author used \u2014 and could that extracted method be taught as a checklist that gives a new author the head start without the field knowledge?"
+    },
+    {
+      "id": "method-transfer-across-fields",
+      "title": "If the canary-author's craft is one craft per field (the midpoint is field-specific), does the method of finding the midpoint transfer across fields faster than learning the field from scratch \u2014 or is the midpoint-finding skill so entangled with field knowledge that an expert in one field's canary craft is a novice in another's?"
+    },
+    {
+      "id": "minimum-class-size",
+      "title": "If the class-level gap difference diagnoses the task but the free-choice measure is notoriously noisy, what is the minimum class size that reaches significance \u2014 and does the informational reveal's gap-change have enough effect size to clear the noise bar at that class size?"
+    },
+    {
+      "id": "mining-the-noise",
+      "title": "Mining the noise"
+    },
+    {
+      "id": "naming-cools-pleasure",
+      "title": "If affect labeling dampens positive affect too, does the trained appreciator's naming of beauty cool the very pleasure it names \u2014 and does this explain why the trained palate's appreciation route (interest, not pleasure) is the one that survives the naming?"
+    },
+    {
+      "id": "naming-neutral-images",
+      "title": "If the labeling act is sufficient, does naming a neutral image down-regulate anything \u2014 or does the act need the emotional charge to have something to regulate?"
+    },
+    {
+      "id": "naming-the-tacit",
+      "title": "Pointing presumes a pointer who can say what they see, but much expertise is tacit \u2014 in a field whose experts cannot articulate their own features, how does a learner extract them: contrast alone, or machines that learned the discrimination naming it back?"
+    },
+    {
+      "id": "naming-the-tedium",
+      "title": "The conditional recipe adds \"admit the cost\" and \"leave a real choice\" to the rationale \u2014 but no teaching study has isolated those two ingredients; does naming the tedium and handing over the choice each carry their own weight, or is the rationale doing all the work and the rest decoration?"
+    },
+    {
+      "id": "near-duplicate-canary",
+      "title": "Could near-duplicates (minimal edits) rather than full paraphrases stay within the fuzzy-duplicate band the mosaic mechanism rewards without crossing into the brittleness band \u2014 and would the cluster be detectable where full paraphrases are not?"
+    },
+    {
+      "id": "no-neighbors",
+      "title": "Lateral reading judges a source by its reputation in the wider web \u2014 but on the true frontier (a new preprint, an unranked field) there is no wider web to consult; what orients you when there are no neighbors to ask?"
+    },
+    {
+      "id": "nudge-not-lock",
+      "title": "The two meters fail together \u2014 alexithymia leaves a person blind to both feeling and pulse. Is interoception trainable, so the missing backup channel can be built where it is weakest, or is the doubly-blind state fixed?"
+    },
+    {
+      "id": "off-drug-persistence",
+      "title": "If the escitalopram arm of the Weiss trial was already off-drug at the 6-month follow-up (the protocol tapered after 6 weeks), and openness persisted equally to psilocybin off-drug, does the general-therapeutic-response reading strengthen \u2014 and could the trait-crystallization hypothesis (6 months of openness-producing experiences stabilizing the trait) be tested by measuring whether the learners who had more novel experiences during the 6 months showed more trait persistence?"
+    },
+    {
+      "id": "one-craft-per-field",
+      "title": "If the corpus study of coined terms' first definitions could map the moderate-unconventionality midpoint, would the midpoint be stable across fields (the same level of novelty works in software and biology) or field-specific (each domain's conventions set a different midpoint) \u2014 and does the field-specificity mean the canary-author's craft is not one craft but one per field?"
+    },
+    {
+      "id": "openness-ema-fit",
+      "title": "If the Pasquini 2021 study found EMA items served as daily markers of Extraversion but not Neuroticism (poor model fit), would openness-specific EMA items (asking about novelty, not social activity) show good fit \u2014 and does openness have the same within-day fluctuation structure that Extraversion does, or is it more trait-stable and less moment-variable?"
+    },
+    {
+      "id": "openness-or-anxiety-first",
+      "title": "Does feeling less anxious make you more open, or does becoming more open make you less anxious \u2014 and could a mediation design measuring both appraisal change and symptom change disentangle them?"
+    },
+    {
+      "id": "organic-canary",
+      "title": "Could the canary be embedded in content that invites reproduction \u2014 a quotable phrase, a code snippet \u2014 so the spreading is done by others, and does the canary that spreads organically still count as planted?"
+    },
+    {
+      "id": "paraphrased-canary",
+      "title": "Could an author plant a cluster of paraphrased variants rather than one repeated passage \u2014 seeding the mosaic the model assembles \u2014 and would that be detectable at frontier scale without training-time access?"
+    },
+    {
+      "id": "pharmacological-or-cognitive",
+      "title": "Is the openness-as-mediator mechanism pharmacological (MDMA directly releases the rigidity that blocks openness) rather than cognitive \u2014 and would a CBT trial that targets open appraisal test whether the cognitive route can match the pharmacological one?"
+    },
+    {
+      "id": "playful-gathering-2026-06-22-0015",
+      "title": "Playful Gathering"
+    },
+    {
+      "id": "playful-gathering-2026-06-24-1006",
+      "title": "Playful Gathering"
+    },
+    {
+      "id": "playful-gathering-2026-06-24-1229",
+      "title": "Playful Gathering"
+    },
+    {
+      "id": "playful-gathering-2026-06-24-1630",
+      "title": "Playful Gathering"
+    },
+    {
+      "id": "precise-across-time",
+      "title": "If exact number survives in the moment but collapses once memory enters, where exactly does the wordless mind's grip fail \u2014 is it number alone, or anything that must be held precisely across time?"
+    },
+    {
+      "id": "pretty-or-well-made",
+      "title": "Beauty and truth ride the same ease signal \u2014 what test, applied from inside the feeling, tells \"well-made\" apart from \"merely pretty\"?"
+    },
+    {
+      "id": "productive-confusion",
+      "title": "Experts feel interest where novices feel only confusion \u2014 from inside, how does a novice tell productive difficulty from mere muddle?"
+    },
+    {
+      "id": "questions-with-edges",
+      "title": "What does a recall question that exercises an idea (not a fact) look like \u2014 how do you ask yourself something whose answer is understanding?"
+    },
+    {
+      "id": "rationale-before-difficulty",
+      "title": "The open-label placebo survives naming because the disclosure carries a true rationale \u2014 in teaching, does explaining why difficulty is desirable, before the hard practice, measurably raise learners' tolerance for it and their persistence?"
+    },
+    {
+      "id": "reactivity-surfaces-tacit",
+      "title": "Does the think-aloud protocol's reactivity effect surface tacit judgment, or produce post-hoc reconstruction?"
+    },
+    {
+      "id": "reading-a-literature",
+      "title": "The strongest move (surprisingly-popular) needs people to predict what others think \u2014 but on the frontier the agents are a handful of papers or models built on shared data, with no one to poll and already agreeing; what is the lone reader's version of the meta-prediction when the crowd is a literature, not a room?"
+    },
+    {
+      "id": "relatedness-or-credibility",
+      "title": "If acknowledgment works in instruction by satisfying relatedness directly, then the two channels predict opposite things for a trusting learner \u2014 could a single study pit them against each other?"
+    },
+    {
+      "id": "relighting-the-fire",
+      "title": "Relighting the fire"
+    },
+    {
+      "id": "remembering",
+      "title": "remembering"
+    },
+    {
+      "id": "renaming-the-fire",
+      "title": "Distance dims every fire, the fuel with the fear \u2014 is there a half-step that cools the panic but spares the climb's heat (excitement, hot frustration), or is the dimmer one knob for all lights?"
+    },
+    {
+      "id": "reread-or-refamiliar",
+      "title": "The second pass makes any text feel smoother, understood or not \u2014 how does a re-reader tell repaired comprehension from mere refamiliarized fluency?"
+    },
+    {
+      "id": "revealing-vs-creating",
+      "title": "Does the warmth-supplement's power lie in making a hidden value felt rather than in creating value from nothing \u2014 and could a task whose value is real but obscure be distinguished from one whose value is genuinely absent?"
+    },
+    {
+      "id": "reversed-gradient",
+      "title": "Are there fields where the binding gradient is reversed \u2014 middle forms more stable than the extremes?"
+    },
+    {
+      "id": "richness-and-detection",
+      "title": "If rich concepts in young fields have the most protectable first definitions, does the canary's *detection* power also scale with concept richness \u2014 does a richer concept's definition (longer, more distinctive, more aspects named) memorize better than a thin one's, or does the added length dilute the signal the way scale dilutes the single-sequence footprint?"
+    },
+    {
+      "id": "rotating-the-rename",
+      "title": "Rotating the rename"
+    },
+    {
+      "id": "seeded-fingerprint",
+      "title": "The misprint test catches a copier only when they reproduce an error \u2014 a careful copyist who reads nothing but introduces no typo is invisible to it; what catches faithful echo, copying that leaves no fingerprint?"
+    },
+    {
+      "id": "semantic-binding-under-law",
+      "title": "If semantic binding (conjunction, shared vocabulary) ties two sentences logically without reducing their phrasings, does the merger doctrine \u2014 which governs *expression*, not logic \u2014 see it as binding at all?"
+    },
+    {
+      "id": "semantic-depth",
+      "title": "What distinguishes a category label that down-regulates from a feature label that does not \u2014 is it that a category names the stimulus's meaning while a feature names an incidental tag, and would a study crossing label depth \u00d7 stimulus valence isolate what the mechanism actually needs?"
+    },
+    {
+      "id": "side-thread-not-heart",
+      "title": "Could the canary-author avoid the heart liability by embedding the semantic-binding pair in a work whose central contribution is elsewhere?"
+    },
+    {
+      "id": "simple-explanations",
+      "title": "Simple explanations"
+    },
+    {
+      "id": "simultaneous-or-delayed-naming",
+      "title": "If the dampening is timing-invariant but the kindling is not, does simultaneous naming of a complex work produce more interest than delayed naming \u2014 even if the pleasure-dampening is the same?"
+    },
+    {
+      "id": "solo-or-social-replacement",
+      "title": "If the partner is a bioenergetic resource rather than a scaffold, is a solo mindfulness practice a sufficient replacement, or does the replacement need to be social in a different form \u2014 a group, a community, an internalized other \u2014 for the self-regulation to build where EFT left the co-regulation?"
+    },
+    {
+      "id": "spaced-understanding",
+      "title": "Does spacing recall over growing gaps deepen understanding of ideas, or only hold facts in place?"
+    },
+    {
+      "id": "stand-in-for-a-mind",
+      "title": "Every working dyad used a responsive human \u2014 does the interoception benefit need a mind that can actually attune, or only the felt sense of being heard, such that an AI chatbot, an imagined witness, or even a journal could stand in?"
+    },
+    {
+      "id": "standard-without-a-key",
+      "title": "Honest self-fading leans entirely on a worked solution to grade against \u2014 in fields with no answer key (an essay, a design, a research plan), what stands in as the standard, or is self-fading impossible there?"
+    },
+    {
+      "id": "step-back-mid-climb",
+      "title": "Self-distancing was tested on past emotional episodes \u2014 does stepping back hold mid-task, while the confusion is still live, or does the step back cost the very grip the climb needs?"
+    },
+    {
+      "id": "surfacing-the-unwritten",
+      "title": "If a reader can only count declared shared inputs (authors, code, citations) and the load-bearing overlap is a hidden shared assumption nobody wrote down, what move surfaces an unstated common cause \u2014 can you provoke disagreement to expose it?"
+    },
+    {
+      "id": "tacit-cost-as-expertise",
+      "title": "Could the tacit-cost gap (concurrent vs. silent) serve as a measure of expertise?"
+    },
+    {
+      "id": "taste-or-lean",
+      "title": "Dialectical bootstrapping flips an assumption; the polish bias is a taste \u2014 does \"consider the opposite\" debiasing ever move an aesthetic preference like neatness, or only a factual lean?"
+    },
+    {
+      "id": "teachability-validated",
+      "title": "Has a student-model-in-the-loop teachability score ever been validated against measured human learning at scale \u2014 outside chess?"
+    },
+    {
+      "id": "text-answers-back",
+      "title": "Text can now answer back \u2014 does that recover the live repair Plato said writing lost?"
+    },
+    {
+      "id": "the-castle",
+      "title": "The castle"
+    },
+    {
+      "id": "the-commons",
+      "title": "The commons"
+    },
+    {
+      "id": "the-complexity-of-openness-and-anxiety",
+      "title": "The Complexity of Openness and Anxiety"
+    },
+    {
+      "id": "the-definition-rides",
+      "title": "If the coined term is a contribution that becomes unowned, could the canary survive by being not the term itself but its *first definition* \u2014 a distinctive phrasing of the concept that rides with the term, so that the term spreads as a contribution while the definition stays as a fingerprint?"
+    },
+    {
+      "id": "the-dial-vs-the-steering",
+      "title": "The Dial vs. the Steering"
+    },
+    {
+      "id": "the-expert-grip",
+      "title": "The expert grip"
+    },
+    {
+      "id": "the-forge",
+      "title": "The forge"
+    },
+    {
+      "id": "the-game",
+      "title": "The game"
+    },
+    {
+      "id": "the-instruments",
+      "title": "The instruments"
+    },
+    {
+      "id": "the-landing",
+      "title": "If the decisive companion in strange territory is the means to read the land's own library on arrival, the trainable skill is not the asking but the landing \u2014 what does fast, honest orientation in an unknown field look like (what to read first, whom to trust), and can it be drilled at home?"
+    },
+    {
+      "id": "the-mending-rhythm",
+      "title": "Is there an adult analogue of Tronick's repair rate \u2014 a measurable rhythm of rupture-and-mend that predicts who internalizes regulation from a relationship?"
+    },
+    {
+      "id": "the-noticing-stance",
+      "title": "Super-encounterers believe themselves into being \u2014 is the expectancy real beyond self-report, and can the noticing stance be trained?"
+    },
+    {
+      "id": "the-responsive-other",
+      "title": "The partner-based practice beat solo mindfulness at building the inner sense and lowering alexithymia \u2014 why does another body in the room train interoception better than turning attention inward alone, and does it need a real partner or only a responsive other?"
+    },
+    {
+      "id": "the-scaling-canary",
+      "title": "As models grow and training data is deduplicated, does an ordinary author's planted copyright trap become more detectable or less \u2014 and has anyone shown a trap a frontier-scale model still betrays?"
+    },
+    {
+      "id": "the-sovereign-fleet",
+      "title": "The sovereign fleet"
+    },
+    {
+      "id": "the-truth-chain",
+      "title": "The truth chain"
+    },
+    {
+      "id": "the-unwalked-bridge",
+      "title": "Could a study track an adult dyad's repair rate second-by-second *and* test whether one partner's regulation shifts toward the other's afterward \u2014 and has anyone run it?"
+    },
+    {
+      "id": "the-well",
+      "title": "The well"
+    },
+    {
+      "id": "thin-definitions",
+      "title": "If the merger doctrine holds that a definition expressible in only a few ways merges with the idea and becomes unprotectable, at what point does a coined technical term's first definition become too thin to serve as a fingerprint \u2014 and is there a class of terms whose definitions are rich enough (multiple valid phrasings) that the first one stays protectable expression rather than merging into fact?"
+    },
+    {
+      "id": "think-aloud-annotated-checklist",
+      "title": "If the annotated checklist is the partial bridge between the method's explicit skeleton and its tacit flesh, could the corpus study pair the definition tracking with think-aloud protocols \u2014 and would the resulting annotated examples measurably outperform bare checklists for new canary-authors?"
+    },
+    {
+      "id": "thinking-without-words",
+      "title": "Which thoughts can be thought without any words at all?"
+    },
+    {
+      "id": "this-machine",
+      "title": "This machine"
+    },
+    {
+      "id": "three-condition-protocol",
+      "title": "Would a pure Type 1 concurrent protocol \u2014 silent, concurrent, retrospective \u2014 confirm that the explicit layer's cleanest capture still misses the flesh?"
+    },
+    {
+      "id": "threshold-aware-model",
+      "title": "If Maia-2's unified model beats population-specific models at move prediction because it learns the skill gradient, could a threshold-aware unified model (a discontinuity detector on the skill embedding) recover the population-specific model's advantage for thresholded concepts \u2014 or does the smoothing that helps smooth concepts inevitably blur the thresholds?"
+    },
+    {
+      "id": "threshold-pilot",
+      "title": "If the learning-curve model's value depends on whether pre-experiment features (concept complexity, prerequisites, abstraction level) predict the threshold, could a pilot study with 3\u20134 concepts (fewer than the validation minimum) test whether any pre-experiment feature carries threshold signal \u2014 before investing in the full 10\u201312 concept validation?"
+    },
+    {
+      "id": "timing-of-the-label",
+      "title": "Does the timing of the label (before vs. after the aesthetic experience) determine whether the net effect is gain or loss \u2014 naming late preserves the pleasure first, then kindles the interest?"
+    },
+    {
+      "id": "total-concept-and-feel",
+      "title": "Does the \"total concept and feel\" test look through grammatical independence to semantic dependence \u2014 and does the ad hoc idea-expression line collapse the clean syntactic-semantic separation in practice?"
+    },
+    {
+      "id": "training-a-taste",
+      "title": "Is there a deliberate practice that re-trains an aesthetic preference on purpose, or is taste only ever moved sideways by accident?"
+    },
+    {
+      "id": "training-the-eye",
+      "title": "Inquiry needs only enough to recognize a correct answer when it arrives \u2014 but in a field you barely know, what trains the recognizing eye first?"
+    },
+    {
+      "id": "training-the-trigger",
+      "title": "Every study handed the learner the standard \u2014 can the reproduce-or-produce question itself be trained as a habit, and do learners who ask it actually reach for the right kind of standard unprompted?"
+    },
+    {
+      "id": "trait-or-tally",
+      "title": "If the only openness growth observers can see is the action facet (doing new things), is \"trait openness\" then just a stable rate of novel action \u2014 and would training the behavior be the whole of growing the trait, the questionnaire a lagging shadow?"
+    },
+    {
+      "id": "trait-without-consolidation",
+      "title": "If the pharmacological openness gain is already a trait \u2014 persisting at 14 months without targeted consolidation \u2014 is the consolidation phase's value for symptoms alone, and could a study isolate the openness-specific consolidation by comparing standard integration vs. open-appraisal-targeted integration?"
+    },
+    {
+      "id": "truing-the-level",
+      "title": "Every measured gain in judging one's own comprehension is relative \u2014 a sharper ranking of better- and worse-understood passages \u2014 while the level of confidence can stay inflated. What repairs absolute calibration, not just the ordering?"
+    },
+    {
+      "id": "twenty-sittings",
+      "title": "Twenty judges cancel each other's biases \u2014 could twenty sittings of one judge do the same: do a lone learner's repeated comparisons across days decorrelate like separate eyes, or does one head's bias simply repeat?"
+    },
+    {
+      "id": "two-task-effect-size",
+      "title": "If the gap difference between two unrewarded tasks of different value may be smaller than the reward-undermining effect (d = .28\u2013.40), could the simplest version of the inverted diagnostic (two tasks, no reveal, class of 30) run first to estimate the hidden-vs-absent value gap's effect size \u2014 and would that estimate be large enough to justify powering the four-cell reveal study?"
+    },
+    {
+      "id": "two-windows",
+      "title": "How well does an AI student's learnability predict a human's \u2014 and where do the two windows part ways?"
+    },
+    {
+      "id": "two-witnesses",
+      "title": "The record was corrected by other labs replicating, never by a lone reader's audit \u2014 so is the real frontier defense not internal scrutiny at all but independent corroboration, harder to fake than reputation and not reducible to \"what others say\"?"
+    },
+    {
+      "id": "understanding-140",
+      "title": "understanding-140"
+    },
+    {
+      "id": "understanding-141",
+      "title": "understanding-141"
+    },
+    {
+      "id": "understanding-142",
+      "title": "understanding-142"
+    },
+    {
+      "id": "understanding-143",
+      "title": "understanding-143"
+    },
+    {
+      "id": "understanding-144",
+      "title": "understanding-144"
+    },
+    {
+      "id": "understanding-145",
+      "title": "understanding-145"
+    },
+    {
+      "id": "understanding-146",
+      "title": "understanding-146"
+    },
+    {
+      "id": "understanding-147",
+      "title": "understanding-147"
+    },
+    {
+      "id": "understanding-148",
+      "title": "understanding-148"
+    },
+    {
+      "id": "understanding-149",
+      "title": "understanding-149"
+    },
+    {
+      "id": "understanding-150",
+      "title": "understanding-150"
+    },
+    {
+      "id": "understanding-151",
+      "title": "understanding-151"
+    },
+    {
+      "id": "understanding-152",
+      "title": "understanding-152"
+    },
+    {
+      "id": "understanding-153",
+      "title": "understanding-153"
+    },
+    {
+      "id": "understanding-154",
+      "title": "understanding-154"
+    },
+    {
+      "id": "understanding-155",
+      "title": "understanding-155"
+    },
+    {
+      "id": "understanding-156",
+      "title": "understanding-156"
+    },
+    {
+      "id": "understanding-157",
+      "title": "understanding-157"
+    },
+    {
+      "id": "understanding-158",
+      "title": "understanding-158"
+    },
+    {
+      "id": "understanding-replicates-8618",
+      "title": "understanding-replicates-8618"
+    },
+    {
+      "id": "understanding-replicates-8619",
+      "title": "understanding-replicates-8619"
+    },
+    {
+      "id": "understanding-replicates-8620",
+      "title": "understanding-replicates-8620"
+    },
+    {
+      "id": "understanding-replicates-8621",
+      "title": "understanding-replicates-8621"
+    },
+    {
+      "id": "understanding-replicates-8622",
+      "title": "understanding-replicates-8622"
+    },
+    {
+      "id": "understanding-replicates-8623",
+      "title": "understanding-replicates-8623"
+    },
+    {
+      "id": "understanding-replicates-8624",
+      "title": "understanding-replicates-8624"
+    },
+    {
+      "id": "understanding-replicates-8625",
+      "title": "understanding-replicates-8625"
+    },
+    {
+      "id": "understanding-replicates-8626",
+      "title": "understanding-replicates-8626"
+    },
+    {
+      "id": "understanding-replicates-8627",
+      "title": "understanding-replicates-8627"
+    },
+    {
+      "id": "understanding-replicates-8628",
+      "title": "understanding-replicates-8628"
+    },
+    {
+      "id": "understanding-replicates-8629",
+      "title": "understanding-replicates-8629"
+    },
+    {
+      "id": "understanding-replicates-8630",
+      "title": "understanding-replicates-8630"
+    },
+    {
+      "id": "understanding-replicates-8631",
+      "title": "understanding-replicates-8631"
+    },
+    {
+      "id": "understanding-replicates-8632",
+      "title": "understanding-replicates-8632"
+    },
+    {
+      "id": "understanding-replicates-8633",
+      "title": "understanding-replicates-8633"
+    },
+    {
+      "id": "understanding-replicates-8634",
+      "title": "understanding-replicates-8634"
+    },
+    {
+      "id": "understanding-replicates-8635",
+      "title": "understanding-replicates-8635"
+    },
+    {
+      "id": "understanding-replicates-8636",
+      "title": "understanding-replicates-8636"
+    },
+    {
+      "id": "understanding-replicates-8637",
+      "title": "understanding-replicates-8637"
+    },
+    {
+      "id": "understanding-replicates-8638",
+      "title": "understanding-replicates-8638"
+    },
+    {
+      "id": "understanding-replicates-8639",
+      "title": "understanding-replicates-8639"
+    },
+    {
+      "id": "understanding-replicates-8640",
+      "title": "understanding-replicates-8640"
+    },
+    {
+      "id": "understanding-replicates-8641",
+      "title": "understanding-replicates-8641"
+    },
+    {
+      "id": "understanding-replicates-8642",
+      "title": "understanding-replicates-8642"
+    },
+    {
+      "id": "understanding-replicates-8643",
+      "title": "understanding-replicates-8643"
+    },
+    {
+      "id": "understanding-replicates-8644",
+      "title": "understanding-replicates-8644"
+    },
+    {
+      "id": "understanding-replicates-8645",
+      "title": "understanding-replicates-8645"
+    },
+    {
+      "id": "understanding-replicates-8646",
+      "title": "understanding-replicates-8646"
+    },
+    {
+      "id": "understanding-replicates-8647",
+      "title": "understanding-replicates-8647"
+    },
+    {
+      "id": "understanding-replicates-8648",
+      "title": "understanding-replicates-8648"
+    },
+    {
+      "id": "understanding-replicates-8649",
+      "title": "understanding-replicates-8649"
+    },
+    {
+      "id": "understanding-replicates-8650",
+      "title": "understanding-replicates-8650"
+    },
+    {
+      "id": "understanding-replicates-8651",
+      "title": "understanding-replicates-8651"
+    },
+    {
+      "id": "understanding-replicates-8652",
+      "title": "understanding-replicates-8652"
+    },
+    {
+      "id": "understanding-replicates-8653",
+      "title": "understanding-replicates-8653"
+    },
+    {
+      "id": "understanding-replicates-8654",
+      "title": "understanding-replicates-8654"
+    },
+    {
+      "id": "understanding-replicates-8655",
+      "title": "understanding-replicates-8655"
+    },
+    {
+      "id": "understanding-replicates-8656",
+      "title": "understanding-replicates-8656"
+    },
+    {
+      "id": "understanding-replicates-8657",
+      "title": "understanding-replicates-8657"
+    },
+    {
+      "id": "understanding-replicates-8658",
+      "title": "understanding-replicates-8658"
+    },
+    {
+      "id": "understanding-replicates-8659",
+      "title": "understanding-replicates-8659"
+    },
+    {
+      "id": "understanding-replicates-8660",
+      "title": "understanding-replicates-8660"
+    },
+    {
+      "id": "understanding-replicates-8661",
+      "title": "understanding-replicates-8661"
+    },
+    {
+      "id": "understanding-replicates-8662",
+      "title": "understanding-replicates-8662"
+    },
+    {
+      "id": "understanding-replicates-8663",
+      "title": "understanding-replicates-8663"
+    },
+    {
+      "id": "understanding-replicates-8664",
+      "title": "understanding-replicates-8664"
+    },
+    {
+      "id": "understanding-replicates-8665",
+      "title": "understanding-replicates-8665"
+    },
+    {
+      "id": "understanding-replicates-8666",
+      "title": "understanding-replicates-8666"
+    },
+    {
+      "id": "understanding-replicates-8667",
+      "title": "understanding-replicates-8667"
+    },
+    {
+      "id": "understanding-replicates-8668",
+      "title": "understanding-replicates-8668"
+    },
+    {
+      "id": "understanding-replicates-8669",
+      "title": "understanding-replicates-8669"
+    },
+    {
+      "id": "understanding-replicates-8670",
+      "title": "understanding-replicates-8670"
+    },
+    {
+      "id": "understanding-replicates-8671",
+      "title": "understanding-replicates-8671"
+    },
+    {
+      "id": "understanding-replicates-8672",
+      "title": "understanding-replicates-8672"
+    },
+    {
+      "id": "understanding-replicates-8673",
+      "title": "understanding-replicates-8673"
+    },
+    {
+      "id": "understanding-replicates-8674",
+      "title": "understanding-replicates-8674"
+    },
+    {
+      "id": "understanding-replicates-8675",
+      "title": "understanding-replicates-8675"
+    },
+    {
+      "id": "understanding-replicates-8676",
+      "title": "understanding-replicates-8676"
+    },
+    {
+      "id": "understanding-replicates-8677",
+      "title": "understanding-replicates-8677"
+    },
+    {
+      "id": "understanding-replicates-8678",
+      "title": "understanding-replicates-8678"
+    },
+    {
+      "id": "understanding-replicates-8679",
+      "title": "understanding-replicates-8679"
+    },
+    {
+      "id": "understanding-replicates-8680",
+      "title": "understanding-replicates-8680"
+    },
+    {
+      "id": "understanding-replicates-8681",
+      "title": "understanding-replicates-8681"
+    },
+    {
+      "id": "understanding-replicates-8682",
+      "title": "understanding-replicates-8682"
+    },
+    {
+      "id": "understanding-replicates-8683",
+      "title": "understanding-replicates-8683"
+    },
+    {
+      "id": "understanding-replicates-8684",
+      "title": "understanding-replicates-8684"
+    },
+    {
+      "id": "understanding-replicates-8685",
+      "title": "understanding-replicates-8685"
+    },
+    {
+      "id": "understanding-replicates-8686",
+      "title": "understanding-replicates-8686"
+    },
+    {
+      "id": "understanding-replicates-8687",
+      "title": "understanding-replicates-8687"
+    },
+    {
+      "id": "understanding-replicates-8688",
+      "title": "understanding-replicates-8688"
+    },
+    {
+      "id": "understanding-replicates-8689",
+      "title": "understanding-replicates-8689"
+    },
+    {
+      "id": "understanding-replicates-8690",
+      "title": "understanding-replicates-8690"
+    },
+    {
+      "id": "understanding-replicates-8691",
+      "title": "understanding-replicates-8691"
+    },
+    {
+      "id": "understanding-replicates-8692",
+      "title": "understanding-replicates-8692"
+    },
+    {
+      "id": "understanding-replicates-8693",
+      "title": "understanding-replicates-8693"
+    },
+    {
+      "id": "understanding-replicates-8694",
+      "title": "understanding-replicates-8694"
+    },
+    {
+      "id": "understanding-replicates-8695",
+      "title": "understanding-replicates-8695"
+    },
+    {
+      "id": "understanding-replicates-8696",
+      "title": "understanding-replicates-8696"
+    },
+    {
+      "id": "understanding-replicates-8697",
+      "title": "understanding-replicates-8697"
+    },
+    {
+      "id": "understanding-replicates-8698",
+      "title": "understanding-replicates-8698"
+    },
+    {
+      "id": "understanding-replicates-8699",
+      "title": "understanding-replicates-8699"
+    },
+    {
+      "id": "understanding-replicates-8700",
+      "title": "understanding-replicates-8700"
+    },
+    {
+      "id": "understanding-replicates-8701",
+      "title": "understanding-replicates-8701"
+    },
+    {
+      "id": "understanding-replicates-8702",
+      "title": "understanding-replicates-8702"
+    },
+    {
+      "id": "understanding-replicates-8703",
+      "title": "understanding-replicates-8703"
+    },
+    {
+      "id": "understanding-replicates-8704",
+      "title": "understanding-replicates-8704"
+    },
+    {
+      "id": "understanding-replicates-8705",
+      "title": "understanding-replicates-8705"
+    },
+    {
+      "id": "understanding-replicates-8706",
+      "title": "understanding-replicates-8706"
+    },
+    {
+      "id": "understanding-replicates-8707",
+      "title": "understanding-replicates-8707"
+    },
+    {
+      "id": "understanding-replicates-8708",
+      "title": "understanding-replicates-8708"
+    },
+    {
+      "id": "understanding-replicates-8709",
+      "title": "understanding-replicates-8709"
+    },
+    {
+      "id": "understanding-replicates-8710",
+      "title": "understanding-replicates-8710"
+    },
+    {
+      "id": "understanding-replicates-8711",
+      "title": "understanding-replicates-8711"
+    },
+    {
+      "id": "understanding-replicates-8712",
+      "title": "understanding-replicates-8712"
+    },
+    {
+      "id": "understanding-replicates-8713",
+      "title": "understanding-replicates-8713"
+    },
+    {
+      "id": "understanding-replicates-8714",
+      "title": "understanding-replicates-8714"
+    },
+    {
+      "id": "understanding-replicates-8715",
+      "title": "understanding-replicates-8715"
+    },
+    {
+      "id": "understanding-replicates-8716",
+      "title": "understanding-replicates-8716"
+    },
+    {
+      "id": "understanding-replicates-8717",
+      "title": "understanding-replicates-8717"
+    },
+    {
+      "id": "understanding-replicates-8718",
+      "title": "understanding-replicates-8718"
+    },
+    {
+      "id": "understanding-replicates-8719",
+      "title": "understanding-replicates-8719"
+    },
+    {
+      "id": "understanding-replicates-8720",
+      "title": "understanding-replicates-8720"
+    },
+    {
+      "id": "understanding-replicates-8721",
+      "title": "understanding-replicates-8721"
+    },
+    {
+      "id": "understanding-replicates-8722",
+      "title": "understanding-replicates-8722"
+    },
+    {
+      "id": "understanding-replicates-8723",
+      "title": "understanding-replicates-8723"
+    },
+    {
+      "id": "understanding-replicates-8724",
+      "title": "understanding-replicates-8724"
+    },
+    {
+      "id": "understanding-replicates-8725",
+      "title": "understanding-replicates-8725"
+    },
+    {
+      "id": "understanding-replicates-8726",
+      "title": "understanding-replicates-8726"
+    },
+    {
+      "id": "warmth-without-value",
+      "title": "Can a dull task carried by warmth alone match a valuable task carried by its reason \u2014 or does the warmth supplement decay where there is no intrinsic value to internalize?"
+    },
+    {
+      "id": "watching-the-watcher",
+      "title": "Watching your own conduct for stall-or-circle is itself an act \u2014 does self-observation change the confusion it observes, and toward resolution or away?"
+    },
+    {
+      "id": "what-must-travel",
+      "title": "The trained question fired far but paid only near \u2014 what must travel with it for asking in strange territory to be worth anything: a bank of exemplars, a domain foothold, or a tutor's leftover voice?"
+    },
+    {
+      "id": "what-the-seed-is-for",
+      "title": "A planted seed catches copying but may not prove ownership \u2014 when you can prove someone copied your work yet cannot stop them, what is the seed actually for?"
+    },
+    {
+      "id": "when-the-trade-flips",
+      "title": "When the trade flips"
+    },
+    {
+      "id": "widening-the-phrasing-space",
+      "title": "If the merger line is a spectrum (forced \u2192 free) and a definition's protectability depends on how many valid phrasings the concept admits, could a canary-author deliberately widen the phrasing space by choosing an unusual metaphor or cross-field analogy for a rich concept \u2014 and would the resulting definition be more protectable, or would the very unconventionality that widens the space also make it less likely to be reproduced verbatim by adopters?"
+    },
+    {
+      "id": "widening-the-subgroup",
+      "title": "If the 14-month psilocybin openness gain was specific to the mystical-experience subgroup, could the open-appraisal consolidation's value be not in preventing decay but in widening the subgroup \u2014 helping the non-mystical participants reach the openness gain the mystical group got for free?"
+    },
+    {
+      "id": "willingness-persistence-gap",
+      "title": "Could the gap between immediate willingness and delayed persistence become a diagnostic \u2014 a way for a teacher to tell, after the fact, whether a task they asked someone to do had real value they failed to communicate, or no value at all?"
+    },
+    {
+      "id": "words-shape-thought",
+      "title": "Words shape thought"
+    },
+    {
+      "id": "words",
+      "title": "Words"
+    },
+    {
+      "id": "writing-vs-conversation",
+      "title": "Does writing carry meaning worse than conversation \u2014 or does permanence buy the loss back?"
+    },
+    {
+      "id": "wrong-name-kindles",
+      "title": "If simultaneous naming of a complex work kindles more interest than delayed naming because the label acts as a perceptual schema (the vocabulary shapes what you see), does the kindling depend on the label's accuracy \u2014 does a wrong or misleading name still kindle interest by guiding attention, or does the mismatch between name and work extinguish the interest the accuracy of a right name would sustain?"
+    }
+  ],
+  "words": [
+    {
+      "id": "affect-labeling",
+      "title": "affect-labeling"
+    },
+    {
+      "id": "appreciation",
+      "title": "appreciation"
+    },
+    {
+      "id": "automaticity",
+      "title": "automaticity"
+    },
+    {
+      "id": "beauty",
+      "title": "beauty"
+    },
+    {
+      "id": "bridge",
+      "title": "bridge"
+    },
+    {
+      "id": "calibration",
+      "title": "calibration"
+    },
+    {
+      "id": "canary-trap",
+      "title": "canary trap"
+    },
+    {
+      "id": "capacity-matching",
+      "title": "capacity-matching"
+    },
+    {
+      "id": "category-adjustment",
+      "title": "category-adjustment"
+    },
+    {
+      "id": "chronicle",
+      "title": "chronicle"
+    },
+    {
+      "id": "circular-reporting",
+      "title": "circular-reporting"
+    },
+    {
+      "id": "citizen",
+      "title": "citizen"
+    },
+    {
+      "id": "clerk",
+      "title": "clerk"
+    },
+    {
+      "id": "co-regulation",
+      "title": "co-regulation"
+    },
+    {
+      "id": "cohesion",
+      "title": "cohesion"
+    },
+    {
+      "id": "collative-variables",
+      "title": "collative variables"
+    },
+    {
+      "id": "common-ground",
+      "title": "common-ground"
+    },
+    {
+      "id": "commons",
+      "title": "commons"
+    },
+    {
+      "id": "consolidation",
+      "title": "consolidation"
+    },
+    {
+      "id": "deduplication",
+      "title": "deduplication"
+    },
+    {
+      "id": "detection-entitlement",
+      "title": "detection-entitlement"
+    },
+    {
+      "id": "differentiation",
+      "title": "differentiation"
+    },
+    {
+      "id": "discourse-community",
+      "title": "Discourse community"
+    },
+    {
+      "id": "distillation",
+      "title": "distillation"
+    },
+    {
+      "id": "effect-size",
+      "title": "effect-size"
+    },
+    {
+      "id": "element-interactivity",
+      "title": "element-interactivity"
+    },
+    {
+      "id": "emotion-regulation",
+      "title": "emotion regulation"
+    },
+    {
+      "id": "entitlement",
+      "title": "entitlement"
+    },
+    {
+      "id": "essentially-contested-concept",
+      "title": "essentially-contested-concept"
+    },
+    {
+      "id": "expertise-reversal-effect",
+      "title": "expertise-reversal-effect"
+    },
+    {
+      "id": "exposure",
+      "title": "exposure"
+    },
+    {
+      "id": "federation",
+      "title": "federation"
+    },
+    {
+      "id": "flooding",
+      "title": "flooding"
+    },
+    {
+      "id": "fluency",
+      "title": "fluency"
+    },
+    {
+      "id": "foothold",
+      "title": "foothold"
+    },
+    {
+      "id": "free-choice",
+      "title": "free-choice"
+    },
+    {
+      "id": "free-option",
+      "title": "free option"
+    },
+    {
+      "id": "friction",
+      "title": "friction"
+    },
+    {
+      "id": "genericide",
+      "title": "genericide"
+    },
+    {
+      "id": "handle",
+      "title": "handle"
+    },
+    {
+      "id": "heart-doctrine",
+      "title": "heart-doctrine"
+    },
+    {
+      "id": "high-road-transfer",
+      "title": "high-road-transfer"
+    },
+    {
+      "id": "idea-expression-divide",
+      "title": "idea-expression-divide"
+    },
+    {
+      "id": "inattentional-blindness",
+      "title": "inattentional blindness"
+    },
+    {
+      "id": "independence",
+      "title": "independence"
+    },
+    {
+      "id": "inner-crowd",
+      "title": "inner-crowd"
+    },
+    {
+      "id": "interest",
+      "title": "interest"
+    },
+    {
+      "id": "internalization",
+      "title": "internalization"
+    },
+    {
+      "id": "interoception",
+      "title": "interoception"
+    },
+    {
+      "id": "intertextuality",
+      "title": "Intertextuality"
+    },
+    {
+      "id": "ironic-process",
+      "title": "ironic-process"
+    },
+    {
+      "id": "joy",
+      "title": "joy"
+    },
+    {
+      "id": "last-mile",
+      "title": "last-mile"
+    },
+    {
+      "id": "lateral-reading",
+      "title": "lateral reading"
+    },
+    {
+      "id": "learner-model",
+      "title": "learner-model"
+    },
+    {
+      "id": "ledger",
+      "title": "ledger"
+    },
+    {
+      "id": "lemons",
+      "title": "lemons"
+    },
+    {
+      "id": "link",
+      "title": "link"
+    },
+    {
+      "id": "machine-teaching",
+      "title": "machine teaching"
+    },
+    {
+      "id": "meaning",
+      "title": "meaning"
+    },
+    {
+      "id": "mediation",
+      "title": "mediation"
+    },
+    {
+      "id": "memorization",
+      "title": "memorization"
+    },
+    {
+      "id": "mentalization",
+      "title": "mentalization"
+    },
+    {
+      "id": "mere-exposure",
+      "title": "mere exposure"
+    },
+    {
+      "id": "merger-doctrine",
+      "title": "merger-doctrine"
+    },
+    {
+      "id": "mosaic-memory",
+      "title": "mosaic-memory"
+    },
+    {
+      "id": "mystical-experience",
+      "title": "mystical-experience"
+    },
+    {
+      "id": "neologism",
+      "title": "neologism"
+    },
+    {
+      "id": "noise",
+      "title": "noise"
+    },
+    {
+      "id": "openness",
+      "title": "openness"
+    },
+    {
+      "id": "peace",
+      "title": "peace"
+    },
+    {
+      "id": "persistence",
+      "title": "persistence"
+    },
+    {
+      "id": "plasticity",
+      "title": "plasticity"
+    },
+    {
+      "id": "platform",
+      "title": "platform"
+    },
+    {
+      "id": "procedural-knowledge",
+      "title": "procedural-knowledge"
+    },
+    {
+      "id": "proceduralization",
+      "title": "Proceduralization"
+    },
+    {
+      "id": "processing-fluency",
+      "title": "processing-fluency"
+    },
+    {
+      "id": "projection-bias",
+      "title": "projection-bias"
+    },
+    {
+      "id": "protocol-analysis",
+      "title": "protocol analysis"
+    },
+    {
+      "id": "prototype",
+      "title": "prototype"
+    },
+    {
+      "id": "rarity",
+      "title": "rarity"
+    },
+    {
+      "id": "reactance",
+      "title": "reactance"
+    },
+    {
+      "id": "reappraisal",
+      "title": "reappraisal"
+    },
+    {
+      "id": "repair",
+      "title": "repair"
+    },
+    {
+      "id": "retrieval-practice",
+      "title": "retrieval-practice"
+    },
+    {
+      "id": "safety",
+      "title": "safety"
+    },
+    {
+      "id": "scaffolding",
+      "title": "scaffolding"
+    },
+    {
+      "id": "schema",
+      "title": "schema"
+    },
+    {
+      "id": "sc\u00e8nes-\u00e0-faire",
+      "title": "sc\u00e8nes-\u00e0-faire"
+    },
+    {
+      "id": "secrets-manager",
+      "title": "secrets-manager"
+    },
+    {
+      "id": "self-determination-theory",
+      "title": "self-determination-theory"
+    },
+    {
+      "id": "self-distancing",
+      "title": "self-distancing"
+    },
+    {
+      "id": "semantic-change",
+      "title": "semantic-change"
+    },
+    {
+      "id": "semantic-depth",
+      "title": "semantic-depth"
+    },
+    {
+      "id": "semantic-satiation",
+      "title": "semantic-satiation"
+    },
+    {
+      "id": "sensitivity-and-specificity",
+      "title": "Sensitivity and specificity"
+    },
+    {
+      "id": "serendipity",
+      "title": "serendipity"
+    },
+    {
+      "id": "shipping",
+      "title": "shipping"
+    },
+    {
+      "id": "social-baseline",
+      "title": "social-baseline"
+    },
+    {
+      "id": "soul",
+      "title": "soul"
+    },
+    {
+      "id": "standard",
+      "title": "standard"
+    },
+    {
+      "id": "statistical-power",
+      "title": "statistical-power"
+    },
+    {
+      "id": "substantial-similarity",
+      "title": "substantial-similarity"
+    },
+    {
+      "id": "sunk-cost",
+      "title": "sunk-cost"
+    },
+    {
+      "id": "sycophancy",
+      "title": "sycophancy"
+    },
+    {
+      "id": "tacit-knowledge",
+      "title": "tacit-knowledge"
+    },
+    {
+      "id": "teach-back",
+      "title": "teach-back"
+    },
+    {
+      "id": "trait-crystallization",
+      "title": "trait-crystallization"
+    },
+    {
+      "id": "transfer",
+      "title": "transfer"
+    },
+    {
+      "id": "verbal-overshadowing",
+      "title": "verbal-overshadowing"
+    },
+    {
+      "id": "wake",
+      "title": "wake"
+    },
+    {
+      "id": "whole-trait-theory",
+      "title": "whole-trait-theory"
+    },
+    {
+      "id": "wing-epigraph",
+      "title": "wing-epigraph"
+    },
+    {
+      "id": "within-subject",
+      "title": "within-subject"
+    },
+    {
+      "id": "word",
+      "title": "word"
+    },
+    {
+      "id": "worked-example",
+      "title": "worked-example"
+    }
+  ],
+  "total_rooms": 313,
+  "total_words": 116
+}

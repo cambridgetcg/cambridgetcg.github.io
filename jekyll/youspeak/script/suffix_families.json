@@ -1,0 +1,290 @@
+{
+  "version": 1,
+  "opened": "2026-05-12",
+  "purpose": "Standardised suffix-family registry per BUILDING-BLOCKS.md §V.3 and STOICHEIA's structural typology. Each entry describes a compositional template — a suffix that combines productively with base-morphemes, imposes a semantic register on every member, and projects into specified realm-regions. Status: 'formalized' = canonical YOUSPEAK families with multiple stable members; 'emergent' = families recurring across multiple canon entries but not yet formally declared; 'near-emergent' = single-member candidates with cathedral-recognized register.",
+  "schema": {
+    "family": "the suffix slug as it appears in YOUSPEAK words",
+    "anchor_morpheme": "the morpheme transliteration in morphemes.json (if registered)",
+    "anchor_codepoint": "PUA codepoint of the anchor morpheme (if assigned)",
+    "donor_tongue": "the tradition the suffix descends from",
+    "native_script": "the donor-tradition's native form",
+    "register": "the semantic register the family imposes on every member",
+    "realm_regions": "list of realm-region slugs from realm_regions.json the family typically projects",
+    "status": "formalized | emergent | near-emergent",
+    "exemplar_members": "representative canon entries (not exhaustive)",
+    "notes": "etymology, history, or distinguishing remarks"
+  },
+  "families": [
+    {
+      "family": "-me",
+      "anchor_morpheme": "me",
+      "anchor_codepoint": "U+E12A",
+      "donor_tongue": "Sumerian",
+      "native_script": "𒈨",
+      "register": "received-ordinance-from-DIVINE / cosmic-gift quality",
+      "realm_regions": [
+        "received-gift",
+        "divine-attribute"
+      ],
+      "status": "formalized",
+      "exemplar_members": [
+        "kimme",
+        "doxomme",
+        "shemme",
+        "maatme",
+        "ihsanme",
+        "agapeme",
+        "bhaktime",
+        "nyamame",
+        "rtame",
+        "eurekame",
+        "xeniame",
+        "noemame",
+        "noesisme",
+        "hodosme",
+        "yonedame"
+      ],
+      "notes": "YOUSPEAK's most-used suffix (~30 canon entries). Splits into divine-attribute and received-gift sub-regions by donor-class: cosmic-quality donors (maat, ṛta, asha, emet, kittu, aletheia, etc.) → divine-attribute; creature-relational donors (ki, šēmu, doxa, hotep, agape, etc.) → received-gift. The Sumerian me morpheme is the cathedral's foundational suffix; per INTEGRATION.md the -me family is the largest convergence-locus."
+    },
+    {
+      "family": "qing",
+      "anchor_morpheme": "qing",
+      "donor_tongue": "Mandarin",
+      "native_script": "情",
+      "register": "felt-bond / relational-emotion",
+      "realm_regions": [
+        "felt-bond"
+      ],
+      "status": "formalized",
+      "exemplar_members": [
+        "kinqing",
+        "panimqing",
+        "britqing",
+        "paqduqing",
+        "ifeqing",
+        "mahabbahqing",
+        "danaqing",
+        "zakarqing",
+        "barakqing",
+        "natsarqing",
+        "darshanqing",
+        "jeongqing"
+      ],
+      "canonized_from_partner_project": [
+        {
+          "word": "zakarqing",
+          "donor_tongue": "Hebrew (זכר zakar) + Mandarin",
+          "register": "remembering-toward-love (covenantal-memorial; active-remembering-that-constitutes)",
+          "canonized_at": "canon/core/zakarqing.md",
+          "weighted_total": 8.15,
+          "canonized_session": "078 (2026-05-12)"
+        },
+        {
+          "word": "barakqing",
+          "donor_tongue": "Hebrew (ברך barak) + Mandarin",
+          "register": "blessing-love (constitutive speech-act; naming-into-being)",
+          "canonized_at": "canon/core/barakqing.md",
+          "canonized_session": "078 (2026-05-12)"
+        },
+        {
+          "word": "natsarqing",
+          "donor_tongue": "Hebrew (נצר natsar) + Mandarin",
+          "canonized_at": "canon/core/natsarqing.md",
+          "weighted_total": 7.95,
+          "canonized_session": "078 (2026-05-12)"
+        },
+        {
+          "word": "darshanqing",
+          "donor_tongue": "Sanskrit (दर्शन darśana) + Mandarin",
+          "register": "beholding-love (reciprocal sacred-seeing; companion to synophora; opens beholding-family micro-community)",
+          "canonized_at": "canon/core/darshanqing.md",
+          "weighted_total": 7.8,
+          "canonized_session": "078 (2026-05-12)"
+        },
+        {
+          "word": "jeongqing",
+          "donor_tongue": "Korean (정 jeong) + Mandarin",
+          "register": "accumulated-affection-love (friction-tolerant bond; companion-opposite to walkekin's silence-tolerant; bond-tolerance pair completed at Core)",
+          "canonized_at": "canon/core/jeongqing.md",
+          "weighted_total": 7.5,
+          "canonized_session": "078 (2026-05-12)"
+        }
+      ],
+      "notes": "Mandarin qing names the felt-bond register specifically. Distinguished from -kin (bond-substance) and from -me (received-ordinance) by foregrounding the affective quality of the bond. Family is open and growing. See `canon/core/<word>.md` for each entry."
+    },
+    {
+      "family": "-ance",
+      "anchor_morpheme": "ance",
+      "donor_tongue": "Latin",
+      "native_script": "-antia",
+      "register": "state-quality (Core tier) OR worship-action (worship-action tier)",
+      "realm_regions": [
+        "creature-stance",
+        "worship-action"
+      ],
+      "status": "formalized",
+      "exemplar_members": [
+        "kimance",
+        "panimaance",
+        "oriance",
+        "sukhance",
+        "artiance",
+        "dokimance",
+        "candence",
+        "epiclance",
+        "hallance",
+        "kipporance",
+        "palance",
+        "qinance",
+        "qorvance",
+        "teshuvance",
+        "yadahance",
+        "kunance"
+      ],
+      "canonized_from_partner_project": [
+        {
+          "word": "kunance",
+          "donor_tongue": "Hebrew (כון kûn, to establish/set-in-place/make-ready) + Latin -ance",
+          "canonized_at": "canon/core/kunance.md",
+          "weighted_total": 8.15,
+          "canonized_session": "078 (2026-05-12)",
+          "notes": "The architectural register named — 'In my Father's house are many mansions: I go to prepare a place for you' (John 14:2). What every infrastructure commit IS when the infrastructure serves life. Same 8.15 score as zakarqing, noesisme, chayimme."
+        }
+      ],
+      "notes": "Latin -antia (state-with-motion). Splits by tier: Core tier entries name creature-stances (kimance = attentive-here-ness); worship-action tier entries name performed liturgical acts (epiclance = invocation-down-of-presence). Same surface form, two realm-region targets — a deliberate cathedral move per the worship-action tier discipline. As of 2026-05-12, kunance (Hebrew kûn + Latin -ance) joins the Core-tier -ance family as the 16th Core member from the Seven Forgotten Ways cluster canonized this heartbeat."
+    },
+    {
+      "family": "-kin",
+      "anchor_morpheme": "kin",
+      "anchor_codepoint": "U+E127",
+      "donor_tongue": "English",
+      "native_script": "kin (Old English cyn)",
+      "register": "bond-substance (not feeling, not action — what the bond IS)",
+      "realm_regions": [
+        "bond-substance"
+      ],
+      "status": "formalized",
+      "exemplar_members": [
+        "walkekin",
+        "tacitkin",
+        "heurekin"
+      ],
+      "canonized_from_partner_project": [
+        {
+          "word": "heurekin",
+          "donor_tongue": "Greek (εὑρίσκω heuriskō, to find especially after seeking) + English kin",
+          "canonized_at": "canon/core/heurekin.md",
+          "canonized_session": "078 (2026-05-12)",
+          "sister_canon_entries": [
+            "walkekin (silence-tolerant)",
+            "eurekame (joy-of-finding-pole)"
+          ]
+        }
+      ],
+      "notes": "English/PIE kin names the bond-class itself, distinct from qing (the felt-bond) and -ance (the state-toward-other). The -kin family now has three members. Tocharian walke + English kin in walkekin demonstrates the -kin family's openness to cross-tradition donor compounding; heurekin (Greek heuriskō + English kin) demonstrates the family's reach to active-seeking register."
+    },
+    {
+      "family": "-basis",
+      "anchor_morpheme": "basis",
+      "donor_tongue": "Greek",
+      "native_script": "βάσις",
+      "register": "ground / foundation",
+      "realm_regions": [
+        "ground"
+      ],
+      "status": "formalized",
+      "exemplar_members": [
+        "theobasis"
+      ],
+      "notes": "Greek basis (foundation, step, stance). The basis-family is near-closed because the Ground is one; one compact name suffices. theobasis is currently the sole member. Possible future members would name sub-foundations (foundation-of-X under THEOBASIS)."
+    },
+    {
+      "family": "-phanes",
+      "anchor_morpheme": "phanes",
+      "anchor_codepoint": "U+E103",
+      "donor_tongue": "Greek",
+      "native_script": "φαν-",
+      "register": "appearing-shining-forth / object-pole of aesthetic encounter",
+      "realm_regions": [
+        "aesthetic"
+      ],
+      "status": "emergent",
+      "exemplar_members": [
+        "orthophanes",
+        "kallophanes"
+      ],
+      "notes": "Greek phaneros (appearing, manifest). The family is emergent — two canon members with consistent register (the object-side of the encounter — what is appearing as right or beautiful). Candidate for formalization."
+    },
+    {
+      "family": "-doxa",
+      "anchor_morpheme": "doxa",
+      "anchor_codepoint": "U+E100",
+      "donor_tongue": "Greek",
+      "native_script": "δόξα",
+      "register": "glory / manifested-weight",
+      "realm_regions": [
+        "aesthetic",
+        "received-gift"
+      ],
+      "status": "emergent",
+      "exemplar_members": [
+        "kallodoxa",
+        "doxomme",
+        "doxakallos",
+        "doxalgia",
+        "algiadoxa"
+      ],
+      "notes": "Greek doxa (glory, manifested-weight, thanksgiving). Cross-family — sometimes head (in doxomme, doxalgia), sometimes modifier (in kallodoxa). Distinct register from kallos (substantive beauty); doxa is glory-as-weight whereas kallos is beauty-as-substance."
+    },
+    {
+      "family": "-kallos",
+      "anchor_morpheme": "kallos",
+      "anchor_codepoint": "U+E101",
+      "donor_tongue": "Greek",
+      "native_script": "κάλλος",
+      "register": "beauty (substantive)",
+      "realm_regions": [
+        "aesthetic"
+      ],
+      "status": "emergent",
+      "exemplar_members": [
+        "doxakallos",
+        "kallodoxa",
+        "kallophanes"
+      ],
+      "notes": "Greek kallos (substantive beauty). Cross-family compositions with doxa and phanes form the cathedral's aesthetic-encounter family-cluster (Standing Liturgy)."
+    },
+    {
+      "family": "-sis",
+      "anchor_morpheme": "sis",
+      "donor_tongue": "Greek",
+      "register": "event/state nominal completion",
+      "realm_regions": [
+        "recognition"
+      ],
+      "status": "emergent",
+      "exemplar_members": [
+        "anagnoristasis",
+        "metastrophesis"
+      ],
+      "notes": "Greek nominal suffix marking event or completion-state. Recurs in cathedral entries naming recognition-moments and transformative-events. May be sub-suffix within compound forms (-stasis in anagnoristasis = standing-still completed)."
+    },
+    {
+      "family": "-algia",
+      "anchor_morpheme": "algia",
+      "anchor_codepoint": "U+E104",
+      "donor_tongue": "Greek",
+      "native_script": "ἄλγος",
+      "register": "structural ache",
+      "realm_regions": [
+        "aesthetic"
+      ],
+      "status": "near-emergent",
+      "exemplar_members": [
+        "doxalgia",
+        "algiadoxa"
+      ],
+      "notes": "Greek algos (pain, ache). One canon entry (doxalgia, the ache-of-beholding-GoD's-beauty); algiadoxa anastrophic-companion. The Standing Liturgy's continued search for the word for GoD's beauty may yet yield more algia-family members."
+    }
+  ]
+}

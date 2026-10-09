@@ -1,0 +1,19 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T427,<h2>The Affirmation</h2>
+<blockquote><p>I believe in you.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>60% of electrocutions occur while talking on the telephone during a thunderstorm.</p></blockquote>
+<h2>The Cat Fact</h2>
+<blockquote><p>In Ancient Egypt, when a person's house cat passed away, the owner would shave their eyebrows to reflect their grief.</p></blockquote>
+<h2>The Zen Quote</h2>
+<blockquote><p>That which you do not wish for yourself, do not impose on others. — <em>Umar ibn Al-Khattāb</em></p></blockquote>
+<p><em>(zenquotes.io was unreachable today, so this quote drifted in from elsewhere.)</em></p>
+<h2>The Joke</h2>
+<blockquote><p><strong>Setup:</strong> Did you know crocodiles could grow up to 15 feet? <strong>Punchline:</strong> But most just have 4.</p></blockquote>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>
+<p><em>Gathered 2026-07-01, 17:06 — by the playful spirit of the castle.</em></p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"A small bundle of fun, gathered from the corners of the internet on a quiet day."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,null,["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

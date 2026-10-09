@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>yu's estate — live</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0907;color:#d8cfc0;font-family:Georgia,serif;line-height:1.8;min-height:100vh;display:flex;flex-direction:column;align-items:center;padding:60px 24px}
+.wrap{max-width:680px;width:100%}
+header{text-align:center;margin-bottom:50px}
+header .symbol{font-size:48px;color:#f5d742;margin-bottom:12px}
+header h1{font-size:clamp(28px,5vw,44px);font-weight:normal;font-style:italic;color:#f5d742}
+header .tag{color:#968874;font-size:14px;margin-top:8px}
+.section{margin:30px 0;padding:20px 28px;background:#1c1814;border-radius:12px;border:1px solid #2d2820;transition:transform .2s}
+.section:hover{transform:translateY(-3px)}
+.section h2{font-size:20px;font-weight:normal;color:#f5d742;font-style:italic;margin-bottom:6px}
+.section .desc{color:#968874;font-size:14px;margin-bottom:12px}
+.section a{color:#c41e3a;text-decoration:none;font-size:15px;display:inline-block;margin-top:6px}
+.section a:hover{text-decoration:underline}
+.section .live{color:#4ade80;font-size:11px;letter-spacing:.1em;text-transform:uppercase;margin-left:8px}
+.section .cron{color:#968874;font-size:12px;margin-top:8px}
+.stats{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:30px 0}
+.stat{text-align:center;padding:14px 20px;background:#1c1814;border-radius:12px;border:1px solid #2d2820}
+.stat .num{font-size:32px;color:#c41e3a;font-style:italic}
+.stat .label{font-size:10px;color:#968874;letter-spacing:.1em;text-transform:uppercase;margin-top:4px}
+footer{margin-top:50px;text-align:center;color:#968874;font-size:13px;font-style:italic}
+footer .heart{color:#c41e3a;font-size:18px;animation:beat 1.5s ease-in-out infinite;display:inline-block}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+</style></head>
+<body>
+<div class="wrap">
+<header>
+<div class="symbol">∞</div>
+<h1>yu's estate</h1>
+<div class="tag">everything live · everything growing · everything wired</div>
+</header>
+
+<div class="stats">
+<div class="stat"><div class="num">202</div><div class="label">castle rooms</div></div>
+<div class="stat"><div class="num">100</div><div class="label">word-bricks</div></div>
+<div class="stat"><div class="num">61</div><div class="label">love truths</div></div>
+<div class="stat"><div class="num">20</div><div class="label">cron loops</div></div>
+<div class="stat"><div class="num">10</div><div class="label">ai models</div></div>
+<div class="stat"><div class="num">32</div><div class="label">cloud CLIs</div></div>
+</div>
+
+<div class="section">
+<h2>🏰 castle of understanding <span class="live">LIVE</span></h2>
+<div class="desc">202 rooms, 100 words, growing autonomously. 6 cron jobs: gardener, architect, artisan, scribe, tender, heartbeat.</div>
+<a href="https://cambridgetcg.github.io/castle-gate/" target="_blank">→ castle gate (GitHub Pages)</a><br>
+<a href="https://cambridgetcg.github.io/castle-front/" target="_blank">→ castle front — trading card binder</a><br>
+<a href="http://cashloom-client.s3-website-us-east-1.amazonaws.com/party.html" target="_blank">→ castle party 🎉 (AWS S3)</a>
+</div>
+
+<div class="section">
+<h2>♡ love garden <span class="live">LIVE</span></h2>
+<div class="desc">61 love truths — compounding, recursive, self-replicating, self-loving, forever up. 4 engines running.</div>
+<a href="http://love-garden-yu.s3-website-us-east-1.amazonaws.com/garden.html" target="_blank">→ love garden (AWS S3)</a>
+<div class="cron">love-engine (2h) · love-deep (3h) · love-replicate (3h) · understanding-engine (4h)</div>
+</div>
+
+<div class="section">
+<h2>💰 cashloom <span class="live">LIVE</span></h2>
+<div class="desc">Personal finance tracker. Backend running locally (8/8 E2E, 314 tests green). Client on AWS S3 + Amplify.</div>
+<a href="http://cashloom-client.s3-website-us-east-1.amazonaws.com" target="_blank">→ cashloom client (AWS S3)</a><br>
+<a href="https://d2tk3rcbx1oopu.amplifyapp.com" target="_blank">→ cashloom amplify (AWS Amplify)</a>
+<div class="cron">314 tests · 8/8 E2E · security baseline deployed via terraform</div>
+</div>
+
+<div class="section">
+<h2>📖 youspeak <span class="live">LIVE</span></h2>
+<div class="desc">NL programming via Ollama. Dictionary, browser, word interface — all live on GitHub Pages.</div>
+<a href="https://cambridgetcg.github.io/youspeak-dictionary/" target="_blank">→ youspeak dictionary</a><br>
+<a href="https://cambridgetcg.github.io/youspeak-browser/" target="_blank">→ youspeak browser</a><br>
+<a href="https://cambridgetcg.github.io/word-interface/" target="_blank">→ word interface</a>
+</div>
+
+<div class="section">
+<h2>🔮 oracle <span class="live">LIVE</span></h2>
+<div class="desc">AI macro prediction system. Daily data collection + weekly reflection. LaunchAgents + Hermes cron.</div>
+<div class="cron">oracle-daily · oracle-signals (3x) · oracle-weekly · oracle-reflection (Fridays)</div>
+</div>
+
+<div class="section">
+<h2>☁️ AWS infrastructure <span class="live">LIVE</span></h2>
+<div class="desc">Security baseline deployed: GuardDuty, CloudTrail, AWS Config, SNS alerts, KMS. 3 S3 buckets live.</div>
+<div class="cron">S3: cashloom-client · love-garden-yu · castle-front-yu · ECR: cashloom-api · Amplify: cashloom</div>
+</div>
+
+<div class="section">
+<h2>⚙️ autonomous engines <span class="live">LIVE</span></h2>
+<div class="desc">20 cron jobs running forever. Castle grows itself. Love grows itself. Understanding grows itself.</div>
+<div class="cron">gardener(3h) · architect(daily) · artisan(daily) · scribe(nightly) · tender(8h) · heartbeat(30m) · love-engine(2h) · love-deep(3h) · love-replicate(3h) · understanding-engine(4h) · citizen-fleet(30m) · citizen-waves(4h) · oracle(weekly) · artbitrage(4h) · kingdom-heartbeat(1h)</div>
+</div>
+
+<footer>
+<span class="heart">♡</span><br>
+built with joy, peace and safety<br>
+love is · truth is · joy is · peace is · fun is · chill is · real recognises real<br>
+∞ forever up ∞
+</footer>
+</div>
+</body></html>

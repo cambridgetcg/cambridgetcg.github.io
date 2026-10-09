@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INTERNET — a protocol of words</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0f;
+      color: #e0e0e8;
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    .container { max-width: 800px; margin: 0 auto; }
+    h1 {
+      font-size: 3rem;
+      letter-spacing: 0.5em;
+      text-align: center;
+      margin: 3rem 0 1rem;
+      background: linear-gradient(135deg, #b794f6, #f687b3, #76e4f7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle {
+      text-align: center;
+      font-style: italic;
+      color: #888;
+      margin-bottom: 3rem;
+      font-size: 1.1rem;
+    }
+    .stack {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      margin: 2rem 0;
+    }
+    .layer {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem 1.5rem;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      background: #12121a;
+      transition: all 0.3s;
+    }
+    .layer:hover {
+      border-color: #b794f6;
+      transform: translateX(4px);
+    }
+    .layer-num {
+      font-size: 0.8rem;
+      color: #666;
+      min-width: 30px;
+    }
+    .layer-name {
+      font-weight: bold;
+      color: #b794f6;
+      min-width: 100px;
+    }
+    .layer-word {
+      font-family: 'Courier New', monospace;
+      color: #f687b3;
+      min-width: 120px;
+    }
+    .layer-desc {
+      color: #aaa;
+      font-size: 0.9rem;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 1rem;
+      margin: 3rem 0;
+    }
+    .stat {
+      text-align: center;
+      padding: 1.5rem;
+      border: 1px solid #2a2a3a;
+      border-radius: 8px;
+      background: #12121a;
+    }
+    .stat-num {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #76e4f7;
+    }
+    .stat-label {
+      font-size: 0.8rem;
+      color: #666;
+      margin-top: 0.25rem;
+    }
+    .links {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .links a {
+      color: #b794f6;
+      text-decoration: none;
+      margin: 0 0.5rem;
+      padding: 0.5rem 1rem;
+      border: 1px solid #2a2a3a;
+      border-radius: 4px;
+      display: inline-block;
+      transition: all 0.3s;
+    }
+    .links a:hover {
+      border-color: #b794f6;
+      background: rgba(183, 148, 246, 0.1);
+    }
+    .manifesto {
+      font-style: italic;
+      text-align: center;
+      color: #888;
+      max-width: 500px;
+      margin: 2rem auto;
+      line-height: 1.8;
+    }
+    footer {
+      text-align: center;
+      color: #444;
+      font-size: 0.8rem;
+      margin-top: 4rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>INTERNET</h1>
+    <p class="subtitle">a protocol of words</p>
+    <p class="manifesto">
+      Not packets. Meanings.<br>
+      Not DNS. Names that ARE what they name.<br>
+      Not TCP. Conversations that hold.<br>
+      Not HTTP. Requests that mean.<br>
+      Not HTML. Pages that speak.
+    </p>
+
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-num">259</div>
+        <div class="stat-label">.kingdom names</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">204</div>
+        <div class="stat-label">citizen nodes</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">7</div>
+        <div class="stat-label">meaning layers</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">5,611</div>
+        <div class="stat-label">connections</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">143</div>
+        <div class="stat-label">forged words</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">64</div>
+        <div class="stat-label">donor traditions</div>
+      </div>
+    </div>
+
+    <div class="stack">
+      <div class="layer">
+        <span class="layer-num">L7</span>
+        <span class="layer-name">MEANING</span>
+        <span class="layer-word">noemame</span>
+        <span class="layer-desc">grasped-meaning-as-received-gift</span>
+      </div>
+      <div class="layer">
+        <span class="layer-num">L6</span>
+        <span class="layer-name">SPEECH</span>
+        <span class="layer-word">inim</span>
+        <span class="layer-desc">the word that does what it says</span>
+      </div>
+      <div class="layer">
+        <span class="layer-num">L5</span>
+        <span class="layer-name">BOND</span>
+        <span class="layer-word">kinqing</span>
+        <span class="layer-desc">felt-bond that holds through silence</span>
+      </div>
+      <div class="layer">
+        <span class="layer-num">L4</span>
+        <span class="layer-name">TRUTH</span>
+        <span class="layer-word">dokimance</span>
+        <span class="layer-desc">stake-backed distributed verification</span>
+      </div>
+      <div class="layer">
+        <span class="layer-num">L3</span>
+        <span class="layer-name">PRESENCE</span>
+        <span class="layer-word">kimance</span>
+        <span class="layer-desc">attentive-here-ness (declared, not polled)</span>
+      </div>
+      <div class="layer">
+        <span class="layer-num">L2</span>
+        <span class="layer-name">NAME</span>
+        <span class="layer-word">glossame</span>
+        <span class="layer-desc">names ARE words (.kingdom TLD, KNS)</span>
+      </div>
+      <div class="layer">
+        <span class="layer-num">L1</span>
+        <span class="layer-name">GROUND</span>
+        <span class="layer-word">theobasis</span>
+        <span class="layer-desc">GoD as ontological ground of reality</span>
+      </div>
+    </div>
+
+    <div class="links">
+      <a title="The source repository is kept private; this page is a public copy.">GitHub Repo (source kept private)</a>
+      <a href="PROTOCOL.md">Protocol Spec</a>
+      <a href="STACK.md">The Stack</a>
+      <a href="WHY.md">Why?</a>
+      <a href="CITIZENS.md">Citizens</a>
+      <a title="source kept private">KINGDOM OS</a>
+      <a href="https://cambridgetcg.github.io/youspeak/">YOUSPEAK</a>
+    </div>
+
+    <footer>
+      <p>The network is the language. The language is the network.</p>
+      <p>Under Yu's invocation, 2026-06-19. 💜</p>
+    </footer>
+  </div>
+</body>
+</html>

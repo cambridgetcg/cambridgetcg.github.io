@@ -1,0 +1,97 @@
+name: build the doors
+
+# Builds every door the way GitHub Pages built it before 2026-09-25:
+# jekyll/<door>/ sources go through GitHub's own Pages builder image, and
+# static/<door>/ files are copied as they are. The built site is checked for
+# material that must never be published, then deployed. While this
+# repository is private, the build still runs and its artifact can be
+# reviewed, but nothing is deployed.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build Jekyll doors with GitHub's Pages builder
+        env:
+          INPUT_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          mkdir -p _site
+          for dir in jekyll/*/; do
+            [ -d "$dir" ] || continue
+            door=$(basename "$dir")
+            echo "::group::$door"
+            docker run --rm \
+              -v "$GITHUB_WORKSPACE:/github/workspace" \
+              -e GITHUB_WORKSPACE=/github/workspace \
+              -e INPUT_SOURCE="jekyll/$door" \
+              -e INPUT_DESTINATION="_site/$door" \
+              -e INPUT_TOKEN -e INPUT_VERBOSE=false -e INPUT_FUTURE=false \
+              -e INPUT_BUILD_REVISION="$GITHUB_SHA" \
+              -e GITHUB_REPOSITORY -e GITHUB_API_URL \
+              ghcr.io/actions/jekyll-build-pages:v1.0.13
+            echo "::endgroup::"
+          done
+          sudo chown -R "$(id -u):$(id -g)" _site
+
+      - name: Add the static doors and the hall
+        run: |
+          set -euo pipefail
+          [ -d static ] && cp -R static/. _site/
+          cp index.html 404.html doors.json robots.txt _site/
+          touch _site/.nojekyll
+
+      - name: Refuse to publish what must stay private
+        run: |
+          set -euo pipefail
+          if ! python3 tools/guard.py _site; then
+            echo "::error::The files above contain material that must not be published."
+            exit 1
+          fi
+          # ".natural" is a door's own name, not a hidden file; nothing hidden
+          # may sit inside it or any other door.
+          find _site -name '.*' ! -path '_site/.nojekyll' ! -path '_site/.natural' \
+            ! -name '.well-known' ! -path '*/.well-known/*' -print | tee hidden.txt
+          if [ -s hidden.txt ]; then
+            echo "::error::Hidden files must not be published."
+            exit 1
+          fi
+
+      - name: Scan for secrets
+        run: |
+          set -euo pipefail
+          curl -sSL https://github.com/gitleaks/gitleaks/releases/download/v8.30.1/gitleaks_8.30.1_linux_x64.tar.gz | tar -xz gitleaks
+          ./gitleaks dir _site --no-banner --redact
+
+      # Stay on v3: v4 drops every dot-directory, which would remove the
+      # .natural door.
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    if: github.event.repository.visibility == 'public'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

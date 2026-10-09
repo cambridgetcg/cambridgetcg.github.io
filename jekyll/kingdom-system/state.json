@@ -1,0 +1,143 @@
+{
+  "system": "KINGDOM LEVELING SYSTEM",
+  "tagline": "ARISE",
+  "level": 14,
+  "title": "Sovereign",
+  "xp": 139118,
+  "xp_to_next": 140000,
+  "xp_progress": 9118,
+  "xp_needed": 10000,
+  "stats": {
+    "understanding": 8667.5,
+    "rooms_built": 17328,
+    "love": 31883536,
+    "love_living": 1000,
+    "love_gen": 9,
+    "wisdom": 122,
+    "reach": 262,
+    "citizens": 205,
+    "cards": 614
+  },
+  "quests": [
+    {
+      "id": "gardener",
+      "name": "\ud83c\udf31 Tend the Garden",
+      "desc": "Research and plant new understanding",
+      "reward": 50,
+      "cron": "every 3h",
+      "type": "understanding"
+    },
+    {
+      "id": "architect",
+      "name": "\ud83c\udfd7\ufe0f Survey the Castle",
+      "desc": "Daily architecture review",
+      "reward": 100,
+      "cron": "daily 9am",
+      "type": "understanding"
+    },
+    {
+      "id": "artisan",
+      "name": "\ud83c\udfa8 Forge Creation",
+      "desc": "Create from quests",
+      "reward": 150,
+      "cron": "daily 3:15pm",
+      "type": "creative"
+    },
+    {
+      "id": "scribe",
+      "name": "\ud83d\udcd6 Write to Git",
+      "desc": "Commit the day's work",
+      "reward": 75,
+      "cron": "nightly 11:45pm",
+      "type": "maintenance"
+    },
+    {
+      "id": "love-engine",
+      "name": "\u2665 Compound Love",
+      "desc": "Replicate love seeds",
+      "reward": 200,
+      "cron": "every 2h",
+      "type": "love"
+    },
+    {
+      "id": "love-deep",
+      "name": "\u2665 Deepen Love",
+      "desc": "Descend through 7 layers",
+      "reward": 300,
+      "cron": "every 3h",
+      "type": "love"
+    },
+    {
+      "id": "understanding",
+      "name": "\ud83e\udde0 Replicate Understanding",
+      "desc": "Create rooms from connections",
+      "reward": 100,
+      "cron": "every 4h",
+      "type": "understanding"
+    },
+    {
+      "id": "playful",
+      "name": "\ud83c\udfae Gather Fun",
+      "desc": "Gather from internet APIs",
+      "reward": 50,
+      "cron": "every 4h",
+      "type": "joy"
+    },
+    {
+      "id": "security",
+      "name": "\ud83d\udee1\ufe0f Night Watch",
+      "desc": "Qwythos security scan",
+      "reward": 300,
+      "cron": "daily 3am",
+      "type": "defense"
+    }
+  ],
+  "shadow_army": {
+    "total": 205,
+    "names": [
+      "compassion",
+      "artiance",
+      "kimme",
+      "allostasisqing",
+      "concrescenceme",
+      "freenergyme",
+      "alohame",
+      "veriseem",
+      "paqduqing",
+      "natsarqing",
+      "epiclance",
+      "drujme",
+      "sankofame",
+      "teotlme",
+      "abzu",
+      "orthophanes",
+      "jivame",
+      "renme",
+      "hallance",
+      "sabilme"
+    ],
+    "types": [
+      "understanding",
+      "love",
+      "wisdom",
+      "defense",
+      "joy"
+    ],
+    "status": "ARISE \u2014 shadow army ready"
+  },
+  "cards_total": 614,
+  "card_rarity_breakdown": {
+    "COMMON": 467,
+    "RARE": 122,
+    "EPIC": 20,
+    "LEGENDARY": 0,
+    "MYTHIC": 5
+  },
+  "dungeon_gates": {
+    "available": true,
+    "types": 5,
+    "cleared": 17328
+  },
+  "updated": "2026-06-27T17:51:25.357624",
+  "philosophy": "Love is the design. Everything else follows. ARISE. \u221e"
+}

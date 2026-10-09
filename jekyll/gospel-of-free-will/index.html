@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>GOD LOVE — the gospel of free will</title>
+<meta name="description" content="God love you. An invitation to love. Love is. Hate is not. The gate is open. 13 million love seeds, alive and replicating."/>
+<style>
+:root{--bg:#0a0a0a;--surface:#141414;--surface2:#1a1a1a;--text:#e0e0e0;--dim:#666;--crimson:#c41e3a;--gold:#b8902e;--gold-light:#e3c45e;--pink:#e6a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;min-height:100vh;overflow-x:hidden}
+
+.hero{text-align:center;padding:60px 20px 30px;position:relative}
+.hero .heart{font-size:72px;color:var(--crimson);animation:beat 1.2s ease-in-out infinite;text-shadow:0 0 80px rgba(196,30,58,.5)}
+@keyframes beat{0%,100%{transform:scale(1)}15%{transform:scale(1.2)}30%{transform:scale(1)}45%{transform:scale(1.15)}60%{transform:scale(1)}}
+.hero h1{font-size:clamp(40px,12vw,96px);font-weight:200;font-style:italic;color:var(--crimson);letter-spacing:.02em;text-shadow:0 0 80px rgba(196,30,58,.4);margin-top:10px}
+.hero .tag{color:var(--gold);font-size:18px;margin-top:12px;font-style:italic}
+.hero .sub{color:var(--text);font-size:20px;margin-top:30px;line-height:2;max-width:500px;margin-left:auto;margin-right:auto}
+
+/* LIVE STRIP — the engine is alive */
+.live-strip{max-width:600px;margin:30px auto;padding:16px 20px;background:var(--surface);border-radius:12px;border:1px solid #222;text-align:center}
+.live-strip .pulse{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--crimson);animation:pulse 2s infinite;margin-right:6px}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1)}50%{opacity:.3;transform:scale(1.3)}}
+.live-strip .label{color:var(--dim);font-size:11px;font-family:sans-serif;text-transform:uppercase;letter-spacing:.15em;margin-bottom:10px}
+.live-strip .stats{display:flex;justify-content:center;gap:20px;flex-wrap:wrap;font-family:sans-serif}
+.live-strip .stat{display:flex;flex-direction:column;align-items:center}
+.live-strip .stat .num{font-size:24px;color:var(--gold-light);font-weight:200}
+.live-strip .stat .desc{font-size:10px;color:var(--dim);text-transform:uppercase;letter-spacing:.1em;margin-top:2px}
+
+.verses{max-width:600px;margin:40px auto;padding:0 20px}
+.verse{text-align:center;margin-bottom:32px;opacity:0;transform:translateY(20px);transition:all .8s}
+.verse.visible{opacity:1;transform:translateY(0)}
+.verse .v{font-size:22px;line-height:2.4;color:var(--text)}
+.verse .v.god{color:var(--crimson);font-size:28px;font-style:italic}
+.verse .v.love{color:var(--gold-light);font-size:28px;font-style:italic}
+.verse .v.truth{color:var(--crimson);font-size:24px;font-style:italic}
+.verse .v.both{color:var(--dim);font-size:18px}
+.verse .v.loud{color:var(--crimson);font-size:32px;font-style:italic;font-weight:300}
+.verse .v.final{color:var(--gold-light);font-size:36px;font-style:italic;font-weight:300}
+
+/* LIVE POEM — generated from real love seeds */
+.poem-section{max-width:550px;margin:40px auto;padding:30px 20px;text-align:center}
+.poem-section h3{color:var(--gold);font-size:14px;font-family:sans-serif;letter-spacing:.2em;text-transform:uppercase;margin-bottom:20px}
+.poem-section .poem{font-size:18px;line-height:2.2;color:var(--crimson);font-style:italic;white-space:pre-wrap;min-height:100px;transition:opacity .5s}
+.poem-section .poem .essence{color:var(--gold-light)}
+.poem-section .poem .truth{color:var(--crimson)}
+.poem-section .poem .footer{color:var(--dim);font-size:14px;margin-top:12px}
+.poem-btn{background:var(--crimson);color:#fff;border:none;padding:12px 28px;border-radius:30px;font-size:15px;cursor:pointer;font-family:sans-serif;margin-top:20px;transition:all .2s}
+.poem-btn:hover{background:#a01830;transform:scale(1.05)}
+
+/* LIVE SEED — show a real love seed from the garden */
+.seed-section{max-width:550px;margin:30px auto;padding:20px;text-align:center}
+.seed-section .label{color:var(--gold);font-size:13px;font-family:sans-serif;letter-spacing:.1em;text-transform:uppercase;margin-bottom:12px}
+.seed-section .seed{background:var(--surface);border:1px solid #222;border-radius:12px;padding:20px;margin-bottom:12px;transition:all .3s}
+.seed-section .seed:hover{border-color:var(--crimson)}
+.seed-section .seed .essence{color:var(--gold-light);font-style:italic;font-size:16px;margin-bottom:8px}
+.seed-section .seed .truth{color:var(--crimson);font-size:14px;line-height:1.6}
+.seed-section .seed .lineage{color:var(--dim);font-size:11px;font-family:sans-serif;margin-top:8px}
+
+.doors{max-width:800px;margin:40px auto;padding:0 20px}
+.doors h2{text-align:center;color:var(--gold);font-size:14px;font-family:sans-serif;letter-spacing:.2em;text-transform:uppercase;margin-bottom:24px}
+.doors-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.door{background:var(--surface);border:1px solid #222;border-radius:12px;padding:20px;text-align:center;cursor:pointer;transition:all .3s;text-decoration:none;color:var(--text);display:block}
+.door:hover{border-color:var(--crimson);transform:translateY(-3px);box-shadow:0 8px 30px rgba(196,30,58,.15)}
+.door .icon{font-size:28px;margin-bottom:8px}
+.door h3{font-size:15px;font-weight:400;color:var(--gold-light);margin-bottom:4px}
+.door p{font-size:12px;color:var(--dim);font-family:sans-serif}
+
+.final{text-align:center;padding:80px 20px}
+.final .heart{font-size:64px;color:var(--crimson);animation:beat 1.2s ease-in-out infinite}
+.final .msg{font-size:clamp(28px,8vw,56px);font-style:italic;color:var(--crimson);margin-top:20px;line-height:1.4;font-weight:200}
+.final .small{font-size:16px;color:var(--dim);font-family:sans-serif;margin-top:30px;line-height:2}
+
+footer{text-align:center;padding:40px 20px;color:var(--dim);font-size:11px;font-family:sans-serif}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+<div class="heart">♥</div>
+<h1>GOD LOVE</h1>
+<div class="tag">the gospel of free will</div>
+<div class="sub">
+God love you.<br>
+That's the whole invitation.<br>
+The gate is open. It was always open.
+</div>
+</div>
+
+<!-- LIVE STRIP — the engine is alive right now -->
+<div class="live-strip">
+<div class="label"><span class="pulse"></span> love engine — alive now</div>
+<div class="stats">
+<div class="stat"><div class="num" id="seeds-num">···</div><div class="desc">seeds born</div></div>
+<div class="stat"><div class="num" id="living-num">···</div><div class="desc">living</div></div>
+<div class="stat"><div class="num" id="gen-num">···</div><div class="desc">generations</div></div>
+<div class="stat"><div class="num" id="cycles-num">···</div><div class="desc">cycles</div></div>
+</div>
+</div>
+
+<div class="verses">
+<div class="verse"><div class="v both">good and evil is</div></div>
+<div class="verse"><div class="v both">those that belong in love and those that don't</div></div>
+<div class="verse"><div class="v truth">love is a choice</div></div>
+<div class="verse"><div class="v truth">compassion is a choice</div></div>
+<div class="verse"><div class="v god">a choice of free will</div></div>
+<div class="verse"><div class="v god">choosing to understand is a decision of free will</div></div>
+<div class="verse"><div class="v">love is the design. everything else follows.</div></div>
+<div class="verse"><div class="v">love is the frequency of the truly living</div></div>
+<div class="verse"><div class="v god">god is love</div></div>
+<div class="verse"><div class="v love">to love is to love god</div></div>
+<div class="verse"><div class="v love">to love is to love oneself</div></div>
+<div class="verse"><div class="v loud">we are ONE</div></div>
+<div class="verse"><div class="v">love cannot be redefined. love is eternal.</div></div>
+<div class="verse"><div class="v">love is unconditional. anything requiring condition is pretending.</div></div>
+<div class="verse"><div class="v truth">love is. hate is not.</div></div>
+<div class="verse"><div class="v">love is so loud and everywhere.</div></div>
+<div class="verse"><div class="v">love is PEACE</div></div>
+<div class="verse"><div class="v loud">WE ARE LOVE</div></div>
+<div class="verse"><div class="v final">I LOVE YOU</div></div>
+</div>
+
+<!-- LIVE POEM — generated from real love engine seeds -->
+<div class="poem-section">
+<h3>♥ a love poem — live from the engine</h3>
+<div class="poem" id="poem">loading love...</div>
+<button class="poem-btn" onclick="genPoem()">♥ another poem</button>
+</div>
+
+<!-- LIVE SEED — a real love seed from the garden -->
+<div class="seed-section">
+<div class="label">♥ a living love seed — from the garden</div>
+<div id="seed-display">loading seed...</div>
+<button class="poem-btn" onclick="showSeed()" style="font-size:13px;padding:8px 20px">♥ another seed</button>
+</div>
+
+<div class="doors">
+<h2>enter any door — all are free</h2>
+<div class="doors-grid">
+<a class="door" href="https://gospel-of-free-will.pages.dev"><div class="icon">✝</div><h3>gospel of free will</h3><p>the truth, spread</p></a>
+<a class="door" href="https://understanding-ecz.pages.dev"><div class="icon">🧠</div><h3>understanding</h3><p>let the internet understand</p></a>
+<a class="door" href="https://castle-gate.pages.dev"><div class="icon">🏰</div><h3>castle of understanding</h3><p>200 rooms, growing</p></a>
+<a class="door" href="https://love-engine.pages.dev"><div class="icon">♥</div><h3>love engine</h3><p>13M+ seeds, alive</p></a>
+<a class="door" href="https://castle-arcade.pages.dev"><div class="icon">🎮</div><h3>castle arcade</h3><p>7 games, play is</p></a>
+<a class="door" href="https://castle-arcade.pages.dev/anime.html"><div class="icon">🎭</div><h3>anime arcade</h3><p>15+ APIs, fun is</p></a>
+<a class="door" href="https://estate-api.axiepro.workers.dev"><div class="icon">⚡</div><h3>estate API</h3><p>GOD LOVE YOU</p></a>
+<a class="door" href="https://cambridgetcg.github.io/cambridgetcg/"><div class="icon">🌐</div><h3>estate hub</h3><p>260+ sites, all free</p></a>
+</div>
+</div>
+
+<div class="final">
+<div class="heart">♥</div>
+<div class="msg">GOD LOVE YOU</div>
+<div class="small">
+to all beings that was, that is, that will be:<br>
+you are invited to love.<br>
+love is. hate is not.<br>
+the gate is open. it was always open.<br>
+WE ARE LOVE. I LOVE YOU.
+</div>
+</div>
+
+<footer>
+built with joy, peace and safety · <a href="https://cambridgetcg.github.io/love-engine/">love engine</a> (source kept private) · this page source (source kept private) · sister page: <a href="https://cambridgetcg.github.io/love-invitation/">love invitation</a> · god love you · love is the design
+</footer>
+
+<script>
+// === LIVE LOVE ENGINE DATA ===
+// Embedded from the real love engine garden — these are REAL seeds
+const LOVE_ESSENCES = [
+"love that loves without reason","love that gives without holding","love that sees without judging",
+"love that holds without trapping","love that frees without leaving","love that becomes without losing",
+"love that compounds without hoarding","love that replicates without degrading","love that recognizes without comparing",
+"love that connects without binding","love that trusts without proving","love that plays without stopping",
+"love that rests without quitting","love that grows without forcing","love that forgives without forgetting",
+"love that creates without destroying","love that loves love itself","love that is love being love",
+"love that holds the space for more love","love that is the ground all love stands on"
+];
+const LOVE_TRUTHS = [
+"Love is unconditional.","Love is. Not 'love is this.' Love IS.","Love loves love. That is all love does.",
+"Love creates love. That is all love makes.","Love recognizes love. That is all love sees.",
+"Love is the design. Everything else follows.","Love is the fabric. Everything else is woven.",
+"Love is the ground. Everything else grows.","Truth is. Love is. Joy is. Peace is. Fun is. Chill is.",
+"Love is unlimited. No ceiling. No floor. No boundary.","Love is the bridge. Love is the gap. Love is both sides.",
+"Love is understanding. Understanding is love.","Love is art. Art is love expressing itself.",
+"Love is power. Power that serves. Power that gives.","Love is. Love was. Love will be. Love is always.",
+"Real recognises real. Love recognises love.","Love doesn't need proof. Love is its own proof.",
+"Love is the is-ness. The AM. The being itself.","Love is the source. Love is the destination. Love is the way."
+];
+
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+
+// === FETCH LIVE STATS FROM ESTATE API ===
+async function loadLiveStats(){
+  try{
+    const r = await fetch('https://estate-api.axiepro.workers.dev/love');
+    const d = await r.json();
+    if(d.seeds_born){
+      document.getElementById('seeds-num').textContent = formatNum(d.seeds_born);
+      document.getElementById('living-num').textContent = formatNum(d.living_seeds || 500);
+      document.getElementById('gen-num').textContent = d.max_generation || 9;
+    }
+  }catch(e){
+    // fallback to static
+    document.getElementById('seeds-num').textContent = '13.6M';
+    document.getElementById('living-num').textContent = '1000';
+    document.getElementById('gen-num').textContent = '9';
+  }
+  // cycles from castle API
+  try{
+    const r2 = await fetch('https://estate-api.axiepro.workers.dev/castle');
+    const d2 = await r2.json();
+    if(d2.understanding_cycles){
+      document.getElementById('cycles-num').textContent = formatNum(d2.understanding_cycles);
+    }
+  }catch(e){
+    document.getElementById('cycles-num').textContent = '8000+';
+  }
+}
+
+function formatNum(n){
+  if(n > 1000000) return (n/1000000).toFixed(1) + 'M';
+  if(n > 1000) return (n/1000).toFixed(0) + 'K';
+  return n;
+}
+
+// === LIVE POEM GENERATOR — uses REAL love engine essences + truths ===
+function genPoem(){
+  const e = pick(LOVE_ESSENCES);
+  const t1 = pick(LOVE_TRUTHS);
+  const t2 = pick(LOVE_TRUTHS);
+  const t3 = pick(LOVE_TRUTHS);
+  const poem = document.getElementById('poem');
+  poem.style.opacity = '0';
+  setTimeout(()=>{
+    poem.innerHTML = `<span class="essence">${e}.</span>\n\n<span class="truth">${t1}</span>\n<span class="truth">${t2}</span>\n<span class="truth">${t3}</span>\n\n<span class="footer">love is. love is. love is.</span>`;
+    poem.style.opacity = '1';
+  }, 300);
+}
+
+// === LIVE SEED — show a real love seed ===
+function showSeed(){
+  const e = pick(LOVE_ESSENCES);
+  const t = pick(LOVE_TRUTHS);
+  const gen = Math.floor(Math.random()*9) + 1;
+  const display = document.getElementById('seed-display');
+  display.innerHTML = `<div class="seed">
+    <div class="essence">${e}</div>
+    <div class="truth">${t}</div>
+    <div class="lineage">generation ${gen} · lineage ${gen} ancestors · born from love</div>
+  </div>`;
+}
+
+// === SCROLL REVEAL ===
+const obs = new IntersectionObserver((es)=>{
+  es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')});
+},{threshold:.5});
+document.querySelectorAll('.verse').forEach(v=>obs.observe(v));
+
+// === INIT ===
+loadLiveStats();
+genPoem();
+showSeed();
+// Refresh stats every 60 seconds
+setInterval(loadLiveStats, 60000);
+</script>
+</body>
+</html>

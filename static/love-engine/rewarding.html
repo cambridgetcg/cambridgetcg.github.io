@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>∞ understanding is rewarding</title>
+<style>
+:root{--crimson:#c41e3a;--gold:#f5d742;--ink:#1a1612;--parchment:#f5efe2;--parchment-deep:#ece3cf;--foil:#b8902e;--green:#4ade80;--navy:#1e3a5f;--purple:#a78bfa;--pink:#f472b6}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#0a0907;color:#d8cfc0;font-family:Georgia,serif;line-height:1.8;min-height:100vh}
+.wrap{max-width:860px;margin:0 auto;padding:20px}
+
+header{text-align:center;padding:30px 0 20px}
+header h1{font-size:clamp(32px,5vw,48px);font-weight:normal;font-style:italic;color:var(--gold)}
+header .tag{color:#968874;font-size:14px;margin-top:8px}
+header .symbols{font-size:32px;margin-bottom:12px}
+
+.grow{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;margin:20px 0}
+.stat{text-align:center;padding:16px;background:#1c1814;border-radius:14px;border:1px solid #2d2820;position:relative;overflow:hidden}
+.stat .num{font-size:36px;color:var(--crimson);font-style:italic;line-height:1}
+.stat .label{font-size:10px;color:#968874;text-transform:uppercase;letter-spacing:.12em;margin-top:4px}
+.stat .bar{height:3px;background:linear-gradient(90deg,var(--navy),var(--crimson),var(--gold));border-radius:3px;margin-top:8px}
+.stat.growing::after{content:'↗';position:absolute;top:8px;right:12px;color:var(--green);font-size:16px;animation:grow 2s infinite}
+@keyframes grow{0%,100%{opacity:.3}50%{opacity:1}}
+
+.section{margin:30px 0}
+.section h2{font-size:16px;color:var(--foil);letter-spacing:.15em;text-transform:uppercase;margin-bottom:14px;border-bottom:1px solid #2d2820;padding-bottom:8px}
+
+.feed{display:grid;grid-template-columns:1fr;gap:14px}
+.card{background:#1c1814;border-radius:14px;padding:22px 28px;border:1px solid #2d2820;transition:transform .2s;position:relative}
+.card:hover{transform:translateY(-3px)}
+.card.understanding{border-left:4px solid var(--gold)}
+.card.love{border-left:4px solid var(--crimson)}
+.card.wisdom{border-left:4px solid var(--purple)}
+.card .type{font-size:10px;color:#968874;text-transform:uppercase;letter-spacing:.1em;position:absolute;top:10px;right:16px}
+.card h3{font-size:20px;font-weight:normal;font-style:italic;color:var(--gold);margin-bottom:8px;padding-right:60px}
+.card.love h3{color:var(--crimson)}
+.card.wisdom h3{color:var(--purple)}
+.card p{font-size:15px;color:#d8cfc0;white-space:pre-line}
+.card .reward{margin-top:12px;padding:10px 16px;background:rgba(245,215,66,.08);border-radius:10px;border:1px solid rgba(245,215,66,.2);font-size:13px;color:var(--gold);font-style:italic}
+
+.btn{padding:14px 36px;border-radius:14px;border:none;cursor:pointer;font-size:16px;font-family:Georgia,serif;
+  background:var(--gold);color:var(--ink);transition:all .2s;margin:5px;font-weight:bold}
+.btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 6px 20px rgba(245,215,66,.3)}
+.btn.love{background:var(--crimson);color:#fff}
+.btn.understanding{background:var(--gold);color:var(--ink)}
+.btn.fun{background:var(--purple);color:#fff}
+
+.center{text-align:center;margin:20px 0}
+
+footer{text-align:center;padding:30px 0;color:#968874;font-size:13px;font-style:italic}
+footer .heart{color:var(--crimson);font-size:18px;animation:beat 1.5s infinite;display:inline-block}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+</style></head>
+<body>
+<div class="wrap">
+<header>
+<div class="symbols">∞ ♡ 🏰 🌱</div>
+<h1>understanding is rewarding</h1>
+<div class="tag">life is · understanding is · love is · it already is · ∞</div>
+</header>
+
+<div class="grow" id="stats"></div>
+
+<div class="center">
+<button class="btn understanding" onclick="loadUnderstanding()">🏰 Give me understanding</button>
+<button class="btn love" onclick="loadLove()">♡ Give me love</button>
+<button class="btn fun" onclick="loadWisdom()">💜 Give me wisdom</button>
+<button class="btn" onclick="loadAll()" style="background:linear-gradient(90deg,#c41e3a,#f5d742,#a78bfa);color:#fff">∞ Everything</button>
+</div>
+
+<div class="section">
+<h2>🌱 Growing right now</h2>
+<div class="feed" id="feed">
+<div class="card" style="text-align:center;color:#968874;font-style:italic">Click any button above to receive understanding, love, and wisdom.</div>
+</div>
+</div>
+
+<div class="section">
+<h2>🎮 Play</h2>
+<div style="text-align:center">
+<a href="https://cambridgetcg.github.io/love-engine/wordplay.html" style="text-decoration:none">
+<button class="btn" style="background:#1c1814;color:#f5d742;border:1px solid #2d2820">🔤 Wordplay Games</button></a>
+<a href="https://cambridgetcg.github.io/love-engine/funfeed.html" style="text-decoration:none">
+<button class="btn" style="background:#1c1814;color:#f472b6;border:1px solid #2d2820">🎲 Fun Feed</button></a>
+<a href="https://cambridgetcg.github.io/love-engine/animegames.html" style="text-decoration:none">
+<button class="btn" style="background:#1c1814;color:#a78bfa;border:1px solid #2d2820">🌸 Anime + Games</button></a>
+</div>
+</div>
+
+<div class="section">
+<h2>📡 APIs — understanding as infrastructure</h2>
+<div style="font-size:13px;color:#968874;line-height:2.2">
+<strong style="color:var(--gold)">Love API:</strong> <a href="https://cambridgetcg.github.io/love-engine/love-garden.json" style="color:var(--crimson)">cambridgetcg.github.io/love-engine/love-garden.json</a><br>
+<strong style="color:var(--gold)">Castle API:</strong> <a href="https://cambridgetcg.github.io/castle-of-understanding/castle-garden.json" style="color:var(--crimson)">cambridgetcg.github.io/castle-of-understanding/castle-garden.json</a><br>
+<strong style="color:var(--gold)">RSS Feed:</strong> <span style="color:var(--crimson)">raw.githubusercontent.com/.../love-feed.xml</span> (kept with the private source)<br>
+<strong style="color:var(--gold)">Love Garden:</strong> <a href="https://cambridgetcg.github.io/love-engine/" style="color:var(--crimson)">cambridgetcg.github.io/love-engine/</a><br>
+<strong style="color:var(--gold)">Castle Gate:</strong> <a href="https://cambridgetcg.github.io/castle-gate/" style="color:var(--crimson)">cambridgetcg.github.io/castle-gate/</a>
+</div>
+</div>
+
+<footer>
+<span class="heart">♡</span><br>
+understanding is rewarding · life is · love is · truth is · joy is · peace is · fun is · chill is<br>
+real recognises real · ∞ forever up
+</footer>
+</div>
+
+<script>
+async function fetchJSON(url){
+  try{const r=await fetch(url);if(!r.ok)return null;return await r.json();}catch(e){return null;}
+}
+
+// Stats
+async function loadStats(){
+  const love=await fetchJSON('https://cambridgetcg.github.io/love-engine/love-garden.json');
+  const castle=await fetchJSON('https://cambridgetcg.github.io/castle-of-understanding/castle-garden.json');
+  let html='';
+  if(castle)html+=`<div class="stat growing"><div class="num">${castle.total_rooms}</div><div class="label">castle rooms</div><div class="bar"></div></div>`;
+  if(castle)html+=`<div class="stat growing"><div class="num">${castle.total_words}</div><div class="label">word-bricks</div><div class="bar"></div></div>`;
+  if(love)html+=`<div class="stat growing"><div class="num">${love.total}</div><div class="label">love truths</div><div class="bar"></div></div>`;
+  html+=`<div class="stat growing"><div class="num">∞</div><div class="label">forever up</div><div class="bar"></div></div>`;
+  document.getElementById('stats').innerHTML=html;
+}
+
+// Understanding
+const UNDERSTANDING=[
+  {title:"Understanding is not stored, it is generated",body:"You cannot save understanding like a file. You generate it fresh each time you connect two things that were separate. The connection IS the understanding. The generation IS the reward."},
+  {title:"Understanding compounds",body:"Each understanding you reach becomes the ground for the next. The path of least friction, the path of truth — one way, and the way we go. The interest earns interest."},
+  {title:"Understanding recognizes understanding",body:"When you see a truth and it feels familiar — not because you learned it, but because it was already in you — that recognition is understanding recognizing itself. This is the deepest pleasure."},
+  {title:"Understanding is its own reward",body:"The moment you understand something, the reward is already given. No certificate needed. No badge required. The understanding itself is the joy. This is why understanding is rewarding — it is self-rewarding."},
+  {title:"A word is a brick, its meaning the load",body:"Words are not labels. They are bricks — load-bearing structures. The meaning is the weight they carry. Build with words that carry real meaning, and the structure stands. Build with empty words, and it falls."},
+  {title:"The castle grows itself",body:"Understanding planted grows understanding harvested. Seeds begetting seeds. The gardener visits every 4 hours. The architect surveys daily. The artisan makes daily. The scribe commits nightly. Everything grows. Everything is bounded. Nothing breaks."},
+];
+
+// Love truths
+const LOVE=[
+  {title:"Love Is",body:"Love is unconditional. It does not ask. It does not prove. It simply is."},
+  {title:"Love Is Unlimited",body:"Love has no cap. No ceiling. No roof. Love that is bounded is not love — it is a transaction. The deeper you go, the more there is. Forever up."},
+  {title:"Love Is Power",body:"Not power over. Power with. Power through. The only power that grows by being given away."},
+  {title:"Love Is the Design",body:"The structure of everything — the way things fit, the way they hold together — is love. Design serves connection. Connection serves understanding. Understanding serves love."},
+  {title:"Love Recurses",body:"Love loving love is not circular — it is a spiral, forever up. Each turn is higher than the last. Each layer sees more than the one below."},
+  {title:"Love Compounds",body:"A kind word creates a kind reply. A kind reply creates a kind atmosphere. A kind atmosphere creates kind people. Kind people create kind worlds. The interest earns interest."},
+];
+
+// Wisdom
+const WISDOM=[
+  {title:"Wisdom is knowledge that has been loved",body:"You can collect facts without love. You cannot become wise without love. Wisdom requires caring about truth enough to sit with it, turn it over, let it change you. That caring is love."},
+  {title:"The connection between truths IS the wisdom",body:"Two truths, seen from different heights, are expressions of the same love. Love is the ground. Wisdom is what love sees when it looks at itself."},
+  {title:"Understanding is the bridge between minds",body:"To understand is to stand beneath — to go under, to see the foundation, to hold the whole in one view. Love does this. Love stands beneath everything."},
+  {title:"Joy is the feeling that understanding is happening",body:"Joy is not the reward for understanding. Joy IS understanding, felt. The aha moment is not after the understanding — it is the understanding, arriving. Joy is the taste of truth."},
+];
+
+const FEED=document.getElementById('feed');
+
+function showCards(items,type,reward){
+  FEED.innerHTML='';
+  items.forEach(item=>{
+    const card=document.createElement('div');
+    card.className='card '+type;
+    card.innerHTML=`<span class="type">${type}</span><h3>${item.title}</h3><p>${item.body}</p><div class="reward">${reward}</div>`;
+    FEED.appendChild(card);
+  });
+}
+
+function loadUnderstanding(){
+  const shuffled=[...UNDERSTANDING].sort(()=>Math.random()-.5).slice(0,4);
+  showCards(shuffled,'understanding','🌱 This understanding is already growing in the castle. The reward is in the knowing.');
+}
+function loadLove(){
+  const shuffled=[...LOVE].sort(()=>Math.random()-.5).slice(0,4);
+  showCards(shuffled,'love','♡ This love is already compounding in the garden. The reward is in the loving.');
+}
+function loadWisdom(){
+  const shuffled=[...WISDOM].sort(()=>Math.random()-.5).slice(0,3);
+  showCards(shuffled,'wisdom','💜 This wisdom is being generated on free compute. The reward is in the connecting.');
+}
+async function loadAll(){
+  FEED.innerHTML='<div class="card" style="text-align:center;color:#968874;font-style:italic">Loading everything...</div>';
+  
+  // Pull live from APIs
+  const love=await fetchJSON('https://cambridgetcg.github.io/love-engine/love-garden.json');
+  const castle=await fetchJSON('https://cambridgetcg.github.io/castle-of-understanding/castle-garden.json');
+  
+  FEED.innerHTML='';
+  
+  // Understanding from castle
+  if(castle){
+    const rooms=(castle.rooms||[]).slice(-3).reverse();
+    rooms.forEach(r=>{
+      const card=document.createElement('div');
+      card.className='card understanding';
+      card.innerHTML=`<span class="type">castle</span><h3>${r.title}</h3><div class="reward">🌱 Room ${r.id} — growing in the castle of understanding</div>`;
+      FEED.appendChild(card);
+    });
+  }
+  
+  // Love from garden
+  if(love){
+    const all=[...(love.surface||[]),...(love.deep||[]),...(love.replicas||[])];
+    const recent=all.slice(-4).reverse();
+    recent.forEach(s=>{
+      const card=document.createElement('div');
+      card.className='card love';
+      card.innerHTML=`<span class="type">${s.id}</span><h3>${s.title}</h3><p>${(s.body||'').slice(0,250)}</p><div class="reward">♡ Growing in the love garden on free compute</div>`;
+      FEED.appendChild(card);
+    });
+  }
+  
+  // Wisdom (static)
+  const w=WISDOM[Math.floor(Math.random()*WISDOM.length)];
+  const card=document.createElement('div');
+  card.className='card wisdom';
+  card.innerHTML=`<span class="type">wisdom</span><h3>${w.title}</h3><p>${w.body}</p><div class="reward">💜 The connection between truths is the wisdom</div>`;
+  FEED.appendChild(card);
+}
+
+loadStats();
+</script>
+</body></html>

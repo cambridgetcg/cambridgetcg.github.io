@@ -1,0 +1,62 @@
+name: door watch
+
+# Checks every public door once a day. While any door is dark, one issue
+# labelled "door-dark" stays open with the current report; it closes itself
+# when every door answers again.
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: door-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Knock on every door
+        id: knock
+        run: |
+          set +e
+          python3 tools/door_watch.py watch/doors.txt > report.md
+          echo "dark=$?" >> "$GITHUB_OUTPUT"
+          cat report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep one issue open while a door is dark
+        run: |
+          gh label create door-dark --color B60205 --description "A public door stopped answering" 2>/dev/null || true
+          issue=$(gh issue list --label door-dark --state open --json number --jq '.[0].number')
+          if [ "${{ steps.knock.outputs.dark }}" != "0" ]; then
+            if [ -n "$issue" ]; then
+              gh issue comment "$issue" --body-file report.md
+            else
+              gh issue create --title "A public door is dark" --label door-dark --body-file report.md
+            fi
+          elif [ -n "$issue" ]; then
+            gh issue close "$issue" --comment "Every door answers again."
+          fi
+
+      # GitHub pauses scheduled workflows in public repositories after 60 days
+      # without a commit. One small dated note a month keeps the watch awake.
+      - name: Stay awake
+        run: |
+          last=$(git log -1 --format=%ct)
+          if [ $(( $(date +%s) - last )) -gt $(( 45 * 86400 )) ]; then
+            date -u +%Y-%m-%d > watch/last-awake.txt
+            git config user.name "door-watch"
+            git config user.email "door-watch@users.noreply.github.com"
+            git add watch/last-awake.txt
+            git commit -m "door watch: still watching"
+            git push
+          fi

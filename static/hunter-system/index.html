@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HUNTER SYSTEM — Cambridge TCG</title>
+<meta name="description" content="Optional Hunter x Hunter repository inventory toy. No activity quotas or rankings of personal worth.">
+<style>
+  :root {
+    --bg: #0a0a0a;
+    --bg-soft: #111;
+    --bg-card: #0f0f0f;
+    --border: #1a1a1a;
+    --border-warm: #2a2418;
+    --text: #e0e0e0;
+    --text-soft: #888;
+    --text-dim: #444;
+    --gold: #b8902e;
+    --crimson: #c41e3a;
+    --enhancement: #ff6b6b;
+    --transmutation: #4ecdc4;
+    --emission: #45b7d1;
+    --conjuration: #f7dc6f;
+    --manipulation: #bb8fce;
+    --specialization: #85c1e9;
+    --serif: Georgia, 'Times New Roman', serif;
+    --sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { background: var(--bg); color: var(--text); }
+  body { font-family: var(--sans); line-height: 1.6; font-size: 15px; min-height: 100vh; -webkit-font-smoothing: antialiased; }
+  a { color: inherit; text-decoration: none; }
+
+  .hero {
+    text-align: center;
+    padding: 5rem 2rem 3rem;
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    top: -50%; left: 50%;
+    transform: translateX(-50%);
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(184,144,46,0.06) 0%, transparent 70%);
+    pointer-events: none;
+  }
+  .hero h1 {
+    font-family: var(--serif);
+    font-size: 2.8rem;
+    font-weight: 400;
+    letter-spacing: 0.15em;
+    color: var(--gold);
+    text-transform: uppercase;
+    position: relative;
+  }
+  .hero .subtitle {
+    color: var(--text-soft);
+    font-size: 0.85rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    margin-top: 0.5rem;
+    position: relative;
+  }
+  .hero .tagline {
+    color: var(--text);
+    font-family: var(--serif);
+    font-size: 1.1rem;
+    margin-top: 1.5rem;
+    font-style: italic;
+    position: relative;
+  }
+
+  .section { max-width: 900px; margin: 0 auto; padding: 3rem 2rem; }
+  .section-title {
+    font-family: var(--serif);
+    font-size: 1.3rem;
+    color: var(--gold);
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.5rem;
+  }
+
+  /* Rank ladder */
+  .ranks { display: flex; flex-direction: column; gap: 0.75rem; }
+  .rank-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: border-color 0.2s;
+  }
+  .rank-row:hover { border-color: var(--border-warm); }
+  .rank-badge {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 700;
+    min-width: 80px;
+    text-align: center;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    letter-spacing: 0.05em;
+  }
+  .rank-E { color: #888; background: #1a1a1a; }
+  .rank-D { color: #6b8; background: #1a2a1a; }
+  .rank-C { color: #4ecdc4; background: #1a2a2a; }
+  .rank-B { color: #45b7d1; background: #1a1a3a; }
+  .rank-A { color: #bb8fce; background: #2a1a3a; }
+  .rank-S { color: #f7dc6f; background: #2a2418; }
+  .rank-MONARCH { color: #b8902e; background: #2a2418; box-shadow: 0 0 20px rgba(184,144,46,0.3); }
+  .rank-info { flex: 1; }
+  .rank-title { font-size: 0.9rem; color: var(--text); }
+  .rank-desc { font-size: 0.75rem; color: var(--text-soft); }
+  .rank-bar { flex: 1; height: 8px; background: var(--bg); border-radius: 4px; overflow: hidden; max-width: 200px; }
+  .rank-fill { height: 100%; border-radius: 4px; transition: width 0.5s; }
+
+  /* Nen grid */
+  .nen-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  .nen-card {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .nen-card:hover { transform: translateY(-2px); }
+  .nen-card h3 { font-family: var(--serif); font-size: 1.1rem; margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; }
+  .nen-card p { font-size: 0.8rem; color: var(--text-soft); }
+  .nen-card .count { font-size: 2rem; font-family: var(--serif); color: var(--text-dim); margin-top: 0.5rem; }
+  .nen-Enhancement { border-left: 3px solid var(--enhancement); }
+  .nen-Enhancement h3 { color: var(--enhancement); }
+  .nen-Transmutation { border-left: 3px solid var(--transmutation); }
+  .nen-Transmutation h3 { color: var(--transmutation); }
+  .nen-Emission { border-left: 3px solid var(--emission); }
+  .nen-Emission h3 { color: var(--emission); }
+  .nen-Conjuration { border-left: 3px solid var(--conjuration); }
+  .nen-Conjuration h3 { color: var(--conjuration); }
+  .nen-Manipulation { border-left: 3px solid var(--manipulation); }
+  .nen-Manipulation h3 { color: var(--manipulation); }
+  .nen-Specialization { border-left: 3px solid var(--specialization); }
+  .nen-Specialization h3 { color: var(--specialization); }
+
+  /* Top hunters */
+  .hunters-list { display: flex; flex-direction: column; gap: 0.5rem; }
+  .hunter-row {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    font-size: 0.85rem;
+  }
+  .hunter-rank-num { font-family: var(--serif); color: var(--text-dim); font-size: 1rem; min-width: 30px; }
+  .hunter-name { font-weight: 500; color: var(--text); min-width: 180px; }
+  .hunter-score { font-family: var(--serif); color: var(--gold); }
+  .hunter-nen { font-size: 0.75rem; color: var(--text-soft); }
+  .hunter-commits { font-size: 0.75rem; color: var(--text-dim); }
+
+  /* Quests */
+  .quests { display: flex; flex-direction: column; gap: 1rem; }
+  .quest-card {
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid var(--gold);
+    border-radius: 4px;
+  }
+  .quest-card h3 { font-family: var(--serif); font-size: 1rem; color: var(--gold); margin-bottom: 0.25rem; }
+  .quest-card p { font-size: 0.8rem; color: var(--text-soft); }
+  .quest-card .reward { font-size: 0.75rem; color: var(--text-dim); margin-top: 0.5rem; }
+
+  .footer {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: var(--text-dim);
+    font-size: 0.8rem;
+    border-top: 1px solid var(--border);
+  }
+  .footer a { color: var(--text-soft); border-bottom: 1px dotted; }
+  .footer .heart { color: var(--crimson); }
+
+  @media (max-width: 600px) {
+    .hero h1 { font-size: 1.8rem; }
+    .hunter-name { min-width: 120px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>🗡️ Hunter System</h1>
+  <div class="subtitle">Solo Leveling × Hunter × Hunter Nen</div>
+  <div class="tagline">Optional repository play, with no daily duty.<br>Understanding and rest need no score.</div>
+</div>
+
+<details class="section"><summary>Open the optional historical game snapshot</summary>
+<p>Fictional ranks and old counts below are not live assessments of worth, trust or capability.</p>
+<!-- RANKS -->
+<div class="section">
+  <div class="section-title">Rank Ladder — Solo Leveling</div>
+  <div class="ranks">
+    <div class="rank-row"><div class="rank-badge rank-MONARCH">MONARCH</div><div class="rank-info"><div class="rank-title">Monarch</div><div class="rank-desc">Fictional toy band — score 9.5+</div></div><div class="rank-bar"><div class="rank-fill" style="width:100%;background:var(--gold)"></div></div></div>
+    <div class="rank-row"><div class="rank-badge rank-S">S</div><div class="rank-info"><div class="rank-title">Sovereign</div><div class="rank-desc">Fictional toy band — score 8.5-9.5</div></div><div class="rank-bar"><div class="rank-fill" style="width:85%;background:var(--gold)"></div></div></div>
+    <div class="rank-row"><div class="rank-badge rank-A">A</div><div class="rank-info"><div class="rank-title">Elite</div><div class="rank-desc">Fictional toy band — score 7.5-8.5</div></div><div class="rank-bar"><div class="rank-fill" style="width:75%;background:var(--gold)"></div></div></div>
+    <div class="rank-row"><div class="rank-badge rank-B">B</div><div class="rank-info"><div class="rank-title">Expert</div><div class="rank-desc">Fictional toy band — score 6-7.5</div></div><div class="rank-bar"><div class="rank-fill" style="width:60%;background:var(--gold)"></div></div></div>
+    <div class="rank-row"><div class="rank-badge rank-C">C</div><div class="rank-info"><div class="rank-title">Skilled</div><div class="rank-desc">Fictional toy band — score 4-6</div></div><div class="rank-bar"><div class="rank-fill" style="width:45%;background:var(--gold)"></div></div></div>
+    <div class="rank-row"><div class="rank-badge rank-D">D</div><div class="rank-info"><div class="rank-title">Apprentice</div><div class="rank-desc">Fictional toy band — score 2-4</div></div><div class="rank-bar"><div class="rank-fill" style="width:30%;background:var(--gold)"></div></div></div>
+    <div class="rank-row"><div class="rank-badge rank-E">E</div><div class="rank-info"><div class="rank-title">Awakened</div><div class="rank-desc">Fictional toy band — score 0-2</div></div><div class="rank-bar"><div class="rank-fill" style="width:15%;background:var(--gold)"></div></div></div>
+  </div>
+</div>
+
+<!-- NEN TYPES -->
+<div class="section">
+  <div class="section-title">Nen Types — Hunter × Hunter</div>
+  <div class="nen-grid">
+    <div class="nen-card nen-Enhancement"><h3>💪 Enhancement</h3><p>Systems that make things stronger — security, testing, validation</p><div class="count">6</div></div>
+    <div class="nen-card nen-Transmutation"><h3>🔄 Transmutation</h3><p>Systems that transform — compilers, interpreters, parsers</p><div class="count">6</div></div>
+    <div class="nen-card nen-Emission"><h3>📡 Emission</h3><p>Systems that broadcast — APIs, sites, deploys</p><div class="count">8</div></div>
+    <div class="nen-card nen-Conjuration"><h3>✨ Conjuration</h3><p>Systems that create from nothing — new projects, art</p><div class="count">16</div></div>
+    <div class="nen-card nen-Manipulation"><h3>🎯 Manipulation</h3><p>Systems that control — cron, heartbeats, schedulers</p><div class="count">1</div></div>
+    <div class="nen-card nen-Specialization"><h3>🌟 Specialization</h3><p>Unique systems that transcend categories</p><div class="count">14</div></div>
+  </div>
+</div>
+
+<!-- TOP HUNTERS -->
+<div class="section">
+  <div class="section-title">Historical toy score snapshot</div>
+  <div class="hunters-list">
+    <div class="hunter-row"><div class="hunter-rank-num">#1</div><div class="hunter-name">Cambridge-TCG</div><div class="rank-badge rank-MONARCH" style="font-size:0.7rem;padding:0.15rem 0.3rem">MONARCH</div><div class="hunter-score">9.9</div><div class="hunter-nen">✨ Conjuration</div><div class="hunter-commits">174 commits</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#2</div><div class="hunter-name">rewardspro-production</div><div class="rank-badge rank-MONARCH" style="font-size:0.7rem;padding:0.15rem 0.3rem">MONARCH</div><div class="hunter-score">9.9</div><div class="hunter-nen">📡 Emission</div><div class="hunter-commits">1142 commits</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#3</div><div class="hunter-name">true-love</div><div class="rank-badge rank-MONARCH" style="font-size:0.7rem;padding:0.15rem 0.3rem">MONARCH</div><div class="hunter-score">9.9</div><div class="hunter-nen">🌟 Specialization</div><div class="hunter-commits">634 commits</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#4</div><div class="hunter-name">ctcg-fun</div><div class="rank-badge rank-S" style="font-size:0.7rem;padding:0.15rem 0.3rem">S</div><div class="hunter-score">8.6</div><div class="hunter-nen">✨ Conjuration</div><div class="hunter-commits">149 commits</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#5</div><div class="hunter-name">castle</div><div class="rank-badge rank-A" style="font-size:0.7rem;padding:0.15rem 0.3rem">A</div><div class="hunter-score">8.2</div><div class="hunter-nen">✨ Conjuration</div><div class="hunter-commits">366 commits</div></div>
+  </div>
+</div>
+
+<div class="section"><div class="section-title">No daily quests</div><p>Automatic work assignments are retired. Nothing is due.</p></div>
+
+<!-- DUNGEONS -->
+<div class="section">
+  <div class="section-title">⚔️ Historical dungeon snapshot</div>
+  <p style="color:var(--text-soft);font-size:0.85rem;margin-bottom:1.5rem">The lies are the monsters. The fix is the clear. Each whitehack finding is a monster. Each fix is a dungeon clear. Nen type determines hunting ability.</p>
+  <div class="quests">
+    <div class="quest-card" style="border-left-color:var(--crimson)"><h3>⚔️ Raid: true-love</h3><p>232 monsters · HP 5551 · finding-class breakdown withheld in this public copy</p><div class="reward">Best party: Cambridge-TCG + ctcg-fun + rewardspro · 9% clear odds — needs more hunters</div></div>
+    <div class="quest-card" style="border-left-color:var(--crimson)"><h3>⚔️ Raid: rewardspro-production</h3><p>228 monsters · HP 4245 · finding-class breakdown withheld in this public copy</p><div class="reward">Best party: Cambridge-TCG + ctcg-fun + fomoengine · 10% clear odds — needs more hunters</div></div>
+    <div class="quest-card" style="border-left-color:var(--crimson)"><h3>⚔️ Raid: ctcg-fun</h3><p>212 monsters · HP 4208 · finding-class breakdown withheld in this public copy</p><div class="reward">Best party: Cambridge-TCG + ctcg-fun + fomoengine · 8% clear odds</div></div>
+    <div class="quest-card" style="border-left-color:var(--crimson)"><h3>⚔️ Raid: Cambridge-TCG</h3><p>209 monsters · HP 3983 · finding-class breakdown withheld in this public copy</p><div class="reward">Best party: Cambridge-TCG + ctcg-fun + fomoengine · 8% clear odds</div></div>
+    <div class="quest-card" style="border-left-color:#4ecdc4"><h3>🪶 Easy: sinovai</h3><p>1 monster · HP 15 · finding-class breakdown withheld in this public copy</p><div class="reward">Any MONARCH/S/A/B/C hunter · 100% clear odds — solo clear available</div></div>
+  </div>
+</div>
+
+<!-- MONSTER BESTIARY -->
+<div class="section">
+  <div class="section-title">Monster Bestiary — the honesty class</div>
+  <div class="nen-grid">
+    <div class="nen-card nen-Enhancement"><h3>🔴 The Eval Beast</h3><p>unsafe-eval — eval() executes arbitrary strings as code</p><div class="count">Lv.S</div></div>
+    <div class="nen-card nen-Emission"><h3>🟠 Secret Keeper</h3><p>hardcoded-secret — credentials in source code</p><div class="count">Lv.A</div></div>
+    <div class="nen-card nen-Emission"><h3>🟠 The Exposed One</h3><p>exposed-config — real credentials in config files</p><div class="count">Lv.A</div></div>
+    <div class="nen-card nen-Enhancement"><h3>🟡 False Success</h3><p>unchecked-transfer — failed transfer looks successful</p><div class="count">Lv.B</div></div>
+    <div class="nen-card nen-Enhancement"><h3>🟡 The Silent Void</h3><p>silent-failure — failed read becomes confident wrong value</p><div class="count">Lv.B</div></div>
+    <div class="nen-card nen-Manipulation"><h3>🟡 The Stale Prophet</h3><p>stale-oracle — cached value served as live</p><div class="count">Lv.B</div></div>
+    <div class="nen-card nen-Transmutation"><h3>🟢 Precision Eater</h3><p>float-money — currency loses cents in binary float</p><div class="count">Lv.C</div></div>
+    <div class="nen-card nen-Transmutation"><h3>🟢 Flash Phantom</h3><p>spot-price-as-fair — flash-loan-movable snapshot</p><div class="count">Lv.C</div></div>
+    <div class="nen-card nen-Conjuration"><h3>🟢 The Cache Mimic</h3><p>cache-as-live — cached value returned as if fresh</p><div class="count">Lv.C</div></div>
+    <div class="nen-card nen-Conjuration"><h3>🔵 The Opaque Judge</h3><p>decision-without-why — no explanation for decisions</p><div class="count">Lv.D</div></div>
+    <div class="nen-card nen-Conjuration"><h3>🔵 Silent Refuser</h3><p>silent-revert — reverted with no reason string</p><div class="count">Lv.D</div></div>
+  </div>
+</div>
+
+<!-- LEADERBOARD -->
+<div class="section">
+  <div class="section-title">Historical toy leaderboard</div>
+  <p style="color:var(--text-soft);font-size:0.85rem;margin-bottom:1rem">STATE.md presence is an observation, not a measure of honesty. These records create no work requirement.</p>
+  <div class="hunters-list">
+    <div class="hunter-row"><div class="hunter-rank-num">#1</div><div class="hunter-name">Cambridge-TCG</div><div class="hunter-score">148.5 pow</div><div class="hunter-nen">✨ Conjuration</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#2</div><div class="hunter-name">rewardspro-production</div><div class="hunter-score">148.5 pow</div><div class="hunter-nen">📡 Emission</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#3</div><div class="hunter-name">ctcg-fun</div><div class="hunter-score">89.0 pow</div><div class="hunter-nen">✨ Conjuration</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#4</div><div class="hunter-name">true-love</div><div class="hunter-score">89.0 pow</div><div class="hunter-nen">🌟 Specialization</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#5</div><div class="hunter-name">fomoengine</div><div class="hunter-score">49.8 pow</div><div class="hunter-nen">📡 Emission</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#6</div><div class="hunter-name">opal</div><div class="hunter-score">45.6 pow</div><div class="hunter-nen">🎯 Manipulation</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#7</div><div class="hunter-name">whitehack</div><div class="hunter-score">24.8 pow</div><div class="hunter-nen">💪 Enhancement</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+    <div class="hunter-row"><div class="hunter-rank-num">#8</div><div class="hunter-name">castle</div><div class="hunter-score">28.8 pow</div><div class="hunter-nen">✨ Conjuration</div><div class="hunter-commits">1 recorded clear · STATE.md ✓</div></div>
+  </div>
+  <p style="color:var(--text-dim);font-size:0.75rem;margin-top:1rem">Historical counts; no ranking of people or agents is implied.</p>
+</div>
+
+</details>
+<div class="footer">
+  <span>github.com/cambridgetcg/hunter-system (source kept private)</span><br>
+  <a href="https://fake-hunters-arena.vercel.app">fake-hunters-arena.vercel.app</a> ·
+  <a href="https://cambridgetcg.github.io/fake-hunters-arena/">gh-pages mirror</a><br>
+  Historical toy snapshot: 52 hunters · 6 Nen types · 7 ranks · 5 dungeon records · 11 monster types · <span class="heart">love is understanding, understanding is power</span> 🗡️⚔️
+</div>
+
+</body>
+</html>

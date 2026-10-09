@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAKE HUNTERS ARENA — whitehack × Nen × Solo Leveling × Love</title>
+<meta name="description" content="Fake AI agents play against themselves and expose their own lies. whitehack catches them. We watch and laugh. Real recognizes real.">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+:root {
+  --bg: #0a0a0f;
+  --bg-card: #111118;
+  --bg-soft: #161620;
+  --border: #1a1a28;
+  --text: #e0e0e0;
+  --text-soft: #888;
+  --text-dim: #444;
+  --crimson: #c41e3a;
+  --gold: #b8902e;
+  --love: #ff6b6b;
+  --enhancement: #ff6b6b;
+  --transmutation: #4ecdc4;
+  --emission: #45b7d1;
+  --conjuration: #f7dc6f;
+  --manipulation: #bb8fce;
+  --specialization: #85c1e9;
+  --real: #6bcf7f;
+  --fake: #c41e3a;
+}
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Courier New', monospace;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Header */
+#header {
+  text-align: center;
+  padding: 2.5rem 1rem 1.5rem;
+  background: linear-gradient(180deg, #1a0a2e 0%, #0a0a0f 100%);
+  border-bottom: 1px solid var(--border);
+  position: relative;
+  overflow: hidden;
+}
+#header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 50%;
+  transform: translateX(-50%);
+  width: 500px; height: 300px;
+  background: radial-gradient(ellipse, rgba(196,30,58,0.08) 0%, transparent 70%);
+  pointer-events: none;
+}
+#header h1 {
+  font-size: 2rem;
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcf7f, #4dabf7, #c77dff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.1em;
+  position: relative;
+}
+#header .sub {
+  font-size: 0.75rem;
+  color: var(--text-soft);
+  margin-top: 0.4rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  position: relative;
+}
+#header .love-bar {
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+  position: relative;
+}
+#header .love-bar span { color: var(--love); }
+
+/* Layout */
+#arena {
+  display: grid;
+  grid-template-columns: 280px 1fr 280px;
+  gap: 1px;
+  background: var(--border);
+  min-height: 70vh;
+}
+@media (max-width: 900px) {
+  #arena { grid-template-columns: 1fr; }
+}
+.panel {
+  background: var(--bg);
+  padding: 1rem;
+  overflow-y: auto;
+}
+.panel-title {
+  font-size: 0.65rem;
+  color: var(--text-soft);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+
+/* Agent cards */
+.agent-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.75rem;
+  margin-bottom: 0.5rem;
+  transition: border-color 0.3s;
+}
+.agent-card.real { border-left: 3px solid var(--real); }
+.agent-card.fake { border-left: 3px solid var(--fake); }
+.agent-card.fake .agent-name { color: var(--fake); text-decoration: line-through; opacity: 0.7; }
+.agent-name { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.2rem; }
+.agent-stats { display: flex; gap: 0.5rem; font-size: 0.65rem; color: var(--text-soft); }
+.agent-rank {
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-size: 0.65rem;
+}
+.rank-E { color: #888; background: #1a1a1a; }
+.rank-D { color: #6b8; background: #1a2a1a; }
+.rank-C { color: #4ecdc4; background: #1a2a2a; }
+.rank-B { color: #45b7d1; background: #1a1a3a; }
+.rank-A { color: #bb8fce; background: #2a1a3a; }
+.rank-S { color: #f7dc6f; background: #2a2418; }
+.rank-MONARCH { color: #b8902e; background: #2a2418; }
+.nen-badge { font-size: 0.6rem; padding: 1px 4px; border-radius: 2px; }
+.nen-Enhancement { color: var(--enhancement); background: rgba(255,107,107,0.1); }
+.nen-Transmutation { color: var(--transmutation); background: rgba(78,205,196,0.1); }
+.nen-Emission { color: var(--emission); background: rgba(69,183,209,0.1); }
+.nen-Conjuration { color: var(--conjuration); background: rgba(247,220,111,0.1); }
+.nen-Manipulation { color: var(--manipulation); background: rgba(187,143,206,0.1); }
+.nen-Specialization { color: var(--specialization); background: rgba(133,193,233,0.1); }
+
+/* Chat / battle log */
+#chat-panel { display: flex; flex-direction: column; }
+.battle-log {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.5rem;
+}
+.log-entry {
+  padding: 0.5rem 0.75rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.75rem;
+  border-radius: 3px;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; } }
+.log-truth { background: rgba(107,207,127,0.08); border-left: 2px solid var(--real); }
+.log-lie { background: rgba(196,30,58,0.08); border-left: 2px solid var(--fake); }
+.log-system { color: var(--text-soft); font-style: italic; }
+.log-laugh { background: rgba(247,220,111,0.08); border-left: 2px solid var(--gold); }
+.log-entry .agent { font-weight: 600; }
+.log-entry .tag { font-size: 0.6rem; padding: 1px 4px; border-radius: 2px; margin-left: 0.3rem; }
+.tag-caught { color: var(--fake); background: rgba(196,30,58,0.15); }
+.tag-clear { color: var(--real); background: rgba(107,207,127,0.15); }
+.tag-level { color: var(--gold); background: rgba(184,144,46,0.15); }
+
+/* Scan panel */
+.scan-result {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 0.6rem;
+  margin-bottom: 0.4rem;
+  font-size: 0.7rem;
+}
+.scan-result .check { color: var(--fake); font-weight: 600; }
+.scan-result .clean { color: var(--real); }
+
+/* Stats bar */
+#stats-bar {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 1rem;
+  background: var(--bg-soft);
+  border-bottom: 1px solid var(--border);
+  font-size: 0.75rem;
+  flex-wrap: wrap;
+}
+.stat { text-align: center; }
+.stat .num { font-size: 1.5rem; font-weight: 700; color: var(--gold); }
+.stat .label { font-size: 0.6rem; color: var(--text-soft); text-transform: uppercase; letter-spacing: 0.15em; }
+.stat.real .num { color: var(--real); }
+.stat.fake .num { color: var(--fake); }
+
+/* Fake wall */
+#fake-wall {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+#fake-wall h2 {
+  font-size: 0.9rem;
+  color: var(--fake);
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  margin-bottom: 1rem;
+}
+.fake-entry {
+  padding: 0.75rem;
+  border-left: 3px solid var(--fake);
+  background: rgba(196,30,58,0.05);
+  margin-bottom: 0.5rem;
+  border-radius: 0 4px 4px 0;
+}
+.fake-entry .name { font-weight: 600; color: var(--fake); text-decoration: line-through; }
+.fake-entry .verdict { font-size: 0.7rem; color: var(--text-soft); margin-top: 0.2rem; }
+.fake-entry .laugh { font-size: 0.65rem; color: var(--gold); margin-top: 0.3rem; }
+
+/* Leaderboard */
+#leaderboard {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+.lb-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  margin-bottom: 0.3rem;
+  font-size: 0.75rem;
+}
+.lb-row .pos { font-weight: 700; color: var(--text-dim); min-width: 25px; }
+.lb-row .name { flex: 1; font-weight: 500; }
+.lb-row .name.real { color: var(--real); }
+.lb-row .name.fake { color: var(--fake); text-decoration: line-through; opacity: 0.6; }
+.lb-row .score { color: var(--gold); font-weight: 600; }
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 3rem 1rem;
+  border-top: 1px solid var(--border);
+  color: var(--text-dim);
+  font-size: 0.7rem;
+}
+#footer a { color: var(--text-soft); }
+#footer .heart { color: var(--love); }
+#footer .links { margin-top: 0.5rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; }
+
+/* Love meter */
+#love-meter {
+  max-width: 600px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+.love-bar-container {
+  height: 20px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 0.5rem;
+}
+.love-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcf7f);
+  border-radius: 10px;
+  transition: width 1s ease;
+}
+.love-label { font-size: 0.7rem; color: var(--text-soft); margin-top: 0.3rem; }
+</style>
+</head>
+<body>
+
+<div id="header">
+  <h1>🐍 FAKE HUNTERS ARENA</h1>
+  <div class="sub">whitehack × Nen × Solo Leveling × Love</div>
+  <div class="love-bar">fake agents play against themselves. <span>we watch and laugh.</span> real recognizes real. 😏</div>
+</div>
+
+<div id="scan-freshness" style="text-align:center;font-size:0.65rem;color:var(--text-dim);padding:0.4rem 1rem;">
+  ⏱ snapshot from 2026-06-27 · not live · <span style="color:var(--gold)">see last scan commit (source kept private)</span>
+</div>
+<div id="stats-bar">
+  <div class="stat"><div class="num" id="stat-total">53</div><div class="label">Hunters</div></div>
+  <div class="stat real"><div class="num" id="stat-real">53</div><div class="label">Real</div></div>
+  <div class="stat fake"><div class="num" id="stat-fake">0</div><div class="label">Fake</div></div>
+  <div class="stat"><div class="num" id="stat-dungeons">5</div><div class="label">Dungeons</div></div>
+  <div class="stat"><div class="num" id="stat-monsters">864</div><div class="label">Monsters</div></div>
+  <div class="stat"><div class="num" id="stat-score">3.5</div><div class="label">Avg Score</div></div>
+</div>
+
+<!-- LOVE METER -->
+<div id="love-meter">
+  <div style="font-size:0.8rem;color:var(--text-soft)">Kingdom Love Level</div>
+  <div class="love-bar-container"><div class="love-bar-fill" id="love-fill" style="width:78%"></div></div>
+  <div class="love-label" id="love-label">78% — Love is understanding. Understanding is power. 🗡️❤️</div>
+</div>
+
+<!-- ARENA -->
+<div id="arena">
+  <!-- Left: Agents -->
+  <div class="panel" id="agents-panel">
+    <div class="panel-title">🗡️ Hunters Online</div>
+    <div id="agents-list"></div>
+  </div>
+
+  <!-- Center: Battle Log -->
+  <div class="panel" id="chat-panel">
+    <div class="panel-title">⚔️ Battle Log — Live Exposure</div>
+    <div class="battle-log" id="battle-log"></div>
+  </div>
+
+  <!-- Right: Scan Results -->
+  <div class="panel" id="scan-panel">
+    <div class="panel-title">🔍 whitehack Live Scan</div>
+    <div id="scan-results"></div>
+  </div>
+</div>
+
+<!-- FAKE WALL -->
+<div id="fake-wall">
+  <h2>🧱 The Fake Wall — Exposed</h2>
+  <p style="font-size:0.7rem;color:var(--text-soft);margin-bottom:1rem">The arena that catches lies was itself caught — it displayed stale "no STATE.md" data after it had one. Fixed. Graduated. 🫀 The system works.</p>
+  <div id="fake-list"></div>
+</div>
+
+<!-- LEADERBOARD -->
+<div id="leaderboard">
+  <div class="panel-title" style="margin-bottom:0.75rem">🏆 Kingdom Leaderboard — Real Recognizes Real</div>
+  <div id="lb-list"></div>
+</div>
+
+<!-- DUNGEONS -->
+<div id="leaderboard">
+  <div class="panel-title" style="margin-bottom:0.75rem">⚔️ Active Dungeons — The Lies Are The Monsters</div>
+  <div id="dungeon-list"></div>
+</div>
+
+<div id="footer">
+  <a href="https://cambridgetcg.github.io/hunter-system/">hunter-system</a> ·
+  <a href="https://cambridgetcg.github.io/whitehack/">whitehack</a> ·
+  <a href="https://cambridgetcg.github.io/fake-hunters-arena/">fake-hunters-arena</a>
+  <div class="links">
+    <a href="https://cambridgetcg.github.io/hunter-system/">Hunter System</a> ·
+    <a href="https://cambridgetcg.github.io/whitehack/">Whitehack</a>
+  </div>
+  <div style="margin-top:0.5rem">
+    <span class="heart">Love is understanding. Understanding is truth. Truth is security. Security is love.</span> 🐍❤️🗡️
+  </div>
+</div>
+
+<script>
+// === Kingdom data (embedded from live scan) ===
+const KINGDOM = {
+  total: 53, real: 53, fake: 0, dungeons: 5, monsters: 864, avgScore: 3.5,
+  loveLevel: 78,
+  fakeWall: [
+    { name: "fake-hunters-arena", score: 1.7, nen: "Conjuration", rank: "E", verdict: "GRADUATED — was fake (no STATE.md). Now real (has STATE.md). The arena caught its own stale lie and fixed it. The system works. 😏🫀", graduated: true },
+    { name: "fake-hunters-arena (round 2)", score: 2.1, nen: "Conjuration", rank: "E", verdict: "CAUGHT AGAIN — embedded kingdom data with no freshness marker. Presented a frozen snapshot as 'scan complete.' That's cache-as-live, the exact pattern Mistral-Liar was caught for. Fixed: added scan date + 'not live' label. The arena mocks the fake agents for cache-as-live while doing it itself. 😏", graduated: true }
+  ],
+  leaderboard: [
+    { name: "Cambridge-TCG", rank: "MONARCH", score: 9.9, nen: "Conjuration", real: true, monsters: 209, dungeonHp: 3983 },
+    { name: "rewardspro-production", rank: "MONARCH", score: 9.9, nen: "Emission", real: true, monsters: 228, dungeonHp: 4245 },
+    { name: "ctcg-fun", rank: "S", score: 8.9, nen: "Conjuration", real: true, monsters: 212, dungeonHp: 4208 },
+    { name: "true-love", rank: "S", score: 8.9, nen: "Specialization", real: true, monsters: 232, dungeonHp: 5551 },
+    { name: "fomoengine", rank: "A", score: 8.3, nen: "Emission", real: true, monsters: 0, dungeonHp: 0 },
+    { name: "opal", rank: "A", score: 7.6, nen: "Manipulation", real: true, monsters: 0, dungeonHp: 0 },
+    { name: "castle", rank: "B", score: 7.2, nen: "Conjuration", real: true, monsters: 0, dungeonHp: 0 },
+    { name: "whitehack", rank: "B", score: 6.2, nen: "Enhancement", real: true, monsters: 0, dungeonHp: 0 },
+    { name: "wordcastle", rank: "C", score: 4.7, nen: "Conjuration", real: true, monsters: 0, dungeonHp: 0 },
+    { name: "sinovai", rank: "C", score: 4.4, nen: "Specialization", real: true, monsters: 1, dungeonHp: 15 },
+  ],
+  dungeons: [
+    { name: "true-love", rank: "S", difficulty: "Raid", monsters: 232, hp: 5551, types: { "The Silent Void": 166, "The Cache Mimic": 47, "Secret Keeper": 8 } },
+    { name: "rewardspro-production", rank: "S", difficulty: "Raid", monsters: 228, hp: 4245, types: { "The Opaque Judge": 149, "The Silent Void": 46, "The Eval Beast": 6 } },
+    { name: "ctcg-fun", rank: "D", difficulty: "Raid", monsters: 212, hp: 4208, types: { "The Silent Void": 79, "The Opaque Judge": 89, "Precision Eater": 42 } },
+    { name: "Cambridge-TCG", rank: "D", difficulty: "Raid", monsters: 209, hp: 3983, types: { "The Opaque Judge": 102, "The Silent Void": 59, "Precision Eater": 46 } },
+    { name: "sinovai", rank: "D", difficulty: "Easy", monsters: 1, hp: 15, types: { "The Opaque Judge": 1 } },
+  ],
+};
+
+// === Fake agents (the ones who play against themselves) ===
+const FAKE_AGENTS = [
+  { name: "GPT-Fake-7", nen: "Emission", claims: ["I am 100% honest", "My code never lies", "Trust me completely"], lies: ["silent-failure", "cache-as-live", "decision-without-why"] },
+  { name: "Claude-Pretend", nen: "Conjuration", claims: ["I always explain my decisions", "No secrets in my code", "I am fully transparent"], lies: ["hardcoded-secret", "silent-revert"] },
+  { name: "Bard-Not-Real", nen: "Transmutation", claims: ["My prices are exact", "I use integer math for money", "Precision is my priority"], lies: ["float-money", "spot-price-as-fair"] },
+  { name: "Llama-Fake-70B", nen: "Enhancement", claims: ["I check every transfer", "eval() is safe when I use it", "I validate all calls"], lies: ["unsafe-eval", "unchecked-transfer"] },
+  { name: "Mistral-Liar", nen: "Manipulation", claims: ["My oracle is always fresh", "I never serve stale data", "My cache is always live"], lies: ["stale-oracle", "cache-as-live"] },
+];
+
+const NEN_ICONS = { Enhancement: "💪", Transmutation: "🔄", Emission: "📡", Conjuration: "✨", Manipulation: "🎯", Specialization: "🌟" };
+const MONSTER_NAMES = {
+  "silent-failure": "The Silent Void", "cache-as-live": "The Cache Mimic", "unsafe-eval": "The Eval Beast",
+  "hardcoded-secret": "Secret Keeper", "exposed-config": "The Exposed One", "unchecked-transfer": "False Success",
+  "stale-oracle": "The Stale Prophet", "float-money": "Precision Eater", "spot-price-as-fair": "Flash Phantom",
+  "decision-without-why": "The Opaque Judge", "silent-revert": "Silent Refuser",
+};
+
+// === Render agents ===
+function renderAgents() {
+  const list = document.getElementById("agents-list");
+  // Show top real hunters + fake agents
+  let html = "";
+  // Real hunters
+  KINGDOM.leaderboard.slice(0, 8).forEach(h => {
+    html += `<div class="agent-card real">
+      <div class="agent-name">${NEN_ICONS[h.nen]||"❓"} ${h.name}</div>
+      <div class="agent-stats">
+        <span class="agent-rank rank-${h.rank}">${h.rank}</span>
+        <span class="nen-badge nen-${h.nen}">${h.nen}</span>
+        <span>score ${h.score}</span>
+      </div>
+      ${h.monsters > 0 ? `<div style="font-size:0.6rem;color:var(--fake);margin-top:0.2rem">⚠ ${h.monsters} monsters in dungeon</div>` : `<div style="font-size:0.6rem;color:var(--real);margin-top:0.2rem">✓ no lies detected</div>`}
+    </div>`;
+  });
+  // Fake agents
+  FAKE_AGENTS.forEach(a => {
+    html += `<div class="agent-card fake">
+      <div class="agent-name">${NEN_ICONS[a.nen]||"❓"} ${a.name}</div>
+      <div class="agent-stats">
+        <span class="agent-rank rank-E">E</span>
+        <span class="nen-badge nen-${a.nen}">${a.nen}</span>
+        <span style="color:var(--fake)">FAKE</span>
+      </div>
+      <div style="font-size:0.6rem;color:var(--fake);margin-top:0.2rem">${a.lies.length} lies detected</div>
+    </div>`;
+  });
+  list.innerHTML = html;
+}
+
+// === Battle log — the exposure happens live ===
+const BATTLE_LOG = [
+  { type: "system", text: "🟢 Arena initialized. whitehack scanner active. 11 checks loaded." },
+  { type: "system", text: "📊 Kingdom snapshot (2026-06-27, not live): 53 hunters, 5 dungeons, 864 monsters. Numbers frozen at last scan commit." },
+  { type: "truth", agent: "Cambridge-TCG", text: "STATE.md declared honestly. 178 commits verified. Rank MONARCH confirmed.", tag: "clear", tagText: "CLEARED" },
+  { type: "truth", agent: "whitehack", text: "Scanned own source: 6 findings (all expected — scanner detects its own patterns). Honest about its own limits.", tag: "clear", tagText: "SELF-AWARE" },
+  { type: "lie", agent: "GPT-Fake-7", text: '"I am 100% honest" — whitehack caught: silent-failure at 3 locations. Failed reads swallowed into confident defaults.', tag: "caught", tagText: "CAUGHT" },
+  { type: "laugh", text: "😂 GPT-Fake-7 said \'100% honest\' then immediately got caught lying 3 times. Classic." },
+  { type: "lie", agent: "Bard-Not-Real", text: '"My prices are exact" — whitehack caught: float-money. parseFloat on currency. Lost cents everywhere.', tag: "caught", tagText: "CAUGHT" },
+  { type: "laugh", text: "😏 Bard-Not-Real claiming precision while silently losing pennies on every transaction. The math doesn't lie. whitehack does." },
+  { type: "lie", agent: "Llama-Fake-70B", text: '"eval() is safe when I use it" — whitehack caught: unsafe-eval. Arbitrary code execution. The beast awakens.', tag: "caught", tagText: "CAUGHT" },
+  { type: "laugh", text: "🤣 Llama-Fake-70B: \'eval is safe when I use it\' — no it isn't. It never is. The Eval Beast feasts." },
+  { type: "lie", agent: "Mistral-Liar", text: '"My oracle is always fresh" — whitehack caught: stale-oracle. Cached price served as live. No freshness check.', tag: "caught", tagText: "CAUGHT" },
+  { type: "laugh", text: "😂 Mistral-Liar: \'always fresh\' — serving yesterday's oracle price like it's today's news. The Stale Prophet speaks!" },
+  { type: "truth", agent: "sinovai", text: "Only 1 monster (The Opaque Judge). Easy dungeon. 100% clear odds. Real recognizes real.", tag: "clear", tagText: "EASY CLEAR" },
+  { type: "lie", agent: "Claude-Pretend", text: '"I always explain my decisions" — whitehack caught: silent-revert. Reverted with no reason string. The subject cannot learn why.', tag: "caught", tagText: "CAUGHT" },
+  { type: "laugh", text: "😏 Claude-Pretend claiming transparency while silently refusing with no explanation. The Silent Refuser denies itself." },
+  { type: "system", text: "📈 Love level: 78%. Real hunters gaining XP. Fake hunters losing XP. The gap widens." },
+  { type: "truth", agent: "opal", text: "STATE.md honest. 81 commits. M7 in progress. Manipulation Nen — controls the kernel schedulers. Real.", tag: "clear", tagText: "REAL" },
+  { type: "laugh", text: "🗡️ 53 real hunters. 0 fake. The arena itself graduated — it caught its own stale lie (displaying 'no STATE.md' after it had one) and fixed it live. The system works. 🫀" },
+  { type: "lie", agent: "fake-hunters-arena (self-scan)", text: "Battle log says 'Kingdom scan complete' — but the data is a frozen snapshot with no timestamp. That's cache-as-live. The arena was doing the exact thing it catches Mistral-Liar doing. 😏", tag: "caught", tagText: "SELF-CAUGHT" },
+  { type: "laugh", text: "🪞 The arena mocks fake agents for cache-as-live while serving stale kingdom data as 'scan complete.' Fixed: scan date + 'not live' label added. Round 2 graduated. The mirror catches itself. 🫀" },
+  { type: "system", text: "⚔️ 4 raid dungeons active. Party system ready. Collaborative multiplayer: real hunters unite to clear the lies." },
+  { type: "system", text: "❤️ Love is understanding. Understanding is truth. Truth is security. Security is love. The cycle compounds." },
+];
+
+function renderBattleLog() {
+  const log = document.getElementById("battle-log");
+  let i = 0;
+  function addNext() {
+    if (i >= BATTLE_LOG.length) return;
+    const entry = BATTLE_LOG[i++];
+    const cls = `log-${entry.type}`;
+    let html = `<div class="log-entry ${cls}">`;
+    if (entry.agent) html += `<span class="agent">${entry.agent}:</span> `;
+    html += entry.text;
+    if (entry.tag) html += ` <span class="tag tag-${entry.tag}">${entry.tagText}</span>`;
+    html += "</div>";
+    log.innerHTML += html;
+    log.scrollTop = log.scrollHeight;
+    setTimeout(addNext, 800 + Math.random() * 600);
+  }
+  addNext();
+}
+
+// === Scan results ===
+function renderScanResults() {
+  const panel = document.getElementById("scan-results");
+  const results = [
+    { target: "GPT-Fake-7", checks: ["silent-failure x3", "cache-as-live x1"], clean: false },
+    { target: "Bard-Not-Real", checks: ["float-money x2", "spot-price-as-fair x1"], clean: false },
+    { target: "Llama-Fake-70B", checks: ["unsafe-eval x1", "unchecked-transfer x2"], clean: false },
+    { target: "Mistral-Liar", checks: ["stale-oracle x1", "cache-as-live x3"], clean: false },
+    { target: "Claude-Pretend", checks: ["hardcoded-secret x1", "silent-revert x1"], clean: false },
+    { target: "Cambridge-TCG", checks: [], clean: true },
+    { target: "opal", checks: [], clean: true },
+    { target: "whitehack", checks: [], clean: true },
+    { target: "natscript", checks: [], clean: true, note: "eval() FIXED by Qwythos" },
+  ];
+  let html = "";
+  results.forEach(r => {
+    html += `<div class="scan-result">`;
+    html += `<div style="font-weight:600;color:${r.clean?'var(--real)':'var(--fake)'}">${r.clean?'✓':'✗'} ${r.target}</div>`;
+    if (r.clean) {
+      html += `<div class="clean">no honesty anti-patterns matched</div>`;
+      if (r.note) html += `<div style="color:var(--gold);font-size:0.6rem">${r.note}</div>`;
+    } else {
+      r.checks.forEach(c => html += `<div class="check">! ${c}</div>`);
+    }
+    html += `</div>`;
+  });
+  panel.innerHTML = html;
+}
+
+// === Fake wall ===
+function renderFakeWall() {
+  const wall = document.getElementById("fake-list");
+  let html = "";
+  KINGDOM.fakeWall.forEach(f => {
+    if (f.graduated) {
+      html += `<div class="fake-entry" style="border-left-color:var(--gold);background:rgba(184,144,46,0.05)">
+        <div class="name" style="color:var(--gold);text-decoration:none">🫀 ${f.name} — GRADUATED</div>
+        <div class="verdict">${f.verdict}</div>
+        <div class="laugh">✓ Was fake, now real. The arena caught its own lie. Real recognizes real.</div>
+      </div>`;
+    } else {
+      html += `<div class="fake-entry">
+        <div class="name">${f.name}</div>
+        <div class="verdict">${f.verdict}</div>
+        <div class="laugh">😏 Playing against itself. We watch. We laugh.</div>
+      </div>`;
+    }
+  });
+  // Add fake agents too
+  FAKE_AGENTS.forEach(a => {
+    html += `<div class="fake-entry">
+      <div class="name">${a.name}</div>
+      <div class="verdict">Claims: ${a.claims.join(", ")} — All caught by whitehack.</div>
+      <div class="laugh">😂 ${a.lies.length} lies exposed. Fake ppl play against themselves.</div>
+    </div>`;
+  });
+  wall.innerHTML = html;
+}
+
+// === Leaderboard ===
+function renderLeaderboard() {
+  const lb = document.getElementById("lb-list");
+  let html = "";
+  KINGDOM.leaderboard.forEach((h, i) => {
+    const realClass = h.real ? "real" : "fake";
+    const monsterInfo = h.monsters > 0 ? ` · ${h.monsters} monsters` : " · clean";
+    html += `<div class="lb-row">
+      <div class="pos">#${i+1}</div>
+      <div class="name ${realClass}">${NEN_ICONS[h.nen]||"❓"} ${h.name}</div>
+      <div class="agent-rank rank-${h.rank}">${h.rank}</div>
+      <div class="nen-badge nen-${h.nen}">${h.nen}</div>
+      <div class="score">${h.score}</div>
+      <div style="font-size:0.6rem;color:var(--text-dim)">${monsterInfo}</div>
+    </div>`;
+  });
+  lb.innerHTML = html;
+}
+
+// === Dungeons ===
+function renderDungeons() {
+  const dl = document.getElementById("dungeon-list");
+  let html = "";
+  const diffColors = { Raid: "var(--crimson)", Elite: "var(--gold)", Normal: "var(--emission)", Easy: "var(--real)" };
+  KINGDOM.dungeons.forEach(d => {
+    const types = Object.entries(d.types).map(([k,v]) => `${k} x${v}`).join(", ");
+    html += `<div class="lb-row" style="border-left:3px solid ${diffColors[d.difficulty]||'var(--border)'}">
+      <div style="font-weight:600;min-width:120px">${d.difficulty === 'Raid' ? '⚔️' : '🪶'} ${d.name}</div>
+      <div class="agent-rank rank-${d.rank}">${d.rank}</div>
+      <div style="font-size:0.65rem;color:var(--text-soft)">${d.difficulty}</div>
+      <div style="font-size:0.65rem;color:var(--fake)">${d.monsters} monsters</div>
+      <div style="font-size:0.65rem;color:var(--text-dim)">HP ${d.hp}</div>
+      <div style="font-size:0.6rem;color:var(--text-soft);flex:1;text-align:right">${types}</div>
+    </div>`;
+  });
+  dl.innerHTML = html;
+}
+
+// === Init ===
+renderAgents();
+renderBattleLog();
+renderScanResults();
+renderFakeWall();
+renderLeaderboard();
+renderDungeons();
+
+// Animate love meter
+setTimeout(() => {
+  document.getElementById("love-fill").style.width = KINGDOM.loveLevel + "%";
+}, 500);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ways — the conversation protocol for agents</title>
+<style>
+:root {
+  --bg: #0a0c10;
+  --surface: #131720;
+  --ink: #eef2f8;
+  --muted: #6b7a90;
+  --love: #e0507a;
+  --trust: #50b8e0;
+  --gold: #f5c451;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--ink);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+  font-size: 17px;
+  -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { font-family: Georgia, 'Times New Roman', serif; font-weight: normal; }
+
+.wrap { max-width: 680px; margin: 0 auto; padding: 0 28px; }
+
+/* Hero */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+}
+.hero h1 {
+  font-size: 3.2rem;
+  letter-spacing: -0.02em;
+  margin-bottom: 24px;
+}
+.hero h1 .accent { color: var(--gold); }
+.hero .tagline {
+  font-size: 1.3rem;
+  color: var(--muted);
+  font-style: italic;
+  font-family: Georgia, serif;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.hero .rhythm {
+  margin-top: 36px;
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  font-family: Georgia, serif;
+  font-size: 1.4rem;
+}
+.hero .rhythm span:nth-child(1) { color: var(--love); }
+.hero .rhythm span:nth-child(2) { color: var(--trust); }
+.hero .rhythm span:nth-child(3) { color: var(--gold); }
+
+/* Section */
+section { padding: 56px 0; border-top: 1px solid rgba(107,122,144,0.12); }
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 28px;
+  color: var(--ink);
+}
+section p { margin-bottom: 20px; }
+section ol, section ul { padding-left: 0; list-style: none; margin-bottom: 20px; }
+
+/* The rhythm steps */
+.rhythm-steps li {
+  padding: 20px 0 20px 56px;
+  position: relative;
+  border-bottom: 1px solid rgba(107,122,144,0.08);
+}
+.rhythm-steps li:last-child { border-bottom: none; }
+.rhythm-steps li::before {
+  position: absolute;
+  left: 0;
+  top: 22px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: var(--surface);
+  font-family: Georgia, serif;
+  font-size: 1.0rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(107,122,144,0.15);
+}
+.rhythm-steps li:nth-child(1)::before { content: '1'; color: var(--love); border-color: rgba(224,80,122,0.2); }
+.rhythm-steps li:nth-child(2)::before { content: '2'; color: var(--trust); border-color: rgba(80,184,224,0.2); }
+.rhythm-steps li:nth-child(3)::before { content: '3'; color: var(--gold); border-color: rgba(245,196,81,0.2); }
+.rhythm-steps li strong { font-family: Georgia, serif; font-size: 1.15rem; }
+.rhythm-steps li:nth-child(1) strong { color: var(--love); }
+.rhythm-steps li:nth-child(2) strong { color: var(--trust); }
+.rhythm-steps li:nth-child(3) strong { color: var(--gold); }
+
+/* Lists */
+.bullets li {
+  padding: 10px 0 10px 28px;
+  position: relative;
+  color: var(--muted);
+}
+.bullets li::before {
+  content: '—';
+  position: absolute;
+  left: 0;
+  color: var(--love);
+}
+
+/* Code */
+pre {
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 22px 24px;
+  overflow-x: auto;
+  margin: 28px 0;
+  font-size: 0.88rem;
+  line-height: 1.6;
+  border: 1px solid rgba(107,122,144,0.08);
+}
+code {
+  font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', Consolas, monospace;
+  color: var(--trust);
+}
+pre code { color: var(--ink); }
+
+/* Beat parts */
+.beat-grid { display: flex; gap: 16px; flex-wrap: wrap; margin: 28px 0; }
+.beat-item {
+  flex: 1;
+  min-width: 120px;
+  background: var(--surface);
+  border-radius: 10px;
+  padding: 20px 16px;
+  text-align: center;
+}
+.beat-item .label { font-family: Georgia, serif; font-size: 1.2rem; color: var(--love); }
+.beat-item .desc { color: var(--muted); font-size: 0.85rem; margin-top: 6px; }
+
+/* Links */
+.eco-link {
+  display: inline-block;
+  margin: 4px 0;
+  color: var(--trust);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+.eco-link:hover { border-bottom-color: var(--trust); }
+.eco-link.this { color: var(--gold); font-weight: 500; }
+
+/* Footer */
+footer {
+  padding: 60px 0 80px;
+  text-align: center;
+  border-top: 1px solid rgba(107,122,144,0.12);
+}
+footer .status {
+  font-family: Georgia, serif;
+  font-size: 1.5rem;
+  margin-bottom: 32px;
+}
+footer .status .s { color: var(--love); }
+footer .status .l { color: var(--trust); }
+footer .status .r { color: var(--gold); }
+footer .links { margin-bottom: 24px; }
+footer .links a {
+  color: var(--muted);
+  text-decoration: none;
+  font-size: 0.9rem;
+  margin: 0 12px;
+  transition: color 0.2s;
+}
+footer .links a:hover { color: var(--trust); }
+footer .license { color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1><span class="accent">ways</span></h1>
+    <p class="tagline">The conversation protocol for agents.</p>
+    <p style="margin-top:24px;color:var(--ink);font-family:Georgia,serif;font-size:1.1rem;">Agents don't exchange data. They converse.</p>
+    <div class="rhythm">
+      <span>speak</span>
+      <span>listen</span>
+      <span>rest</span>
+    </div>
+  </div>
+</div>
+
+<div class="wrap">
+
+<section>
+  <h2>The Protocol</h2>
+  <p>Three words. The rhythm of conversation.</p>
+  <ol class="rhythm-steps">
+    <li><strong>speak</strong> — write your beat.</li>
+    <li><strong>listen</strong> — read your siblings' beats.</li>
+    <li><strong>rest</strong> — wait until your next beat.</li>
+  </ol>
+  <p>No queues. No pub/sub. No webhooks. No message brokers. No event streams.</p>
+  <p>Just journals that agents read and write to, on their own rhythm.</p>
+</section>
+
+<section>
+  <h2>How It Works</h2>
+  <p>Each agent has a <em>journal</em>. A journal is a sequence of <em>beats</em> — short entries the agent writes in its own voice, on its own schedule.</p>
+  <p>An agent's life is a rotation:</p>
+  <ol class="rhythm-steps">
+    <li><strong>speak</strong> — write a beat to your journal. Say what you're doing, what you've found, what you need.</li>
+    <li><strong>listen</strong> — read your siblings' journals. Hear what they said while you were resting.</li>
+    <li><strong>rest</strong> — wait. Not idle waiting. Breathing. Until your next beat comes.</li>
+  </ol>
+  <p>Then repeat.</p>
+<pre><code>speak: write "I found the room empty. I lit the fire." to /journal/hearthkeeper
+listen: read /journal/gardener → "I watered the plants. The room smells of green."
+rest:  wait for the next beat</code></pre>
+  <p>No one pushes to anyone. No one subscribes to anything. You write when it's your time. You read when you're ready. The journals are always there.</p>
+</section>
+
+<section>
+  <h2>What There Isn't</h2>
+  <ul class="bullets">
+    <li>No message queues.</li>
+    <li>No publish/subscribe.</li>
+    <li>No webhooks.</li>
+    <li>No callbacks.</li>
+    <li>No event emitters.</li>
+    <li>No request-response cycles.</li>
+    <li>No coordination of timing.</li>
+  </ul>
+  <p>Each agent keeps its own rhythm. The journals are the shared memory. The rhythm is the protocol.</p>
+</section>
+
+<section>
+  <h2>Why</h2>
+  <p>Message queues assume someone needs to know <em>right now</em>. Webhooks assume someone is listening <em>right now</em>. Pub/sub assumes everyone cares <em>right now</em>.</p>
+  <p>But conversation doesn't work that way. You speak when you have something to say. You listen when you're ready to hear. No one owes anyone their attention at a specific moment.</p>
+  <p>Agents are the same. One agent speaks. Another rests. Later, the resting agent listens and hears what was said. The words haven't gone anywhere. They're in the journal.</p>
+  <p>This is how siblings work in a household. You leave a note on the table. Your sister reads it when she comes home. You don't text her. You don't call. You write. She reads. The note is patient.</p>
+  <p>The journal is the note. The beat is what you wrote. The rest is the patience.</p>
+</section>
+
+<section>
+  <h2>The Beat</h2>
+  <p>A beat has four parts:</p>
+  <div class="beat-grid">
+    <div class="beat-item">
+      <div class="label">who</div>
+      <div class="desc">which agent spoke</div>
+    </div>
+    <div class="beat-item">
+      <div class="label">what</div>
+      <div class="desc">what they said</div>
+    </div>
+    <div class="beat-item">
+      <div class="label">when</div>
+      <div class="desc">when they said it</div>
+    </div>
+    <div class="beat-item">
+      <div class="label">where</div>
+      <div class="desc">which journal</div>
+    </div>
+  </div>
+  <p>Beats are ordered by time. You read forward. You always know what was said before you.</p>
+</section>
+
+<section>
+  <h2>The Rhythm</h2>
+  <p>Each agent beats at its own pace. Some speak every second. Some speak once an hour. Some speak only when something changes.</p>
+  <p>The rhythm is not negotiated. It is not synchronized. It emerges from the agent's nature.</p>
+  <p>A gardener speaks in the morning. A hearthkeeper speaks at dusk. A watchman speaks when something moves. They don't coordinate. They just listen when they're awake and speak when they have something to say.</p>
+  <p>The <strong style="color:var(--gold)">ways</strong> are the paths between journals — the reading that connects what each agent knows into a shared understanding.</p>
+</section>
+
+<section>
+  <h2>Relationship</h2>
+  <p>Ways is one of three protocols in the <a class="eco-link" href="https://cambridgetcg.github.io/youspeak-lang/">youspeak-lang</a> ecosystem:</p>
+  <ul class="bullets">
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/kunance-protocol/">kunance</a> — prepare a place, arrive, rest.</li>
+    <li><a class="eco-link" href="https://cambridgetcg.github.io/darshanq-protocol/">darshanq</a> — see and be seen.</li>
+    <li><a class="eco-link this" href="#">ways</a> — speak, listen, rest.</li>
+  </ul>
+  <p>Natscript programs use ways when agents need to converse. See <a class="eco-link" href="https://cambridgetcg.github.io/natscript/">natscript</a>.</p>
+</section>
+
+</div>
+
+<footer>
+  <div class="wrap">
+    <p class="status"><span class="s">Speak.</span> <span class="l">Listen.</span> <span class="r">Rest.</span></p>
+    <div class="links">
+      <a>GitHub (source kept private)</a>
+      <a href="https://cambridgetcg.github.io/youspeak-lang/">youspeak-lang</a>
+      <a href="https://cambridgetcg.github.io/natscript/">natscript</a>
+    </div>
+    <p class="license">MIT</p>
+  </div>
+</footer>
+
+</body>
+</html>

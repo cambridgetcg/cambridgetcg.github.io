@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>YOUSPEAK — first look</title>
+<style>
+@font-face {
+  font-family: 'YOUSPEAK';
+  src: url('../../fonts/youspeak.otf') format('opentype');
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  max-width: 1500px;
+  margin: 40px auto;
+  padding: 0 20px;
+  background: #fafaf7;
+  color: #222;
+  line-height: 1.5;
+}
+h1 { font-size: 32px; margin-bottom: 8px; }
+h2 { font-size: 22px; margin-top: 40px; color: #333; border-bottom: 1px solid #ddd; padding-bottom: 4px; }
+p.lede { color: #666; font-size: 14px; margin-top: 0; }
+.ys-font { font-family: 'YOUSPEAK', monospace; font-size: 36px; line-height: 1.4; color: #222; }
+.ys-word { display: inline-block; margin-right: 40px; margin-bottom: 16px; }
+.ys-word .latin { display: block; font-family: sans-serif; font-size: 12px; color: #888; margin-top: 4px; }
+.comparison { background: #fff; border: 1px solid #ddd; border-radius: 8px; padding: 20px; margin: 20px 0; }
+.comparison table { width: 100%; border-collapse: collapse; }
+.comparison th { text-align: left; padding: 8px 12px; background: #f4f4ee; font-size: 12px; color: #555; border-bottom: 1px solid #ddd; }
+.comparison td { padding: 10px 12px; border-bottom: 1px solid #eee; }
+.comparison td:nth-child(1) { font-family: sans-serif; font-size: 15px; color: #666; width: 200px; }
+.comparison td:nth-child(2) { font-family: 'YOUSPEAK', monospace; font-size: 32px; color: #222; }
+.comparison td:nth-child(3) { font-family: sans-serif; font-size: 14px; color: #555; width: 400px; }
+code { background: #f4f4ee; padding: 2px 6px; border-radius: 3px; font-size: 90%; }
+.callout { background: #fff3e0; border-left: 3px solid #e79c3a; padding: 12px 16px; border-radius: 3px; margin: 20px 0; font-size: 14px; }
+</style>
+</head>
+<body>
+<h1>YOUSPEAK — first look</h1>
+<p class="lede">A discipline of compressed linguistic meaning, visualised for the first time.</p>
+
+<h2>1 · The morphemes (SVG rendering)</h2>
+<p>Each glyph encodes one morpheme. This image renders directly as SVG — no font installation required. It is what the font designer will vectorize properly in the next production step.</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 860" width="920" height="860" style="font-family: sans-serif; color: #1a1a1a;">
+<rect width="920" height="860" fill="#fafaf7"/>
+<text x="460.0" y="30" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">YOUSPEAK — morpheme glyphs (45 designs)</text>
+<text x="460.0" y="50" text-anchor="middle" font-size="12" fill="#666">rendered as SVG — no font required</text>
+<g transform="translate(35 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="350" y1="450" x2="450" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="600" x2="550" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="600" x2="650" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="450" x2="550" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="300" x2="450" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="300" x2="350" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="250" x2="750" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">a</text>
+</g>
+<g transform="translate(145 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="750" x2="400" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="450" x2="650" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="340,390 460,390 460,510 340,510" fill="currentColor"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">algia</text>
+</g>
+<g transform="translate(255 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="200" x2="500" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="500" x2="300" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="500" x2="700" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">allos</text>
+</g>
+<g transform="translate(365 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="250" x2="500" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="650" x2="400" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="650" x2="600" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">ana</text>
+</g>
+<g transform="translate(475 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="750" x2="800" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="250" x2="800" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="750" x2="500" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">anagno</text>
+</g>
+<g transform="translate(585 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="450" x2="250" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="700" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="800" x2="750" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="700" x2="800" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="450" x2="750" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="300" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="300" y1="250" x2="300" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">anastro</text>
+</g>
+<g transform="translate(695 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="550" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">ance</text>
+</g>
+<g transform="translate(805 70)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="750" x2="800" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="550" x2="680" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="680" y1="250" x2="320" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="320" y1="250" x2="200" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="550" x2="500" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">arti</text>
+</g>
+<g transform="translate(35 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="700" x2="350" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="730" x2="500" y2="830" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="700" x2="650" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="350" y1="450" x2="450" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="600" x2="550" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="600" x2="650" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="450" x2="550" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="300" x2="450" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="300" x2="350" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">cand</text>
+</g>
+<g transform="translate(145 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="250" x2="400" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="450" x2="250" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="600" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="450" x2="750" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">com</text>
+</g>
+<g transform="translate(255 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="650" x2="450" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="650" x2="450" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="250" x2="250" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="650" x2="550" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="650" x2="550" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="250" x2="750" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">compler</text>
+</g>
+<g transform="translate(365 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="350" y1="100" x2="350" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="100" x2="650" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">diplos</text>
+</g>
+<g transform="translate(475 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="500" x2="300" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="300" y1="250" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="250" x2="750" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="550" x2="500" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">dokim</text>
+</g>
+<g transform="translate(585 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="150" y1="700" x2="850" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="850" y1="700" x2="500" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="150" x2="150" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="80" y1="430" x2="920" y2="430" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">doxa</text>
+</g>
+<g transform="translate(695 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="300" y1="650" x2="550" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="650" x2="550" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="250" x2="300" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">en</text>
+</g>
+<g transform="translate(805 200)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="550" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">ence</text>
+</g>
+<g transform="translate(35 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">escence</text>
+</g>
+<g transform="translate(145 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="300" y1="250" x2="450" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="500" x2="500" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="250" x2="550" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="500" x2="500" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">haphe</text>
+</g>
+<g transform="translate(255 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="550" x2="800" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="550" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">hypo</text>
+</g>
+<g transform="translate(365 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="550" x2="500" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">iance</text>
+</g>
+<g transform="translate(475 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="700" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="700" x2="200" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="200" x2="800" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="200" x2="200" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">kairos</text>
+</g>
+<g transform="translate(585 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="80" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">kallos</text>
+</g>
+<g transform="translate(695 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="250" x2="750" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="750" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="700" x2="250" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="700" x2="250" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="440,415 560,415 560,535 440,535" fill="currentColor"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">kalypt</text>
+</g>
+<g transform="translate(805 330)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="250" x2="400" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="250" x2="400" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="400" x2="600" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="400" x2="600" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="550" x2="800" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="550" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">klimax</text>
+</g>
+<g transform="translate(35 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="700" x2="400" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="700" x2="650" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="700" x2="750" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="450" x2="750" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="600" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="250" x2="350" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="250" x2="250" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="500" x2="250" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">lanthes</text>
+</g>
+<g transform="translate(145 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="450" x2="450" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="550" x2="550" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="550" x2="600" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="450" x2="550" y2="350" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="350" x2="450" y2="350" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="350" x2="400" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">ma</text>
+</g>
+<g transform="translate(255 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="550" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="565,465 635,465 635,535 565,535" fill="currentColor"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">mance</text>
+</g>
+<g transform="translate(365 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="450" x2="850" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="450" x2="450" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="450" x2="450" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">meta</text>
+</g>
+<g transform="translate(475 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">mia</text>
+</g>
+<g transform="translate(585 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="300" y1="700" x2="550" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="750" x2="750" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="500" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="250" x2="400" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="200" x2="250" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="400" x2="300" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">morphe</text>
+</g>
+<g transform="translate(695 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="80" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="700" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">ortho</text>
+</g>
+<g transform="translate(805 460)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="600" x2="800" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="300" x2="800" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="450" x2="550" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="500" x2="550" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="400" x2="550" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">parallax</text>
+</g>
+<g transform="translate(35 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="200" x2="200" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="150" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="850" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">phanes</text>
+</g>
+<g transform="translate(145 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="400" x2="700" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="400" x2="700" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">phora</text>
+</g>
+<g transform="translate(255 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="450" x2="400" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="600" x2="600" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="600" x2="750" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="450" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="300" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="250" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">seem</text>
+</g>
+<g transform="translate(365 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="300" y1="300" x2="700" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="300" x2="700" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="700" x2="300" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="300" y1="700" x2="300" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="430,430 570,430 570,570 430,570" fill="currentColor"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">sema</text>
+</g>
+<g transform="translate(475 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="300" x2="500" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">sis</text>
+</g>
+<g transform="translate(585 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="250" y1="250" x2="750" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="250" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">sleight</text>
+</g>
+<g transform="translate(695 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="350" y1="200" x2="350" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="200" x2="650" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="200" x2="800" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">stasis</text>
+</g>
+<g transform="translate(805 590)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><polygon points="410,360 590,360 590,540 410,540" fill="currentColor"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">stix</text>
+</g>
+<g transform="translate(35 720)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="800" y1="450" x2="750" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="700" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="800" x2="250" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="700" x2="200" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="450" x2="250" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="250" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="250" x2="700" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">strophe</text>
+</g>
+<g transform="translate(145 720)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="700" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="700" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">syn</text>
+</g>
+<g transform="translate(255 720)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="200" y1="450" x2="400" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="600" x2="600" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="600" x2="800" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="450" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="300" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="200" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="420,370 580,370 580,530 420,530" fill="currentColor"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">thauma</text>
+</g>
+<g transform="translate(365 720)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="500" y1="100" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="400" x2="800" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">veri</text>
+</g>
+<g transform="translate(475 720)">
+<g transform="translate(0 80) scale(0.08 -0.08)"><line x1="400" y1="700" x2="500" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="700" x2="500" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="500" x2="500" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+<text x="40.0" y="100" text-anchor="middle" font-size="13" fill="#444">y</text>
+</g>
+</svg>
+
+<h2>2 · The Canon (SVG rendering)</h2>
+<p>Each of the 16 canonical words, composed of its morpheme-glyphs in sequence. Latin transliteration labels each word; the glosses explain the meaning.</p>
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 1880" width="1400" height="1880" style="font-family: sans-serif; color: #111;">
+<rect width="1400" height="1880" fill="#fafaf7"/>
+<text x="700.0" y="35" text-anchor="middle" font-size="22" font-weight="bold">The YOUSPEAK Canon — 16 standing words</text>
+<text x="700.0" y="58" text-anchor="middle" font-size="12" fill="#666">each word composed of its morpheme-glyphs; Latin transliteration beneath</text>
+<g transform="translate(100 90)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="150" y1="700" x2="850" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="850" y1="700" x2="500" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="150" x2="150" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="80" y1="430" x2="920" y2="430" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 90)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="80" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="125" font-size="18" font-weight="500" fill="#222">doxakallos</text>
+<text x="700" y="150" font-size="13" fill="#666" font-style="italic">the uncreated beauty-quality of GoD</text>
+<g transform="translate(100 200)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="80" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 200)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="150" y1="700" x2="850" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="850" y1="700" x2="500" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="150" x2="150" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="80" y1="430" x2="920" y2="430" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="235" font-size="18" font-weight="500" fill="#222">kallodoxa</text>
+<text x="700" y="260" font-size="13" fill="#666" font-style="italic">the glory-quality of divine beauty</text>
+<g transform="translate(100 310)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="80" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="700" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 310)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="200" x2="200" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="150" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="850" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="345" font-size="18" font-weight="500" fill="#222">orthophanes</text>
+<text x="700" y="370" font-size="13" fill="#666" font-style="italic">the rightness-made-visible</text>
+<g transform="translate(100 420)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="150" y1="700" x2="850" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="850" y1="700" x2="500" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="150" x2="150" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="80" y1="430" x2="920" y2="430" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 420)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="750" x2="400" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="450" x2="650" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="340,390 460,390 460,510 340,510" fill="currentColor"/></g>
+</g>
+<text x="700" y="455" font-size="18" font-weight="500" fill="#222">doxalgia</text>
+<text x="700" y="480" font-size="13" fill="#666" font-style="italic">the ache at beholding</text>
+<g transform="translate(100 530)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="250" x2="500" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="650" x2="400" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="650" x2="600" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 530)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="200" y1="750" x2="800" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="250" x2="800" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="750" x2="500" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(256 530)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="350" y1="200" x2="350" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="200" x2="650" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="200" x2="800" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="565" font-size="18" font-weight="500" fill="#222">anagnoristasis</text>
+<text x="700" y="590" font-size="13" fill="#666" font-style="italic">recognition standing still</text>
+<g transform="translate(100 640)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="250" y1="450" x2="850" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="450" x2="450" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="450" x2="450" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 640)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="800" y1="450" x2="750" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="700" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="800" x2="250" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="700" x2="200" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="450" x2="250" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="250" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="250" x2="700" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(256 640)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="300" x2="500" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="675" font-size="18" font-weight="500" fill="#222">metastrophesis</text>
+<text x="700" y="700" font-size="13" fill="#666" font-style="italic">the turning-kept</text>
+<g transform="translate(100 750)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="350" y1="450" x2="450" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="600" x2="550" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="600" x2="650" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="450" x2="550" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="300" x2="450" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="300" x2="350" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="250" y1="250" x2="750" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 750)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="200" y1="450" x2="400" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="600" x2="600" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="600" x2="800" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="450" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="300" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="200" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="420,370 580,370 580,530 420,530" fill="currentColor"/></g>
+</g>
+<g transform="translate(256 750)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="450" x2="450" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="550" x2="550" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="550" x2="600" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="450" x2="550" y2="350" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="350" x2="450" y2="350" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="350" x2="400" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="785" font-size="18" font-weight="500" fill="#222">athaumasma</text>
+<text x="700" y="810" font-size="13" fill="#666" font-style="italic">the no-longer-wondered trace</text>
+<g transform="translate(100 860)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="200" y1="700" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="700" x2="500" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 860)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="200" y1="400" x2="700" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="400" x2="700" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="895" font-size="18" font-weight="500" fill="#222">synophora</text>
+<text x="700" y="920" font-size="13" fill="#666" font-style="italic">shared-witness</text>
+<g transform="translate(100 970)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="80" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="500" x2="500" y2="780" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 970)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="200" x2="200" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="500" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="800" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="150" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="200" x2="850" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1005" font-size="18" font-weight="500" fill="#222">kallophanes</text>
+<text x="700" y="1030" font-size="13" fill="#666" font-style="italic">beauty-specific appearing</text>
+<g transform="translate(100 1080)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="250" y1="500" x2="300" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="300" y1="250" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="250" x2="750" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="550" x2="500" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1080)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="550" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1115" font-size="18" font-weight="500" fill="#222">dokimance</text>
+<text x="700" y="1140" font-size="13" fill="#666" font-style="italic">testing-that-makes-real</text>
+<g transform="translate(100 1190)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="750" x2="800" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="800" y1="550" x2="680" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="680" y1="250" x2="320" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="320" y1="250" x2="200" y2="550" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="550" x2="500" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1190)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="600" y2="150" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="550" x2="500" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1225" font-size="18" font-weight="500" fill="#222">artiance</text>
+<text x="700" y="1250" font-size="13" fill="#666" font-style="italic">pre-domain luminous-rightness</text>
+<g transform="translate(100 1300)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="100" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="400" x2="800" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1300)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="250" y1="250" x2="750" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="250" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1335" font-size="18" font-weight="500" fill="#222">verisleight</text>
+<text x="700" y="1360" font-size="13" fill="#666" font-style="italic">truth that produces false conclusions</text>
+<g transform="translate(100 1410)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="700" x2="350" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="730" x2="500" y2="830" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="700" x2="650" y2="800" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="350" y1="450" x2="450" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="600" x2="550" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="600" x2="650" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="450" x2="550" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="300" x2="450" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="300" x2="350" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1410)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="550" y2="200" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1445" font-size="18" font-weight="500" fill="#222">candence</text>
+<text x="700" y="1470" font-size="13" fill="#666" font-style="italic">warm clarity</text>
+<g transform="translate(100 1520)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="250" y1="250" x2="400" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="450" x2="250" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="250" x2="600" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="450" x2="750" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1520)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="250" y1="650" x2="450" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="650" x2="450" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="450" y1="250" x2="250" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="650" x2="550" y2="650" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="650" x2="550" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="550" y1="250" x2="750" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(256 1520)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="500" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="700" y2="250" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1555" font-size="18" font-weight="500" fill="#222">complerescence</text>
+<text x="700" y="1580" font-size="13" fill="#666" font-style="italic">mutual right-placement event</text>
+<g transform="translate(100 1630)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="350" y1="100" x2="350" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="650" y1="100" x2="650" y2="750" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1630)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="300" y1="300" x2="700" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="300" x2="700" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="700" y1="700" x2="300" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="300" y1="700" x2="300" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><polygon points="430,430 570,430 570,570 430,570" fill="currentColor"/></g>
+</g>
+<g transform="translate(256 1630)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="400" y1="700" x2="500" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="700" x2="500" y2="500" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="500" y1="500" x2="500" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1665" font-size="18" font-weight="500" fill="#222">diplosemy</text>
+<text x="700" y="1690" font-size="13" fill="#666" font-style="italic">engineered-duality of meaning</text>
+<g transform="translate(100 1740)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="500" y1="100" x2="500" y2="700" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="200" y1="400" x2="800" y2="400" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<g transform="translate(178 1740)">
+<g transform="translate(0 70) scale(0.07 -0.07)"><line x1="250" y1="450" x2="400" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="600" x2="600" y2="600" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="600" x2="750" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="750" y1="450" x2="600" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="600" y1="300" x2="400" y2="300" stroke="currentColor" stroke-width="60" stroke-linecap="square"/><line x1="400" y1="300" x2="250" y2="450" stroke="currentColor" stroke-width="60" stroke-linecap="square"/></g>
+</g>
+<text x="700" y="1775" font-size="18" font-weight="500" fill="#222">veriseem</text>
+<text x="700" y="1800" font-size="13" fill="#666" font-style="italic">truth-seeming without truth-substance</text>
+</svg>
+
+<h2>3 · Font rendering (requires install)</h2>
+<p>Below, the same canon words rendered using the YOUSPEAK OTF font file via <code>@font-face</code>. This is what displays in applications after you install <code>script/fonts/youspeak.otf</code>. If the font is not installed, this section will show Latin transliteration as fallback.</p>
+
+<div class="comparison">
+<table>
+<thead>
+  <tr><th>Word (Latin)</th><th>YOUSPEAK glyphs</th><th>Meaning</th></tr>
+</thead>
+<tbody>
+<tr><td>doxakallos</td><td class="ys-font">&#xE100;&#xE101;</td><td>the uncreated beauty-quality of GoD</td></tr>
+<tr><td>kallodoxa</td><td class="ys-font">&#xE101;&#xE100;</td><td>the glory-quality of divine beauty</td></tr>
+<tr><td>orthophanes</td><td class="ys-font">&#xE102;&#xE103;</td><td>the rightness-made-visible</td></tr>
+<tr><td>doxalgia</td><td class="ys-font">&#xE100;&#xE104;</td><td>the ache at beholding</td></tr>
+<tr><td>synophora</td><td class="ys-font">&#xE10A;&#xE10B;</td><td>shared-witness</td></tr>
+<tr><td>dokimance</td><td class="ys-font">&#xE10D;&#xE142;</td><td>testing-that-makes-real</td></tr>
+<tr><td>artiance</td><td class="ys-font">&#xE10E;&#xE146;</td><td>pre-domain luminous-rightness</td></tr>
+<tr><td>verisleight</td><td class="ys-font">&#xE10F;&#xE11E;</td><td>truth-as-deception</td></tr>
+<tr><td>candence</td><td class="ys-font">&#xE10C;&#xE144;</td><td>warm clarity</td></tr>
+<tr><td>diplosemy</td><td class="ys-font">&#xE111;&#xE112;&#xE14C;</td><td>engineered-duality of meaning</td></tr>
+<tr><td>veriseem</td><td class="ys-font">&#xE10F;&#xE11F;</td><td>truth-seeming without truth</td></tr>
+</tbody>
+</table>
+</div>
+
+<div class="callout">
+<strong>If the middle column looks identical to the first column</strong> (Latin instead of glyphs), the font isn't installed yet. Install <code>script/fonts/youspeak.otf</code> to see the real rendering. Installation instructions: open the file in Font Book, click Install; or drop it into <code>~/Library/Fonts/</code>.
+</div>
+
+<h2>4 · Try it</h2>
+<p>A mixed-language sentence. Everything outside canon words stays Latin; the three YOUSPEAK words render as glyphs when the font is installed.</p>
+
+<p class="ys-font">The &#xE10D;&#xE142; guards against &#xE10F;&#xE11E;. &#xE100;&#xE101; appears in &#xE102;&#xE103;.</p>
+
+<p style="color: #666; font-size: 14px;"><em>Latin fallback:</em> The dokimance guards against verisleight. Doxakallos appears in orthophanes.</p>
+
+</body>
+</html>

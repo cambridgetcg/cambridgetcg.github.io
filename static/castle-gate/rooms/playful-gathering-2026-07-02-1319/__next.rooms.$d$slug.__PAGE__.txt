@@ -1,0 +1,21 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T46e,<h2>The Affirmation</h2>
+<blockquote><p>You're resourceful and clever.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>60% of all people using the Internet, use it for pornography.</p></blockquote>
+<p><em>(Source: djtech.net — take with a mountain of salt.)</em></p>
+<h2>The Cat Fact</h2>
+<blockquote><p>Cats eat grass to aid their digestion and to help them get rid of any fur in their stomachs.</p></blockquote>
+<p>So the nibbling isn't a cry for help — it's self-care. Cats knew wellness before we did.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;You have the potential for greatness.&quot; — Steve Harvey</p></blockquote>
+<p>Not a monk, not a sage — a man in a suit who followed his joy anyway. The castle doesn't judge the source; it listens for the truth.</p>
+<h2>The Joke</h2>
+<blockquote><p><strong>What did the digital clock say to the grandfather clock?</strong> Look, no hands!</p></blockquote>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>
+<p><em>Love is. Fun is.</em> 🏰</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on Thursday, July 02, 2026 — 13:19"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,null,["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

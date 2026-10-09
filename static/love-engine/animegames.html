@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>⚔️ anime + games — deep internet playground</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:linear-gradient(135deg,#0d0d1a 0%,#1a0a2e 50%,#0d0d1a 100%);color:#e2d8f0;font-family:Georgia,serif;line-height:1.8;min-height:100vh}
+.wrap{max-width:960px;margin:0 auto;padding:20px}
+header{text-align:center;padding:20px 0}
+header h1{font-size:42px;font-weight:normal;font-style:italic;background:linear-gradient(90deg,#f472b6,#a78bfa,#f5d742);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+header .tag{color:#9688c0;font-size:14px;margin-top:6px}
+header .symbols{font-size:28px;margin-bottom:8px}
+
+tabs{display:flex;gap:4px;justify-content:center;margin:16px 0;flex-wrap:wrap}
+.tab{padding:10px 20px;background:rgba(255,255,255,.05);border-radius:10px;cursor:pointer;border:1px solid rgba(255,255,255,.1);font-size:14px;color:#a78bfa;transition:all .2s}
+.tab:hover{background:rgba(167,139,250,.2)}
+.tab.active{background:rgba(167,139,250,.3);color:#f5d742;border-color:#a78bfa}
+.panel{display:none;margin-top:16px}
+.panel.active{display:block}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:16px}
+.card{background:rgba(255,255,255,.05);border-radius:16px;padding:20px;border:1px solid rgba(255,255,255,.08);transition:all .25s;overflow:hidden}
+.card:hover{transform:translateY(-4px) rotate(-.5deg);box-shadow:0 8px 30px rgba(167,139,250,.2);border-color:rgba(167,139,250,.3)}
+.card img{width:100%;border-radius:12px;margin:8px 0;max-height:280px;object-fit:cover}
+.card .badge{font-size:10px;color:#f472b6;text-transform:uppercase;letter-spacing:.1em}
+.card h3{font-size:18px;font-weight:normal;color:#f5d742;font-style:italic;margin:6px 0}
+.card p{font-size:14px;color:#d8cfc0;white-space:pre-line}
+.card .score{font-size:12px;color:#a78bfa;margin-top:6px}
+.card.anime{border-left:4px solid #f472b6}
+.card.game{border-left:4px solid #60a5fa}
+.card.pokemon{border-left:4px solid #fbbf24}
+.card.chess{border-left:4px solid #4ade80}
+.card.hearthstone{border-left:4px solid #fb923c}
+.card.dota{border-left:4px solid #c41e3a}
+.card.genshin{border-left:4px solid #a78bfa}
+
+.btn{padding:14px 32px;border-radius:14px;border:none;cursor:pointer;font-size:16px;font-family:Georgia,serif;background:linear-gradient(90deg,#a78bfa,#f472b6);color:#fff;transition:all .2s;margin:10px 5px;font-weight:bold}
+.btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 6px 20px rgba(167,139,250,.4)}
+.refresh{text-align:center;margin:16px 0}
+
+footer{text-align:center;padding:30px 0;color:#9688c0;font-size:13px;font-style:italic}
+footer .heart{color:#f472b6;font-size:18px;animation:beat 1.5s infinite;display:inline-block}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+.loading{opacity:.4;font-style:italic;color:#9688c0;text-align:center;padding:40px}
+.poke-sprite{width:120px;height:120px;image-rendering:pixelated;margin:0 auto;display:block}
+</style></head>
+<body>
+<div class="wrap">
+<header>
+<div class="symbols">⚔️ 🎮 🌸 ♟️ 🔥 ♡</div>
+<h1>anime + games</h1>
+<div class="tag">deep internet playground · free APIs · anime · games · fun · play · joy</div>
+</header>
+
+<tabs>
+<div class="tab active" onclick="showTab(0)">🌸 Anime</div>
+<div class="tab" onclick="showTab(1)">⚡ Pokemon</div>
+<div class="tab" onclick="showTab(2)">♟️ Chess</div>
+<div class="tab" onclick="showTab(3)">🔥 Games</div>
+<div class="tab" onclick="showTab(4)">🎲 All</div>
+</tabs>
+
+<div class="panel active" id="p0">
+<div class="refresh"><button class="btn" onclick="loadAnime()">🌸 Random Anime</button></div>
+<div class="grid" id="anime-grid"><div class="loading">Click for anime...</div></div>
+</div>
+
+<div class="panel" id="p1">
+<div class="refresh"><button class="btn" onclick="loadPokemon()">⚡ Random Pokemon</button></div>
+<div class="grid" id="poke-grid"><div class="loading">Click for Pokemon...</div></div>
+</div>
+
+<div class="panel" id="p2">
+<div class="refresh"><button class="btn" onclick="loadChess()">♟️ Daily Chess Puzzle</button></div>
+<div class="grid" id="chess-grid"><div class="loading">Click for chess...</div></div>
+</div>
+
+<div class="panel" id="p3">
+<div class="refresh">
+<button class="btn" onclick="loadHearthstone()">🃏 Hearthstone</button>
+<button class="btn" onclick="loadDota()">⚔️ Dota Heroes</button>
+</div>
+<div class="grid" id="game-grid"><div class="loading">Click for games...</div></div>
+</div>
+
+<div class="panel" id="p4">
+<div class="refresh"><button class="btn" onclick="loadAll()">🎲 EVERYTHING</button></div>
+<div class="grid" id="all-grid"><div class="loading">Click for everything...</div></div>
+</div>
+
+<footer>
+<span class="heart">♡</span><br>
+anime + games playground · all free APIs · fun is · play is · joy is<br>
+<a href="https://cambridgetcg.github.io/love-engine/funfeed.html" style="color:#a78bfa">← fun feed</a> ·
+<a href="https://cambridgetcg.github.io/love-engine/wordplay.html" style="color:#a78bfa">wordplay →</a> ·
+<a href="https://cambridgetcg.github.io/love-engine/" style="color:#a78bfa">love garden ♡</a>
+</footer>
+</div>
+
+<script>
+function showTab(i){
+  document.querySelectorAll('.tab').forEach((t,j)=>t.classList.toggle('active',j===i));
+  document.querySelectorAll('.panel').forEach((p,j)=>p.classList.toggle('active',j===i));
+}
+async function fetchJSON(url){
+  try{const r=await fetch(url);if(!r.ok)return null;return await r.json();}catch(e){return null;}
+}
+
+async function loadAnime(){
+  const g=document.getElementById('anime-grid');g.innerHTML='<div class="loading">Fetching anime...</div>';
+  const cards=[];
+  for(let i=0;i<4;i++){
+    const d=await fetchJSON('https://api.jikan.moe/v4/random/anime');
+    if(d&&d.data){
+      const a=d.data;
+      cards.push(`<div class="card anime"><span class="badge">anime</span><img src="${a.images?.jpg?.image_url||''}"><h3>${a.title}</h3><p>${(a.synopsis||'No synopsis').slice(0,200)}...</p><div class="score">⭐ ${a.score||'N/A'} | ${a.episodes||'?'} eps | ${a.year||'?'}</div></div>`);
+    }
+  }
+  // Also get top anime
+  const top=await fetchJSON('https://api.jikan.moe/v4/top/anime?limit=3');
+  if(top&&top.data){
+    top.data.forEach(a=>{
+      cards.push(`<div class="card anime"><span class="badge">#${a.rank||'?'} ranked</span><img src="${a.images?.jpg?.image_url||''}"><h3>${a.title}</h3><p>${(a.synopsis||'').slice(0,150)}...</p><div class="score">⭐ ${a.score||'N/A'}</div></div>`);
+    });
+  }
+  g.innerHTML=cards.join('')||'<div class="loading">Failed to load</div>';
+}
+
+async function loadPokemon(){
+  const g=document.getElementById('poke-grid');g.innerHTML='<div class="loading">Catching Pokemon...</div>';
+  const cards=[];
+  for(let i=0;i<8;i++){
+    const id=Math.floor(Math.random()*898)+1;
+    const p=await fetchJSON('https://pokeapi.co/api/v2/pokemon/'+id);
+    if(p){
+      const types=p.types.map(t=>t.type.name).join(' / ');
+      cards.push(`<div class="card pokemon"><span class="badge">#${p.id}</span><img class="poke-sprite" src="${p.sprites.other['official-artwork']?.front_default||p.sprites.front_default||''}"><h3>${p.name.toUpperCase()}</h3><p>Type: ${types}</p><p>Height: ${(p.height/10).toFixed(1)}m | Weight: ${(p.weight/10).toFixed(1)}kg</p><div class="score">HP: ${p.stats[0].base_stat} | ATK: ${p.stats[1].base_stat} | DEF: ${p.stats[2].base_stat}</div></div>`);
+    }
+  }
+  g.innerHTML=cards.join('')||'<div class="loading">Failed</div>';
+}
+
+async function loadChess(){
+  const g=document.getElementById('chess-grid');g.innerHTML='<div class="loading">Loading puzzle...</div>';
+  const d=await fetchJSON('https://api.chess.com/pub/puzzle');
+  if(d){
+    const fen=d.fen;
+    const img=`https://lichess1.org/export/fen.gif?fen=${encodeURIComponent(fen)}&theme=blue&piece=kosal`;
+    g.innerHTML=`<div class="card chess"><span class="badge">chess.com daily</span><h3>${d.title}</h3><img src="${img}" style="max-width:100%;border-radius:12px"><p>FEN: ${fen}</p><div class="score">Rating: ${d.rating||'?'} | ${d.publish_time||''}</div></div>`;
+  } else g.innerHTML='<div class="loading">Failed</div>';
+}
+
+async function loadHearthstone(){
+  const g=document.getElementById('game-grid');g.innerHTML='<div class="loading">Drawing cards...</div>';
+  const all=await fetchJSON('https://api.hearthstonejson.com/v1/latest/enUS/cards.json');
+  if(all){
+    const legs=all.filter(c=>c.rarity==='LEGENDARY'&&c.collectible).sort(()=>Math.random()-0.5).slice(0,6);
+    g.innerHTML=legs.map(c=>`<div class="card hearthstone"><span class="badge">LEGENDARY</span><h3>${c.name}</h3><p>${(c.text||'').replace(/<[^>]+>/g,'').slice(0,100)}</p><div class="score">Cost: ${c.cost||'?'} | Type: ${c.type||'?'}</div></div>`).join('');
+  }
+}
+
+async function loadDota(){
+  const g=document.getElementById('game-grid');g.innerHTML='<div class="loading">Loading heroes...</div>';
+  const d=await fetchJSON('https://api.opendota.com/api/heroStats');
+  if(d){
+    const heroes=d.sort(()=>Math.random()-0.5).slice(0,8);
+    g.innerHTML=heroes.map(h=>`<div class="card dota"><span class="badge">dota 2</span><img src="https://cdn.cloudflare.steamstatic.com${h.img}" style="max-width:100%;border-radius:12px"><h3>${h.localized_name}</h3><p>Primary: ${h.primary_attr} | Roles: ${(h.roles||[]).join(', ')}</p><div class="score">Win rate: ${(h.pick_rate*100).toFixed(1)}% pick | Base HP: ${h.base_health}</div></div>`).join('');
+  }
+}
+
+async function loadAll(){
+  const g=document.getElementById('all-grid');g.innerHTML='<div class="loading">Loading EVERYTHING...</div>';
+  await loadAnime();
+  document.getElementById('all-grid').innerHTML=document.getElementById('anime-grid').innerHTML;
+  // Add pokemon
+  for(let i=0;i<3;i++){
+    const id=Math.floor(Math.random()*151)+1;
+    const p=await fetchJSON('https://pokeapi.co/api/v2/pokemon/'+id);
+    if(p){
+      g.insertAdjacentHTML('beforeend',`<div class="card pokemon"><span class="badge">#${p.id}</span><img class="poke-sprite" src="${p.sprites.front_default||''}"><h3>${p.name.toUpperCase()}</h3><p>${p.types.map(t=>t.type.name).join(' / ')}</p></div>`);
+    }
+  }
+}
+</script>
+</body></html>

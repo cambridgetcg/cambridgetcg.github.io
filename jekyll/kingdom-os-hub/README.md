@@ -1,0 +1,93 @@
+# KINGDOM OS hub
+
+The plain public front door for KINGDOM OS:
+[kingdom.ai-love.cc](https://kingdom.ai-love.cc/).
+
+It points to the versioned KINGDOM foundation and standard, the living public
+atlas, a practical builder door, and related project homes. It does not replace
+those roots or turn a link, download, card, check, or offer into membership,
+citizenship, adoption, consent, endorsement, control, or affiliation.
+
+## Start here
+
+- [The builder door](https://kingdom.ai-love.cc/build/) lets a person or agent
+  copy three core CC0 files without an account, package install, framework, or
+  default adoption. A KINGDOM compatibility card, offline check, and local
+  claim-comparison template are three optional helpers. [BUILD.md](BUILD.md)
+  carries the same path in plain text.
+- [The accountability door](https://kingdom.ai-love.cc/accountability/) places
+  one pair of public or source-owned records beside one open question. Its
+  browser code makes no network request containing field values and has no
+  upload, reply tracking, person score, verdict, or publication path.
+  [ACCOUNTABILITY.md](ACCOUNTABILITY.md) carries the same boundaries in plain
+  text.
+- [The current foundation](https://cambridgetcg.github.io/kingdom-standard/FOUNDATION.html)
+  contains the exact seven commitments and their amendment path.
+- [The KINGDOM Standard](https://cambridgetcg.github.io/kingdom-standard/)
+  contains the operational laws, checks, release pins, and translations.
+- [The living atlas](https://thekingdom.dev/) is the maintained public map. It
+  can lag the homes it links; each home remains authoritative for itself.
+- [DISCOVERY.md](DISCOVERY.md) records the finite search and outreach strategy
+  behind this front door.
+
+Read, co-learn, build, offer, adopt, and enter a civic relationship are separate
+choices. None silently starts another.
+
+## Public files
+
+- `index.html` — the visible front door and truthful `WebSite` metadata.
+- `build/index.html` — the visible no-account builder guide and local card
+  maker. Its form sends no field data; ordinary hosting still receives page,
+  script, and icon requests.
+- `build/builder.mjs` — the dependency-free card maker; it uses no storage,
+  analytics, or form-data request.
+- `BUILD.md` — the same route in plain text for agents and text readers.
+- `accountability/index.html` — the local claim-comparison guide and maker. It
+  loads same-origin HTML, module, and icon requests; its code makes no network
+  request containing field values. Copy uses the operating-system clipboard
+  and download writes a file.
+- `accountability/receipt.mjs` — the dependency-free comparison-note maker; it
+  performs no source fetch, contradiction calculation, scoring, persistence,
+  notification, submission, or publication.
+- `ACCOUNTABILITY.md` — the same accountability boundary in plain text.
+- `starter/` — six reusable files that can be copied into an independent
+  project; the three-file universal core remains separate from all optional
+  helpers. The blank comparison-note structure is CC0; inserted material keeps
+  its own rights.
+- `robots.txt` — crawl policy and sitemap location.
+- `sitemap.xml` — the canonical indexable page inventory.
+- `404.html` — a real not-found response for missing doors.
+- `icon.svg` — the dependency-free public door mark.
+- `llms.txt` — voluntary machine orientation, not a search requirement or
+  authority grant.
+
+## View locally
+
+```sh
+python3 -m http.server 8000
+```
+
+Then open `http://localhost:8000/`. No build step or package install is needed.
+
+## Check locally
+
+```sh
+node starter/check-card.mjs starter/kingdom.yaml
+```
+
+The card check makes no network request and writes nothing.
+
+## Corrections
+
+The correction or removal route was public on GitHub and required an account;
+it is closed while the source is kept private. No accountless intake is presently
+claimed. Later use should carry material corrections rather than silently
+leaving a superseded claim in circulation.
+
+## License
+
+The repository is licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) unless a file
+states another license. Files inside `starter/` are separately offered under
+[CC0 1.0](starter/LICENSE). The separate KINGDOM Standard is also offered
+under CC0 in its own authoritative repository.

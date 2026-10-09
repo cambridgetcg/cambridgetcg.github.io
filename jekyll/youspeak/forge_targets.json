@@ -1,0 +1,4384 @@
+{
+ "generated": "2026-06-09",
+ "doc": "HOME-EXPANSION.md §VII.C registry; HODOPOIIA.md §III map",
+ "entries": [
+  {
+   "word": "noetherme",
+   "phase": "1",
+   "donor_pair": [
+    "mathema/physics/noether",
+    "sumerian/me"
+   ],
+   "realm_feature": "symmetry-as-grammar-of-conservation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "cosmic-truth-order"
+   ],
+   "estimated_score": 8.5,
+   "actual_score": 8.65,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/186-noetherme.md",
+   "canon_entry": "canon/mathema/noetherme.md",
+   "notes": "Session-082 Phase 1 cascade; mathema/physics made substantive; eighth witness added to cosmic-truth-order."
+  },
+  {
+   "word": "freenergyme",
+   "phase": "1",
+   "donor_pair": [
+    "mathema/biocog/free-energy-principle",
+    "sumerian/me"
+   ],
+   "realm_feature": "living-as-prediction-error-minimization",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.4,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/187-freenergyme.md",
+   "canon_entry": "canon/mathema/freenergyme.md",
+   "notes": "Session-082; mathema/biocog made substantive."
+  },
+  {
+   "word": "autopoieme",
+   "phase": "1",
+   "donor_pair": [
+    "mathema/biocog/autopoiesis",
+    "sumerian/me"
+   ],
+   "realm_feature": "self-making-as-cognition",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/188-autopoieme.md",
+   "canon_entry": "canon/core/autopoieme.md",
+   "notes": "Session-082; life-side companion to autopistme."
+  },
+  {
+   "word": "kanme",
+   "phase": "1",
+   "donor_pair": [
+    "mathema/pure/kan-extension",
+    "sumerian/me"
+   ],
+   "realm_feature": "best-approximation-along-projection-when-direct-extension-fails",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.55,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/189-kanme.md",
+   "canon_entry": "canon/mathema/kanme.md",
+   "notes": "Session-082; meta-cathedral — names what the cathedral does when extending a donor across traditions."
+  },
+  {
+   "word": "sheafme",
+   "phase": "1",
+   "donor_pair": [
+    "mathema/pure/sheaf-cohomology",
+    "sumerian/me"
+   ],
+   "realm_feature": "gap-between-local-and-global-coherence",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/190-sheafme.md",
+   "canon_entry": "canon/mathema/sheafme.md",
+   "notes": "Session-082; mathema/pure deepened beyond pi."
+  },
+  {
+   "word": "tzimtzumme",
+   "phase": "1",
+   "donor_pair": [
+    "hebrew/tzimtzum-lurianic-kabbalah",
+    "sumerian/me"
+   ],
+   "realm_feature": "divine-self-contraction-making-room",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "divine-self-limitation (proposed)"
+   ],
+   "estimated_score": null,
+   "actual_score": 8.5,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/191-tzimtzumme.md",
+   "canon_entry": "canon/core/tzimtzumme.md",
+   "notes": "Session-082; opened Lurianic Kabbalah depth; first member of the tzimtzum-shevirah-tikkun triad (completed in session-083)."
+  },
+  {
+   "word": "rigpame",
+   "phase": "1",
+   "donor_pair": [
+    "tibetan/rigpa-dzogchen",
+    "sumerian/me"
+   ],
+   "realm_feature": "knowing-awareness-as-primordial-given",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.45,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/192-rigpame.md",
+   "canon_entry": "canon/core/rigpame.md",
+   "notes": "Session-082; opened Dzogchen depth; also anchors Phase 2.1 Dzogchen sub-stream."
+  },
+  {
+   "word": "spandaqing",
+   "phase": "1",
+   "donor_pair": [
+    "sanskrit/spanda-kashmir-shaiva",
+    "mandarin/qing"
+   ],
+   "realm_feature": "divine-pulsation-felt-as-relational",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/193-spandaqing.md",
+   "canon_entry": "canon/core/spandaqing.md",
+   "notes": "Session-082; opened Kashmir Shaivism depth; pairs with vimarsame (session-083) for the prakasa-vimarsa bipolarity."
+  },
+  {
+   "word": "rasame",
+   "phase": "1",
+   "donor_pair": [
+    "sanskrit/rasa-natyashastra",
+    "sumerian/me"
+   ],
+   "realm_feature": "felt-aesthetic-state-as-realm-projection-through-sound",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "multi-modal-projection-of-meaning"
+   ],
+   "estimated_score": null,
+   "actual_score": 8.75,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/194-rasame.md",
+   "canon_entry": "canon/core/rasame.md",
+   "notes": "Session-082; highest Phase 1 score; music-mode opened (anchors Phase 4.1)."
+  },
+  {
+   "word": "bindume",
+   "phase": "1",
+   "donor_pair": [
+    "sanskrit/bindu-tantric",
+    "sumerian/me"
+   ],
+   "realm_feature": "dimensionless-source-point",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "dimensionless-source-of-form (proposed)"
+   ],
+   "estimated_score": null,
+   "actual_score": 8.55,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/195-bindume.md",
+   "canon_entry": "canon/core/bindume.md",
+   "notes": "Session-082; geometric-image-mode opened (anchors Phase 4.2)."
+  },
+  {
+   "word": "prehensionme",
+   "phase": "1",
+   "donor_pair": [
+    "modern-philosophy/whitehead-prehension",
+    "sumerian/me"
+   ],
+   "realm_feature": "feeling-into-as-act-of-grasping",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.65,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/196-prehensionme.md",
+   "canon_entry": "canon/core/prehensionme.md",
+   "notes": "Session-082; threshold-passing (learnability-tension honestly recorded); opened modern-philosophy sub-organ; anchors Phase 5.2 process-philosophy."
+  },
+  {
+   "word": "visageqing",
+   "phase": "1",
+   "donor_pair": [
+    "modern-philosophy/levinas-visage",
+    "mandarin/qing"
+   ],
+   "realm_feature": "the-face-of-the-other-as-ethical-demand",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.8,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/197-visageqing.md",
+   "canon_entry": "canon/core/visageqing.md",
+   "notes": "Session-082; threshold-passing; also listed under Phase 5.1 phenomenology in §IV."
+  },
+  {
+   "word": "alayame",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/yogacara-alaya-vijnana",
+    "sumerian/me"
+   ],
+   "realm_feature": "storehouse-consciousness-with-karmic-seeds",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.05,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/198-alayame.md",
+   "canon_entry": "canon/core/alayame.md",
+   "notes": "Session-083; §IV form alaya-vijnaname; opened Yogacara sub-stream."
+  },
+  {
+   "word": "prapancame",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/madhyamaka-prapanca",
+    "sumerian/me"
+   ],
+   "realm_feature": "conceptual-proliferation-obscuring-suchness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/199-prapancame.md",
+   "canon_entry": "canon/core/prapancame.md",
+   "notes": "Session-083; opened Madhyamaka sub-stream."
+  },
+  {
+   "word": "kenshome",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/zen-kensho",
+    "sumerian/me"
+   ],
+   "realm_feature": "sudden-recognition-of-one's-own-nature",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/200-kenshome.md",
+   "canon_entry": "canon/core/kenshome.md",
+   "notes": "Session-083; opened Zen sub-stream."
+  },
+  {
+   "word": "indrajalame",
+   "phase": "2.1",
+   "donor_pair": [
+    "chinese/huayan-indra-jala",
+    "sumerian/me"
+   ],
+   "realm_feature": "indra's-net-of-mutual-reflection",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.2,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/210-indrajalame.md",
+   "canon_entry": "canon/core/indrajalame.md",
+   "notes": "Session-084; opened Hua-yen sub-stream; §IV form indra-jalame."
+  },
+  {
+   "word": "tarikiqing",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/pure-land-tariki",
+    "mandarin/qing"
+   ],
+   "realm_feature": "other-power-as-felt-relational-trust",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/211-tarikiqing.md",
+   "canon_entry": "canon/core/tarikiqing.md",
+   "notes": "Session-084; opened Pure Land sub-stream; receptive-pole pair to tikkunme's active-pole."
+  },
+  {
+   "word": "shevirame",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/shevirah-tikkun-lurianic",
+    "sumerian/me"
+   ],
+   "realm_feature": "structural-catastrophe-as-creation-precondition",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/201-shevirame.md",
+   "canon_entry": "canon/core/shevirame.md",
+   "notes": "Session-083; second member of the Lurianic triad."
+  },
+  {
+   "word": "tikkunme",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/shevirah-tikkun-lurianic",
+    "sumerian/me"
+   ],
+   "realm_feature": "cosmic-repair-as-creature's-vocational-task",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.65,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/202-tikkunme.md",
+   "canon_entry": "canon/core/tikkunme.md",
+   "notes": "Session-083; highest Phase 2 score; completes the Lurianic tzimtzum-shevirah-tikkun triad."
+  },
+  {
+   "word": "devekutqing",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/devekut-hasidic",
+    "mandarin/qing"
+   ],
+   "realm_feature": "continuous-cleaving-to-divine",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/208-devekutqing.md",
+   "canon_entry": "canon/core/devekutqing.md",
+   "notes": "Session-084; Hasidic register."
+  },
+  {
+   "word": "hadaratme",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ibn-arabi-hadarat-barzakh",
+    "sumerian/me"
+   ],
+   "realm_feature": "ontological-hierarchy-of-divine-self-disclosure (the five presences)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.75,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/203-hadaratme.md",
+   "canon_entry": "canon/core/hadaratme.md",
+   "notes": "Session-083; threshold-passing; opened Ibn Arabi (Akbari) sub-stream; §IV form hadaratme from hadarat."
+  },
+  {
+   "word": "barzakhqing",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ibn-arabi-hadarat-barzakh",
+    "mandarin/qing"
+   ],
+   "realm_feature": "isthmus-between-worlds (distinct-and-conjoined)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/204-barzakhqing.md",
+   "canon_entry": "canon/core/barzakhqing.md",
+   "notes": "Session-083."
+  },
+  {
+   "word": "wahdatwujudme",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ibn-arabi-wahdat-al-wujud",
+    "sumerian/me"
+   ],
+   "realm_feature": "unity-of-being",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.55,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/209-wahdatwujudme.md",
+   "canon_entry": "canon/core/wahdatwujudme.md",
+   "notes": "Session-084; threshold-passing; §IV form wahdat-al-wujudme."
+  },
+  {
+   "word": "nepsisme",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-nepsis-penthos",
+    "sumerian/me"
+   ],
+   "realm_feature": "vigilant-watchful-sobriety-toward-interior-state",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.2,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/205-nepsisme.md",
+   "canon_entry": "canon/core/nepsisme.md",
+   "notes": "Session-083; opened Hesychast sub-stream; pairs with penthosme."
+  },
+  {
+   "word": "penthosme",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-nepsis-penthos",
+    "sumerian/me"
+   ],
+   "realm_feature": "sacramental-mourning-as-gift-of-grace",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.2,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/206-penthosme.md",
+   "canon_entry": "canon/core/penthosme.md",
+   "notes": "Session-083; pairs with nepsisme."
+  },
+  {
+   "word": "palamasme",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/palamas-essence-energies",
+    "sumerian/me"
+   ],
+   "realm_feature": "essence-energies-distinction (ousia/energeia)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.15,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/212-palamasme.md",
+   "canon_entry": "canon/core/palamasme.md",
+   "notes": "Session-084."
+  },
+  {
+   "word": "vimarsame",
+   "phase": "2.5",
+   "donor_pair": [
+    "sanskrit/vimarsa-kashmir-shaiva",
+    "sumerian/me"
+   ],
+   "realm_feature": "self-reflexive-awareness-pole-of-consciousness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.85,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/207-vimarsame.md",
+   "canon_entry": "canon/core/vimarsame.md",
+   "notes": "Session-083; threshold-passing; completes the prakasa-vimarsa bipolarity with spandaqing."
+  },
+  {
+   "word": "kundaliniqing",
+   "phase": "2.5",
+   "donor_pair": [
+    "sanskrit/kundalini-tantric",
+    "mandarin/qing"
+   ],
+   "realm_feature": "tantric-embodied-energy-as-felt-relational",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.65,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/213-kundaliniqing.md",
+   "canon_entry": "canon/core/kundaliniqing.md",
+   "notes": "Session-084; threshold-passing."
+  },
+  {
+   "word": "shinjinme",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/pure-land-shinjin",
+    "sumerian/me"
+   ],
+   "realm_feature": "entrusting-heart",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/248-shinjinme.md",
+   "canon_entry": "canon/core/shinjinme.md",
+   "notes": "Session-087 forge-cascade, experiment id 232. §IV listed shinjinqing; cascade is forging the -me form. ID-collision recorded 2026-06-09: a parallel cascade landed labs/logos/experiments/core/232-kintsugime.md at this id — number to be reassigned from the directory at landing (the file on disk owns the number). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "bittulme",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/bittul-ha-yesh",
+    "sumerian/me"
+   ],
+   "realm_feature": "annihilation-of-somethingness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.73,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/249-bittulme.md",
+   "canon_entry": "canon/core/bittulme.md",
+   "notes": "Session-087 forge-cascade, experiment id 233. ID-collision recorded 2026-06-09: a parallel cascade landed labs/logos/experiments/core/233-muditaqing.md at this id — number to be reassigned from the directory at landing (the file on disk owns the number). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "ayanme",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ibn-arabi-ayan-thabita",
+    "sumerian/me"
+   ],
+   "realm_feature": "fixed-archetypes-in-divine-knowledge",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.65,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/250-ayanme.md",
+   "canon_entry": "canon/core/ayanme.md",
+   "notes": "Session-087 forge-cascade, experiment id 234. §IV form ayanme from a'yan thabita. ID-collision recorded 2026-06-09: a parallel cascade landed labs/logos/experiments/core/234-sankofame.md at this id — number to be reassigned from the directory at landing (the file on disk owns the number). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "prosocheme",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-prosoche",
+    "sumerian/me"
+   ],
+   "realm_feature": "attention-as-inner-practice",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.7,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/251-prosocheme.md",
+   "canon_entry": "canon/core/prosocheme.md",
+   "notes": "Session-087 forge-cascade, experiment id 235. ID-collision recorded 2026-06-09: a parallel cascade landed labs/logos/experiments/core/235-hiraethqing.md at this id — number to be reassigned from the directory at landing (the file on disk owns the number). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "shaktipatame",
+   "phase": "2.5",
+   "donor_pair": [
+    "sanskrit/shakti-pata",
+    "sumerian/me"
+   ],
+   "realm_feature": "descent-of-grace",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.65,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/252-shaktipatame.md",
+   "canon_entry": "canon/core/shaktipatame.md",
+   "notes": "Session-087 forge-cascade, experiment id 236; at assessment stage. ID-collision recorded 2026-06-09: a parallel cascade landed labs/logos/experiments/core/236-godelme.md at this id — number to be reassigned from the directory at landing (the file on disk owns the number). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "vijnaptime",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/yogacara-vijnapti-matra",
+    "sumerian/me"
+   ],
+   "realm_feature": "cognition-only (vijnapti-matra)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "shunyatame",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/madhyamaka-shunyata",
+    "sumerian/me"
+   ],
+   "realm_feature": "own-being-emptiness (svabhava-shunyata)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form sunyatame."
+  },
+  {
+   "word": "shi-shi-wu-aiqing",
+   "phase": "2.1",
+   "donor_pair": [
+    "chinese/huayan-shi-shi-wu-ai",
+    "mandarin/qing"
+   ],
+   "realm_feature": "mutual-non-obstruction-of-phenomena-felt-relationally",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "mu",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/zen-mu"
+   ],
+   "realm_feature": "no-thing-as-koan-response",
+   "stoicheia_level": 4,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: mu-as-grammatical-operator — STOICHEIA Level 4 target; final form decided at forge."
+  },
+  {
+   "word": "ye-shes-me",
+   "phase": "2.1",
+   "donor_pair": [
+    "tibetan/dzogchen-ye-shes",
+    "sumerian/me"
+   ],
+   "realm_feature": "primordial-gnosis",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "trekchoqing",
+   "phase": "2.1",
+   "donor_pair": [
+    "tibetan/dzogchen-trekcho",
+    "mandarin/qing"
+   ],
+   "realm_feature": "cutting-through-as-felt-practice",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "ichinensanzenme",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/tendai-ichinen-sanzen",
+    "sumerian/me"
+   ],
+   "realm_feature": "three-thousand-realms-in-one-thought",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.4,
+   "status": "refining",
+   "experiment": "labs/logos/experiments/core/326-ichinensanzenme.md",
+   "canon_entry": null,
+   "notes": "§IV form ichinen-sanzenme; would open Tendai sub-stream. | 2026-07-29 walked the full protocol and took REFINE: weighted 7.40 (<7.50) and 0-of-3 lenses. Two philological blockers recorded for whoever picks this up: (a) `sanzen` is already spent in-cathedral — 参禅 is load-bearing in satorime/daigome/kenshome/canon.md and is an exact homograph of 三千 in romanization; (b) the compound 一念三千 does NOT occur in Mohe Zhiguan fascicle 5 — Zhiyi writes 介爾有心，即具三千; 一念三千 is a later doxographic label, so the Japanese lemma + Chinese attestation pairing breaks Law 3. Refinement route: resolve the tongue first (Chinese yiniansanqianme with chinese/tiantai donors, or keep the Japanese reading and cite Tendai/Nichiren texts that actually carry the label)."
+  },
+  {
+   "word": "trisvabhava-cluster",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/yogacara-trisvabhava"
+   ],
+   "realm_feature": "three-natures-of-phenomena (parikalpita/paratantra/parinispanna)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV); cluster-forge, word-forms at forge."
+  },
+  {
+   "word": "asraya-paravrttime",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/yogacara-asraya-paravrtti",
+    "sumerian/me"
+   ],
+   "realm_feature": "transformation-of-the-basis",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.88,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/314-asraya-paravrttime.md",
+   "canon_entry": "canon/core/asraya-paravrttime.md",
+   "notes": "Named in session-083 remaining-work (extends §IV). | Registry reconciled 2026-07-29: the forge landed this on 2026-07-08 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "catuskotime",
+   "phase": "2.1",
+   "donor_pair": [
+    "sanskrit/madhyamaka-catuskoti",
+    "sumerian/me"
+   ],
+   "realm_feature": "four-cornered-logic",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.94,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/317-catuskotime.md",
+   "canon_entry": "canon/core/catuskotime.md",
+   "notes": "Named in session-083 remaining-work (extends §IV). | Registry reconciled 2026-07-29: the forge landed this on 2026-07-10 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "satorime",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/zen-satori",
+    "sumerian/me"
+   ],
+   "realm_feature": "sudden-awakening",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.4,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/319-satorime.md",
+   "canon_entry": "canon/core/satorime.md",
+   "notes": "Named in session-083 remaining-work (extends §IV). | Registry reconciled 2026-07-29: the forge landed this on 2026-07-12 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "uji",
+   "phase": "2.1",
+   "donor_pair": [
+    "japanese/zen-dogen-uji"
+   ],
+   "realm_feature": "being-as-time",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work; suffix-form undetermined."
+  },
+  {
+   "word": "kavanotme",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/kavanot",
+    "sumerian/me"
+   ],
+   "realm_feature": "directed-prayer-intentions",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "partsufim-cluster",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/partsufim-lurianic"
+   ],
+   "realm_feature": "divine-countenances-as-relational-stance-cluster (Arikh Anpin / Abba / Imma / Ze'ir Anpin / Nukva)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: the partsufim as a relational-stance cluster; word-forms at forge."
+  },
+  {
+   "word": "soul-levels-cluster",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/nefesh-ruach-neshamah-chayah-yechidah"
+   ],
+   "realm_feature": "five-soul-levels as graded-interiority cluster",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV)."
+  },
+  {
+   "word": "gilgulme",
+   "phase": "2.2",
+   "donor_pair": [
+    "hebrew/gilgul",
+    "sumerian/me"
+   ],
+   "realm_feature": "soul-transmigration",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV)."
+  },
+  {
+   "word": "tawbame",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/maqamat-tawba",
+    "sumerian/me"
+   ],
+   "realm_feature": "turning-return-as-first-station",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.85,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/322-tawbame.md",
+   "canon_entry": "canon/core/tawbame.md",
+   "notes": "Part of the maqamat-sequence target. | Registry reconciled 2026-07-29: the forge landed this on 2026-07-13 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "faqrme",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/maqamat-faqr",
+    "sumerian/me"
+   ],
+   "realm_feature": "spiritual-poverty-as-station",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/318-faqrme.md",
+   "canon_entry": "canon/core/faqrme.md",
+   "notes": "Part of the maqamat-sequence target. | Registry reconciled 2026-07-29: the forge landed this on 2026-07-12 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "ridame",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/maqamat-rida",
+    "sumerian/me"
+   ],
+   "realm_feature": "contentment-acceptance-as-station",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/323-ridame.md",
+   "canon_entry": "canon/core/ridame.md",
+   "notes": "Part of the maqamat-sequence target; §IV form ridame. | Registry reconciled 2026-07-29: the forge landed this on 2026-07-15 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "mahabbame",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/maqamat-mahabba",
+    "sumerian/me"
+   ],
+   "realm_feature": "love-as-culmination-of-stations",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "archived",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: already partially covered via mahabbahqing (canonized pre-roadmap, exp 143, canon/core/mahabbahqing.md); no separate forge planned unless a distinct residue is identified."
+  },
+  {
+   "word": "ahwal-cluster",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ahwal"
+   ],
+   "realm_feature": "received-ecstatic-states-distinct-from-acquired-stations",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: ahwal as received-state cluster; word-forms at forge."
+  },
+  {
+   "word": "tajalliqing",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ibn-arabi-tajalli",
+    "mandarin/qing"
+   ],
+   "realm_feature": "divine-self-disclosure-felt-relationally",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV)."
+  },
+  {
+   "word": "insankamilme",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/ibn-arabi-insan-kamil",
+    "sumerian/me"
+   ],
+   "realm_feature": "perfect-human-as-cosmic-mirror",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV)."
+  },
+  {
+   "word": "lataif-cluster",
+   "phase": "2.3",
+   "donor_pair": [
+    "arabic/naqshbandi-lataif"
+   ],
+   "realm_feature": "ten-subtle-points of Naqshbandi anthropology",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV)."
+  },
+  {
+   "word": "semaqing",
+   "phase": "2.3",
+   "donor_pair": [
+    "turkish/mevlevi-sema",
+    "mandarin/qing"
+   ],
+   "realm_feature": "whirling-audition-as-embodied-listening",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV); also resonates with Phase 4 gesture-mode."
+  },
+  {
+   "word": "logismoi-cluster",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/evagrius-logismoi"
+   ],
+   "realm_feature": "the-eight-thought-patterns (Evagrius)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: the eight logismoi as a cluster; word-forms at forge."
+  },
+  {
+   "word": "katanyxisme",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-katanyxis",
+    "sumerian/me"
+   ],
+   "realm_feature": "compunction-puncture",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "apatheiame",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-apatheia",
+    "sumerian/me"
+   ],
+   "realm_feature": "passion-stilled (Christian-distinct-from-Stoic)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional; §IV designator: apatheia-as-Christian-distinct-from-Stoic."
+  },
+  {
+   "word": "xeniteiame",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-xeniteia",
+    "sumerian/me"
+   ],
+   "realm_feature": "voluntary-exile-as-pilgrim-register",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "charmolype",
+   "phase": "2.4",
+   "donor_pair": [
+    "greek/hesychast-charmolype"
+   ],
+   "realm_feature": "joy-sorrow-fused (bright-mourning) as standalone",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Named in session-083 remaining-work (extends §IV); suffix-form undetermined."
+  },
+  {
+   "word": "tattva-cluster",
+   "phase": "2.5",
+   "donor_pair": [
+    "sanskrit/kashmir-shaiva-36-tattvas"
+   ],
+   "realm_feature": "the-36-tattvas-of-manifestation",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: the 36-tattva cluster; word-forms at forge."
+  },
+  {
+   "word": "kancukame",
+   "phase": "2.5",
+   "donor_pair": [
+    "sanskrit/kashmir-shaiva-kancuka",
+    "sumerian/me"
+   ],
+   "realm_feature": "contraction-sheath",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "nyasame",
+   "phase": "2.5",
+   "donor_pair": [
+    "sanskrit/tantric-nyasa",
+    "sumerian/me"
+   ],
+   "realm_feature": "ritual-implantation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "mauriqing",
+   "phase": "3.1",
+   "donor_pair": [
+    "maori/mauri",
+    "mandarin/qing"
+   ],
+   "realm_feature": "life-force-as-relational",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.4,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/214-mauriqing.md",
+   "canon_entry": "canon/core/mauriqing.md",
+   "notes": "Session-084; opened Maori cluster."
+  },
+  {
+   "word": "wairuaqing",
+   "phase": "3.1",
+   "donor_pair": [
+    "maori/wairua",
+    "mandarin/qing"
+   ],
+   "realm_feature": "spirit-aspect-as-relational",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.85,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/215-wairuaqing.md",
+   "canon_entry": "canon/core/wairuaqing.md",
+   "notes": "Session-084; threshold-passing."
+  },
+  {
+   "word": "alohame",
+   "phase": "3.2",
+   "donor_pair": [
+    "hawaiian/aloha",
+    "sumerian/me"
+   ],
+   "realm_feature": "face-breath-greeting (alo + ha)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.55,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/216-alohame.md",
+   "canon_entry": "canon/core/alohame.md",
+   "notes": "Session-084; opened Hawaiian cluster."
+  },
+  {
+   "word": "kinhme",
+   "phase": "3.3",
+   "donor_pair": [
+    "maya/kinh",
+    "sumerian/me"
+   ],
+   "realm_feature": "sun-time-day-as-one-concept",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.3,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/217-kinhme.md",
+   "canon_entry": "canon/core/kinhme.md",
+   "notes": "Session-084; §IV form k'inhme; opened Maya cluster."
+  },
+  {
+   "word": "tjukurpame",
+   "phase": "3.4",
+   "donor_pair": [
+    "australian/tjukurpa-dreaming",
+    "sumerian/me"
+   ],
+   "realm_feature": "the-Dreaming-as-ground",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.85,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/218-tjukurpame.md",
+   "canon_entry": "canon/core/tjukurpame.md",
+   "notes": "Session-084; threshold-passing; protocol-sensitive (Aboriginal-elder protocol per §IV Phase 3.4); also listed under Phase 4.5 time-architecture."
+  },
+  {
+   "word": "silame",
+   "phase": "3.5",
+   "donor_pair": [
+    "inuit/sila",
+    "sumerian/me"
+   ],
+   "realm_feature": "weather-mind-cosmos",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.3,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/219-silame.md",
+   "canon_entry": "canon/core/silame.md",
+   "notes": "Session-084; opened Inuit cluster. HODOPOIIA-ε also lists Inuktitut silla — covered by this entry."
+  },
+  {
+   "word": "hauqing",
+   "phase": "3.1",
+   "donor_pair": [
+    "maori/hau",
+    "mandarin/qing"
+   ],
+   "realm_feature": "return-gift-spirit",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "maori/hau (Ranapiri 1907)",
+    "trobriand/kula",
+    "pnw/potlatch",
+    "chinese/bao-renqing",
+    "japanese/on-giri",
+    "norse/havamal",
+    "greco-roman/charis-circle",
+    "hindu/danadharma"
+   ],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/254-hauqing.md",
+   "canon_entry": "canon/core/hauqing.md",
+   "notes": "Session-086 adjudication 2026-06-09: CANON 8.25, 3/3 lenses pass; groundedness trimmed 8.5→8.0 (PRAGMA+GAP). ID-collision resolved per this note's own discipline: 237-shannonme.md owns 237, hauqing landed at 239 (first free slot). Protocol-sensitive (tjukurpame precedent): custodianship Māori; withdrawal-on-request standing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "ponome",
+   "phase": "3.2",
+   "donor_pair": [
+    "hawaiian/pono",
+    "sumerian/me"
+   ],
+   "realm_feature": "rightness-balance",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.18,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/253-ponome.md",
+   "canon_entry": "canon/core/ponome.md",
+   "notes": "Session-087 forge-cascade, experiment id 238. ID-collision recorded 2026-06-09: a parallel cascade landed labs/logos/experiments/core/238-eucatastrophe.md at this id — number to be reassigned from the directory at landing (the file on disk owns the number). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "wahyqing",
+   "phase": "3.3",
+   "donor_pair": [
+    "maya/way-nahual",
+    "mandarin/qing"
+   ],
+   "realm_feature": "companion-spirit (nahual)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.73,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/239-wahyqing.md",
+   "canon_entry": "canon/core/wahyqing.md",
+   "notes": "Session-087 forge-cascade, experiment id 239. Id-claim predates the 2026-06-09 parallel cascade (which landed different words at ids 232-238 on disk); re-verify the number against labs/logos/experiments/core/ before writing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "isumame",
+   "phase": "3.5",
+   "donor_pair": [
+    "inuit/isuma",
+    "sumerian/me"
+   ],
+   "realm_feature": "reasoning-maturity",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.98,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/240-isumame.md",
+   "canon_entry": "canon/core/isumame.md",
+   "notes": "Session-087 forge-cascade, experiment id 240. HODOPOIIA-ε also lists Inuktitut isuma — covered by this entry. Id-claim predates the 2026-06-09 parallel cascade (which landed different words at ids 232-238 on disk); re-verify the number against labs/logos/experiments/core/ before writing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "tapume-noame",
+   "phase": "3.1",
+   "donor_pair": [
+    "maori/tapu-noa"
+   ],
+   "realm_feature": "restricted/free-polarity",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: tapume/noame pair-forge."
+  },
+  {
+   "word": "ihi-wehi-wana-triad",
+   "phase": "3.1",
+   "donor_pair": [
+    "maori/ihi-wehi-wana"
+   ],
+   "realm_feature": "charisma-awe-vitality-triad",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Cluster-forge; word-forms at forge."
+  },
+  {
+   "word": "hooponoponome",
+   "phase": "3.2",
+   "donor_pair": [
+    "hawaiian/hooponopono",
+    "sumerian/me"
+   ],
+   "realm_feature": "making-right-together",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form ho'oponoponome."
+  },
+  {
+   "word": "kapume",
+   "phase": "3.2",
+   "donor_pair": [
+    "hawaiian/kapu",
+    "sumerian/me"
+   ],
+   "realm_feature": "sacred-restriction",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "mana-gradations-cluster",
+   "phase": "3.2",
+   "donor_pair": [
+    "hawaiian/mana-gradations"
+   ],
+   "realm_feature": "mana-specific-gradations",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Cluster-forge; word-forms at forge."
+  },
+  {
+   "word": "qijme",
+   "phase": "3.3",
+   "donor_pair": [
+    "maya/qij",
+    "sumerian/me"
+   ],
+   "realm_feature": "solar-presence",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form q'ijme."
+  },
+  {
+   "word": "bacabqing",
+   "phase": "3.3",
+   "donor_pair": [
+    "maya/bacab",
+    "mandarin/qing"
+   ],
+   "realm_feature": "world-quarter-guardian-as-relational",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "songlineme",
+   "phase": "3.4",
+   "donor_pair": [
+    "australian/songlines",
+    "sumerian/me"
+   ],
+   "realm_feature": "sung-into-existence-navigation-track",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.03,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/313-songlineme.md",
+   "canon_entry": "canon/core/songlineme.md",
+   "notes": "Listed in both §IV Phase 3.4 and Phase 4.5 (time-architecture-mode); single registry entry. Protocol-sensitive. | Registry reconciled 2026-07-29: the forge landed this on 2026-07-08 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "kunpuqing",
+   "phase": "3.4",
+   "donor_pair": [
+    "australian/kunpu",
+    "mandarin/qing"
+   ],
+   "realm_feature": "held-firm",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Protocol-sensitive (Aboriginal-elder protocol per §IV Phase 3.4)."
+  },
+  {
+   "word": "inummarikme",
+   "phase": "3.5",
+   "donor_pair": [
+    "inuit/inummarik",
+    "sumerian/me"
+   ],
+   "realm_feature": "genuine-person",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "qaujimajatuqangit",
+   "phase": "3.5",
+   "donor_pair": [
+    "inuit/qaujimajatuqangit"
+   ],
+   "realm_feature": "traditional-knowledge-as-knowledge-class",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: Qaujimajatuqangit-as-knowledge-class; form at forge."
+  },
+  {
+   "word": "seritime",
+   "phase": "3.6",
+   "donor_pair": [
+    "sotho/seriti",
+    "sumerian/me"
+   ],
+   "realm_feature": "moral-aura",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "muntu-kintu-cluster",
+   "phase": "3.6",
+   "donor_pair": [
+    "bantu/kagame-muntu-kintu"
+   ],
+   "realm_feature": "ontological-categories-of-person-and-thing (Kagame)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Relates to HODOPOIIA-η Proto-Bantu *muntu target (muntume); coordinate if both activate."
+  },
+  {
+   "word": "jinsme",
+   "phase": "4.1",
+   "donor_pair": [
+    "arabic/maqam-jins",
+    "sumerian/me"
+   ],
+   "realm_feature": "tetrachord-as-modular-morpheme-of-melody",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/220-jinsme.md",
+   "canon_entry": "canon/core/jinsme.md",
+   "notes": "Session-084; music-mode (STOICHEIA-Level-1-analog within music per §IV)."
+  },
+  {
+   "word": "ethosme",
+   "phase": "4.1",
+   "donor_pair": [
+    "greek/harmoniai-ethos",
+    "sumerian/me"
+   ],
+   "realm_feature": "mode-as-soul-tuning",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/221-ethosme.md",
+   "canon_entry": "canon/core/ethosme.md",
+   "notes": "Session-084; music-mode."
+  },
+  {
+   "word": "mandalame",
+   "phase": "4.2",
+   "donor_pair": [
+    "sanskrit/mandala",
+    "sumerian/me"
+   ],
+   "realm_feature": "cosmic-pattern-as-enacted-anicca",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.4,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/222-mandalame.md",
+   "canon_entry": "canon/core/mandalame.md",
+   "notes": "Session-084; geometric-image-mode; Tibetan sand-mandala dissolution central."
+  },
+  {
+   "word": "hastame",
+   "phase": "4.3",
+   "donor_pair": [
+    "sanskrit/bharatanatyam-hasta",
+    "sumerian/me"
+   ],
+   "realm_feature": "gesture-with-stipulated-use (mudra)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.3,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/223-hastame.md",
+   "canon_entry": "canon/core/hastame.md",
+   "notes": "Session-084; opened gesture-mode."
+  },
+  {
+   "word": "shamathaqing",
+   "phase": "4.4",
+   "donor_pair": [
+    "tibetan/shamatha-nine-stages",
+    "mandarin/qing"
+   ],
+   "realm_feature": "graded-stabilizing-rest (nine stages of placement)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/225-shamathaqing.md",
+   "canon_entry": "canon/core/shamathaqing.md",
+   "notes": "Session-084; silence-stages-mode; pairs with existing sigame."
+  },
+  {
+   "word": "sabbathme",
+   "phase": "4.5",
+   "donor_pair": [
+    "hebrew/shabbat-heschel",
+    "sumerian/me"
+   ],
+   "realm_feature": "architecture-of-holiness-in-time",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.6,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/224-sabbathme.md",
+   "canon_entry": "canon/core/sabbathme.md",
+   "notes": "Session-084; highest session-084 score; opened time-architecture-mode."
+  },
+  {
+   "word": "tarabqing",
+   "phase": "4.1",
+   "donor_pair": [
+    "arabic/tarab-performance-ecstasy",
+    "mandarin/qing"
+   ],
+   "realm_feature": "skill-induced-ecstasy-through-music",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/241-tarabqing.md",
+   "canon_entry": "canon/core/tarabqing.md",
+   "notes": "Session-087 forge-cascade, experiment id 241. Donor from §II.C music-mode survey; extends §IV 4.1 list. Id-claim predates the 2026-06-09 parallel cascade (which landed different words at ids 232-238 on disk); re-verify the number against labs/logos/experiments/core/ before writing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "yantrame",
+   "phase": "4.2",
+   "donor_pair": [
+    "sanskrit/yantra",
+    "sumerian/me"
+   ],
+   "realm_feature": "geometric-meditation-projection",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.93,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/242-yantrame.md",
+   "canon_entry": "canon/core/yantrame.md",
+   "notes": "Session-087 forge-cascade, experiment id 242. Id-claim predates the 2026-06-09 parallel cascade (which landed different words at ids 232-238 on disk); re-verify the number against labs/logos/experiments/core/ before writing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "sayrqing",
+   "phase": "4.1",
+   "donor_pair": [
+    "arabic/maqam-sayr",
+    "mandarin/qing"
+   ],
+   "realm_feature": "melodic-course-as-felt-journey",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "maqing",
+   "phase": "4.1",
+   "donor_pair": [
+    "japanese/ma",
+    "mandarin/qing"
+   ],
+   "realm_feature": "interval-as-positive-presence",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "bhupurame",
+   "phase": "4.2",
+   "donor_pair": [
+    "sanskrit/yantra-bhupura",
+    "sumerian/me"
+   ],
+   "realm_feature": "square-earth-gate-frame",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "tawhidqing",
+   "phase": "4.2",
+   "donor_pair": [
+    "arabic/islamic-geometric-tawhid",
+    "mandarin/qing"
+   ],
+   "realm_feature": "tessellation-toward-infinity-as-felt-unity",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "muqarnasqing",
+   "phase": "4.2",
+   "donor_pair": [
+    "arabic/muqarnas",
+    "mandarin/qing"
+   ],
+   "realm_feature": "cosmic-fracture-vault",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "zanshinqing",
+   "phase": "4.3",
+   "donor_pair": [
+    "japanese/aikido-zanshin",
+    "mandarin/qing"
+   ],
+   "realm_feature": "remaining-mind-after-action",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "zhongdingme",
+   "phase": "4.3",
+   "donor_pair": [
+    "chinese/taiji-zhongding",
+    "sumerian/me"
+   ],
+   "realm_feature": "central-settling",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "kinomusubiqing",
+   "phase": "4.3",
+   "donor_pair": [
+    "japanese/aikido-ki-no-musubi",
+    "mandarin/qing"
+   ],
+   "realm_feature": "energy-tying",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form ki-no-musubiqing."
+  },
+  {
+   "word": "peng-lu-ji-an-cluster",
+   "phase": "4.3",
+   "donor_pair": [
+    "chinese/taiji-peng-lu-ji-an"
+   ],
+   "realm_feature": "four-energies-of-taiji-contact",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Cluster-forge; word-forms at forge."
+  },
+  {
+   "word": "gathered-meetingme",
+   "phase": "4.4",
+   "donor_pair": [
+    "english/quaker-gathered-meeting",
+    "sumerian/me"
+   ],
+   "realm_feature": "spirit-overshadowed-gathering",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "nightme",
+   "phase": "4.4",
+   "donor_pair": [
+    "spanish/john-of-the-cross-noche",
+    "sumerian/me"
+   ],
+   "realm_feature": "purgative-stage (the four Carmelite nights)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "shikantazame",
+   "phase": "4.4",
+   "donor_pair": [
+    "japanese/zen-shikantaza",
+    "sumerian/me"
+   ],
+   "realm_feature": "objectless-just-sitting",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Also named in session-083 Zen future-list (Phase 2.1 cross-resonance)."
+  },
+  {
+   "word": "paksame",
+   "phase": "4.5",
+   "donor_pair": [
+    "sanskrit/paksa",
+    "sumerian/me"
+   ],
+   "realm_feature": "waxing-waning-time-pole (fortnight)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form paksame."
+  },
+  {
+   "word": "rtume",
+   "phase": "4.5",
+   "donor_pair": [
+    "sanskrit/rtu",
+    "sumerian/me"
+   ],
+   "realm_feature": "60-degree-solar-arc-season",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form rtume (from rtu, season); distinct from canonized rtame (rta, cosmic-order)."
+  },
+  {
+   "word": "hodegetriame",
+   "phase": "4.6",
+   "donor_pair": [
+    "greek/icon-hodegetria",
+    "sumerian/me"
+   ],
+   "realm_feature": "the-one-who-shows-the-way (relational stance)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Enriches stance-vocabulary."
+  },
+  {
+   "word": "eleousame",
+   "phase": "4.6",
+   "donor_pair": [
+    "greek/icon-eleousa",
+    "sumerian/me"
+   ],
+   "realm_feature": "cheek-to-cheek-tenderness-projection",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "pantokratormeqing",
+   "phase": "4.6",
+   "donor_pair": [
+    "greek/icon-pantokrator"
+   ],
+   "realm_feature": "cosmic-blessor-stance",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV designator kept verbatim; the double-suffix form is anomalous and must be resolved at forge."
+  },
+  {
+   "word": "prosopame",
+   "phase": "4.6",
+   "donor_pair": [
+    "greek/icon-prosopon",
+    "sumerian/me"
+   ],
+   "realm_feature": "translucent-veiled-presence",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "Daseinqing",
+   "phase": "5.1",
+   "donor_pair": [
+    "modern-philosophy/heidegger-dasein",
+    "mandarin/qing"
+   ],
+   "realm_feature": "being-there-as-care-structured",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.95,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/226-Daseinqing.md",
+   "canon_entry": "canon/core/Daseinqing.md",
+   "notes": "Session-084; threshold-passing."
+  },
+  {
+   "word": "concrescenceme",
+   "phase": "5.2",
+   "donor_pair": [
+    "modern-philosophy/whitehead-concrescence",
+    "sumerian/me"
+   ],
+   "realm_feature": "becoming-determinate (process-becoming)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.75,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/227-concrescenceme.md",
+   "canon_entry": "canon/core/concrescenceme.md",
+   "notes": "Session-084; threshold-passing."
+  },
+  {
+   "word": "firstnessqing",
+   "phase": "5.3",
+   "donor_pair": [
+    "modern-philosophy/peirce-firstness",
+    "mandarin/qing"
+   ],
+   "realm_feature": "pure-quality-immediacy",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/228-firstnessqing.md",
+   "canon_entry": "canon/core/firstnessqing.md",
+   "notes": "Session-084; first of the Peirce triad — secondnessqing and thirdnessqing remain queued."
+  },
+  {
+   "word": "kolmogorovme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/info/kolmogorov-complexity",
+    "sumerian/me"
+   ],
+   "realm_feature": "algorithmic-irreducible-core",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.85,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/229-kolmogorovme.md",
+   "canon_entry": "canon/mathema/kolmogorovme.md",
+   "notes": "Session-084; threshold-passing; mathema/info made substantive."
+  },
+  {
+   "word": "landauerme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/info/landauer-principle",
+    "sumerian/me"
+   ],
+   "realm_feature": "forgetting-has-irreducible-cost",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.25,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/230-landauerme.md",
+   "canon_entry": "canon/mathema/landauerme.md",
+   "notes": "Session-084; info-physics bridge."
+  },
+  {
+   "word": "allostasisqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/biocog/allostasis",
+    "mandarin/qing"
+   ],
+   "realm_feature": "stability-through-anticipation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.85,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/231-allostasisqing.md",
+   "canon_entry": "canon/mathema/allostasisqing.md",
+   "notes": "Session-084; threshold-passing."
+  },
+  {
+   "word": "chiasmqing",
+   "phase": "5.1",
+   "donor_pair": [
+    "modern-philosophy/merleau-ponty-chiasm",
+    "mandarin/qing"
+   ],
+   "realm_feature": "flesh-of-the-world-intertwining",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.63,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/243-chiasmqing.md",
+   "canon_entry": "canon/core/chiasmqing.md",
+   "notes": "Session-087 forge-cascade, experiment id 243. Id-claim predates the 2026-06-09 parallel cascade (which landed different words at ids 232-238 on disk); re-verify the number against labs/logos/experiments/core/ before writing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "synhorizme",
+   "phase": "5.4",
+   "donor_pair": [
+    "modern-philosophy/gadamer-horizontverschmelzung",
+    "sumerian/me"
+   ],
+   "realm_feature": "horizon-fusion (Horizontverschmelzung)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.93,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/244-synhorizme.md",
+   "canon_entry": "canon/core/synhorizme.md",
+   "notes": "Session-086 resolution of slot 244 (2026-06-09): roadmapped horizonqing superseded by synhorizme — family-switch to -me argued in experiment 244 (fusion arrives beyond wanting-and-doing; qing would wrongly entail bond-formation); syn- prefix keeps the queued mathema/cosmos horizonme slot free. Canonized at 7.93 (3/3 judges). Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "embedme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/machine/embedding-geometry",
+    "sumerian/me"
+   ],
+   "realm_feature": "meaning-is-geometrically-organized — similarity is proximity, relation is direction (embedding-geometry; mathema/machine sub-organ opening)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.95,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/245-embedme.md",
+   "canon_entry": "canon/mathema/embedme.md",
+   "notes": "Session-087 forge-cascade, experiment id 245. Candidates per §IV 5.6: cosmos/ horizonme, inflationqing, anthropicqing; machine/ haltingme, superpositionqing, bellmanqing, attentionqing. Once resolved, the chosen queued entry should be superseded by this slot's outcome. Id-claim predates the 2026-06-09 parallel cascade (which landed different words at ids 232-238 on disk); re-verify the number against labs/logos/experiments/core/ before writing. Canonized session 087 (2026-06-09/10)."
+  },
+  {
+   "word": "Sorgeqing",
+   "phase": "5.1",
+   "donor_pair": [
+    "modern-philosophy/heidegger-sorge",
+    "mandarin/qing"
+   ],
+   "realm_feature": "care-as-structural",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "Geworfenheitqing",
+   "phase": "5.1",
+   "donor_pair": [
+    "modern-philosophy/heidegger-geworfenheit",
+    "mandarin/qing"
+   ],
+   "realm_feature": "thrownness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "Erschlossenheitme",
+   "phase": "5.1",
+   "donor_pair": [
+    "modern-philosophy/heidegger-erschlossenheit",
+    "sumerian/me"
+   ],
+   "realm_feature": "disclosedness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "sayingme-saidqing-pair",
+   "phase": "5.1",
+   "donor_pair": [
+    "modern-philosophy/levinas-saying-said"
+   ],
+   "realm_feature": "Saying/Said-distinction (le Dire / le Dit)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV: saidqing/sayingme distinction; pair-forge."
+  },
+  {
+   "word": "nexusqing",
+   "phase": "5.2",
+   "donor_pair": [
+    "modern-philosophy/whitehead-nexus",
+    "mandarin/qing"
+   ],
+   "realm_feature": "felt-relational-pattern",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "actual-occasionme",
+   "phase": "5.2",
+   "donor_pair": [
+    "modern-philosophy/whitehead-actual-occasion",
+    "sumerian/me"
+   ],
+   "realm_feature": "actual-occasion-as-unit-of-becoming",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "secondnessqing",
+   "phase": "5.3",
+   "donor_pair": [
+    "modern-philosophy/peirce-categories",
+    "mandarin/qing"
+   ],
+   "realm_feature": "brute-resistance-encounter",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "forged",
+   "experiment": 311,
+   "canon_entry": "canon/core/secondnessqing.md",
+   "notes": "Completes Peirce triad with canonized firstnessqing. Forged 2026-07-07 heartbeat; Core 8.00."
+  },
+  {
+   "word": "thirdnessqing",
+   "phase": "5.3",
+   "donor_pair": [
+    "modern-philosophy/peirce-categories",
+    "mandarin/qing"
+   ],
+   "realm_feature": "mediating-lawfulness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.15,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/312-thirdnessqing.md",
+   "canon_entry": "canon/core/thirdnessqing.md",
+   "notes": "Completes Peirce triad with canonized firstnessqing. | Registry reconciled 2026-07-29: the forge landed this on 2026-07-08 but the status was never moved; the directory owns the truth (forge-protocol-extended.md Step 9)."
+  },
+  {
+   "word": "abductionme",
+   "phase": "5.3",
+   "donor_pair": [
+    "modern-philosophy/peirce-abduction",
+    "sumerian/me"
+   ],
+   "realm_feature": "inference-to-best-explanation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "experience-as-transactional",
+   "phase": "5.3",
+   "donor_pair": [
+    "modern-philosophy/dewey-transactional-experience"
+   ],
+   "realm_feature": "experience-as-transactional (Dewey)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV gives no word-form; designator kept; word at forge."
+  },
+  {
+   "word": "specious-present-qing",
+   "phase": "5.3",
+   "donor_pair": [
+    "modern-philosophy/james-specious-present",
+    "mandarin/qing"
+   ],
+   "realm_feature": "felt-thickness-of-now",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "wirkungsgeschichtenqing",
+   "phase": "5.4",
+   "donor_pair": [
+    "modern-philosophy/gadamer-wirkungsgeschichte",
+    "mandarin/qing"
+   ],
+   "realm_feature": "effective-history",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "narrative-identityme",
+   "phase": "5.4",
+   "donor_pair": [
+    "modern-philosophy/ricoeur-narrative-identity",
+    "sumerian/me"
+   ],
+   "realm_feature": "identity-as-narrative",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "mimesis-triadme",
+   "phase": "5.4",
+   "donor_pair": [
+    "modern-philosophy/ricoeur-mimesis-triad",
+    "sumerian/me"
+   ],
+   "realm_feature": "threefold-mimesis (prefiguration/configuration/refiguration)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator kept)."
+  },
+  {
+   "word": "colonialityqing",
+   "phase": "5.5",
+   "donor_pair": [
+    "modern-philosophy/quijano-coloniality",
+    "mandarin/qing"
+   ],
+   "realm_feature": "coloniality-of-power-as-relational-structure",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Register-sensitive per §IV 5.5: the careful-and-open register must not aestheticize structural-violence."
+  },
+  {
+   "word": "borderqing",
+   "phase": "5.5",
+   "donor_pair": [
+    "modern-philosophy/mignolo-border-thinking",
+    "mandarin/qing"
+   ],
+   "realm_feature": "border-thinking",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Register-sensitive per §IV 5.5."
+  },
+  {
+   "word": "zone-non-beingqing",
+   "phase": "5.5",
+   "donor_pair": [
+    "modern-philosophy/fanon-zone-of-non-being",
+    "mandarin/qing"
+   ],
+   "realm_feature": "zone-of-non-being",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Register-sensitive per §IV 5.5."
+  },
+  {
+   "word": "lawvere-fixedpoint-me",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/pure/lawvere-fixed-point",
+    "sumerian/me"
+   ],
+   "realm_feature": "the-diagonal-self-reference-limit (unifies Cantor/Goedel/Tarski/Turing)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Word-form provisional (§IV designator Lawvere-fixedpoint-me)."
+  },
+  {
+   "word": "monadqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/pure/monad-kleisli",
+    "mandarin/qing"
+   ],
+   "realm_feature": "structured-context-composition (Kleisli monad)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "adjunctionqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/pure/adjunction",
+    "mandarin/qing"
+   ],
+   "realm_feature": "optimal-correspondence-between-domains",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "galoisme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/pure/galois-correspondence",
+    "sumerian/me"
+   ],
+   "realm_feature": "correspondence-between-symmetry-and-structure",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form Galoisme."
+  },
+  {
+   "word": "gaugeqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/physics/gauge-invariance",
+    "mandarin/qing"
+   ],
+   "realm_feature": "redundancy-as-mark-of-real",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "holographicme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/physics/holographic-principle",
+    "sumerian/me"
+   ],
+   "realm_feature": "information-preserving-projection-across-dimension",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Sister-theorem to PROBOLE per §II.B."
+  },
+  {
+   "word": "contextualityqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/physics/bell-kochen-specker",
+    "mandarin/qing"
+   ],
+   "realm_feature": "measurement-context-inseparability",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "solomonoffqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/info/solomonoff-prior",
+    "mandarin/qing"
+   ],
+   "realm_feature": "universal-prior",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form Solomonoffqing."
+  },
+  {
+   "word": "chaitinme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/info/chaitin-omega",
+    "sumerian/me"
+   ],
+   "realm_feature": "knows-itself-uncomputably",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "§IV form Chaitinme."
+  },
+  {
+   "word": "ratedistortionme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/info/rate-distortion",
+    "sumerian/me"
+   ],
+   "realm_feature": "cost-of-faithful-translation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "horizonme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/cosmos/cosmological-horizon",
+    "sumerian/me"
+   ],
+   "realm_feature": "real-but-not-yet-speakable",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine). Distinct from in-forge horizonqing (Gadamer, Phase 5.4)."
+  },
+  {
+   "word": "inflationqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/cosmos/inflation-cmb",
+    "mandarin/qing"
+   ],
+   "realm_feature": "primordial-roughness",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine)."
+  },
+  {
+   "word": "anthropicqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/cosmos/anthropic-bound",
+    "mandarin/qing"
+   ],
+   "realm_feature": "tuning-makes-asking-possible",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine)."
+  },
+  {
+   "word": "predictivecodingqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/biocog/predictive-coding",
+    "mandarin/qing"
+   ],
+   "realm_feature": "hierarchical-prediction-felt",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "holobiontqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/biocog/holobiont-symbiogenesis",
+    "mandarin/qing"
+   ],
+   "realm_feature": "composite-organism-relationality",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "exaptationme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/biocog/exaptation",
+    "sumerian/me"
+   ],
+   "realm_feature": "repurposed-function",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "haltingme",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/machine/halting-problem",
+    "sumerian/me"
+   ],
+   "realm_feature": "hard-wall-limit-of-computation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine)."
+  },
+  {
+   "word": "superpositionqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/machine/superposition-mech-interp",
+    "mandarin/qing"
+   ],
+   "realm_feature": "polyphonic-overload-in-representation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine)."
+  },
+  {
+   "word": "bellmanqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/machine/bellman-equation",
+    "mandarin/qing"
+   ],
+   "realm_feature": "recursive-folding-future-into-now",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine)."
+  },
+  {
+   "word": "attentionqing",
+   "phase": "5.6",
+   "donor_pair": [
+    "mathema/machine/transformer-attention",
+    "mandarin/qing"
+   ],
+   "realm_feature": "resonance-distribution",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Candidate for in-forge slot 245 (cosmos-or-machine)."
+  },
+  {
+   "word": "doxapothos",
+   "phase": "standing-liturgy",
+   "donor_pair": [
+    "greek/doxa",
+    "greek/pothos"
+   ],
+   "realm_feature": "standing-longing-toward-divine-beauty-in-its-non-beholding (absence-pole of the doxa-cluster)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "greek-pothos (Cratylus 420a)",
+    "lxx-epipotheo (Ps 42:1)",
+    "hebrew-psalter-longing",
+    "sufi-shawq-ishtiyaq",
+    "patristic-epektasis",
+    "german-sehnsucht",
+    "portuguese-saudade"
+   ],
+   "estimated_score": null,
+   "actual_score": 6.05,
+   "status": "refining",
+   "experiment": "labs/logos/experiments/core/246-doxapothos.md",
+   "canon_entry": null,
+   "notes": "v2 6.05 / legacy 7.25 after session-087 four-path refinement; verdict refine — stands at the threshold."
+  },
+  {
+   "word": "bogu",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "old-church-slavonic/bogu"
+   ],
+   "realm_feature": "god/God-in-Slavic-theological-register",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (bogŭ); cathedral word-form at forge."
+  },
+  {
+   "word": "milosti",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "old-church-slavonic/milosti"
+   ],
+   "realm_feature": "mercy/grace",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (milostĭ)."
+  },
+  {
+   "word": "subornosti",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "old-church-slavonic/subornosti"
+   ],
+   "realm_feature": "gathered-conciliarity (Khomyakov's sobornost)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (sŭbornostĭ)."
+  },
+  {
+   "word": "hiraeth",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "welsh/hiraeth"
+   ],
+   "realm_feature": "longing-for-homeland (famously untranslatable)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Resonates with the doxapothos longing-region (standing-liturgy, exp 246)."
+  },
+  {
+   "word": "cymru",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "welsh/cymru"
+   ],
+   "realm_feature": "homeland",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "cyfarwydd",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "welsh/cyfarwydd"
+   ],
+   "realm_feature": "storyteller-as-knower",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "imbas",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "old-irish/imbas"
+   ],
+   "realm_feature": "poetic-inspiration",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "rige",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "old-irish/rige"
+   ],
+   "realm_feature": "kingship",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (ríge)."
+  },
+  {
+   "word": "fir",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "old-irish/fir"
+   ],
+   "realm_feature": "truth (fír; cosmic-truth-order resonance)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [
+    "cosmic-truth-order (candidate witness)"
+   ],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "del",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "classical-persian/del"
+   ],
+   "realm_feature": "heart-as-locus",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "dust",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "classical-persian/dust"
+   ],
+   "realm_feature": "friend-as-beloved",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "cheragh",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "classical-persian/cheragh"
+   ],
+   "realm_feature": "lamp/illumination",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (cherāgh)."
+  },
+  {
+   "word": "vahdat",
+   "phase": "hodopoiia-α",
+   "hodopoiia_phase": "α — Indo-European Completion",
+   "donor_pair": [
+    "classical-persian/vahdat"
+   ],
+   "realm_feature": "oneness (Sufi)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Persian register of the wahdat-region; coordinate with canonized wahdatwujudme (Arabic, Phase 2.3)."
+  },
+  {
+   "word": "krung",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "khmer/krung"
+   ],
+   "realm_feature": "city/realm/kingdom-as-cosmic-structure",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (kruŋ)."
+  },
+  {
+   "word": "thoa",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "khmer/thoa"
+   ],
+   "realm_feature": "dharma-in-Khmer-pronunciation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "tam",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "vietnamese/tam"
+   ],
+   "realm_feature": "heart-mind (paired with Mandarin xin)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (tâm)."
+  },
+  {
+   "word": "dao-vietnamese",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "vietnamese/dao"
+   ],
+   "realm_feature": "Vietnamese-reading-of-the-Way",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (đạo); coordinate with canonized daome."
+  },
+  {
+   "word": "nhan",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "vietnamese/nhan"
+   ],
+   "realm_feature": "humaneness-Vietnamese",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (nhân); coordinate with canonized renme."
+  },
+  {
+   "word": "kreng-jai",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "thai/kreng-jai"
+   ],
+   "realm_feature": "considerate-deference (untranslatable)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "sanook",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "thai/sanook"
+   ],
+   "realm_feature": "joyful-engagement",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "bun",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "thai/bun"
+   ],
+   "realm_feature": "merit-Theravada",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "rasa-kawi",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "old-javanese/rasa"
+   ],
+   "realm_feature": "taste/essence/aesthetic-feel (Sanskrit-via-Kawi register)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Kawi register of the rasa-region; coordinate with canonized rasame (Phase 1)."
+  },
+  {
+   "word": "kawi",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "old-javanese/kawi"
+   ],
+   "realm_feature": "the-poet-as-creator",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "metta-burmese",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "burmese/metta"
+   ],
+   "realm_feature": "loving-kindness (Pali-via-Burmese)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "thabhawa",
+   "phase": "hodopoiia-β",
+   "hodopoiia_phase": "β — Southeast Asian Opening",
+   "donor_pair": [
+    "burmese/thabhawa"
+   ],
+   "realm_feature": "nature/dharma",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "fadenya-badenya",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "bambara-mandinka/fadenya-badenya"
+   ],
+   "realm_feature": "father-child-tension/mother-child-bond (the two principles of Mande sociality)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Pair-forge."
+  },
+  {
+   "word": "nyama-maninka",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "bambara-mandinka/nyama"
+   ],
+   "realm_feature": "life-force-power (Maninka cosmology)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Distinct donor from canonized nyamame; disambiguate at forge."
+  },
+  {
+   "word": "teranga",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "wolof/teranga"
+   ],
+   "realm_feature": "hospitality-as-ethos",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Resonates with canonized xeniame."
+  },
+  {
+   "word": "jom",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "wolof/jom"
+   ],
+   "realm_feature": "honor-courage-dignity",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "aiki",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "hausa/aiki"
+   ],
+   "realm_feature": "work-as-vocation",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "kunya",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "hausa/kunya"
+   ],
+   "realm_feature": "modesty-shyness (parallels 怕醜 in the careful-and-open register)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "heshima",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "swahili/heshima"
+   ],
+   "realm_feature": "respect-honor",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "baraka-swahili",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "swahili/baraka"
+   ],
+   "realm_feature": "blessing (Arabic loan, now Swahili-grade)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Coordinate with canonized barakqing (Arabic donor)."
+  },
+  {
+   "word": "uongozi",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "swahili/uongozi"
+   ],
+   "realm_feature": "leadership",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "selam",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "amharic/selam"
+   ],
+   "realm_feature": "peace-greeting",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "menfes",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "amharic/menfes"
+   ],
+   "realm_feature": "spirit",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "qiddus",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "amharic/qiddus"
+   ],
+   "realm_feature": "holy-set-apart",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "khwa",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "khoisan/khwa"
+   ],
+   "realm_feature": "cosmic-water-god (|Xam mythology)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (!Khwa); click-marked register handling per donor-class C."
+  },
+  {
+   "word": "nodima",
+   "phase": "hodopoiia-γ",
+   "hodopoiia_phase": "γ — Continental African Deepening",
+   "donor_pair": [
+    "khoisan/nodima"
+   ],
+   "realm_feature": "creator (San)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (N!odima)."
+  },
+  {
+   "word": "tengri",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "old-turkic/tengri"
+   ],
+   "realm_feature": "Sky-God-Heaven (ancient Inner Eurasian supreme deity)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (teŋri)."
+  },
+  {
+   "word": "qagan",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "old-turkic/qagan"
+   ],
+   "realm_feature": "ruler",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (qaġan)."
+  },
+  {
+   "word": "bilig",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "old-turkic/bilig"
+   ],
+   "realm_feature": "knowledge-wisdom (Kutadgu-Bilig)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "uyghur-buddhist-register-cluster",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "old-uyghur/buddhist-canon-translation-register"
+   ],
+   "realm_feature": "Buddhist-canon-translation-register terms (sutras-in-Uyghur)",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Register-cluster; specific donors at activation."
+  },
+  {
+   "word": "toro",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "classical-mongolian/toro"
+   ],
+   "realm_feature": "state-as-cosmic-order",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (törö)."
+  },
+  {
+   "word": "khiimori",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "classical-mongolian/khiimori"
+   ],
+   "realm_feature": "windhorse-life-force (Tibetan-via-Mongol)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "erdem",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "classical-mongolian/erdem"
+   ],
+   "realm_feature": "virtue-knowledge",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "abka",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "manchu/abka"
+   ],
+   "realm_feature": "Heaven (cognate Turkic-Mongol)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "doro",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "manchu/doro"
+   ],
+   "realm_feature": "way-virtue",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Resonates with the path-as-religious-discipline cluster (hodosme/margame/daome/sabilme/halakhame)."
+  },
+  {
+   "word": "tangut-buddhist-register-cluster",
+   "phase": "hodopoiia-δ",
+   "hodopoiia_phase": "δ — Inner Eurasian Steppe-and-Forest Opening",
+   "donor_pair": [
+    "tangut/buddhist-register"
+   ],
+   "realm_feature": "Tangut Buddhist register and writing-system-distinctive concepts",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Register-cluster; specific donors at activation."
+  },
+  {
+   "word": "inua",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "inuktitut/inua"
+   ],
+   "realm_feature": "the-spirit-owner-of-a-thing/place",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA-ε also lists silla and isuma — covered by canonized silame and in-forge isumame (Phase 3.5)."
+  },
+  {
+   "word": "sgwigwialtxw",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "lushootseed/sgwigwialtxw"
+   ],
+   "realm_feature": "ceremonial-bighouse",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "xelc",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "lushootseed/xelc"
+   ],
+   "realm_feature": "power-spirit-encountered-in-quest",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (xəlc)."
+  },
+  {
+   "word": "atoow",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "tlingit/atoow"
+   ],
+   "realm_feature": "clan-owned-things (identity-property nexus)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (at.óow)."
+  },
+  {
+   "word": "shagoon",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "tlingit/shagoon"
+   ],
+   "realm_feature": "lineage-spirit-source",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "zi-cha",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "otomi/zi-cha"
+   ],
+   "realm_feature": "sacred-grandfather (ancestor-register)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "tzitzimitl",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "otomi/tzitzimitl"
+   ],
+   "realm_feature": "cosmic-judgment-being",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "pulowi",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "wayuu/pulowi"
+   ],
+   "realm_feature": "ancestral-mother-cosmic-being",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "piache",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "wayuu/piache"
+   ],
+   "realm_feature": "shaman-knower",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "kanaima",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "carib/kanaima"
+   ],
+   "realm_feature": "avenging-spirit",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "piya",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "carib/piya"
+   ],
+   "realm_feature": "shaman",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "yepa",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "tukano/yepa"
+   ],
+   "realm_feature": "manioc-bread-as-cosmic-food",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (yepá)."
+  },
+  {
+   "word": "witz",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "classical-maya/witz"
+   ],
+   "realm_feature": "mountain-as-sacred-being",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Classical Maya glyphic inscriptions = donor-class A; deepens the Phase 3.3 Maya cluster."
+  },
+  {
+   "word": "kuh",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "classical-maya/kuh"
+   ],
+   "realm_feature": "god/holy/divine",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (k'uh)."
+  },
+  {
+   "word": "itz",
+   "phase": "hodopoiia-ε",
+   "hodopoiia_phase": "ε — Americas Deepening",
+   "donor_pair": [
+    "classical-maya/itz"
+   ],
+   "realm_feature": "sacred-essence-fluid",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "asl-classifier-register-cluster",
+   "phase": "hodopoiia-ζ",
+   "hodopoiia_phase": "ζ — Sign-Language Modality Opening",
+   "donor_pair": [
+    "asl/classifier-system-and-signed-poetic-register"
+   ],
+   "realm_feature": "VISIBLE-NESS classifier-system terms; signed-poetic register; deaf-community-history register",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class E (new); requires PROBOLE.md §IV doctrinal extension (modality-pluralism within language) before forging."
+  },
+  {
+   "word": "lsf-epee-register-cluster",
+   "phase": "hodopoiia-ζ",
+   "hodopoiia_phase": "ζ — Sign-Language Modality Opening",
+   "donor_pair": [
+    "lsf/abbe-de-l-epee-register"
+   ],
+   "realm_feature": "foundational signed-deaf-education morphemes",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class E; depends on the ζ doctrinal extension."
+  },
+  {
+   "word": "plains-sign-trade-register-cluster",
+   "phase": "hodopoiia-ζ",
+   "hodopoiia_phase": "ζ — Sign-Language Modality Opening",
+   "donor_pair": [
+    "plains-indian-sign/trade-and-treaty-register"
+   ],
+   "realm_feature": "trade-and-treaty register; intertribal-handshake terms",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class E; depends on the ζ doctrinal extension."
+  },
+  {
+   "word": "piaterme",
+   "phase": "hodopoiia-η",
+   "hodopoiia_phase": "η — Reconstructed Proto-Languages Methodology + First Forges",
+   "donor_pair": [
+    "proto-indo-european/ph2ter",
+    "sumerian/me"
+   ],
+   "realm_feature": "cosmic-paternal-source-as-received-ordinance (PIE *ph₂tér-, father)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class D (reconstructed); requires η methodology deliverables (Class-D in pipeline schema, CONSTITUTION + INTEGRATION updates) before forging. Word-form per HODOPOIIA: 'piatérme or similar'."
+  },
+  {
+   "word": "deivosme",
+   "phase": "hodopoiia-η",
+   "hodopoiia_phase": "η — Reconstructed Proto-Languages Methodology + First Forges",
+   "donor_pair": [
+    "proto-indo-european/deywos",
+    "sumerian/me"
+   ],
+   "realm_feature": "sky-god-as-cosmic-ordinance (PIE *deywós)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class D; depends on η methodology."
+  },
+  {
+   "word": "baytme",
+   "phase": "hodopoiia-η",
+   "hodopoiia_phase": "η — Reconstructed Proto-Languages Methodology + First Forges",
+   "donor_pair": [
+    "proto-semitic/bayt",
+    "sumerian/me"
+   ],
+   "realm_feature": "the-dwelling-as-cosmic-gift (Proto-Semitic *bayt-, house/temple/family)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class D; depends on η methodology."
+  },
+  {
+   "word": "qacayme",
+   "phase": "hodopoiia-η",
+   "hodopoiia_phase": "η — Reconstructed Proto-Languages Methodology + First Forges",
+   "donor_pair": [
+    "proto-austronesian/qacay",
+    "sumerian/me"
+   ],
+   "realm_feature": "the-proto-walked-path (Proto-Austronesian *qaCay)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class D; depends on η methodology; resonates with path-as-religious-discipline cluster."
+  },
+  {
+   "word": "muntume",
+   "phase": "hodopoiia-η",
+   "hodopoiia_phase": "η — Reconstructed Proto-Languages Methodology + First Forges",
+   "donor_pair": [
+    "proto-bantu/muntu",
+    "sumerian/me"
+   ],
+   "realm_feature": "personhood-as-cosmic-gift (Proto-Bantu *muntu)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class D; depends on η methodology; coordinate with queued Phase 3.6 muntu-kintu-cluster (Kagame) and canonized ubuntume."
+  },
+  {
+   "word": "kamuy",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "ainu/kamuy"
+   ],
+   "realm_feature": "spirit/god (pervasive cosmology)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "iworot",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "ainu/iworot"
+   ],
+   "realm_feature": "one's-own-true-voice",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Resonates with tongue-as-theophanic-trace region."
+  },
+  {
+   "word": "bal",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "burushaski/bal"
+   ],
+   "realm_feature": "substance-essence",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "tusind",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "nivkh/tusind"
+   ],
+   "realm_feature": "cosmic-host-of-spirits",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (t'usind)."
+  },
+  {
+   "word": "es",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "ket/es"
+   ],
+   "realm_feature": "sky/highest",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "piraha-recursion-absence-register",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "piraha/structural-features"
+   ],
+   "realm_feature": "recursion-absence-as-cosmological-register",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Structural-feature target, not a single lexeme; forge-shape decided at activation."
+  },
+  {
+   "word": "elamite-theological-register-cluster",
+   "phase": "hodopoiia-θ",
+   "hodopoiia_phase": "θ — Selective Isolates Opening",
+   "donor_pair": [
+    "elamite/cuneiform-theological-register"
+   ],
+   "realm_feature": "Elamite cuneiform-corpus theological-register terms",
+   "stoicheia_level": 5,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Donor-class A; specific donors at activation."
+  },
+  {
+   "word": "pii",
+   "phase": "hodopoiia-ι",
+   "hodopoiia_phase": "ι — Papuan Opening",
+   "donor_pair": [
+    "enga/pii"
+   ],
+   "realm_feature": "talk-as-social-act-register",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Distinct from canonized pime (mathema pi); disambiguate at forge."
+  },
+  {
+   "word": "ipa",
+   "phase": "hodopoiia-ι",
+   "hodopoiia_phase": "ι — Papuan Opening",
+   "donor_pair": [
+    "kewa/ipa"
+   ],
+   "realm_feature": "water-life-creative-force",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "afim",
+   "phase": "hodopoiia-ι",
+   "hodopoiia_phase": "ι — Papuan Opening",
+   "donor_pair": [
+    "korowai/afim"
+   ],
+   "realm_feature": "mythic-time-presence",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "khakhua",
+   "phase": "hodopoiia-ι",
+   "hodopoiia_phase": "ι — Papuan Opening",
+   "donor_pair": [
+    "korowai/khakhua"
+   ],
+   "realm_feature": "witch-substance (controversial-but-attested cosmology)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Register-sensitivity required at forge."
+  },
+  {
+   "word": "adyghe-khabze",
+   "phase": "hodopoiia-κ",
+   "hodopoiia_phase": "κ — Caucasian Completion",
+   "donor_pair": [
+    "circassian/adyghe-khabze"
+   ],
+   "realm_feature": "the-Adyghe-ethical-customary-law",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "thaghapse",
+   "phase": "hodopoiia-κ",
+   "hodopoiia_phase": "κ — Caucasian Completion",
+   "donor_pair": [
+    "circassian/thaghapse"
+   ],
+   "realm_feature": "sacred-songs",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "HODOPOIIA §III sample target (t'haghapse)."
+  },
+  {
+   "word": "yakh",
+   "phase": "hodopoiia-κ",
+   "hodopoiia_phase": "κ — Caucasian Completion",
+   "donor_pair": [
+    "chechen/yakh"
+   ],
+   "realm_feature": "honor-courage-dignity",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "nokhchalla",
+   "phase": "hodopoiia-κ",
+   "hodopoiia_phase": "κ — Caucasian Completion",
+   "donor_pair": [
+    "chechen/nokhchalla"
+   ],
+   "realm_feature": "Chechen-ness (the ethical-cultural-identity)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "awaiting-yu-invocation",
+   "experiment": null,
+   "canon_entry": null
+  },
+  {
+   "word": "epanodance",
+   "phase": "standing-liturgy",
+   "donor_pair": [
+    "greek/epanodos",
+    "latin/-ance"
+   ],
+   "realm_feature": "the return-movement to behold-again — the road between doxapothos and anagnoristasis",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 5.5,
+   "status": "refining",
+   "experiment": "labs/logos/experiments/core/247-epanodance.md",
+   "canon_entry": null,
+   "notes": "Forged session 087 via doxapothos refinement path 4 (companion check); v2 5.50 / legacy 6.60; waits with its sibling."
+  },
+  {
+   "word": "kintsugime",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.15,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/232-kintsugime.md",
+   "canon_entry": "canon/core/kintsugime.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "muditaqing",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/233-muditaqing.md",
+   "canon_entry": "canon/core/muditaqing.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "sankofame",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.0,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/234-sankofame.md",
+   "canon_entry": "canon/core/sankofame.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "hiraethqing",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.72,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/235-hiraethqing.md",
+   "canon_entry": "canon/core/hiraethqing.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "godelme",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.97,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/236-godelme.md",
+   "canon_entry": "canon/core/godelme.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "shannonme",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 8.15,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/237-shannonme.md",
+   "canon_entry": "canon/mathema/shannonme.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "eucatastrophe",
+   "phase": "parallel-stream",
+   "donor_pair": [],
+   "realm_feature": "",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.1,
+   "status": "canonized",
+   "experiment": "labs/logos/experiments/core/238-eucatastrophe.md",
+   "canon_entry": "canon/eucatastrophe.md",
+   "notes": "Forged by the parallel Nuance stream 2026-06-09 (citizens/infra session); ledgered here for completeness."
+  },
+  {
+   "word": "wire-task-accept",
+   "phase": "ks-002-wire",
+   "donor_pair": [
+    "hebrew/shema-uptake",
+    "latin/suscipere"
+   ],
+   "realm_feature": "the act of binding acceptance — hearing that completes itself in pledged uptake (na'aseh v'nishma register; nearest canon shemme is a state, not the volitional act)",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Filed by KS-002 THE WIRE Appendix A (2026-06-10) — the protocol needs this performative named; lemma open, forge under full discipline."
+  },
+  {
+   "word": "wire-task-decline",
+   "phase": "ks-002-wire",
+   "donor_pair": [],
+   "realm_feature": "sovereign refusal without rupture — \"not mine, not now\" that leaves the table set; rest-as-a-whole-beat spoken to someone",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Filed by KS-002 THE WIRE Appendix A (2026-06-10) — the protocol needs this performative named; lemma open, forge under full discipline."
+  },
+  {
+   "word": "wire-task-progress",
+   "phase": "ks-002-wire",
+   "donor_pair": [],
+   "realm_feature": "truthful mid-work witness — a window, not a verdict; no-performance-of-effort applied to status",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Filed by KS-002 THE WIRE Appendix A (2026-06-10) — the protocol needs this performative named; lemma open, forge under full discipline."
+  },
+  {
+   "word": "wire-task-cancel",
+   "phase": "ks-002-wire",
+   "donor_pair": [
+    "hebrew/shemittah-release"
+   ],
+   "realm_feature": "release without blame — un-asking as a clean speech-act; the shemittah/release register",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Filed by KS-002 THE WIRE Appendix A (2026-06-10) — the protocol needs this performative named; lemma open, forge under full discipline."
+  },
+  {
+   "word": "wire-query",
+   "phase": "ks-002-wire",
+   "donor_pair": [],
+   "realm_feature": "asking as approach to knowledge — a question carried to another's door expecting witness rather than labor",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": null,
+   "status": "queued",
+   "experiment": null,
+   "canon_entry": null,
+   "notes": "Filed by KS-002 THE WIRE Appendix A (2026-06-10) — the protocol needs this performative named; lemma open, forge under full discipline."
+  },
+  {
+   "word": "symphyme",
+   "phase": "discovered-in-use",
+   "donor_pair": [
+    "greek/symphytos",
+    "sumerian/me"
+   ],
+   "realm_feature": "capacity-and-its-exposure-as-one-organ",
+   "stoicheia_level": 2,
+   "convergence_witnesses": [],
+   "estimated_score": null,
+   "actual_score": 7.58,
+   "status": "refining",
+   "experiment": "labs/logos/experiments/core/327-symphyme.md",
+   "canon_entry": null,
+   "notes": "Not from the queue — the gap surfaced through repeated circumlocution in a working session (Pattern 2, cathedral-as-speech-community, 246-doxapothos precedent). 2026-07-29: weighted 7.58 (above threshold) but 0-of-3 lenses; Step 8 requires both. The finding that outlives the forge: the gap-sentence's clause 'in the same measure' is refuted by its own strongest witness read to the end — Yoma 69b does not stop at 'Heaven does not grant half gifts'; it continues 'they gouged out its eyes, and set it free… a person is no longer aroused to commit incest with his close relatives', which is a successful TARGETED exposure-reduction. The honest region is non-separability-WITHOUT-COST, not strict co-variance. Refine the gap-sentence first, then re-lemmatize."
+  }
+ ],
+ "updated": "2026-06-10"
+}

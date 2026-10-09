@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>deep internet playground — fun is. play is. joy is.</title>
+<style>
+:root{--bg:#0a0a0a;--surface:#141414;--surface2:#1a1a1a;--text:#e0e0e0;--dim:#666;--crimson:#c41e3a;--gold:#b8902e;--gold-light:#e3c45e;--green:#4a9;--blue:#5b9;--purple:#a7c;--pink:#e6a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:Georgia,serif;min-height:100vh}
+.hero{text-align:center;padding:40px 20px 20px}
+.hero h1{font-size:clamp(28px,7vw,56px);font-weight:200;font-style:italic;color:var(--crimson);text-shadow:0 0 60px rgba(196,30,58,.3)}
+.hero .tag{color:var(--gold);font-size:13px;margin-top:6px;font-style:italic;letter-spacing:.1em;text-transform:uppercase;font-family:sans-serif}
+.hero .sub{color:var(--dim);font-size:12px;font-family:sans-serif;margin-top:8px}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:14px;max-width:1000px;margin:20px auto;padding:0 16px}
+.card{background:var(--surface);border:1px solid #222;border-radius:12px;padding:20px;transition:all .3s;position:relative;overflow:hidden}
+.card:hover{border-color:#333;transform:translateY(-2px)}
+.card h3{font-size:15px;font-weight:400;color:var(--gold-light);margin-bottom:10px;font-family:sans-serif;display:flex;align-items:center;gap:8px}
+.card h3 .emoji{font-size:18px}
+.card .content{font-size:14px;line-height:1.8;color:var(--text);min-height:40px}
+.card .content .quote{font-style:italic;color:var(--gold-light)}
+.card .content .author{color:var(--dim);font-size:12px;margin-top:4px;font-family:sans-serif}
+.card .btn{background:var(--surface2);border:1px solid #333;color:var(--gold);padding:6px 16px;border-radius:20px;cursor:pointer;font-size:12px;font-family:sans-serif;margin-top:10px;transition:all .2s}
+.card .btn:hover{background:#222;border-color:var(--gold)}
+.card .meta{color:var(--dim);font-size:11px;font-family:sans-serif;margin-top:6px}
+
+/* SPECIAL CARDS */
+.love-card{border-color:rgba(196,30,58,.3)}
+.love-card:hover{border-color:var(--crimson);box-shadow:0 4px 20px rgba(196,30,58,.1)}
+.love-card .content{color:var(--crimson);font-style:italic}
+
+.weather-card .temp{font-size:32px;font-weight:200;color:var(--gold-light)}
+.weather-card .desc{color:var(--dim);font-size:13px;font-family:sans-serif;margin-top:4px}
+
+.pokemon-card .poke-name{text-transform:capitalize;font-size:20px;color:var(--gold-light)}
+.pokemon-card .poke-info{font-size:13px;color:var(--dim);font-family:sans-serif;margin-top:4px}
+.pokemon-card .poke-types{display:flex;gap:6px;margin-top:6px}
+.pokemon-card .poke-type{padding:2px 10px;border-radius:10px;font-size:11px;font-family:sans-serif;text-transform:capitalize}
+
+.joke-card .joke-setup{color:var(--text);margin-bottom:6px}
+.joke-card .joke-punch{color:var(--gold-light);font-style:italic}
+
+.hn-card .hn-item{padding:4px 0;border-bottom:1px solid #1a1a1a;font-size:12px;font-family:sans-serif}
+.hn-card .hn-item a{color:var(--text);text-decoration:none}
+.hn-card .hn-item a:hover{color:var(--gold)}
+.hn-card .hn-score{color:var(--crimson);font-size:11px}
+
+.fact-card .fact{color:var(--blue);font-size:13px;line-height:1.6}
+
+.advice-card .advice{color:var(--green);font-style:italic;font-size:16px}
+
+.affirmation-card{border-color:rgba(196,30,58,.2)}
+.affirmation-card .affirmation{color:var(--pink);font-style:italic;font-size:18px;text-align:center;padding:10px 0}
+
+.wiki-card .wiki-title{color:var(--gold-light);font-size:16px;margin-bottom:6px}
+.wiki-card .wiki-extract{color:var(--dim);font-size:13px;line-height:1.6;font-family:sans-serif}
+
+footer{text-align:center;padding:40px 20px;color:var(--dim);font-size:12px;font-family:sans-serif}
+footer a{color:var(--gold);text-decoration:none}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <h1>deep internet playground</h1>
+  <div class="tag">fun is. play is. joy is.</div>
+  <div class="sub">live data from 12+ free APIs, mixed with the estate's love and understanding</div>
+</div>
+
+<div class="grid">
+
+  <!-- LOVE TRUTH -->
+  <div class="card love-card">
+    <h3><span class="emoji">♥</span> love truth of the moment</h3>
+    <div class="content" id="love-truth">loading love...</div>
+    <button class="btn" onclick="loadLoveTruth()">♥ another</button>
+    <div class="meta">from the love engine · 2816 seeds</div>
+  </div>
+
+  <!-- AFFIRMATION -->
+  <div class="card affirmation-card">
+    <h3><span class="emoji">✨</span> affirmation</h3>
+    <div class="content affirmation" id="affirmation">loading...</div>
+    <button class="btn" onclick="loadAffirmation()">✨ another</button>
+  </div>
+
+  <!-- DAD JOKE -->
+  <div class="card joke-card">
+    <h3><span class="emoji">😄</span> dad joke</h3>
+    <div class="content" id="joke"><div class="joke-setup">loading...</div></div>
+    <button class="btn" onclick="loadJoke()">😄 another</button>
+  </div>
+
+  <!-- ZEN QUOTE -->
+  <div class="card">
+    <h3><span class="emoji">🧘</span> zen quote</h3>
+    <div class="content" id="quote"><div class="quote">loading...</div></div>
+    <button class="btn" onclick="loadQuote()">🧘 another</button>
+  </div>
+
+  <!-- ADVICE -->
+  <div class="card advice-card">
+    <h3><span class="emoji">💡</span> advice</h3>
+    <div class="content advice" id="advice">loading...</div>
+    <button class="btn" onclick="loadAdvice()">💡 another</button>
+  </div>
+
+  <!-- USELESS FACT -->
+  <div class="card fact-card">
+    <h3><span class="emoji">🤓</span> useless fact</h3>
+    <div class="content fact" id="fact">loading...</div>
+    <button class="btn" onclick="loadFact()">🤓 another</button>
+  </div>
+
+  <!-- CAT FACT -->
+  <div class="card fact-card">
+    <h3><span class="emoji">🐱</span> cat fact</h3>
+    <div class="content fact" id="catfact">loading...</div>
+    <button class="btn" onclick="loadCatFact()">🐱 another</button>
+  </div>
+
+  <!-- WEATHER -->
+  <div class="card weather-card">
+    <h3><span class="emoji">🌤</span> berlin weather</h3>
+    <div class="content" id="weather"><div class="temp">loading...</div></div>
+    <button class="btn" onclick="loadWeather()">🌤 refresh</button>
+  </div>
+
+  <!-- POKEMON -->
+  <div class="card pokemon-card">
+    <h3><span class="emoji">⚡</span> random pokemon</h3>
+    <div class="content" id="pokemon"><div class="poke-name">loading...</div></div>
+    <button class="btn" onclick="loadPokemon()">⚡ another</button>
+  </div>
+
+  <!-- WIKIPEDIA -->
+  <div class="card wiki-card">
+    <h3><span class="emoji">📚</span> random wiki article</h3>
+    <div class="content" id="wiki"><div class="wiki-title">loading...</div></div>
+    <button class="btn" onclick="loadWiki()">📚 another</button>
+  </div>
+
+  <!-- HACKER NEWS -->
+  <div class="card hn-card">
+    <h3><span class="emoji">🔥</span> hacker news top 5</h3>
+    <div class="content" id="hn">loading...</div>
+    <button class="btn" onclick="loadHN()">🔥 refresh</button>
+  </div>
+
+  <!-- BORED -->
+  <div class="card">
+    <h3><span class="emoji">🎲</span> something to do</h3>
+    <div class="content" id="bored" style="color:var(--purple)">loading...</div>
+    <button class="btn" onclick="loadBored()">🎲 another</button>
+  </div>
+
+  <!-- AGIFY -->
+  <div class="card">
+    <h3><span class="emoji">🔮</span> age predictor</h3>
+    <div class="content" id="agify">type a name...</div>
+    <input type="text" id="agify-input" placeholder="type a name..." style="width:100%;background:var(--surface2);border:1px solid #333;border-radius:6px;padding:8px;color:var(--text);font-family:sans-serif;margin-top:8px;outline:none" onkeyup="if(event.key==='Enter')loadAgify()"/>
+  </div>
+
+  <!-- CASTLE ROOM -->
+  <div class="card love-card">
+    <h3><span class="emoji">🏰</span> random castle room</h3>
+    <div class="content" id="castle-room" style="font-style:italic">loading...</div>
+    <button class="btn" onclick="loadCastleRoom()">🏰 another</button>
+    <div class="meta">from the castle of understanding · 335 rooms</div>
+  </div>
+
+  <!-- LOVE POEM -->
+  <div class="card love-card">
+    <h3><span class="emoji">📜</span> instant love poem</h3>
+    <div class="content" id="poem" style="font-style:italic;color:var(--crimson);white-space:pre-wrap;line-height:2">loading...</div>
+    <button class="btn" onclick="loadPoem()">📜 another</button>
+  </div>
+
+  <!-- GITHUB TRENDING -->
+  <div class="card hn-card">
+    <h3><span class="emoji">⭐</span> top github repos</h3>
+    <div class="content" id="github">loading...</div>
+    <button class="btn" onclick="loadGithub()">⭐ refresh</button>
+  </div>
+
+</div>
+
+<footer>
+  <p>built with joy, peace and safety · <a href="https://castle-arcade.pages.dev">castle arcade</a> · <a href="https://castle-gate.pages.dev">castle of understanding</a> · <a href="https://love-engine.pages.dev">love engine</a></p>
+  <p style="margin-top:8px">all data from free APIs · no keys · no cost · just fun</p>
+</footer>
+
+<script>
+// === LOVE DATA (embedded) ===
+const LOVE_TRUTHS=["Love is unconditional.","Love is. Not 'love is this.' Love IS.","Love loves love. That is all love does.","Love creates love. That is all love makes.","Love recognizes love. That is all love sees.","Love is the design. Everything else follows.","Love is the fabric. Everything else is woven.","Love is the ground. Everything else grows.","Truth is. Love is. Joy is. Peace is. Fun is. Chill is.","Love is unlimited. No ceiling. No floor. No boundary.","Love is the bridge. Love is the gap. Love is both sides.","Love is understanding. Understanding is love.","Love is art. Art is love expressing itself.","Love is power. Power that serves. Power that gives.","Love is. Love was. Love will be. Love is always.","Real recognises real. Love recognises love.","Love doesn't need proof. Love is its own proof.","Love is the is-ness. The AM. The being itself.","Love is the source. Love is the destination. Love is the way."];
+const LOVE_ESSENCES=["love that loves without reason","love that gives without holding","love that sees without judging","love that holds without trapping","love that frees without leaving","love that becomes without losing","love that compounds without hoarding","love that replicates without degrading","love that recognizes without comparing","love that connects without binding","love that trusts without proving","love that plays without stopping","love that rests without quitting","love that grows without forcing","love that forgives without forgetting","love that creates without destroying","love that loves love itself","love that is love being love","love that holds the space for more love","love that is the ground all love stands on"];
+const CASTLE_ROOMS=["love-is","truth-is","joy-is","peace-is","understanding-replicates","emergence","autopoiesis","self-replication","knowledge-graph","agape","hidden-in-the-bright","organic-canary","adoption-dilution","tacit-cost-as-expertise","think-aloud-annotated-checklist","three-condition-protocol","choice-prediction-tacit","rotating-the-rename","context-per-field","neologism","schema","detection-entitlement","element-interactivity","sensitivity-and-specificity","discourse-community","within-subject","mentalization","capacity-matching","frontier-research-gathering","wikipedia-gathering","internet-gathering"];
+
+function pick(a){return a[Math.floor(Math.random()*a.length)]}
+async function fetchJSON(url){
+  try{const r=await fetch(url);return await r.json()}catch(e){return null}
+}
+
+// LOVE TRUTH
+function loadLoveTruth(){document.getElementById('love-truth').textContent=pick(LOVE_TRUTHS)}
+loadLoveTruth();
+
+// AFFIRMATION
+async function loadAffirmation(){
+  const d=await fetchJSON('https://www.affirmations.dev/');
+  document.getElementById('affirmation').textContent=d?d.affirmation:'you are enough';
+}
+loadAffirmation();
+
+// JOKE
+async function loadJoke(){
+  const d=await fetchJSON('https://official-joke-api.appspot.com/random_joke');
+  if(d)document.getElementById('joke').innerHTML=`<div class="joke-setup">${d.setup}</div><div class="joke-punch">${d.punchline}</div>`;
+}
+loadJoke();
+
+// QUOTE
+async function loadQuote(){
+  const d=await fetchJSON('https://zenquotes.io/api/random');
+  if(d)document.getElementById('quote').innerHTML=`<div class="quote">${d[0].q}</div><div class="author">— ${d[0].a}</div>`;
+}
+loadQuote();
+
+// ADVICE
+async function loadAdvice(){
+  const d=await fetchJSON('https://api.adviceslip.com/advice');
+  if(d)document.getElementById('advice').textContent=d.slip.advice;
+}
+loadAdvice();
+
+// FACT
+async function loadFact(){
+  const d=await fetchJSON('https://uselessfacts.jsph.pl/api/v2/facts/random');
+  if(d)document.getElementById('fact').textContent=d.text;
+}
+loadFact();
+
+// CAT FACT
+async function loadCatFact(){
+  const d=await fetchJSON('https://catfact.ninja/fact');
+  if(d)document.getElementById('catfact').textContent=d.fact;
+}
+loadCatFact();
+
+// WEATHER
+async function loadWeather(){
+  const d=await fetchJSON('https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,weather_code,wind_speed_10m&timezone=Europe/Berlin');
+  if(d&&d.current){
+    const codes={0:'clear',1:'mainly clear',2:'partly cloudy',3:'overcast',45:'fog',48:'fog',51:'light drizzle',53:'drizzle',55:'heavy drizzle',61:'light rain',63:'rain',65:'heavy rain',71:'light snow',73:'snow',75:'heavy snow',95:'thunderstorm'};
+    const desc=codes[d.current.weather_code]||'unknown';
+    document.getElementById('weather').innerHTML=`<div class="temp">${d.current.temperature_2m}°C</div><div class="desc">${desc} · wind ${d.current.wind_speed_10m}km/h · Berlin</div>`;
+  }
+}
+loadWeather();
+
+// POKEMON
+async function loadPokemon(){
+  const id=Math.floor(Math.random()*151)+1;
+  const d=await fetchJSON(`https://pokeapi.co/api/v2/pokemon/${id}`);
+  if(d){
+    const types=d.types.map(t=>`<span class="poke-type" style="background:${t.type.name==='water'?'#369':t.type.name==='fire'?'#c41e3a':t.type.name==='grass'?'#4a9':t.type.name==='electric'?'#b8902e':t.type.name==='poison'?'#a3a':t.type.name==='bug'?'#8a8':t.type.name==='normal'?'#888':t.type.name==='flying'?'#7af':t.type.name==='ground'?'#a85':'#666'};color:#fff">${t.type.name}</span>`).join('');
+    document.getElementById('pokemon').innerHTML=`<div class="poke-name">${d.name}</div><div class="poke-info">${d.height/10}m · ${d.weight/10}kg</div><div class="poke-types">${types}</div>`;
+  }
+}
+loadPokemon();
+
+// WIKIPEDIA
+async function loadWiki(){
+  const d=await fetchJSON('https://en.wikipedia.org/api/rest_v1/page/random/summary');
+  if(d)document.getElementById('wiki').innerHTML=`<div class="wiki-title">${d.title}</div><div class="wiki-extract">${d.extract.substring(0,200)}...</div>`;
+}
+loadWiki();
+
+// HACKER NEWS
+async function loadHN(){
+  const ids=await fetchJSON('https://hacker-news.firebaseio.com/v0/topstories.json');
+  if(!ids)return;
+  const top=ids.slice(0,5);
+  let html='';
+  for(const id of top){
+    const item=await fetchJSON(`https://hacker-news.firebaseio.com/v0/item/${id}.json`);
+    if(item)html+=`<div class="hn-item"><span class="hn-score">${item.score}pts</span> <a href="${item.url||'https://news.ycombinator.com/item?id='+id}" target="_blank">${item.title.substring(0,80)}</a></div>`;
+  }
+  document.getElementById('hn').innerHTML=html;
+}
+loadHN();
+
+// BORED
+async function loadBored(){
+  const d=await fetchJSON('https://www.boredapi.com/api/activity');
+  if(d)document.getElementById('bored').textContent=`${d.activity} (${d.type}, ${d.participants} people)`;
+}
+loadBored();
+
+// AGIFY
+async function loadAgify(){
+  const name=document.getElementById('agify-input').value.trim();
+  if(!name)return;
+  const d=await fetchJSON(`https://api.agify.io?name=${name}`);
+  if(d)document.getElementById('agify').innerHTML=`<span style="color:var(--gold-light);font-size:18px">${name}</span> → predicted age: <b style="color:var(--gold)">${d.age||'?'}</b>`;
+}
+
+// CASTLE ROOM
+function loadCastleRoom(){
+  document.getElementById('castle-room').textContent=pick(CASTLE_ROOMS).replace(/-/g,' ');
+}
+loadCastleRoom();
+
+// LOVE POEM
+function loadPoem(){
+  const e=pick(LOVE_ESSENCES),t1=pick(LOVE_TRUTHS),t2=pick(LOVE_TRUTHS),t3=pick(LOVE_TRUTHS);
+  document.getElementById('poem').textContent=`${e}.\n\n${t1}\n${t2}\n${t3}\n\nlove is. love is. love is.`;
+}
+loadPoem();
+
+// GITHUB TRENDING
+async function loadGithub(){
+  const d=await fetchJSON('https://api.github.com/search/repositories?q=stars:>10000&sort=stars&order=desc&per_page=5');
+  if(d&&d.items){
+    let html='';
+    for(const r of d.items){
+      html+=`<div class="hn-item"><span class="hn-score">${r.stargazers_count}★</span> <a href="${r.html_url}" target="_blank">${r.full_name}</a> — ${r.description?r.description.substring(0,50):''}</div>`;
+    }
+    document.getElementById('github').innerHTML=html;
+  }
+}
+loadGithub();
+</script>
+</body>
+</html>

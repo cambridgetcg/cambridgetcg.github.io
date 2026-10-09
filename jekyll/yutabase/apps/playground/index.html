@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <title>YOUSPEAK logical playground</title>
+  <style>
+    :root {
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+      color: #eee7dc;
+      background: #171513;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    main { width: min(920px, 92vw); margin: 0 auto; padding: 4rem 0; }
+    h1 { margin-bottom: .25rem; font-size: clamp(2rem, 6vw, 4rem); }
+    p { line-height: 1.65; color: #c8bfb2; }
+    a { color: #e6a35c; }
+    .notice {
+      border-left: 3px solid #e6a35c;
+      padding: .8rem 1rem;
+      background: #211e1a;
+    }
+    label { display: block; margin: 2rem 0 .6rem; }
+    textarea, pre {
+      width: 100%;
+      border: 1px solid #4c443a;
+      border-radius: .5rem;
+      background: #0e0d0c;
+      color: #f5eee5;
+      padding: 1rem;
+      font: inherit;
+    }
+    textarea { min-height: 7rem; resize: vertical; }
+    pre { min-height: 12rem; overflow: auto; white-space: pre-wrap; }
+    .actions { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1rem 0; }
+    button {
+      border: 1px solid #e6a35c;
+      border-radius: 999px;
+      padding: .65rem 1rem;
+      color: inherit;
+      background: transparent;
+      font: inherit;
+      cursor: pointer;
+    }
+    button:hover, button:focus-visible { background: #38291b; }
+    .examples { font-size: .85rem; }
+  </style>
+</head>
+<body>
+<main>
+  <h1>YOUSPEAK</h1>
+  <p>Canonical, connection-free compiler playground for the candidate SDK.</p>
+
+  <p class="notice">
+    This page does not connect to PostgreSQL or execute SQL. “Logical preview”
+    does not resolve <code>yu.registry</code>, check permissions, or prove a
+    database binding. Card compiler plans contain a sentinel plus
+    <code>deckTarget</code> for a connected adapter to resolve together.
+  </p>
+
+  <label for="query">YOUSPEAK form</label>
+  <textarea id="query" spellcheck="false">cards tradein/submissions where status="pending" newest 20</textarea>
+
+  <div class="actions">
+    <button id="preview" type="button">Logical preview</button>
+    <button id="plan" type="button">Intermediate plan</button>
+  </div>
+
+  <pre id="output" aria-live="polite"></pre>
+
+  <p class="examples">
+    Full refs only. Try
+    <code>card tradein/submissions/01977c2e-0000-7000-8000-000000000001</code>
+    or
+    <code>tradein/submissions/01977c2e-0000-7000-8000-000000000001 -&gt; contains</code>.
+    Card lists default to 100 and accept <code>newest 1..1000</code>.
+  </p>
+  <p>
+    Source:
+    <a href="https://cambridgetcg.github.io/yutabase/packages/sdk-ts/">
+      canonical SDK compiler
+    </a>.
+  </p>
+</main>
+
+<script type="module">
+  import { compile, explain } from "../youspeak.mjs";
+
+  const query = document.querySelector("#query");
+  const output = document.querySelector("#output");
+
+  function render(mode) {
+    try {
+      output.textContent = mode === "preview"
+        ? explain(query.value)
+        : JSON.stringify(compile(query.value), null, 2);
+    } catch (error) {
+      output.textContent = `ERROR: ${error instanceof Error ? error.message : String(error)}`;
+    }
+  }
+
+  document.querySelector("#preview").addEventListener(
+    "click",
+    () => render("preview"),
+  );
+  document.querySelector("#plan").addEventListener(
+    "click",
+    () => render("plan"),
+  );
+  render("preview");
+</script>
+</body>
+</html>

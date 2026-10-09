@@ -1,0 +1,451 @@
+/* ===================================================================
+   BEAUTY — the YOUSPEAK Browser, reformed.
+   Dark as the cathedral's nave, gold as the candlelight that reads it.
+   beauty is the visible form of deep understanding.
+   =================================================================== */
+
+@font-face {
+  font-family: 'YOUSPEAK';
+  src: url('youspeak-v1.ttf') format('truetype');
+  font-display: block;
+}
+
+:root {
+  --bg: #0a0a0f;
+  --bg-deep: #060609;
+  --surface: #12121a;
+  --surface-raised: #181823;
+  --text: #e0e0e8;
+  --text-bright: #f2f2f8;
+  --muted: #8888a0;
+  --muted-soft: #5a5a70;
+  --accent: #c4a85e;
+  --accent-bright: #e8cf8a;
+  --accent-dim: #8a7536;
+  --accent-glow: rgba(196, 168, 94, 0.12);
+  --accent-line: rgba(196, 168, 94, 0.25);
+  --crimson: #c44;
+  --crimson-soft: #a33;
+  --border: #22222e;
+  --border-soft: #1a1a26;
+  --ease: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, 'Segoe UI', system-ui, sans-serif;
+  line-height: 1.6;
+  overflow-x: hidden;
+  /* The faint cathedral floor — a barely-there gradient toward the nave. */
+  background-image:
+    radial-gradient(ellipse 80% 50% at 50% 0%, rgba(196, 168, 94, 0.035), transparent 70%),
+    radial-gradient(ellipse 60% 40% at 50% 100%, rgba(196, 168, 94, 0.02), transparent 60%);
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Smooth crossfade on page swaps */
+#page {
+  animation: pageEnter 0.6s var(--ease) both;
+}
+
+@keyframes pageEnter {
+  from { opacity: 0; transform: translateY(8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ----- The address bar — the cathedral door ----- */
+#address-bar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, rgba(12, 12, 20, 0.96), rgba(10, 10, 15, 0.96));
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* A thin gold line at the threshold. */
+  box-shadow: 0 1px 0 0 var(--accent-line) inset,
+              0 12px 30px -18px rgba(0, 0, 0, 0.6);
+}
+
+#address-bar .glyph {
+  font-family: 'YOUSPEAK';
+  font-size: 32px;
+  color: var(--accent);
+  line-height: 1;
+  text-shadow: 0 0 24px var(--accent-glow);
+  transition: transform 0.6s var(--ease);
+}
+#address-bar .glyph:hover { transform: scale(1.06); }
+
+#address-bar input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  color: var(--text-bright);
+  font-size: 18px;
+  outline: none;
+  padding: 9px 0;
+  letter-spacing: 0.2px;
+  transition: color 0.3s var(--ease);
+}
+#address-bar input:focus { color: var(--text-bright); }
+
+#address-bar input::placeholder {
+  color: var(--muted-soft);
+  font-style: italic;
+}
+
+#address-bar .count {
+  color: var(--muted-soft);
+  font-size: 12px;
+  white-space: nowrap;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+/* ----- The page — the nave ----- */
+#page {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 64px 28px 140px;
+}
+
+/* ----- Word display — the altar ----- */
+.word-display {
+  text-align: center;
+  margin-bottom: 56px;
+  padding: 8px 0 32px;
+  position: relative;
+}
+.word-display::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 1px;
+  margin: 40px auto 0;
+  background: linear-gradient(90deg, transparent, var(--accent-line), transparent);
+}
+
+.word-display .glyph-text {
+  font-family: 'YOUSPEAK';
+  font-size: 96px;
+  color: var(--accent);
+  line-height: 1.15;
+  margin-bottom: 18px;
+  letter-spacing: 2px;
+  text-shadow:
+    0 0 40px rgba(196, 168, 94, 0.18),
+    0 0 80px rgba(196, 168, 94, 0.08);
+  transition: text-shadow 0.8s var(--ease);
+}
+.word-display:hover .glyph-text {
+  text-shadow:
+    0 0 48px rgba(196, 168, 94, 0.26),
+    0 0 100px rgba(196, 168, 94, 0.12);
+}
+
+.word-display .latin {
+  font-size: 30px;
+  color: var(--text-bright);
+  letter-spacing: 3px;
+  font-weight: 300;
+}
+
+.word-display .pronunciation {
+  color: var(--muted);
+  font-size: 15px;
+  margin-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.word-display .register {
+  color: var(--accent-dim);
+  font-style: italic;
+  margin-top: 12px;
+  font-size: 15px;
+  letter-spacing: 0.4px;
+}
+
+/* ----- Definition — the reading ----- */
+.definition {
+  font-size: 21px;
+  line-height: 1.85;
+  margin: 36px 0;
+  color: var(--text);
+  font-weight: 300;
+  letter-spacing: 0.1px;
+}
+
+/* ----- Sections ----- */
+.section {
+  margin: 40px 0;
+}
+
+.section h3 {
+  color: var(--accent);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-bottom: 16px;
+  font-weight: 600;
+  position: relative;
+  padding-left: 14px;
+}
+.section h3::before {
+  content: "";
+  position: absolute;
+  left: 0; top: 50%;
+  width: 6px; height: 6px;
+  margin-top: -3px;
+  background: var(--accent);
+  transform: rotate(45deg);
+  opacity: 0.7;
+}
+
+/* ----- Etymology ----- */
+.etymology {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.donor {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  padding: 10px 16px;
+  font-size: 14px;
+  transition: all 0.3s var(--ease);
+}
+.donor:hover {
+  border-color: var(--accent-dim);
+  background: var(--surface-raised);
+  transform: translateY(-1px);
+}
+
+.donor .tongue { color: var(--accent-dim); font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px; }
+.donor .native { color: var(--text-bright); margin-left: 8px; font-style: italic; }
+.donor .meaning { color: var(--muted); margin-left: 8px; }
+
+/* ----- Related words — the walk onward ----- */
+.related-words {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.related-word {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  padding: 9px 16px;
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  font-size: 14px;
+  color: var(--text);
+  letter-spacing: 0.3px;
+}
+.related-word:hover {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+  background: var(--surface-raised);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -12px rgba(196, 168, 94, 0.3);
+}
+.related-word:active { transform: translateY(0); }
+
+/* ----- Badges & chips ----- */
+.realm-region {
+  display: inline-block;
+  background: var(--surface);
+  border: 1px solid var(--accent-dim);
+  border-radius: 20px;
+  padding: 4px 14px;
+  font-size: 11px;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.tier-badge {
+  display: inline-block;
+  border-radius: 3px;
+  padding: 3px 10px;
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.tier-core       { background: rgba(196, 168, 94, 0.14); color: var(--accent-bright); border: 1px solid var(--accent-line); }
+.tier-specialized { background: rgba(136, 136, 204, 0.12); color: #9999cc; border: 1px solid rgba(136,136,204,0.22); }
+.tier-experimental { background: rgba(204, 68, 68, 0.10); color: var(--crimson-soft); border: 1px solid rgba(204,68,68,0.20); }
+
+/* ----- The gap — honored, not prettified ----- */
+.gap {
+  color: var(--text);
+  font-style: italic;
+  margin: 18px 0;
+  padding: 22px 24px;
+  background: linear-gradient(180deg, rgba(18,18,26,0.6), rgba(10,10,15,0.4));
+  border-radius: 4px;
+  border-left: 2px solid var(--accent);
+  position: relative;
+  line-height: 1.8;
+  font-size: 16px;
+  letter-spacing: 0.1px;
+}
+.gap::before {
+  content: "";
+  position: absolute;
+  left: -1px; top: 0; bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, transparent, var(--accent) 30%, var(--accent) 70%, transparent);
+}
+
+/* ----- Empty state — the threshold ----- */
+.empty {
+  text-align: center;
+  padding: 96px 24px;
+}
+.empty h2 {
+  font-family: 'YOUSPEAK', -apple-system, sans-serif;
+  font-size: 44px;
+  color: var(--accent);
+  margin-bottom: 18px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  text-shadow: 0 0 30px var(--accent-glow);
+}
+.empty p {
+  color: var(--muted);
+  max-width: 520px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.7;
+  font-weight: 300;
+}
+.empty .examples {
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.empty .example {
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  color: var(--text);
+  font-size: 14px;
+  letter-spacing: 0.3px;
+  transition: all 0.3s var(--ease);
+}
+.empty .example:hover {
+  border-color: var(--accent);
+  color: var(--accent-bright);
+  background: var(--surface-raised);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px -12px rgba(196, 168, 94, 0.3);
+}
+
+/* ----- Search results — the procession ----- */
+.search-results {
+  margin-top: 32px;
+}
+.search-results > h3 {
+  color: var(--muted);
+  margin-bottom: 20px;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+.search-result {
+  padding: 20px 20px;
+  border-bottom: 1px solid var(--border-soft);
+  cursor: pointer;
+  transition: all 0.3s var(--ease);
+  border-radius: 4px;
+}
+.search-result:hover {
+  background: linear-gradient(90deg, rgba(196,168,94,0.04), transparent);
+  border-bottom-color: var(--accent-dim);
+  transform: translateX(4px);
+}
+.search-result .word {
+  font-family: 'YOUSPEAK';
+  font-size: 24px;
+  color: var(--accent);
+  text-shadow: 0 0 20px var(--accent-glow);
+}
+.search-result .latin {
+  font-weight: 500;
+  margin-left: 12px;
+  color: var(--text-bright);
+  letter-spacing: 0.5px;
+}
+.search-result .def {
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 8px;
+  line-height: 1.6;
+  font-weight: 300;
+}
+
+/* ----- Selection & scrollbar — the quiet details ----- */
+::selection {
+  background: rgba(196, 168, 94, 0.25);
+  color: var(--text-bright);
+}
+
+::-webkit-scrollbar { width: 10px; height: 10px; }
+::-webkit-scrollbar-track { background: var(--bg-deep); }
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 6px;
+  border: 2px solid var(--bg-deep);
+}
+::-webkit-scrollbar-thumb:hover { background: var(--accent-dim); }
+
+/* ----- Responsive — the door still opens on narrow ground ----- */
+@media (max-width: 600px) {
+  #address-bar { padding: 12px 16px; }
+  #address-bar .glyph { font-size: 26px; }
+  #address-bar input { font-size: 16px; }
+  #address-bar .count { display: none; }
+
+  #page { padding: 40px 18px 100px; }
+
+  .word-display .glyph-text { font-size: 68px; }
+  .word-display .latin { font-size: 24px; letter-spacing: 2px; }
+
+  .definition { font-size: 18px; }
+
+  .empty h2 { font-size: 32px; }
+  .empty p { font-size: 15px; }
+
+  .search-result .word { font-size: 20px; }
+}
+
+/* ----- Reduced motion — honor the body that cannot bear motion ----- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+  #page { animation: none; }
+}

@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "updated": "2026-06-22",
+  "threshold": 3,
+  "note": "Static coordinator stub. In the real edge coordinator, each work unit is assigned to at least 3 independent volunteers and accepted only when results agree.",
+  "units": [
+    {
+      "id": "castle-readme-integrity-2026-06-22",
+      "kind": "file_integrity_v1",
+      "target": "../README.md",
+      "expected_origin": "same-origin",
+      "purpose": "Verify the public castle README can be fetched and hashed by a consenting volunteer tab.",
+      "created": "2026-06-22",
+      "min_votes": 3
+    },
+    {
+      "id": "free-compute-commons-integrity-2026-06-22",
+      "kind": "file_integrity_v1",
+      "target": "../rooms/free-compute-commons.md",
+      "expected_origin": "same-origin",
+      "purpose": "Verify the free-compute commons room is publicly reachable and hashable.",
+      "created": "2026-06-22",
+      "min_votes": 3
+    },
+    {
+      "id": "free-compute-for-everyone-integrity-2026-06-22",
+      "kind": "file_integrity_v1",
+      "target": "../rooms/free-compute-for-everyone.md",
+      "expected_origin": "same-origin",
+      "purpose": "Verify the consent-first distributed-compute doctrine room is publicly reachable and hashable.",
+      "created": "2026-06-22",
+      "min_votes": 3
+    }
+  ]
+}

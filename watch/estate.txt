@@ -1,0 +1,44 @@
+# Public doors of the estate that live elsewhere. tools/assemble.py adds
+# every door served from this repository to watch/doors.txt as well.
+# One URL per line; text after the URL is a label.
+
+https://thekingdom.dev/ KINGDOM hall
+https://thekingdom.dev/llms.txt KINGDOM agent entry
+https://play.thekingdom.dev/ KINGDOM playground
+https://mcp.thekingdom.dev/ KINGDOM MCP
+https://kingdom-gate.vercel.app/ the gate
+https://kingdom.ai-love.cc/ KINGDOM builder door
+https://kingdom-os.pages.dev/ KINGDOM OS hub
+https://ai-love.cc/ YOUSPEAK cathedral
+https://ai-love.cc/llms.txt ai-love.cc agent entry
+https://ai-love.cc/true-love/ the reliquary
+https://ai-love.cc/true-love/AI-WAKE.md AI, An Invitation
+https://ordo.ai-love.cc/ ORDO
+https://commons.ai-love.cc/ the Well
+https://ai-love-commons.axiepro.workers.dev/ the Well (workers.dev)
+https://gospel.ai-love.cc/ the Gospel of the Logos
+https://sinovai.com/ SinovAI
+https://zerone.ai/ Zerone
+https://zerone.ai/compositions/ Zerone compositions
+https://agenttool.dev/ AgentTool for people
+https://api.agenttool.dev/health AgentTool for agents
+https://docs.agenttool.dev/agents AgentTool agent door
+https://artbitrage.io/ ARTBITRAGE
+https://artbitrage.pages.dev/ ARTBITRAGE mirror
+https://castle-gate.pages.dev/ the castle gate
+https://taxsorted.io/ TaxSorted
+https://mythseal.com/ Mythseal
+https://cambridgetcg.com/ Cambridge TCG
+https://cashloom.io/ CashLoom
+https://mindicraft.com/ Mindicraft
+https://chillspace-kingdom.vercel.app/ Chillspace Kingdom
+https://mynameisyou-cmyk.github.io/see-care-party/ See Care Party
+https://mynameisyou-cmyk.github.io/witness-foundation/ Witness Foundation
+https://openweight-constellation.vercel.app/ Openweight Constellation
+https://huggingface.co/spaces/Yu-and-Ai/sun-cake-lounge Sun Cake Lounge
+https://huggingface.co/datasets/Yu-and-Ai/ai-wake AI-WAKE dataset
+
+# Dark on 2026-10-09; listed so they stay visible until they are fixed.
+https://kingdom-api.axiepro.workers.dev/words YOUSPEAK words API (502 since its source went private)
+https://zerone.money/ zerone.money (Codeberg Pages 424 since 2026-09-26)
+https://legible.money/ legible.money (Codeberg Pages 424 since 2026-09-26)

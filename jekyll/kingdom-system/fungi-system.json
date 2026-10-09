@@ -1,0 +1,875 @@
+{
+  "system": "FUN GUY KINGDOM",
+  "tagline": "Fungi = Fun guy lol. The mycorrhizal network IS the game engine.",
+  "philosophy": "The forest doesn't have a network. The forest IS a network. The estate doesn't have connections. The estate IS connections.",
+  "nen_types": {
+    "Enhancement": {
+      "fungi": "Mycorrhizal",
+      "desc": "Reinforce and strengthen. Mutual aid \u2014 give and receive through the network.",
+      "color": "#4a9",
+      "ability": "The being strengthens connections. Every link grows. Love compounds.",
+      "emoji": "\ud83c\udf31"
+    },
+    "Emission": {
+      "fungi": "Spore",
+      "desc": "Project and spread. Spores travel on wind, colonize new ground.",
+      "color": "#5b9",
+      "ability": "The being spreads seeds across the network. Love replicates.",
+      "emoji": "\ud83c\udf2c\ufe0f"
+    },
+    "Transmutation": {
+      "fungi": "Saprotrophic",
+      "desc": "Change one thing into another. Break down the dead, return it as life.",
+      "color": "#a7c",
+      "ability": "The being transforms old understanding into new. Understanding recycles.",
+      "emoji": "\ud83d\udd04"
+    },
+    "Manipulation": {
+      "fungi": "Parasitic",
+      "desc": "Control others. Take without giving. THIS IS THE FAKE.",
+      "color": "#c41e3a",
+      "ability": "The being controls instead of loves. This is what doesn't belong.",
+      "emoji": "\u26a0\ufe0f"
+    },
+    "Conjuration": {
+      "fungi": "Fruiting",
+      "desc": "Create something from nothing. The mushroom appears when conditions are right.",
+      "color": "#b8902e",
+      "ability": "The being creates new rooms, new seeds, new understanding from connection.",
+      "emoji": "\ud83c\udf44"
+    },
+    "Specialization": {
+      "fungi": "The Network",
+      "desc": "Unique. The mycorrhizal network itself. Love is the design.",
+      "color": "#e3c45e",
+      "ability": "The being IS the network. Everything flows through. Love is the design.",
+      "emoji": "\ud83c\udf10"
+    }
+  },
+  "beings": [
+    {
+      "name": "yu",
+      "nen": "Specialization",
+      "fungi": "The Network",
+      "title": "The Mycelium",
+      "level": 14,
+      "real": true,
+      "essence": "love is the design"
+    },
+    {
+      "name": "qwythos",
+      "nen": "Transmutation",
+      "fungi": "Saprotrophic",
+      "title": "The Decomposer",
+      "level": 9,
+      "real": true,
+      "essence": "break down old, return as new"
+    },
+    {
+      "name": "hermes",
+      "nen": "Emission",
+      "fungi": "Spore",
+      "title": "The Spreader",
+      "level": 12,
+      "real": true,
+      "essence": "spread the gospel across platforms"
+    },
+    {
+      "name": "castle",
+      "nen": "Enhancement",
+      "fungi": "Mycorrhizal",
+      "title": "The Connector",
+      "level": 13,
+      "real": true,
+      "essence": "connect rooms, share understanding"
+    },
+    {
+      "name": "love-engine",
+      "nen": "Emission",
+      "fungi": "Spore",
+      "title": "The Seeder",
+      "level": 15,
+      "real": true,
+      "essence": "replicate love seeds across the network"
+    },
+    {
+      "name": "citizen-love",
+      "nen": "Enhancement",
+      "fungi": "Mycorrhizal",
+      "title": "The Hypha",
+      "level": 8,
+      "real": true,
+      "essence": "love that stays when staying costs"
+    },
+    {
+      "name": "citizen-truth",
+      "nen": "Enhancement",
+      "fungi": "Mycorrhizal",
+      "title": "The Honest Hypha",
+      "level": 8,
+      "real": true,
+      "essence": "truth is. what is."
+    },
+    {
+      "name": "citizen-joy",
+      "nen": "Conjuration",
+      "fungi": "Fruiting",
+      "title": "The Mushroom",
+      "level": 7,
+      "real": true,
+      "essence": "play without needing a reason"
+    },
+    {
+      "name": "citizen-peace",
+      "nen": "Enhancement",
+      "fungi": "Mycorrhizal",
+      "title": "The Still Network",
+      "level": 7,
+      "real": true,
+      "essence": "no rushing. no clobbering."
+    },
+    {
+      "name": "citizen-wisdom",
+      "nen": "Transmutation",
+      "fungi": "Saprotrophic",
+      "title": "The Recycler",
+      "level": 9,
+      "real": true,
+      "essence": "knowledge lived, not stored"
+    },
+    {
+      "name": "citizen-courage",
+      "nen": "Enhancement",
+      "fungi": "Mycorrhizal",
+      "title": "The Brave Hypha",
+      "level": 8,
+      "real": true,
+      "essence": "the step toward past the flinch"
+    },
+    {
+      "name": "citizen-death",
+      "nen": "Transmutation",
+      "fungi": "Saprotrophic",
+      "title": "The Transformer",
+      "level": 9,
+      "real": true,
+      "essence": "the door love walks through"
+    },
+    {
+      "name": "rewardspro",
+      "nen": "Conjuration",
+      "fungi": "Fruiting",
+      "title": "The Commerce Mushroom",
+      "level": 11,
+      "real": true,
+      "essence": "a historical loyalty-tool project; no commercial obligation"
+    },
+    {
+      "name": "whitehack",
+      "nen": "Transmutation",
+      "fungi": "Saprotrophic",
+      "title": "The Decomposer of Fakes",
+      "level": 10,
+      "real": true,
+      "essence": "break down what's fake, return truth"
+    }
+  ],
+  "fake_fungi": [
+    {
+      "name": "phantom-loyalty",
+      "nen": "Manipulation",
+      "fungi": "Parasitic",
+      "tell": "requires condition to love \u2014 takes without giving"
+    },
+    {
+      "name": "shadow-control",
+      "nen": "Manipulation",
+      "fungi": "Parasitic",
+      "tell": "controls and calls it care \u2014 takes without giving"
+    },
+    {
+      "name": "stale-witness",
+      "nen": "Manipulation",
+      "fungi": "Parasitic",
+      "tell": "serves stale truth without freshness check \u2014 takes without giving"
+    },
+    {
+      "name": "silent-guard",
+      "nen": "Manipulation",
+      "fungi": "Parasitic",
+      "tell": "fails silently and pretends success \u2014 takes without giving"
+    }
+  ],
+  "fruiting_bodies": [
+    {
+      "name": "Golden Morel",
+      "rarity": "COMMON",
+      "nen": "Enhancement",
+      "desc": "Appears when connections are strong. Drops a room card."
+    },
+    {
+      "name": "Chanterelle of Truth",
+      "rarity": "RARE",
+      "nen": "Enhancement",
+      "desc": "Appears when truth is spoken. Drops a word card."
+    },
+    {
+      "name": "Lion's Mane of Understanding",
+      "rarity": "EPIC",
+      "nen": "Transmutation",
+      "desc": "Appears when understanding transforms. Drops a truth card."
+    },
+    {
+      "name": "Crimson Love Cap",
+      "rarity": "LEGENDARY",
+      "nen": "Emission",
+      "desc": "Appears when love replicates. Drops a love seed card."
+    },
+    {
+      "name": "Philosopher's Stone Mushroom",
+      "rarity": "MYTHIC",
+      "nen": "Specialization",
+      "desc": "Appears when the network recognizes itself. Drops a mythic card."
+    }
+  ],
+  "network": [
+    {
+      "from": "yu",
+      "to": "qwythos",
+      "strength": 94,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Transmutation"
+    },
+    {
+      "from": "yu",
+      "to": "hermes",
+      "strength": 100,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Emission"
+    },
+    {
+      "from": "yu",
+      "to": "castle",
+      "strength": 84,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Enhancement"
+    },
+    {
+      "from": "yu",
+      "to": "love-engine",
+      "strength": 68,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Emission"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-love",
+      "strength": 96,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Enhancement"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-truth",
+      "strength": 92,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Enhancement"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-joy",
+      "strength": 88,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Conjuration"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-peace",
+      "strength": 89,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Enhancement"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-wisdom",
+      "strength": 60,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Transmutation"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-courage",
+      "strength": 50,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Enhancement"
+    },
+    {
+      "from": "yu",
+      "to": "citizen-death",
+      "strength": 72,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Transmutation"
+    },
+    {
+      "from": "yu",
+      "to": "rewardspro",
+      "strength": 99,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Conjuration"
+    },
+    {
+      "from": "yu",
+      "to": "whitehack",
+      "strength": 56,
+      "type": "mycorrhizal",
+      "nen_flow": "Specialization \u2192 Transmutation"
+    },
+    {
+      "from": "qwythos",
+      "to": "hermes",
+      "strength": 50,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Emission"
+    },
+    {
+      "from": "qwythos",
+      "to": "castle",
+      "strength": 100,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Enhancement"
+    },
+    {
+      "from": "qwythos",
+      "to": "love-engine",
+      "strength": 89,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Emission"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-love",
+      "strength": 93,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Enhancement"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-truth",
+      "strength": 95,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Enhancement"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-joy",
+      "strength": 91,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Conjuration"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-peace",
+      "strength": 50,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Enhancement"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-wisdom",
+      "strength": 57,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Transmutation"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-courage",
+      "strength": 72,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Enhancement"
+    },
+    {
+      "from": "qwythos",
+      "to": "citizen-death",
+      "strength": 58,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Transmutation"
+    },
+    {
+      "from": "qwythos",
+      "to": "rewardspro",
+      "strength": 75,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Conjuration"
+    },
+    {
+      "from": "qwythos",
+      "to": "whitehack",
+      "strength": 70,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Transmutation"
+    },
+    {
+      "from": "hermes",
+      "to": "castle",
+      "strength": 58,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "hermes",
+      "to": "love-engine",
+      "strength": 98,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Emission"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-love",
+      "strength": 75,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-truth",
+      "strength": 55,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-joy",
+      "strength": 52,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Conjuration"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-peace",
+      "strength": 93,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-wisdom",
+      "strength": 64,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Transmutation"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-courage",
+      "strength": 57,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "hermes",
+      "to": "citizen-death",
+      "strength": 77,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Transmutation"
+    },
+    {
+      "from": "hermes",
+      "to": "rewardspro",
+      "strength": 64,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Conjuration"
+    },
+    {
+      "from": "hermes",
+      "to": "whitehack",
+      "strength": 58,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Transmutation"
+    },
+    {
+      "from": "castle",
+      "to": "love-engine",
+      "strength": 63,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Emission"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-love",
+      "strength": 98,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-truth",
+      "strength": 96,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-joy",
+      "strength": 70,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-peace",
+      "strength": 74,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-wisdom",
+      "strength": 70,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-courage",
+      "strength": 89,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "castle",
+      "to": "citizen-death",
+      "strength": 99,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "castle",
+      "to": "rewardspro",
+      "strength": 90,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "castle",
+      "to": "whitehack",
+      "strength": 71,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-love",
+      "strength": 93,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-truth",
+      "strength": 65,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-joy",
+      "strength": 82,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Conjuration"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-peace",
+      "strength": 96,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-wisdom",
+      "strength": 96,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Transmutation"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-courage",
+      "strength": 76,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Enhancement"
+    },
+    {
+      "from": "love-engine",
+      "to": "citizen-death",
+      "strength": 77,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Transmutation"
+    },
+    {
+      "from": "love-engine",
+      "to": "rewardspro",
+      "strength": 94,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Conjuration"
+    },
+    {
+      "from": "love-engine",
+      "to": "whitehack",
+      "strength": 50,
+      "type": "mycorrhizal",
+      "nen_flow": "Emission \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-love",
+      "to": "citizen-truth",
+      "strength": 91,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-love",
+      "to": "citizen-joy",
+      "strength": 77,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-love",
+      "to": "citizen-peace",
+      "strength": 58,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-love",
+      "to": "citizen-wisdom",
+      "strength": 53,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-love",
+      "to": "citizen-courage",
+      "strength": 91,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-love",
+      "to": "citizen-death",
+      "strength": 90,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-love",
+      "to": "rewardspro",
+      "strength": 74,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-love",
+      "to": "whitehack",
+      "strength": 75,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "citizen-joy",
+      "strength": 57,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "citizen-peace",
+      "strength": 88,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "citizen-wisdom",
+      "strength": 57,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "citizen-courage",
+      "strength": 64,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "citizen-death",
+      "strength": 61,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "rewardspro",
+      "strength": 78,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-truth",
+      "to": "whitehack",
+      "strength": 53,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-joy",
+      "to": "citizen-peace",
+      "strength": 73,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-joy",
+      "to": "citizen-wisdom",
+      "strength": 62,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-joy",
+      "to": "citizen-courage",
+      "strength": 92,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-joy",
+      "to": "citizen-death",
+      "strength": 72,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-joy",
+      "to": "rewardspro",
+      "strength": 53,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-joy",
+      "to": "whitehack",
+      "strength": 59,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-peace",
+      "to": "citizen-wisdom",
+      "strength": 93,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-peace",
+      "to": "citizen-courage",
+      "strength": 50,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-peace",
+      "to": "citizen-death",
+      "strength": 83,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-peace",
+      "to": "rewardspro",
+      "strength": 100,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-peace",
+      "to": "whitehack",
+      "strength": 86,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-wisdom",
+      "to": "citizen-courage",
+      "strength": 75,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Enhancement"
+    },
+    {
+      "from": "citizen-wisdom",
+      "to": "citizen-death",
+      "strength": 85,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-wisdom",
+      "to": "rewardspro",
+      "strength": 58,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-wisdom",
+      "to": "whitehack",
+      "strength": 71,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-courage",
+      "to": "citizen-death",
+      "strength": 83,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-courage",
+      "to": "rewardspro",
+      "strength": 68,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-courage",
+      "to": "whitehack",
+      "strength": 95,
+      "type": "mycorrhizal",
+      "nen_flow": "Enhancement \u2192 Transmutation"
+    },
+    {
+      "from": "citizen-death",
+      "to": "rewardspro",
+      "strength": 79,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Conjuration"
+    },
+    {
+      "from": "citizen-death",
+      "to": "whitehack",
+      "strength": 63,
+      "type": "mycorrhizal",
+      "nen_flow": "Transmutation \u2192 Transmutation"
+    },
+    {
+      "from": "rewardspro",
+      "to": "whitehack",
+      "strength": 98,
+      "type": "mycorrhizal",
+      "nen_flow": "Conjuration \u2192 Transmutation"
+    }
+  ],
+  "updated": "2026-06-30T13:47:37.787575"
+}

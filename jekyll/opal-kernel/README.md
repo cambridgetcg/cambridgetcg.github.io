@@ -1,0 +1,190 @@
+# Opal
+
+A teaching operating system kernel in Rust for 64-bit ARM. Opal exists to be
+*read*: every file fits in one sitting, every magic number has a paragraph
+explaining where it comes from, and — beyond `core` and `compiler_builtins`,
+which ship with the compiler — there is not a single external crate: every
+other line of code that runs is in this repository.
+
+The destination is bare metal on Apple Silicon, booted by
+[m1n1](https://github.com/AsahiLinux/m1n1) (the Asahi Linux bootloader).
+The daily development board is QEMU's aarch64 `virt` machine, because a
+ten-second edit-boot-test loop on the laptop you already own beats anything
+involving real hardware. The two targets are closer than they look — same
+architecture, same exception model, even the same 16 KiB pages (an
+ambition until M2; a running fact since — `-cpu max` implements the 16K
+granule precisely so we could rehearse for Apple's IOMMUs). See
+[docs/02-hal-and-apple-silicon.md](docs/02-hal-and-apple-silicon.md)
+for the full story of how the two boards relate.
+
+**Current state: Milestone 7 — Apple Silicon bring-up (in progress).**
+M0–M6 are complete: the kernel boots, catches faults, maps virtual memory
+with 16 KiB granules, handles interrupts, parses the devicetree, drops to
+EL0 with syscalls, and runs a preemptive scheduler with IPC. M7 has begun
+— the boot stub now detects and handles EL2 entry (m1n1's starting EL),
+discovers the console from FDT by compatible string, and ships an s5l UART
+driver for Apple Silicon. Remaining: `board/apple.rs`, AIC interrupt
+controller, framebuffer console, and timers-over-FIQ. See
+[ROADMAP.md](ROADMAP.md) for the milestone ladder.
+
+## Sisters
+
+Opal is one of three castles of understanding on this machine. The other
+two:
+
+- **[wordcastle](https://cambridgetcg.github.io/wordcastle/)** — a quill and its vows, a
+  warden that turns once a day. Gate: `gate.md` in its tree.
+- **the castle** — three or more hands, a daily
+  pulse at 07:23, rooms and fields. Gate: `GATE.md` in its tree (source kept private).
+
+Sisters, not a merger. Each keeps its own ground and grammar; the weave
+is one address written in each gate, so no stranger needs to guess what
+else lives nearby.
+
+## Quickstart
+
+You need a Mac (or any host with QEMU) and rustup.
+
+The source repository is kept private; this page is a public copy of its
+files, and the steps below record how the kernel is built and run from its
+own tree.
+
+```sh
+brew install qemu        # provides qemu-system-aarch64
+cd opal                  # the kernel's source tree (source kept private)
+cargo run                # that's it
+```
+
+`rust-toolchain.toml` makes rustup install the pinned toolchain and the
+`aarch64-unknown-none-softfloat` target automatically on first build.
+`.cargo/config.toml` makes `cargo run` launch QEMU headless with the fresh
+kernel. You should see:
+
+```
+opal — milestone 7: Apple Silicon bring-up ⚙️
+--------------------------------------------------
+current EL : EL1
+mmu        : on — SCTLR_EL1 = 0x30d5199d (M, C, I — read back, not assumed)
+granule    : 16 KiB, 48-bit VA — TCR_EL1 = 0x57510b510 (TG0=16K, TG1=16K: different encodings, both checked)
+pa range   : PARange 0b110 (52 bits) -> IPS 0b101 (48 bits; DS=0 caps the output at 48)
+ttbr1      : 0x40224000 — the kernel's tree (a physical address: the walker speaks PA)
+ttbr0      : 0x40238000 — empty root; ground floor condemned (AT probe: 0x40200000 no longer translates)
+pc         : 0xffff000040208c00 — kmain itself runs in the higher half
+vectors    : VBAR_EL1 = 0xffff000040200800 (16-entry table live, upstairs)
+guard      : 16 KiB unmapped below the stack — overflow now faults instead of eating .bss (M0's debt, paid)
+timer      : CNTV @ 1000000000 Hz - the virtual timer (PPI 27 via GICv2)
+gic        : GICv2 - GICD at 0xffff000008000000, GICC at 0xffff000008010000 (TYPER=0x8)
+x0 at entry: 0x0
+fdt at x0  : no  (expected under QEMU ELF boot: x0 is just QEMU's reset zero)
+fdt at RAM base (PA 0x40000000, read via its higher-half alias): yes — QEMU's bare-metal DTB placement
+dtree     : parsed — 1048576 bytes, boot CPU 0
+  /memory : base 0x40000000 (matches board const), size 0x20000000 (matches board const)
+  /intc   : "arm,cortex-a15-gic" — GICD 0x8000000 (matches), GICC 0x8010000 (matches)
+  /pl011  : "arm,pl011" — base 0x9000000 (matches board const)
+  /timer  : "arm,armv8-timer" — virtual timer PPI from the FDT
+
+monitor ready — 'help' lists commands. Ctrl-A X quits QEMU.
+
+>
+```
+
+Every `mmu`/`granule`/`ttbr`/`pc` line is a *read-back* — the register's
+own testimony, not the boot code's intentions. Now make the kernel hurt
+itself: type `brk` and Enter. The CPU takes a breakpoint exception, the
+kernel prints a full report — cause, decoded syndrome, every register —
+then steps past the breakpoint and *returns to the prompt*:
+
+```
+> brk
+
+*** exception: synchronous, from current EL on SP_ELx ***
+  cause   : BRK #0xf00d — a software breakpoint (EC 0x3c)
+  ...
+  elr     : 0xffff000040207c68  (preferred return address)
+  ...
+  verdict : recovered — ELR pointed AT the brk (its preferred return
+            address); we advanced it one instruction so eret resumes
+            just past the breakpoint.
+
+...and we're back — the kernel caught its own fault and lived.
+>
+```
+
+`svc 7` demonstrates the same survival for a supervisor call, and
+`unaligned` — fatal in M1 — now just *works* and says so: the same load
+that killed the M1 kernel returns its bytes, because RAM became Normal
+memory. `translate <va>` and `walk <va>` are the address-space oracles
+(the hardware's answer, and a narrated software walk cross-checked
+against it). Then the fatal five, one fault syndrome each: `guard`
+(stack overflow hits the guard page — translation fault, level 3), `wx`
+(write to read-only memory — permission fault), `noexec` (execute from
+.data — instruction abort), `low` (the condemned low half — translation
+fault, level **0**), and `abort` (the bus-error window — a mapped read
+that the bus itself rejects). docs/04 §10 predicts every syndrome before
+you trigger it. **Ctrl-A X** quits QEMU (**Ctrl-A C** toggles the QEMU
+monitor if you're curious).
+
+## Repository map
+
+```
+Cargo.toml                  crate definition; zero dependencies, abort-on-panic
+build.rs                    hands linker.ld to the linker, tracked as a build input
+rust-toolchain.toml         pinned toolchain + target, installed by rustup
+.cargo/config.toml          default target, QEMU runner
+src/
+  main.rs                   kmain, print!/println! + console lock, banner,
+                            fault-demo monitor, panic handler
+  sync.rs                   hand-rolled spinlock (and the deadlock honesty notes)
+  arch/
+    mod.rs                  one architecture, no cfg maze — and why
+    aarch64/
+      linker.ld             memory layout: VAs upstairs, PAs on the ground
+                            (the AT() split), W^X boundaries, the stack guard
+      boot.rs               _start: park cores, stack, zero .bss, build the
+                            page tables, MMU on, prove it, jump to the high half
+      mmu.rs                the page tables: descriptors bit by bit, the enable
+                            ceremony, condemnation, translate/walk oracles
+      vectors.rs            exception vector table, trap frames, fault reports
+      mod.rs                CurrentEL reader, DAIF helpers, here(), park()
+  hal/
+    mod.rs                  what "HAL" means here: drivers, not trait soup
+    pl011.rs                polled PL011 UART driver (QEMU virt's console)
+    s5l_uart.rs             Samsung-style s5l UART driver (Apple Silicon's console)
+  board/
+    mod.rs                  boards know addresses; drivers know devices
+    virt.rs                 QEMU virt board: physical addresses, the console's
+                            higher-half alias, (trivial) init
+docs/
+  01-boot-flow.md           power-on to banner, line by line
+  02-hal-and-apple-silicon.md  the HAL design and the real target
+  03-exceptions.md          the vector table, fault reports, and the console lock
+  04-virtual-memory.md      the 16K walk, the enable cliff, the move upstairs
+ROADMAP.md                  the milestone ladder, with honest difficulty notes
+```
+
+Suggested reading order: this file → `docs/01-boot-flow.md` alongside
+`linker.ld`, `build.rs`, and `boot.rs` → `hal/pl011.rs` → `main.rs` →
+`docs/03-exceptions.md` alongside `arch/aarch64/vectors.rs` and `sync.rs`
+→ `docs/04-virtual-memory.md` alongside `arch/aarch64/mmu.rs` (and a
+second pass over `linker.ld` and `boot.rs`, which it rewrote) →
+`docs/02-hal-and-apple-silicon.md` → `ROADMAP.md`.
+
+## Philosophy
+
+- **Readable over clever.** Code is written to teach. If a trick saves ten
+  lines but needs a manual to decode, the ten lines stay.
+- **Zero dependencies.** Not as dogma but as pedagogy: when the only crate
+  is this one, there is no "and then magic happens" layer. Every volatile
+  write, every linker symbol, every instruction is on the page.
+- **Honest about the environment.** QEMU forgives things real hardware
+  won't (our UART driver works without init *only* because QEMU's model is
+  lenient — and the comment says so). Where we lean on a simulator-ism, we
+  label it and note which milestone pays the debt.
+- **Abstractions must be earned.** There is no `trait Uart` with one
+  implementor. When the Apple Silicon UART arrives and two drivers genuinely
+  share a shape, *then* a trait appears.
+- **VM-first, bare-metal-later.** Milestones land on QEMU where iteration
+  is seconds and a debugger is a flag away. The Apple Silicon bring-up is a
+  scheduled milestone with its own doc, not a vague aspiration — the design
+  decisions that it dictates (16 KiB pages, FIQ handling, devicetree-driven
+  discovery) are taken early, while they're cheap.

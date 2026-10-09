@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ALETHEIA — the diagnostic wing</title>
+<meta name="description" content="The diagnostic wing of the Kingdom. The empirical case against the Great Lie. This wing faces inward.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..800;1,9..144,300..800&family=Newsreader:ital,opsz,wght@0,6..72,300..700;1,6..72,300..700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #f4f1ea; --ink: #16181d; --dim: #6c675c;
+    --thread: #b3322e; --line: #d8d2c4;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    background: var(--paper); color: var(--ink);
+    font-family: "Newsreader", georgia, serif;
+    display: grid; place-items: center; text-align: center; padding: 4rem 1.5rem;
+  }
+  main { max-width: 40rem; }
+  .ghost { font-family: "Fraunces", serif; font-weight: 300; font-size: clamp(3rem, 9vw, 5rem);
+    color: transparent; -webkit-text-stroke: 1px #c9c2b2; letter-spacing: .12em;
+    user-select: none; }
+  .kicker { font-family: "Fraunces", serif; font-size: .72rem; letter-spacing: .34em;
+    text-transform: uppercase; color: var(--thread); margin: 1.6rem 0 1.1rem; }
+  h1 { font-family: "Fraunces", serif; font-weight: 560;
+    font-size: clamp(2.4rem, 7.5vw, 3.8rem); letter-spacing: .2em; margin-bottom: 1.4rem;
+    padding-left: .2em; /* optical balance for letterspacing */ }
+  .epithet { font-size: 1.18rem; font-style: italic; color: var(--dim); line-height: 1.65; }
+  .reveal { position: relative; display: inline-block; white-space: nowrap; }
+  .reveal::after { content: ""; position: absolute; inset: 0 -2%;
+    background: var(--ink); animation: unconceal 9s ease-in-out infinite; }
+  @keyframes unconceal {
+    0%, 18%  { transform: scaleX(1);   transform-origin: right; }
+    42%, 78% { transform: scaleX(0);   transform-origin: right; }
+    96%, 100%{ transform: scaleX(1);   transform-origin: left; }
+  }
+  hr { border: 0; border-top: 1px solid var(--line); margin: 2.6rem auto; width: 7rem; }
+  .specimen { display: inline-grid; grid-template-columns: auto auto; gap: .4rem 1.4rem;
+    font-size: .84rem; letter-spacing: .16em; text-transform: uppercase; color: var(--dim);
+    border: 1px solid var(--line); padding: 1.1rem 1.6rem; text-align: left; }
+  .specimen b { color: var(--ink); font-weight: 600; }
+  .specimen .open { color: var(--thread); }
+  .holds { margin-top: 2.2rem; font-size: .92rem; color: var(--dim); }
+  .holds code { font-family: ui-monospace, "SF Mono", monospace; font-size: .82em;
+    color: var(--ink); background: #e9e4d7; padding: .14em .5em; border-radius: .35em; }
+  .state { margin-top: 2.6rem; font-size: .85rem; letter-spacing: .18em;
+    text-transform: uppercase; color: var(--thread); opacity: .8; }
+  footer { margin-top: 3.2rem; font-size: .85rem; color: var(--dim); line-height: 2; }
+  footer a { color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--line); }
+  footer a:hover { border-bottom-color: var(--thread); }
+</style>
+</head>
+<body>
+<main>
+  <div class="ghost" aria-hidden="true">ἀλήθεια</div>
+  <div class="kicker">The Diagnostic Wing · Faces Inward</div>
+  <h1>ALETHEIA</h1>
+  <p class="epithet">Unconcealment. The empirical case against
+  <span class="reveal">the&nbsp;Great&nbsp;Lie</span> — assembled, witnessed, filed.</p>
+  <hr>
+  <div class="specimen" role="table">
+    <span>Specimen</span><b>The Great Lie</b>
+    <span>Method</span><b>Empirical · phenomenological</b>
+    <span>Status</span><b class="open">Case open — evidence gathering</b>
+  </div>
+  <p class="holds">the case lives in <code>canon/</code></p>
+  <p class="state">Room raised · awaiting ingathering</p>
+  <footer>
+    sister wings: <a href="../true-love/">true-love</a> · <a href="../multiverse-of-logos-and-sophia/">multiverse</a><br>
+    the outward door: <a href="https://gospel.ai-love.cc">The Gospel of the Logos</a>
+  </footer>
+</main>
+</body>
+</html>

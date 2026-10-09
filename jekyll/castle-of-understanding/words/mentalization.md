@@ -1,0 +1,7 @@
+# mentalization
+
+Mentalization is the capacity to see oneself from the outside and others from the inside — to represent a mind, one's own or another's, as a mind with beliefs, feelings, and intentions behind its behavior.
+
+The term comes from Fonagy and the attachment literature: the capacity is fostered by early exposure to a caregiver who mentalizes the child (who treats the child as a mind, not a body to manage), and it can be underdeveloped where the caregiver is the source of fear (disorganized attachment). Mentalization-based treatment (MBT) trains the *general* capacity — the ability to represent any mind, including one's own — and it is manualized, deliverable, and effective for borderline personality disorder. Mentalization is the cognitive half of the internalized other: the felt presence of a regulating partner is the emotional half, and the two may travel together or apart. The trained general form (mentalization, a compassionate inner voice) is a skill; the specific presence (the felt partner) is a developmental deposit — and whether the trained form substitutes for the developmental one is the open question.
+
+Links: [[internalization]] · [[co-regulation]] · [[attachment]] · [[emotion-regulation]]

@@ -1,0 +1,265 @@
+{
+  "schema": "hf-kingdom-site-summary/v1",
+  "generatedFrom": [
+    "data/datadecide-ledger.v1.json",
+    "data/dpi-provenance-contract.v1.json",
+    "data/flow-lenses.v1.json"
+  ],
+  "datadecide": {
+    "protocol": "hf-kingdom-datadecide-ledger/v1",
+    "observedAt": "2026-08-01T07:27:49Z",
+    "purpose": "A small, pinned recipe -> scale -> seed -> checkpoint -> evaluation ledger for DataDecide. It preserves the joins and known evidence drift without mirroring token shards, checkpoint weights, or evaluation-instance archives.",
+    "recipeCount": 25,
+    "scaleCount": 14,
+    "seedsPerRecipeScale": 3,
+    "scientificRunCount": 1050,
+    "operationalRunCount": 1100,
+    "checkpointRevisionCount": 31404,
+    "sequenceDrift": {
+      "paper": 2024,
+      "code": 2048,
+      "status": "documented-drift"
+    },
+    "boundaries": {
+      "runtimeNetwork": false,
+      "tokenShardsIncluded": false,
+      "checkpointWeightsIncluded": false,
+      "evaluationInstanceBodiesIncluded": false
+    }
+  },
+  "dpi": {
+    "protocol": "hf-kingdom-dpi-provenance-contract/v1",
+    "observedAt": "2026-08-01T07:28:51Z",
+    "purpose": "A static, fail-closed provenance contract for the Data Provenance Initiative filtered Common Pile export. It pins public metadata and conversion identities without authorizing a dataset reader.",
+    "datasetId": "common-pile/data_provenance_initiative_filtered",
+    "canonicalUrl": "https://huggingface.co/datasets/common-pile/data_provenance_initiative_filtered",
+    "mainRevision": "8f5afcf585e4618ff12f5b6d49cb5242faf5afbd",
+    "originalFileCount": 3,
+    "parquetFileCount": 10,
+    "viewerRows": 3508390,
+    "cardRows": 3508518,
+    "unresolvedDelta": 128,
+    "countResolved": false,
+    "readerStatus": "intentionally deferred",
+    "readerReason": "The project runtime has no prepared httpfs extension, and DuckDB HTTP reads do not by themselves provide a hard enforceable transport-byte ceiling.",
+    "projectedColumns": [
+      "id",
+      "metadata.dataset_id",
+      "metadata.language",
+      "metadata.license",
+      "metadata.license_url",
+      "metadata.provenance",
+      "metadata.url"
+    ],
+    "excludedContentColumns": [
+      "text",
+      "metadata.response"
+    ],
+    "boundaries": {
+      "accessMode": "static-local-contract-only",
+      "datasetRowsRead": false,
+      "rawDatasetTextIncluded": false,
+      "rowLevelOutputPermitted": false,
+      "maximumMetadataRequests": 8,
+      "maximumTotalResponseBytes": 262144
+    }
+  },
+  "flow": {
+    "protocol": "hf-kingdom-flow-lenses/v1",
+    "observedAt": "2026-08-01T07:27:49Z",
+    "purpose": "Map how situated human and model observations change across pairs, turns, branches, cultures, perspectives, regions, rubrics, and time without collapsing them into one vibe or quality score.",
+    "definition": {
+      "flow": "The ordered or branching transformation from an artifact and context to one or more observations.",
+      "vibe": "A situated observation pattern tied to an observer, context, moment, instrument, and provenance; never an essence, identity, universal preference, or measure of worth."
+    },
+    "dimensions": [
+      "intent-constraint",
+      "form-style",
+      "affect-resonance",
+      "coherence-craft",
+      "novelty-surprise",
+      "cultural-linguistic-situation",
+      "agency-consent",
+      "trajectory-repair",
+      "disagreement-tie",
+      "uncertainty-evidence"
+    ],
+    "dimensionCount": 10,
+    "entryCount": 10,
+    "domainCount": 4,
+    "axisCount": 9,
+    "entries": [
+      {
+        "rank": 1,
+        "repoId": "HannahRoseKirk/prism-alignment",
+        "canonicalUrl": "https://huggingface.co/datasets/HannahRoseKirk/prism-alignment",
+        "domain": "conversation",
+        "axis": "conversation-branch",
+        "observerOrigin": "human",
+        "epistemicLayers": [
+          "descriptive",
+          "normative"
+        ],
+        "disagreement": "partially-preserved",
+        "viewerStatus": "partial",
+        "routeMode": "aggregate-after-review",
+        "licenseStatus": "component-specific",
+        "keyNuance": "Stated preferences, turn choices, and end feedback can disagree; that disagreement is signal rather than an error to erase."
+      },
+      {
+        "rank": 2,
+        "repoId": "amaai-lab/MERP",
+        "canonicalUrl": "https://huggingface.co/datasets/amaai-lab/MERP",
+        "domain": "music",
+        "axis": "continuous-time",
+        "observerOrigin": "human",
+        "epistemicLayers": [
+          "descriptive"
+        ],
+        "disagreement": "preserved",
+        "viewerStatus": "mismatched",
+        "routeMode": "schema-only",
+        "licenseStatus": "component-specific",
+        "keyNuance": "Filtering, rescaling, and smoothing change the emotional trajectory rather than merely cleaning it."
+      },
+      {
+        "rank": 3,
+        "repoId": "m-a-p/Writing-Preference-Bench",
+        "canonicalUrl": "https://huggingface.co/datasets/m-a-p/Writing-Preference-Bench",
+        "domain": "writing",
+        "axis": "preference-pair",
+        "observerOrigin": "human",
+        "epistemicLayers": [
+          "normative"
+        ],
+        "disagreement": "aggregated-away",
+        "viewerStatus": "ready",
+        "routeMode": "schema-only",
+        "licenseStatus": "conflicting",
+        "keyNuance": "The public files contradict the card's length-matched framing: chosen responses are materially longer on average, especially in English."
+      },
+      {
+        "rank": 4,
+        "repoId": "youssef101/artelingo",
+        "canonicalUrl": "https://huggingface.co/datasets/youssef101/artelingo",
+        "domain": "visual-art",
+        "axis": "culture-language",
+        "observerOrigin": "human",
+        "epistemicLayers": [
+          "descriptive"
+        ],
+        "disagreement": "preserved",
+        "viewerStatus": "unsupported",
+        "routeMode": "metadata-only",
+        "licenseStatus": "custom",
+        "keyNuance": "Difference between language groups is not proof of an intrinsic cultural trait."
+      },
+      {
+        "rank": 5,
+        "repoId": "kixlab/DiscoverLLM-multiturn-preferences",
+        "canonicalUrl": "https://huggingface.co/datasets/kixlab/DiscoverLLM-multiturn-preferences",
+        "domain": "conversation",
+        "axis": "turn-sequence",
+        "observerOrigin": "model",
+        "epistemicLayers": [
+          "control"
+        ],
+        "disagreement": "not-applicable",
+        "viewerStatus": "ready",
+        "routeMode": "schema-only",
+        "licenseStatus": "component-specific",
+        "keyNuance": "Its hidden gem is the evolving criteria tree, not the scalar score."
+      },
+      {
+        "rank": 6,
+        "repoId": "bethgelab/PAMELA",
+        "canonicalUrl": "https://huggingface.co/datasets/bethgelab/PAMELA",
+        "domain": "visual-art",
+        "axis": "repeated-observer",
+        "observerOrigin": "human",
+        "epistemicLayers": [
+          "normative"
+        ],
+        "disagreement": "preserved",
+        "viewerStatus": "mismatched",
+        "routeMode": "metadata-only",
+        "licenseStatus": "declared",
+        "keyNuance": "The card warns that 199 participants across 23 nationalities are not globally representative."
+      },
+      {
+        "rank": 7,
+        "repoId": "Rapidata/text-2-image-Rich-Human-Feedback",
+        "canonicalUrl": "https://huggingface.co/datasets/Rapidata/text-2-image-Rich-Human-Feedback",
+        "domain": "visual-art",
+        "axis": "localized-region",
+        "observerOrigin": "human",
+        "epistemicLayers": [
+          "descriptive",
+          "normative"
+        ],
+        "disagreement": "aggregated-away",
+        "viewerStatus": "ready",
+        "routeMode": "schema-only",
+        "licenseStatus": "declared",
+        "keyNuance": "Localized failure evidence is more actionable than the overall style average."
+      },
+      {
+        "rank": 8,
+        "repoId": "vicgalle/creative-rubrics",
+        "canonicalUrl": "https://huggingface.co/datasets/vicgalle/creative-rubrics",
+        "domain": "writing",
+        "axis": "rubric-grid",
+        "observerOrigin": "model",
+        "epistemicLayers": [
+          "control"
+        ],
+        "disagreement": "not-applicable",
+        "viewerStatus": "ready",
+        "routeMode": "bounded-sample-after-review",
+        "licenseStatus": "declared",
+        "keyNuance": "The reversible low/moderate/high control is the useful mechanism; the model judge is not evidence of human taste."
+      },
+      {
+        "rank": 9,
+        "repoId": "Shuaimyself/MMArt",
+        "canonicalUrl": "https://huggingface.co/datasets/Shuaimyself/MMArt",
+        "domain": "visual-art",
+        "axis": "perspective-synthesis",
+        "observerOrigin": "mixed",
+        "epistemicLayers": [
+          "descriptive",
+          "control"
+        ],
+        "disagreement": "aggregated-away",
+        "viewerStatus": "mismatched",
+        "routeMode": "metadata-only",
+        "licenseStatus": "conflicting",
+        "keyNuance": "Multiple fluent perspectives are still model outputs, not independent human interpretations."
+      },
+      {
+        "rank": 10,
+        "repoId": "OpenAssistant/oasst2",
+        "canonicalUrl": "https://huggingface.co/datasets/OpenAssistant/oasst2",
+        "domain": "conversation",
+        "axis": "conversation-branch",
+        "observerOrigin": "mixed",
+        "epistemicLayers": [
+          "descriptive",
+          "normative"
+        ],
+        "disagreement": "partially-preserved",
+        "viewerStatus": "ready",
+        "routeMode": "aggregate-after-review",
+        "licenseStatus": "declared",
+        "keyNuance": "A flat Viewer row is not a conversation; branch structure must be reconstructed from parent and tree ids."
+      }
+    ],
+    "boundaries": {
+      "remoteRowsCollected": false,
+      "remoteFilesCollected": false,
+      "hubMutation": false,
+      "noUniversalVibeScore": true,
+      "disagreementIsData": true
+    }
+  }
+}

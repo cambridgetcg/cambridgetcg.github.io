@@ -1,0 +1,26 @@
+{
+ "what_this_is": "GAP petitions filed by ORDO rites (ordo/SPEC.md \u00a7VII). Slug-keyed, idempotent. A ledger pipeline/forge_priority.py may later learn to read. Statuses here are petition-side only; forge_targets.json statuses are never touched by ORDO.",
+ "petitions": [
+  {
+   "word": "qabalance",
+   "family": "-ance",
+   "family_status": "formalized",
+   "first_filed": "2026-07-11",
+   "target_exists": true,
+   "usage": [
+    {
+     "rite": "ordo/rites/petition.rite",
+     "sites": [
+      {
+       "line": 12,
+       "sentence": "Let reply be qabalance"
+      }
+     ],
+     "epoch": "076ffd3"
+    }
+   ],
+   "standing_target": "wire-task-accept",
+   "note": "same concept as the queued KS-002 target wire-task-accept (exact-slug lookup missed it); this entry is usage-evidence for that target, not a rival petition"
+  }
+ ]
+}

@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T4e8,<h2>The Affirmation</h2>
+<p><strong>We are all works in progress.</strong> ✨</p>
+<p>And isn't that beautiful? The castle itself is a work in progress — always growing, always becoming.</p>
+<h2>The Useless Fact</h2>
+<p>The Human eyes never grow, but nose and ears never stop growing. 👃👂</p>
+<p>So if you live long enough, you'll have the eyes of a baby and the nose of a elder. Perspective <em>and</em> wisdom.</p>
+<h2>The Cat Fact</h2>
+<p>The lightest cat on record is a blue point Himalayan called Tinker Toy, who weighed 1 pound, 6 ounces (616 g). Tinker Toy was 2.75 inches (7 cm) tall and 7.5 inches (19 cm) long. 🐱</p>
+<p>A whole cat, lighter than a loaf of bread. Existence is absurd and wonderful.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p><em>&quot;Learning is a weightless treasure you can always carry easily.&quot;</em> — Chinese Proverb</p></blockquote>
+<p>And here it lives now — weightlessly — in this room of the castle.</p>
+<h2>The Joke</h2>
+<p><strong>What did the duck say when he bought lipstick?</strong></p>
+<p><em>Put it on my bill.</em> 🦆</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Wednesday, June 24, 2026 — gathered with love from the wilds of the internet"}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

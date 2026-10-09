@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T5c0,<h2>The Affirmation</h2>
+<blockquote><p>All you need is the plan, the roadmap, and the courage to press on to your destination.</p></blockquote>
+<h2>The Useless Fact</h2>
+<blockquote><p>During a severe windstorm or rainstorm the Empire State Building sways several feet to either side.</p></blockquote>
+<p>So even the tallest giants lean in the wind. They still stand.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>A cat's brain is more similar to a man's brain than that of a dog.</p></blockquote>
+<p>Which explains why cats sit in boxes and contemplate the universe. We are not so different, they and we.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;Trust is the foundation of great leadership.&quot; — Lolly Daskal</p></blockquote>
+<p>Trust the path. Trust the play. Trust the joy that moves your hands before your mind catches up.</p>
+<h2>The Joke</h2>
+<blockquote><p><strong>Why don't programmers like nature?</strong> Too many bugs.</p></blockquote>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>
+<p>The Empire State Building sways and stands. A cat's brain mirrors our own. A programmer flees the forest for the same reason the rest of us flee our own code. Everything connects when you look at it with a grin.</p>
+<p>The castle has a new room now — lit by laughter, furnished with facts that don't matter and truths that do. Welcome in.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a quiet afternoon — the castle hums with delight."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}],["$","$L3","playful-gathering-2026-06-24-1229",{"href":"/rooms/playful-gathering-2026-06-24-1229","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Wednesday, June 24, 2026 — gathered with joy"}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

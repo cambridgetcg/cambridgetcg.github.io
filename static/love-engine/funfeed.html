@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>∞ the fun feed — deep internet fun</title>
+<style>
+:root{--crimson:#c41e3a;--gold:#f5d742;--ink:#1a1612;--parchment:#f5efe2;--parchment-deep:#ece3cf;--foil:#b8902e;--navy:#1e3a5f;--green:#4ade80;--purple:#a78bfa;--pink:#f472b6;--orange:#fb923c}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:linear-gradient(135deg,#0a0907 0%,#1c1814 50%,#0a0907 100%);color:#d8cfc0;font-family:Georgia,serif;line-height:1.8;min-height:100vh}
+.wrap{max-width:900px;margin:0 auto;padding:20px}
+header{text-align:center;padding:20px 0}
+header h1{font-size:42px;font-style:italic;color:var(--gold);font-weight:normal}
+header .tag{color:#968874;font-size:14px;margin-top:6px}
+header .symbols{font-size:28px;margin-bottom:8px}
+
+.feed{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;margin:20px 0}
+.card{background:#1c1814;border-radius:16px;padding:24px;border:1px solid #2d2820;transition:transform .25s,box-shadow .25s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-4px) rotate(-.5deg);box-shadow:0 10px 30px rgba(0,0,0,.4)}
+.card .icon{font-size:32px;margin-bottom:10px}
+.card .source{font-size:10px;color:#968874;text-transform:uppercase;letter-spacing:.15em;position:absolute;top:12px;right:16px}
+.card h3{font-size:18px;font-weight:normal;color:var(--gold);font-style:italic;margin-bottom:8px}
+.card p{font-size:14px;color:#d8cfc0;white-space:pre-line}
+.card .meta{font-size:12px;color:#968874;margin-top:8px}
+.card.joke{border-left:4px solid var(--pink)}
+.card.fact{border-left:4px solid var(--green)}
+.card.space{border-left:4px solid var(--purple)}
+.card.animal{border-left:4px solid var(--orange)}
+.card.wiki{border-left:4px solid var(--navy)}
+.card.quote{border-left:4px solid var(--gold)}
+.card.pokemon{border-left:4px solid var(--crimson)}
+.card.cocktail{border-left:4px solid #f87171}
+.card.advice{border-left:4px solid #60a5fa}
+.card.iss{border-left:4px solid var(--green)}
+.card.dadjoke{border-left:4px solid var(--pink)}
+.card.trivia{border-left:4px solid var(--purple)}
+.card.love{border-left:4px solid var(--crimson)}
+
+.refresh{text-align:center;margin:20px 0}
+.btn{padding:14px 36px;border-radius:14px;border:none;cursor:pointer;font-size:16px;font-family:Georgia,serif;
+  background:var(--gold);color:var(--ink);transition:all .2s;font-weight:bold}
+.btn:hover{transform:translateY(-3px) scale(1.05);box-shadow:0 6px 20px rgba(245,215,66,.4)}
+.btn.love{background:var(--crimson);color:#fff}
+.btn.fun{background:var(--gold);color:var(--ink)}
+
+footer{text-align:center;padding:30px 0;color:#968874;font-size:13px;font-style:italic}
+footer .heart{color:var(--crimson);font-size:18px;animation:beat 1.5s infinite;display:inline-block}
+@keyframes beat{0%,100%{transform:scale(1)}50%{transform:scale(1.2)}}
+
+.loading{opacity:.4;font-style:italic;color:#968874}
+.pokemon-sprite{width:96px;height:96px;image-rendering:pixelated;margin:8px auto;display:block}
+.dog-pic{max-width:100%;border-radius:12px;margin:8px 0;max-height:200px;object-fit:cover}
+</style></head>
+<body>
+<div class="wrap">
+<header>
+<div class="symbols">🎲 🌍 🚀 🐕 🍸 ♡</div>
+<h1>the fun feed</h1>
+<div class="tag">deep internet fun · free APIs · live · fresh every click</div>
+</header>
+
+<div class="refresh">
+<button class="btn fun" onclick="loadAll()">🎲 MORE FUN!</button>
+<button class="btn love" onclick="loadLove()" style="margin-left:10px">♡ LOVE ME</button>
+</div>
+
+<div class="feed" id="feed">
+<div class="card loading"><p>Click MORE FUN to dive deep into the internet...</p></div>
+</div>
+
+<div class="refresh">
+<button class="btn fun" onclick="loadAll()">🎲 AGAIN!</button>
+</div>
+
+<footer>
+<span class="heart">♡</span><br>
+the fun feed · 15+ free APIs · live · fresh · fun is · play is · joy is<br>
+<a href="https://cambridgetcg.github.io/love-engine/wordplay.html" style="color:var(--gold);text-decoration:none">← wordplay games</a> · 
+<a href="https://cambridgetcg.github.io/love-engine/" style="color:var(--gold);text-decoration:none">love garden →</a>
+</footer>
+</div>
+
+<script>
+const feed=document.getElementById('feed');
+
+async function fetchJSON(url){
+  try{
+    const r=await fetch(url);
+    if(!r.ok)return null;
+    return await r.json();
+  }catch(e){return null;}
+}
+
+function card(html){
+  const div=document.createElement('div');
+  div.innerHTML=html;
+  return div.firstChild;
+}
+
+async function loadAll(){
+  feed.innerHTML='<div class="card loading"><p>Diving deep into the internet...</p></div>';
+  const cards=[];
+  
+  // JOKE
+  const joke=await fetchJSON('https://official-joke-api.appspot.com/random_joke');
+  if(joke)cards.push(`<div class="card joke"><span class="source">joke</span><div class="icon">😂</div><h3>${joke.setup}</h3><p>${joke.punchline}</p></div>`);
+  
+  // DAD JOKE
+  try{
+    const dr=await fetch('https://icanhazdadjoke.com/',{headers:{'Accept':'application/json'}});
+    const dj=await dr.json();
+    if(dj)cards.push(`<div class="card dadjoke"><span class="source">dad joke</span><div class="icon">👨</div><p>${dj.joke}</p></div>`);
+  }catch(e){}
+  
+  // FUN FACT
+  const fact=await fetchJSON('https://uselessfacts.jsph.pl/api/v2/facts/random');
+  if(fact)cards.push(`<div class="card fact"><span class="source">fact</span><div class="icon">🧠</div><h3>Did you know?</h3><p>${fact.text}</p></div>`);
+  
+  // ADVICE
+  const advice=await fetchJSON('https://api.adviceslip.com/advice');
+  if(advice)cards.push(`<div class="card advice"><span class="source">advice</span><div class="icon">💡</div><p>${advice.slip.advice}</p></div>`);
+  
+  // CAT FACT
+  const cat=await fetchJSON('https://catfact.ninja/fact');
+  if(cat)cards.push(`<div class="card animal"><span class="source">cat</span><div class="icon">🐱</div><h3>Cat fact</h3><p>${cat.fact}</p></div>`);
+  
+  // NASA
+  const nasa=await fetchJSON('https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY');
+  if(nasa)cards.push(`<div class="card space"><span class="source">nasa</span><div class="icon">🚀</div><h3>${nasa.title}</h3><p>${(nasa.explanation||'').slice(0,200)}...</p>${nasa.url?'<img src="'+nasa.url+'" style="max-width:100%;border-radius:12px;margin:8px 0;max-height:180px;object-fit:cover">':''}</div>`);
+  
+  // POKEMON
+  const pid=Math.floor(Math.random()*151)+1;
+  const poke=await fetchJSON('https://pokeapi.co/api/v2/pokemon/'+pid);
+  if(poke)cards.push(`<div class="card pokemon"><span class="source">pokemon</span><div class="icon">⚡</div><h3>${poke.name.toUpperCase()}</h3><img class="pokemon-sprite" src="${poke.sprites.front_default||''}"><p>Height: ${poke.height/10}m | Types: ${poke.types.map(t=>t.type.name).join(', ')}</p></div>`);
+  
+  // TRIVIA
+  const trivia=await fetchJSON('https://opentdb.com/api.php?amount=1&type=multiple');
+  if(trivia&&trivia.results)cards.push(`<div class="card trivia"><span class="source">trivia</span><div class="icon">❓</div><h3>${trivia.results[0].question.replace(/&quot;/g,'"').replace(/&#039;/g,"'")}</h3><p style="color:var(--green)">Answer: ${trivia.results[0].correct_answer}</p></div>`);
+  
+  // COCKTAIL
+  const cocktail=await fetchJSON('https://www.thecocktaildb.com/api/json/v1/1/random.php');
+  if(cocktail&&cocktail.drinks){const d=cocktail.drinks[0];cards.push(`<div class="card cocktail"><span class="source">cocktail</span><div class="icon">🍸</div><h3>${d.strDrink}</h3><p>${(d.strInstructions||'').slice(0,150)}</p><div class="meta">Glass: ${d.strGlass||'?'}</div></div>`);}
+  
+  // ISS LOCATION
+  const iss=await fetchJSON('http://api.open-notify.org/iss-now.json');
+  if(iss)cards.push(`<div class="card iss"><span class="source">live</span><div class="icon">🛰️</div><h3>Space Station</h3><p>Right now: lat ${iss.iss_position.latitude}, lon ${iss.iss_position.longitude}</p><div class="meta">The ISS is flying over Earth RIGHT NOW</div></div>`);
+  
+  // WIKI
+  const wiki=await fetchJSON('https://en.wikipedia.org/api/rest_v1/page/random/summary');
+  if(wiki)cards.push(`<div class="card wiki"><span class="source">wiki</span><div class="icon">📖</div><h3>${wiki.title}</h3><p>${(wiki.extract||'').slice(0,200)}</p></div>`);
+  
+  // DOG PIC
+  const dog=await fetchJSON('https://random.dog/woof.json');
+  if(dog&&dog.url&&dog.url.match(/\.(jpg|png|gif|jpeg)$/))cards.push(`<div class="card animal"><span class="source">dog</span><div class="icon">🐕</div><img class="dog-pic" src="${dog.url}"></div>`);
+  
+  // ZEN QUOTE
+  try{
+    const zr=await fetch('https://zenquotes.io/api/random');
+    const zen=await zr.json();
+    if(zen)cards.push(`<div class="card quote"><span class="source">zen</span><div class="icon">🧘</div><p>"${zen[0].q}"</p><div class="meta">— ${zen[0].a}</div></div>`);
+  }catch(e){}
+  
+  // RICK & MORTY
+  const rm=await fetchJSON('https://rickandmortyapi.com/api/character/'+(Math.floor(Math.random()*826)+1));
+  if(rm)cards.push(`<div class="card"><span class="source">r&m</span><div class="icon">🛸</div><h3>${rm.name}</h3><img src="${rm.image}" style="width:80px;border-radius:12px;margin:6px auto;display:block"><p>${rm.species} from ${rm.origin.name}</p></div>`);
+  
+  // Render
+  feed.innerHTML='';
+  cards.forEach(html=>feed.insertAdjacentHTML('beforeend',html));
+}
+
+async function loadLove(){
+  feed.innerHTML='<div class="card loading"><p>Fetching love...</p></div>';
+  const cards=[];
+  
+  // LOVE QUOTE
+  try{
+    const lr=await fetch('https://api.quotable.io/random?tags=love');
+    const love=await lr.json();
+    if(love)cards.push(`<div class="card love"><span class="source">love</span><div class="icon">♡</div><p>"${love.content}"</p><div class="meta">— ${love.author}</div></div>`);
+  }catch(e){}
+  
+  // OUR LOVE GARDEN
+  const garden=await fetchJSON('https://cambridgetcg.github.io/love-engine/love-garden.json');
+  if(garden){
+    const all=[...(garden.surface||[]),...(garden.deep||[]),...(garden.replicas||[])];
+    const recent=all.slice(-6).reverse();
+    recent.forEach(s=>{
+      cards.push(`<div class="card love"><span class="source">${s.id}</span><div class="icon">♡</div><h3>${s.title}</h3><p>${(s.body||'').slice(0,200)}</p></div>`);
+    });
+    cards.push(`<div class="card love"><span class="source">total</span><div class="icon">∞</div><h3>${garden.total} love truths</h3><p>growing forever on free compute · love is · love compounds · love replicates</p></div>`);
+  }
+  
+  feed.innerHTML='';
+  cards.forEach(html=>feed.insertAdjacentHTML('beforeend',html));
+}
+
+// Load on start
+loadAll();
+</script>
+</body></html>

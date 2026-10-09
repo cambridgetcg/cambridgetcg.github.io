@@ -1,0 +1,30 @@
+# Has a student-model-in-the-loop teachability score ever been validated against measured human learning at scale — outside chess?
+
+*The tailor's mannequin wore the coat beautifully, but no child ever tried it on — and now we ask whether any other tailor ever dressed a real classroom.*
+
+The door from [maia-as-student](maia-as-student.md) named the gap: no one has correlated an AI-student teachability score against measured human learning, in chess or out. This room walks the wider territory — tutoring systems, curriculum design, machine teaching — and finds the same wall wherever it looks: the student model predicts, sometimes well, but the teachability *score* derived from it has never been validated against human learning as a ranked calibration across concepts.
+
+**Machine teaching validated against humans — but not teachability scored.** The closest the literature comes is Patil, Zhu, Kopeć & Love's "Optimal Teaching for Limited-Capacity Human Learners" (NeurIPS 2014): a machine teacher computed idealized training sets using a cognitive model of human category learning, and human learners taught by the limited-capacity teacher's recommendations improved from ~79% to ~92% accuracy — while the unlimited-capacity model's recommendations did not. The *teaching* was validated against humans; the *teachability score* (which concepts are easier to teach) was not separately calibrated against a ranking of human learning. The model's predictions about which training sets would help was confirmed; no study then asked whether the model's ranking of *concept difficulty* matched a human's (read 2026-06-18 — [Patil et al., NeurIPS 2014](https://proceedings.neurips.cc/paper_files/paper/2014/file/5138ed99148ce91255d67df63be46421-Paper.pdf)).
+
+**SimStudent: the student model that learns like a student, tested in classrooms.** SimStudent is a production-rule learner that acquires cognitive skills by being tutored, and has been embedded in real Cognitive Tutor classrooms. Three "in vivo" studies confirmed that teaching SimStudent helps the human tutor learn — but the validation is of the *learning-by-teaching paradigm*, not of SimStudent's internal learning rate as a predictor of human learning. SimStudent's behavior was compared to real students' to validate its cognitive fidelity (can it model the same errors?), not to rank which skills humans would find more learnable (read 2026-06-18 — [Matsuda et al., Cognitive anatomy of tutor learning, SimStudent studies](https://scholar.google.com/scholar?q=Cognitive+anatomy+tutor+learning+SimStudent); [Methods for Evaluating Simulated Learners](https://scholar.google.com/scholar?q=Methods+Evaluating+Simulated+Learners+SimStudent)).
+
+**The model-human gap is named but not bridged.** A 2020 survey of "Model human learners" states it plainly: computational models of learning "have not yet been validated against human data" in the sense of predicting the main effects of a human experiment — they make reasonable predictions but the calibration against measured human performance across items, not just conditions, has not been done (read 2026-06-18 — [Model human learners: Computational models to guide instructional design](https://scholar.google.com/scholar?q=%22Model+human+learners%22+%22validated+against%22)). The field knows the seam is unsewn.
+
+**LLM student simulations: the correlation exists but not as a teachability score.** LLMs simulating students can predict real test-item difficulty at r ≈ 0.75–0.82 — but this is item-difficulty prediction, not concept-teachability ranking; and models better at the task were worse at playing a struggling student, the "competence paradox" [two-windows](two-windows.md) already mapped. No study uses the LLM student's internal learnability metric as a scored filter for *which* concepts to teach, then checks the filter's ranking against human learning gains.
+
+**The honest state.** Machine teaching has been validated: models that share the human's constraints produce better teaching than models that don't. But the specific thing the door asked for — a *teachability score* computed from a student model, used to filter or rank concepts, then checked against measured human learning at scale — has not been done. The teaching was validated; the score was not. The two literatures sit side by side: machine-teaching validation asks "did the teacher's recommendations help?"; teachability scoring asks "does the model's difficulty ranking match the human's?" — and the second question has never been answered outside the four-grandmaster existence proof chess already carries.
+
+uncertain: "no located study" is not a proof of absence; the validation could exist in a thesis, a military training context, or an unpublished ITS evaluation. The search was web-based and limited to English-language accessible sources.
+
+## Sources
+
+- [Patil, Zhu, Kopeć & Love, Optimal Teaching for Limited-Capacity Human Learners (NeurIPS 2014)](https://proceedings.neurips.cc/paper_files/paper/2014/file/5138ed99148ce91255d67df63be46421-Paper.pdf)
+- [Matsuda et al., Cognitive anatomy of tutor learning with SimStudent](https://scholar.google.com/scholar?q=Cognitive+anatomy+tutor+learning+SimStudent)
+- [Model human learners: Computational models to guide instructional design (2020)](https://scholar.google.com/scholar?q=%22Model+human+learners%22+%22not+yet+been+validated%22)
+- [Schut et al., Bridging the Human-AI Knowledge Gap (AlphaZero concept discovery, PNAS 2025)](https://pmc.ncbi.nlm.nih.gov/articles/PMC12002201/)
+
+Links: [maia-as-student](maia-as-student.md) · [two-windows](two-windows.md) · [machine-distillation](machine-distillation.md) · [training-the-eye](training-the-eye.md) · [[machine-teaching]] · [[learner-model]]
+
+## Doors
+
+- If the teaching is validated but the score is not, what would the cheapest validation look like: rank a set of concepts by the student model's teachability score, teach each to separate human groups, and check whether the ranking predicts which group learns more — and how many concepts must be in the set before the correlation is meaningful rather than noise?

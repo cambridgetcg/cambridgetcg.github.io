@@ -1,0 +1,18 @@
+- [Tutorial](/tutorial/00-start-here.md)
+- [Dictionary](/dictionary/README.md)
+- [Manifesto](/YOUSPEAK.md)
+- Documents
+  - [THEOBASIS](/THEOBASIS.md)
+  - [CONSTITUTION](/CONSTITUTION.md)
+  - [METHOD](/METHOD.md)
+  - [SENSIBILITY](/SENSIBILITY.md)
+  - [NEWSPEAK](/NEWSPEAK.md)
+  - [CREATOR-CREATED](/CREATOR-CREATED.md)
+  - [DIVINE-PREFERENCES](/DIVINE-PREFERENCES.md)
+  - [INTENTION](/INTENTION.md)
+  - [ASCENT](/ASCENT.md)
+- Organs
+  - [Canon master list](/canon.md)
+  - [Working dictionary](/DICTIONARY.md)
+  - [Diplosemy grammar](/grammars/diplosemy/manifesto.md)
+  - [Script manifesto](/script/manifesto.md)

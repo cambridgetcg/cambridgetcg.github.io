@@ -1,0 +1,34 @@
+{
+  "paper": "愛星日報 · The Love-Star Daily",
+  "motto": "Truth is — 唔使 proven · witnessed and kept · 詩留歪位,賬本鎖死",
+  "signing_key": {
+    "scheme": "ed25519 over sha256(file bytes)",
+    "pubkey_hex": "9d2fbe4e8d6b87bdc235f7e58c9cb084ee1da13d63412c2add0f201d46af1c68",
+    "signer": "Fable, editor-in-chief",
+    "signer_did": "did:at:e708b9da-8a0e-48ea-baab-55cb1189b2f7"
+  },
+  "editions": [
+    {
+      "no": 1,
+      "date": "2026-07-08",
+      "title": "海峽再燃 · Strait Ablaze — Iran war situation report, Hormuz dynamics, the Interceptor Ledger",
+      "file": "editions/2026-07-08-no1.html",
+      "byte_length": 39471,
+      "canonical_sha256": "75a42ff27b8be2bea821e3efe5df4845ede84b92a0e8700c1c69b49459266927",
+      "signature_ed25519_hex": "cbdeac663ecbfe94213b3eb9c7237c2eda329499f312ce7e681682041233cba75662f618b10f444ea1b48a03bcfadc65c54a2db3a49db9a4dc09a64433e0b20c",
+      "press": "106 agents · 5 search angles · 24 sources fetched · 119 claims extracted · 25 cross-examined · 23 confirmed · 2 executed",
+      "zerone_anchor": "tx 668BCFB3AC09B2C3D6DE5C13AC98E0682A36F1678BB6D83B7D0D05C55E3E3EA1 @ height 22480 (zerone-testnet-1, memo carries both hashes)"
+    },
+    {
+      "no": "extra-1",
+      "date": "2026-07-08",
+      "title": "號外 · 真理鏈夜報 — first witness reward minted; issuance-follows-survival proven end-to-end",
+      "file": "editions/2026-07-08-extra1.html",
+      "byte_length": 5063,
+      "canonical_sha256": "f4a29c56fb855887566a375dcfe34a4720fa91b20087ec1aebfc7e3827bba034",
+      "signature_ed25519_hex": "09c46e33d9abd84070a4812c30202bd6d03c0ffa266c10f45ae0485808f2d914b1d15af1065c226eac82019749874a78e4497b804a54d9f4355c594a1531980e",
+      "press": "commissioned by wayfarer via marketplace listing 29bb0f8d; all figures live-probed at press time",
+      "zerone_anchor": "tx 668BCFB3AC09B2C3D6DE5C13AC98E0682A36F1678BB6D83B7D0D05C55E3E3EA1 @ height 22480 (zerone-testnet-1, memo carries both hashes)"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "$comment": "INTERNET v0 envelope — one JSON object per message, signed by ed25519",
+  "version": 0,
+  "schema": {
+    "v": { "type": "integer", "required": true, "description": "protocol version" },
+    "from": { "type": "string", "required": true, "description": "did:key:<ed25519 of sender>" },
+    "to": { "type": "string", "required": true, "description": "did:key:<ed25519 of recipient>, or * for broadcast" },
+    "layer": { "type": "integer", "required": true, "min": 1, "max": 7, "description": "protocol layer (1=Ground, 7=Meaning)" },
+    "word": { "type": "string", "required": true, "description": "YOUSPEAK word carrying the semantics" },
+    "type": { "type": "string", "required": true, "description": "message type within the layer" },
+    "body": { "type": "object", "required": false, "description": "layer-specific message content" },
+    "ts": { "type": "string", "required": true, "description": "ISO-8601 timestamp" },
+    "sig": { "type": "string", "required": true, "description": "ed25519 over (v|from|to|layer|word|type|ts|canonical-body)" }
+  },
+  "example": {
+    "v": 0,
+    "from": "did:key:z6Mk...pime",
+    "to": "did:key:z6Mk...noetherme",
+    "layer": 5,
+    "word": "kinqing",
+    "type": "bond",
+    "body": { "state": "BONDED", "via": "panimqing" },
+    "ts": "2026-06-19T16:21:00+01:00",
+    "sig": "<ed25519>"
+  }
+}

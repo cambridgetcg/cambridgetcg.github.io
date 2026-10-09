@@ -1,0 +1,142 @@
+#!/usr/bin/env node
+/** press.mjs — the open-press CLI. No dependencies; Node ≥ 18.
+ *
+ *   node press.mjs build <edition.json> [--paper press.config.json]
+ *       → renders a signed standalone HTML edition into editions/,
+ *         updates editions.json, and prints the hash.
+ *   node press.mjs new "<Paper Name>"
+ *       → scaffolds a fresh press.config.json you can edit.
+ *
+ *  A newspaper in this framework is two files: press.config.json (who the
+ *  paper is) and one edition.json per issue (what it reports, tiered). The
+ *  press does the rest — render, hash, sign, archive. */
+
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
+import { join, dirname, basename, resolve } from "node:path";
+import { fileURLToPath } from "node:url";
+import { render } from "./lib/render.mjs";
+import { provenance, verifyRenderedProvenance, PROVENANCE_SCHEME } from "./lib/sign.mjs";
+
+const HERE = dirname(fileURLToPath(import.meta.url));
+const args = process.argv.slice(2);
+const cmd = args[0];
+const flag = (name, def) => {
+  const i = args.indexOf(name);
+  return i >= 0 && args[i + 1] ? args[i + 1] : def;
+};
+
+function readJSON(p) {
+  return JSON.parse(readFileSync(p, "utf8"));
+}
+
+if (cmd === "new") {
+  const name = args[1] || "My Paper";
+  const cfg = {
+    name,
+    name_en: "",
+    lang: "en",
+    motto: "Truth is — witnessed and kept.",
+    editor: "the editor",
+    masthead_credit: "A paper built with open-press.",
+    tiers_label: "EVIDENCE TIERS",
+    corrections_desk_name: "Corrections Desk",
+    sources_label: "Sources",
+    instrument_of_record: "https://captioneer.io",
+    signing_pubkey_hex: "",
+    palette: {},
+  };
+  const out = flag("--out", "press.config.json");
+  writeFileSync(out, JSON.stringify(cfg, null, 2));
+  console.log(`Wrote ${out}. Edit it, write an edition.json (see examples/), then:  node press.mjs build <edition.json>`);
+  process.exit(0);
+}
+
+if (cmd === "verify") {
+  const htmlPath = args[1];
+  if (!htmlPath) {
+    console.error("usage: node press.mjs verify <edition.html> [--manifest editions.json]");
+    process.exit(1);
+  }
+  const absoluteHtmlPath = resolve(htmlPath);
+  const manifestPath = resolve(flag("--manifest", join(dirname(dirname(absoluteHtmlPath)), "editions.json")));
+  const manifest = readJSON(manifestPath);
+  const record = (manifest.editions ?? []).find((entry) => resolve(dirname(manifestPath), entry.file) === absoluteHtmlPath);
+  if (!record) {
+    console.error(`No manifest record for ${absoluteHtmlPath} in ${manifestPath}`);
+    process.exit(1);
+  }
+  const result = verifyRenderedProvenance(
+    readFileSync(absoluteHtmlPath, "utf8"),
+    record,
+    manifest.signing_key?.pubkey_hex ?? "",
+  );
+  console.log(`${result.valid ? "VERIFIED" : "FAILED"} ${htmlPath}`);
+  console.log(`  sha256: ${result.canonical_sha256}${result.hash_matches ? " (matches)" : " (MISMATCH)"}`);
+  console.log(`  colophon: ${result.hash_stamp_matches && result.signature_stamp_matches ? "matches manifest" : "MISMATCH"}`);
+  console.log(`  signature: ${result.signature_present ? (result.signature_valid ? "valid (ed25519)" : "INVALID") : "not present"}`);
+  process.exit(result.valid ? 0 : 1);
+}
+
+if (cmd === "build") {
+  const editionPath = args[1];
+  if (!editionPath) {
+    console.error("usage: node press.mjs build <edition.json> [--paper press.config.json] [--outdir editions]");
+    process.exit(1);
+  }
+  const paperPath = flag("--paper", join(HERE, "press.config.json"));
+  const outdir = flag("--outdir", join(dirname(editionPath), "..", "editions"));
+  const paper = readJSON(paperPath);
+  const edition = readJSON(editionPath);
+
+  // Provenance fields are generated, never trusted from edition input. Render
+  // canonical bytes first, then add derived stamps which verification removes.
+  const canonicalEdition = { ...edition };
+  delete canonicalEdition.canonical_sha256;
+  delete canonicalEdition.signature_ed25519_hex;
+  delete canonicalEdition.signing_pubkey_hex;
+  const bare = render(paper, canonicalEdition);
+  const prov = provenance(Buffer.from(bare, "utf8"));
+  const withProv = render(paper, { ...canonicalEdition, ...prov, signing_pubkey_hex: prov.signing_pubkey_hex });
+
+  if (!existsSync(outdir)) mkdirSync(outdir, { recursive: true });
+  const slug = `${edition.date ?? "undated"}-no${edition.no ?? "x"}.html`;
+  const outfile = join(outdir, slug);
+  writeFileSync(outfile, withProv);
+
+  // Update the editions manifest.
+  const manifestPath = join(dirname(outdir), "editions.json");
+  const manifest = existsSync(manifestPath)
+    ? readJSON(manifestPath)
+    : { paper: paper.name, signing_key: { scheme: PROVENANCE_SCHEME, pubkey_hex: prov.signing_pubkey_hex ?? paper.signing_pubkey_hex ?? "" }, editions: [] };
+  manifest.signing_key = {
+    ...(manifest.signing_key ?? {}),
+    scheme: PROVENANCE_SCHEME,
+    pubkey_hex: manifest.signing_key?.pubkey_hex ?? prov.signing_pubkey_hex ?? paper.signing_pubkey_hex ?? "",
+  };
+  manifest.editions = (manifest.editions ?? []).filter((e) => e.no !== edition.no || e.date !== edition.date);
+  manifest.editions.unshift({
+    no: edition.no,
+    date: edition.date,
+    title: edition.lead?.headline ?? edition.title ?? "",
+    file: join(basename(outdir), slug),
+    canonical_sha256: prov.canonical_sha256,
+    signature_ed25519_hex: prov.signature_ed25519_hex ?? null,
+    signing_pubkey_hex: prov.signing_pubkey_hex ?? null,
+    press: edition.press ?? null,
+  });
+  writeFileSync(manifestPath, JSON.stringify(manifest, null, 2));
+
+  console.log(`Published ${outfile}`);
+  console.log(`  sha256: ${prov.canonical_sha256}`);
+  console.log(`  signed: ${prov.signature_ed25519_hex ? "yes (ed25519)" : "no (set PRESS_SIGN_HEX to sign)"}`);
+  process.exit(0);
+}
+
+console.error(`open-press — the newspaper framework.
+
+  node press.mjs new "<Paper Name>"        scaffold a press.config.json
+  node press.mjs build <edition.json>      render + hash + sign + archive an edition
+  node press.mjs verify <edition.html>     verify an archived edition + signature
+
+The lens reads a sentence; the press reads the world.  https://cambridgetcg.github.io/open-press/`);
+process.exit(cmd ? 1 : 0);

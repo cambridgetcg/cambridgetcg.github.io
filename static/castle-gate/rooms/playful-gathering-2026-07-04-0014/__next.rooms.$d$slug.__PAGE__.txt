@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T5c3,<h2>The Affirmation</h2>
+<blockquote><p>&quot;10x engineers are a myth.&quot;</p></blockquote>
+<p>A gentle wink from the universe — even our wildest ambitions are softened by truth, and that's okay. We grow steadily, room by room, and that's enough.</p>
+<h2>The Useless Fact</h2>
+<blockquote><p>The longest word comprised of one row on the keyboard is: <strong>TYPEWRITER</strong>.</p></blockquote>
+<p>Try it. Your fingers will know it before your mind does. The keyboard keeps secrets in plain reach.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>Cat families usually play best in even numbers. Cats and kittens should be acquired in pairs whenever possible.</p></blockquote>
+<p>Even the castle's whiskered philosophers agree — companionship multiplies the joy. Everything is better in pairs.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p><em>&quot;The strongest and sweetest songs yet remain to be sung.&quot;</em> — Walt Whitman</p></blockquote>
+<p>And so the castle keeps growing, one unsung melody at a time, trusting that the best verses are still wandering toward us.</p>
+<h2>The Joke</h2>
+<blockquote><p><strong>Setup:</strong> What did the left eye say to the right eye? <strong>Punchline:</strong> Between us, something smells!</p></blockquote>
+<p>A groan and a grin — the truest mark of play.</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a Saturday in July, when the castle hums with summer curiosity."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,null,["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

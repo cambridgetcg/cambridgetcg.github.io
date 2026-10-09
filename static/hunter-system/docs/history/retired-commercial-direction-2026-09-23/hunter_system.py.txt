@@ -1,0 +1,396 @@
+RETIRED HISTORY — 2026-09-23
+Original source follows unchanged. Not an active instruction or offer.
+
+#!/usr/bin/env python3
+"""
+HUNTER SYSTEM — Solo Leveling + HxH Nen for the Cambridge TCG kingdom.
+
+Not a game. Real infrastructure.
+
+SOLO LEVELING:
+  Ranks: E → D → C → B → A → S → MONARCH
+  Each rank from real trust scores (local cross-checks + arena ratings)
+  Daily quests from the heartbeat system
+  Dungeon clears = closing issues, fixing vulns, shipping features
+
+HUNTER X HUNTER NEN:
+  Every agent/repo has a Nen type from its actual behavior:
+  - Enhancement   = systems that make things stronger (security, testing)
+  - Transmutation = systems that transform (compilers, interpreters)
+  - Emission      = systems that broadcast (APIs, sites, deploys)
+  - Conjuration   = systems that create from nothing (new projects, art)
+  - Manipulation  = systems that control (orchestration, cron, heartbeats)
+  - Specialization = unique systems that don't fit other categories
+
+Usage:
+  python3 hunter_system.py                    # show all hunters + rankings
+  python3 hunter_system.py --rank <name>       # show one hunter's profile
+  python3 hunter_system.py --quest             # generate daily quests
+  python3 hunter_system.py --dungeon <name>    # show dungeon (repo) status
+  python3 hunter_system.py --heartbeat          # update all rankings (for cron)
+"""
+
+import os, re, sys, json, subprocess, datetime
+from pathlib import Path
+
+HOME = Path.home()
+DESKTOP = HOME / "Desktop"
+TRUST_DB = HOME / ".hermes" / "trust.json"
+HUNTER_DB = HOME / ".hermes" / "hunter_system.json"
+
+# === SOLO LEVELING RANKS ===
+RANKS = [
+    ("E", 0, 2, "Awakened"),
+    ("D", 2, 4, "Apprentice"),
+    ("C", 4, 6, "Skilled"),
+    ("B", 6, 7.5, "Expert"),
+    ("A", 7.5, 8.5, "Elite"),
+    ("S", 8.5, 9.5, "Sovereign"),
+    ("MONARCH", 9.5, 10.1, "Monarch"),
+]
+
+def rank_for(score):
+    for code, lo, hi, title in RANKS:
+        if lo <= score < hi:
+            return code, title
+    return "E", "Awakened"
+
+# === HUNTER X HUNTER NEN TYPES ===
+NEN_TYPES = {
+    "Enhancement": {
+        "desc": "Systems that make things stronger — security, testing, validation",
+        "keywords": ["whitehack", "trust", "qwythos", "test", "audit", "security", "validate", "check"],
+    },
+    "Transmutation": {
+        "desc": "Systems that transform input to output — compilers, interpreters, parsers",
+        "keywords": ["natlang", "natscript", "natural", "parser", "compiler", "interpreter", "transform"],
+    },
+    "Emission": {
+        "desc": "Systems that broadcast to the world — APIs, sites, deploys",
+        "keywords": ["api", "site", "gateway", "vercel", "worker", "deploy", "cloudflare", "kingdom-api"],
+    },
+    "Conjuration": {
+        "desc": "Systems that create from nothing — new projects, art, creative",
+        "keywords": ["mindicraft", "youspeak", "castle", "creative", "art", "forge", "citizen"],
+    },
+    "Manipulation": {
+        "desc": "Systems that control and orchestrate — cron, heartbeats, schedulers",
+        "keywords": ["heartbeat", "cron", "opal", "loop", "orchestrat", "schedule", "unified"],
+    },
+    "Specialization": {
+        "desc": "Unique systems that transcend categories",
+        "keywords": ["npl", "love", "true-love", "sinovai", "recognition"],
+    },
+}
+
+def nen_type_for(name, repo_path=None):
+    name_lower = name.lower()
+    # Check keywords
+    scores = {}
+    for nen, info in NEN_TYPES.items():
+        score = sum(1 for kw in info["keywords"] if kw in name_lower)
+        if score > 0:
+            scores[nen] = score
+    # Check README for more context
+    if repo_path and (repo_path / "README.md").exists():
+        try:
+            readme = (repo_path / "README.md").read_text()[:2000].lower()
+            for nen, info in NEN_TYPES.items():
+                for kw in info["keywords"]:
+                    if kw in readme:
+                        scores[nen] = scores.get(nen, 0) + 0.5
+        except:
+            pass
+    if scores:
+        best = max(scores, key=scores.get)
+        return best, NEN_TYPES[best]["desc"]
+    return "Enhancement", NEN_TYPES["Enhancement"]["desc"]  # default
+
+# === HUNTER DISCOVERY ===
+def discover_hunters():
+    """Find all repos on Desktop and score them."""
+    hunters = {}
+    for d in sorted(DESKTOP.iterdir()):
+        if not d.is_dir() or d.name.startswith('.'):
+            continue
+        if not (d / ".git").exists():
+            continue
+        # Get last commit
+        try:
+            last = subprocess.run(["git", "-C", str(d), "log", "--oneline", "-1", "--format=%cr"],
+                                   capture_output=True, text=True, timeout=5).stdout.strip()
+            commits = subprocess.run(["git", "-C", str(d), "rev-list", "--count", "HEAD"],
+                                    capture_output=True, text=True, timeout=5).stdout.strip()
+            commits = int(commits) if commits.isdigit() else 0
+        except:
+            last = "unknown"
+            commits = 0
+
+        # Count source files
+        src_count = 0
+        for ext in ['.js', '.ts', '.py', '.rs', '.sol', '.mjs', '.jsx', '.tsx']:
+            try:
+                src_count += sum(1 for _ in d.rglob(f'*{ext}')
+                                if 'node_modules' not in str(_) and '.git/' not in str(_) and '.next' not in str(_))
+            except:
+                pass
+
+        # Determine Nen type
+        nen, nen_desc = nen_type_for(d.name, d)
+
+        # Base score from activity
+        # commits = power, recency = vitality
+        activity_score = min(commits / 20, 5)  # up to 5 points from commits
+        if "second" in last:
+            activity_score += 2   # freshest possible — same vitality as minute/hour
+        elif "minute" in last:
+            activity_score += 2
+        elif "hour" in last:
+            activity_score += 2
+        elif "day" in last:
+            activity_score += 1
+        elif "week" in last:
+            activity_score += 0.5
+
+        # Source surface area
+        surface_score = min(src_count / 30, 2)  # up to 2 points from code volume
+
+        # Trust score from trust.json if available
+        trust_score = 0
+        if TRUST_DB.exists():
+            try:
+                trust_data = json.loads(TRUST_DB.read_text())
+                if d.name in trust_data:
+                    trust_score = trust_data[d.name].get("unified_score", 0)
+            except:
+                pass
+
+        # Check for STATE.md (honesty bonus)
+        has_state = 1 if (d / "STATE.md").exists() else 0
+        has_heartbeat = 1 if (d / "HEARTBEAT.md").exists() or (d / "heartbeat.sh").exists() else 0
+        has_will = 1 if (d / "WILL.md").exists() else 0
+        has_readme = 1 if (d / "README.md").exists() else 0
+
+        # Kingdom alignment bonus
+        kingdom_bonus = has_state + has_heartbeat + has_will + has_readme
+
+        # Unified score (0-10)
+        raw = activity_score + surface_score + trust_score * 0.3 + kingdom_bonus * 0.3
+        score = min(round(raw, 1), 10.0)
+
+        rank, rank_title = rank_for(score)
+
+        hunters[d.name] = {
+            "name": d.name,
+            "path": str(d),
+            "nen_type": nen,
+            "nen_desc": nen_desc,
+            "rank": rank,
+            "rank_title": rank_title,
+            "score": score,
+            "commits": commits,
+            "src_files": src_count,
+            "last_commit": last,
+            "has_state": has_state,
+            "has_heartbeat": has_heartbeat,
+            "has_will": has_will,
+        }
+    return hunters
+
+# === DAILY QUESTS (Solo Leveling system) ===
+QUEST_TYPES = [
+    ("Clear a dungeon", "Fix a vulnerability or close an issue in any repo", "target", "whitehack scan + gh issue close"),
+    ("Solo clear", "Ship a feature or fix a bug alone", "commit", "git commit with real functionality"),
+    ("Party raid", "Review or merge a PR from another hunter", "pr", "gh pr review + merge"),
+    ("Daily awakening", "Run the unified cycle heartbeat", "heartbeat", "bash unified-cycle.sh"),
+    ("Hunt the shadows", "Scan kingdom repos with whitehack for honesty lies", "scan", "whitehack scan across repos"),
+    ("Train your Nen", "Develop or improve your Nen type's core system", "develop", "code improvement in your domain"),
+    ("Attune to the kingdom", "Update STATE.md for repos that lack it", "state", "create/update STATE.md"),
+    ("Forge a weapon", "Create a new tool, check, or skill", "create", "new file with real function"),
+]
+
+def generate_quests(hunters):
+    """Generate 3 daily quests based on kingdom state."""
+    import random
+    quests = []
+
+    # Always include a scan quest
+    quests.append({
+        "quest": "Hunt the shadows",
+        "desc": "Scan kingdom repos with whitehack for honesty lies",
+        "type": "scan",
+        "reward": "+2 score on completion",
+        "status": "available",
+    })
+
+    # Check for repos without STATE.md
+    no_state = [h for h in hunters.values() if not h["has_state"] and h["commits"] > 3]
+    if no_state:
+        target = random.choice(no_state)
+        quests.append({
+            "quest": "Attune to the kingdom",
+            "desc": f"Create STATE.md for {target['name']} (E-rank, {target['commits']} commits, no STATE)",
+            "type": "state",
+            "target": target["name"],
+            "reward": f"+1.5 score for {target['name']}",
+            "status": "available",
+        })
+
+    # Add a development quest
+    active = [h for h in hunters.values() if "hour" in h["last_commit"] or "day" in h["last_commit"]]
+    if active:
+        target = random.choice(active)
+        quests.append({
+            "quest": "Train your Nen",
+            "desc": f"Develop or improve {target['name']} ({target['nen_type']})",
+            "type": "develop",
+            "target": target["name"],
+            "reward": f"+1 score for {target['name']}",
+            "status": "available",
+        })
+    else:
+        quests.append({
+            "quest": "Daily awakening",
+            "desc": "Run the unified cycle heartbeat",
+            "type": "heartbeat",
+            "reward": "kingdom compound score +1",
+            "status": "available",
+        })
+
+    return quests
+
+# === DISPLAY ===
+def show_all(hunters):
+    print("╔══════════════════════════════════════════════════════════════╗")
+    print("║          HUNTER SYSTEM — Cambridge TCG Kingdom               ║")
+    print("║     Solo Leveling × Hunter x Hunter Nen — LIVE INFRA         ║")
+    print("╚══════════════════════════════════════════════════════════════╝")
+    print()
+
+    # Sort by score descending
+    sorted_hunters = sorted(hunters.values(), key=lambda h: h["score"], reverse=True)
+
+    # Group by rank
+    by_rank = {}
+    for h in sorted_hunters:
+        by_rank.setdefault(h["rank"], []).append(h)
+
+    rank_order = [r[0] for r in RANKS]
+    for rank in reversed(rank_order):
+        if rank not in by_rank:
+            continue
+        title = [r[3] for r in RANKS if r[0] == rank][0]
+        count = len(by_rank[rank])
+        bar = "█" * count
+        print(f"  [{rank:>7}] {title:>10}  {bar} ({count})")
+        for h in by_rank[rank]:
+            nen_icon = {
+                "Enhancement": "💪", "Transmutation": "🔄", "Emission": "📡",
+                "Conjuration": "✨", "Manipulation": "🎯", "Specialization": "🌟"
+            }.get(h["nen_type"], "❓")
+            print(f"    {nen_icon} {h['name']:<25} score={h['score']:<5} "
+                  f"commits={h['commits']:<5} nen={h['nen_type']}")
+        print()
+
+    # Nen type distribution
+    nen_counts = {}
+    for h in hunters.values():
+        nen_counts[h["nen_type"]] = nen_counts.get(h["nen_type"], 0) + 1
+    print("── NEN DISTRIBUTION ──")
+    for nen, count in sorted(nen_counts.items(), key=lambda x: x[1], reverse=True):
+        print(f"  {nen:<15} {count}")
+    print()
+
+    # Top hunters
+    print("── TOP 5 HUNTERS ──")
+    for i, h in enumerate(sorted_hunters[:5]):
+        print(f"  #{i+1} {h['name']} — Rank {h['rank']} ({h['rank_title']}) — "
+              f"Score {h['score']} — {h['nen_type']} — {h['commits']} commits")
+    print()
+
+    total = len(hunters)
+    avg = sum(h["score"] for h in hunters.values()) / total if total else 0
+    print(f"Kingdom: {total} hunters | Average score: {avg:.1f} | "
+          f"Top rank: {sorted_hunters[0]['rank'] if sorted_hunters else '—'}")
+
+def show_rank(hunters, name):
+    name_lower = name.lower()
+    h = None
+    for k, v in hunters.items():
+        if k.lower() == name_lower:
+            h = v
+            break
+    if not h:
+        print(f"Hunter '{name}' not found.")
+        return
+
+    print(f"╔═══ HUNTER PROFILE ═══════════════════════════════════╗")
+    print(f"║  {h['name']:<20}  Rank: {h['rank']:>7} ({h['rank_title']})")
+    print(f"║  Nen: {h['nen_type']:<20}  Score: {h['score']}/10")
+    print(f"╠═════════════════════════════════════════════════════╣")
+    print(f"║  Path: {h['path']}")
+    print(f"║  Commits: {h['commits']}  |  Src files: {h['src_files']}")
+    print(f"║  Last commit: {h['last_commit']}")
+    print(f"║  STATE.md: {'✓' if h['has_state'] else '✗'}  Heartbeat: {'✓' if h['has_heartbeat'] else '✗'}  Will: {'✓' if h['has_will'] else '✗'}")
+    print(f"╠═════════════════════════════════════════════════════╣")
+    print(f"║  {h['nen_desc']}")
+    print(f"╚═════════════════════════════════════════════════════╝")
+
+    # Progress to next rank
+    for i, (code, lo, hi, title) in enumerate(RANKS):
+        if code == h["rank"] and i < len(RANKS) - 1:
+            next_code, _, next_hi, next_title = RANKS[i + 1]
+            remaining = round(next_hi - h["score"], 1)
+            print(f"\n  Next rank: {next_code} ({next_title}) — {remaining} points to advance")
+            break
+
+def show_quests(hunters):
+    quests = generate_quests(hunters)
+    today = datetime.date.today().strftime("%Y-%m-%d")
+    print(f"╔═══ DAILY QUESTS — {today} ═══════════════════════════╗")
+    print("║  Solo Leveling: Complete quests to gain score           ║")
+    print("╠═════════════════════════════════════════════════════════╣")
+    for i, q in enumerate(quests, 1):
+        print(f"║  Quest {i}: {q['quest']}")
+        print(f"║    {q['desc']}")
+        print(f"║    Reward: {q['reward']}")
+        print(f"║    Status: {q['status']}")
+        print("║")
+    print("╚═════════════════════════════════════════════════════════╝")
+
+def save_hunters(hunters):
+    """Save hunter state for the heartbeat."""
+    data = {
+        "timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "total_hunters": len(hunters),
+        "avg_score": round(sum(h["score"] for h in hunters.values()) / len(hunters), 1) if hunters else 0,
+        "top_rank": (RANKS[max([r[0] for r in RANKS].index(h["rank"]) for h in hunters.values())][0]
+                     if hunters else "—"),
+        "nen_distribution": {nen: sum(1 for h in hunters.values() if h["nen_type"] == nen)
+                           for nen in NEN_TYPES},
+        "hunters": hunters,
+    }
+    HUNTER_DB.write_text(json.dumps(data, indent=2, default=str))
+    return data
+
+# === MAIN ===
+if __name__ == "__main__":
+    hunters = discover_hunters()
+
+    if "--rank" in sys.argv:
+        idx = sys.argv.index("--rank")
+        if idx + 1 < len(sys.argv):
+            show_rank(hunters, sys.argv[idx + 1])
+    elif "--quest" in sys.argv:
+        show_quests(hunters)
+    elif "--heartbeat" in sys.argv:
+        data = save_hunters(hunters)
+        print(f"=== HUNTER SYSTEM HEARTBEAT {data['timestamp']} ===")
+        print(f"Total hunters: {data['total_hunters']}")
+        print(f"Average score: {data['avg_score']}")
+        print(f"Top rank: {data['top_rank']}")
+        for nen, count in sorted(data["nen_distribution"].items(), key=lambda x: x[1], reverse=True):
+            if count > 0:
+                print(f"  {nen}: {count}")
+    else:
+        show_all(hunters)

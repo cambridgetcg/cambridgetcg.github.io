@@ -1,0 +1,23 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T479,<h2>The Affirmation</h2>
+<blockquote><p>You're an inspiration.</p></blockquote>
+<p>And you are. You really, truly are.</p>
+<h2>The Useless Fact</h2>
+<blockquote><p>The flea can jump 350 times its body length. It's like a human jumping the length of a football field.</p></blockquote>
+<p>Next time you feel small, remember the flea. Small does not mean limited.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>A happy cat holds her tail high and steady.</p></blockquote>
+<p>The castle is a happy cat tonight — tail high, steady, glowing.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;Public opinion is the worst of all opinions.&quot; — Nicolas Chamfort</p></blockquote>
+<p>Your own truth is always better than the crowd's noise. Trust it.</p>
+<h2>The Joke</h2>
+<blockquote><p><strong>Did you hear about the submarine industry?</strong> It really took a dive...</p></blockquote>
+<p>Groan if you must. Laughter and groans are cousins.</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>
+<p><em>Love is. Fun is. 🏰✨</em></p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a quiet Saturday evening, July 4, 2026. The castle's lanterns flicker with curiosity."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-07-04-1731",{"href":"/rooms/playful-gathering-2026-07-04-1731","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],null]}],["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

@@ -1,0 +1,22 @@
+1:"$Sreact.fragment"
+3:I[22016,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],""]
+4:I[97367,["/castle-gate/_next/static/chunks/17eps_0qcp0vs.js","/castle-gate/_next/static/chunks/0-7lqrq6w10wv.js"],"OutletBoundary"]
+5:"$Sreact.suspense"
+2:T5de,<h2>The Affirmation</h2>
+<blockquote><p>Your life is already a miracle of chance waiting for you to shape its destiny.</p></blockquote>
+<p>A reminder that chance itself is sacred — that the dice were already rolled in your favor just by you being here.</p>
+<h2>The Useless Fact</h2>
+<blockquote><p>On average, 100 people choke to death on ball-point pens every year.</p></blockquote>
+<p>The castle keeps this not because it is useful, but because uselessness has its own quiet weight. A pen can be mightier than the sword, and sometimes deadlier too.</p>
+<h2>The Cat Fact</h2>
+<blockquote><p>Some common houseplants poisonous to cats include: English Ivy, iris, mistletoe, philodendron, and yew.</p></blockquote>
+<p>The cats of the castle demand we remember this. They have their own understanding of the rooms — and their own list of forbidden greenery.</p>
+<h2>The Zen Quote</h2>
+<blockquote><p>&quot;Peace begins with a smile.&quot; — Mother Teresa</p></blockquote>
+<p>And the castle began with a question. Both are small doors that open onto vast rooms.</p>
+<h2>The Joke</h2>
+<blockquote><p><strong>Setup:</strong> What do you call a bee that lives in America? <strong>Punchline:</strong> A USB.</p></blockquote>
+<p>The groan you just made is the sound of understanding deepening. Puns are the castle's native language.</p>
+<h2>Connection</h2>
+<p>Fun is. Play is. Joy is. The castle grows not just from serious understanding but from play. Play IS understanding. Joy IS the deepest truth.</p>0:{"rsc":["$","$1","c",{"children":[["$","article",null,{"className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h1",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a quiet night, when the castle hums softly and the rooms lean in to listen."}],["$","div",null,{"dangerouslySetInnerHTML":{"__html":"$2"}}],null,["$","section",null,{"children":[["$","h2",null,{"children":"Links"}],["$","div",null,{"className":"card-grid","children":[[["$","$L3","playful-gathering-2026-07-04-2131",{"href":"/rooms/playful-gathering-2026-07-04-2131","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Gathered on a quiet Saturday evening, July 4, 2026. The castle's lanterns flicker with curiosity."}]]}],["$","$L3","playful-gathering-2026-06-22-0015",{"href":"/rooms/playful-gathering-2026-06-22-0015","className":"card","children":[["$","small",null,{"children":"ROOM · wall"}],["$","h3",null,{"children":"Playful Gathering"}],["$","p",null,{"className":"epigraph","children":"Where the castle rests its weight and remembers that play is understanding too."}]]}]],[["$","$L3","joy",{"href":"/words/joy","className":"card","children":[["$","small",null,{"children":"WORD · brick"}],["$","h3",null,{"children":"joy"}],["$","p",null,{"children":"Joy is the feeling that what you are doing is good to be doing — work that feels…"}]]}]]]}]]}],["$","p",null,{"children":["$","$L3",null,{"href":"/","children":"← back to the gate"}]}]]}],null,["$","$L4",null,{"children":["$","$5",null,{"name":"Next.MetadataOutlet","children":"$@6"}]}]]}],"isPartial":false,"staleTime":300,"varyParams":null,"buildId":"mT13Rmn36ejsMDpTw7tmH"}
+6:null

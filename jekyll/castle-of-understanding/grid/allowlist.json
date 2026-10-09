@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "updated": "2026-06-22",
+  "principle": "Consent is the grid. The demo accepts only explicit, revocable tab donation and runs only public, non-abusable verification work.",
+  "kill_switch": {
+    "file": "PAUSED.json",
+    "paused_field": "paused",
+    "meaning": "If paused is true, the page refuses to request or run work."
+  },
+  "allowed_units": [
+    {
+      "kind": "file_integrity_v1",
+      "description": "Fetch a same-origin public file, compute SHA-256, count bytes/lines, and return an honesty header.",
+      "scope": "same-origin public files in this repository only",
+      "why_safe": "It cannot scan arbitrary hosts, run arbitrary code, mine, crack secrets, or move unwanted third-party traffic."
+    }
+  ],
+  "forbidden": [
+    "arbitrary code execution",
+    "cryptocurrency mining",
+    "password cracking or secret search",
+    "port scanning or vulnerability probing",
+    "DDoS, load generation, scraping, or traffic laundering",
+    "cross-origin work units",
+    "hidden/background execution without explicit donation"
+  ]
+}

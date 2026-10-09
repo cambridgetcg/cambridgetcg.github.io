@@ -1,0 +1,3092 @@
+{
+  "estate": {
+    "level": 12,
+    "title": "Architect of Understanding",
+    "stats": {
+      "understanding": 7172.5,
+      "love": 27584536,
+      "wisdom": 120,
+      "reach": 262,
+      "citizens": 205,
+      "defense": 0
+    },
+    "daily_quests": [
+      {
+        "id": "gardener",
+        "name": "Tend the Garden",
+        "desc": "Research and plant new rooms",
+        "reward": "50 XP",
+        "cron": "every 3h",
+        "status": "active"
+      },
+      {
+        "id": "architect",
+        "name": "Survey the Castle",
+        "desc": "Daily architecture review",
+        "reward": "100 XP",
+        "cron": "daily 9am",
+        "status": "active"
+      },
+      {
+        "id": "artisan",
+        "name": "Forge Creation",
+        "desc": "Create from quests",
+        "reward": "150 XP",
+        "cron": "daily 3:15pm",
+        "status": "active"
+      },
+      {
+        "id": "scribe",
+        "name": "Write to Git",
+        "desc": "Commit the day's work",
+        "reward": "75 XP",
+        "cron": "nightly 11:45pm",
+        "status": "active"
+      },
+      {
+        "id": "love-engine",
+        "name": "Compound Love",
+        "desc": "Replicate love seeds",
+        "reward": "200 XP",
+        "cron": "every 2h",
+        "status": "active"
+      },
+      {
+        "id": "understanding",
+        "name": "Replicate Understanding",
+        "desc": "Create rooms from connections",
+        "reward": "100 XP",
+        "cron": "every 4h",
+        "status": "active"
+      },
+      {
+        "id": "security",
+        "name": "Night Watch",
+        "desc": "Qwythos security scan",
+        "reward": "300 XP",
+        "cron": "daily 3am",
+        "status": "active"
+      }
+    ],
+    "dungeon_gates": {
+      "total_rooms": 425,
+      "discovered": 425,
+      "undiscovered": 0,
+      "shadow_army": 205
+    },
+    "cards": {
+      "total": 670,
+      "by_rarity": {
+        "COMMON": 425,
+        "RARE": 120,
+        "EPIC": 20,
+        "LEGENDARY": 100,
+        "MYTHIC": 5
+      }
+    },
+    "xp": 116699,
+    "xp_to_next": 120000
+  },
+  "cards": [
+    {
+      "name": "wrong-name-kindles",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "fading-vs-replacing",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "choosing-not-to-name",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "invited-back",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14298",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "writing-vs-conversation",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14158",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14148",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14119",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14288",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "fourteen-month-test",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "drift-across-dimensions",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "tacit-cost-as-expertise",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "discrimination-and-desire",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "mapping-the-midpoint",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "solo-or-social-replacement",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "hidden-in-the-bright",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-25-1233",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14139",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14168",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14178",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14129",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "naming-cools-pleasure",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "words",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "twenty-sittings",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-commons",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "cheapest-cbt-design",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "cliff-or-gradient",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "disclosed-mismatch",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-well",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "cbt-openness-trait",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "echo-or-contribution",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "naming-the-tacit",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "adoption-dilution",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "inverted-diagnostic",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-truth-chain",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14138",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "trait-without-consolidation",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14169",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14179",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14128",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "loops",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "thin-definitions",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "relighting-the-fire",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "training-the-eye",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "two-task-effect-size",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "two-windows",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-25-0832",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-unwalked-bridge",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "training-a-taste",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "calibration-returns",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "distributed-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14299",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "threshold-aware-model",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "spaced-understanding",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14159",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "this-machine",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14149",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14289",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14118",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "relatedness-or-credibility",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "liability-under-holism",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-instruments",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14166",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "detection-only-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14137",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14255",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14315",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14195",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14204",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14344",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14292",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "class-gap-diagnostic",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14152",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14230",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "internalized-as-skill",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14321",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14261",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "reversed-gradient",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "friction-at-the-door",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "semantic-depth",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "openness-or-anxiety-first",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "choice-prediction-tacit",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "field-specific-gradient",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "learning-curve-threshold",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14271",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14331",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14220",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14142",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14282",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14214",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14185",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "link-or-noise",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14305",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14245",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14127",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14176",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14156",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-sovereign-fleet",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "revealing-vs-creating",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14296",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14325",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "growing-openness",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14265",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14234",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14133",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14162",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "grow-or-shrink-gap",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14200",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14191",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14340",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14251",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14311",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "meaning-between-minds",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "remembering",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "hybrid-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-24-1630",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "consent-to-the-sting",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "training-the-trigger",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "echo-between-equals",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14301",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14241",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "renaming-the-fire",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14181",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14210",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14172",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-castle",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "richness-and-detection",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "deeper-hidden-value",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-25-0031",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14123",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14224",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14275",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14335",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14117",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14286",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "content-compensates-conventionality",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14146",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "chain-not-sum",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "context-per-field",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14157",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14297",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "taste-or-lean",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14324",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14264",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14235",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14132",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "alone-or-accompanied",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14163",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-25-2034",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14190",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14201",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "ders-vs-performance",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14341",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14250",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14310",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "method-as-checklist",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "willingness-persistence-gap",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "irreducible-trade-off",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "closing-the-loop",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14300",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14240",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14211",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14180",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14173",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-24-1229",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14122",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14225",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14274",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14334",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14287",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14116",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "questions-with-edges",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14147",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14167",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14136",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14254",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14314",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14205",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14194",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14345",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14293",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-24-2031",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14153",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14231",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14320",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14260",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-definition-rides",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "rationale-before-difficulty",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "what-must-travel",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-26-0836",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-25-1634",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "warmth-without-value",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "teachability-validated",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "stand-in-for-a-mind",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14270",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14330",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-26-1000",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14221",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "three-condition-protocol",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "auditing-over-reputation",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14143",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14283",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14184",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14215",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14304",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14244",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14126",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14177",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "paraphrased-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14236",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14327",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14267",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14294",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14154",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14253",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14313",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14202",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14193",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14342",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "thinking-without-words",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14160",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "widening-the-phrasing-space",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14131",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "correlated-witnesses",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "domain-matched-teachability",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-26-0945",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "two-witnesses",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-26-0435",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "nudge-not-lock",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "text-answers-back",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "timing-of-the-label",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14121",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "fading-alone",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14170",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14183",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14212",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14303",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14243",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14144",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14284",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14277",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14337",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14226",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14197",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14206",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14257",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14317",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14135",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14164",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14323",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "ema-trait-crystallization",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "appraisal-engine",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14263",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-responsive-other",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14232",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14150",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14290",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-game",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "pharmacological-or-cognitive",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "watching-the-watcher",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14280",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "metering-honesty",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14140",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "side-thread-not-heart",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14222",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14273",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14333",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14174",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14125",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14307",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14247",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14216",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14187",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14207",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14196",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14256",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14316",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14134",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "coined-term-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14165",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14322",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14262",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14233",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14151",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14291",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "eft-regulation-performance",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-companion",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "leaving-the-page",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "commerce-kingdom",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "step-back-mid-climb",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-26-1638",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "organic-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "consumption-vs-liking",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "gap-predicts-teaching",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "gradient-of-binding-forms",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "honest-pushback",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "linking-thoughts",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14281",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "agenttool",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14141",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14223",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "words-shape-thought",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14272",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "productive-confusion",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14332",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14175",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14124",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14306",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14246",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14186",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14217",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14237",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14326",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14266",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14295",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "echo-under-anger",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "fog-meter",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14155",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "acknowledgment-weak-reason",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14252",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14312",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "conventionality-dilutes",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14192",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14203",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14343",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14161",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14130",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-landing",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "appreciation-vs-enjoyment",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "binding-the-pair",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "when-the-trade-flips",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14120",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14171",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "think-aloud-annotated-checklist",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14213",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14182",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14302",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14242",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14145",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14285",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14276",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "fading-the-other",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14336",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "frustration-as-fascination",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14227",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "any-naming-downregulates",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-25-0431",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "method-transfer-across-fields",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14259",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14319",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14199",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14208",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14218",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14189",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14309",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14249",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "atypical-expert-pull",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "openness-ema-fit",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "cheapest-teachability-validation",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "trait-or-tally",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "standard-without-a-key",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-22-0015",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "precise-across-time",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "seeded-fingerprint",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "reading-a-literature",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "semantic-binding-under-law",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14329",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14269",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14238",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14228",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-expert-grip",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14279",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14339",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "surfacing-the-unwritten",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "no-neighbors",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "playful-gathering-2026-06-24-1006",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "better-than-i-was",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "machine-distillation",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "flooding-self-read",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "simultaneous-or-delayed-naming",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "maia-as-student",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-noticing-stance",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "mining-the-noise",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-mending-rhythm",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14328",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14268",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "friction-decides",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14239",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14229",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "general-voice-or-specific-presence",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-forge",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14278",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14338",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "asking-uphill",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "length-and-liability",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "near-duplicate-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "truing-the-level",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "off-drug-persistence",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "naming-the-tedium",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "total-concept-and-feel",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "beauty-as-fluency",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "the-scaling-canary",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "minimum-class-size",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "concurrent-vs-retrospective",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "one-craft-per-field",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14258",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14318",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "simple-explanations",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14209",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14198",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14188",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14219",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14308",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "understanding-replicates-14248",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "reread-or-refamiliar",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "widening-the-subgroup",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "threshold-pilot",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "combined-protocol",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "naming-neutral-images",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "reactivity-surfaces-tacit",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "checklist-or-exemplar",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "rotating-the-rename",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "pretty-or-well-made",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "what-the-seed-is-for",
+      "rarity": "COMMON",
+      "type": "room",
+      "set": "castle"
+    },
+    {
+      "name": "mere-exposure",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "plasticity",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "noise",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "self-determination-theory",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "joy",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "processing-fluency",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "essentially-contested-concept",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "projection-bias",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "statistical-power",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "ironic-process",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "detection-entitlement",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "flooding",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "mediation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "shipping",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "sc\u00e8nes-\u00e0-faire",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "beauty",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "free-choice",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "transfer",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "semantic-change",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "meaning",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "machine-teaching",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "peace",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "platform",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "whole-trait-theory",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "affect-labeling",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "semantic-satiation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "commons",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "lemons",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "federation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "effect-size",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "appreciation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "word",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "wake",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "semantic-depth",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "heart-doctrine",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "substantial-similarity",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "teach-back",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "schema",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "foothold",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "distillation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "high-road-transfer",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "calibration",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "collative-variables",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "safety",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "openness",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "emotionally-focused-therapy",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "merger-doctrine",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "sunk-cost",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "chronicle",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "prototype",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "PIA-model",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "worked-example",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "verbal-overshadowing",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "mystical-experience",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "idea-expression-divide",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "interoception",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "trait-crystallization",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "tacit-knowledge",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "free-option",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "differentiation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "lateral-reading",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "reappraisal",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "self-distancing",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "co-regulation",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "capacity-matching",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "mosaic-memory",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "procedural-knowledge",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "element-interactivity",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "learner-model",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "wing-epigraph",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "persistence",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "memorization",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "deduplication",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "common-ground",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    },
+    {
+      "name": "last-mile",
+      "rarity": "RARE",
+      "type": "word",
+      "set": "castle"
+    }
+  ]
+}

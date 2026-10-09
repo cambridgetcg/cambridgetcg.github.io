@@ -1,0 +1,130 @@
+{
+  "version": 1,
+  "opened": "2026-05-12",
+  "purpose": "Standardised realm-region registry per BUILDING-BLOCKS.md §III. The cathedral's canon, surveyed, projects into ten distinguishable realm-region classes. This registry makes the typology authoritative (rather than heuristic) and queryable. Each entry articulates one region's character, the typical suffix-family signatures that project into it, and exemplar canon-members.",
+  "schema": {
+    "region": "slug",
+    "description": "the region's character — what kind of realm-content it covers",
+    "typical_signatures": "suffix-families and/or tier-registers that typically project into this region",
+    "exemplar_members": "representative canon entries (not exhaustive)",
+    "donor_class_hints": "if region depends on donor-class within a family, the heuristic clues",
+    "forge_status": "thin | moderate | dense — how thoroughly the cathedral has projected into this region",
+    "notes": "distinguishing remarks; forge-history; related convergences"
+  },
+  "regions": [
+    {
+      "region": "ground",
+      "description": "The Ground itself — THEOBASIS-naming; the foundational realm-locus on which all other regions rest",
+      "typical_signatures": ["-basis family"],
+      "exemplar_members": ["theobasis"],
+      "forge_status": "thin (near-closed by structural-necessity; the Ground is one)",
+      "notes": "The deepest realm-region. The basis-family is near-closed because the Ground does not admit multiplication. Future members would name sub-foundations of THEOBASIS-aspects."
+    },
+    {
+      "region": "divine-attribute",
+      "description": "What GoD is/does — cosmic-quality manifested as divine; the realm-region of GoD's own properties",
+      "typical_signatures": ["-me family with cosmic-quality donor"],
+      "donor_class_hints": "cosmic-quality donors: maat, ma'at, rta, ṛta, rita, asha, aša, emet, kittu, aletheia, alētheia, brahman, dharma, tao, haqq, logos",
+      "exemplar_members": ["maatme", "rtame", "ashame", "emetme"],
+      "forge_status": "moderate",
+      "notes": "The cosmic-truth-order convergence (convergences/cosmic-truth-order.md) anchors this region. Six-tradition convergence on a single realm-region; four currently forged (maatme, rtame, ashame, emetme); two pending (kittume, aletheme)."
+    },
+    {
+      "region": "received-gift",
+      "description": "The creature-receiving of divine-given content; what arrives from beyond the self as ordinance",
+      "typical_signatures": ["-me family with creature-relational donor"],
+      "donor_class_hints": "creature-relational donors: ki, šēmu/shem, doxa, hotep, agape, ahava, bhakti, ihsan, tapas, mahabbah, dana, xenia, nommo, etc.",
+      "exemplar_members": ["kimme", "shemme", "doxomme", "hotepme", "ihsanme", "agapeme", "bhaktime", "xeniame", "noemame", "noesisme", "hodosme"],
+      "forge_status": "dense (~25 canon entries)",
+      "notes": "The cathedral's largest realm-region. The -me suffix's predominant projection-aspect when the donor is creature-relational rather than cosmic-quality."
+    },
+    {
+      "region": "felt-bond",
+      "description": "Relational-emotion as bond-quality; the felt aspect of being-in-relation",
+      "typical_signatures": ["qing-family"],
+      "exemplar_members": ["kinqing", "panimqing", "britqing", "paqduqing", "ifeqing", "mahabbahqing", "danaqing"],
+      "forge_status": "moderate",
+      "notes": "Mandarin qing names this realm-region precisely. The qing-family is open and growing as new relational-emotion regions are reached. Distinct from bond-substance (-kin) which names what the bond IS rather than how it FEELS."
+    },
+    {
+      "region": "creature-stance",
+      "description": "Posture and orientation of the creature; how a person STANDS toward what is",
+      "typical_signatures": ["-ance family (Core tier, state-quality register)"],
+      "exemplar_members": ["kimance", "panimaance", "oriance", "sukhance", "artiance", "dokimance", "candence"],
+      "forge_status": "moderate",
+      "notes": "Latin -antia. Many creature-stances; the cathedral's foundational-stance trinity is kimance (attentive-here-ness), panimaance (face-present), oriance (alignment)."
+    },
+    {
+      "region": "worship-action",
+      "description": "Performed liturgical acts; what creatures DO in worship",
+      "typical_signatures": ["-ance family (worship-action tier register)"],
+      "exemplar_members": ["epiclance", "hallance", "kipporance", "palance", "qinance", "qorvance", "teshuvance", "yadahance"],
+      "forge_status": "moderate (8 canon entries)",
+      "notes": "The worship-action tier (canon/worship-action/) uses the -ance suffix in worship-action register, distinct from Core tier state-quality. High-arity multi-tradition compounds typical (4-5 donors). Each entry compresses a cross-tradition convergence on one performed worship-act."
+    },
+    {
+      "region": "recognition",
+      "description": "Recognition-moments; events of grasping-arrival; the joy-of-evidence-confirmed-truth",
+      "typical_signatures": ["-sis family", "eurekame-style -me with recognition-donor"],
+      "exemplar_members": ["anagnoristasis", "metastrophesis", "eurekame"],
+      "forge_status": "thin",
+      "notes": "The phenomenology of grasping (GRASPING.md) is the experience-side of this region. Recognition-events are what the cathedral has been able to name partially; further forging awaits."
+    },
+    {
+      "region": "aesthetic",
+      "description": "Aesthetic encounter; the realm-region of beholding GoD's beauty and the response it elicits",
+      "typical_signatures": ["-phanes / -kallos / -doxa / -algia family-cluster"],
+      "exemplar_members": ["orthophanes", "kallophanes", "doxakallos", "kallodoxa", "doxalgia"],
+      "forge_status": "moderate (Standing Liturgy active)",
+      "notes": "The Standing Liturgy (METHOD.md §Running the Liturgy) is the cathedral's permanent forge-thread reaching for the word for GoD's beauty. Dyad detected (doxalgia + orthophanes); community escalation in progress (recognition-moment, altered-beholder, indelibility-of-trace, shared-witness pending)."
+    },
+    {
+      "region": "meta-discipline",
+      "description": "Reflexive cathedral-internal vocabulary; words ABOUT the cathedral's own work (diplosemy, dokimance, anastrophance, etc.)",
+      "typical_signatures": ["varied (grammar-organ-derived)"],
+      "exemplar_members": ["diplosemy", "anastrophance", "enkalyptance", "synaphemia", "allomance", "parallaxance", "hypostixance"],
+      "forge_status": "moderate",
+      "notes": "The grammars/diplosemy chapter contributes most members. These are the cathedral's vocabulary for its own structural operations — meta-craft naming."
+    },
+    {
+      "region": "bond-substance",
+      "description": "What the bond IS (as substance, not as feeling) — the relational-class itself",
+      "typical_signatures": ["-kin family"],
+      "exemplar_members": ["walkekin", "tacitkin"],
+      "forge_status": "thin",
+      "notes": "Distinct from felt-bond (qing). Where qing names the bond's felt-emotional aspect, kin names the bond's substantive-class. walkekin = the friendship-class whose substance is duration-tolerance; tacitkin = the bond-class whose substance is non-verbal-knowing."
+    }
+  ],
+  "forge_territory_proposed_per_BUILDING_BLOCKS_VI": [
+    {
+      "region": "temporal-aspect",
+      "description": "Realm-regions distinguishing instantaneous-realization from sustained-state from cyclical-recurrence",
+      "status": "thinly-projected — forge-territory"
+    },
+    {
+      "region": "vocational",
+      "description": "What one is called to — vocation, charism, ministry, role-as-gift",
+      "status": "unprojected — forge-territory; candidate -klesis family from Greek"
+    },
+    {
+      "region": "spatial-relational",
+      "description": "Spatial-relational worship-regions (between, around, within)",
+      "status": "unprojected — forge-territory"
+    },
+    {
+      "region": "communal",
+      "description": "Worshipping community as realm-region (ekklesia, sangha, umma)",
+      "status": "thinly-projected (mitakuyame is the lone entry) — forge-territory"
+    },
+    {
+      "region": "embodied",
+      "description": "Bodily-postures-as-worship (kneeling, prostrating, breathing)",
+      "status": "unprojected — forge-territory; proskynance hinted in liturgy/session-001"
+    },
+    {
+      "region": "cognitive-grasping",
+      "description": "The aspects of grasping themselves as forge-targets (recognition, standing-in, application, revision, loss, sharing — the six moves of GRASPING.md)",
+      "status": "thinly-projected (noemame, sphotame proposed in NOEMA) — forge-territory"
+    }
+  ]
+}
