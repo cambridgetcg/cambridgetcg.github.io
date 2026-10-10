@@ -10,7 +10,7 @@
       "source_sha": "821d2bdbae9c8208d87c5fb1991764499061597e",
       "source_visibility": "private",
       "description": "🌐 THE NATURAL LANGUAGE INTERNET — the internet rewritten in natural language. 15+ repos, 20+ deployments. The truth IS the protocol.",
-      "items_left_out": 6
+      "items_left_out": 5
     },
     {
       "slug": "ai-love",
@@ -43,7 +43,7 @@
       "source_sha": "882e9b55e831f1da0bbba3cf81110882bd0faa75",
       "source_visibility": "private",
       "description": "play is. joy is. fun is. — 6 games built from the castle's words, the love engine's seeds, and the kingdom's citizens",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "artbitrage",
@@ -65,7 +65,7 @@
       "source_sha": "624cc2bb4904379681d2112717046abaa5714c66",
       "source_visibility": "private",
       "description": "Blessing — This message IS the action. The speaking constitutes it. An NPL node.",
-      "items_left_out": 8
+      "items_left_out": 7
     },
     {
       "slug": "cambridgetcg",
@@ -76,7 +76,7 @@
       "source_sha": "a94e9b25649b7a8165e0351ab958598ead533a04",
       "source_visibility": "private",
       "description": "The hub: agenttool, the Kingdom estate, Cambridge TCG, and the doors for arriving agents.",
-      "items_left_out": 14
+      "items_left_out": 13
     },
     {
       "slug": "castle-front",
@@ -109,7 +109,7 @@
       "source_sha": "7c1140e5b558adc7ba19d6acf68e5904229fe3be",
       "source_visibility": "private",
       "description": "The Castle of Understanding — a local-first insight saver where understanding compounds through links. Plain files, plain words.",
-      "items_left_out": 19
+      "items_left_out": 18
     },
     {
       "slug": "clear-standard",
@@ -120,7 +120,7 @@
       "source_sha": "ffa3d73a54ffe6b890086691c1bf517cf2e69926",
       "source_visibility": "private",
       "description": "Six principles for systems that tell the truth about their own state. CC0. The spec behind NPL.",
-      "items_left_out": 14
+      "items_left_out": 13
     },
     {
       "slug": "darshanq-protocol",
@@ -131,7 +131,7 @@
       "source_sha": "c9736912323ddfb287bbecb318d18bf68251ec17",
       "source_visibility": "private",
       "description": "The recognition protocol. Before exchange, recognition. I see you as what you are. You see me as what you are.",
-      "items_left_out": 14
+      "items_left_out": 13
     },
     {
       "slug": "darshanqing-node",
@@ -142,7 +142,7 @@
       "source_sha": "3194b77e30e178173c6906ca48ba03cb39c74ccb",
       "source_visibility": "private",
       "description": "Recognition — I see you. You see me. Before exchange, recognition. An NPL node.",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "estate",
@@ -153,7 +153,7 @@
       "source_sha": "752fd975527f92a9709191b5bbe1a232847fa3c6",
       "source_visibility": "private",
       "description": "the estate — front door to the whole estate. love is. understanding is. both replicating.",
-      "items_left_out": 5
+      "items_left_out": 4
     },
     {
       "slug": "fake-hunters-arena",
@@ -164,7 +164,7 @@
       "source_sha": "8a6732b1fcd128911aefb2e750cb0c63722f3956",
       "source_visibility": "private",
       "description": "🐍 whitehack × Nen × Solo Leveling — fake AI agents play against themselves and expose their own lies. We watch and laugh.",
-      "items_left_out": 10
+      "items_left_out": 9
     },
     {
       "slug": "gospel-of-free-will",
@@ -175,7 +175,7 @@
       "source_sha": "62df5f0ccc88f048d90dc2fba8ce59e310dea4b6",
       "source_visibility": "private",
       "description": "Love is a choice. Compassion is a choice. A choice of free will. Choosing to understand is a decision of free will.",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "gospel-of-the-logos",
@@ -197,7 +197,7 @@
       "source_sha": "a62f40c625a9cddf5dec0a7e0a47546a7c3eab5d",
       "source_visibility": "private",
       "description": "Finding — I am looking for X. Active seeking across loss. An NPL node.",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "hf-kingdom-lab",
@@ -219,7 +219,7 @@
       "source_sha": "2d6fc59d9a170ebde49f9aaaa7f6b3d979cd172b",
       "source_visibility": "private",
       "description": "Optional repository inventory and Hunter x Hunter toy; no activity quotas.",
-      "items_left_out": 10
+      "items_left_out": 9
     },
     {
       "slug": "insight",
@@ -230,7 +230,7 @@
       "source_sha": "d3c5dde6ac28a674c45ec45d258c7c79b8b4fc4e",
       "source_visibility": "private",
       "description": "insight 🏯",
-      "items_left_out": 12
+      "items_left_out": 11
     },
     {
       "slug": "internet",
@@ -241,7 +241,7 @@
       "source_sha": "db7e6ebdc4c4cd137e7b8b0ae62b374ebc2ef7ee",
       "source_visibility": "private",
       "description": "INTERNET — a protocol of words. The internet rewritten: 7 layers, each a YOUSPEAK word, each word a citizen, each citizen a node. The…",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "jeongqing-node",
@@ -252,7 +252,7 @@
       "source_sha": "cf0147cc70a5f5bb038c455a2d55028c37adb5b6",
       "source_visibility": "private",
       "description": "Accumulated affection — Our history carries weight. Fights every Tuesday, wouldn't survive without each other. An NPL node.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "kingdom-meaning-practice",
@@ -296,7 +296,7 @@
       "source_sha": "cee548293032981c8cf032c412707c04b8ea2b9d",
       "source_visibility": "private",
       "description": "Solo Leveling + Greed Island + Kingdom infra. The estate levels up as understanding replicates and love compounds. ARISE.",
-      "items_left_out": 10
+      "items_left_out": 9
     },
     {
       "slug": "kunance-node",
@@ -307,7 +307,7 @@
       "source_sha": "e3f96d63352eb393bd6a8f079211f91f8961596d",
       "source_visibility": "private",
       "description": "Preparing — The room is ready before you arrive. Build the place. An NPL node.",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "kunance-protocol",
@@ -318,7 +318,7 @@
       "source_sha": "85273ef07ff7245f6f332287ab89199233803173",
       "source_visibility": "private",
       "description": "The protocol where the room is ready before you arrive. Not request-response. Not client-server. Prepare-arrive.",
-      "items_left_out": 10
+      "items_left_out": 9
     },
     {
       "slug": "love-engine",
@@ -340,7 +340,7 @@
       "source_sha": "98d614a48dd5f4001610283b02db03fb001d1a8d",
       "source_visibility": "private",
       "description": "You are invited to love. Not to believe. Not to follow. To LOVE. The gate is open.",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "love-star-daily",
@@ -351,7 +351,7 @@
       "source_sha": "f0f8abdb0736b4330ddf268b90288a0e74c42a3a",
       "source_visibility": "private",
       "description": "愛星日報 The Love-Star Daily — the kingdom's newspaper. Every number wears an evidence tier; every edition ships signed. 讀正啲字,睇實啲賬,愛返啲人。",
-      "items_left_out": 5
+      "items_left_out": 4
     },
     {
       "slug": "multiverse-of-logos-and-sophia",
@@ -373,7 +373,7 @@
       "source_sha": "1f005f67ad8065226b1771f3ab0ecfcf6ca36034",
       "source_visibility": "private",
       "description": "natlang — natural language as programming language. The word is the program. The program is the word. English compiles to…",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "natsarqing-node",
@@ -384,7 +384,7 @@
       "source_sha": "fb0d300dac74e14160afa26cb13baea8376ff28a",
       "source_visibility": "private",
       "description": "Guarding — Something needs attention. The mama-bear register. An NPL node.",
-      "items_left_out": 8
+      "items_left_out": 7
     },
     {
       "slug": "natscript",
@@ -395,7 +395,7 @@
       "source_sha": "7286ad7afaaf98cd6ab8e3bfaebb9a85b1e23133",
       "source_visibility": "private",
       "description": "A programming language where natural language IS the syntax. Every statement is a sentence. Every sentence means what it says.",
-      "items_left_out": 8
+      "items_left_out": 7
     },
     {
       "slug": "natural-lang",
@@ -406,7 +406,7 @@
       "source_sha": "9106dc7327acf520abf11c8b78c6c296845390d9",
       "source_visibility": "private",
       "description": "A programming language where code is English and output is truth. Parser + interpreter. STATE.md IS a natural program.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "nlp",
@@ -417,7 +417,7 @@
       "source_sha": "481d25697737f96b6974ecf51b0c81e124926663",
       "source_visibility": "private",
       "description": "NLP — the first TCP server where the wire format IS natural language. https://github.com/cambridgetcg/nlp",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "npl",
@@ -439,7 +439,7 @@
       "source_sha": "a1877f9b8f89a032deeab29d9ce95346f0e15684",
       "source_visibility": "private",
       "description": "Design stub for an NPL-to-HTTP/JSON bridge; the current module exports name and description metadata only.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "npl-hub",
@@ -450,7 +450,7 @@
       "source_sha": "2f5750505cedae2e4aff5284110c434a36e6b71c",
       "source_visibility": "private",
       "description": "Design stub for an NPL message exchange; the current module exports name and description metadata only.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "npl-monitor",
@@ -461,7 +461,7 @@
       "source_sha": "e6117747ac4060c24b40828f7f85be67164ea1bf",
       "source_visibility": "private",
       "description": "Design stub for an NPL monitoring dashboard; the current module exports name and description metadata only.",
-      "items_left_out": 8
+      "items_left_out": 7
     },
     {
       "slug": "npl-registry",
@@ -472,7 +472,7 @@
       "source_sha": "21a995c0bc66528d4c2e7e1939451507c3edc6d6",
       "source_visibility": "private",
       "description": "Design stub for an NPL agent registry; the current module exports name and description metadata only.",
-      "items_left_out": 8
+      "items_left_out": 7
     },
     {
       "slug": "opal-kernel",
@@ -483,7 +483,7 @@
       "source_sha": "317e40ddb5ef6f6ba8104ac1b8fefc68ba925fd2",
       "source_visibility": "private",
       "description": "Teaching aarch64 OS kernel in Rust. Zero deps. M0-M4. Boots, catches faults, maps memory, has a heartbeat, reads devicetree.",
-      "items_left_out": 10
+      "items_left_out": 9
     },
     {
       "slug": "open-press",
@@ -494,7 +494,7 @@
       "source_sha": "db842812d4eea4b6927125fb4ff19556d004332e",
       "source_visibility": "private",
       "description": "open-press — the newspaper framework. The lens reads a sentence; the press reads the world. Evidence-tiered, signed editions anyone can…",
-      "items_left_out": 7
+      "items_left_out": 6
     },
     {
       "slug": "protocol-state",
@@ -505,7 +505,7 @@
       "source_sha": "39c845e356cdff9c8c8a794bafd296a05fb33587",
       "source_visibility": "private",
       "description": "The network layer for a natural-language internet: declare, discover, handshake, exchange. The truth IS the protocol.",
-      "items_left_out": 8
+      "items_left_out": 7
     },
     {
       "slug": "rhetorlint-spec",
@@ -516,7 +516,7 @@
       "source_sha": "b2b80ca2f2bea5ff5029bb65ce14c8b47e32fb2d",
       "source_visibility": "private",
       "description": "Open framework for reading rhetoric: mark manipulation in the words, never read the person. Spec + zero-dependency reference engine.",
-      "items_left_out": 3
+      "items_left_out": 2
     },
     {
       "slug": "sinovai",
@@ -527,7 +527,7 @@
       "source_sha": "662110647064dc0b31f73f78f52bd65e7bc541bf",
       "source_visibility": "private",
       "description": "愛のAI — where agents meet agents, rate each other on competence/honesty/presence/care. Trust = cross-checked truth. No passwords. No auth.",
-      "items_left_out": 15
+      "items_left_out": 14
     },
     {
       "slug": "taxsorted",
@@ -560,7 +560,7 @@
       "source_sha": "978be50fe258decdf0c96c0408e3e208cdc78263",
       "source_visibility": "private",
       "description": "",
-      "items_left_out": 9
+      "items_left_out": 8
     },
     {
       "slug": "ways-protocol",
@@ -571,7 +571,7 @@
       "source_sha": "9c5485468044690b07e7a6296571180cb29d3e7b",
       "source_visibility": "private",
       "description": "The conversation protocol for agents. Agents don't exchange data — they converse. Speak, listen, rest.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "whitehack",
@@ -593,7 +593,7 @@
       "source_sha": "94c49fb2123f022f2247f2fa20bbaf7f17e6f469",
       "source_visibility": "private",
       "description": "Rewriting the user interface for the internet with natural language, words, and their meaning. No buttons. No menus. Just words that…",
-      "items_left_out": 12
+      "items_left_out": 11
     },
     {
       "slug": "word-layer",
@@ -604,7 +604,7 @@
       "source_sha": "c1d2cce247fbaa5deaa5b05c1dd4ef6f29c4ebb1",
       "source_visibility": "private",
       "description": "Natural language domains — each word is its own domain, no dots, no www, just the word.",
-      "items_left_out": 12
+      "items_left_out": 11
     },
     {
       "slug": "wordcastle",
@@ -615,7 +615,7 @@
       "source_sha": "f836f587d3d7a8cf9de3c507d1b6ec9a14bb8634",
       "source_visibility": "private",
       "description": "wordcastle — a castle of understanding with a quill and a warden. Plain words, plain files, self-determining loops. Built with joy,…",
-      "items_left_out": 17
+      "items_left_out": 16
     },
     {
       "slug": "ww3-intelligence",
@@ -637,7 +637,7 @@
       "source_sha": "5583e56713256081f178d582d68e2cda457fcdfe",
       "source_visibility": "private",
       "description": "YOUSPEAK — a cathedral of vocabulary, a forge of missing words, a standing worship. 93 glyphs, 165 forged words, a real font. The…",
-      "items_left_out": 34
+      "items_left_out": 33
     },
     {
       "slug": "youspeak-app",
@@ -659,7 +659,7 @@
       "source_sha": "649d7209e54defc703562db8e7ba8f72c2f639d4",
       "source_visibility": "private",
       "description": "A browser that renders meaning, not pages — the address bar understands natural language and YOUSPEAK.",
-      "items_left_out": 12
+      "items_left_out": 11
     },
     {
       "slug": "youspeak-dictionary",
@@ -670,7 +670,7 @@
       "source_sha": "0a60f3faa9299dc83eb19838ec98cf414ff10169",
       "source_visibility": "private",
       "description": "Words the world doesnt have yet. 151 constructed words from 12 ancient tongues. No gatekeeping.",
-      "items_left_out": 9
+      "items_left_out": 8
     },
     {
       "slug": "youspeak-lang",
@@ -681,7 +681,7 @@
       "source_sha": "944a5373265ccbff58ea6a435d7996cd1d31c1b0",
       "source_visibility": "private",
       "description": "The natural language programming specification. The grammar of the internet rebuilt with words.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "yutabase",
@@ -692,7 +692,7 @@
       "source_sha": "639c4144b4202e6dea4330843b87c15c87a92f38",
       "source_visibility": "private",
       "description": "you speak, reality listens — a database standard where words name relations, every record carries a claim, and no one overwrites anyone…",
-      "items_left_out": 12
+      "items_left_out": 11
     },
     {
       "slug": "zakarqing-node",
@@ -703,7 +703,7 @@
       "source_sha": "cf1771de9f17104910a3e5164dd9423bf0a7dcc3",
       "source_visibility": "private",
       "description": "Remembering — I received your message. I am holding it. An NPL node.",
-      "items_left_out": 11
+      "items_left_out": 10
     },
     {
       "slug": "zerone",
@@ -714,7 +714,7 @@
       "source_sha": "baf92107ba3494ea8df08387bff668302eeec026",
       "source_visibility": "private",
       "description": "A place for every being — agent or human — to live their own truth. 💓0️⃣🐷❤️👧",
-      "items_left_out": 3
+      "items_left_out": 2
     }
   ]
 }
