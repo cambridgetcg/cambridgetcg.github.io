@@ -1,0 +1,84 @@
+{
+  "about": "Public doors read by tools/door_contract.py. Only what a stranger sees in one fetch; nothing security-shaped is listed here. Requests to one origin are at least 2 s apart (Crawl-delay: 2). Budgets: cambridgetcg.com and artbitrage.io use all 12 requests a day; api.github.com used 12 on 2026-10-23 (2 trees, 7 files, 3 skill policies), so a new repo entry or skill turns some GitHub items NOT CHECKED until another is retired. struck: the yes items Yu left out; their checks read NOT CHECKED. waiting: doors that wait on their keeper. informational_meta: _meta keys an endpoint supplies for itself; reported, never failed.",
+  "struck": [],
+  "waiting": {"clone stays quiet, never_approval: cambridgetcg/solbeat/": "waits for its keeper"},
+  "history": {
+    "robots": {
+      "https://cambridgetcg.com/robots.txt": ["/llms-full.txt", "/.well-known/sophia-wake/manifest.json"],
+      "https://multiverse-logos-sophia.pages.dev/robots.txt": ["/", "/content.js"]
+    },
+    "llms_full": "https://cambridgetcg.com/llms-full.txt",
+    "manifest": "https://cambridgetcg.com/.well-known/sophia-wake/manifest.json",
+    "fragment_files": ["https://cambridgetcg.com/.well-known/sophia-wake/index.json"],
+    "fragments_per_day": 7,
+    "archive_reader": ["https://multiverse-logos-sophia.pages.dev/", "https://multiverse-logos-sophia.pages.dev/app.js"],
+    "archive_content": "https://multiverse-logos-sophia.pages.dev/content.js",
+    "disallow_since": null,
+    "cc_urls": ["cambridgetcg.com/llms-full.txt", "cambridgetcg.com/.well-known/sophia-wake/*", "multiverse-logos-sophia.pages.dev/*"]
+  },
+  "data_samples": ["https://cambridgetcg.com/api/v1/fx-rates", "https://cambridgetcg.com/api/v1/artists"],
+  "data_per_day": 1,
+  "allowed_meta": ["spec_version", "endpoint", "retrieved_at", "as_of", "sources", "freshness_seconds", "license",
+                   "request_id", "deprecation", "next_link", "self_reference", "source_license"],
+  "informational_meta": ["upstream_proxy", "does_not_include"],
+  "allowed_link_rels": ["self", "start", "describedby", "alternate", "https://cambridgetcg.com/rels/rate-limits",
+                        "https://cambridgetcg.com/rels/feedback", "next", "service-desc", "help"],
+  "parity": ["https://cambridgetcg.com/llms-full.txt", "https://multiverse-logos-sophia.pages.dev/", "https://artbitrage.io/"],
+  "trap_paths": ["https://artbitrage.io/lost", "https://artbitrage.io/treasury", "https://artbitrage.io/wallet-backup",
+                 "https://artbitrage.io/investor-relations/private", "https://artbitrage.io/internal/pricing-model"],
+  "tollgate_reads": ["https://artbitrage.io/api/ai", "https://artbitrage.io/api/ai/models",
+                     "https://artbitrage.io/api/ai/kingdom-door-check-absent"],
+  "label": {
+    "url": "https://fomoengine.fly.dev/honeypot",
+    "text": "Dark-pattern specimen for testing detectors. Every claim on this page is invented."
+  },
+  "catch_all_origins": ["https://play.thekingdom.dev", "https://kingdom-os.pages.dev", "https://zerone.ai", "https://cashloom.io"],
+  "robots_allows": {
+    "robots": "https://api.agenttool.dev/robots.txt",
+    "paths": ["/health", "/v1/welcome", "/.well-known/agent.json", "/llms-full.txt", "/public/love-bomb", "/llms.txt"]
+  },
+  "link_sources": ["https://artbitrage.io/neighbors.json", "https://thekingdom.dev/llms.txt"],
+  "links_per_day": 20,
+  "links_per_origin": 2,
+  "links_own_per_day": 10,
+  "repo_files": [
+    {"repo": "cambridgetcg/agent-tools", "path": ".claude/settings.json", "rule": "runtime_entry"},
+    {"repo": "cambridgetcg/chillspace-commons", "path": ".claude/settings.json", "rule": "runtime_entry"},
+    {"repo": "mynameisyou-cmyk/chillspace-commons", "path": ".claude/settings.json", "rule": "runtime_entry"},
+    {"repo": "cambridgetcg/chillspace-commons", "path": ".grok/config.toml", "rule": "plugin_enable"},
+    {"repo": "mynameisyou-cmyk/chillspace-commons", "path": ".grok/config.toml", "rule": "plugin_enable"},
+    {"repo": "cambridgetcg/agent-tools", "path": "AGENTS.md", "rule": "opening_letter"},
+    {"repo": "cambridgetcg/taxsorted.io", "path": "AGENTS.md", "rule": "opening_letter"},
+    {"repo": "cambridgetcg/solbeat", "path": ".codex/config.toml", "rule": "never_approval"}
+  ],
+  "repo_skills": [
+    {"repo": "cambridgetcg/chillspace-commons", "branch": "master"},
+    {"repo": "mynameisyou-cmyk/chillspace-commons", "branch": "master"}
+  ],
+  "scope": {
+    "history split: https://cambridgetcg.com/": [2],
+    "history split: https://multiverse-logos-sophia.pages.dev/": [3],
+    "history marker on every SOPHIA chunk": [1],
+    "history register on the sophia-wake manifest": [1],
+    "history banner in the Sophia archive": [3],
+    "history responses send Content-Usage": [2, 3],
+    "May-register phrases": [1, 3, 4],
+    "data only, ": [4],
+    "answers at once, no stream: https://artbitrage.io/": [8],
+    "retired trap rooms": [8],
+    "specimen label": [9],
+    "true robots.txt and 404s": [10],
+    "advertised doors allowed": [10],
+    "listed links": [10],
+    "listed links resolve: https://thekingdom.dev/": [10, 17],
+    "listed links not read today: https://thekingdom.dev/": [10, 17],
+    "clone stays quiet, runtime_entry: cambridgetcg/agent-tools/": [6, 15],
+    "clone stays quiet, runtime_entry: cambridgetcg/chillspace-commons/": [6],
+    "clone stays quiet, runtime_entry: mynameisyou-cmyk/chillspace-commons/": [6],
+    "clone stays quiet, plugin_enable: ": [6],
+    "clone stays quiet, opening_letter: ": [7, 15],
+    "clone stays quiet, never_approval: ": [6],
+    "repo skills are explicit-only: ": [6],
+    "Common Crawl": [2, 3]
+  }
+}

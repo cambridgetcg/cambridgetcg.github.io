@@ -45,4 +45,25 @@ the estate's other public sites. While any door is dark, one issue labelled
 `door-dark` stays open with the current report. It closes itself when every
 door answers again.
 
+## Door check
+
+After the knock, door-watch runs
+[tools/door_contract.py](tools/door_contract.py) over the public doors in
+[watch/contract.json](watch/contract.json). It checks, from outside, the
+promises those doors make: history marked as history and asked out of
+training, data responses that carry only data, the same bytes whatever name a
+caller wears, plain refusals instead of traps, true 404s, links that resolve,
+and public repositories whose clones run nothing on their own. Each item reads
+PASS, FAIL or NOT CHECKED, and the run summary opens with one dated line that
+says how long it stays valid. The step only reports: it never fails the job,
+opens no issue and commits nothing.
+
+It is the owner's monitor, not a crawler. It reads the household's own
+history paths on purpose, as their keeper, although robots.txt asks unnamed
+crawlers to stay out of them. It sends at most 12 requests to an origin a
+day, waits 2 s between requests to one origin (honouring `Crawl-delay: 2`),
+and names itself in its User-Agent. Its fixtures are in [tests/](tests/):
+
+    python3 -m unittest discover -s tests
+
 Each door keeps the license it was published under in its source repository.

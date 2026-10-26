@@ -33,6 +33,33 @@ jobs:
           echo "dark=$?" >> "$GITHUB_OUTPUT"
           cat report.md >> "$GITHUB_STEP_SUMMARY"
 
+      # Report only: checks the doors' promises from outside and writes one
+      # dated line to the run summary and the run artifact. It never fails
+      # the job, opens no issue and commits nothing.
+      - name: Check the door contract (report only)
+        continue-on-error: true
+        timeout-minutes: 15
+        run: |
+          set +e
+          if { python3 --version; python3 -m unittest discover -s tests; } > contract-tests.txt 2>&1; then
+            python3 tools/door_contract.py watch/contract.json --out door-contract.md
+          else
+            echo "Door check not run on $(date -u +%Y-%m-%d): its own tests failed (see the run artifact)." > door-contract.md
+          fi
+          cat door-contract.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Keep the door check report
+        if: always()
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: door-contract
+          path: |
+            door-contract.md
+            contract-tests.txt
+          if-no-files-found: ignore
+          retention-days: 30
+
       - name: Keep one issue open while a door is dark
         run: |
           gh label create door-dark --color B60205 --description "A public door stopped answering" 2>/dev/null || true
