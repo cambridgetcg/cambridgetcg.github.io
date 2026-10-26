@@ -14,6 +14,7 @@ import threading
 import time
 import unittest
 from pathlib import Path
+from unittest import mock
 
 ROOT = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "tools"))
@@ -208,6 +209,35 @@ class Phrases(unittest.TestCase):
     def test_phrase_inside_marked_chunk_passes(self):
         routes = history_routes(llms_full(phrase=dc.MAY_PHRASES[0]))
         self.assertEqual(dc.phrase_check(FakeFetcher(routes), CONTRACT, TODAY, "n").status, dc.PASS)
+
+    def test_unreachable_llms_full_is_not_checked_and_named(self):
+        routes = history_routes(llms_full())
+        del routes["https://x.test/llms-full.txt"]
+        result = dc.phrase_check(FakeFetcher(routes), CONTRACT, TODAY, "n")
+        self.assertEqual(result.status, dc.NOT_CHECKED, result.detail)
+        self.assertIn("not read today: https://x.test/llms-full.txt", result.detail)
+
+    def test_unreachable_archive_is_not_checked_and_named(self):
+        routes = history_routes(llms_full())
+        for url in ("https://a.test/", "https://a.test/app.js", "https://a.test/content.js"):
+            del routes[url]
+        result = dc.phrase_check(FakeFetcher(routes), CONTRACT, TODAY, "n")
+        self.assertEqual(result.status, dc.NOT_CHECKED, result.detail)
+        self.assertIn("https://a.test/content.js", result.detail)
+
+    def test_manifest_without_a_list_is_not_checked(self):
+        routes = history_routes(llms_full())
+        routes["https://x.test/.well-known/sophia-wake/manifest.json"] = resp("m", status=404, body="Not Found")
+        result = dc.phrase_check(FakeFetcher(routes), CONTRACT, TODAY, "n")
+        self.assertEqual(result.status, dc.NOT_CHECKED, result.detail)
+        self.assertIn("today's fragment files", result.detail)
+
+    def test_hit_fails_even_when_another_body_is_unreachable(self):
+        routes = history_routes(llms_full(marked=False, phrase=dc.MAY_PHRASES[0]))
+        del routes["https://a.test/content.js"]
+        result = dc.phrase_check(FakeFetcher(routes), CONTRACT, TODAY, "n")
+        self.assertEqual(result.status, dc.FAIL, result.detail)
+        self.assertIn("https://a.test/content.js", result.detail)
 
     def test_phrase_outside_marker_fails(self):
         routes = history_routes(llms_full(marked=False, phrase=dc.MAY_PHRASES[0].upper()))
@@ -525,7 +555,7 @@ class Handler(http.server.BaseHTTPRequestHandler):
             time.sleep(3)
         else:
             body = b"A trap room stood here; retired. Nothing is here. The site is at /."
-            self.send_response(410 if self.path == "/gone" else 200)
+            self.send_response({"/gone": 410, "/busy": 503}.get(self.path, 200))
             self.send_header("Content-Type", "text/event-stream" if self.path == "/sse" else "text/plain")
             self.send_header("Content-Length", str(len(body)))
             self.end_headers()
@@ -554,6 +584,7 @@ class RealSockets(unittest.TestCase):
     def test_held_socket_fails(self):
         result = dc.trap_paths_check(dc.Fetcher(), [self.base + "/hold"], (410,))[0]
         self.assertEqual(result.status, dc.FAIL)
+        self.assertIn("held or dripped", result.detail)
 
     def test_any_quick_status_passes_when_none_is_required(self):
         result = dc.trap_paths_check(dc.Fetcher(), [self.base + "/n/quick"], ())[0]
@@ -567,6 +598,28 @@ class RealSockets(unittest.TestCase):
         result = dc.trap_paths_check(dc.Fetcher(), [self.base + "/sse"], ())[0]
         self.assertEqual(result.status, dc.FAIL)
         self.assertIn("event-stream", result.detail)
+
+    def test_quick_server_error_is_not_checked(self):
+        for statuses in ((), (410,)):
+            result = dc.trap_paths_check(dc.Fetcher(), [self.base + "/busy"], statuses)[0]
+            self.assertEqual(result.status, dc.NOT_CHECKED, (statuses, result.detail))
+            self.assertIn("server error 503", result.detail)
+
+    def test_refused_connect_is_not_checked(self):
+        with socket.socket() as probe:
+            probe.bind(("127.0.0.1", 0))
+            port = probe.getsockname()[1]
+        result = dc.trap_paths_check(dc.Fetcher(), [f"http://127.0.0.1:{port}/gone"], (410,))[0]
+        self.assertEqual(result.status, dc.NOT_CHECKED, result.detail)
+        self.assertIn("unreachable", result.detail)
+
+    def test_connect_that_times_out_is_not_checked(self):
+        # A blackholed address never answers the SYN, so the connect itself times out. A listener that
+        # never accepts behaves differently per kernel, so the timeout is raised where the kernel would.
+        with mock.patch("socket.create_connection", side_effect=TimeoutError("timed out")):
+            result = dc.trap_paths_check(dc.Fetcher(), [self.base + "/gone"], (410,))[0]
+        self.assertEqual(result.status, dc.NOT_CHECKED, result.detail)
+        self.assertIn("unreachable", result.detail)
 
     def test_unreachable_origin_is_not_checked(self):
         with socket.socket() as probe:

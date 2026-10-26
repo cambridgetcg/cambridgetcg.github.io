@@ -118,6 +118,30 @@ class _NoRedirect(urllib.request.HTTPRedirectHandler):
         return None
 
 
+class _MarkConnected:
+    """Notes on the request once its connection (TCP, and TLS for https) is up, so a timeout
+    before that reads as an unreachable origin and only a timeout after it as a held socket."""
+
+    def do_open(self, http_class, req, **http_conn_args):
+        class Marked(http_class):
+            def connect(self):
+                super().connect()
+                req.door_check_connected = True
+        return super().do_open(Marked, req, **http_conn_args)
+
+
+class _HTTPHandler(_MarkConnected, urllib.request.HTTPHandler):
+    pass
+
+
+class _HTTPSHandler(_MarkConnected, urllib.request.HTTPSHandler):
+    pass
+
+
+def _timeout_kind(request):
+    return "timeout" if getattr(request, "door_check_connected", False) else "connect timeout"
+
+
 def origin_of(url):
     parts = urllib.parse.urlsplit(url)
     scheme, host = parts.scheme.lower(), (parts.hostname or "").lower()
@@ -142,7 +166,7 @@ class Fetcher:
         self.token, self.clock, self.timeout, self.budget = token, clock, timeout, budget
         self.gap, self.sleep, self.last = gap, sleep, {}
         self.counts, self.memo = {}, {}
-        self.opener = urllib.request.build_opener(_NoRedirect)
+        self.opener = urllib.request.build_opener(_NoRedirect, _HTTPHandler, _HTTPSHandler)
 
     def fetch(self, url, label=None, deadline=None, headers=None):
         key = (url, tuple(sorted((headers or {}).items())))
@@ -184,10 +208,10 @@ class Fetcher:
         except urllib.error.HTTPError as error:
             stream = error
         except urllib.error.URLError as error:
-            kind = "timeout" if isinstance(error.reason, (TimeoutError, socket.timeout)) else "unreachable"
+            kind = _timeout_kind(request) if isinstance(error.reason, (TimeoutError, socket.timeout)) else "unreachable"
             return Response(url, error=kind, elapsed=self.clock() - started)
         except (TimeoutError, socket.timeout):
-            return Response(url, error="timeout", elapsed=self.clock() - started)
+            return Response(url, error=_timeout_kind(request), elapsed=self.clock() - started)
         except OSError:
             return Response(url, error="unreachable", elapsed=self.clock() - started)
         try:
@@ -552,27 +576,43 @@ def phrase_hits(texts):
 
 
 def phrase_check(fetcher, contract, today, nonce):
+    """A hit reads FAIL whatever else was read. Without a hit, the item reads PASS only when
+    every body was read; any body that could not be read makes it NOT CHECKED, named."""
     name = "May-register phrases only inside history markers"
-    history, texts = contract["history"], []
+    history, texts, unread = contract["history"], [], []
+
+    def readable(label, response):
+        why = unavailable(response)
+        if why:
+            unread.append(f"{label} ({why})")
+        return why is None
+
     llms = fetcher.fetch(bust(history["llms_full"], nonce))
-    if not unavailable(llms):
+    if readable(history["llms_full"], llms):
         texts.append((history["llms_full"], outside_markers(llms.text())))
     reads = [(url, url) for url in todays_samples(contract, today)] + [(url, bust(url, nonce)) for url in history["robots"]]
     for url, target in reads:
         response = fetcher.fetch(target)
-        if not unavailable(response):
+        if readable(url, response):
             texts.append((url, response.text()))
-    for url, response in history_fragments(fetcher, history, today)[1]:
-        if not unavailable(response) and not is_history_json(response):
+    manifest, fragments, total = history_fragments(fetcher, history, today)
+    if readable(history["manifest"] + " and today's fragment files", manifest) and (manifest.status != 200 or not total):
+        unread.append(f"today's fragment files (the manifest gave no list, status {manifest.status})")
+    for url, response in fragments:
+        if readable(url, response) and not is_history_json(response):
             texts.append((url, response.text()))
     content = fetcher.fetch(history["archive_content"])
-    if not unavailable(content) and not marker_in(next((l for l in content.text().splitlines() if l.strip()), "")):
+    if readable(history["archive_content"], content) and not marker_in(
+            next((l for l in content.text().splitlines() if l.strip()), "")):
         texts.append((history["archive_content"], content.text()))
-    if not texts:
-        return Result(name, NOT_CHECKED, "nothing could be read")
+    gap = ""
+    if unread:
+        gap = "not read today: " + ", ".join(unread[:6]) + (f" and {len(unread) - 6} more" if len(unread) > 6 else "")
     hits = phrase_hits(texts)
     if hits:
-        return Result(name, FAIL, "; ".join(hits[:6]) + " (a reading item for Ai, not a verdict)")
+        return Result(name, FAIL, "; ".join(hits[:6]) + " (a reading item for Ai, not a verdict)" + (f"; {gap}" if gap else ""))
+    if unread:
+        return Result(name, NOT_CHECKED, f"no hit in {len(texts)} bodies read; {gap}")
     return Result(name, PASS, f"no hit in {len(texts)} bodies read")
 
 
@@ -660,10 +700,13 @@ def trap_paths_check(fetcher, urls, statuses, note=""):
     for url in urls:
         name = f"answers at once, no stream: {url}" + (f" ({note})" if note else "")
         response = fetcher.fetch(url, deadline=TRAP_SECONDS + 1)
-        if response.error in ("unreachable", "budget", "redirects") or edge_blocked(response) or rate_limited(response):
+        # "timeout" is a held socket (FAIL below); every other error, a connect timeout included, is unreachable.
+        if response.error not in (None, "timeout") or edge_blocked(response) or rate_limited(response):
             results.append(Result(name, NOT_CHECKED, unavailable(response)))
         elif response.error == "timeout" or response.cut or response.elapsed > TRAP_SECONDS:
             results.append(Result(name, FAIL, f"held or dripped: no complete answer within {TRAP_SECONDS:g} s"))
+        elif response.status >= 500:
+            results.append(Result(name, NOT_CHECKED, unavailable(response)))
         elif (response.header("content-type") or "").lower().startswith("text/event-stream"):
             results.append(Result(name, FAIL, "streams (text/event-stream)"))
         elif statuses and response.status not in statuses:
