@@ -204,6 +204,25 @@ class HistoryMarkers(unittest.TestCase):
         self.assertIn("1 of 3 fragment files read today; all 3 every 3 days", result.detail)
         self.assertIn("rests on the daily runs from 2026-10-31 to today", result.detail)
 
+    def test_the_span_starts_no_earlier_than_the_first_scheduled_run(self):
+        usage, base = {"Content-Usage": "train-ai=n"}, "https://x.test/.well-known/sophia-wake/"
+        marked = json.dumps({"register": "history", "note": MARK})
+        files = ["00-a.json", "01-b.json", "02-c.json", "03-d.json"]
+        manifest = {"register": "history", "note": MARK, "chunks": [{"href": "/.well-known/sophia-wake/" + f} for f in files]}
+        routes = history_routes(llms_full())
+        routes[base + "manifest.json"] = resp("m", body=json.dumps(manifest), headers=usage)
+        for f in files:
+            routes[base + f] = resp(f, body=marked, headers=usage)
+        history = {**HISTORY, "fragments_per_day": 1}
+        result = dc.history_marker_check(FakeFetcher(routes), history, datetime.date(2026, 10, 28), "n")[1]
+        self.assertEqual(result.status, dc.PASS, result.detail)
+        self.assertEqual(dc.FIRST_RUN, datetime.date(2026, 10, 27))
+        self.assertIn("rests on the daily runs from 2026-10-27 to today; the first full round ends 2026-10-30", result.detail)
+        self.assertNotIn("2026-10-25", result.detail)
+        later = dc.history_marker_check(FakeFetcher(routes), history, datetime.date(2026, 10, 31), "n")[1]
+        self.assertIn("rests on the daily runs from 2026-10-28 to today", later.detail)
+        self.assertNotIn("first full round", later.detail)
+
 
 class Phrases(unittest.TestCase):
     def test_phrase_inside_marked_chunk_passes(self):
@@ -486,6 +505,53 @@ class Links(unittest.TestCase):
                                "https://full.test/b": dc.Response("https://full.test/b", error="budget")})
         self.assertEqual(statuses(check_links(fetcher, "https://s.test/l.txt")), [dc.PASS, dc.NOT_CHECKED])
 
+    def test_an_unreachable_link_reads_not_checked_beside_the_judged_pass(self):
+        source = resp("s", body="https://ok.test/a https://down.test/b")
+        fetcher = FakeFetcher({"https://s.test/l.txt": source, "https://ok.test/a": resp("a", body="ok")})
+        results = check_links(fetcher, "https://s.test/l.txt")
+        self.assertEqual(statuses(results), [dc.PASS, dc.NOT_CHECKED])
+        self.assertEqual(results[0].name, "listed links resolve: https://s.test/l.txt")
+        self.assertIn("1 of 2 links judged today", results[0].detail)
+        self.assertNotIn("down.test", results[0].detail)
+        self.assertEqual(results[1].name, "listed links not reachable today: https://s.test/l.txt")
+        self.assertIn("https://down.test/b: unreachable (unreachable)", results[1].detail)
+
+    def test_only_unreachable_links_read_not_checked(self):
+        source = resp("s", body="https://down.test/a https://slow.test/b")
+        fetcher = FakeFetcher({"https://s.test/l.txt": source,
+                               "https://slow.test/b": dc.Response("https://slow.test/b", error="timeout")})
+        results = check_links(fetcher, "https://s.test/l.txt")
+        self.assertEqual(statuses(results), [dc.NOT_CHECKED])
+        self.assertEqual(results[0].name, "listed links not reachable today: https://s.test/l.txt")
+        self.assertIn("https://slow.test/b: no answer within the timeout", results[0].detail)
+
+    def test_a_dead_link_still_fails_beside_an_unreachable_one(self):
+        source = resp("s", body="https://dead.test/a https://busy.test/b")
+        fetcher = FakeFetcher({"https://s.test/l.txt": source, "https://dead.test/a": resp("d", status=404, body="x"),
+                               "https://busy.test/b": resp("b", status=503, body="busy")})
+        results = check_links(fetcher, "https://s.test/l.txt")
+        self.assertEqual(statuses(results), [dc.FAIL, dc.NOT_CHECKED])
+        self.assertIn("https://busy.test/b: server error 503", results[1].detail)
+
+    def test_a_foreign_sites_edge_is_named_as_that_sites_edge(self):
+        challenge = {"cf-mitigated": "challenge"}
+        source = resp("s", body="https://s.test/a https://far.test/b")
+        fetcher = FakeFetcher({"https://s.test/l.txt": source,
+                               "https://s.test/a": resp("a", status=403, body="x", headers=challenge),
+                               "https://far.test/b": resp("b", status=403, body="x", headers=challenge)})
+        detail = check_links(fetcher, "https://s.test/l.txt")[0].detail
+        self.assertIn("https://far.test/b: blocked at that site's edge", detail)
+        self.assertIn("https://s.test/a: blocked by our own edge", detail)
+        self.assertNotIn("https://far.test/b: blocked by our own edge", detail)
+
+    def test_the_unreachable_item_names_at_most_six_links(self):
+        down = [f"https://d{i}.test/x" for i in range(8)]
+        fetcher = FakeFetcher({"https://s.test/l.txt": resp("s", body=" ".join(down))})
+        detail = check_links(fetcher, "https://s.test/l.txt")[0].detail
+        self.assertEqual(sum(link in detail for link in down), 6)
+        self.assertIn("8 links", detail)
+        self.assertIn("2 more", detail)
+
     def test_rotation_reads_every_link_and_keeps_the_per_origin_cap(self):
         links = [f"https://s.test/p{i}" for i in range(25)] + [f"https://o{i % 7}.test/q{i}" for i in range(30)]
         for offset in range(40):
@@ -533,6 +599,45 @@ class CommonCrawl(unittest.TestCase):
 
     def test_unrecorded_disallow_date_is_not_checked(self):
         self.assertEqual(dc.cc_index_check(FakeFetcher({}), ["x.test/a"], None).status, dc.NOT_CHECKED)
+
+    def test_each_record_reads_by_its_own_date_and_a_null_record_is_not_checked(self):
+        history = {"cc_urls": ["x.test/llms-full.txt", "y.test/*", "z.test/*"],
+                   "disallow_since": {"x.test": "2026-10-25", "y.test": "2026-10-29", "z.test": None}}
+        capture = resp("c", body='{"timestamp": "20261028120000", "url": "https://x.test/llms-full.txt"}\n')
+        routes = {dc.CC_INFO: resp(dc.CC_INFO, body=json.dumps(self.INFO)),
+                  "https://cc.test/47?url=x.test/llms-full.txt&output=json&fl=timestamp,url": capture,
+                  "https://cc.test/47?url=y.test/*&output=json&fl=timestamp,url": capture}
+        fetcher = FakeFetcher(routes)
+        results = dc.cc_checks(fetcher, history)
+        name = "Common Crawl: no capture of the history URLs after the Disallow: "
+        self.assertEqual([(r.name, r.status) for r in results],
+                         [(name + "x.test", dc.FAIL), (name + "y.test", dc.PASS), (name + "z.test", dc.NOT_CHECKED)])
+        self.assertIn("2026-10-25", results[0].detail)
+        self.assertIn("2026-10-29", results[1].detail)
+        self.assertEqual(results[2].detail, "Disallow date not recorded in watch/contract.json yet")
+        self.assertFalse(any("z.test" in url for url, _ in fetcher.calls))
+
+    def test_run_with_cc_reads_both_history_records_from_the_real_contract(self):
+        contract = json.loads((ROOT / "watch" / "contract.json").read_text(encoding="utf-8"))
+        none = resp("c", status=404, body='{"message": "No Captures found"}')
+        routes = {dc.CC_INFO: resp(dc.CC_INFO, body=json.dumps(self.INFO))}
+        for url in contract["history"]["cc_urls"]:
+            routes[f"https://cc.test/47?url={url}&output=json&fl=timestamp,url"] = none
+        results = dc.run(contract, FakeFetcher(routes), datetime.date(2026, 11, 1), "n", cc=True)
+        cc = {r.name: r for r in results if r.name.startswith("Common Crawl")}
+        name = "Common Crawl: no capture of the history URLs after the Disallow: "
+        self.assertEqual(sorted(cc), [name + "cambridgetcg.com", name + "multiverse-logos-sophia.pages.dev"])
+        self.assertEqual(cc[name + "cambridgetcg.com"].status, dc.PASS)
+        self.assertIn("2026-10-24", cc[name + "cambridgetcg.com"].detail)
+        self.assertEqual(cc[name + "multiverse-logos-sophia.pages.dev"].status, dc.NOT_CHECKED)
+        self.assertEqual(cc[name + "multiverse-logos-sophia.pages.dev"].detail,
+                         "Disallow date not recorded in watch/contract.json yet")
+
+    def test_a_url_with_no_record_is_not_checked(self):
+        history = {"cc_urls": ["x.test/a", "w.test/b"], "disallow_since": {"x.test": None}}
+        results = dc.cc_checks(FakeFetcher({}), history)
+        self.assertEqual(statuses(results), [dc.NOT_CHECKED, dc.NOT_CHECKED])
+        self.assertIn("no Disallow record", results[1].detail)
 
 
 class Handler(http.server.BaseHTTPRequestHandler):
@@ -734,12 +839,42 @@ class Contract(unittest.TestCase):
         # thekingdom.dev's dead zerone.money link leaves the live site only with the hub release (item 17).
         names = ["listed links resolve: https://thekingdom.dev/llms.txt",
                  "listed links not read today: https://thekingdom.dev/llms.txt",
+                 "listed links not reachable today: https://thekingdom.dev/llms.txt",
                  "listed links resolve: https://artbitrage.io/neighbors.json"]
         results = [dc.Result(name, dc.FAIL, "dead") for name in names]
         scoped = dc.apply_scope(results, {**self.contract, "struck": [17]})
-        self.assertEqual(statuses(scoped), [dc.NOT_CHECKED, dc.NOT_CHECKED, dc.FAIL])
+        self.assertEqual(statuses(scoped), [dc.NOT_CHECKED, dc.NOT_CHECKED, dc.NOT_CHECKED, dc.FAIL])
         self.assertEqual(scoped[0].detail, "not in scope by Yu's choice (item 17)")
-        self.assertEqual(statuses(dc.apply_scope(results, {**self.contract, "struck": [10]})), [dc.NOT_CHECKED] * 3)
+        self.assertEqual(statuses(dc.apply_scope(results, {**self.contract, "struck": [10]})), [dc.NOT_CHECKED] * 4)
+
+    def test_each_history_record_carries_its_own_disallow_date(self):
+        h = self.contract["history"]
+        since = h["disallow_since"]
+        self.assertIsInstance(since, dict)
+        self.assertEqual(since["cambridgetcg.com"], "2026-10-24")
+        self.assertIn("multiverse-logos-sophia.pages.dev", since)
+        for record, date in since.items():
+            self.assertTrue(date is None or datetime.date.fromisoformat(date), record)
+        self.assertEqual({url.split("/", 1)[0] for url in h["cc_urls"]}, set(since))
+
+    def test_retired_domains_stay_knocked_under_a_retired_mark(self):
+        # Retired and still knocked: a watched domain shows any change.
+        estate = (ROOT / "watch" / "estate.txt").read_text(encoding="utf-8")
+        doors = (ROOT / "watch" / "doors.txt").read_text(encoding="utf-8")
+        self.assertTrue(doors.endswith("\n\n" + estate))
+        for text in (estate, doors):
+            lines = text.splitlines()
+            for host in ("zerone.money", "legible.money"):
+                knocked = [i for i, line in enumerate(lines) if line.startswith(f"https://{host}/ ")]
+                self.assertEqual(len(knocked), 1, host)
+                self.assertFalse([line for line in lines if line.lstrip("# ").startswith(f"https://{host}/") and line.startswith("#")], host)
+                above = lines[:knocked[0]]
+                start = max(i for i, line in enumerate(above) if line.startswith("#") and (i == 0 or not above[i - 1].startswith("#")))
+                mark = "\n".join(above[start:]).lower()
+                self.assertIn("retired on 2026-10-26", mark, host)
+                self.assertIn("still knocked", mark, host)
+                self.assertNotIn("not to be fixed", mark, host)
+                self.assertNotIn("until they are fixed", mark, host)
 
 
 class RetiredRooms(unittest.TestCase):
