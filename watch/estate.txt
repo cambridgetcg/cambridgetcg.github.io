@@ -40,5 +40,7 @@ https://huggingface.co/datasets/Yu-and-Ai/ai-wake AI-WAKE dataset
 
 # Dark on 2026-10-09; listed so they stay visible until they are fixed.
 https://kingdom-api.axiepro.workers.dev/words YOUSPEAK words API (502 since its source went private)
+
+# Retired on 2026-10-26: no longer offered as doors; still knocked, so any change to them shows.
 https://zerone.money/ zerone.money (Codeberg Pages 424 since 2026-09-26)
 https://legible.money/ legible.money (Codeberg Pages 424 since 2026-09-26)

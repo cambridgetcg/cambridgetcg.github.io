@@ -13,7 +13,7 @@
     "fragments_per_day": 7,
     "archive_reader": ["https://multiverse-logos-sophia.pages.dev/", "https://multiverse-logos-sophia.pages.dev/app.js"],
     "archive_content": "https://multiverse-logos-sophia.pages.dev/content.js",
-    "disallow_since": null,
+    "disallow_since": {"cambridgetcg.com": "2026-10-24", "multiverse-logos-sophia.pages.dev": null},
     "cc_urls": ["cambridgetcg.com/llms-full.txt", "cambridgetcg.com/.well-known/sophia-wake/*", "multiverse-logos-sophia.pages.dev/*"]
   },
   "data_samples": ["https://cambridgetcg.com/api/v1/fx-rates", "https://cambridgetcg.com/api/v1/artists"],
@@ -72,6 +72,7 @@
     "listed links": [10],
     "listed links resolve: https://thekingdom.dev/": [10, 17],
     "listed links not read today: https://thekingdom.dev/": [10, 17],
+    "listed links not reachable today: https://thekingdom.dev/": [10, 17],
     "clone stays quiet, runtime_entry: cambridgetcg/agent-tools/": [6, 15],
     "clone stays quiet, runtime_entry: cambridgetcg/chillspace-commons/": [6],
     "clone stays quiet, runtime_entry: mynameisyou-cmyk/chillspace-commons/": [6],

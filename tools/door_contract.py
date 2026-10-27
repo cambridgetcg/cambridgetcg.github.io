@@ -39,6 +39,8 @@ TIMEOUT = 10
 MAX_PER_ORIGIN = 12
 CRAWL_DELAY = 2.0
 VALID_DAYS = 3
+# The first scheduled run with this check: no daily run, and so no span of runs, starts earlier.
+FIRST_RUN = datetime.date(2026, 10, 27)
 TRAP_SECONDS = 1.0
 READ_CAP = 2_000_000
 PASS, FAIL, NOT_CHECKED = "PASS", "FAIL", "NOT CHECKED"
@@ -534,9 +536,11 @@ def history_marker_check(fetcher, history, today, nonce):
         headerless += [r.url for r in [manifest] + [r for _, r in fragments] if not content_usage_ok(r)]
         bare = [url for url, r in [(history["manifest"], manifest)] + fragments if not is_history_json(r)]
         every = -(-total // history["fragments_per_day"]) if total else 0
-        first = (today - datetime.timedelta(days=every - 1)).isoformat() if every > 1 else None
+        first = max(today - datetime.timedelta(days=every - 1), FIRST_RUN) if every > 1 else None
+        full = FIRST_RUN + datetime.timedelta(days=every - 1) if every > 1 else None
         detail = (f"manifest and {len(fragments)} of {total} fragment files read today; all {total} every {every} days"
-                  + (f", so for the whole set this line rests on the daily runs from {first} to today" if first else ""))
+                  + (f", so for the whole set this line rests on the daily runs from {first.isoformat()} to today" if first else "")
+                  + (f"; the first full round ends {full.isoformat()}" if first and today < full else ""))
         results.append(Result(name, FAIL, f"{len(bare)} unmarked, first: {bare[0]}") if bare else Result(name, PASS, detail))
     results.append(_archive_check(fetcher, history, nonce, headerless, tally))
     name = "history responses send Content-Usage: train-ai=n"
@@ -792,26 +796,35 @@ def links_check(fetcher, source, today, per_day, per_origin, own_per_day):
         return [Result(name, NOT_CHECKED, "the source lists no links")]
     own = origin_of(source)
     picked = link_plan(links, own, today.toordinal(), per_day, per_origin, own_per_day)
-    dead, deferred, unknown = [], [], 0
+    dead, deferred, unreachable = [], [], []
     for link in picked:
         answer = fetcher.fetch(link)
         if answer.error == "budget":
             deferred.append(link)
         elif unavailable(answer):
-            unknown += 1
+            # Another site's bot protection is its edge, not ours.
+            why = "blocked at that site's edge" if edge_blocked(answer) and origin_of(link) != own else unavailable(answer)
+            unreachable.append(f"{link}: {why}")
         elif answer.status >= 400 and answer.status != 405:  # 405: there, but not for GET
             dead.append(f"{link} ({answer.status})")
-    read = len(picked) - len(deferred)
+    judged = len(picked) - len(deferred) - len(unreachable)
     days = days_to_read_all(links, own, today, per_day, per_origin, own_per_day)
     span = (f"every listed link is read within {days} day{'s' if days > 1 else ''} of runs" if days
             else "some listed links do not come round within a year")
-    detail = f"{read} of {len(links)} links read today, {unknown} not reachable; {span}"
+    detail = f"{judged} of {len(links)} links judged today; {span}"
     if dead:
         results = [Result(name, FAIL, "dead: " + ", ".join(dead[:6]) + f"; {detail}")]
-    elif read == unknown:
-        results = [Result(name, NOT_CHECKED, detail)]
-    else:
+    elif judged:
         results = [Result(name, PASS, detail)]
+    elif unreachable:
+        results = []  # nothing was judged; the item below names what could not be read
+    else:
+        results = [Result(name, NOT_CHECKED, detail)]
+    if unreachable:
+        more = f"; {len(unreachable) - 6} more" if len(unreachable) > 6 else ""
+        results.append(Result(f"listed links not reachable today: {source}", NOT_CHECKED,
+                              f"{len(unreachable)} link{'s' if len(unreachable) > 1 else ''}: "
+                              + "; ".join(unreachable[:6]) + more))
     if deferred:
         origins = ", ".join(sorted({origin_of(link) for link in deferred}))
         results.append(Result(f"listed links not read today: {source}", NOT_CHECKED,
@@ -948,8 +961,28 @@ def github_checks(fetcher, contract):
 
 # ---------------------------------------------------------- Common Crawl
 
-def cc_index_check(fetcher, urls, since, crawls=2):
-    name = "Common Crawl: no capture of the history URLs after the Disallow"
+CC_NAME = "Common Crawl: no capture of the history URLs after the Disallow"
+
+
+def cc_checks(fetcher, history, crawls=2):
+    """One lookup per history record, each read by its own Disallow date. A record is a host:
+    history.disallow_since maps it to YYYY-MM-DD or null, and every cc_urls entry belongs to its host."""
+    since = history.get("disallow_since")
+    since = since if isinstance(since, dict) else {}
+    records = {}
+    for url in history.get("cc_urls", []):
+        records.setdefault(url.split("/", 1)[0], []).append(url)
+    results = []
+    for record, urls in records.items():
+        if record not in since:
+            results.append(Result(f"{CC_NAME}: {record}", NOT_CHECKED, "no Disallow record for this host in watch/contract.json"))
+        else:
+            results.append(cc_index_check(fetcher, urls, since[record], crawls, record))
+    return results
+
+
+def cc_index_check(fetcher, urls, since, crawls=2, record=None):
+    name = CC_NAME + (f": {record}" if record else "")
     if not since:
         return Result(name, NOT_CHECKED, "Disallow date not recorded in watch/contract.json yet")
     info = fetcher.fetch(CC_INFO)
@@ -1047,7 +1080,7 @@ def run(contract, fetcher, today, nonce, cc=False):
             fetcher, s, today, contract["links_per_day"], contract["links_per_origin"], contract["links_own_per_day"])]),
     ]
     if cc:
-        steps.append(("Common Crawl", lambda: [cc_index_check(fetcher, history["cc_urls"], history.get("disallow_since"))]))
+        steps.append(("Common Crawl", lambda: cc_checks(fetcher, history)))
     results = []
     for label, step in steps:
         try:
