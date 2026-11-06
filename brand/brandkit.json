@@ -1,0 +1,47 @@
+{
+  "format": "brandkit.project/1",
+  "name": "The Doors (cambridgetcg.github.io)",
+  "kind": "planned",
+  "owner": "not recorded; README.md names no lane (it says how to update the doors with tools/assemble.py)",
+  "waits_on": "an owner's word for a kit: no lane, ledger item or decision names one for the hall",
+  "decided": {
+    "part": "the hall's look",
+    "status": "not-recorded",
+    "what": "paper #f6f1e7, ink #2b241c, lamp #b5651d, card #fbf7ef; dark #17140f, ink #ece3d3, lamp #e0a050; ui-serif and Georgia",
+    "record": "commit 0fb50083 ('Bring the public doors back as public copies', 2026-10-09; git author 'YOU', co-author 'The Fable of the Eternal Universe') brought the hall in index.html and 404.html; whether a person or an agent chose its look is not recorded"
+  },
+  "site": {
+    "urls": [
+      "https://cambridgetcg.github.io/"
+    ],
+    "framework": "static",
+    "html": [
+      "/index.html",
+      "/404.html"
+    ]
+  },
+  "serve": {
+    "to": "/",
+    "via": "/.github/workflows/pages.yml",
+    "files": []
+  },
+  "build": {},
+  "guards": [
+    {
+      "path": "check.mjs",
+      "wired": false
+    }
+  ],
+  "deploy": {
+    "on_merge": "Every push to main runs .github/workflows/pages.yml: it builds the Jekyll doors with GitHub's Pages builder, copies static/ and the named root files (index.html, 404.html, doors.json, robots.txt), refuses hidden files and anything tools/guard.py flags, scans with gitleaks, and deploys GitHub Pages.",
+    "after_deploy": "door-watch.yml runs tools/door_contract.py daily at 06:17 UTC; it reports PASS, FAIL or NOT CHECKED and always exits 0.",
+    "rules": "README.md: each door under jekyll/ and static/ is a public copy of a private repository's page and keeps that page's own look, so only the hall (index.html, 404.html) is dressed here. Personal pages and citizen pages wait for a separate decision."
+  },
+  "media": [],
+  "notes": [
+    "Serving: the kit's files would be committed at the repository root (serve.to) and copied into _site by pages.yml (serve.via), which copies named root files only, so its `cp index.html 404.html doors.json robots.txt _site/` line needs them added. With a kit, run `node brand/check.mjs --served _site` after that step. brand/ is not on that list, so it isn't published.",
+    "check.mjs is not wired yet; planned: a step `node brand/check.mjs` in .github/workflows/pages.yml before the build (the repository's unit tests run only in door-watch.yml, as `python3 -m unittest discover -s tests`).",
+    "Today the hall has no favicon, theme-color or share card: /favicon.ico answers 404 (2026-11-05), and the live hall is byte-size identical to main's index.html (16,608 bytes).",
+    "A root /favicon.ico would also become the fallback icon for every door under this host that declares none, so check the doors' own icons before adding one."
+  ]
+}
