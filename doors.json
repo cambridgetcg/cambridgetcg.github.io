@@ -624,7 +624,7 @@
       "built_with": "static",
       "source_repo": "cambridgetcg/ww3-intelligence",
       "source_sha": "0b7a15ea7774b6eefb5afea3ab613ff7fd72c115",
-      "source_visibility": "private",
+      "source_visibility": "public",
       "description": "Evidence-first, local-first framework for bounded geopolitical observations and reviewable interpretations",
       "items_left_out": 3
     },

@@ -65,7 +65,8 @@ def main():
             "built_with": door["_kind"],
             "source_repo": door.get("source_repo"),
             "source_sha": door.get("source_sha"),
-            "source_visibility": "private",
+            # A source that became public again says so in its door.json.
+            "source_visibility": door.get("source_visibility", "private"),
             "description": descriptions.get(slug, ""),
             # Count what was left out without naming it: a file name or a
             # description of private material would publish what it describes.
