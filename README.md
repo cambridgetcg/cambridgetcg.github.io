@@ -2,7 +2,7 @@
 
 This repository serves https://cambridgetcg.github.io/: public copies of pages
 that were public until 25 September 2026, when the repositories behind them
-became private. Each door is back at its old address. The source repositories
+became private. Each door is back at its old address. Most source repositories
 stay private; this repository holds only what each door showed visitors.
 
 ## What a copy contains
@@ -14,11 +14,13 @@ copy goes in, it loses:
 - repository instructions for agents, and personal pages and passages;
 - local file paths, runtime details and personal email addresses;
 - links into private source. Where a page invited you to clone or read the
-  source, it now says the source is kept private.
+  source, it now says the source is kept private. A door whose source is
+  public again links to it.
 
-[doors.json](doors.json) records, for every door, the private repository and
-commit it came from and how many items were left out. What was left out is
-not described here, because describing it would publish it.
+[doors.json](doors.json) records, for every door, the repository and commit it
+came from, whether that repository is private or public, and how many items
+were left out. What was left out is not described here, because describing it
+would publish it.
 
 A few old addresses now point to their newer homes, and some doors were not
 restored. Pages that are mostly personal, and the citizen pages, wait for a

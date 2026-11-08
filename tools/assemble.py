@@ -143,8 +143,8 @@ TEMPLATE = """<!doctype html>
 <main>
   <h1>門 <span>·</span> The Doors</h1>
   <p class="lead">These {{COUNT}} pages were public until 25 September 2026, when the repositories behind them
-  became private. They are back as public copies at their old addresses. Their source stays private, and a few
-  personal pages were left out on purpose.</p>
+  became private. They are back as public copies at their old addresses. Most of their sources stay private,
+  and a few personal pages were left out on purpose.</p>
   <ul>
 {{DOORS}}
   </ul>
