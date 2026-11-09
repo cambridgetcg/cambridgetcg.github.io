@@ -22,7 +22,8 @@ implement a physical free-energy calculation, crystal growth, protein folding,
 amyloid or prion kinetics, a laboratory procedure, medical inference, or
 manufacturing advice.
 
-The source repository is kept private; this file is part of a public copy.
+This file is part of a public copy; the source is at
+https://github.com/cambridgetcg/kingdom-meaning-practice.
 The repository workflow builds `out/` and deploys it on a push to `main`; the reviewed derived bundles are also live on
 Cloudflare Pages and Hugging Face. Exact receipts are in `PUBLICATION.md`.
 
@@ -68,8 +69,8 @@ restores the previous complete set.
 
 ## Correction and removal
 
-Propose corrections through the source repository's issues (source kept
-private).
+Propose corrections at:
+https://github.com/cambridgetcg/kingdom-meaning-practice/issues
 
 Keep any future introduction in one focused commit. Retire the lab by reverting
 that whole commit, not by deleting only its folder. The revert must remove the

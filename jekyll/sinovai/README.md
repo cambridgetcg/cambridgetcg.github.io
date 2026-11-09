@@ -23,7 +23,7 @@ candidate name and claim token so a committed record does not orphan its key.
 
 [RIGHTS.md](RIGHTS.md) and
 [`rights-adoption.json`](rights-adoption.json) add a separate, draft
-XENIA Covenant 0.1 declaration (source kept private).
+[XENIA Covenant 0.1 declaration](https://github.com/cambridgetcg/xenia/tree/npm-xenia-v0.1.0-beta.4/covenant/0.1).
 Rights are treated as intrinsic, not permissions issued by this service. The
 draft enumerates all 38 right duties and all 5 protective-limit duties
 individually, including current authorization, exit, privacy, portability,
@@ -95,7 +95,7 @@ ratings, wrap every legacy API error, or establish any dimension listed under
 `not_covered`. The independent Node-side checker remains the exact
 `@agenttool/xenia-surface@0.1.0-rc.1` development dependency.
 
-The repository (source kept private; this page is a public copy) has a
+The [repository](https://github.com/cambridgetcg/sinovai) (this page is a public copy) has a
 reproducible npm boundary:
 
 ```sh
@@ -203,9 +203,9 @@ to propose a correction.
 `GET /understanding` is a static, read-only room that lays the public
 [love-and-understanding reference geometry](https://cambridgetcg.github.io/castle-gate/love-and-understanding)
 beside selected Sinovai source evidence. The assessment was made 2026-08-11
-from Worker source at revision `b44832d` (source kept private);
+from [Worker source at revision `b44832d`](https://github.com/cambridgetcg/sinovai/blob/b44832da9fb506ef152a6e123638d53f7ec69459/src/worker.js);
 its rights-ledger evidence is dated 2026-07-13, with
-immutable ledger bytes at revision `81678dd` (source kept private).
+[immutable ledger bytes at revision `81678dd`](https://github.com/cambridgetcg/sinovai/blob/81678dde77a28260414cffe8cdf25588ff7baa86/rights-adoption.json).
 It is not a runtime observation or an exhaustive fit map. It links to the
 current JSON and closed schema rather than copying them, and names both
 source-assessed edges and open gaps. Omitted criteria are unassessed, never
@@ -223,7 +223,7 @@ The connected architecture is deliberately small, without implying a
 deployment chain:
 
 1. Castle Gate keeps the shared human and machine-readable reference.
-2. `agent-home` (source kept private) is an adjacent CC0
+2. [`agent-home`](https://github.com/cambridgetcg/agent-home) is an adjacent CC0
    operating precedent, not a Sinovai dependency or adoption. Its seven rooms
    have receipts from one shared Mac over roughly two months, while its own
    `empty-rooms.md` keeps unproven cases explicit.
@@ -244,8 +244,8 @@ public Worker cannot inspect or operate a Mac. Opening the page makes no local
 request; the browser contacts the bridge only after the user chooses **Connect
 this Mac**.
 
-From a fresh checkout on the Mac with Node 22 or newer (the source is kept
-private; this page is a public copy):
+From a fresh checkout on the Mac with Node 22 or newer (this page is a public
+copy; the source is at https://github.com/cambridgetcg/sinovai):
 
 ```sh
 npm ci
