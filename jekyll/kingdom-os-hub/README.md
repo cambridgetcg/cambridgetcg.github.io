@@ -79,8 +79,8 @@ The card check makes no network request and writes nothing.
 
 ## Corrections
 
-The correction or removal route was public on GitHub and required an account;
-it is closed while the source is kept private. No accountless intake is presently
+The current [correction or removal route](https://github.com/cambridgetcg/kingdom-os-hub/issues/new)
+is public on GitHub and requires an account. No accountless intake is presently
 claimed. Later use should carry material corrections rather than silently
 leaving a superseded claim in circulation.
 

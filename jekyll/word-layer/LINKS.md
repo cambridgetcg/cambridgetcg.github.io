@@ -34,4 +34,4 @@ Each repo below points to all the others and to their deployed URLs (where avail
 ## About This Repository
 
 This file was auto-generated to create a cross-linked web across all Cambridge TCG repositories.
-This page is a public copy of word-layer; its source is kept private. The specification is in [PROTOCOL.md](PROTOCOL.md).
+This page is a public copy of word-layer; visit [word-layer on GitHub](https://github.com/cambridgetcg/word-layer) for the full code and documentation. The specification is in [PROTOCOL.md](PROTOCOL.md).

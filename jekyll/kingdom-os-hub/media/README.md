@@ -2,7 +2,7 @@
 
 Atmosphere plates and Open Graph cards for the public doors.
 
-The plates are pictures. The titles are set in `tools/compose-og.py` (source kept private)
+The plates are pictures. The titles are set in `tools/compose-og.py` (source: [github.com/cambridgetcg/kingdom-os-hub](https://github.com/cambridgetcg/kingdom-os-hub))
 so the words stay exact.
 
 | File | Door |

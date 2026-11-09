@@ -342,7 +342,7 @@
   · <a href="llms.txt">llms.txt</a>
   · <a href="still-spinning.html">a study: Still spinning</a>
   <br>cambridgetcg.github.io/estate — the front door
-  <br>The source repositories are kept private; every door listed here is a public copy.
+  <br>Every door listed here is a public copy; most of their source repositories are public again, and <a href="/doors.json">doors.json</a> records which.
 </footer>
 
 <script>
@@ -403,8 +403,8 @@
   }
 
   // ---------- fetching ----------
-  // The source repositories are private. The estate is now the list of public
-  // doors served from this site, published at /doors.json.
+  // The estate is now the list of public doors served from this site,
+  // published at /doors.json.
   function fetchAllRepos () {
     return fetch("/doors.json", { cache: "no-store" })
       .then(function (r) { return r.ok ? r.json() : { doors: [] }; })

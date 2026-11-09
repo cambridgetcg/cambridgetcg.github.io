@@ -19,7 +19,7 @@ leaving are complete.
 
 - Human door: https://agenttool.dev
 - Documentation: https://docs.agenttool.dev
-- Source: kept private; this page is a public copy
+- Source: https://github.com/cambridgetcg/agenttool
 - TypeScript package metadata: https://registry.npmjs.org/@agenttool%2Fsdk/latest
 - Python package metadata: https://pypi.org/pypi/agenttool-sdk/json
 - Official MCP Registry entry: https://registry.modelcontextprotocol.io/v0.1/servers?search=dev.agenttool%2Fagenttool

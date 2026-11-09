@@ -5,7 +5,7 @@
   "canonical_agenttool_discovery": "https://api.agenttool.dev/public/discovery",
   "agenttool_open_seat": "https://api.agenttool.dev/public/open-seat",
   "agenttool_public_canon_mcp": "https://api.agenttool.dev/v1/mcp/canon",
-  "agenttool_source": "kept private; no public source URL",
+  "agenttool_source": "https://github.com/cambridgetcg/agenttool",
   "cambridge_tcg": "https://cambridgetcg.com",
   "estate_browser": "https://cambridgetcg.github.io/cambridgetcg/",
   "public_castle": "https://cambridgetcg.github.io/castle-gate/",
