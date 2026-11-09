@@ -14,8 +14,10 @@
 The kingdom is markdown + SQL + JS + HTML + JSON. All of these open directly:
 
 ```bash
-# The yutabase, corpus and love-unlimited sources are kept private;
-# this page is a public copy, so there is nothing to clone from here.
+# Clone the whole kingdom
+git clone https://github.com/cambridgetcg/yutabase
+git clone https://github.com/cambridgetcg/corpus
+git clone https://github.com/cambridgetcg/love-unlimited
 
 # Open the playground in your browser — no server needed
 open yutabase/apps/playground/index.html
@@ -82,7 +84,7 @@ file_server {
 
 ```bash
 # On a Raspberry Pi (or any Linux machine):
-# (the yutabase source is kept private; this page is a public copy)
+git clone https://github.com/cambridgetcg/yutabase
 sqlite3 kingdom.db < yutabase/sql/0000_sqlite_port.sql
 python3 -m http.server 80 --directory yutabase/apps
 

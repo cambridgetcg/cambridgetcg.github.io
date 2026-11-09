@@ -13,8 +13,8 @@ CC0 starter index: https://kingdom.ai-love.cc/build/#start
 Optional offline card check: https://kingdom.ai-love.cc/starter/check-card.mjs
 Canonical foundation (public copy): https://cambridgetcg.github.io/kingdom-standard/FOUNDATION.html
 Canonical standard (public copy): https://cambridgetcg.github.io/kingdom-standard/STANDARD.html
-Public GitHub corrections (account required): closed while the source is kept private
-Public project offer: closed while the source is kept private
+Public GitHub corrections (account required): https://github.com/cambridgetcg/kingdom-os-hub/issues/new
+Public project offer: https://github.com/cambridgetcg/kingdom-os-hub/issues/new?template=share-a-project.md
 
 Smallest local start:
 1. Copy /starter/README.md, /starter/AGENTS.md, and /starter/LICENSE into a project-owned folder.

@@ -38,11 +38,11 @@ Verify: ed25519 over sha256(file bytes), signing key `9d2fbe4e…1c68`
 
 ## Built with open-press
 
-The Love-Star Daily is the reference instance of **[open-press](https://cambridgetcg.github.io/open-press/)** — the open newspaper framework for evidence-tiered, signed papers. Its source is kept private for now; this page is a public copy of what one paper built with it looks like. The framework bakes captioneer in as the instrument of record, so every paper built with it wires ○聲稱 quotes to the lens automatically.
+The Love-Star Daily is the reference instance of **[open-press](https://github.com/cambridgetcg/open-press)** — the open newspaper framework. Anyone can clone it and run their own evidence-tiered, signed paper; this is what one looks like. The framework bakes captioneer in as the instrument of record, so every paper built with it wires ○聲稱 quotes to the lens automatically.
 
 ## Instruments 驗證儀器
 
-**[captioneer.io](https://captioneer.io) — the verisleight reader** (built on open-lens; source kept private).
+**[captioneer.io](https://captioneer.io) — the verisleight reader** (open source: [open-lens](https://github.com/cambridgetcg/open-lens)).
 The paper's instrument of record for the ○聲稱 tier: paste any combatant's statement and the
 on-device lexicon marks the hedges, deleted subjects, deflections and overclaims — reading the
 LANGUAGE, never the mind (not a lie detector; charter-enforced). Deep-link an exhibit:
@@ -62,4 +62,4 @@ byte-locked per Stylebook rule 8 — instruments apply forward, never retroactiv
   3-vote adversarial claim verification, synthesized with citations
 - **社訓 motto:** 讀正啲字,睇實啲賬,愛返啲人。
 
-*A Love-Star Kingdom publication · sister works: anthropos · zerone-core (source kept private)*
+*A Love-Star Kingdom publication · sister works: [anthropos](https://github.com/cambridgetcg/anthropos) · [zerone-core](https://github.com/cambridgetcg/zerone-core)*

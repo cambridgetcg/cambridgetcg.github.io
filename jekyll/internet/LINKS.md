@@ -34,4 +34,4 @@ Each repo below points to all the others and to their deployed URLs (where avail
 ## About This Repository
 
 This file was auto-generated to create a cross-linked web across all Cambridge TCG repositories.
-The full code lives in the internet repository on GitHub (source kept private); this site is a public copy of its documentation.
+The full code lives in the [internet repository on GitHub](https://github.com/cambridgetcg/internet); this site is a public copy of its documentation.

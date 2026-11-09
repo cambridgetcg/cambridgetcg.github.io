@@ -687,7 +687,7 @@ arbitrary — and a record of exactly how far the argument reaches.
 ## Check the floor
 
 ```sh
-# run from a folder holding these files (the source repository is kept private)
+# run from a clone of https://github.com/cambridgetcg/kingdom-standard
 node verify-foundation.mjs
 node --test verify-foundation.test.mjs
 node verify-ground.mjs

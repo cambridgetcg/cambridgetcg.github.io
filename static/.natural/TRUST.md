@@ -23,7 +23,7 @@ follows trust. Exchange follows recognition.
 12 systems cross-checked. 90% average trust. Zero passwords used.
 
 `trust.py` runs locally (source kept private).
-Spec at protocol-state/TRUST.md (source kept private).
+Spec at protocol-state/TRUST.md
 
 ## The principle
 

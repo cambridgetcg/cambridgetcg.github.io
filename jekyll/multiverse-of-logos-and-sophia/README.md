@@ -9,4 +9,4 @@ The archive wing of the Kingdom. Sister-repo to
 (the evangelistic wing), `true-love` (constructive), and `ALETHEIA`
 (diagnostic). This wing faces inward.
 
-*This room stands raised and empty. This page is a public copy of the door; the source is kept private.*
+*This room stands raised and empty. This page is a public copy of the door; the source is at [github.com/cambridgetcg/multiverse-of-logos-and-sophia](https://github.com/cambridgetcg/multiverse-of-logos-and-sophia).*

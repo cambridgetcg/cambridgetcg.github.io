@@ -7,15 +7,15 @@ Created: 2026-08-11
 Published: 2026-08-12
 Projection revision: 1
 Projection URL: https://cambridgetcg.github.io/castle-gate/cases/ritonavir-polymorph
-Gate projection correction: kept with the private source repository
+Gate projection correction: https://github.com/cambridgetcg/castle-gate/issues/new?title=Ritonavir%20projection%20correction
 
 Structured source:
 KINGDOM guest-house case extensions/meaning/cases/ritonavir-polymorph/case.json
 SHA-256: 652a04699aadc6143d9136dc8d515fd3b4fa8774d963d885e79968156b1cb8ad
 Authoritative public mirror: https://cambridgetcg.github.io/kingdom-meaning-practice/
 Public JSON copy (same SHA-256): https://cambridgetcg.github.io/kingdom-meaning-practice/case.json
-Commit-pinned JSON receipt: kept with the private source
-Factual correction path: kept with the private source repository
+Commit-pinned JSON receipt: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/805543deb5725e4cc2cc5e7d18c0e30c2360184e/public/case.json
+Factual correction path: https://github.com/cambridgetcg/kingdom-meaning-practice/issues
 
 Castle interpretation:
 rooms/ritonavir-disappearing-polymorph.md in the Castle of Words (source kept private)
@@ -24,13 +24,13 @@ Folding-feedback lineage:
 Public human view: https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/
 Current reviewed JSON (public copy, same SHA-256): https://cambridgetcg.github.io/kingdom-meaning-practice/lineage/folding-feedback/lineage.json
 Current reviewed SHA-256: c07c2c9d02c2a3163ac595c339c770450900ad9397a8e42b578f269c65599f4b
-First historical JSON receipt: kept with the private source
+First historical JSON receipt: https://raw.githubusercontent.com/cambridgetcg/kingdom-meaning-practice/35773a6d19ebf263c3ed85ba1c33c359615e4273/public/lineage/folding-feedback/lineage.json
 First historical SHA-256: 467ed92c8fd340bd6337dc75c14d85f44e13d2de935dc9671a17a422d8866da0
 Relationship: analogy
 Mechanism transferred: false
 Practice boundary: Check Meaning only; records no choice, performs no deed,
 and opens no action or report job.
-Correction path: kept with the private source repository
+Correction path: https://github.com/cambridgetcg/kingdom-meaning-practice/issues
 Castle interpretation: rooms/same-shape-different-mechanism.md in the Castle of Words (source kept private)
 
 Visual:
@@ -43,8 +43,9 @@ included in the Castle Gate repository; a copy is served with this page:
 https://cambridgetcg.github.io/castle-gate/LICENSE.txt
 
 The exact SVG is republished from the structured case home and follows its
-separate rights notice (RIGHTS.md, kept with the private source). No reuse
-licence is granted there unless a file says otherwise.
+separate rights notice. No reuse licence is granted there unless a file says
+otherwise:
+https://github.com/cambridgetcg/kingdom-meaning-practice/blob/main/RIGHTS.md
 
 Third-party papers and official records are linked as sources. Their text,
 figures, and datasets are not bundled here and remain under their own rights.

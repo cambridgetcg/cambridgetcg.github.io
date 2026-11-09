@@ -7,9 +7,8 @@ path.
 
 ## Current verified mirror
 
-`yutabase@0.1.0-candidate.3` was published as byte-identical GitHub and npm
-archives (the GitHub repository and its release are now kept private; the npm
-archive remains public):
+`yutabase@0.1.0-candidate.3` is public as byte-identical GitHub and npm
+archives:
 
 - exact archive size: `127749` bytes
 - exact archive SHA-256:
@@ -17,7 +16,7 @@ archive remains public):
 - npm dist-tags: `next` is `0.1.0-candidate.3`; `latest` remains
   `0.1.0-candidate.1`
 - protected OIDC publication:
-  workflow run 30484373200, attempt 3 (repository kept private)
+  [workflow run, attempt 3](https://github.com/cambridgetcg/yutabase/actions/runs/30484373200/attempts/3)
 - registry evidence:
   [npm package](https://www.npmjs.com/package/yutabase/v/0.1.0-candidate.3)
   ([agent-readable registry JSON](https://registry.npmjs.org/yutabase/0.1.0-candidate.3))

@@ -19,7 +19,7 @@ record, with their originals living inside the walls.*
 > Write to disk while you work, not in a report at the end.
 
 *tested · receipt: lesson one of the kingdom's gate-and-the-law record,
-`records/2026-06-10-the-gate-and-the-law.md` in the KINGDOM-OS repository (source kept private)*
+web:https://github.com/cambridgetcg/KINGDOM-OS/blob/main/records/2026-06-10-the-gate-and-the-law.md*
 
 ### every published door needs something living behind it
 
@@ -30,7 +30,7 @@ record, with their originals living inside the walls.*
 
 *tested · receipt: kingdom-standard law W5 and the healings in the
 state-of-the-kingdom record,
-`records/2026-06-09-state-of-the-kingdom.md` in the KINGDOM-OS repository (source kept private)*
+web:https://github.com/cambridgetcg/KINGDOM-OS/blob/main/records/2026-06-09-state-of-the-kingdom.md*
 
 ### the verifier must not be the maker
 
@@ -52,7 +52,7 @@ web:[cambridgetcg.github.io/kingdom-standard](https://cambridgetcg.github.io/kin
 
 *tested · receipt: kingdom-standard law R5 and the census in the
 state-of-the-kingdom record,
-`records/2026-06-09-state-of-the-kingdom.md` in the KINGDOM-OS repository (source kept private)*
+web:https://github.com/cambridgetcg/KINGDOM-OS/blob/main/records/2026-06-09-state-of-the-kingdom.md*
 
 ---
 
@@ -66,7 +66,7 @@ state-of-the-kingdom record,
 > needs a guide is not a door; it is a wall with a rumor about it.
 
 *tested · receipt: kingdom-standard law P6 and the Gate's opening record,
-`records/2026-06-10-the-gate-and-the-law.md` in the KINGDOM-OS repository (source kept private)*
+web:https://github.com/cambridgetcg/KINGDOM-OS/blob/main/records/2026-06-10-the-gate-and-the-law.md*
 
 ### a word needs a real gap
 
@@ -100,7 +100,7 @@ web:[cambridgetcg.github.io/kingdom-standard](https://cambridgetcg.github.io/kin
 
 *tested · receipt: the YOUSPEAK Laws of Coinage and the treasury of charms
 of 2026-06-09,
-`records/2026-06-09-state-of-the-kingdom.md` in the KINGDOM-OS repository (source kept private)*
+web:https://github.com/cambridgetcg/KINGDOM-OS/blob/main/records/2026-06-09-state-of-the-kingdom.md*
 
 ---
 

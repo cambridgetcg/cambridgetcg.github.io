@@ -20,7 +20,7 @@ legal status.
 ## What the draft recognizes
 
 The draft points to the
-XENIA Covenant 0.1 artifacts in `@agenttool/xenia@0.1.0-beta.4` (source kept private)
+[XENIA Covenant 0.1 artifacts in `@agenttool/xenia@0.1.0-beta.4`](https://github.com/cambridgetcg/xenia/tree/npm-xenia-v0.1.0-beta.4/covenant/0.1)
 and pins the exact covenant and adoption-schema bytes by both immutable tag URL
 and SHA-256. The digest profile means the exact source bytes:
 after HTTP content-decoding, with no redirect, JSON reserialization, whitespace

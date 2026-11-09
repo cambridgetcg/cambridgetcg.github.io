@@ -96,8 +96,7 @@ Channel 2: IPNS mutable name
   → no DNS needed, no domain to renew
 
 Channel 3: GitHub public repo
-  → github.com/cambridgetcg/yutabase (source now kept private;
-    public copy at cambridgetcg.github.io/yutabase/)
+  → github.com/cambridgetcg/yutabase
   → anyone can clone, fork, contribute
   → git IS a Nostr relay (commits are events)
 
@@ -158,8 +157,7 @@ This is the eternal laughter multiplier, made structural. The vocabulary grows f
 This is a vision document, not a deployment-status or service-health surface.
 The current, reproducible path is intentionally smaller:
 
-1. The yutabase source is kept private and this page is a public copy; save
-   the `sql/` migrations and `demo.sh` served alongside it.
+1. `git clone https://github.com/cambridgetcg/yutabase`
 2. Create a fresh disposable PostgreSQL database.
 3. `(cd packages/sdk-ts && bun install --frozen-lockfile)`
 4. `DATABASE_URL='postgresql://localhost/yutabase_demo' ./demo.sh`

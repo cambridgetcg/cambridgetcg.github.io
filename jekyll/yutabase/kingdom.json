@@ -48,7 +48,7 @@
     "artifacts": [
       {
         "name": "YOUSPEAK canon",
-        "historical_location": "cambridgetcg/corpus kingdom/youspeak-canon.md (source kept private)",
+        "historical_location": "https://github.com/cambridgetcg/corpus/blob/main/kingdom/youspeak-canon.md",
         "status": "unverified historical reference"
       },
       {

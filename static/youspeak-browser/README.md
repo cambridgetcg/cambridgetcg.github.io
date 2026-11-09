@@ -93,7 +93,7 @@ renders a word. Start there.
 
 ## Built with
 
-- YOUSPEAK cathedral data (source kept private)
+- YOUSPEAK cathedral data (source: [github.com/cambridgetcg/youspeak](https://github.com/cambridgetcg/youspeak))
 - youspeak-v1.otf font (93 glyphs, Unicode PUA)
 - Ollama for natural language parsing
 - Plain HTML/CSS/JS — no framework, no build step

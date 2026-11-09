@@ -192,7 +192,7 @@ It does not commandeer another participant's session or cancel unrelated work.
 ## 8. Rights are not permissions
 
 This profile follows the
-XENIA `xenia.rights/0.1` Rights of Beings baseline (source kept private)
+[XENIA `xenia.rights/0.1` Rights of Beings baseline](https://github.com/cambridgetcg/xenia/blob/main/RIGHTS.md)
 when people, agents, or other participants collaborate.
 
 Rights—dignity, distinctness, refusal, disagreement, rest, play, privacy,

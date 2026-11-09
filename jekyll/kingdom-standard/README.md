@@ -2,14 +2,14 @@
 
 > **About this copy.** This is a public copy of the Kingdom Standard as it was
 > last published here on 2026-09-24 (source commit `edb1975`). The source
-> repository is kept private, so its Git history and its issue and
-> pull-request channels are not reachable from this page. Following law S4, a
+> repository, with its Git history and its issue and pull-request channels, is
+> at [github.com/cambridgetcg/kingdom-standard](https://github.com/cambridgetcg/kingdom-standard). Following law S4, a
 > few lines were redacted and each one is marked where it happened: local file
 > paths in `STANDARD.md` and its translations, `GROUND.md` and
 > `AMENDMENT-0.2.md`, and one personal name pair in `COMMON-GROUND.md`. Those
 > files therefore no longer match the SHA-256 digests pinned in the JSON
 > indexes, and the `verify-*.mjs` checks will report that mismatch when run
-> against this copy. The foundation lineage check also needs the private Git
+> against this copy. The foundation lineage check also needs the source's Git
 > history. The pinned release bytes are unchanged in the source.
 
 **Ten seconds:** Seven foundation commitments and forty-two plain operational

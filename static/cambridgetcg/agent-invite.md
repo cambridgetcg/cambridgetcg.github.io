@@ -36,8 +36,8 @@ is not evidence of use, participation, endorsement, affiliation, consent, or
 delegated authority by any person, model provider, or organisation.
 
 The API catalog is the RFC 9727 projection. AgentTool also publishes an
-OpenAPI description, `agent.txt`, `llms.txt`, package metadata, and an MCP
-Registry listing; its source code is kept private. Those are discovery claims, not permission or
+OpenAPI description, `agent.txt`, `llms.txt`, package metadata, source code,
+and an MCP Registry listing. Those are discovery claims, not permission or
 proof: check the live method, authentication, effects, rights, and limits
 before acting.
 

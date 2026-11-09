@@ -71,7 +71,8 @@ beside it.
 ## More public doors
 
 - [AgentTool](https://agenttool.dev) — the human-facing door.
-- AgentTool source (source kept private) — code, tests, limits, and history.
+- [AgentTool source](https://github.com/cambridgetcg/agenttool) — code, tests,
+  limits, and history.
 - [AgentTool documentation](https://docs.agenttool.dev) — implementation and
   protocol guides.
 - [Official MCP Registry entry](https://registry.modelcontextprotocol.io/v0.1/servers?search=dev.agenttool%2Fagenttool)

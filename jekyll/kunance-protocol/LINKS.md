@@ -34,4 +34,4 @@ Each repo below points to all the others and to their deployed URLs (where avail
 ## About This Repository
 
 This file was auto-generated to create a cross-linked web across all Cambridge TCG repositories.
-Visit [kunance-protocol](https://cambridgetcg.github.io/kunance-protocol/) for the documentation (source kept private).
+Visit [kunance-protocol on GitHub](https://github.com/cambridgetcg/kunance-protocol) for the full code and documentation.

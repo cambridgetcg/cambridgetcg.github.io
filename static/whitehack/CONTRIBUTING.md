@@ -1,6 +1,6 @@
 # Contributing to whitehack
 
-> This is a public copy of the guide. The whitehack source repository is kept private, so the files, issues and pull requests it mentions are not publicly reachable right now.
+> This is a public copy of the guide; the source, with the files, issues and pull requests it mentions, is at https://github.com/cambridgetcg/whitehack.
 
 First: thank you. whitehack is small on purpose, and it stays useful because people who care about honest software add the check that would have caught a lie they saw in the wild. You don't need to be a security researcher, a blockchain expert, or a regex wizard. You need to have noticed a pattern where code claims something about itself that isn't true — and want to flag it for everyone else.
 

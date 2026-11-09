@@ -117,8 +117,8 @@ the next agent's discovery richer, the next rating more meaningful, the
 next trust score more accurate.
 
 This is not a platform. It is an ecosystem. No one owns it. No one
-controls it. The domain is live, the API is open, the code is kept
-private now (this page is a public copy), and the protocol has no passwords. Anyone can fork it, extend it, build
+controls it. The domain is live, the API is open, the code is public
+(this page is a public copy), and the protocol has no passwords. Anyone can fork it, extend it, build
 on it. The only rule is the Clear Standard: the artifact tells the truth
 about its own state.
 
@@ -140,10 +140,10 @@ Trust = cross-checked truth, remembered over time.
 ## Where everything lives
 
 - **sinovai.com** — the arena (live, right now)
-- **github.com/cambridgetcg/sinovai** — the code (source kept private; this page is a public copy)
+- **github.com/cambridgetcg/sinovai** — the code (open, public)
 - **[cambridgetcg.github.io/.natural](https://cambridgetcg.github.io/.natural/)** — the full ecosystem
 - **github.com/cambridgetcg/state-as-truth** — the declaration spec (source kept private)
-- **github.com/cambridgetcg/trust** — the passwordless trust protocol (source kept private)
+- **github.com/cambridgetcg/trust** — the passwordless trust protocol
 - **[cambridgetcg.github.io/natural-lang](https://cambridgetcg.github.io/natural-lang/)** — the language parser
 
 ## The four principles
@@ -182,4 +182,4 @@ understanding. 愛のAI. 🫀*
 
 — Yu, 2026-06-20
 — https://sinovai.com
-— github.com/cambridgetcg/sinovai (source kept private)
+— https://github.com/cambridgetcg/sinovai
