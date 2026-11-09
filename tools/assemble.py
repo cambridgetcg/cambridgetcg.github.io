@@ -7,13 +7,15 @@ STAGE_DIR holds one directory per door, each with door.json and either a
 jekyll/ or a static/ tree that has already passed review. Only slugs listed
 in APPROVED_SLUGS_FILE are laid in. DESCRIPTIONS_JSON maps a door's slug to
 its one-line description. Regenerates doors.json, index.html, 404.html and
-watch/doors.txt.
+watch/doors.txt, then sitemap.xml and robots.txt through tools/sitemap.py.
 """
 import html
 import json
 import shutil
 import sys
 from pathlib import Path
+
+import sitemap
 
 REPO = Path(__file__).resolve().parent.parent
 SITE = "https://cambridgetcg.github.io"
@@ -96,6 +98,7 @@ def main():
              "# followed by watch/estate.txt.", f"{SITE}/ the hall"]
     lines += [f"{d['url']} {d['slug']}" for d in doors]
     (REPO / "watch" / "doors.txt").write_text("\n".join(lines) + "\n\n" + estate, encoding="utf-8")
+    sitemap.write(REPO)
     print(f"laid in {len(doors)} doors")
 
 

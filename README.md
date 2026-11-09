@@ -37,6 +37,18 @@ To update the doors, stage reviewed copies and run:
 
     python3 tools/assemble.py STAGE_DIR APPROVED_SLUGS_FILE DESCRIPTIONS_JSON
 
+The last step of that, [tools/sitemap.py](tools/sitemap.py), writes
+[sitemap.xml](sitemap.xml) and [robots.txt](robots.txt). The sitemap lists the
+hall and every door's front page, except doors that moved and front pages
+that point elsewhere (`rel="canonical"`, an instant refresh) or ask not to be
+indexed. A front page that refreshes at once to another page of its own door
+is listed by that page's address. robots.txt allows every crawler and
+names that sitemap, plus each door's own sitemap.xml when every address in it
+is a page of that door served here. Crawlers read robots.txt only at the root,
+so the robots.txt files inside doors are never consulted. After editing a copy
+by hand, run `python3 tools/sitemap.py`. With `--check` it writes nothing and
+exits 1 when either file is out of date; the build runs that as a warning only.
+
 ## Door watch
 
 [door-watch](.github/workflows/door-watch.yml) checks every door in

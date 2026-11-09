@@ -54,8 +54,13 @@ jobs:
         run: |
           set -euo pipefail
           [ -d static ] && cp -R static/. _site/
-          cp index.html 404.html doors.json robots.txt _site/
+          cp index.html 404.html doors.json robots.txt sitemap.xml _site/
           touch _site/.nojekyll
+
+      # Report only: a stale sitemap never holds back a deploy.
+      - name: Check sitemap.xml and robots.txt against the doors
+        run: |
+          python3 tools/sitemap.py --check || echo "::warning::sitemap.xml or robots.txt is out of date; run python3 tools/sitemap.py"
 
       - name: Refuse to publish what must stay private
         run: |
