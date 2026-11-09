@@ -57,6 +57,13 @@ def main():
     for kind in ("jekyll", "static"):
         (REPO / kind).mkdir(exist_ok=True)
 
+    # source_visibility is a recorded check, not a live one. Keep the last
+    # record for a door whose staged door.json does not state it.
+    recorded = {}
+    if (REPO / "doors.json").exists():
+        for old in json.loads((REPO / "doors.json").read_text(encoding="utf-8"))["doors"]:
+            recorded[old["slug"]] = old.get("source_visibility")
+
     doors = []
     for slug in sorted(approved, key=str.lower):
         door = lay_in(stage, slug)
@@ -67,7 +74,9 @@ def main():
             "built_with": door["_kind"],
             "source_repo": door.get("source_repo"),
             "source_sha": door.get("source_sha"),
-            "source_visibility": "private",
+            # A staged door.json that states it wins; a new door with no
+            # record is "private".
+            "source_visibility": door.get("source_visibility") or recorded.get(slug) or "private",
             "description": descriptions.get(slug, ""),
             # Count what was left out without naming it: a file name or a
             # description of private material would publish what it describes.
@@ -145,8 +154,9 @@ TEMPLATE = """<!doctype html>
 <main>
   <h1>門 <span>·</span> The Doors</h1>
   <p class="lead">These {{COUNT}} pages were public until 25 September 2026, when the repositories behind them
-  became private. They are back as public copies at their old addresses. Their source stays private, and a few
-  personal pages were left out on purpose.</p>
+  became private for a time. Most of those repositories are public again; doors.json records each one's
+  visibility as checked on 8 November 2026. The pages are back at their old addresses as public copies, each
+  still made from the commit recorded there, and a few personal pages were left out on purpose.</p>
   <ul>
 {{DOORS}}
   </ul>

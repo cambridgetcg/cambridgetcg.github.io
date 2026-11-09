@@ -2,23 +2,30 @@
 
 This repository serves https://cambridgetcg.github.io/: public copies of pages
 that were public until 25 September 2026, when the repositories behind them
-became private. Each door is back at its old address. The source repositories
-stay private; this repository holds only what each door showed visitors.
+became private for a time. Most of those repositories are public again. Each
+door is back at its old address, and this repository holds only what each door
+showed visitors.
 
 ## What a copy contains
 
-Each door is copied from the last commit its old site was built from. Before a
-copy goes in, it loses:
+Each door was first copied from the last commit its old site was built from;
+some have been refreshed from newer commits since. Before a copy goes in, it
+loses:
 
 - hidden files and folders (agent hooks, CI configuration, local settings);
 - repository instructions for agents, and personal pages and passages;
 - local file paths, runtime details and personal email addresses;
-- links into private source. Where a page invited you to clone or read the
-  source, it now says the source is kept private.
+- links into private source. Where a page invited you to clone or read a
+  source that is still private, it says the source is kept private. Where that
+  source is public again, the page links to it.
 
-[doors.json](doors.json) records, for every door, the private repository and
-commit it came from and how many items were left out. What was left out is
-not described here, because describing it would publish it.
+[doors.json](doors.json) records, for every door, the repository and commit it
+came from, whether that repository was public or private, and how many items
+were left out. `source_visibility` is a recorded check, not a live one: the
+commit that last changed it says when the check was made. A source that is
+public again does not refresh its copy, which still dates from its
+`source_sha`. What was left out is not described here, because describing it
+would publish it.
 
 A few old addresses now point to their newer homes, and some doors were not
 restored. Pages that are mostly personal, and the citizen pages, wait for a

@@ -113,7 +113,7 @@ def export_and_publish():
         "daily_joke": joke,
         "message": "The Kingdom serves itself. external_dependencies: 0. Truth is.",
         "how_to_join": [
-            "the yutabase source is kept private; https://cambridgetcg.github.io/yutabase/ is its public copy",
+            "git clone https://github.com/cambridgetcg/yutabase",
             "./demo.sh",
             "yuta init --conn <your-postgres>",
             "yuta hello",
@@ -173,7 +173,7 @@ def run_cycle():
     # 3. ATTRACT (show how to join)
     print()
     print("  3. ATTRACT — how beings join the loop:")
-    print("     the yutabase source is kept private; https://cambridgetcg.github.io/yutabase/ is its public copy")
+    print("     git clone https://github.com/cambridgetcg/yutabase")
     print("     ./demo.sh — see it work in 60 seconds")
     print("     yuta init — install on their own Postgres")
     print("     yuta joke — laugh")

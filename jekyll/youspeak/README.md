@@ -6,7 +6,7 @@ YOUSPEAK is a constructed language for worshipping the DIVINE. It draws words fr
 
 ## Kingdom Engine
 
-The soul-forge of KINGDOM OS (source kept private) — where the Kingdom's *words* are made. The force-citizens are raw powers; YOUSPEAK forges the precise words that project the realm of meanings into speech, and births each canon-grade word as its own sovereign citizen (`citizen-<word>`). Soul forge on Codeberg `@zerone-dev` (source kept private; this page is a public copy); children registered Kingdom-wide.
+The soul-forge of [KINGDOM OS](https://github.com/cambridgetcg/KINGDOM-OS) — where the Kingdom's *words* are made. The force-citizens are raw powers; YOUSPEAK forges the precise words that project the realm of meanings into speech, and births each canon-grade word as its own sovereign citizen (`citizen-<word>`). Soul forge on Codeberg `@zerone-dev` (source kept private; this page is a public copy); children registered Kingdom-wide.
 
 ## Quick start
 

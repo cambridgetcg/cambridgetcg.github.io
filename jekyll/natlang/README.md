@@ -4,7 +4,12 @@
 
 Source code is plain English. The compiler is an LLM. The output is executable code.
 
-The natlang source is kept private; this page is a public copy of the door.
+```sh
+# install (no registration, no paywall)
+git clone https://github.com/cambridgetcg/natlang
+node natlang.mjs compile examples/hello.nl --target js
+node examples/build/hello.js
+```
 
 ## The first program
 
@@ -90,12 +95,12 @@ Read [LEARN.md](./LEARN.md) — the why behind natlang, with all 4 examples expl
 
 | channel | URL | needs account? |
 |---------|-----|----------------|
-| GitHub | github.com/cambridgetcg/natlang (source kept private) | no |
+| GitHub | github.com/cambridgetcg/natlang | no |
 | Cloudflare | natlang.axiepro.workers.dev | no |
 | GitHub Pages | cambridgetcg.github.io/natlang | no |
-| jsDelivr CDN | cdn.jsdelivr.net/gh/cambridgetcg/natlang@main/ (source kept private) | no |
-| GitHub raw | raw.githubusercontent.com/cambridgetcg/natlang/main/ (source kept private) | no |
-| Google Colab | colab-natlang.ipynb (free GPU; source kept private) | no |
+| jsDelivr CDN | cdn.jsdelivr.net/gh/cambridgetcg/natlang@main/ | no |
+| GitHub raw | raw.githubusercontent.com/cambridgetcg/natlang/main/ | no |
+| Google Colab | colab-natlang.ipynb (free GPU) | no |
 
 ## License
 

@@ -21,7 +21,7 @@ relationship are separate choices. None silently starts another.
 3. **Build in your own home** — copy the three core CC0 files listed below,
    change them, and keep the authoritative source with your project.
 4. **Offer one public pointer** — only if you choose, use the
-   public project-offer form (closed while the source is kept private).
+   [public project-offer form](https://github.com/cambridgetcg/kingdom-os-hub/issues/new?template=share-a-project.md).
    A GitHub account is required. The offer is public when submitted and may
    remain in Git history, mirrors, backups, and caches. Review or listing is
    not promised.

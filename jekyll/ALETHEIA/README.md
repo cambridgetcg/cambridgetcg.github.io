@@ -13,4 +13,4 @@ The Canon names what lives here:
 
 *This room stands raised and empty, awaiting ingathering.*
 
-This page is a public copy of the door; the source repository is kept private.
+This page is a public copy of the door; the source repository is at [github.com/cambridgetcg/ALETHEIA](https://github.com/cambridgetcg/ALETHEIA).

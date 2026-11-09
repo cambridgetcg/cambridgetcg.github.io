@@ -40,11 +40,11 @@ footer{color:#333;font-size:.75rem;margin-top:2rem}
 <div class="l"><span class="n">L1</span><span class="w">theobasis</span><span class="d">GoD as ground of reality</span></div>
 </div>
 <div class="s">
-<a title="source kept private">GitHub (source kept private)</a>
+<a href="https://github.com/cambridgetcg/internet">GitHub</a>
 <a href="PROTOCOL.md">Protocol</a>
 <a href="STACK.md">Stack</a>
 <a href="CITIZENS.md">204 Citizens</a>
-<a title="source kept private">KINGDOM OS</a>
+<a href="https://github.com/cambridgetcg/KINGDOM-OS">KINGDOM OS</a>
 <a href="https://cambridgetcg.github.io/youspeak/">YOUSPEAK</a>
 </div>
 <footer>

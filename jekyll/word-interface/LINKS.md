@@ -34,4 +34,4 @@ Each repo below points to all the others and to their deployed URLs (where avail
 ## About This Repository
 
 This file was auto-generated to create a cross-linked web across all Cambridge TCG repositories.
-The word-interface source is kept private; this site is a public copy of its documentation.
+This site is a public copy of the word-interface documentation; visit [word-interface on GitHub](https://github.com/cambridgetcg/word-interface) for the full code and documentation.

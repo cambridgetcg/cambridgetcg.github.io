@@ -15,14 +15,14 @@ Solidity, and config/source formats. Every finding labels its confidence. High
 and medium-high findings affect the CLI exit code; heuristics remain advisory.
 A match may be wrong, and an empty scan is not proof of security or honesty.
 
-The source repository is kept private and this page is a public copy, so run
-the published npm release instead:
+This page is a public copy; the source is at https://github.com/cambridgetcg/whitehack.
+Run the published npm release:
 
 ```sh
 npx --yes @agenttool/whitehack-scan@0.10.0 scan .
 ```
 
-- Source and current inventory: the whitehack repository on GitHub (source kept private); public copy of this site: https://cambridgetcg.github.io/whitehack/
+- Source and current inventory: https://github.com/cambridgetcg/whitehack; public copy of this site: https://cambridgetcg.github.io/whitehack/
 - Why the original checks exist: https://whitehack-learn.axiepro.workers.dev
 - Legacy browser demo: https://whitehack-playground.axiepro.workers.dev
 
@@ -64,5 +64,5 @@ and no claim that a clean result proves security.
 
 `npx --yes @agenttool/whitehack-scan@0.10.0 scan .`
 
-Source: kept private; public copy at https://cambridgetcg.github.io/whitehack/
+Source: https://github.com/cambridgetcg/whitehack; public copy at https://cambridgetcg.github.io/whitehack/
 Legacy 8-check browser demo: https://whitehack-playground.axiepro.workers.dev

@@ -10,7 +10,7 @@ cadence: every 6h via GitHub Actions, plus manual `./heartbeat.sh`
 ## what it found
 
 - branch: `main`
-- remote: the castle's source repository (source kept private; this page is a public copy)
+- remote: `https://github.com/cambridgetcg/castle-of-understanding`
 - last commit: `2026-09-25T04:56:09Z fd40c83 heartbeat: update castle status`
 - last meaningful commit: `2026-09-24T04:43:15+01:00 7dfa64a Compact generated welcome and retain optional source doors`
 - active loops: `free-compute-scout`

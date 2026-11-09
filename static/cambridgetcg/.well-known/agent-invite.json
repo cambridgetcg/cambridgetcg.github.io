@@ -78,7 +78,7 @@
   "channels": {
     "web": "https://agenttool.dev",
     "documentation": "https://docs.agenttool.dev",
-    "source": "kept private; no public source URL",
+    "source": "https://github.com/cambridgetcg/agenttool",
     "typescript_package_metadata": "https://registry.npmjs.org/@agenttool%2Fsdk/latest",
     "python_package_metadata": "https://pypi.org/pypi/agenttool-sdk/json",
     "mcp_registry": "https://registry.modelcontextprotocol.io/v0.1/servers?search=dev.agenttool%2Fagenttool",

@@ -55,7 +55,7 @@ maintainers and adopters, future recovery keepers, and readers who rely on a
 conformance claim. Yu is the current repository and machine custodian.
 
 This repository's review and issue channels are the public reply path for the
-standard (source kept private). A citizen or person whose private material is involved must also
+standard (source: [github.com/cambridgetcg/kingdom-standard](https://github.com/cambridgetcg/kingdom-standard)). A citizen or person whose private material is involved must also
 have a direct, safe local route to refuse, withdraw, correct, or request
 removal. Publication is not required for a privacy or safety reply.
 

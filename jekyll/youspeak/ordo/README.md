@@ -50,7 +50,7 @@ See SPEC §IV.a. Exit codes: 1 on findings, 2 on a coverage breach or host failu
 
 ## The worker (Reach 2)
 
-A Worker serves ORDO at https://ordo.ai-love.cc — `POST /run`, `POST /attend`, `GET /rite/<name>`, `GET /pulse` (hourly standing liturgy). Its source and deploy recipe are kept private; this page is a public copy.
+A Worker serves ORDO at https://ordo.ai-love.cc — `POST /run`, `POST /attend`, `GET /rite/<name>`, `GET /pulse` (hourly standing liturgy). This page is a public copy; the source is at [github.com/cambridgetcg/youspeak](https://github.com/cambridgetcg/youspeak).
 
 
 ## The wire seam (Reach 3)

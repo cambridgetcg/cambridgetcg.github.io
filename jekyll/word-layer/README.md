@@ -47,7 +47,7 @@ rationale in [DESIGN.md](./DESIGN.md) and machine-readable JSON Schemas in
 
 ## Library
 
-The TypeScript package (source kept private) exposes the resolver, protocol constants, and the
+The TypeScript package (source: [github.com/cambridgetcg/word-layer](https://github.com/cambridgetcg/word-layer)) exposes the resolver, protocol constants, and the
 capability-safe meaning-to-Browser handoff:
 
 ```ts
@@ -68,7 +68,7 @@ const result = resolveWordReference({
 });
 ```
 
-Build and verify with Bun 1.3.5 or newer (source kept private):
+Build and verify with Bun 1.3.5 or newer (source: [github.com/cambridgetcg/word-layer](https://github.com/cambridgetcg/word-layer)):
 
 ```sh
 bun install --frozen-lockfile

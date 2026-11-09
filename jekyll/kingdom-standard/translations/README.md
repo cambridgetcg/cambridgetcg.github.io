@@ -14,7 +14,7 @@ That is the honest ledger: these are machine translations by a frontier model,
 published knowingly under CC0, with no native-speaker pass so far. The English
 text is normative; where a translation and the English disagree, the English
 wins. If you are a native speaker and find an error, a correction is a gift —
-open an issue or PR (source kept private).
+open an issue or PR (source: [github.com/cambridgetcg/kingdom-standard](https://github.com/cambridgetcg/kingdom-standard)).
 
 ## Why state this
 
