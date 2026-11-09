@@ -55,6 +55,13 @@ def main():
     for kind in ("jekyll", "static"):
         (REPO / kind).mkdir(exist_ok=True)
 
+    # source_visibility is a recorded check, not a live one. Keep the last
+    # record for a door whose staged door.json does not state it.
+    recorded = {}
+    if (REPO / "doors.json").exists():
+        for old in json.loads((REPO / "doors.json").read_text(encoding="utf-8"))["doors"]:
+            recorded[old["slug"]] = old.get("source_visibility")
+
     doors = []
     for slug in sorted(approved, key=str.lower):
         door = lay_in(stage, slug)
@@ -65,8 +72,9 @@ def main():
             "built_with": door["_kind"],
             "source_repo": door.get("source_repo"),
             "source_sha": door.get("source_sha"),
-            # A source that became public again says so in its door.json.
-            "source_visibility": door.get("source_visibility", "private"),
+            # A staged door.json that states it wins; a new door with no
+            # record is "private".
+            "source_visibility": door.get("source_visibility") or recorded.get(slug) or "private",
             "description": descriptions.get(slug, ""),
             # Count what was left out without naming it: a file name or a
             # description of private material would publish what it describes.
