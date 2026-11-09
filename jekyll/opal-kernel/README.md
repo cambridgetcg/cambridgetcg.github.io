@@ -45,13 +45,13 @@ else lives nearby.
 
 You need a Mac (or any host with QEMU) and rustup.
 
-The source repository is kept private; this page is a public copy of its
-files, and the steps below record how the kernel is built and run from its
-own tree.
+This page is a public copy of the kernel's files; the source is at
+[github.com/cambridgetcg/opal-kernel](https://github.com/cambridgetcg/opal-kernel),
+and the steps below record how the kernel is built and run from its own tree.
 
 ```sh
 brew install qemu        # provides qemu-system-aarch64
-cd opal                  # the kernel's source tree (source kept private)
+git clone <this repo> && cd opal
 cargo run                # that's it
 ```
 
