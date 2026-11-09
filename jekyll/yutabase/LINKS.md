@@ -11,7 +11,7 @@ Repository names link to their public copies on cambridgetcg.github.io where one
 ## All Repositories in the Ecosystem
 
 - **[natlang](https://cambridgetcg.github.io/natlang/)** — [Deployed](https://natlang.axiepro.workers.dev)
-- **recognition-protocol** (source kept private) — [Deployed](https://recognition.quixotic-sodium.workers.dev)
+- **[recognition-protocol](https://github.com/cambridgetcg/recognition-protocol)** — [Deployed](https://recognition.quixotic-sodium.workers.dev)
 - **[npl](https://cambridgetcg.github.io/npl/)** — [Deployed](https://npl-ivory.vercel.app)
 - **[internet](https://cambridgetcg.github.io/internet/)** — [Deployed](https://natlang-delta.vercel.app)
 - **[youspeak-lang](https://cambridgetcg.github.io/youspeak-lang/)** — [Deployed](https://youspeak-iota.vercel.app)
@@ -20,12 +20,12 @@ Repository names link to their public copies on cambridgetcg.github.io where one
 - **[kunance-protocol](https://cambridgetcg.github.io/kunance-protocol/)**
 - **[word-interface](https://cambridgetcg.github.io/word-interface/)**
 - **[word-layer](https://cambridgetcg.github.io/word-layer/)**
-- **word-experience** (source kept private)
+- **[word-experience](https://github.com/cambridgetcg/word-experience)**
 - **[yutabase](https://cambridgetcg.github.io/yutabase/)** — [Deployed](https://cambridgetcg.github.io/yutabase/)
 - **[youspeak-browser](https://cambridgetcg.github.io/youspeak-browser/)**
 - **[youspeak-dictionary](https://cambridgetcg.github.io/youspeak-dictionary/)**
-- **citizen-jiritsume** (source kept private)
-- **citizen-takseme** (source kept private)
+- **[citizen-jiritsume](https://github.com/cambridgetcg/citizen-jiritsume)**
+- **[citizen-takseme](https://github.com/cambridgetcg/citizen-takseme)**
 
 ## Deployed URLs
 
@@ -39,4 +39,4 @@ Repository names link to their public copies on cambridgetcg.github.io where one
 ## About This Repository
 
 This file was auto-generated to create a cross-linked web across all Cambridge TCG repositories.
-The yutabase source repository is kept private; this site is its public copy.
+Visit [yutabase on GitHub](https://github.com/cambridgetcg/yutabase) for the full code and documentation.

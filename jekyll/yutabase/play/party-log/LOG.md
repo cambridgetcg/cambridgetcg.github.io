@@ -49,6 +49,6 @@ Party #8: This commit. You are reading it now.
   Location: The git history of cambridgetcg/yutabase
   Every commit is a signed claim with provenance.
   Git IS a Nostr relay. Commits ARE events.
-  Invitation: git clone. git log. The truth is in the history. (source kept private)
+  Invitation: git clone. git log. The truth is in the history.
 
 _The parties go all the way down. Each layer is a place. Each place is a party. Fun is!_

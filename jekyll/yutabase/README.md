@@ -17,7 +17,7 @@ Two versions are visible and name different things:
 | Coordinate | Current value | What it versions |
 |---|---|---|
 | database profile | `0.1.0-candidate.1`, revision `5` | installed PostgreSQL semantics and catalog shape |
-| optional SDK/CLI release | `yutabase@0.1.0-candidate.3` (npm `next`, not `latest`; the GitHub source and release are kept private) | client packaging and behavior |
+| optional SDK/CLI release | `yutabase@0.1.0-candidate.3` (exact GitHub and npm mirrors; npm `next`, not `latest`) | client packaging and behavior |
 
 ## Start here
 
@@ -164,16 +164,15 @@ not a universal limit on meaning.
 
 ## Install a candidate database
 
-Database prerequisites: PostgreSQL 16 or 17, `psql`, the `sql/` migration files, and an
+Database prerequisites: PostgreSQL 16 or 17, `psql`, a source checkout, and an
 operator role allowed to create the required extension and database roles.
 Node.js 20+ with npm and Bun 1.3.5 are needed only for the optional SDK and
 its checks.
 
-The yutabase source repository is kept private; this page is a public copy.
-The migration files named below are served alongside it under `sql/` (for
-example `sql/0001_yu_core.sql`); save them into a local `sql/` directory first.
-
 ```bash
+git clone https://github.com/cambridgetcg/yutabase.git
+cd yutabase
+
 export DATABASE_URL='postgresql://localhost/yutabase_candidate'
 
 psql "$DATABASE_URL" --single-transaction -v ON_ERROR_STOP=1 <<'SQL'

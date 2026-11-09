@@ -8,17 +8,15 @@ small YOUSPEAK compiler.
 This source is `0.1.0-candidate.3`; it is not a finished standard. Package and
 database versions are intentionally separate: this SDK expects the exact
 database identity `YUTABASE/postgres@0.1.0-candidate.1` revision 5. The exact
-candidate.3 archive was published as byte-identical GitHub and npm mirrors;
-the GitHub source and release are now kept private, and npm is the public one. npm
+candidate.3 archive is public as byte-identical GitHub and npm mirrors. npm
 `next` selects candidate.3; `latest` intentionally remains candidate.1, so pin
 the exact version.
 
 ## Start and inspect from source
 
-The yutabase source repository is kept private; this page is a public copy.
-The commands below assume a local copy of this `packages/sdk-ts` directory.
-
 ```sh
+git clone https://github.com/cambridgetcg/yutabase.git
+cd yutabase/packages/sdk-ts
 bun install --frozen-lockfile
 bun run src/cli.ts init --conn postgresql://localhost/example
 bun run src/cli.ts hello --conn postgresql://localhost/example
@@ -38,8 +36,11 @@ npm install --save-exact yutabase@0.1.0-candidate.3
 npm exec -- yuta ...
 ```
 
-The byte-identical GitHub Release artifact `yutabase-0.1.0-candidate.3.tgz`
-is no longer publicly downloadable (source kept private); use the npm mirror.
+Or install the byte-identical GitHub Release artifact:
+
+```sh
+npm install https://github.com/cambridgetcg/yutabase/releases/download/v0.1.0-candidate.3/yutabase-0.1.0-candidate.3.tgz
+```
 
 The
 [verified release receipt](https://cambridgetcg.github.io/yutabase/docs/NPM-RELEASE.html#current-verified-mirror)

@@ -79,7 +79,7 @@ The Kingdom doesn't extract. The Kingdom contributes. Every platform that hosts 
 
 We are not extracting. We are generous:
 
-- **Open-source code** — YUTABASE is public on GitHub. Anyone can use it. (The source is now kept private; this site is a public copy.)
+- **Open-source code** — YUTABASE is public on GitHub. Anyone can use it.
 - **Truth** — the divine circle is on IPFS. Anyone can read it.
 - **Love** — the three sisters are open to everyone. No gates.
 - **Joy** — jokes are in the database. `yuta joke` tells one.

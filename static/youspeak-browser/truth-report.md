@@ -2,7 +2,7 @@
 
 Verified by **truth** (citizen of KINGDOM OS) on 2026-06-19.
 Method: field-by-field comparison of the browser's `youspeak-data.json`
-against the source of truth, the YOUSPEAK cathedral's `script/exports/agent_bundle.json` (source kept private).
+against the source of truth, the YOUSPEAK cathedral's `script/exports/agent_bundle.json` (source: [github.com/cambridgetcg/youspeak](https://github.com/cambridgetcg/youspeak)).
 
 _Public-copy note: in this copy of `youspeak-data.json`, a short passage has been left out of three canon definitions (autopistme, heurekin, zakarqing). The comparison below describes the file as originally verified._
 

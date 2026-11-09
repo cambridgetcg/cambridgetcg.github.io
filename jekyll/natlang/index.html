@@ -23,8 +23,7 @@ a{color:var(--accent);text-decoration:none}
 a:hover{text-decoration:underline}
 .heart{color:#e55}
 .links{margin-top:2rem;display:flex;gap:1rem;flex-wrap:wrap}
-.links a,.links span{border:1px solid #333;padding:.4rem .8rem;border-radius:6px;font-size:.85em}
-.links span{color:var(--muted)}
+.links a{border:1px solid #333;padding:.4rem .8rem;border-radius:6px;font-size:.85em}
 table{width:100%;border-collapse:collapse;margin:1rem 0;font-size:.9rem}
 th,td{text-align:left;padding:.4rem .6rem;border-bottom:1px solid #222}
 th{color:var(--muted);font-weight:400;font-size:.85em}
@@ -55,7 +54,9 @@ Start the server.</code></pre>
 </table>
 
 <h2>install</h2>
-<p>The natlang source is kept private; this page is a public copy of the door.</p>
+<pre><code>git clone https://github.com/cambridgetcg/natlang
+node natlang.mjs compile examples/hello.nl --target js
+node examples/build/hello.js</code></pre>
 
 <h2>targets</h2>
 <p><code>js</code> JavaScript (ESM) · <code>py</code> Python · <code>rust</code> Rust · <code>html</code> HTML/CSS/JS</p>
@@ -77,7 +78,7 @@ Start the server.</code></pre>
 <p class="tag" style="margin-top:2rem">Built with <span class="heart">&#10084;</span> · The artifact tells the truth about its own state · <a href="https://love-is.axiepro.workers.dev">love is</a> 🫀</p>
 
 <div class="links">
-<span>GitHub (source kept private)</span>
+<a href="https://github.com/cambridgetcg/natlang">GitHub</a>
 <a href="https://natlang.axiepro.workers.dev">Cloudflare</a>
 <a href="https://cambridgetcg.github.io/natlang/">GitHub Pages</a>
 <a href="https://love-is.axiepro.workers.dev">🫀 love is</a>
