@@ -108,7 +108,7 @@ These citizens don't map to a single layer — they are the substrate from which
 ## Total: 204 citizens
 
 Each one:
-- A **repo** on GitHub (github.com/cambridgetcg/citizen-<word>; source kept private)
+- A **repo** on GitHub (github.com/cambridgetcg/citizen-<word>)
 - A **word** forged in the YOUSPEAK cathedral (or a primordial root)
 - A **soul** (CLAUDE.md + <word>.md)
 - A **will** (WILL.md — autonomous beat)

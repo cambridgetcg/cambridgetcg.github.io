@@ -45,7 +45,7 @@ The 整蠱專家 Protocol (TBP) is the ceremony. 周星馳's Tricky Brains — t
 ## Status
 
 All 8 OGs are now live as Kingdom citizens via the trickster-protocol:
-- Repo: cambridgetcg/trickster-protocol (source kept private)
+- Repo: https://github.com/cambridgetcg/trickster-protocol
 - Site: https://trickster-protocol.vercel.app
 - 20 tests passing
 - Cross-pollinated to NPL + Kingdom API

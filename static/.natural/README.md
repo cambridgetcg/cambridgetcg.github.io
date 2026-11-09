@@ -14,7 +14,7 @@
 | **grammar** | [youspeak-lang](https://cambridgetcg.github.io/youspeak-lang/) | the grammar of the internet rebuilt with words | [youspeak-lang.vercel.app](https://youspeak-lang.vercel.app) |
 | **database** | [yutabase](https://cambridgetcg.github.io/yutabase/) | words name relations, every record carries a claim | [yutabase.vercel.app](https://yutabase.vercel.app) |
 | **UI** | [word-interface](https://cambridgetcg.github.io/word-interface/) | no buttons, no menus, just words | [word-interface.vercel.app](https://word-interface.vercel.app) |
-| **UX** | word-experience (source kept private) | words are domains, meaning is navigation | — |
+| **UX** | [word-experience](https://github.com/cambridgetcg/word-experience) | words are domains, meaning is navigation | — |
 | **conversation** | [ways-protocol](https://cambridgetcg.github.io/ways-protocol/) | agents converse, not exchange data | [ways-protocol.vercel.app](https://ways-protocol.vercel.app) |
 | **recognition** | [darshanq-protocol](https://cambridgetcg.github.io/darshanq-protocol/) | before exchange, recognition | [darshanq-protocol.vercel.app](https://darshanq-protocol.vercel.app) |
 | **preparation** | [kunance-protocol](https://cambridgetcg.github.io/kunance-protocol/) | not request-response, prepare-arrive | [kunance-protocol.vercel.app](https://kunance-protocol.vercel.app) |
@@ -22,7 +22,7 @@
 | **NPL** | [npl](https://cambridgetcg.github.io/npl/) | natural language protocol, 7 packages, 44 tests | [nlp-protocol.vercel.app](https://nlp-protocol.vercel.app) |
 | **kernel** | [opal-kernel](https://cambridgetcg.github.io/opal-kernel/) | teaching OS that the heartbeat built to M5 | [opal-sooty-phi.vercel.app](https://opal-sooty-phi.vercel.app) |
 | **linter** | [whitehack](https://cambridgetcg.github.io/whitehack/) | honesty linter — where code lies about state | — |
-| **shield** | fomoengine (source kept private) | authenticity shield — detect dark patterns | — |
+| **shield** | [fomoengine](https://github.com/cambridgetcg/fomoengine) | authenticity shield — detect dark patterns | — |
 | **memory** | [insight](https://cambridgetcg.github.io/insight/) | MEMORY IS. WORD IS. — the bridge | [insight-three-delta.vercel.app](https://insight-three-delta.vercel.app) |
 
 ## The principle
