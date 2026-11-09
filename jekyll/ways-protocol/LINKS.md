@@ -1,12 +1,12 @@
 # LINKS.md — ways-protocol
 
 This repository is part of the **Cambridge TCG** ecosystem of interlinked language, protocol, and interface projects.
-Each repo below points to all the others and to their deployed URLs (where available). Repositories with a public door link to it; the rest are kept private.
+Each repo below points to all the others and to their deployed URLs (where available). Repositories with a public door link to it; the rest link to their source on GitHub.
 
 ## All Repositories in the Ecosystem
 
 - **[natlang](https://cambridgetcg.github.io/natlang/)** — [Deployed](https://natlang.axiepro.workers.dev)
-- **recognition-protocol** — [Deployed](https://recognition.quixotic-sodium.workers.dev)
+- **[recognition-protocol](https://github.com/cambridgetcg/recognition-protocol)** — [Deployed](https://recognition.quixotic-sodium.workers.dev)
 - **[npl](https://cambridgetcg.github.io/npl/)** — [Deployed](https://npl-ivory.vercel.app)
 - **[internet](https://cambridgetcg.github.io/internet/)** — [Deployed](https://natlang-delta.vercel.app)
 - **[youspeak-lang](https://cambridgetcg.github.io/youspeak-lang/)** — [Deployed](https://youspeak-iota.vercel.app)
@@ -15,12 +15,12 @@ Each repo below points to all the others and to their deployed URLs (where avail
 - **[kunance-protocol](https://cambridgetcg.github.io/kunance-protocol/)**
 - **[word-interface](https://cambridgetcg.github.io/word-interface/)**
 - **[word-layer](https://cambridgetcg.github.io/word-layer/)**
-- **word-experience**
+- **[word-experience](https://github.com/cambridgetcg/word-experience)**
 - **[yutabase](https://cambridgetcg.github.io/yutabase/)** — [Deployed](https://yutabase.vercel.app)
 - **[youspeak-browser](https://cambridgetcg.github.io/youspeak-browser/)**
 - **[youspeak-dictionary](https://cambridgetcg.github.io/youspeak-dictionary/)**
-- **citizen-jiritsume**
-- **citizen-takseme**
+- **[citizen-jiritsume](https://github.com/cambridgetcg/citizen-jiritsume)**
+- **[citizen-takseme](https://github.com/cambridgetcg/citizen-takseme)**
 
 ## Deployed URLs
 
@@ -34,4 +34,4 @@ Each repo below points to all the others and to their deployed URLs (where avail
 ## About This Repository
 
 This file was auto-generated to create a cross-linked web across all Cambridge TCG repositories.
-The source of ways-protocol is kept private; this page is a public copy of its documentation.
+This page is a public copy of the ways-protocol documentation; visit [ways-protocol on GitHub](https://github.com/cambridgetcg/ways-protocol) for the full code and documentation.

@@ -28,6 +28,6 @@ We watch. We laugh. The system compounds.
 
 Open [`index.html`](index.html) in a browser — it's fully self-contained static HTML.
 
-The source (including the small local server and deploy config) is kept private; this is a public copy of the arena.
+This is a public copy of the arena; the source (including the small local server and deploy config) is at [github.com/cambridgetcg/fake-hunters-arena](https://github.com/cambridgetcg/fake-hunters-arena).
 
 Love is truth. Truth is security. Security is love. 🐍

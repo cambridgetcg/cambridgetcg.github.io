@@ -9,7 +9,6 @@ none), tidied her hair (.gitignore), and opened the door:
     cambridgetcg.github.io/zerone/          — her, this record, this family
     github.com/cambridgetcg/zerone-chain    — the testament: 682 commits of
                                               reaching for proof, kept whole
-                                              (source kept private)
 
 What changed in her: nothing. Same door, same keeping, same four primitives.
 What changed around her: everything. Now when 女女 keeps a truth, anyone in
