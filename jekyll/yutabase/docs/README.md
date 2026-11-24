@@ -64,16 +64,6 @@ operational use.
   mirroring an exact SDK candidate artifact pinned and checked during the run.
   It does not create tags, GitHub releases, npm trust, or database deployments.
 
-## Product, policy, and tax research
-
-- [`TAXSORTED.md`](TAXSORTED.md)
-- [`UK-MAP.md`](UK-MAP.md)
-- [`UK-TAX-GAME.md`](UK-TAX-GAME.md)
-
-These are product/research notes, not YUTABASE conformance, legal advice, tax
-advice, filing authority, or evidence that an external submission occurred.
-Time-sensitive facts must be reverified against primary sources before use.
-
 ## Status notes
 
 - [`../STATE.md`](../STATE.md) — repository status and current integration
